@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main  # или другая ветка, с которой вы хотите работать
 
 jobs:
   deploy:
@@ -11,12 +11,12 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4  # Последняя версия
 
-    - name: Set up Node.js 20
-      uses: actions/setup-node@v3
+    - name: Set up Node.js
+      uses: actions/setup-node@v4  # Последняя версия
       with:
-        node-version: '20'  # Явно указываем Node.js 20
+        node-version: '20'  # Явно указываем версию Node.js 20
 
     - name: Install dependencies
       run: npm install
@@ -25,9 +25,6 @@ jobs:
       run: npm run build
 
     - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build
-        # Если вы используете кастомный домен, добавьте:
-        # cname: yourdomain.com
+      run: npx gh-pages -d build
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
