@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main  # Ваша основная ветка
 
 jobs:
   deploy:
@@ -11,12 +11,12 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v3
 
     - name: Set up Node.js
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v3
       with:
-        node-version: '20'
+        node-version: '20'  # Указываем Node.js 20
 
     - name: Install dependencies
       run: npm install
@@ -25,9 +25,6 @@ jobs:
       run: npm run build
 
     - name: Deploy to GitHub Pages
-      run: |
-        git config user.name "GitHub Actions"
-        git config user.email "actions@github.com"
-        npx gh-pages -d build -r https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+      run: npx gh-pages -d build --branch=gh-pages
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Подключаем токен
