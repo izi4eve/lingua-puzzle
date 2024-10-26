@@ -8,7 +8,7 @@ const LearningComponent = ({ data, firstElement, count, updateData }) => {
     const collectedPartsRef = useRef([]);
     const [selectedPart, setSelectedPart] = useState({ value: null, rowIndex: null, partIndex: null });
     const [highlightedOrigin, setHighlightedOrigin] = useState(null);
-    const [matchedSpots, setMatchedSpots] = useState([]); // отслеживание элементов, где были совпадения
+    const [matchedSpots, setMatchedSpots] = useState([]);
 
     const unlearnedData = data
         .map((item, index) => ({ ...item, originalIndex: index }))
@@ -35,6 +35,7 @@ const LearningComponent = ({ data, firstElement, count, updateData }) => {
         if (JSON.stringify(collectedPartsRef.current) !== JSON.stringify(collectedParts)) {
             collectedPartsRef.current = collectedParts;
             setAllParts([...collectedParts].sort());
+            setMatchedSpots([]); // Обнуляем matchedSpots при загрузке новой порции данных
         }
     }, [elementsToDisplay]);
 
@@ -52,9 +53,17 @@ const LearningComponent = ({ data, firstElement, count, updateData }) => {
     const handleOriginClick = (part) => {
         if (selectedPart.value) {
             if (selectedPart.value === part) {
-                setMatchedSpots(prev => [...prev, `${selectedPart.rowIndex}-${selectedPart.partIndex}`]); // добавляем совпавший элемент
-                setAllParts(prevParts => prevParts.filter(p => p !== part));
-                setSelectedPart({ value: null, rowIndex: null, partIndex: null });
+                // Находим индекс первого вхождения элемента в массиве allParts
+                const partIndex = allParts.findIndex(p => p === part);
+                if (partIndex !== -1) {
+                    setMatchedSpots(prev => [...prev, `${selectedPart.rowIndex}-${selectedPart.partIndex}`]);
+                    setAllParts(prevParts => {
+                        const newParts = [...prevParts];
+                        newParts.splice(partIndex, 1); // Удаляем только первое вхождение
+                        return newParts;
+                    });
+                    setSelectedPart({ value: null, rowIndex: null, partIndex: null });
+                }
             } else {
                 setHighlightedOrigin(part);
                 setTimeout(() => setHighlightedOrigin(null), 2000);
@@ -97,13 +106,9 @@ const LearningComponent = ({ data, firstElement, count, updateData }) => {
                                                 key={partIndex}
                                                 className={`spot nowrap btn btn-light rounded-pill 
                                                     ${selectedPart.rowIndex === rowIndex && selectedPart.partIndex === partIndex ? 'bg-light-blue' : ''}
-                                                    ${matchedSpots.includes(`${rowIndex}-${partIndex}`) ? 'matched' : ''}`} // Добавляем класс matched при совпадении
+                                                    ${matchedSpots.includes(`${rowIndex}-${partIndex}`) ? 'matched' : ''}`}
                                                 data-value={part}
                                                 onClick={() => handleSpotClick(part, rowIndex, partIndex)}
-                                                style={{
-                                                    color: matchedSpots.includes(`${rowIndex}-${partIndex}`) ? 'green' : 'transparent',
-                                                    cursor: 'pointer'
-                                                }}
                                             >
                                                 {part}
                                             </div>
@@ -118,7 +123,7 @@ const LearningComponent = ({ data, firstElement, count, updateData }) => {
 
             <div className="d-flex flex-wrap gap-2 justify-content-start">
                 {allParts.length === 0 ? (
-                    <p>Congratulations! You've matched all. Delete the familiar and click Next.</p>
+                    <p>Congratulations, you've matched all. Move next.</p>
                 ) : (
                     allParts.map((part, index) => (
                         <div
@@ -126,7 +131,6 @@ const LearningComponent = ({ data, firstElement, count, updateData }) => {
                             className={`origin nowrap btn btn-light rounded-pill ${highlightedOrigin === part ? 'bg-light-red' : ''}`}
                             data-value={part}
                             onClick={() => handleOriginClick(part)}
-                            style={{ cursor: 'pointer' }}
                         >
                             {part}
                         </div>
