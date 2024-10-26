@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Title from './Title';
 import { TbCircleNumber2Filled } from "react-icons/tb";
-import { IoTrashBin } from 'react-icons/io5';
+import { IoMdClose } from 'react-icons/io';
 
 const LearningComponent = ({ data, firstElement, count, updateData }) => {
     const [allParts, setAllParts] = useState([]);
@@ -83,47 +83,48 @@ const LearningComponent = ({ data, firstElement, count, updateData }) => {
         <div className="whiteBox rounded-4 p-3 my-3">
             <Title icon={<TbCircleNumber2Filled size={28} />} text="Place the pieces below in the correct places" />
 
-            <table className="table fw-bold">
-                <tbody>
-                    {elementsToDisplay.map((item, rowIndex) => {
-                        const splitForeignPart = item.foreignPart.split(/(?=\s[a-zA-Z0-9])/);
+            <div className="table-box fw-bold">
+                {elementsToDisplay.map((item, rowIndex) => {
+                    const splitForeignPart = item.foreignPart.split(/(?=\s[a-zA-Z0-9])/);
 
-                        return (
-                            <tr key={rowIndex} className="element-box">
-                                <td className="c-delete">
-                                    <IoTrashBin
-                                        size={23}
+                    return (
+                        <div key={rowIndex} className="row-box d-flex py-2
+                        border-bottom border-secondary border-secondary-subtle">
+                            <div className="flex-grow-1 d-flex flex-wrap gap-2 justify-content-start">
+                                <div className="py-2 c-translate">{item.translation}</div>
+                                <div className="py-2 px-1 c-equal text-center">=</div>
+                                {splitForeignPart.map((part, partIndex) => (
+                                    <div
+                                        key={partIndex}
+                                        className={`spot nowrap btn btn-light rounded-pill 
+                                    ${selectedPart.rowIndex === rowIndex && selectedPart.partIndex === partIndex ? 'bg-light-blue' : ''}
+                                    ${matchedSpots.includes(`${rowIndex}-${partIndex}`) ? 'matched' : ''}`}
+                                        data-value={part}
+                                        onClick={() => handleSpotClick(part, rowIndex, partIndex)}
+                                    >
+                                        {part}
+                                    </div>
+                                ))}
+                            </div>
+                            <div className="">
+                                <div className="c-delete">
+                                    <IoMdClose
+                                        size={18}
                                         onClick={() => handleLearned(item.originalIndex)}
                                         className="light-grey"
                                         style={{ cursor: 'pointer' }} />
-                                </td>
-                                <td className="c-translate">{item.translation}</td>
-                                <td className="c-equal text-center"> = </td>
-                                <td className="c-foreign">
-                                    <div className="d-flex flex-wrap gap-2 justify-content-start">
-                                        {splitForeignPart.map((part, partIndex) => (
-                                            <div
-                                                key={partIndex}
-                                                className={`spot nowrap btn btn-light rounded-pill 
-                                                    ${selectedPart.rowIndex === rowIndex && selectedPart.partIndex === partIndex ? 'bg-light-blue' : ''}
-                                                    ${matchedSpots.includes(`${rowIndex}-${partIndex}`) ? 'matched' : ''}`}
-                                                data-value={part}
-                                                onClick={() => handleSpotClick(part, rowIndex, partIndex)}
-                                            >
-                                                {part}
-                                            </div>
-                                        ))}
-                                    </div>
-                                </td>
-                            </tr>
-                        );
-                    })}
-                </tbody>
-            </table>
+                                </div>
+                            </div>
+                        </div>
+                    );
+                })}
+            </div>
 
-            <div className="d-flex flex-wrap gap-2 justify-content-start">
+            <div className="d-flex flex-wrap gap-2 justify-content-start pt-4 pb-2">
                 {allParts.length === 0 ? (
-                    <p>Congratulations, you've matched all. Move next.</p>
+                    <div class="alert alert-warning border-0 rounded-3" role="alert">
+                        <strong>Congratulations!</strong> You've matched all. <strong>Delete</strong> the familiar and click <strong>Next</strong>
+                    </div>
                 ) : (
                     allParts.map((part, index) => (
                         <div
