@@ -7,7 +7,7 @@ const LearningComponent = ({ data, firstElement, count, updateData }) => {
     const [allParts, setAllParts] = useState([]);
     const collectedPartsRef = useRef([]);
     const [selectedPart, setSelectedPart] = useState({ value: null, rowIndex: null, partIndex: null });
-    const [highlightedOrigin, setHighlightedOrigin] = useState(null);
+    const [highlightedOriginIndex, setHighlightedOriginIndex] = useState(null);
     const [matchedSpots, setMatchedSpots] = useState([]);
 
     const unlearnedData = data
@@ -35,7 +35,7 @@ const LearningComponent = ({ data, firstElement, count, updateData }) => {
         if (JSON.stringify(collectedPartsRef.current) !== JSON.stringify(collectedParts)) {
             collectedPartsRef.current = collectedParts;
             setAllParts([...collectedParts].sort());
-            setMatchedSpots([]); // Обнуляем matchedSpots при загрузке новой порции данных
+            setMatchedSpots([]);
         }
     }, [elementsToDisplay]);
 
@@ -50,23 +50,22 @@ const LearningComponent = ({ data, firstElement, count, updateData }) => {
         setSelectedPart({ value: part, rowIndex, partIndex });
     };
 
-    const handleOriginClick = (part) => {
+    const handleOriginClick = (part, index) => {
         if (selectedPart.value) {
             if (selectedPart.value === part) {
-                // Находим индекс первого вхождения элемента в массиве allParts
-                const partIndex = allParts.findIndex(p => p === part);
+                const partIndex = allParts.findIndex((p, idx) => p === part && idx === index);
                 if (partIndex !== -1) {
                     setMatchedSpots(prev => [...prev, `${selectedPart.rowIndex}-${selectedPart.partIndex}`]);
                     setAllParts(prevParts => {
                         const newParts = [...prevParts];
-                        newParts.splice(partIndex, 1); // Удаляем только первое вхождение
+                        newParts.splice(partIndex, 1);
                         return newParts;
                     });
                     setSelectedPart({ value: null, rowIndex: null, partIndex: null });
                 }
             } else {
-                setHighlightedOrigin(part);
-                setTimeout(() => setHighlightedOrigin(null), 2000);
+                setHighlightedOriginIndex(index);
+                setTimeout(() => setHighlightedOriginIndex(null), 2000);
             }
         }
     };
@@ -88,8 +87,7 @@ const LearningComponent = ({ data, firstElement, count, updateData }) => {
                     const splitForeignPart = item.foreignPart.split(/(?=\s[a-zA-Z0-9])/);
 
                     return (
-                        <div key={rowIndex} className="row-box d-flex py-2
-                        border-bottom border-secondary border-secondary-subtle">
+                        <div key={rowIndex} className="row-box d-flex py-2 border-bottom border-secondary border-secondary-subtle">
                             <div className="flex-grow-1 d-flex flex-wrap gap-2 justify-content-start">
                                 <div className="py-2 c-translate">{item.translation}</div>
                                 <div className="py-2 px-1 c-equal text-center">=</div>
@@ -129,9 +127,9 @@ const LearningComponent = ({ data, firstElement, count, updateData }) => {
                     allParts.map((part, index) => (
                         <div
                             key={index}
-                            className={`origin nowrap btn btn-light rounded-pill ${highlightedOrigin === part ? 'bg-light-red' : ''}`}
+                            className={`origin nowrap btn btn-light rounded-pill ${highlightedOriginIndex === index ? 'bg-light-red' : ''}`}
                             data-value={part}
-                            onClick={() => handleOriginClick(part)}
+                            onClick={() => handleOriginClick(part, index)}
                         >
                             {part}
                         </div>
