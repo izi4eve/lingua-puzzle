@@ -2,9 +2,26 @@ import React, { useEffect, useState } from 'react';
 import Title from './Title';
 import { TbCircleNumber1Filled } from "react-icons/tb";
 
-const FileUploader = ({ onDataLoaded }) => {
+const FileUploader = ({ onDataLoaded, onLanguageChange }) => {
     const [fileList, setFileList] = useState([]);
     const [selectedFile, setSelectedFile] = useState('');
+    const [selectedLanguage, setSelectedLanguage] = useState('en-US');
+
+    const languages = [
+        { name: 'English', code: 'en-US' },
+        { name: 'Deutsch', code: 'de-DE' },
+        { name: 'Français', code: 'fr-FR' },
+        { name: 'Italiano', code: 'it-IT' },
+        { name: 'Español', code: 'es-ES' },
+        { name: 'Português', code: 'pt-PT' },
+        { name: 'Polski', code: 'pl-PL' },
+        { name: 'Čeština', code: 'cs-CZ' }
+    ];
+
+    const handleLanguageChange = (event) => {
+        setSelectedLanguage(event.target.value);
+        onLanguageChange(event.target.value);
+    };
 
     // Функция для получения списка файлов из папки
     const fetchFileList = () => {
@@ -76,7 +93,7 @@ const FileUploader = ({ onDataLoaded }) => {
 
     return (
         <div className="whiteBox rounded-4 p-3 my-3">
-        
+
             <Title icon={<TbCircleNumber1Filled size={28} />} text="For learning foreign language choose dictionary" />
 
             <div>
@@ -98,6 +115,14 @@ const FileUploader = ({ onDataLoaded }) => {
                     accept=".txt"
                     onChange={handleFileChange}
                 />
+            </div>
+
+            <div className="h6 py-1 pt-2">
+                Select language for text reading: <select value={selectedLanguage} onChange={handleLanguageChange}>
+                    {languages.map((lang) => (
+                        <option key={lang.code} value={lang.code}>{lang.name}</option>
+                    ))}
+                </select>
             </div>
 
         </div>

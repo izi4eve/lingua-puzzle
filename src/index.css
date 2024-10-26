@@ -2,9 +2,6 @@ body { background-color: rgb(255, 200, 0); }
 
 .whiteBox { background-color: white; }
 
-.light-grey, .light-grey:after { color: #000; }
-.light-grey:hover { color: #faa; }
-
 .index-field {
   width: 80px;
   text-align: center;
@@ -16,6 +13,8 @@ body { background-color: rgb(255, 200, 0); }
 .result div span { font-weight: 600; }
 
 .nowrap { white-space: nowrap; }
+
+.row-box { border-bottom: 1px dashed black; }
 
 .btn-light {
   --bs-btn-color: #000;
