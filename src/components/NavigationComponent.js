@@ -63,11 +63,11 @@ const NavigationComponent = ({ data, firstElement, setFirstElement, count }) => 
             <div className="d-flex my-1">
                 <div className="btn-group me-3">
                     <Button onClick={handleBack} variant="outline-dark" disabled={firstElement === 0}>
-                        Back
+                        Previous
                     </Button>
 
                     <Button onClick={handleForward} variant="outline-dark" disabled={firstElement >= maxUnlearnedIndex}>
-                        Forward
+                        Next
                     </Button>
                 </div>
 
@@ -81,7 +81,7 @@ const NavigationComponent = ({ data, firstElement, setFirstElement, count }) => 
                     />
 
                     <Button onClick={handleGo} variant="outline-dark" className="">
-                        Go
+                        Move
                     </Button>
                 </div>
 

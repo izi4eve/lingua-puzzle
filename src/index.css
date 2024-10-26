@@ -37,12 +37,28 @@ body { background-color: rgb(255, 200, 0); }
   --bs-btn-disabled-border-color: #f8f9fa;
   }
 
-.color-transparent { 
+.spot { 
+  cursor: pointer;
   color: transparent; 
   --bs-btn-color: transparent;
   --bs-btn-hover-color: transparent;
   --bs-btn-active-color: transparent;
   --bs-btn-disabled-color: transparent;
+}
+
+.spot.matched {
+  color: green; /* Текст зелёного цвета после совпадения */
+}
+
+
+
+.bg-light-blue {
+  background-color: lightblue !important;
+}
+
+.bg-light-red {
+  background-color: lightcoral !important;
+  transition: background-color 2s ease;
 }
 
 
