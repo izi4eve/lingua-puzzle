@@ -14,7 +14,7 @@ i18n
       escapeValue: false, // для работы с React не требуется экранирование
     },
     backend: {
-      loadPath: '/locales/{{lng}}/{{ns}}.json', // путь к файлам переводов
+      loadPath: `${process.env.PUBLIC_URL}/locales/{{lng}}/{{ns}}.json`, // путь к файлам переводов
     },
   });
 
