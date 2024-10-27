@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Button, Form } from 'react-bootstrap';
 import Title from './Title';
 import { TbCircleNumber3Filled } from "react-icons/tb";
 
 const NavigationComponent = ({ data, firstElement, setFirstElement, count }) => {
+    const { t } = useTranslation();
+
     // Фильтруем элементы, где isLearned === true (выученные)
     const learnedData = data.filter(item => item.isLearned);
 
@@ -59,15 +62,15 @@ const NavigationComponent = ({ data, firstElement, setFirstElement, count }) => 
 
     return (
         <div className="whiteBox rounded-4 p-3 my-3">
-            <Title icon={<TbCircleNumber3Filled size={28} />} text="Navigate and track the progress" />
+            <Title icon={<TbCircleNumber3Filled size={28} />} text={t('navigate')} />
             <div className="d-flex my-1">
                 <div className="btn-group me-3">
                     <Button onClick={handleBack} variant="outline-dark" disabled={firstElement === 0}>
-                        Previous
+                        {t('prev')}
                     </Button>
 
                     <Button onClick={handleForward} variant="outline-dark" disabled={firstElement >= maxUnlearnedIndex}>
-                        Next
+                        {t('next')}
                     </Button>
                 </div>
 
@@ -81,17 +84,17 @@ const NavigationComponent = ({ data, firstElement, setFirstElement, count }) => 
                     />
 
                     <Button onClick={handleGo} variant="outline-dark" className="">
-                        Move
+                        {t('move')}
                     </Button>
                 </div>
 
             </div>
 
             <div className="result d-flex mt-2 mb-1">
-                <div>Total: <span>{total}</span></div>
-                <div>Deleted: <span>{learned}</span></div>
-                <div>Moved: <span>{passed}</span></div>
-                <div>Progress: <span>{progress}%</span></div>
+                <div>{t('total')}: <span>{total}</span></div>
+                <div>{t('deleted')}: <span>{learned}</span></div>
+                <div>{t('passed')}: <span>{passed}</span></div>
+                <div>{t('progress')}: <span>{progress}%</span></div>
             </div>
         </div>
     );

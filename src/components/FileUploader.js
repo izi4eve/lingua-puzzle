@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import Title from './Title';
 import { TbCircleNumber1Filled } from "react-icons/tb";
 
 const FileUploader = ({ onDataLoaded, onLanguageChange }) => {
+    const { t } = useTranslation();
+
     const [fileList, setFileList] = useState([]);
     const [selectedFile, setSelectedFile] = useState('');
     const [selectedLanguage, setSelectedLanguage] = useState('en-US');
@@ -94,7 +97,7 @@ const FileUploader = ({ onDataLoaded, onLanguageChange }) => {
     return (
         <div className="whiteBox rounded-4 p-3 my-3">
 
-            <Title icon={<TbCircleNumber1Filled size={28} />} text="For learning foreign language choose dictionary" />
+            <Title icon={<TbCircleNumber1Filled size={28} />} text={t('choose-dic')} />
 
             <div>
                 <select value={selectedFile} onChange={handleSelectFile}>
@@ -106,7 +109,7 @@ const FileUploader = ({ onDataLoaded, onLanguageChange }) => {
             </div>
 
             {/* <div className="h6 py-1 pt-2">Or select your .txt file where the translation is separated by an equal sign ( = )</div> */}
-            <div className="h6 py-1 pt-2">Or select your own .txt file. Separate there translation by an equal sign ( = )</div>
+            <div className="h6 py-1 pt-2">{t('open-txt')}</div>
 
             <div>
                 <input
@@ -117,8 +120,8 @@ const FileUploader = ({ onDataLoaded, onLanguageChange }) => {
                 />
             </div>
 
-            <div className="h6 py-1 pt-2">
-                Select language for text reading: <select value={selectedLanguage} onChange={handleLanguageChange}>
+            <div className="h6 pt-2">
+                {t('tts-lang')}: <select value={selectedLanguage} onChange={handleLanguageChange}>
                     {languages.map((lang) => (
                         <option key={lang.code} value={lang.code}>{lang.name}</option>
                     ))}

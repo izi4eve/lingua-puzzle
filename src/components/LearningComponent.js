@@ -1,10 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Trans, useTranslation } from 'react-i18next';
 import Title from './Title';
 import TextToSpeech from './TextToSpeech';
 import { TbCircleNumber2Filled } from "react-icons/tb";
 import { IoMdClose } from 'react-icons/io';
 
 const LearningComponent = ({ data, firstElement, count, updateData, language }) => {
+    const { t } = useTranslation();
+
     const [allParts, setAllParts] = useState([]);
     const collectedPartsRef = useRef([]);
     const [selectedPart, setSelectedPart] = useState({ value: null, rowIndex: null, partIndex: null });
@@ -74,14 +77,14 @@ const LearningComponent = ({ data, firstElement, count, updateData, language }) 
     if (unlearnedData.length === 0) {
         return (
             <div className="bg-warning-subtle rounded-4 p-3 my-3">
-                All elements learned! Choose new or this dictionary.
+                {t('all-learned')}
             </div>
         );
     }
 
     return (
         <div className="whiteBox rounded-4 p-3 my-3">
-            <Title icon={<TbCircleNumber2Filled size={28} />} text="Place the pieces below in the correct places" />
+            <Title icon={<TbCircleNumber2Filled size={28} />} text={t('assemble-parts')} />
 
             <div className="table-box fw-bold">
                 {elementsToDisplay.map((item, rowIndex) => {
@@ -124,8 +127,10 @@ const LearningComponent = ({ data, firstElement, count, updateData, language }) 
 
             <div className="d-flex flex-wrap gap-2 justify-content-start pt-4 pb-2">
                 {allParts.length === 0 ? (
-                    <div className="alert alert-warning border-0 rounded-3" role="alert">
-                        <strong>Congratulations!</strong> You've matched all. <strong>Delete</strong> the familiar and click <strong>Next</strong>
+                    <div className="alert alert-warning mb-0 border-0 rounded-3" role="alert">
+                        <Trans i18nKey="all-matched">
+                            <strong>Congratulations!</strong> You've matched all. <strong>Delete</strong> the familiar and click <strong>Next</strong>
+                        </Trans>
                     </div>
                 ) : (
                     allParts.map((part, index) => (

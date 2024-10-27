@@ -1,5 +1,7 @@
 body { background-color: rgb(255, 200, 0); }
 
+.logo { line-height: 0.9; }
+
 .whiteBox { background-color: white; }
 
 .index-field {
@@ -43,10 +45,10 @@ body { background-color: rgb(255, 200, 0); }
   --bs-btn-disabled-color: transparent;
 }
 
-.spot.matched {
+.spot.matched, .spot.matched:active {
+  color: green; 
   padding-left: 0;
   padding-right: 0;
-  color: green; 
   background-color: transparent !important;
   border-color: transparent !important;
 }
