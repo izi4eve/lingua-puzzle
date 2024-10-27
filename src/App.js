@@ -30,11 +30,11 @@ const App = () => {
     setData(loadedData);
   };
 
-  // const handleLanguageChange = (newLanguage) => {
-  //   setLanguage(newLanguage);
-  //   localStorage.setItem('selectedLanguage', newLanguage);
-  //   i18n.changeLanguage(newLanguage);
-  // };
+  const handleLanguageChange = (newLanguage) => {
+    setLanguage(newLanguage);
+    localStorage.setItem('selectedLanguage', newLanguage);
+    i18n.changeLanguage(newLanguage);
+  };
 
   const handleTTSLanguageChange = (newTTSLanguage) => {
     setTTSLanguage(newTTSLanguage);
@@ -58,7 +58,7 @@ const App = () => {
     <div className="container">
       <div className="row justify-content-center">
         <div className="col-12 col-md-10 col-lg-8 col-xl-7">
-          {/* <div className="d-flex pt-2 pb-0 ps-2 pe-2 pb-0 mb-0">
+          <div className="d-flex pt-2 pb-0 ps-2 pe-2 pb-0 mb-0">
             <div className="logo h4 pt-1 mb-0 fw-bold">Lingua <br />Puzzle</div>
             <div className="flex-grow-1 text-end">
               {['en', 'de', 'fr', 'it', 'es', 'pt', 'pl', 'cs', 'uk', 'sh', 'ru', 'tr', 'ar', 'fa'].map((lng) => (
@@ -72,7 +72,7 @@ const App = () => {
                 </button>
               ))}
             </div>
-          </div> */}
+          </div>
 
           <FileUploader onDataLoaded={handleDataLoaded} onTTSLanguageChange={handleTTSLanguageChange} />
           <LearningComponent data={data} firstElement={firstElement} count={count} updateData={setData} language={ttsLanguage} />
