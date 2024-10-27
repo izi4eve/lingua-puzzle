@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { QRCodeCanvas } from 'qrcode.react';
 import FileUploader from './components/FileUploader';
 import LearningComponent from './components/LearningComponent';
 import NavigationComponent from './components/NavigationComponent';
 
 const App = () => {
   const { i18n } = useTranslation();
+
+  const appUrl = "https://izi4eve.github.io/lingua-puzzle/";
+
   const [data, setData] = useState(() => {
     const savedData = localStorage.getItem('data');
     return savedData ? JSON.parse(savedData) : [];
@@ -59,9 +63,8 @@ const App = () => {
               {['en', 'de', 'fr', 'it', 'es', 'pt', 'pl', 'cs', 'uk', 'sh', 'ru', 'tr', 'ar', 'fa'].map((lng) => (
                 <button
                   key={lng}
-                  className={`btn btn-sm rounded-pill m-1 ${
-                    language === lng ? 'btn-dark' : 'btn-outline-dark'
-                  }`}
+                  className={`btn btn-sm rounded-pill m-1 ${language === lng ? 'btn-dark' : 'btn-outline-dark'
+                    }`}
                   onClick={() => handleLanguageChange(lng)}
                 >
                   {lng.toUpperCase()}
@@ -79,6 +82,10 @@ const App = () => {
             count={count}
             language={language}
           />
+
+          <div className="p-2 pb-1 my-4 bg-white d-inline-block float-end">
+            <QRCodeCanvas value={appUrl} size={128} />
+          </div>
         </div>
       </div>
     </div>
