@@ -86,9 +86,9 @@ const App = () => {
 
           <Tips />
 
-          <div className="p-2 pb-1 my-4 bg-white d-inline-block float-end">
+          {/* <div className="p-2 pb-1 my-4 bg-white d-inline-block float-end">
             <QRCodeCanvas value={appUrl} size={128} />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
