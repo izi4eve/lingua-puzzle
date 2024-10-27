@@ -13,5 +13,7 @@
     "total": "Ukupno",
     "deleted": "Obrisano",
     "passed": "Prošlo",
-    "progress": "Napredak"
+    "progress": "Napredak",
+    "tips": "Savjet",
+    "tips-text": "<strong>Nemojte</strong> se plašiti pravljenja <strong>grešaka</strong>. Rezultat zavisi od toga koliko <strong>brzo</strong> i <strong>redovno</strong> to ponavljate <strong>iznova i iznova</strong>. Pobednik nije najjači, najpametniji ili najtalentovaniji, već onaj koji <strong>nikada ne odustaje</strong>."
 }

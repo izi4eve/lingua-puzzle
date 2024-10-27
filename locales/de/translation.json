@@ -13,5 +13,7 @@
     "total": "Gesamt",
     "deleted": "Gelöscht",
     "passed": "Bestanden",
-    "progress": "Fortschritt"
+    "progress": "Fortschritt",
+    "tips": "Ratschlag",
+    "tips-text": "<strong>Haben Sie keine</strong> Angst, <strong>Fehler</strong> zu machen. Das Ergebnis hängt davon ab, wie <strong>schnell</strong> und <strong>regelmäßig</strong> Sie es <strong>wieder und wieder</strong> wiederholen. Nicht der Stärkste, der Klügste oder der Talentierteste gewinnt, sondern derjenige, der <strong>niemals aufgibt</strong>."
 }
