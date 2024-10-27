@@ -1,0 +1,17 @@
+{
+    "choose-dic": "Wählen Sie ein Wörterbuch, um eine Fremdsprache zu lernen",
+    "select-dic": "Wählen Sie ein neues Wörterbuch",
+    "open-txt": "Oder wählen Sie Ihre eigene .txt-Datei. Trennen Sie die Übersetzung dort mit einem Gleichheitszeichen ( = )",
+    "tts-lang": "Wählen Sie eine Sprache für die Textwiedergabe",
+    "assemble-parts": "Stellen Sie die Übersetzung aus den Teilen unten zusammen",
+    "all-matched": "<strong>Herzlichen Glückwunsch!</strong> Sie haben alle zugeordnet. <strong>Löschen</strong> Sie das Bekannte und klicken Sie auf <strong>Weiter</strong>",
+    "all-learned": "Jetzt ist Ihr Wörterbuch leer. Wählen Sie ein Wörterbuch zum Lernen.",
+    "navigate": "Navigieren und Fortschritt verfolgen",
+    "prev": "Vorherige",
+    "next": "Weiter",
+    "move": "Bewegen",
+    "total": "Gesamt",
+    "deleted": "Gelöscht",
+    "passed": "Bestanden",
+    "progress": "Fortschritt"
+}

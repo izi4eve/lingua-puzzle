@@ -1,0 +1,17 @@
+{
+    "choose-dic": "For learning foreign language choose dictionary",
+    "select-dic": "Select a new dictionary",
+    "open-txt": "Or select your own .txt file. Separate there translation by an equal sign ( = )",
+    "tts-lang": "Select language for text reading",
+    "assemble-parts": "Assemble the translation from the parts below",
+    "all-matched": "<strong>Congratulations!</strong> You've matched all. <strong>Delete</strong> the familiar and click <strong>Next</strong>",
+    "all-learned": "Now your dictionary is empty. Select a dictionary to study.",
+    "navigate": "Navigate and track the progress",
+    "prev": "Previous",
+    "next": "Next",
+    "move": "Move",
+    "total": "Total",
+    "deleted": "Deleted",
+    "passed": "Passed",
+    "progress": "Progress"
+}

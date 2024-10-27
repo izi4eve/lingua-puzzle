@@ -1,0 +1,17 @@
+{
+    "choose-dic": "Za učenje stranog jezika odaberite rečnik",
+    "select-dic": "Odaberite novi rečnik",
+    "open-txt": "Ili izaberite svoj .txt fajl. Odvojite prevod znakom jednakosti ( = )",
+    "tts-lang": "Izaberite jezik za čitanje teksta",
+    "assemble-parts": "Sastavite prevod iz donjih delova",
+    "all-matched": "<strong>Čestitamo!</strong> Sve ste uparili. <strong>Obrišite</strong> poznate reči i kliknite <strong>Dalje</strong>",
+    "all-learned": "Sada je vaš rečnik prazan. Odaberite rečnik za učenje.",
+    "navigate": "Navigacija i praćenje napretka",
+    "prev": "Prethodno",
+    "next": "Sledeće",
+    "move": "Premesti",
+    "total": "Ukupno",
+    "deleted": "Obrisano",
+    "passed": "Prošlo",
+    "progress": "Napredak"
+}

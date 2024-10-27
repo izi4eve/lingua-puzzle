@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/lingua-puzzle/static/css/main.fa1ae192.css",
-    "main.js": "/lingua-puzzle/static/js/main.bde1b293.js",
+    "main.css": "/lingua-puzzle/static/css/main.294cb1fb.css",
+    "main.js": "/lingua-puzzle/static/js/main.3edc586d.js",
     "static/js/453.30a07008.chunk.js": "/lingua-puzzle/static/js/453.30a07008.chunk.js",
     "static/media/DE-RU_80pct.txt": "/lingua-puzzle/static/media/DE-RU_80pct.5b5ce34265db63bfe5fb.txt",
     "index.html": "/lingua-puzzle/index.html",
+    "static/media/getFetch.cjs": "/lingua-puzzle/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
     "static/media/DE-UA_80pct.txt": "/lingua-puzzle/static/media/DE-UA_80pct.481b6045660ee4da1681.txt",
     "static/media/EN-RU_80pct.txt": "/lingua-puzzle/static/media/EN-RU_80pct.a830d963fab8b359d75e.txt",
     "static/media/EN-UA_80pct.txt": "/lingua-puzzle/static/media/EN-UA_80pct.12c213814713ad4c6739.txt",
     "static/media/EN-DE_80pct.txt": "/lingua-puzzle/static/media/EN-DE_80pct.b112a7ff3934bdba5c51.txt",
-    "main.fa1ae192.css.map": "/lingua-puzzle/static/css/main.fa1ae192.css.map",
-    "main.bde1b293.js.map": "/lingua-puzzle/static/js/main.bde1b293.js.map",
+    "main.294cb1fb.css.map": "/lingua-puzzle/static/css/main.294cb1fb.css.map",
+    "main.3edc586d.js.map": "/lingua-puzzle/static/js/main.3edc586d.js.map",
     "453.30a07008.chunk.js.map": "/lingua-puzzle/static/js/453.30a07008.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa1ae192.css",
-    "static/js/main.bde1b293.js"
+    "static/css/main.294cb1fb.css",
+    "static/js/main.3edc586d.js"
   ]
 }

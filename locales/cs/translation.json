@@ -1,0 +1,17 @@
+{
+    "choose-dic": "Pro studium cizího jazyka vyberte slovník",
+    "select-dic": "Vyberte nový slovník",
+    "open-txt": "Nebo zvolte svůj vlastní .txt soubor. Oddělte překlad znaménkem rovnosti ( = )",
+    "tts-lang": "Vyberte jazyk pro čtení textu",
+    "assemble-parts": "Sestavte překlad z částí níže",
+    "all-matched": "<strong>Gratulujeme!</strong> Podařilo se vám spojit všechny. <strong>Smažte</strong> známé a klikněte na <strong>Další</strong>",
+    "all-learned": "Nyní je váš slovník prázdný. Vyberte slovník k učení.",
+    "navigate": "Navigace a sledování pokroku",
+    "prev": "Předchozí",
+    "next": "Další",
+    "move": "Přesunout",
+    "total": "Celkem",
+    "deleted": "Smazáno",
+    "passed": "Prošlo",
+    "progress": "Pokrok"
+}
