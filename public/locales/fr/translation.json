@@ -1,0 +1,16 @@
+{
+    "choose-dic": "Pour apprendre une langue étrangère, choisissez un dictionnaire",
+    "open-txt": "Ou sélectionnez votre propre fichier .txt. Séparez la traduction par un signe égal ( = )",
+    "tts-lang": "Sélectionnez la langue pour la lecture du texte",
+    "assemble-parts": "Assemblez la traduction à partir des parties ci-dessous",
+    "all-matched": "<strong>Félicitations!</strong> Vous avez tout associé. <strong>Supprimez</strong> les éléments familiers et cliquez sur <strong>Suivant</strong>",
+    "all-learned": "Votre dictionnaire est maintenant vide. Sélectionnez un dictionnaire pour étudier.",
+    "navigate": "Naviguez et suivez la progression",
+    "prev": "Précédent",
+    "next": "Suivant",
+    "move": "Déplacer",
+    "total": "Total",
+    "deleted": "Supprimé",
+    "passed": "Passé",
+    "progress": "Progression"
+}

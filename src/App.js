@@ -60,7 +60,7 @@ const App = () => {
             <div className="logo h4 pt-1 mb-0 fw-bold">Lingua <br />Puzzle</div>
             <div className="flex-grow-1 text-end">
               {/* Кнопки языков с динамическим классом для активного языка */}
-              {['en', 'de', 'fr', 'it', 'sp', 'pt', 'pl', 'cs', 'uk', 'sh', 'ru', 'tr', 'ar', 'fa'].map((lng) => (
+              {['en', 'de', 'fr', 'it', 'es', 'pt', 'pl', 'cs', 'uk', 'sh', 'ru', 'tr', 'ar', 'fa'].map((lng) => (
                 <button
                   key={lng}
                   className={`btn btn-sm rounded-pill m-1 ${

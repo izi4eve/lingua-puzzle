@@ -1,0 +1,16 @@
+{
+    "choose-dic": "Yabancı dil öğrenmek için bir sözlük seçin",
+    "open-txt": "Veya kendi .txt dosyanızı seçin. Çeviriyi bir eşittir işareti ( = ) ile ayırın",
+    "tts-lang": "Metin okuma için bir dil seçin",
+    "assemble-parts": "Çeviriyi aşağıdaki parçalardan birleştirin",
+    "all-matched": "<strong>Tebrikler!</strong> Hepsini eşleştirdiniz. Bildiklerinizi <strong>silin</strong> ve <strong>İleri</strong> tıklayın",
+    "all-learned": "Şimdi sözlüğünüz boş. Çalışmak için bir sözlük seçin.",
+    "navigate": "Geçmişi izleyin ve ilerlemeyi takip edin",
+    "prev": "Önceki",
+    "next": "Sonraki",
+    "move": "Taşı",
+    "total": "Toplam",
+    "deleted": "Silindi",
+    "passed": "Geçildi",
+    "progress": "İlerleme"
+}

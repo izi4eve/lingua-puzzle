@@ -1,0 +1,16 @@
+{
+    "choose-dic": "Para aprender um idioma estrangeiro, escolha um dicionário",
+    "open-txt": "Ou selecione seu próprio arquivo .txt. Separe a tradução com um sinal de igual ( = )",
+    "tts-lang": "Selecione o idioma para leitura de texto",
+    "assemble-parts": "Monte a tradução a partir das partes abaixo",
+    "all-matched": "<strong>Parabéns!</strong> Você combinou tudo. <strong>Exclua</strong> o familiar e clique em <strong>Próximo</strong>",
+    "all-learned": "Agora seu dicionário está vazio. Selecione um dicionário para estudar.",
+    "navigate": "Navegue e acompanhe o progresso",
+    "prev": "Anterior",
+    "next": "Próximo",
+    "move": "Mover",
+    "total": "Total",
+    "deleted": "Excluído",
+    "passed": "Passado",
+    "progress": "Progresso"
+}
