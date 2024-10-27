@@ -1,5 +1,6 @@
 {
     "choose-dic": "Pour apprendre une langue étrangère, choisissez un dictionnaire",
+    "select-dic": "Sélectionnez un nouveau dictionnaire",
     "open-txt": "Ou sélectionnez votre propre fichier .txt. Séparez la traduction par un signe égal ( = )",
     "tts-lang": "Sélectionnez la langue pour la lecture du texte",
     "assemble-parts": "Assemblez la traduction à partir des parties ci-dessous",

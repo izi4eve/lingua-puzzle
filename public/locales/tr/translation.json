@@ -1,5 +1,6 @@
 {
     "choose-dic": "Yabancı dil öğrenmek için bir sözlük seçin",
+    "select-dic": "Yeni bir sözlük seçin",
     "open-txt": "Veya kendi .txt dosyanızı seçin. Çeviriyi bir eşittir işareti ( = ) ile ayırın",
     "tts-lang": "Metin okuma için bir dil seçin",
     "assemble-parts": "Çeviriyi aşağıdaki parçalardan birleştirin",

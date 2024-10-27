@@ -1,5 +1,6 @@
 {
     "choose-dic": "For learning foreign language choose dictionary",
+    "select-dic": "Select a new dictionary",
     "open-txt": "Or select your own .txt file. Separate there translation by an equal sign ( = )",
     "tts-lang": "Select language for text reading",
     "assemble-parts": "Assemble the translation from the parts below",

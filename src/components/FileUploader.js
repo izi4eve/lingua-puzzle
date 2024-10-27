@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import Title from './Title';
 import { TbCircleNumber1Filled } from "react-icons/tb";
 
-const FileUploader = ({ onDataLoaded, onLanguageChange }) => {
+const FileUploader = ({ onDataLoaded, onTTSLanguageChange }) => {
     const { t } = useTranslation();
 
     const [fileList, setFileList] = useState([]);
@@ -21,12 +21,20 @@ const FileUploader = ({ onDataLoaded, onLanguageChange }) => {
         { name: 'Čeština', code: 'cs-CZ' }
     ];
 
-    const handleLanguageChange = (event) => {
-        setSelectedLanguage(event.target.value);
-        onLanguageChange(event.target.value);
+    useEffect(() => {
+        // Загружаем сохранённый язык озвучивания или устанавливаем язык по умолчанию
+        const savedTTSLanguage = localStorage.getItem('ttsLanguage') || 'en-US';
+        setSelectedLanguage(savedTTSLanguage);
+        onTTSLanguageChange(savedTTSLanguage);
+    }, [onTTSLanguageChange]);
+
+    const handleTTSLanguageChange = (event) => {
+        const newLanguage = event.target.value;
+        setSelectedLanguage(newLanguage);
+        localStorage.setItem('ttsLanguage', newLanguage); // Сохраняем выбранный язык в localStorage
+        onTTSLanguageChange(newLanguage); // Передаем выбранный язык в родительский компонент
     };
 
-    // Функция для получения списка файлов из папки
     const fetchFileList = () => {
         try {
             const context = require.context('../dic', false, /\.txt$/);
@@ -37,26 +45,23 @@ const FileUploader = ({ onDataLoaded, onLanguageChange }) => {
         }
     };
 
-    // Загружаем список файлов при монтировании компонента
     useEffect(() => {
         fetchFileList();
     }, []);
 
-    // Обработка изменения файла через input
     const handleFileChange = (event) => {
-        const file = event.target.files[0]; // Получаем выбранный файл
+        const file = event.target.files[0];
         if (file) {
-            const reader = new FileReader(); // Создаем новый FileReader
-            reader.onload = (e) => { // Когда файл прочитан
-                const content = e.target.result; // Получаем содержимое файла
-                processFileContent(content); // Обрабатываем содержимое
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                const content = e.target.result;
+                processFileContent(content);
             };
-            reader.readAsText(file); // Читаем файл как текст
-            setSelectedFile(''); // Сбрасываем выбор в выпадающем списке
+            reader.readAsText(file);
+            setSelectedFile('');
         }
     };
 
-    // Обработка содержимого файла
     const processFileContent = (content) => {
         const filteredData = content
             .split('\n')
@@ -66,49 +71,44 @@ const FileUploader = ({ onDataLoaded, onLanguageChange }) => {
                 return { foreignPart, translation, isLearned: false };
             });
 
-        onDataLoaded(filteredData); // Передаем обработанные данные в родительский компонент
+        onDataLoaded(filteredData);
     };
 
-    // Обработка выбора файла из выпадающего списка
     const handleSelectFile = (event) => {
-        const selectedFileName = event.target.value; // Получаем выбранное имя файла
-        setSelectedFile(selectedFileName); // Устанавливаем выбранное имя файла
+        const selectedFileName = event.target.value;
+        setSelectedFile(selectedFileName);
 
         if (selectedFileName) {
-            // Создаем путь к файлу
             const filePath = require(`../dic/${selectedFileName}.txt`);
             fetch(filePath)
                 .then(response => {
                     if (!response.ok) throw new Error('File loading error');
-                    return response.text(); // Получаем текстовое содержимое файла
+                    return response.text();
                 })
                 .then(content => {
-                    processFileContent(content); // Обрабатываем содержимое
+                    processFileContent(content);
                 })
                 .catch(error => {
                     console.error('File loading error:', error);
                 });
 
-            // Сбрасываем значение input
             document.getElementById('file-input').value = '';
         }
     };
 
     return (
         <div className="whiteBox rounded-4 p-3 my-3">
-
             <Title icon={<TbCircleNumber1Filled size={28} />} text={t('choose-dic')} />
 
             <div>
                 <select value={selectedFile} onChange={handleSelectFile}>
-                    <option value="">Не выбрано</option>
+                    <option value="">{t('select-dic')}</option>
                     {fileList.map((fileName, index) => (
                         <option key={index} value={fileName}>{fileName}</option>
                     ))}
                 </select>
             </div>
 
-            {/* <div className="h6 py-1 pt-2">Or select your .txt file where the translation is separated by an equal sign ( = )</div> */}
             <div className="h6 py-1 pt-2">{t('open-txt')}</div>
 
             <div>
@@ -121,13 +121,12 @@ const FileUploader = ({ onDataLoaded, onLanguageChange }) => {
             </div>
 
             <div className="h6 pt-2">
-                {t('tts-lang')}: <select value={selectedLanguage} onChange={handleLanguageChange}>
+                {t('tts-lang')}: <select value={selectedLanguage} onChange={handleTTSLanguageChange}>
                     {languages.map((lang) => (
                         <option key={lang.code} value={lang.code}>{lang.name}</option>
                     ))}
                 </select>
             </div>
-
         </div>
     );
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import { HiMiniSpeakerWave } from "react-icons/hi2";
 
-const TextToSpeech = ({ text, language = 'de-DE', rate = 0.5, volume = 1 }) => {
+const TextToSpeech = ({ text, language = 'en-EN', rate = 0.5, volume = 1 }) => {
     const speak = () => {
         if ('speechSynthesis' in window) {
             const utterance = new SpeechSynthesisUtterance(text);
