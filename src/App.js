@@ -4,6 +4,7 @@ import { QRCodeCanvas } from 'qrcode.react';
 import FileUploader from './components/FileUploader';
 import LearningComponent from './components/LearningComponent';
 import NavigationComponent from './components/NavigationComponent';
+import Tips from './components/Tips';
 
 const App = () => {
   const { i18n } = useTranslation();
@@ -82,6 +83,8 @@ const App = () => {
             count={count}
             language={language}
           />
+
+          <Tips />
 
           <div className="p-2 pb-1 my-4 bg-white d-inline-block float-end">
             <QRCodeCanvas value={appUrl} size={128} />
