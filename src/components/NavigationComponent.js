@@ -84,7 +84,8 @@ const NavigationComponent = ({ data, firstElement, setFirstElement, count }) => 
                     />
 
                     <Button onClick={handleGo} variant="outline-dark" className="">
-                        {t('move')}
+                        {/* {t('move')} */}
+                        &#8594;
                     </Button>
                 </div>
 

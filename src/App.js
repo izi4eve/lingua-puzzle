@@ -71,7 +71,7 @@ const App = () => {
       <div className="row justify-content-center">
         <div className="col-12 col-md-10 col-lg-8 col-xl-7 overflow-hidden">
 
-          <div className="d-flex pt-2 pb-0">
+          <div className="d-flex pt-2 pb-0 overflow-hidden">
             <div className="logo h4 px-2 pt-1 mb-0 fw-bold">Lingua <br />Puzzle</div>
             <div className="flex-grow-1 px-2 text-end">
               {supportedLanguages.map((lng) => (
