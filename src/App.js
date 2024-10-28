@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { QRCodeCanvas } from 'qrcode.react';
 import FileUploader from './components/FileUploader';
 import LearningComponent from './components/LearningComponent';
-// import NavigationComponent from './components/NavigationComponent';
+import NavigationComponent from './components/NavigationComponent';
 import Tips from './components/Tips';
 
 const App = () => {
@@ -69,10 +69,11 @@ const App = () => {
   return (
     <div className="container">
       <div className="row justify-content-center">
-        <div className="col-12 col-md-10 col-lg-8 col-xl-7">
-          <div className="d-flex pt-2 pb-0 ps-2 pe-2 pb-0 mb-0">
-            <div className="logo h4 pt-1 mb-0 fw-bold">Lingua <br />Puzzle</div>
-            <div className="flex-grow-1 text-end">
+        <div className="col-12 col-md-10 col-lg-8 col-xl-7 overflow-hidden">
+
+          <div className="d-flex pt-2 pb-0">
+            <div className="logo h4 px-2 pt-1 mb-0 fw-bold">Lingua <br />Puzzle</div>
+            <div className="flex-grow-1 px-2 text-end">
               {supportedLanguages.map((lng) => (
                 <button
                   key={lng}
@@ -88,17 +89,17 @@ const App = () => {
 
           <FileUploader onDataLoaded={handleDataLoaded} onTTSLanguageChange={handleTTSLanguageChange} />
           <LearningComponent data={data} firstElement={firstElement} count={count} updateData={setData} language={ttsLanguage} />
-          {/* <NavigationComponent
+          <NavigationComponent
             data={data}
             firstElement={firstElement}
             setFirstElement={setFirstElement}
             count={count}
             language={language}
-          /> */}
+          />
 
           <Tips />
 
-          <div className="p-2 pb-1 my-4 bg-white d-inline-block float-end">
+          <div className="rounded-1 p-2 pb-1 my-4 bg-white d-inline-block float-end">
             <QRCodeCanvas value={appUrl} size={128} />
           </div>
         </div>
