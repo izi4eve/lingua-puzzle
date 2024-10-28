@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Button, Form } from 'react-bootstrap';
 import Title from './Title';
 import { TbCircleNumber3Filled } from "react-icons/tb";
+import { FaArrowRight } from "react-icons/fa";
 
 const NavigationComponent = ({ data, firstElement, setFirstElement, count }) => {
     const { t } = useTranslation();
@@ -85,7 +86,7 @@ const NavigationComponent = ({ data, firstElement, setFirstElement, count }) => 
 
                     <Button onClick={handleGo} variant="outline-dark" className="">
                         {/* {t('move')} */}
-                        &#8594;
+                        <FaArrowRight />
                     </Button>
                 </div>
 
