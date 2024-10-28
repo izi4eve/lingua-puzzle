@@ -8,7 +8,7 @@ import Tips from './components/Tips';
 
 const App = () => {
   const { i18n } = useTranslation();
-
+  
   const appUrl = "https://izi4eve.github.io/lingua-puzzle/";
 
   const [data, setData] = useState(() => {
@@ -21,6 +21,7 @@ const App = () => {
     return savedFirstElement ? JSON.parse(savedFirstElement) : 0;
   });
 
+  const supportedLanguages = ['en', 'de', 'fr', 'it', 'es', 'pt', 'pl', 'cs', 'uk', 'sh', 'ru', 'tr', 'ar', 'fa'];
   const [language, setLanguage] = useState(localStorage.getItem('selectedLanguage') || 'en');
   const [ttsLanguage, setTTSLanguage] = useState(localStorage.getItem('ttsLanguage') || 'en-US');
   const count = 5;
@@ -49,9 +50,20 @@ const App = () => {
   }, [firstElement]);
 
   useEffect(() => {
-    const storedLanguage = localStorage.getItem('selectedLanguage') || 'en';
-    i18n.changeLanguage(storedLanguage);
-    setLanguage(storedLanguage);
+    // Определяем язык браузера и выбираем его, если он поддерживается; иначе - английский
+    const browserLanguage = navigator.language.split('-')[0];
+    const savedLanguage = localStorage.getItem('selectedLanguage');
+  
+    if (!savedLanguage) {
+      const defaultLanguage = supportedLanguages.includes(browserLanguage) ? browserLanguage : 'en';
+      setLanguage(defaultLanguage);
+      localStorage.setItem('selectedLanguage', defaultLanguage);
+      i18n.changeLanguage(defaultLanguage);
+    } else {
+      i18n.changeLanguage(savedLanguage);
+      setLanguage(savedLanguage);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [i18n]);
 
   return (
@@ -61,7 +73,7 @@ const App = () => {
           <div className="d-flex pt-2 pb-0 ps-2 pe-2 pb-0 mb-0">
             <div className="logo h4 pt-1 mb-0 fw-bold">Lingua <br />Puzzle</div>
             <div className="flex-grow-1 text-end">
-              {['en', 'de', 'fr', 'it', 'es', 'pt', 'pl', 'cs', 'uk', 'sh', 'ru', 'tr', 'ar', 'fa'].map((lng) => (
+              {supportedLanguages.map((lng) => (
                 <button
                   key={lng}
                   className={`btn btn-sm rounded-pill m-1 ${language === lng ? 'btn-dark' : 'btn-outline-dark'
