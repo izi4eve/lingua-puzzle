@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { QRCodeCanvas } from 'qrcode.react';
 import FileUploader from './components/FileUploader';
 import LearningComponent from './components/LearningComponent';
-import NavigationComponent from './components/NavigationComponent';
+// import NavigationComponent from './components/NavigationComponent';
 import Tips from './components/Tips';
 
 const App = () => {
@@ -88,13 +88,13 @@ const App = () => {
 
           <FileUploader onDataLoaded={handleDataLoaded} onTTSLanguageChange={handleTTSLanguageChange} />
           <LearningComponent data={data} firstElement={firstElement} count={count} updateData={setData} language={ttsLanguage} />
-          <NavigationComponent
+          {/* <NavigationComponent
             data={data}
             firstElement={firstElement}
             setFirstElement={setFirstElement}
             count={count}
             language={language}
-          />
+          /> */}
 
           <Tips />
 
