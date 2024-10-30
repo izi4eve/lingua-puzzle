@@ -15,5 +15,9 @@
     "passed": "Passé",
     "progress": "Progression",
     "tips": "Conseil",
-    "tips-text": "<strong>N'ayez</strong> pas <strong>peur</strong> de faire des <strong>erreurs</strong>. Le résultat dépend de la <strong>vitesse</strong> et de la <strong>régularité</strong> avec lesquelles vous répétez <strong>encore et encore</strong>. Ce n'est pas le plus fort, le plus intelligent ou le plus talentueux qui gagne, mais celui qui <strong>n'abandonne jamais</strong>."
+    "tips-text": "<strong>N'ayez</strong> pas <strong>peur</strong> de faire des <strong>erreurs</strong>. Le résultat dépend de la <strong>vitesse</strong> et de la <strong>régularité</strong> avec lesquelles vous répétez <strong>encore et encore</strong>. Ce n'est pas le plus fort, le plus intelligent ou le plus talentueux qui gagne, mais celui qui <strong>n'abandonne jamais</strong>.",
+    "cookie": {
+        "acceptButton": "Accepter",
+        "message": "Ce site utilise des cookies pour assurer la meilleure expérience utilisateur. Veuillez consulter notre <1>Politique de confidentialité</1>."
+    }
 }

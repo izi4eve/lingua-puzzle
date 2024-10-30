@@ -15,5 +15,9 @@
     "passed": "Bestanden",
     "progress": "Fortschritt",
     "tips": "Ratschlag",
-    "tips-text": "<strong>Haben Sie keine</strong> Angst, <strong>Fehler</strong> zu machen. Das Ergebnis hängt davon ab, wie <strong>schnell</strong> und <strong>regelmäßig</strong> Sie es <strong>wieder und wieder</strong> wiederholen. Nicht der Stärkste, der Klügste oder der Talentierteste gewinnt, sondern derjenige, der <strong>niemals aufgibt</strong>."
+    "tips-text": "<strong>Haben Sie keine</strong> Angst, <strong>Fehler</strong> zu machen. Das Ergebnis hängt davon ab, wie <strong>schnell</strong> und <strong>regelmäßig</strong> Sie es <strong>wieder und wieder</strong> wiederholen. Nicht der Stärkste, der Klügste oder der Talentierteste gewinnt, sondern derjenige, der <strong>niemals aufgibt</strong>.",
+    "cookie": {
+        "acceptButton": "Akzeptieren",
+        "message": "Diese Website verwendet Cookies, um die beste Benutzererfahrung zu gewährleisten. Bitte lesen Sie unsere <1>Datenschutzrichtlinie</1>."
+    }
 }

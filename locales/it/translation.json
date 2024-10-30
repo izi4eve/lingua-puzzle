@@ -15,5 +15,9 @@
     "passed": "Superato",
     "progress": "Progresso",
     "tips": "Consiglio",
-    "tips-text": "<strong>Non avere</strong> paura di fare <strong>errori</strong>. Il risultato dipende da quanto <strong>rapidamente</strong> e <strong>regolarmente</strong> lo ripeti <strong>ancora e ancora</strong>. Non vince il più forte, il più intelligente o il più talentuoso, ma chi <strong>non si arrende mai</strong>."
+    "tips-text": "<strong>Non avere</strong> paura di fare <strong>errori</strong>. Il risultato dipende da quanto <strong>rapidamente</strong> e <strong>regolarmente</strong> lo ripeti <strong>ancora e ancora</strong>. Non vince il più forte, il più intelligente o il più talentuoso, ma chi <strong>non si arrende mai</strong>.",
+    "cookie": {
+        "acceptButton": "Accetta",
+        "message": "Questo sito utilizza i cookie per garantire la migliore esperienza utente. Si prega di consultare la nostra <1>Informativa sulla privacy</1>."
+    }
 }
