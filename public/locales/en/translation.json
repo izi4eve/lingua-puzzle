@@ -15,5 +15,9 @@
     "passed": "Passed",
     "progress": "Progress",
     "tips": "Advice",
-    "tips-text": "<strong>Don't</strong> be <strong>afraid</strong> to make <strong>mistakes</strong>. The result depends on how <strong>quickly</strong> and <strong>regularly</strong> you repeat it <strong>over</strong> and <strong>over</strong> again. It is not the strongest, the smartest, or the most talented who wins, but the one who <strong>never gives up</strong>."
+    "tips-text": "<strong>Don't</strong> be <strong>afraid</strong> to make <strong>mistakes</strong>. The result depends on how <strong>quickly</strong> and <strong>regularly</strong> you repeat it <strong>over</strong> and <strong>over</strong> again. It is not the strongest, the smartest, or the most talented who wins, but the one who <strong>never gives up</strong>.",
+    "cookie": {
+        "acceptButton": "Accept",
+        "message": "This website uses cookies to ensure the best user experience. Please review our <1>Privacy Policy</1>."
+    }
 }

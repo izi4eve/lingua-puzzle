@@ -68,6 +68,10 @@ body { background-color: rgb(255, 200, 0); }
   transition: background-color 2s ease;
 }
 
+.policy-link {
+  color: #ffc800;
+}
+
 
 
 code { font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; }

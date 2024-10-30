@@ -15,5 +15,9 @@
     "passed": "Aprobado",
     "progress": "Progreso",
     "tips": "Consejo",
-    "tips-text": "<strong>No tengas</strong> miedo de cometer <strong>errores</strong>. El resultado depende de cuán <strong>rápido</strong> y <strong>regularmente</strong> lo repitas <strong>una y otra vez</strong>. No gana el más fuerte, el más inteligente o el más talentoso, sino quien <strong>nunca se rinde</strong>."
+    "tips-text": "<strong>No tengas</strong> miedo de cometer <strong>errores</strong>. El resultado depende de cuán <strong>rápido</strong> y <strong>regularmente</strong> lo repitas <strong>una y otra vez</strong>. No gana el más fuerte, el más inteligente o el más talentoso, sino quien <strong>nunca se rinde</strong>.",
+    "cookie": {
+        "acceptButton": "Aceptar",
+        "message": "Este sitio web utiliza cookies para garantizar la mejor experiencia de usuario. Por favor, revise nuestra <1>Política de privacidad</1>."
+    }
 }

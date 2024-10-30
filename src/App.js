@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 import { QRCodeCanvas } from 'qrcode.react';
 import FileUploader from './components/FileUploader';
 import LearningComponent from './components/LearningComponent';
 import NavigationComponent from './components/NavigationComponent';
 import Tips from './components/Tips';
+import CookieConsent from "react-cookie-consent";
 
 const App = () => {
-  const { i18n } = useTranslation();
-  
+  const { t, i18n } = useTranslation();
+
   const appUrl = "https://izi4eve.github.io/lingua-puzzle/";
 
   const [data, setData] = useState(() => {
@@ -24,6 +25,9 @@ const App = () => {
   const supportedLanguages = ['en', 'de', 'fr', 'it', 'es', 'pt', 'pl', 'cs', 'uk', 'sh', 'ru', 'tr', 'ar', 'fa'];
   const [language, setLanguage] = useState(localStorage.getItem('selectedLanguage') || 'en');
   const [ttsLanguage, setTTSLanguage] = useState(localStorage.getItem('ttsLanguage') || 'en-US');
+
+  const privacyPolicyPath = i18n.language === 'en' ? '/policies/privacy-policy.md' : `/policies/privacy-policy.${i18n.language}.md`;
+
   const count = 5;
 
   const handleDataLoaded = (loadedData) => {
@@ -53,7 +57,7 @@ const App = () => {
     // Определяем язык браузера и выбираем его, если он поддерживается; иначе - английский
     const browserLanguage = navigator.language.split('-')[0];
     const savedLanguage = localStorage.getItem('selectedLanguage');
-  
+
     if (!savedLanguage) {
       const defaultLanguage = supportedLanguages.includes(browserLanguage) ? browserLanguage : 'en';
       setLanguage(defaultLanguage);
@@ -102,6 +106,20 @@ const App = () => {
           <div className="rounded-1 p-2 pb-1 my-4 bg-white d-inline-block float-end">
             <QRCodeCanvas value={appUrl} size={128} />
           </div>
+
+          <CookieConsent
+            location="bottom"
+            buttonText={t("cookie.acceptButton")}
+            cookieName="cookieConsent"
+            style={{ background: "#333" }}
+            buttonClasses="btn btn-sm rounded-2"
+            buttonStyle={{ color: "#333", backgroundColor: "#ffc800" }}
+          >
+            <Trans i18nKey="cookie.message">
+              This website uses cookies to ensure the best user experience. Please review our
+              <a className="policy-link" href={privacyPolicyPath} target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
+            </Trans>
+          </CookieConsent>
         </div>
       </div>
     </div>
