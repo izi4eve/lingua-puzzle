@@ -14,6 +14,8 @@
     "deleted": "Deleted",
     "passed": "Passed",
     "progress": "Progress",
+    "weak": "Weak",
+    "weak-percent": "Weak %",
     "tips": "Advice",
     "tips-text": "<strong>Don't</strong> be <strong>afraid</strong> to make <strong>mistakes</strong>. The result depends on how <strong>quickly</strong> and <strong>regularly</strong> you repeat it <strong>over</strong> and <strong>over</strong> again. It is not the strongest, the smartest, or the most talented who wins, but the one who <strong>never gives up</strong>.",
     "cookie": {

@@ -59,7 +59,9 @@ const NavigationComponent = ({ data, firstElement, setFirstElement, count }) => 
     const total = data.length;
     const learned = learnedData.length;
     const passed = learned + firstElement;
-    const progress = total > 0 ? Math.round((passed / total) * 100) : 0;
+    const progress = total > 0 ? ((passed / total) * 100).toFixed(1) : 0;
+    const weak = passed - learned;
+    const weakPercent = total > 0 ? ((weak / passed) * 100).toFixed(1) : 0;
 
     return (
         <div className="whiteBox rounded-4 p-3 my-3">
@@ -92,11 +94,19 @@ const NavigationComponent = ({ data, firstElement, setFirstElement, count }) => 
 
             </div>
 
-            <div className="result d-flex mt-2 mb-1">
-                <div>{t('total')}: <span>{total}</span></div>
-                <div>{t('deleted')}: <span>{learned}</span></div>
-                <div>{t('passed')}: <span>{passed}</span></div>
-                <div>{t('progress')}: <span>{progress}%</span></div>
+            <div className="result d-flex mt-3 mb-1">
+                <div>
+                    <div>{t('total')}: <span>{total}</span></div>
+                    <div className='mt-1'>{t('progress')}: <span>{progress}%</span></div>
+                </div>
+                <div>
+                    <div>{t('deleted')}: <span>{learned}</span></div>
+                    <div className='mt-1'>{t('weak')}: <span>{weak}</span></div>
+                </div>
+                <div>
+                    <div>{t('passed')}: <span>{passed}</span></div>
+                    <div className='mt-1'>{t('weak-percent')}: <span>{weakPercent}</span></div>
+                </div>
             </div>
         </div>
     );

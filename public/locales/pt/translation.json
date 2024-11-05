@@ -14,6 +14,8 @@
     "deleted": "Excluído",
     "passed": "Passado",
     "progress": "Progresso",
+    "weak": "Fraco",
+    "weak-percent": "Fraco %",
     "tips": "Conselho",
     "tips-text": "<strong>Não tenha</strong> medo de cometer <strong>erros</strong>. O resultado depende de quão <strong>rapidamente</strong> e <strong>regularmente</strong> você repete <strong>vez após vez</strong>. Não é o mais forte, o mais inteligente ou o mais talentoso que vence, mas aquele que <strong>nunca desiste</strong>.",
     "select-spot-first": "Primeiro, selecione onde deseja colocar."

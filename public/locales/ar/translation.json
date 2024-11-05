@@ -14,6 +14,8 @@
     "deleted": "تم الحذف",
     "passed": "تمت",
     "progress": "التقدم",
+    "weak": "ضعيف",
+    "weak-percent": "ضعيف %",
     "tips": "نصيحة",
     "tips-text": "<strong>لا تخف</strong> من ارتكاب <strong>الأخطاء</strong>. النتيجة تعتمد على مدى <strong>سرعة</strong> و<strong>انتظام</strong> تكرارك لها <strong>مراراً وتكراراً</strong>. ليس الأقوى أو الأذكى أو الأكثر موهبة هو الذي يفوز، بل من <strong>لا يستسلم أبداً</strong>.",
     "select-spot-first": "أولاً، حدد أين تريد وضعه."
