@@ -14,6 +14,8 @@
     "deleted": "Smazáno",
     "passed": "Prošlo",
     "progress": "Pokrok",
+    "weak": "Slabý",
+    "weak-percent": "Slabý %",
     "tips": "Rada",
     "tips-text": "<strong>Nebojte se</strong> dělat <strong>chyby</strong>. Výsledek závisí na tom, jak <strong>rychle</strong> a <strong>pravidelně</strong> to <strong>opakujete znovu a znovu</strong>. Nevyhrává nejsilnější, nejchytřejší nebo nejtalentovanější, ale ten, kdo <strong>nikdy nevzdává</strong>.",
     "select-spot-first": "Nejprve vyberte, kam to chcete vložit."
