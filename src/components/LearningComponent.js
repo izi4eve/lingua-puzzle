@@ -4,6 +4,7 @@ import Title from './Title';
 import TextToSpeech from './TextToSpeech';
 import { TbCircleNumber2Filled } from "react-icons/tb";
 import { IoMdClose } from 'react-icons/io';
+import { Toast, ToastContainer } from 'react-bootstrap';
 
 const LearningComponent = ({ data, firstElement, count, updateData, language }) => {
     const { t } = useTranslation();
@@ -13,6 +14,7 @@ const LearningComponent = ({ data, firstElement, count, updateData, language }) 
     const [selectedPart, setSelectedPart] = useState({ value: null, rowIndex: null, partIndex: null });
     const [highlightedOriginIndex, setHighlightedOriginIndex] = useState(null);
     const [matchedSpots, setMatchedSpots] = useState([]);
+    const [showWarning, setShowWarning] = useState(false); // Новое состояние для показа предупреждения
 
     const unlearnedData = data
         .map((item, index) => ({ ...item, originalIndex: index }))
@@ -55,22 +57,26 @@ const LearningComponent = ({ data, firstElement, count, updateData, language }) 
     };
 
     const handleOriginClick = (part, index) => {
-        if (selectedPart.value) {
-            if (selectedPart.value === part) {
-                const partIndex = allParts.findIndex((p, idx) => p === part && idx === index);
-                if (partIndex !== -1) {
-                    setMatchedSpots(prev => [...prev, `${selectedPart.rowIndex}-${selectedPart.partIndex}`]);
-                    setAllParts(prevParts => {
-                        const newParts = [...prevParts];
-                        newParts.splice(partIndex, 1);
-                        return newParts;
-                    });
-                    setSelectedPart({ value: null, rowIndex: null, partIndex: null });
-                }
-            } else {
-                setHighlightedOriginIndex(index);
-                setTimeout(() => setHighlightedOriginIndex(null), 2000);
+        if (!selectedPart.value) {
+            setShowWarning(true);
+            setTimeout(() => setShowWarning(false), 3000);
+            return;
+        }
+
+        if (selectedPart.value === part) {
+            const partIndex = allParts.findIndex((p, idx) => p === part && idx === index);
+            if (partIndex !== -1) {
+                setMatchedSpots(prev => [...prev, `${selectedPart.rowIndex}-${selectedPart.partIndex}`]);
+                setAllParts(prevParts => {
+                    const newParts = [...prevParts];
+                    newParts.splice(partIndex, 1);
+                    return newParts;
+                });
+                setSelectedPart({ value: null, rowIndex: null, partIndex: null });
             }
+        } else {
+            setHighlightedOriginIndex(index);
+            setTimeout(() => setHighlightedOriginIndex(null), 2000);
         }
     };
 
@@ -145,6 +151,21 @@ const LearningComponent = ({ data, firstElement, count, updateData, language }) 
                     ))
                 )}
             </div>
+
+            <ToastContainer
+                className="position-fixed top-50 start-50 translate-middle p-3"
+                style={{ maxWidth: '95%', width: '400px' }}
+            >
+                <Toast
+                    onClose={() => setShowWarning(false)}
+                    show={showWarning}
+                    delay={4000}
+                    autohide
+                    className="bg-info text-white border-0 rounded-3"
+                >
+                    <Toast.Body>{t('select-spot-first')}</Toast.Body>
+                </Toast>
+            </ToastContainer>
         </div>
     );
 };

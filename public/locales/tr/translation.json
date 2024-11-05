@@ -15,5 +15,6 @@
     "passed": "Geçildi",
     "progress": "İlerleme",
     "tips": "Tavsiye",
-    "tips-text": "<strong>Hata yapmaktan</strong> <strong>korkmayın</strong>. Sonuç, ne kadar <strong>hızlı</strong> ve <strong>düzenli</strong> tekrar ettiğinize <strong>bağlıdır</strong>. Kazanan en güçlü, en akıllı veya en yetenekli olan değil, <strong>asla pes etmeyen</strong>dir."
+    "tips-text": "<strong>Hata yapmaktan</strong> <strong>korkmayın</strong>. Sonuç, ne kadar <strong>hızlı</strong> ve <strong>düzenli</strong> tekrar ettiğinize <strong>bağlıdır</strong>. Kazanan en güçlü, en akıllı veya en yetenekli olan değil, <strong>asla pes etmeyen</strong>dir.",
+    "select-spot-first": "Öncelikle, nereye yerleştirmek istediğinizi seçin."
 }

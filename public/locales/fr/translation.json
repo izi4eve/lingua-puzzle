@@ -19,5 +19,6 @@
     "cookie": {
         "acceptButton": "Accepter",
         "message": "Ce site utilise des cookies pour assurer la meilleure expérience utilisateur. Veuillez consulter notre <1>Politique de confidentialité</1>."
-    }
+    },
+    "select-spot-first": "Sélectionnez d'abord où vous souhaitez le placer."
 }
