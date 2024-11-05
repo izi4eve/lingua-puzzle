@@ -72,6 +72,11 @@ body { background-color: rgb(255, 200, 0); }
   color: #ffc800;
 }
 
-
+.no-select {
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE, Edge */
+}
 
 code { font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; }
