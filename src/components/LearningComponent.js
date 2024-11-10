@@ -6,6 +6,8 @@ import { TbCircleNumber2Filled } from "react-icons/tb";
 import { IoMdClose } from 'react-icons/io';
 import { Toast, ToastContainer } from 'react-bootstrap';
 
+const WORD_SPLIT_REGEX = /(?=\s[\p{L}\p{N}])/u;
+
 const LearningComponent = ({ data, firstElement, count, updateData, language }) => {
     const { t } = useTranslation();
 
@@ -34,7 +36,7 @@ const LearningComponent = ({ data, firstElement, count, updateData, language }) 
     useEffect(() => {
         const collectedParts = [];
         elementsToDisplay.forEach(item => {
-            const splitForeignPart = item.foreignPart.split(/(?=\s[a-zA-Z0-9])/);
+            const splitForeignPart = item.foreignPart.split(WORD_SPLIT_REGEX);
             collectedParts.push(...splitForeignPart);
         });
 
@@ -94,7 +96,7 @@ const LearningComponent = ({ data, firstElement, count, updateData, language }) 
 
             <div className="table-box fw-bold">
                 {elementsToDisplay.map((item, rowIndex) => {
-                    const splitForeignPart = item.foreignPart.split(/(?=\s[a-zA-Z0-9])/);
+                    const splitForeignPart = item.foreignPart.split(WORD_SPLIT_REGEX);
 
                     return (
                         <div key={rowIndex} className="row-box d-flex pt-2 pb-2">
