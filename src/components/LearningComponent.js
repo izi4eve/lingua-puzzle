@@ -4,7 +4,7 @@ import Title from './Title';
 import TextToSpeech from './TextToSpeech';
 import { TbCircleNumber2Filled } from "react-icons/tb";
 import { IoMdClose } from 'react-icons/io';
-import { Toast, ToastContainer } from 'react-bootstrap';
+import { Toast, ToastContainer, Modal, Button, Form } from 'react-bootstrap';
 
 const WORD_SPLIT_REGEX = /(?=\s[\p{L}\p{N}])/u;
 
@@ -17,6 +17,10 @@ const LearningComponent = ({ data, firstElement, count, updateData, language }) 
     const [highlightedOriginIndex, setHighlightedOriginIndex] = useState(null);
     const [matchedSpots, setMatchedSpots] = useState([]);
     const [showWarning, setShowWarning] = useState(false); // Новое состояние для показа предупреждения
+
+    const [showEditModal, setShowEditModal] = useState(false);
+    const [editableTranslation, setEditableTranslation] = useState('');
+    const [editRowIndex, setEditRowIndex] = useState(null);
 
     const unlearnedData = data
         .map((item, index) => ({ ...item, originalIndex: index }))
@@ -82,6 +86,31 @@ const LearningComponent = ({ data, firstElement, count, updateData, language }) 
         }
     };
 
+    const handleOpenEditModal = (foreignPart, translation, rowIndex) => {
+        setEditableTranslation(`${foreignPart} = ${translation}`);
+        setEditRowIndex(rowIndex);
+        setShowEditModal(true);
+    };
+
+    const handleCloseEditModal = () => {
+        setShowEditModal(false);
+        setEditableTranslation('');
+    };
+
+    const handleSaveEdit = () => {
+        // Разделяем строку на две части по знаку " = "
+        const [foreignPart, translation] = editableTranslation.split('=');
+
+        const updatedData = data.map((item, i) =>
+            i === elementsToDisplay[editRowIndex].originalIndex
+                ? { ...item, foreignPart: foreignPart.trim(), translation: translation.trim() }
+                : item
+        );
+
+        updateData(updatedData);
+        setShowEditModal(false);
+    };
+
     if (unlearnedData.length === 0) {
         return (
             <div className="bg-warning-subtle rounded-4 p-3 my-3">
@@ -104,7 +133,15 @@ const LearningComponent = ({ data, firstElement, count, updateData, language }) 
                                 <div className="pe-2">
                                     <TextToSpeech text={item.foreignPart} language={language} />
                                 </div>
-                                <div className="pt-2 c-translate">{item.translation}</div>
+                                <div className="pt-2 c-translate">
+                                    <button
+                                        type="button"
+                                        onClick={() => handleOpenEditModal(item.foreignPart, item.translation, rowIndex)}
+                                        className="btn btn-link p-0 m-0"
+                                    >
+                                        {item.translation}
+                                    </button>
+                                </div>
                                 <div className="pt-2 px-1 c-equal text-center">=</div>
                                 {splitForeignPart.map((part, partIndex) => (
                                     <div
@@ -125,7 +162,8 @@ const LearningComponent = ({ data, firstElement, count, updateData, language }) 
                                         size={18}
                                         onClick={() => handleLearned(item.originalIndex)}
                                         className="light-grey"
-                                        style={{ cursor: 'pointer' }} />
+                                        style={{ cursor: 'pointer' }}
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -168,6 +206,25 @@ const LearningComponent = ({ data, firstElement, count, updateData, language }) 
                     <Toast.Body>{t('select-spot-first')}</Toast.Body>
                 </Toast>
             </ToastContainer>
+
+            <Modal show={showEditModal} onHide={handleCloseEditModal}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Редактирование записи</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <Form.Control
+                        as="textarea"
+                        rows={3}
+                        value={editableTranslation}
+                        onChange={(e) => setEditableTranslation(e.target.value)}
+                    />
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={handleCloseEditModal}>Отмена</Button>
+                    <Button variant="primary" onClick={handleSaveEdit}>Сохранить</Button>
+                </Modal.Footer>
+            </Modal>
+
         </div>
     );
 };

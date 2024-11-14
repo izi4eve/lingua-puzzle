@@ -79,4 +79,12 @@ body { background-color: rgb(255, 200, 0); }
   -ms-user-select: none; /* IE, Edge */
 }
 
+.c-translate button {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.c-translate button:hover { color: #000;}
+
 code { font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; }
