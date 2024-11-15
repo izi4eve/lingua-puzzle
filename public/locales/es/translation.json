@@ -22,5 +22,8 @@
         "acceptButton": "Aceptar",
         "message": "Este sitio web utiliza cookies para garantizar la mejor experiencia de usuario. Por favor, revise nuestra <1>Política de privacidad</1>."
     },
-    "select-spot-first": "Primero, selecciona dónde quieres colocarlo."
+    "select-spot-first": "Primero, selecciona dónde quieres colocarlo.",
+    "editing-entry": "Editando entrada",
+    "save": "Guardar",
+    "cancel": "Cancelar"
 }

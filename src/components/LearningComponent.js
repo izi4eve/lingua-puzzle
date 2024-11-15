@@ -133,7 +133,8 @@ const LearningComponent = ({ data, firstElement, count, updateData, language }) 
                                 <div className="pe-2">
                                     <TextToSpeech text={item.foreignPart} language={language} />
                                 </div>
-                                <div className="pt-2 c-translate">
+
+                                <div className="pt-1 c-translate">
                                     <button
                                         type="button"
                                         onClick={() => handleOpenEditModal(item.foreignPart, item.translation, rowIndex)}
@@ -142,7 +143,9 @@ const LearningComponent = ({ data, firstElement, count, updateData, language }) 
                                         {item.translation}
                                     </button>
                                 </div>
-                                <div className="pt-2 px-1 c-equal text-center">=</div>
+
+                                <div className="pt-1 px-1 c-equal text-center">=</div>
+
                                 {splitForeignPart.map((part, partIndex) => (
                                     <div
                                         key={partIndex}
@@ -209,7 +212,7 @@ const LearningComponent = ({ data, firstElement, count, updateData, language }) 
 
             <Modal show={showEditModal} onHide={handleCloseEditModal}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Редактирование записи</Modal.Title>
+                    <Modal.Title>{t('editing-entry')}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <Form.Control
@@ -220,8 +223,8 @@ const LearningComponent = ({ data, firstElement, count, updateData, language }) 
                     />
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="secondary" onClick={handleCloseEditModal}>Отмена</Button>
-                    <Button variant="primary" onClick={handleSaveEdit}>Сохранить</Button>
+                    <Button variant="outline-dark btn-sm rounded-2" onClick={handleCloseEditModal}>{t('cancel')}</Button>
+                    <Button variant="dark btn-sm rounded-2" onClick={handleSaveEdit}>{t('save')}</Button>
                 </Modal.Footer>
             </Modal>
 

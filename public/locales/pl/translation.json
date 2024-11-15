@@ -18,5 +18,8 @@
     "weak-percent": "Słaby %",
     "tips": "Porada",
     "tips-text": "<strong>Nie bój się</strong> popełniać <strong>błędów</strong>. Wynik zależy od tego, jak <strong>szybko</strong> i <strong>regularnie</strong> powtarzasz to <strong>ciągle</strong>. Wygrywa nie najsilniejszy, najmądrzejszy czy najzdolniejszy, ale ten, kto <strong>nigdy się nie poddaje</strong>.",
-    "select-spot-first": "Najpierw wybierz, gdzie chcesz to umieścić."
+    "select-spot-first": "Najpierw wybierz, gdzie chcesz to umieścić.",
+    "editing-entry": "Edycja wpisu",
+    "save": "Zapisz",
+    "cancel": "Anuluj"
 }
