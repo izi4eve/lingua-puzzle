@@ -21,5 +21,6 @@
     "select-spot-first": "Nejprve vyberte, kam to chcete vložit.",
     "editing-entry": "Úprava záznamu",
     "save": "Uložit",
-    "cancel": "Zrušit"
+    "cancel": "Zrušit",
+    "equal-sign-error": "Překlad musí obsahovat přesně jeden znak rovnosti (=), který odděluje cizí slovo a jeho překlad."
 }

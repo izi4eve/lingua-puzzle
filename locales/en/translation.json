@@ -25,5 +25,6 @@
     "select-spot-first": "First, select where you want to place it.",
     "editing-entry": "Editing Entry",
     "save": "Save",
-    "cancel": "Cancel"
+    "cancel": "Cancel",
+    "equal-sign-error": "The translation must contain exactly one equal sign (=) separating the foreign word from its translation."
 }

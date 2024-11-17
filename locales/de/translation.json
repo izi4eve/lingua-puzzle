@@ -25,5 +25,6 @@
     "select-spot-first": "Wählen Sie zuerst aus, wo Sie es platzieren möchten.",
     "editing-entry": "Eintrag bearbeiten",
     "save": "Speichern",
-    "cancel": "Abbrechen"
+    "cancel": "Abbrechen",
+    "equal-sign-error": "Die Übersetzung muss genau ein Gleichheitszeichen (=) enthalten, das das fremde Wort von der Übersetzung trennt."
 }

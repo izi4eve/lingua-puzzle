@@ -21,5 +21,6 @@
     "select-spot-first": "Najpierw wybierz, gdzie chcesz to umieścić.",
     "editing-entry": "Edycja wpisu",
     "save": "Zapisz",
-    "cancel": "Anuluj"
+    "cancel": "Anuluj",
+    "equal-sign-error": "Tłumaczenie musi zawierać dokładnie jeden znak równości (=), oddzielający słowo obce od jego tłumaczenia."
 }
