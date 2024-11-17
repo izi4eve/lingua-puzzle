@@ -25,5 +25,6 @@
     "select-spot-first": "Seleziona prima dove vuoi inserirlo.",
     "editing-entry": "Modifica voce",
     "save": "Salva",
-    "cancel": "Annulla"
+    "cancel": "Annulla",
+    "equal-sign-error": "La traduzione deve contenere esattamente un segno di uguale (=) che separa la parola straniera dalla sua traduzione."
 }

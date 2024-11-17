@@ -4,7 +4,7 @@ import Title from './Title';
 import TextToSpeech from './TextToSpeech';
 import { TbCircleNumber2Filled } from "react-icons/tb";
 import { IoMdClose } from 'react-icons/io';
-import { Toast, ToastContainer, Modal, Button, Form } from 'react-bootstrap';
+import { Toast, ToastContainer, Modal, Button, Form, Alert } from 'react-bootstrap';
 
 const WORD_SPLIT_REGEX = /(?=\s[\p{L}\p{N}])/u;
 
@@ -20,6 +20,7 @@ const LearningComponent = ({ data, firstElement, count, updateData, language }) 
 
     const [showEditModal, setShowEditModal] = useState(false);
     const [editableTranslation, setEditableTranslation] = useState('');
+    const [errorMessage, setErrorMessage] = useState('');
     const [editRowIndex, setEditRowIndex] = useState(null);
 
     const unlearnedData = data
@@ -95,11 +96,18 @@ const LearningComponent = ({ data, firstElement, count, updateData, language }) 
     const handleCloseEditModal = () => {
         setShowEditModal(false);
         setEditableTranslation('');
+        setErrorMessage('');
     };
 
     const handleSaveEdit = () => {
         // Разделяем строку на две части по знаку " = "
         const [foreignPart, translation] = editableTranslation.split('=');
+        const equalitySigns = (editableTranslation.match(/=/g) || []).length;
+
+        if (equalitySigns !== 1) {
+            setErrorMessage(t('equal-sign-error'));
+            return;
+        }
 
         const updatedData = data.map((item, i) =>
             i === elementsToDisplay[editRowIndex].originalIndex
@@ -109,6 +117,21 @@ const LearningComponent = ({ data, firstElement, count, updateData, language }) 
 
         updateData(updatedData);
         setShowEditModal(false);
+        setErrorMessage('');
+    };
+
+    const handleTextareaChange = (e) => {
+        const input = e.target.value;
+
+        // Проверка количества знаков "="
+        const equalitySigns = (input.match(/=/g) || []).length;
+        if (equalitySigns > 1) {
+            setErrorMessage(t('equal-sign-error'));
+        } else {
+            setErrorMessage('');
+        }
+
+        setEditableTranslation(input);
     };
 
     if (unlearnedData.length === 0) {
@@ -215,16 +238,31 @@ const LearningComponent = ({ data, firstElement, count, updateData, language }) 
                     <Modal.Title>{t('editing-entry')}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
+                    {errorMessage && (
+                        <Alert variant="danger" className="p-2">
+                            {errorMessage}
+                        </Alert>
+                    )}
                     <Form.Control
                         as="textarea"
                         rows={3}
                         value={editableTranslation}
-                        onChange={(e) => setEditableTranslation(e.target.value)}
+                        // onChange={(e) => setEditableTranslation(e.target.value)}
+                        onChange={handleTextareaChange}
+                        onKeyDown={(e) => {
+                            if (e.key === 'Enter') {
+                                e.preventDefault(); // Запрет переноса строки
+                            }
+                        }}
                     />
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="outline-dark btn-sm rounded-2" onClick={handleCloseEditModal}>{t('cancel')}</Button>
-                    <Button variant="dark btn-sm rounded-2" onClick={handleSaveEdit}>{t('save')}</Button>
+                    <Button variant="outline-dark btn-sm rounded-2" onClick={handleCloseEditModal}>
+                        {t('cancel')}
+                    </Button>
+                    <Button variant="dark btn-sm rounded-2" onClick={handleSaveEdit}>
+                        {t('save')}
+                    </Button>
                 </Modal.Footer>
             </Modal>
 

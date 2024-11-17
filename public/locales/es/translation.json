@@ -25,5 +25,6 @@
     "select-spot-first": "Primero, selecciona dónde quieres colocarlo.",
     "editing-entry": "Editando entrada",
     "save": "Guardar",
-    "cancel": "Cancelar"
+    "cancel": "Cancelar",
+    "equal-sign-error": "La traducción debe contener exactamente un signo igual (=) que separe la palabra extranjera de su traducción."
 }
