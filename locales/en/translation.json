@@ -1,5 +1,7 @@
 {
-    "choose-dic": "For learning foreign language choose dictionary",
+    "choose-dic": "To study a foreign language, select a dictionary (if not already selected)",
+    "download-dic": "Download the current dictionary",
+    "reset-dic": "Reset the current dictionary",
     "select-dic": "Select a new dictionary",
     "open-txt": "Or select your own .txt file. Separate there translation by an equal sign ( = )",
     "tts-lang": "Select language for text reading",

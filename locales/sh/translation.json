@@ -1,5 +1,7 @@
 {
-    "choose-dic": "Za učenje stranog jezika odaberite rečnik",
+    "choose-dic": "Za učenje stranog jezika izaberite rečnik (ako već nije izabran)",
+    "download-dic": "Preuzmi trenutni rečnik",
+    "reset-dic": "Resetuj trenutni rečnik",
     "select-dic": "Odaberite novi rečnik",
     "open-txt": "Ili izaberite svoj .txt fajl. Odvojite prevod znakom jednakosti ( = )",
     "tts-lang": "Izaberite jezik za čitanje teksta",
