@@ -61,7 +61,7 @@ const NavigationComponent = ({ data, firstElement, setFirstElement, count }) => 
     const passed = learned + firstElement;
     const progress = total > 0 ? ((passed / total) * 100).toFixed(1) : 0;
     const weak = passed - learned;
-    const weakPercent = total > 0 ? ((weak / passed) * 100).toFixed(1) : 0;
+    const weakPercent = passed > 0 ? ((weak / passed) * 100).toFixed(1) : 0;
 
     return (
         <div className="whiteBox rounded-4 p-3 my-3">
@@ -96,16 +96,16 @@ const NavigationComponent = ({ data, firstElement, setFirstElement, count }) => 
 
             <div className="result d-flex mt-3 mb-1">
                 <div>
-                    <div>{t('total')}: <span>{total}</span></div>
-                    <div className='mt-1'>{t('progress')}: <span>{progress}%</span></div>
+                    <div>{t('total')}: <br /> <span>{total}</span></div>
+                    <div className='mt-1'>{t('progress')}: <br /> <span>{progress}%</span></div>
                 </div>
                 <div>
-                    <div>{t('deleted')}: <span>{learned}</span></div>
-                    <div className='mt-1'>{t('weak')}: <span>{weak}</span></div>
+                    <div>{t('deleted')}: <br /> <span>{learned}</span></div>
+                    <div className='mt-1'>{t('weak')}: <br /> <span>{weak}</span></div>
                 </div>
                 <div>
-                    <div>{t('passed')}: <span>{passed}</span></div>
-                    <div className='mt-1'>{t('weak-percent')}: <span>{weakPercent}</span></div>
+                    <div>{t('passed')}: <br /> <span>{passed}</span></div>
+                    <div className='mt-1'>{t('weak-percent')}: <br /> <span>{weakPercent}</span></div>
                 </div>
             </div>
         </div>

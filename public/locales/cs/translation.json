@@ -1,5 +1,7 @@
 {
-    "choose-dic": "Pro studium cizího jazyka vyberte slovník",
+    "choose-dic": "Pro studium cizího jazyka vyberte slovník (pokud ještě nebyl vybrán)",
+    "download-dic": "Stáhnout aktuální slovník",
+    "reset-dic": "Obnovit aktuální slovník",
     "select-dic": "Vyberte nový slovník",
     "open-txt": "Nebo zvolte svůj vlastní .txt soubor. Oddělte překlad znaménkem rovnosti ( = )",
     "tts-lang": "Vyberte jazyk pro čtení textu",

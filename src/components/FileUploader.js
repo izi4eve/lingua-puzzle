@@ -91,6 +91,13 @@ const FileUploader = ({ onDataLoaded, onTTSLanguageChange, data }) => {
         URL.revokeObjectURL(url);
     };
 
+    const resetDictionary = () => {
+        const resetData = data.map((entry) => ({ ...entry, isLearned: false }));
+        localStorage.setItem('data', JSON.stringify(resetData));
+        localStorage.setItem('firstElement', JSON.stringify(0));
+        onDataLoaded(resetData);  // Обновляем data в родительском компоненте
+    };
+
     const handleSelectFile = (event) => {
         const selectedFileName = event.target.value;
         setSelectedFile(selectedFileName);
@@ -147,9 +154,14 @@ const FileUploader = ({ onDataLoaded, onTTSLanguageChange, data }) => {
 
             <div className="pt-2">
                 {data.length > 0 && (
-                    <button className="btn btn-sm btn-outline-dark" onClick={exportDictionary}>
-                        Экспортировать словарь
-                    </button>
+                    <div>
+                        <button className="btn btn-sm btn-outline-dark me-2 mb-2" onClick={resetDictionary}>
+                            {t('reset-dic')}
+                        </button>
+                        <button className="btn btn-sm btn-dark mb-2" onClick={exportDictionary}>
+                            {t('download-dic')}
+                        </button>
+                    </div>
                 )}
             </div>
 

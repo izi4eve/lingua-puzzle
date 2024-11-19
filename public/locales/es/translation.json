@@ -1,5 +1,7 @@
 {
-    "choose-dic": "Para aprender un idioma extranjero, elige un diccionario",
+    "choose-dic": "Para estudiar un idioma extranjero, seleccione un diccionario (si aún no está seleccionado)",
+    "download-dic": "Descargar el diccionario actual",
+    "reset-dic": "Restablecer el diccionario actual",
     "select-dic": "Selecciona un nuevo diccionario",
     "open-txt": "O selecciona tu propio archivo .txt. Separa la traducción con un signo igual ( = )",
     "tts-lang": "Selecciona el idioma para la lectura de texto",
