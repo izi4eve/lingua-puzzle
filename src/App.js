@@ -94,7 +94,7 @@ const App = () => {
             </div>
           </div>
 
-          <FileUploader onDataLoaded={handleDataLoaded} onTTSLanguageChange={handleTTSLanguageChange} />
+          <FileUploader onDataLoaded={handleDataLoaded} onTTSLanguageChange={handleTTSLanguageChange} data={data} />
           <LearningComponent data={data} firstElement={firstElement} count={count} updateData={setData} language={ttsLanguage} />
           <NavigationComponent
             data={data}

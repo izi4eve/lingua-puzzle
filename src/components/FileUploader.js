@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import Title from './Title';
 import { TbCircleNumber1Filled } from "react-icons/tb";
 
-const FileUploader = ({ onDataLoaded, onTTSLanguageChange }) => {
+const FileUploader = ({ onDataLoaded, onTTSLanguageChange, data }) => {
     const { t } = useTranslation();
 
     const [fileList, setFileList] = useState([]);
@@ -68,10 +68,27 @@ const FileUploader = ({ onDataLoaded, onTTSLanguageChange }) => {
             .filter(line => line.trim().length >= 3)
             .map(line => {
                 const [foreignPart, translation] = line.split('=').map(part => part.trim());
-                return { foreignPart, translation, isLearned: false };
+                const isLearned = line.trim().endsWith('='); // Проверяем, есть ли '=' в конце строки
+                return { foreignPart, translation, isLearned };
             });
 
         onDataLoaded(filteredData);
+    };
+
+    const exportDictionary = () => {
+        const data = JSON.parse(localStorage.getItem('data')) || [];
+
+        const content = data.map(({ foreignPart, translation, isLearned }) => {
+            return `${foreignPart} = ${translation}${isLearned ? ' =' : ''}`;
+        }).join('\n');
+
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'dictionary.txt';
+        link.click();
+        URL.revokeObjectURL(url);
     };
 
     const handleSelectFile = (event) => {
@@ -127,6 +144,15 @@ const FileUploader = ({ onDataLoaded, onTTSLanguageChange }) => {
                     ))}
                 </select>
             </div>
+
+            <div className="pt-2">
+                {data.length > 0 && (
+                    <button className="btn btn-sm btn-outline-dark" onClick={exportDictionary}>
+                        Экспортировать словарь
+                    </button>
+                )}
+            </div>
+
         </div>
     );
 };
