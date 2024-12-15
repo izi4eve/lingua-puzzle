@@ -24,12 +24,20 @@ const NavigationComponent = ({ data, firstElement, setFirstElement, count }) => 
 
     // Обработчик для кнопки "Назад"
     const handleBack = () => {
-        setFirstElement(Math.max(0, firstElement - count));
+        if (firstElement === 0) {
+            setFirstElement(maxUnlearnedIndex); // Перемещаем на последний доступный индекс
+        } else {
+            setFirstElement(Math.max(0, firstElement - count));
+        }
     };
 
     // Обработчик для кнопки "Вперёд"
     const handleForward = () => {
-        setFirstElement(Math.min(firstElement + count, maxUnlearnedIndex));
+        if (firstElement >= maxUnlearnedIndex) {
+            setFirstElement(0); // Перемещаем на начало
+        } else {
+            setFirstElement(Math.min(firstElement + count, maxUnlearnedIndex));
+        }
     };
 
     // Обработчик для изменения текста в поле ввода
@@ -68,11 +76,11 @@ const NavigationComponent = ({ data, firstElement, setFirstElement, count }) => 
             <Title icon={<TbCircleNumber3Filled size={28} />} text={t('navigate')} />
             <div className="d-flex my-1">
                 <div className="btn-group me-3">
-                    <Button onClick={handleBack} variant="outline-dark" disabled={firstElement === 0}>
+                    <Button onClick={handleBack} variant="outline-dark">
                         {t('prev')}
                     </Button>
 
-                    <Button onClick={handleForward} variant="outline-dark" disabled={firstElement >= maxUnlearnedIndex}>
+                    <Button onClick={handleForward} variant="outline-dark">
                         {t('next')}
                     </Button>
                 </div>
@@ -87,7 +95,6 @@ const NavigationComponent = ({ data, firstElement, setFirstElement, count }) => 
                     />
 
                     <Button onClick={handleGo} variant="outline-dark" className="">
-                        {/* {t('move')} */}
                         <FaArrowRight />
                     </Button>
                 </div>
