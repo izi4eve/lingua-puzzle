@@ -24,5 +24,13 @@
     "editing-entry": "Girdi Düzenleme",
     "save": "Kaydet",
     "cancel": "İptal",
-    "equal-sign-error": "Çeviri, yabancı kelimeyi çevirisinden ayıran tam olarak bir eşittir işareti (=) içermelidir."
+    "equal-sign-error": "Çeviri, yabancı kelimeyi çevirisinden ayıran tam olarak bir eşittir işareti (=) içermelidir.",
+    "listen-dictionary": "Sözlüğü dinleyin",
+    "your-language": "Diliniz",
+    "learning-language": "Öğrenilen dil",
+    "reading-speed": "Okuma hızı",
+    "repeat-each-record": "Her kaydı tekrarla",
+    "current-record": "Geçerli kayıt",
+    "record": "Kayıt",
+    "repeat": "Tekrar"
 }

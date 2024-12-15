@@ -28,5 +28,13 @@
     "editing-entry": "Édition de l'entrée",
     "save": "Enregistrer",
     "cancel": "Annuler",
-    "equal-sign-error": "La traduction doit contenir exactement un signe égal (=) séparant le mot étranger de sa traduction."
+    "equal-sign-error": "La traduction doit contenir exactement un signe égal (=) séparant le mot étranger de sa traduction.",
+    "listen-dictionary": "Écoutez le dictionnaire",
+    "your-language": "Votre langue",
+    "learning-language": "Langue apprise",
+    "reading-speed": "Vitesse de lecture",
+    "repeat-each-record": "Répéter chaque enregistrement",
+    "current-record": "Enregistrement actuel",
+    "record": "Enregistrement",
+    "repeat": "Répéter"
 }

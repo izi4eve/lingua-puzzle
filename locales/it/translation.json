@@ -28,5 +28,13 @@
     "editing-entry": "Modifica voce",
     "save": "Salva",
     "cancel": "Annulla",
-    "equal-sign-error": "La traduzione deve contenere esattamente un segno di uguale (=) che separa la parola straniera dalla sua traduzione."
+    "equal-sign-error": "La traduzione deve contenere esattamente un segno di uguale (=) che separa la parola straniera dalla sua traduzione.",
+    "listen-dictionary": "Ascolta il dizionario",
+    "your-language": "La tua lingua",
+    "learning-language": "Lingua da imparare",
+    "reading-speed": "Velocità di lettura",
+    "repeat-each-record": "Ripeti ogni registrazione",
+    "current-record": "Registrazione attuale",
+    "record": "Registrazione",
+    "repeat": "Ripeti"
 }
