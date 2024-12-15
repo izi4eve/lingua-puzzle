@@ -24,5 +24,13 @@
     "editing-entry": "Úprava záznamu",
     "save": "Uložit",
     "cancel": "Zrušit",
-    "equal-sign-error": "Překlad musí obsahovat přesně jeden znak rovnosti (=), který odděluje cizí slovo a jeho překlad."
+    "equal-sign-error": "Překlad musí obsahovat přesně jeden znak rovnosti (=), který odděluje cizí slovo a jeho překlad.",
+    "listen-dictionary": "Poslouchejte slovník",
+    "your-language": "Váš jazyk",
+    "learning-language": "Učený jazyk",
+    "reading-speed": "Rychlost čtení",
+    "repeat-each-record": "Opakovat každou nahrávku",
+    "current-record": "Aktuální nahrávka",
+    "record": "Nahrávka",
+    "repeat": "Opakování"
 }

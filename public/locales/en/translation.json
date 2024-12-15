@@ -28,5 +28,13 @@
     "editing-entry": "Editing Entry",
     "save": "Save",
     "cancel": "Cancel",
-    "equal-sign-error": "The translation must contain exactly one equal sign (=) separating the foreign word from its translation."
+    "equal-sign-error": "The translation must contain exactly one equal sign (=) separating the foreign word from its translation.",
+    "listen-dictionary": "Listen to the dictionary",
+    "your-language": "Your language",
+    "learning-language": "Learning language",
+    "reading-speed": "Reading speed",
+    "repeat-each-record": "Repeat each record",
+    "current-record": "Current record",
+    "record": "Record",
+    "repeat": "Repeat"
 }

@@ -24,5 +24,13 @@
     "editing-entry": "Uređivanje unosa",
     "save": "Sačuvaj",
     "cancel": "Otkaži",
-    "equal-sign-error": "Prevod treba da sadrži tačno jedan znak jednakosti (=) koji razdvaja stranu reč i njen prevod."
+    "equal-sign-error": "Prevod treba da sadrži tačno jedan znak jednakosti (=) koji razdvaja stranu reč i njen prevod.",
+    "listen-dictionary": "Slušajte rečnik",
+    "your-language": "Vaš jezik",
+    "learning-language": "Učeni jezik",
+    "reading-speed": "Brzina čitanja",
+    "repeat-each-record": "Ponovite svaki zapis",
+    "current-record": "Trenutni zapis",
+    "record": "Zapis",
+    "repeat": "Ponoviti"
 }

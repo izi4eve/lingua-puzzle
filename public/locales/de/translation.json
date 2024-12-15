@@ -28,5 +28,13 @@
     "editing-entry": "Eintrag bearbeiten",
     "save": "Speichern",
     "cancel": "Abbrechen",
-    "equal-sign-error": "Die Übersetzung muss genau ein Gleichheitszeichen (=) enthalten, das das fremde Wort von der Übersetzung trennt."
+    "equal-sign-error": "Die Übersetzung muss genau ein Gleichheitszeichen (=) enthalten, das das fremde Wort von der Übersetzung trennt.",
+    "listen-dictionary": "Hören Sie das Wörterbuch",
+    "your-language": "Ihre Sprache",
+    "learning-language": "Gelernte Sprache",
+    "reading-speed": "Lesegeschwindigkeit",
+    "repeat-each-record": "Jeden Eintrag wiederholen",
+    "current-record": "Aktueller Eintrag",
+    "record": "Eintrag",
+    "repeat": "Wiederholen"
 }

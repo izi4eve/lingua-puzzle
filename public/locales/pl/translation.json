@@ -24,5 +24,13 @@
     "editing-entry": "Edycja wpisu",
     "save": "Zapisz",
     "cancel": "Anuluj",
-    "equal-sign-error": "Tłumaczenie musi zawierać dokładnie jeden znak równości (=), oddzielający słowo obce od jego tłumaczenia."
+    "equal-sign-error": "Tłumaczenie musi zawierać dokładnie jeden znak równości (=), oddzielający słowo obce od jego tłumaczenia.",
+    "listen-dictionary": "Słuchaj słownika",
+    "your-language": "Twój język",
+    "learning-language": "Język do nauki",
+    "reading-speed": "Szybkość czytania",
+    "repeat-each-record": "Powtarzaj każde nagranie",
+    "current-record": "Bieżące nagranie",
+    "record": "Nagranie",
+    "repeat": "Powtórz"
 }
