@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
-import Title from './Title';
-import { FaPlay, FaPause, FaArrowRight } from "react-icons/fa";
-import { TbCircleNumber4Filled, TbPlayerTrackPrevFilled, TbPlayerTrackNextFilled } from "react-icons/tb";
+import React, { useCallback, useEffect, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
+import { FaArrowRight, FaPause, FaPlay } from "react-icons/fa";
+import { TbCircleNumber4Filled, TbPlayerTrackNextFilled, TbPlayerTrackPrevFilled } from "react-icons/tb";
+import Title from './Title';
 
 const DictionaryPlayer = ({ data, firstElement, updateFirstElement, ttsLanguage, onTTSLanguageChange, languages }) => {
     const { t } = useTranslation();
@@ -133,7 +133,7 @@ const DictionaryPlayer = ({ data, firstElement, updateFirstElement, ttsLanguage,
         }
     }, [currentRecord, isPlaying, playCurrentRecord]);
 
-    const handlePlayPause = () => {
+    const handlePlayPause = useCallback(() => {
         if (isPlaying) {
             window.speechSynthesis.cancel(); // Прекращаем текущее воспроизведение
             setIsPlaying(false); // Останавливаем режим воспроизведения
@@ -143,16 +143,16 @@ const DictionaryPlayer = ({ data, firstElement, updateFirstElement, ttsLanguage,
             setIsPlaying(true); // Включаем режим воспроизведения
             playCurrentRecord(); // Запускаем текущую запись
         }
-    };
+    }, [isPlaying, playCurrentRecord]);
 
-    const handlePrev = () => {
+    const handlePrev = useCallback(() => {
         window.speechSynthesis.cancel(); // Прекращаем текущее проигрывание
         setIsSpeaking(false); // Сбрасываем состояние, чтобы позволить новый запуск
         setCurrentRepeat(0); // Сбрасываем счётчик повторов
         const prevRecord = Math.max(currentRecord - 1, 0);
         setCurrentRecord(prevRecord);
         updateFirstElement(prevRecord);
-    };
+    }, [currentRecord, updateFirstElement]);
 
     const handleInputChange = (e) => {
         setInputValue(e.target.value);
@@ -169,6 +169,25 @@ const DictionaryPlayer = ({ data, firstElement, updateFirstElement, ttsLanguage,
             handleGo();
         }
     };
+
+    useEffect(() => {
+        if ('mediaSession' in navigator) {
+            navigator.mediaSession.metadata = new window.MediaMetadata({
+                title: 'Dictionary Player',
+                artist: 'Language Learning',
+                album: 'Your App',
+                artwork: [
+                    { src: 'icon.png', sizes: '96x96', type: 'image/png' },
+                    { src: 'icon-large.png', sizes: '512x512', type: 'image/png' },
+                ]
+            });
+    
+            navigator.mediaSession.setActionHandler('play', handlePlayPause);
+            navigator.mediaSession.setActionHandler('pause', handlePlayPause);
+            navigator.mediaSession.setActionHandler('nexttrack', handleNext);
+            navigator.mediaSession.setActionHandler('previoustrack', handlePrev);
+        }
+    }, [handlePlayPause, handleNext, handlePrev]);
 
     return (
         <div className="whiteBox rounded-4 p-3 my-3">
