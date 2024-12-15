@@ -20,6 +20,12 @@ const DictionaryPlayer = ({ data, firstElement, updateFirstElement, ttsLanguage,
     const filteredData = data.filter((item) => !item.isLearned); // Фильтруем записи
     const maxIndex = filteredData.length - 1;
 
+    useEffect(() => {
+        if (!window.speechSynthesis) {
+            alert('SpeechSynthesis is not supported in your browser.');
+        }
+    }, []);
+
     // Сохранение параметров в localStorage
     useEffect(() => {
         const savedSettings = localStorage.getItem('playerSettings');
@@ -46,15 +52,20 @@ const DictionaryPlayer = ({ data, firstElement, updateFirstElement, ttsLanguage,
     }, [firstElement]);
 
     const playAudio = useCallback(async (text, lang) => {
+        if (!window.speechSynthesis) {
+            alert('SpeechSynthesis is not supported in your browser.');
+            return Promise.reject(new Error('SpeechSynthesis is not supported.'));
+        }
+
         return new Promise((resolve, reject) => {
             try {
                 const utterance = new SpeechSynthesisUtterance(text);
                 utterance.lang = lang;
                 utterance.rate = readingSpeed;
-    
+
                 utterance.onend = () => resolve(); // Завершаем промис по завершении речи
                 utterance.onerror = (e) => reject(e); // Обрабатываем ошибки
-    
+
                 window.speechSynthesis.speak(utterance);
             } catch (error) {
                 reject(error);
@@ -72,16 +83,21 @@ const DictionaryPlayer = ({ data, firstElement, updateFirstElement, ttsLanguage,
     }, [currentRecord, maxIndex, updateFirstElement]);
 
     const playCurrentRecord = useCallback(async () => {
+        if (!window.speechSynthesis) {
+            alert('SpeechSynthesis is not supported in your browser.');
+            return;
+        }
+
         if (currentRecord < 0 || currentRecord > maxIndex || isSpeaking) return;
-    
+
         setIsSpeaking(true); // Предотвращаем повторный запуск
-    
+
         const { foreignPart, translation } = filteredData[currentRecord];
-    
+
         try {
             await playAudio(translation, selectedLanguage);
             await playAudio(foreignPart, ttsLanguage);
-    
+
             setCurrentRepeat((prev) => {
                 const nextRepeat = prev + 1;
                 if (nextRepeat < repeatCount) {
