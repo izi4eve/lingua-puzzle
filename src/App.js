@@ -27,6 +27,17 @@ const App = () => {
   const [language, setLanguage] = useState(localStorage.getItem('selectedLanguage') || 'en');
   const [ttsLanguage, setTTSLanguage] = useState(localStorage.getItem('ttsLanguage') || 'en-US');
 
+  const languages = [
+    { name: 'English', code: 'en-US' },
+    { name: 'Deutsch', code: 'de-DE' },
+    { name: 'Français', code: 'fr-FR' },
+    { name: 'Italiano', code: 'it-IT' },
+    { name: 'Español', code: 'es-ES' },
+    { name: 'Português', code: 'pt-PT' },
+    { name: 'Polski', code: 'pl-PL' },
+    { name: 'Čeština', code: 'cs-CZ' }
+  ];
+
   const privacyPolicyPath = i18n.language === 'en' ? '/policies/privacy-policy.md' : `/policies/privacy-policy.${i18n.language}.md`;
 
   const count = 5;
@@ -44,6 +55,7 @@ const App = () => {
 
   const handleTTSLanguageChange = (newTTSLanguage) => {
     setTTSLanguage(newTTSLanguage);
+    localStorage.setItem('ttsLanguage', newTTSLanguage);
   };
 
   useEffect(() => {
@@ -95,7 +107,14 @@ const App = () => {
             </div>
           </div>
 
-          <FileUploader onDataLoaded={handleDataLoaded} onTTSLanguageChange={handleTTSLanguageChange} data={data} />
+          <FileUploader
+            onDataLoaded={handleDataLoaded}
+            onTTSLanguageChange={handleTTSLanguageChange}
+            data={data}
+            ttsLanguage={ttsLanguage}
+            languages={languages}
+          />
+
           <LearningComponent data={data} firstElement={firstElement} count={count} updateData={setData} language={ttsLanguage} />
           <NavigationComponent
             data={data}
@@ -110,6 +129,8 @@ const App = () => {
             firstElement={firstElement}
             updateFirstElement={setFirstElement}
             ttsLanguage={ttsLanguage}
+            onTTSLanguageChange={handleTTSLanguageChange}
+            languages={languages}
           />
 
           <Tips />

@@ -3,37 +3,17 @@ import { useTranslation } from 'react-i18next';
 import Title from './Title';
 import { TbCircleNumber1Filled } from "react-icons/tb";
 
-const FileUploader = ({ onDataLoaded, onTTSLanguageChange, data }) => {
+const FileUploader = ({ onDataLoaded, onTTSLanguageChange, data, ttsLanguage, languages }) => {
     const { t } = useTranslation();
 
     const [fileList, setFileList] = useState([]);
     const [selectedFile, setSelectedFile] = useState('');
-    const [selectedLanguage, setSelectedLanguage] = useState('en-US');
-
-    const languages = [
-        { name: 'English', code: 'en-US' },
-        { name: 'Deutsch', code: 'de-DE' },
-        { name: 'Français', code: 'fr-FR' },
-        { name: 'Italiano', code: 'it-IT' },
-        { name: 'Español', code: 'es-ES' },
-        { name: 'Português', code: 'pt-PT' },
-        { name: 'Polski', code: 'pl-PL' },
-        { name: 'Čeština', code: 'cs-CZ' }
-    ];
 
     useEffect(() => {
         // Загружаем сохранённый язык озвучивания или устанавливаем язык по умолчанию
         const savedTTSLanguage = localStorage.getItem('ttsLanguage') || 'en-US';
-        setSelectedLanguage(savedTTSLanguage);
         onTTSLanguageChange(savedTTSLanguage);
     }, [onTTSLanguageChange]);
-
-    const handleTTSLanguageChange = (event) => {
-        const newLanguage = event.target.value;
-        setSelectedLanguage(newLanguage);
-        localStorage.setItem('ttsLanguage', newLanguage); // Сохраняем выбранный язык в localStorage
-        onTTSLanguageChange(newLanguage); // Передаем выбранный язык в родительский компонент
-    };
 
     const fetchFileList = () => {
         try {
@@ -145,7 +125,8 @@ const FileUploader = ({ onDataLoaded, onTTSLanguageChange, data }) => {
             </div>
 
             <div className="h6 pt-2">
-                {t('tts-lang')}: <select value={selectedLanguage} onChange={handleTTSLanguageChange}>
+                {t('tts-lang')}:
+                <select value={ttsLanguage} onChange={(e) => onTTSLanguageChange(e.target.value)}>
                     {languages.map((lang) => (
                         <option key={lang.code} value={lang.code}>{lang.name}</option>
                     ))}

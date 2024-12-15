@@ -1,29 +1,24 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
-import { FaPlay, FaPause, FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import Title from './Title';
+import { FaPlay, FaPause, FaArrowRight } from "react-icons/fa";
+import { TbCircleNumber4Filled, TbPlayerTrackPrevFilled, TbPlayerTrackNextFilled } from "react-icons/tb";
 import { Button, Form } from 'react-bootstrap';
 
-const DictionaryPlayer = ({ data, firstElement, updateFirstElement, ttsLanguage }) => {
+const DictionaryPlayer = ({ data, firstElement, updateFirstElement, ttsLanguage, onTTSLanguageChange, languages }) => {
     const { t } = useTranslation();
 
-    useEffect(() => {
-        // Обновляем локальное состояние при изменении firstElement
-        setCurrentRecord(firstElement);
-    }, [firstElement]);
-
-    // Состояния для управления
     const [currentRecord, setCurrentRecord] = useState(firstElement); // Нумерация от 0
     const [repeatCount, setRepeatCount] = useState(3);
+    const [currentRepeat, setCurrentRepeat] = useState(0); // Состояние для текущего повтора
     const [isPlaying, setIsPlaying] = useState(false);
     const [selectedLanguage, setSelectedLanguage] = useState(ttsLanguage);
     const [readingSpeed, setReadingSpeed] = useState(0.5);
     const [inputValue, setInputValue] = useState(firstElement.toString());
+    const [isSpeaking, setIsSpeaking] = useState(false); // Условие, чтобы избежать повторов
 
     const filteredData = data.filter((item) => !item.isLearned); // Фильтруем записи
     const maxIndex = filteredData.length - 1;
-
-    const currentRepeat = useRef(0); // Текущий повтор
-    const speechSynthesisRef = useRef(null); // Ссылка на синтез речи
 
     // Сохранение параметров в localStorage
     useEffect(() => {
@@ -44,88 +39,102 @@ const DictionaryPlayer = ({ data, firstElement, updateFirstElement, ttsLanguage 
         }));
     }, [selectedLanguage, readingSpeed, repeatCount]);
 
-    // Воспроизведение текущей записи
+    // Синхронизация currentRecord с firstElement
     useEffect(() => {
-        // Синхронизация inputValue при изменении currentRecord
-        setInputValue(currentRecord.toString());
-    }, [currentRecord]);
+        setCurrentRecord(firstElement);
+        setInputValue(firstElement.toString());
+    }, [firstElement]);
 
-    const playCurrentRecord = () => {
-        if (currentRecord < 0 || currentRecord > maxIndex) return;
+    const handleNext = useCallback(() => {
+        window.speechSynthesis.cancel(); // Прекращаем текущее проигрывание
+        setIsSpeaking(false); // Сбрасываем состояние, чтобы позволить новый запуск
+        setCurrentRepeat(0); // Сбрасываем счётчик повторов
+        const nextRecord = Math.min(currentRecord + 1, maxIndex);
+        setCurrentRecord(nextRecord);
+        updateFirstElement(nextRecord);
+    }, [currentRecord, maxIndex, updateFirstElement]);
+
+    const playCurrentRecord = useCallback(() => {
+        if (currentRecord < 0 || currentRecord > maxIndex || isSpeaking) return;
+
+        setIsSpeaking(true); // Предотвращаем повторный запуск
 
         const { foreignPart, translation } = filteredData[currentRecord];
 
         const utterTranslation = new SpeechSynthesisUtterance(translation);
         utterTranslation.lang = selectedLanguage;
-        utterTranslation.rate = 1;
+        utterTranslation.rate = readingSpeed;
 
         const utterForeignPart = new SpeechSynthesisUtterance(foreignPart);
         utterForeignPart.lang = ttsLanguage;
         utterForeignPart.rate = readingSpeed;
 
-        speechSynthesisRef.current = utterTranslation;
-
         utterTranslation.onend = () => {
             setTimeout(() => {
-                speechSynthesisRef.current = utterForeignPart;
                 window.speechSynthesis.speak(utterForeignPart);
-            }, 500); // Пауза 0.5 сек
+            }, 500); // Пауза 0.5 сек после translation
         };
 
         utterForeignPart.onend = () => {
-            currentRepeat.current += 1; // Обновление счётчика повторов
-            if (currentRepeat.current < repeatCount) {
-                playCurrentRecord(); // Повтор записи
-            } else {
-                currentRepeat.current = 0; // Сброс счётчика повторов
-                handleNext(); // Переход к следующей записи
-            }
+            setTimeout(() => {
+                setCurrentRepeat((prev) => {
+                    const nextRepeat = prev + 1;
+                    if (nextRepeat < repeatCount) {
+                        setIsSpeaking(false); // Разрешаем повторный запуск
+                        playCurrentRecord(); // Повтор записи
+                    } else {
+                        setCurrentRepeat(0); // Сброс счётчика повторов
+                        setIsSpeaking(false); // Разрешаем запуск следующей записи
+                        handleNext(); // Переход к следующей записи
+                    }
+                    return nextRepeat;
+                });
+            }, 500); // Пауза 0.5 сек после foreignPart
         };
 
         window.speechSynthesis.speak(utterTranslation);
-    };
+    }, [currentRecord, maxIndex, filteredData, selectedLanguage, readingSpeed, ttsLanguage, repeatCount, handleNext, isSpeaking]);
 
     // Автопроигрывание после изменения currentRecord
     useEffect(() => {
         if (isPlaying) {
             playCurrentRecord();
         }
-    }, [currentRecord]);
+    }, [currentRecord, isPlaying, playCurrentRecord]);
 
-    // Обработчики управления
     const handlePlayPause = () => {
         if (isPlaying) {
-            window.speechSynthesis.cancel();
-            setIsPlaying(false);
+            window.speechSynthesis.cancel(); // Прекращаем текущее воспроизведение
+            setIsPlaying(false); // Останавливаем режим воспроизведения
+            setIsSpeaking(false); // Сбрасываем флаг воспроизведения
+            setCurrentRepeat(0); // Сбрасываем счётчик повторов
         } else {
-            setIsPlaying(true);
-            playCurrentRecord();
+            setIsPlaying(true); // Включаем режим воспроизведения
+            playCurrentRecord(); // Запускаем текущую запись
         }
     };
 
-    const handleNext = () => {
-        window.speechSynthesis.cancel();
-        const nextRecord = Math.min(currentRecord + 1, maxIndex);
-        setCurrentRecord(nextRecord);
-        updateFirstElement(nextRecord);
-    };
+    useEffect(() => {
+        setInputValue(currentRecord.toString());
+    }, [currentRecord]);
 
     const handlePrev = () => {
-        window.speechSynthesis.cancel();
+        window.speechSynthesis.cancel(); // Прекращаем текущее проигрывание
+        setIsSpeaking(false); // Сбрасываем состояние, чтобы позволить новый запуск
+        setCurrentRepeat(0); // Сбрасываем счётчик повторов
         const prevRecord = Math.max(currentRecord - 1, 0);
         setCurrentRecord(prevRecord);
         updateFirstElement(prevRecord);
     };
 
-    // Обработчик изменения значения индекса записи
     const handleInputChange = (e) => {
         setInputValue(e.target.value);
     };
 
     const handleGo = () => {
         const value = Math.max(0, Math.min(Number(inputValue), maxIndex));
-        setCurrentRecord(value); // Изменение текущей записи
-        updateFirstElement(value);
+        setCurrentRecord(value); // Обновляем currentRecord
+        updateFirstElement(value); // Уведомляем родительский компонент
     };
 
     const handleKeyPress = (e) => {
@@ -136,7 +145,7 @@ const DictionaryPlayer = ({ data, firstElement, updateFirstElement, ttsLanguage 
 
     return (
         <div className="whiteBox rounded-4 p-3 my-3">
-            <h5>{t('listen-dictionary')}</h5>
+            <Title icon={<TbCircleNumber4Filled size={28} />} text={t('listen-dictionary')} />
 
             <div className="d-flex flex-column gap-2">
                 <div>
@@ -147,6 +156,18 @@ const DictionaryPlayer = ({ data, firstElement, updateFirstElement, ttsLanguage 
                     >
                         {['en', 'de', 'fr', 'it', 'es', 'pt', 'pl', 'cs', 'uk', 'sh', 'ru', 'tr', 'ar', 'fa'].map((lang) => (
                             <option key={lang} value={lang}>{lang.toUpperCase()}</option>
+                        ))}
+                    </select>
+                </div>
+
+                <div>
+                    <label>{t('learning-language')}</label>
+                    <select
+                        value={ttsLanguage}
+                        onChange={(e) => onTTSLanguageChange(e.target.value)}
+                    >
+                        {languages.map((lang) => (
+                            <option key={lang.code} value={lang.code}>{lang.name}</option>
                         ))}
                     </select>
                 </div>
@@ -192,15 +213,15 @@ const DictionaryPlayer = ({ data, firstElement, updateFirstElement, ttsLanguage 
                 </div>
             </div>
 
-            <div className="d-flex gap-2 mt-3">
-                <button className="btn btn-outline-dark" onClick={handlePrev}>
-                    <FaArrowLeft /> {t('prev')}
+            <div className="btn-group mt-3">
+                <button className="btn btn-lg rounded-start-pill btn-outline-dark pt-1" onClick={handlePrev}>
+                    <TbPlayerTrackPrevFilled />
                 </button>
-                <button className="btn btn-dark" onClick={handlePlayPause}>
-                    {isPlaying ? <FaPause /> : <FaPlay />} {isPlaying ? t('pause') : t('play')}
+                <button className="btn btn-lg btn-dark pt-1" onClick={handlePlayPause}>
+                    {isPlaying ? <FaPause /> : <FaPlay />}
                 </button>
-                <button className="btn btn-outline-dark" onClick={handleNext}>
-                    <FaArrowRight /> {t('next')}
+                <button className="btn btn-lg rounded-end-circle btn-outline-dark pt-1" onClick={handleNext}>
+                    <TbPlayerTrackNextFilled />
                 </button>
             </div>
 
@@ -209,7 +230,7 @@ const DictionaryPlayer = ({ data, firstElement, updateFirstElement, ttsLanguage 
                     <div>
                         <p>{`${filteredData[currentRecord]?.translation} = ${filteredData[currentRecord]?.foreignPart}`}</p>
                         <p>{t('record')}: {currentRecord}/{maxIndex}</p>
-                        <p>{t('repeat')}: {currentRepeat.current}/{repeatCount}</p>
+                        <p>{t('repeat')}: {currentRepeat + 1}/{repeatCount}</p>
                     </div>
                 )}
             </div>
