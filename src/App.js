@@ -4,6 +4,7 @@ import { QRCodeCanvas } from 'qrcode.react';
 import FileUploader from './components/FileUploader';
 import LearningComponent from './components/LearningComponent';
 import NavigationComponent from './components/NavigationComponent';
+import DictionaryPlayer from './components/DictionaryPlayer';
 import Tips from './components/Tips';
 import CookieConsent from "react-cookie-consent";
 
@@ -71,9 +72,9 @@ const App = () => {
   }, [i18n]);
 
   return (
-    <div 
+    <div
       className="container no-select"
-      // onContextMenu={(e) => e.preventDefault()} // Disable the context menu
+    // onContextMenu={(e) => e.preventDefault()} // Disable the context menu
     >
       <div className="row justify-content-center">
         <div className="col-12 col-md-10 col-lg-8 col-xl-7 overflow-hidden">
@@ -102,6 +103,13 @@ const App = () => {
             setFirstElement={setFirstElement}
             count={count}
             language={language}
+          />
+
+          <DictionaryPlayer
+            data={data}
+            firstElement={firstElement}
+            updateFirstElement={setFirstElement}
+            ttsLanguage={ttsLanguage}
           />
 
           <Tips />
