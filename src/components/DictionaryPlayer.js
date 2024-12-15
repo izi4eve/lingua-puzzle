@@ -45,6 +45,23 @@ const DictionaryPlayer = ({ data, firstElement, updateFirstElement, ttsLanguage,
         setInputValue(firstElement.toString());
     }, [firstElement]);
 
+    const playAudio = useCallback(async (text, lang) => {
+        return new Promise((resolve, reject) => {
+            try {
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = lang;
+                utterance.rate = readingSpeed;
+    
+                utterance.onend = () => resolve(); // Завершаем промис по завершении речи
+                utterance.onerror = (e) => reject(e); // Обрабатываем ошибки
+    
+                window.speechSynthesis.speak(utterance);
+            } catch (error) {
+                reject(error);
+            }
+        });
+    }, [readingSpeed]);
+
     const handleNext = useCallback(() => {
         window.speechSynthesis.cancel(); // Прекращаем текущее проигрывание
         setIsSpeaking(false); // Сбрасываем состояние, чтобы позволить новый запуск
@@ -54,46 +71,44 @@ const DictionaryPlayer = ({ data, firstElement, updateFirstElement, ttsLanguage,
         updateFirstElement(nextRecord);
     }, [currentRecord, maxIndex, updateFirstElement]);
 
-    const playCurrentRecord = useCallback(() => {
+    const playCurrentRecord = useCallback(async () => {
         if (currentRecord < 0 || currentRecord > maxIndex || isSpeaking) return;
-
+    
         setIsSpeaking(true); // Предотвращаем повторный запуск
-
+    
         const { foreignPart, translation } = filteredData[currentRecord];
-
-        const utterTranslation = new SpeechSynthesisUtterance(translation);
-        utterTranslation.lang = selectedLanguage;
-        utterTranslation.rate = readingSpeed;
-
-        const utterForeignPart = new SpeechSynthesisUtterance(foreignPart);
-        utterForeignPart.lang = ttsLanguage;
-        utterForeignPart.rate = readingSpeed;
-
-        utterTranslation.onend = () => {
-            setTimeout(() => {
-                window.speechSynthesis.speak(utterForeignPart);
-            }, 500); // Пауза 0.5 сек после translation
-        };
-
-        utterForeignPart.onend = () => {
-            setTimeout(() => {
-                setCurrentRepeat((prev) => {
-                    const nextRepeat = prev + 1;
-                    if (nextRepeat < repeatCount) {
-                        setIsSpeaking(false); // Разрешаем повторный запуск
-                        playCurrentRecord(); // Повтор записи
-                    } else {
-                        setCurrentRepeat(0); // Сброс счётчика повторов
-                        setIsSpeaking(false); // Разрешаем запуск следующей записи
-                        handleNext(); // Переход к следующей записи
-                    }
-                    return nextRepeat;
-                });
-            }, 500); // Пауза 0.5 сек после foreignPart
-        };
-
-        window.speechSynthesis.speak(utterTranslation);
-    }, [currentRecord, maxIndex, filteredData, selectedLanguage, readingSpeed, ttsLanguage, repeatCount, handleNext, isSpeaking]);
+    
+        try {
+            await playAudio(translation, selectedLanguage);
+            await playAudio(foreignPart, ttsLanguage);
+    
+            setCurrentRepeat((prev) => {
+                const nextRepeat = prev + 1;
+                if (nextRepeat < repeatCount) {
+                    setIsSpeaking(false); // Разрешаем повторный запуск
+                    playCurrentRecord(); // Повтор записи
+                } else {
+                    setCurrentRepeat(0); // Сброс счётчика повторов
+                    setIsSpeaking(false); // Разрешаем запуск следующей записи
+                    handleNext(); // Переход к следующей записи
+                }
+                return nextRepeat;
+            });
+        } catch (error) {
+            console.error("Ошибка воспроизведения аудио:", error);
+            setIsSpeaking(false); // Сбрасываем состояние, даже если произошла ошибка
+        }
+    }, [
+        currentRecord,
+        maxIndex,
+        filteredData,
+        selectedLanguage,
+        ttsLanguage,
+        repeatCount,
+        handleNext,
+        isSpeaking,
+        playAudio,
+    ]);
 
     // Автопроигрывание после изменения currentRecord
     useEffect(() => {
@@ -113,10 +128,6 @@ const DictionaryPlayer = ({ data, firstElement, updateFirstElement, ttsLanguage,
             playCurrentRecord(); // Запускаем текущую запись
         }
     };
-
-    useEffect(() => {
-        setInputValue(currentRecord.toString());
-    }, [currentRecord]);
 
     const handlePrev = () => {
         window.speechSynthesis.cancel(); // Прекращаем текущее проигрывание
