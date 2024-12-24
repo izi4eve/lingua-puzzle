@@ -5,6 +5,7 @@ import FileUploader from './components/FileUploader';
 import LearningComponent from './components/LearningComponent';
 import NavigationComponent from './components/NavigationComponent';
 import DictionaryPlayer from './components/DictionaryPlayer';
+import PreventScreenSleep from "./PreventScreenSleep";
 import Tips from './components/Tips';
 import CookieConsent from "react-cookie-consent";
 
