@@ -139,6 +139,9 @@ const App = () => {
             <QRCodeCanvas value={appUrl} size={128} />
           </div>
 
+          {/* Компонента для предотвращения выключения экрана */}
+          <PreventScreenSleep />
+
           <CookieConsent
             location="bottom"
             buttonText={t("cookie.acceptButton")}
