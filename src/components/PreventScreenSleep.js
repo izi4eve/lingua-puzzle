@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 
-const PreventScreenSleep = () => {
+const PreventScreenSleep = ({ isPlaying }) => {
   const wakeLockRef = useRef(null);
 
   const requestWakeLock = async () => {
@@ -20,22 +20,28 @@ const PreventScreenSleep = () => {
     if (wakeLockRef.current) {
       wakeLockRef.current.release();
       wakeLockRef.current = null;
+      console.log("Wake Lock has been manually released.");
     }
   };
 
   useEffect(() => {
     if ("wakeLock" in navigator) {
-      requestWakeLock();
+      if (isPlaying) {
+        requestWakeLock();
+      } else {
+        releaseWakeLock();
+      }
     } else {
       console.warn("Wake Lock API is not supported in this browser.");
     }
 
+    // Очищаем блокировку при размонтировании
     return () => {
       releaseWakeLock();
     };
-  }, []);
+  }, [isPlaying]);
 
-  return <div style={{ display: "none" }}>Wake Lock Active</div>;
+  return null; // Компонента ничего не рендерит
 };
 
 export default PreventScreenSleep;

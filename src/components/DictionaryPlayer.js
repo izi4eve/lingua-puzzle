@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { FaArrowRight, FaPause, FaPlay } from "react-icons/fa";
 import { TbCircleNumber4Filled, TbPlayerTrackNextFilled, TbPlayerTrackPrevFilled } from "react-icons/tb";
 import Title from './Title';
+import PreventScreenSleep from './PreventScreenSleep';
 
 const DictionaryPlayer = ({ data, firstElement, updateFirstElement, ttsLanguage, onTTSLanguageChange, languages }) => {
     const { t } = useTranslation();
@@ -191,6 +192,8 @@ const DictionaryPlayer = ({ data, firstElement, updateFirstElement, ttsLanguage,
 
     return (
         <div className="whiteBox rounded-4 p-3 my-3">
+            <PreventScreenSleep isPlaying={isPlaying} />
+            
             <Title icon={<TbCircleNumber4Filled size={28} />} text={t('listen-dictionary')} />
 
             <div className="d-flex flex-column gap-2">

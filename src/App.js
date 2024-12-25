@@ -5,7 +5,6 @@ import FileUploader from './components/FileUploader';
 import LearningComponent from './components/LearningComponent';
 import NavigationComponent from './components/NavigationComponent';
 import DictionaryPlayer from './components/DictionaryPlayer';
-import PreventScreenSleep from "./components/PreventScreenSleep";
 import Tips from './components/Tips';
 import CookieConsent from "react-cookie-consent";
 
@@ -139,9 +138,6 @@ const App = () => {
           <div className="rounded-1 p-2 pb-1 my-4 bg-white d-inline-block float-end">
             <QRCodeCanvas value={appUrl} size={128} />
           </div>
-
-          {/* Компонента для предотвращения выключения экрана */}
-          <PreventScreenSleep />
 
           <CookieConsent
             location="bottom"
