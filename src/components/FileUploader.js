@@ -62,12 +62,16 @@ const FileUploader = ({ onDataLoaded, onTTSLanguageChange, data, ttsLanguage, la
             return `${foreignPart} = ${translation}${isLearned ? ' =' : ''}`;
         }).join('\n');
 
-        const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+        // Создаём Blob с указанием кодировки UTF-8
+        const blob = new Blob([`\uFEFF${content}`], { type: 'text/plain;charset=utf-8' });
         const url = URL.createObjectURL(blob);
+
         const link = document.createElement('a');
         link.href = url;
         link.download = 'dictionary.txt';
         link.click();
+
+        // Освобождаем URL для предотвращения утечек памяти
         URL.revokeObjectURL(url);
     };
 
