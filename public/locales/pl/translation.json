@@ -36,5 +36,8 @@
     "confirm-action": "Potwierdź działanie",
     "sure": "Czy jesteś pewien?",
     "yes": "Tak",
-    "records_per_page": "Rekordy na stronę"
+    "records_per_page": "Rekordy na stronę",
+    "add-entries": "Dodaj wpisy",
+    "add-entries-instruction": "Dodaj każdy wpis w nowej linii. Oddziel tłumaczenie znakiem równości ( = ).",
+    "save-to-end": "Zapisz na końcu"
 }

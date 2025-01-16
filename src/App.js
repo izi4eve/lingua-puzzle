@@ -118,11 +118,19 @@ const App = () => {
             onDataLoaded={handleDataLoaded}
             onTTSLanguageChange={handleTTSLanguageChange}
             data={data}
+            firstElement={firstElement}
             ttsLanguage={ttsLanguage}
             languages={languages}
           />
 
-          <LearningComponent data={data} firstElement={firstElement} count={count} updateData={setData} language={ttsLanguage} />
+          <LearningComponent
+            data={data}
+            firstElement={firstElement}
+            count={count}
+            updateData={setData}
+            language={ttsLanguage}
+          />
+
           <NavigationComponent
             data={data}
             firstElement={firstElement}

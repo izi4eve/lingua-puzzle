@@ -36,5 +36,8 @@
     "confirm-action": "Potvrdit akci",
     "sure": "Jste si jistý?",
     "yes": "Ano",
-    "records_per_page": "Záznamů na stránku"
+    "records_per_page": "Záznamů na stránku",
+    "add-entries": "Přidat záznamy",
+    "add-entries-instruction": "Přidejte každý záznam na nový řádek. Překlad oddělte znakem rovnosti ( = ).",
+    "save-to-end": "Uložit na konec"
 }

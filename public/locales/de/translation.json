@@ -40,5 +40,8 @@
     "confirm-action": "Aktion bestätigen",
     "sure": "Sind Sie sicher?",
     "yes": "Ja",
-    "records_per_page": "Einträge pro Seite"
+    "records_per_page": "Einträge pro Seite",
+    "add-entries": "Einträge hinzufügen",
+    "add-entries-instruction": "Fügen Sie jeden Eintrag in eine neue Zeile ein. Trennen Sie die Übersetzung mit einem Gleichheitszeichen ( = ).",
+    "save-to-end": "Ans Ende speichern"
 }

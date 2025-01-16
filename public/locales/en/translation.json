@@ -40,5 +40,8 @@
     "confirm-action": "Confirm action",
     "sure": "Are you sure?",
     "yes": "Yes",
-    "records_per_page": "Records per page"
+    "records_per_page": "Records per page",
+    "add-entries": "Add entries",
+    "add-entries-instruction": "Add each entry on a new line. Separate the translation with an equal sign ( = ).",
+    "save-to-end": "Save to end"
 }

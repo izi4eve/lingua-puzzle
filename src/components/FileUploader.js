@@ -4,11 +4,33 @@ import Title from './Title';
 import { TbCircleNumber1Filled } from "react-icons/tb";
 import { Button, Modal, Form } from 'react-bootstrap';
 
-const FileUploader = ({ onDataLoaded, onTTSLanguageChange, data, ttsLanguage, languages }) => {
+const FileUploader = ({ onDataLoaded, onTTSLanguageChange, data, firstElement, ttsLanguage, languages }) => {
     const { t } = useTranslation();
 
     const [fileList, setFileList] = useState([]);
     const [selectedFile, setSelectedFile] = useState('');
+
+    const [showAddModal, setShowAddModal] = useState(false);
+    const [newEntries, setNewEntries] = useState('');
+
+    const openAddModal = () => setShowAddModal(true);
+    const closeAddModal = () => {
+        setNewEntries('');
+        setShowAddModal(false);
+    };
+
+    const handleNewEntriesChange = (event) => {
+        const input = event.target.value;
+        setNewEntries(input);
+
+        // Проверяем количество знаков "="
+        const equalitySigns = (input.match(/=/g) || []).length;
+        if (equalitySigns !== input.split("\n").length) {
+            setErrorMessage(t('equal-sign-error')); // Используем локализацию ошибки
+        } else {
+            setErrorMessage('');
+        }
+    };
 
     const [showModal, setShowModal] = React.useState(false);
     const openModal = () => setShowModal(true);
@@ -17,6 +39,8 @@ const FileUploader = ({ onDataLoaded, onTTSLanguageChange, data, ttsLanguage, la
         resetDictionary();
         closeModal();
     };
+
+    const [errorMessage, setErrorMessage] = useState('');
 
     useEffect(() => {
         // Загружаем сохранённый язык озвучивания или устанавливаем язык по умолчанию
@@ -62,6 +86,7 @@ const FileUploader = ({ onDataLoaded, onTTSLanguageChange, data, ttsLanguage, la
             });
 
         onDataLoaded(filteredData);
+        return filteredData;
     };
 
     const exportDictionary = () => {
@@ -113,6 +138,26 @@ const FileUploader = ({ onDataLoaded, onTTSLanguageChange, data, ttsLanguage, la
         }
     };
 
+    const handleSaveEntries = (toEnd = false) => {
+        if (!newEntries.trim()) return;
+        if (errorMessage) return;
+
+        const newRecords = processFileContent(newEntries);
+        const storedData = JSON.parse(localStorage.getItem('data')) || [];
+
+        let updatedData = [...storedData];
+
+        if (toEnd) {
+            updatedData = [...storedData, ...newRecords];
+        } else {
+            updatedData.splice(firstElement, 0, ...newRecords);
+        }
+
+        localStorage.setItem('data', JSON.stringify(updatedData));
+        onDataLoaded(updatedData);
+        closeAddModal();
+    };
+
     return (
         <div className="whiteBox rounded-4 p-3 my-3">
             <Title icon={<TbCircleNumber1Filled size={28} />} text={t('choose-dic')} />
@@ -151,12 +196,15 @@ const FileUploader = ({ onDataLoaded, onTTSLanguageChange, data, ttsLanguage, la
 
             <div className="pt-2">
                 {data.length > 0 && (
-                    <div>
-                        <Button variant="btn btn-sm btn-outline-dark me-2 mb-2" onClick={openModal}>
+                    <div className="d-flex flex-row flex-wrap gap-2">
+                        <Button variant="btn btn-sm btn-outline-dark" onClick={openModal}>
                             {t('reset-dic')}
                         </Button>
-                        <Button variant="btn btn-sm btn-dark mb-2" onClick={exportDictionary}>
+                        <Button variant="btn btn-sm btn-dark" onClick={exportDictionary}>
                             {t('download-dic')}
+                        </Button>
+                        <Button variant="btn btn-sm btn-dark" onClick={openAddModal}>
+                            {t('add-entries')}
                         </Button>
                     </div>
                 )}
@@ -172,6 +220,34 @@ const FileUploader = ({ onDataLoaded, onTTSLanguageChange, data, ttsLanguage, la
                         </Button>
                         <Button variant="btn btn-sm btn-outline-dark" onClick={handleConfirmReset}>
                             {t('yes')}
+                        </Button>
+                    </Modal.Footer>
+                </Modal>
+
+                <Modal show={showAddModal} onHide={closeAddModal}>
+                    <Modal.Header closeButton>
+                        <Modal.Title>{t('add-entries')}</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <p>{t('add-entries-instruction')}</p>
+                        <Form.Control
+                            as="textarea"
+                            rows={5}
+                            value={newEntries}
+                            onChange={handleNewEntriesChange}
+                            placeholder="word = translation"
+                        />
+                        {errorMessage && <div className="text-danger mt-2">{errorMessage}</div>}
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <Button variant="btn btn-sm btn-outline-dark" onClick={() => handleSaveEntries(false)}>
+                            {t('save')}
+                        </Button>
+                        <Button variant="btn btn-sm btn-dark" onClick={() => handleSaveEntries(true)}>
+                            {t('save-to-end')}
+                        </Button>
+                        <Button variant="btn btn-sm btn-outline-dark" onClick={closeAddModal}>
+                            {t('cancel')}
                         </Button>
                     </Modal.Footer>
                 </Modal>

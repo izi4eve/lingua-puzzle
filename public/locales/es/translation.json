@@ -40,5 +40,8 @@
     "confirm-action": "Confirmar acción",
     "sure": "¿Estás seguro?",
     "yes": "Sí",
-    "records_per_page": "Registros por página"
+    "records_per_page": "Registros por página",
+    "add-entries": "Agregar entradas",
+    "add-entries-instruction": "Agregue cada entrada en una nueva línea. Separe la traducción con un signo igual ( = ).",
+    "save-to-end": "Guardar hasta el final"
 }

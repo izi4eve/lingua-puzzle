@@ -36,5 +36,8 @@
     "confirm-action": "Potvrdi radnju",
     "sure": "Jeste li sigurni?",
     "yes": "Da",
-    "records_per_page": "Zapisi po stranici"
+    "records_per_page": "Zapisi po stranici",
+    "add-entries": "Dodaj unose",
+    "add-entries-instruction": "Dodajte svaki unos u novi red. Odvojite prevod znakom jednakosti ( = ).",
+    "save-to-end": "Sačuvaj na kraj"
 }
