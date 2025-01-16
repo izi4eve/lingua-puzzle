@@ -40,7 +40,14 @@ const App = () => {
 
   const privacyPolicyPath = i18n.language === 'en' ? '/policies/privacy-policy.md' : `/policies/privacy-policy.${i18n.language}.md`;
 
-  const count = 5;
+  const [count, setCount] = useState(() => {
+    const savedCount = localStorage.getItem('count');
+    return savedCount ? JSON.parse(savedCount) : 5; // Значение по умолчанию - 5
+  });
+
+  useEffect(() => {
+    localStorage.setItem('count', JSON.stringify(count));
+  }, [count]);
 
   const handleDataLoaded = (loadedData) => {
     setFirstElement(0);
@@ -121,7 +128,7 @@ const App = () => {
             firstElement={firstElement}
             setFirstElement={setFirstElement}
             count={count}
-            language={language}
+            setCount={setCount}
           />
 
           <DictionaryPlayer

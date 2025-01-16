@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Title from './Title';
 import { TbCircleNumber1Filled } from "react-icons/tb";
+import { Form } from 'react-bootstrap';
 
 const FileUploader = ({ onDataLoaded, onTTSLanguageChange, data, ttsLanguage, languages }) => {
     const { t } = useTranslation();
@@ -109,32 +110,35 @@ const FileUploader = ({ onDataLoaded, onTTSLanguageChange, data, ttsLanguage, la
             <Title icon={<TbCircleNumber1Filled size={28} />} text={t('choose-dic')} />
 
             <div>
-                <select value={selectedFile} onChange={handleSelectFile}>
+                <Form.Select value={selectedFile} onChange={handleSelectFile} className="mt-2 w-auto">
                     <option value="">{t('select-dic')}</option>
                     {fileList.map((fileName, index) => (
                         <option key={index} value={fileName}>{fileName}</option>
                     ))}
-                </select>
+                </Form.Select>
             </div>
 
             <div className="h6 py-1 pt-2">{t('open-txt')}</div>
 
             <div>
-                <input
+                <Form.Control
                     id="file-input"
                     type="file"
                     accept=".txt"
                     onChange={handleFileChange}
+                    className="mt-2 w-auto"
                 />
             </div>
 
-            <div className="h6 pt-2">
-                {t('tts-lang')}:
-                <select value={ttsLanguage} onChange={(e) => onTTSLanguageChange(e.target.value)}>
+            <div className="h6 pt-2 d-flex align-items-center">
+                <label className="form-label mt-1 me-2">
+                    {t('tts-lang')}
+                </label>
+                <Form.Select value={ttsLanguage} onChange={(e) => onTTSLanguageChange(e.target.value)} className=" w-auto">
                     {languages.map((lang) => (
                         <option key={lang.code} value={lang.code}>{lang.name}</option>
                     ))}
-                </select>
+                </Form.Select>
             </div>
 
             <div className="pt-2">

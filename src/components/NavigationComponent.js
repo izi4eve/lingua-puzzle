@@ -5,7 +5,7 @@ import Title from './Title';
 import { TbCircleNumber3Filled } from "react-icons/tb";
 import { FaArrowRight } from "react-icons/fa";
 
-const NavigationComponent = ({ data, firstElement, setFirstElement, count }) => {
+const NavigationComponent = ({ data, firstElement, setFirstElement, count, setCount }) => {
     const { t } = useTranslation();
 
     // Фильтруем элементы, где isLearned === true (выученные)
@@ -21,6 +21,13 @@ const NavigationComponent = ({ data, firstElement, setFirstElement, count }) => 
     useEffect(() => {
         setInputValue(firstElement);
     }, [firstElement]);
+
+    // Обработчик изменения количества записей
+    const handleCountChange = (e) => {
+        const newCount = Number(e.target.value);
+        setCount(newCount);
+        localStorage.setItem('count', JSON.stringify(newCount));
+    };
 
     // Обработчик для кнопки "Назад"
     const handleBack = () => {
@@ -76,8 +83,25 @@ const NavigationComponent = ({ data, firstElement, setFirstElement, count }) => 
     return (
         <div className="whiteBox rounded-4 p-3 my-3">
             <Title icon={<TbCircleNumber3Filled size={28} />} text={t('navigate')} />
+
+            <div className="mt-1 mb-3 d-flex align-items-center">
+                <label htmlFor="countSelect" className="form-label mt-1 me-2">
+                    {t('records_per_page')}
+                </label>
+                <Form.Select
+                    id="countSelect"
+                    value={count}
+                    onChange={handleCountChange}
+                    className="w-auto"
+                >
+                    {[2, 3, 4, 5].map(num => (
+                        <option key={num} value={num}>{num}</option>
+                    ))}
+                </Form.Select>
+            </div>
+
             <div className="d-flex flex-wrap mb-1">
-                <div className="btn-group me-3 mt-2">
+                <div className="btn-group me-3 mt-1">
                     <Button onClick={handleBack} variant="outline-dark">
                         {t('prev')}
                     </Button>
@@ -91,7 +115,7 @@ const NavigationComponent = ({ data, firstElement, setFirstElement, count }) => 
                     </Button>
                 </div>
 
-                <div className="btn-group mt-2">
+                <div className="btn-group mt-1">
                     <Form.Control
                         type="text"
                         value={inputValue}
