@@ -182,7 +182,7 @@ const DictionaryPlayer = ({ data, firstElement, updateFirstElement, ttsLanguage,
                     { src: 'icon-large.png', sizes: '512x512', type: 'image/png' },
                 ]
             });
-    
+
             navigator.mediaSession.setActionHandler('play', handlePlayPause);
             navigator.mediaSession.setActionHandler('pause', handlePlayPause);
             navigator.mediaSession.setActionHandler('nexttrack', handleNext);
@@ -193,59 +193,63 @@ const DictionaryPlayer = ({ data, firstElement, updateFirstElement, ttsLanguage,
     return (
         <div className="whiteBox rounded-4 p-3 my-3">
             <PreventScreenSleep isPlaying={isPlaying} />
-            
+
             <Title icon={<TbCircleNumber4Filled size={28} />} text={t('listen-dictionary')} />
 
-            <div className="d-flex flex-column gap-2">
-                <div>
+            <div className="d-flex flex-row flex-wrap gap-2">
+                <div className="d-flex align-items-center">
                     <label>{t('your-language')}</label>
-                    <select
+                    <Form.Select
                         value={selectedLanguage}
                         onChange={(e) => setSelectedLanguage(e.target.value)}
+                        className="ms-2 w-auto"
                     >
                         {['en', 'de', 'fr', 'it', 'es', 'pt', 'pl', 'cs', 'uk', 'sh', 'ru', 'tr', 'ar', 'fa'].map((lang) => (
                             <option key={lang} value={lang}>{lang.toUpperCase()}</option>
                         ))}
-                    </select>
+                    </Form.Select>
                 </div>
 
-                <div>
+                <div className="d-flex align-items-center">
                     <label>{t('learning-language')}</label>
-                    <select
+                    <Form.Select
                         value={ttsLanguage}
                         onChange={(e) => onTTSLanguageChange(e.target.value)}
+                        className="ms-2 w-auto"
                     >
                         {languages.map((lang) => (
                             <option key={lang.code} value={lang.code}>{lang.name}</option>
                         ))}
-                    </select>
+                    </Form.Select>
                 </div>
 
-                <div>
+                <div className="d-flex align-items-center">
                     <label>{t('reading-speed')}</label>
-                    <select
+                    <Form.Select
                         value={readingSpeed}
                         onChange={(e) => setReadingSpeed(Number(e.target.value))}
+                        className="ms-2 w-auto"
                     >
                         {[0.25, 0.5, 0.75, 1].map((speed) => (
                             <option key={speed} value={speed}>{speed}</option>
                         ))}
-                    </select>
+                    </Form.Select>
                 </div>
 
-                <div>
+                <div className="d-flex align-items-center">
                     <label>{t('repeat-each-record')}</label>
-                    <select
+                    <Form.Select
                         value={repeatCount}
                         onChange={(e) => setRepeatCount(Number(e.target.value))}
+                        className="ms-2 w-auto"
                     >
                         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((count) => (
                             <option key={count} value={count}>{count}</option>
                         ))}
-                    </select>
+                    </Form.Select>
                 </div>
 
-                <div>
+                <div className="d-flex align-items-center">
                     <label>{t('current-record')}</label>
                     <div className="btn-group">
                         <Form.Control
@@ -253,7 +257,7 @@ const DictionaryPlayer = ({ data, firstElement, updateFirstElement, ttsLanguage,
                             value={inputValue}
                             onChange={handleInputChange}
                             onKeyUp={handleKeyPress}
-                            className="rounded-start index-field"
+                            className="ms-2 rounded-start index-field"
                         />
                         <Button onClick={handleGo} variant="outline-dark">
                             <FaArrowRight />
@@ -277,9 +281,15 @@ const DictionaryPlayer = ({ data, firstElement, updateFirstElement, ttsLanguage,
             <div className="mt-3">
                 {filteredData.length > 0 && (
                     <div>
-                        <p>{`${filteredData[currentRecord]?.translation} = ${filteredData[currentRecord]?.foreignPart}`}</p>
-                        <p>{t('record')}: {currentRecord}/{maxIndex}</p>
-                        <p>{t('repeat')}: {currentRepeat + 1}/{repeatCount}</p>
+                        <p className="fs-5 fw-bold">
+                            <span className="text-success">{`${filteredData[currentRecord]?.foreignPart}`}</span>
+                            <span> = </span>
+                            <span>{`${filteredData[currentRecord]?.translation}`}</span>
+                        </p>
+                        <div className="d-flex gap-3">
+                            <div>{t('record')}: <span className="fw-bold">{currentRecord + 1}/{maxIndex + 1}</span></div>
+                            <div>{t('repeat')}: <span className="fw-bold">{currentRepeat + 1}/{repeatCount}</span></div>
+                        </div>
                     </div>
                 )}
             </div>

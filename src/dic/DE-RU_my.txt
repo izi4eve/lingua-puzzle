@@ -458,6 +458,7 @@ der Eimer = ведро
 der nasse / trockene Lappen;  = тряпка мокрая / сухая
 Bub, Madl; Lumpn / Bixn = мальчик, девочка; озарной мальчик (тряпка) / девочка
 
+Dieses Geschäft ist näher bei uns. = Этот магазин ближе к нам. 
 Ich wohne in der Nähe, nicht weit weg. = Я живу рядом, недалеко. 
 weg = отсюда
 sättigend = ситно
