@@ -32,5 +32,9 @@
     "repeat-each-record": "كرر كل تسجيل",
     "current-record": "التسجيل الحالي",
     "record": "تسجيل",
-    "repeat": "تكرار"
+    "repeat": "تكرار",
+    "confirm-action": "تأكيد الإجراء",
+    "sure": "هل أنت متأكد؟",
+    "yes": "نعم",
+    "records_per_page": "سجلات لكل صفحة"
 }

@@ -36,5 +36,9 @@
     "repeat-each-record": "Répéter chaque enregistrement",
     "current-record": "Enregistrement actuel",
     "record": "Enregistrement",
-    "repeat": "Répéter"
+    "repeat": "Répéter",
+    "confirm-action": "Confirmer l'action",
+    "sure": "Êtes-vous sûr?",
+    "yes": "Oui",
+    "records_per_page": "Enregistrements par page"
 }

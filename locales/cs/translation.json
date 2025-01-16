@@ -32,5 +32,9 @@
     "repeat-each-record": "Opakovat každou nahrávku",
     "current-record": "Aktuální nahrávka",
     "record": "Nahrávka",
-    "repeat": "Opakování"
+    "repeat": "Opakování",
+    "confirm-action": "Potvrdit akci",
+    "sure": "Jste si jistý?",
+    "yes": "Ano",
+    "records_per_page": "Záznamů na stránku"
 }

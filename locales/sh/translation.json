@@ -32,5 +32,9 @@
     "repeat-each-record": "Ponovite svaki zapis",
     "current-record": "Trenutni zapis",
     "record": "Zapis",
-    "repeat": "Ponoviti"
+    "repeat": "Ponoviti",
+    "confirm-action": "Potvrdi radnju",
+    "sure": "Jeste li sigurni?",
+    "yes": "Da",
+    "records_per_page": "Zapisi po stranici"
 }

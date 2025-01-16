@@ -36,5 +36,9 @@
     "repeat-each-record": "Каждую запись повторять",
     "current-record": "Текущая запись",
     "record": "Запись",
-    "repeat": "Повтор"
+    "repeat": "Повтор",
+    "confirm-action": "Подтвердите действие",
+    "sure": "Вы уверены?",
+    "yes": "Да",
+    "records_per_page": "Записей на страницу"
 }
