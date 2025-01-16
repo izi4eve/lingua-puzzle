@@ -36,5 +36,8 @@
     "confirm-action": "Eylemi onayla",
     "sure": "Emin misiniz?",
     "yes": "Evet",
-    "records_per_page": "Sayfa başına kayıt"
+    "records_per_page": "Sayfa başına kayıt",
+    "add-entries": "Girdileri ekle",
+    "add-entries-instruction": "Her girişi yeni bir satıra ekleyin. Çeviriyi eşittir işareti ( = ) ile ayırın.",
+    "save-to-end": "Sonuna kaydet"
 }
