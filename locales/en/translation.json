@@ -36,5 +36,8 @@
     "repeat-each-record": "Repeat each record",
     "current-record": "Current record",
     "record": "Record",
-    "repeat": "Repeat"
+    "repeat": "Repeat",
+    "sure": "Are you sure?",
+    "yes": "Yes",
+    "records_per_page": "Records per page"
 }
