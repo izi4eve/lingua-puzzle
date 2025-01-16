@@ -40,6 +40,8 @@ const NavigationComponent = ({ data, firstElement, setFirstElement, count }) => 
         }
     };
 
+    const handleNull = () => setFirstElement(0);
+
     // Обработчик для изменения текста в поле ввода
     const handleInputChange = (e) => {
         const value = e.target.value;
@@ -74,10 +76,14 @@ const NavigationComponent = ({ data, firstElement, setFirstElement, count }) => 
     return (
         <div className="whiteBox rounded-4 p-3 my-3">
             <Title icon={<TbCircleNumber3Filled size={28} />} text={t('navigate')} />
-            <div className="d-flex my-1">
-                <div className="btn-group me-3">
+            <div className="d-flex flex-wrap mb-1">
+                <div className="btn-group me-3 mt-2">
                     <Button onClick={handleBack} variant="outline-dark">
                         {t('prev')}
+                    </Button>
+
+                    <Button onClick={handleNull} variant="outline-dark">
+                        {t('repeat')}
                     </Button>
 
                     <Button onClick={handleForward} variant="outline-dark">
@@ -85,7 +91,7 @@ const NavigationComponent = ({ data, firstElement, setFirstElement, count }) => 
                     </Button>
                 </div>
 
-                <div className="btn-group">
+                <div className="btn-group mt-2">
                     <Form.Control
                         type="text"
                         value={inputValue}
