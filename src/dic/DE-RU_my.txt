@@ -85,12 +85,13 @@ schöne Weihnachten; schöne Feiertage; schönen Urlaub = хорошего Ро�
 Ich wollte kurz nachfragen. = Я бы хотел уточнить.
 
 Wie viel? Wie viele? = По чём? Сколько?
-Für das zweite - За второй
-Jedes weitere - Каждый следующий
+Für das zweite = За второй
+Jedes weitere = Каждый следующий
 
 
 die Anleitung = инструкция
-die Einstellungen = настройки
+die Einstellung; die Einstellungen = настройка; настройки
+der Sucher = видоискатель
 
 der Umsatz = оборот
 der Ertrag = доход, выручка
@@ -98,24 +99,40 @@ der Rohertrag = валовой доход
 
 der Großhandel = оптовая торговля
 der Lieferant = поставщик
+das Paket = посылка
+die Lieferung = доставка
+der Lieferschein = накладная
+liefern — geliefert = доставлять
+kriegen — gekriegt = получать
+bekommen — bekommen = получать
+steuern — gesteuert = управлять, регулировать
 der Auftraggeber = заказчик
 der Anbieter = поставщик
-der Auftrag - заказ, договор поручения
+der Auftrag = заказ, договор поручения
 die Bestellung = заказ
 bestellen — bestellt = заказывать
-die Dienstleistung - услуга
+die Dienstleistung = услуга
 die Herkunft = происхождение
-die Versammlung - собрание 
+die Versammlung = собрание 
 
+gesamt = всего, итого
+dabei; dazu = вместе; к этому
 
 erledigt = завершено, выполнено
+unbedingt = обязательно
+
+der Gutschein = купон
+derweil ~ während = во время (по-баварски)
+Möchtest Du? ~ Mogst du? = Ты хочешь? (по-баварски)
+die Schicht = смена
+Ich gehe gerne spät ins Bett. = Мне нравится поздно ложиться спать. 
+
+Alles ist durcheinander. = Всё — перемешано.
+durchmischen — durchgemischt = перемешивать
 
 
-
-
-
-
-Vorsicht, Achtung - внимание, осторожно
+Vorsicht, Achtung = внимание, осторожно
+brechen — er bricht — gebrochen = ломать
 
 Das passt dann schon. Das passt. = Так подходит. Без здачи.
 
@@ -137,8 +154,19 @@ Wir können mit Fotos anfangen. = Мы можем начать с фото.
 die Kundenbewertung, die Kamerabewertung = отзыв покупателя, обзор камеры
 empfehlen — er empfiehlt — empfohlen — empfahl = рекомендовать
 
-Das ist nicht meine Sache. = Это — не моё дело.
-Das geht mich nichts an. = Меня это не касается.
+Welche Größe, Farbe, Material? = Какой размер, цвет, материал?
+größere Größe = больше размер
+Edelrahmen, Kunststoff, Metall, Silber, Acrylrahmen = благородная рамка, пластик, метал, серебро, акриловая рамка
+Flüssiger Kleber, Fotokleber = жидкий клей, наклейки для фото
+das Kleben; der Kleber = клейка; клей
+einkleben — er klebt ein — eingeklebt = вклеивать
+das Schraubalbum = альбом с винтами
+schrauben — geschraubt = закручивать
+die Seide = шёлк
+die Stanze = пробойник
+
+
+Das kostet 19,99 für vier Fotos. = Это стоит 19,99 за 4 фото.
 
 das Hochformat, das Querformat = книжная, альбомная ориентация
 Das ist besser, wann Baby wach ist. = Лучше, когда ребёнок проснётся (бодрый).
@@ -146,15 +174,117 @@ Sie müssen warten, bis das aufwacht. = Вам нужно подождать, п
 Sie können sich etwas ansehen. = Вы можете что-то посмотреть. 
 der Haken = крюк, анкер, боковой удар, галочка, загвоздка
 der Kleiderhaken = вешалка
-der Kamm - расчёска 
+Sie können die Jacke an den Haken hängen. = Вы можете повесить курточку на вешалку.
+der Kamm = расчёска 
+kämmen — gekämmt = расчёсывать
+Kopfhörer tragen = носить наушники
+tragen — er trägt — getragen = носить
 der Meterstab = рулетка
+ist belegt = занято
+Kommen Sie mit mir. = Проходите со мной.
+Sie können mit mir kommen. = Вы можете пройти со мной. 
+Gehen Sie durch das Studio geradeaus und nach rechts. = Проходите в студию прямо и направо. 
+Lassen Sie Ihre Sachen dort, wo es bequem ist. = Оставьте ваши вещи, где удобно.
+anziehen — angezogen; ausziehen — ausgezogen; umziehen — umgezogen; — zog = одеваться; раздеваться; переодеваться
+Setzen Sie sich hier hin. = Садитесь сюда. 
+Befestigen Sie den Kragen. = Поправьте воротник. 
+Das Kleid nach unten ziehen. = Опустить платье вниз.
+Den Rock zurechtziehen. = Поправить юбку.
+Auf welcher Seite Ihres Lebenslaufs befindet sich das Foto? = С какой стороны вашего резюме находится фото?
 
-mittlere; mittlerweile - средний; между этим
+Gerade sitzen. Augen zu mir. Rücken gerade. = Сядьте прямо. Глаза на меня. Спина прямая.
+Drehen Sie sich gerade. Gerade zu mir drehen. = Повернитесь прямо. Повернитесь прямо на меня.
+Kinn höher / tiefer. Mund zu. = Подбородок выше / ниже. Рот закрыт.
+bisschen / mehr / weniger lächeln = немного / больше / меньше улыбнуться
+Schieben Sie die Brille ganz nach oben. = Подвиньте очки полностью наверх.
+schieben — geschoben = двигать
+schmunzeln — geschmunzelt = усмехаться
+
+Ich kann gleich es auf dem Computer zeigen. = Я могу сейчас это показать на компьютере. 
+der Pickel; das Muttermal = прыщ; родинка
+Wie lautet Ihr Nachname? = Ваша фамилия? 
+Wollen Sie jetzt bezahlen während das drückt? = Хотите сейчас заплатить, пока это печатается?
+Während ihr wartet, können Sie schon bezahlen. = Пока мы ждём, вы можете оплатить. 
 
 
 
+mittlere; mittlerweile = средний; между этим
+mindesten, meistens = по крайней мере, в основном
+
+einweg = одноразовый
+
+die Retusche; retuschieren — retuschiert = ретушь; ретушировать 
+tönen, abtönen — abgetönt = тонировать
+der Schatten = тень
 
 
+die Gewohnheit = привычка
+Ich habe die Angewohnheit, tagsüber wenig zu essen. = У меня привычка днём мало кушать.
+
+die Bitte = просьба
+Ich werde Ingrid immer dankbar sein, dass sie mich eingestellt hat. = Я буду всегда благодарен Ингрид, что она взяла меня на работу.
+Ich möchte nacheinander alle Arten von Arbeiten lernen. = Я бы хотел по-очереди учить все виды работ. 
+Ich möchte alles selbst machen, aber jemand soll neben mir sein und mich kontrollieren. = Я бы хотел делать всё сам, но чтобы кто-то рядом контролировал меня. 
+Wir können mit Fotos anfangen. = Мы можем начать с фото. 
+
+
+Blödsinn = ерунда
+die Scheiße, der Mist = дерьмо
+Krimskrams = безделушки 
+quasi ~ sozusagen = так сказать
+Es hängt von dir ab. Es hängt vom Price ab. = Это зависит от тебя. 
+Es kommt darauf an, wie es funktioniert. = Это зависит от того, как это работает.
+Es sieht aus wie ... Es sieht so aus = Это выглядит как ... Это выглядит как это.
+Es sieht natürlicher aus. = Это выглядит натурально.
+Ich kann sehen, dass ... = Я вижу, что ...
+Für mich, ... = Как по мне, ...
+Ich weiß nicht, wie das funktioniert. = Я не знаю, как это работает. 
+Mein Deutsch ist nicht so gut wie Ihres. = Мой немецкий не такой хороший, как у Вас. 
+Ich spreche nicht fließend Deutsch. = Я говорю не свободно по-немецки.
+die Umgangswörter = разговорные слова
+die Umgangssprache = разговорный язык
+tote Hose = мёртвая тишина (скука; буквально "мёртвые штаны")
+I mog = ich möchte / will 
+Zum Spaß. = По приколу. 
+schummeln — geschummelt = жульничать
+bescheißen — beschissen — beschiss = подосрать
+untergraben — du untergräbst — habe untergraben — untergrub = подкопать, подрыть
+
+
+
+das Verhalten = поведение
+seltsames Verhalten = странное поведение
+die Erziehung = воспитание
+das Gefängnis = тюрьма
+das Pech = неудача
+
+der Schlauch = шланг
+Ich stehe auf dem Schlauch. = Я торможу.
+Der Computer ist abgestürzt. = Компьютер завис.
+nur noch eine Minute = одну минуту
+Hier ist es besser = лучше здесь
+überall = повсюду
+über alles = обо всём
+
+Die Schulter etwas runter / auf (hoch). = Плечо немного вниз / вверх. 
+freundlich, ernst = дружелюбный, серьёзный
+
+
+Das ist seltsam. = Странно. 
+Ich erinnere mich nicht, woher, aber ich kenne sie. = Не помню откуда, но я её помню. 
+
+
+die Scheibe; die Glasscheibe = диск, пластина; стекло
+
+Ich bin wie eine Fee aus einem Märchen oder einem Zeichentrickfilm. = Я как фея из сказки или мультфильма. 
+Ist dies eine neue Ware? = Это новый товар? 
+schade eigentlich = очень жаль
+Ziele setzen / erfüllen. = Цели ставить / выполнять.
+Ein Guten ~ Guten Appetit ~ An Gudn = Приятного аппетита
+
+Als ich ein Kind war, habe ich auch viel auswärts gegessen. = Когда я был маленьким, я тоже часто ел. 
+In meinem Alter werde ich leicht dick. = В моем возрасте я легко становлюсь толстыми. 
+Normalerweise ... = Обычно ... 
 
 
 
@@ -175,7 +305,7 @@ dazu (noch) = ещё
 Sie können warten ... (nicht müssen) = Вы можете подождать ...
 
 das Fernglas = бинокль
-trüb - мутный, неясный
+trüb = мутный, неясный
 
 Wollen Sie unsere Newsletter haben? 5-6 mal in Jahr. Wenn wir Prospekt oder Angebote haben. = Вы бы хотели наши новости иметь? 5-6 раз в год. Когда мы проспект или предложение имеем.
 
@@ -194,24 +324,23 @@ Edding = маркер (название фирмы)
 das Klebeband = скотч
 Tesa = скотч (название фирмы)
 
-Meto, Auszeichenmachine - машина для ценников
+Meto, Auszeichenmachine = машина для ценников
 
 Sie dürfen vorne warten oder zum Kasse gehen. = Вы можете подождать впереди или к кассе идти. 
-Gehen Sie zur Kasse. - Проходите к кассе. 
+Gehen Sie zur Kasse. = Проходите к кассе. 
 Kann ich Ihnen ein bisschen helfen? = Я могу вам немного помочь?
 
 
 
 
 
-das Fenster - окно программы
-anmachen; einschalten - включить
-ausmachen; ausschalten - выключить 
-runter lassen - опустить вниз
-auf machen - поднять вверх
-rausholen — rausgeholt - извлечь, вынуть
-Datenschutz - сохранность данных
-
+das Fenster = окно программы
+anmachen; einschalten = включить
+ausmachen; ausschalten = выключить 
+runter lassen = опустить вниз
+auf machen = поднять вверх
+rausholen — rausgeholt = извлечь, вынуть
+Datenschutz = сохранность данных
 
 
 
@@ -220,7 +349,7 @@ schlau, klug; dumm = умный, сообразительный; глупый
 dünn, schlank; dick = худой; толстый
 schmal = узкий
 
-die Kulanz, kulant - любезность, любезный 
+die Kulanz, kulant = любезность, любезный 
 
 
 das Straßenfoto = уличная фотография
@@ -265,6 +394,16 @@ schreien — geschrien = кричать
 streiten sich — gestritten = спорить
 schimpfen — geschimpft = ругаться
 
+Böser Mann ist wütend auf mich. = Злой человек злиться на меня. 
+Gut und Böse, Krieg und Frieden = добро и зло, война и мир
+Gegenstand und Subjekt des Rechts = объект и субъект права
+Ich hatte nicht vor. = Я не планировал.
+
+Das ist nicht meine Sache. = Это — не моё дело.
+Das geht mich nichts an. = Меня это не касается.
+
+
+
 der Akzent = акцент
 der Dialekt = диалект
 
@@ -274,7 +413,7 @@ die CD-Hülle = коробка от CD-диска
 die Taschenlampe = фонарик
 Die Batterie ist leer. = Акумулятор разрядился. 
 Der Akku ist entladen. = Батарейка села. 
-Knopfzelle - маленькая круглая батарейка
+Knopfzelle = маленькая круглая батарейка
 
 
 Ein paar Wörte für die Presse. = Несколько слов для прессы.
@@ -297,8 +436,6 @@ das Geweih eines Hirsches = рога оленя
 Setzen Sie sich näher zueinander. = Сядьте ближе друг к другу. 
 zusammen oder einzeln = вместе или по одному
 hinter mich = позади меня
-Das Kleid nach unten ziehen. = Опустить платье вниз.
-Den Rock zurechtziehen. = Поправить юбку.
 
 der Nerv im Zahn = нерв в зубе
 das Zahngranulom = гранулёма зуба
@@ -318,10 +455,12 @@ der Lappen = тряпка
 der Mop = швабра
 der Eimer = ведро
 
-der nasse / trockene Lappen;  - тряпка мокрая / сухая
-Bub, Madl; Lumpn / Bixn - мальчик, девочка; озарной мальчик (тряпка) / девочка
+der nasse / trockene Lappen;  = тряпка мокрая / сухая
+Bub, Madl; Lumpn / Bixn = мальчик, девочка; озарной мальчик (тряпка) / девочка
 
-Krimskrams - безделушки 
+Ich wohne in der Nähe, nicht weit weg. = Я живу рядом, недалеко. 
+weg = отсюда
+sättigend = ситно
 
 Wir möchten unserer Tochter Ohrlöcher für Ohrringe stechen lassen. = Мы бы хотели нашей чочке дырки в ушах для серёжек пробить.
 
@@ -356,8 +495,8 @@ die Flinte = ружьё
 die Pistole = пистолет
 der Panzer = танк
 der Mörser = миномёт
-die Bombe = бомба
 die Mine = мина
+die Bombe = бомба
 das Geschoss = снаряд
 die Kugel = пуля
 die Patrone = патрон
