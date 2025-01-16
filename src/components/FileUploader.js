@@ -2,13 +2,21 @@ import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Title from './Title';
 import { TbCircleNumber1Filled } from "react-icons/tb";
-import { Form } from 'react-bootstrap';
+import { Button, Modal, Form } from 'react-bootstrap';
 
 const FileUploader = ({ onDataLoaded, onTTSLanguageChange, data, ttsLanguage, languages }) => {
     const { t } = useTranslation();
 
     const [fileList, setFileList] = useState([]);
     const [selectedFile, setSelectedFile] = useState('');
+
+    const [showModal, setShowModal] = React.useState(false);
+    const openModal = () => setShowModal(true);
+    const closeModal = () => setShowModal(false);
+    const handleConfirmReset = () => {
+        resetDictionary();
+        closeModal();
+    };
 
     useEffect(() => {
         // Загружаем сохранённый язык озвучивания или устанавливаем язык по умолчанию
@@ -144,14 +152,29 @@ const FileUploader = ({ onDataLoaded, onTTSLanguageChange, data, ttsLanguage, la
             <div className="pt-2">
                 {data.length > 0 && (
                     <div>
-                        <button className="btn btn-sm btn-outline-dark me-2 mb-2" onClick={resetDictionary}>
+                        <Button variant="btn btn-sm btn-outline-dark me-2 mb-2" onClick={openModal}>
                             {t('reset-dic')}
-                        </button>
-                        <button className="btn btn-sm btn-dark mb-2" onClick={exportDictionary}>
+                        </Button>
+                        <Button variant="btn btn-sm btn-dark mb-2" onClick={exportDictionary}>
                             {t('download-dic')}
-                        </button>
+                        </Button>
                     </div>
                 )}
+
+                <Modal show={showModal} onHide={closeModal}>
+                    <Modal.Header closeButton>
+                        <Modal.Title>{t('confirm-action')}</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>{t('sure')}</Modal.Body>
+                    <Modal.Footer>
+                        <Button variant="btn btn-sm btn-dark" onClick={closeModal}>
+                            {t('cancel')}
+                        </Button>
+                        <Button variant="btn btn-sm btn-outline-dark" onClick={handleConfirmReset}>
+                            {t('yes')}
+                        </Button>
+                    </Modal.Footer>
+                </Modal>
             </div>
 
         </div>

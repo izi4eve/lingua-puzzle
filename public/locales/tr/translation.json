@@ -32,5 +32,9 @@
     "repeat-each-record": "Her kaydı tekrarla",
     "current-record": "Geçerli kayıt",
     "record": "Kayıt",
-    "repeat": "Tekrar"
+    "repeat": "Tekrar",
+    "confirm-action": "Eylemi onayla",
+    "sure": "Emin misiniz?",
+    "yes": "Evet",
+    "records_per_page": "Sayfa başına kayıt"
 }

@@ -32,5 +32,9 @@
     "repeat-each-record": "Powtarzaj każde nagranie",
     "current-record": "Bieżące nagranie",
     "record": "Nagranie",
-    "repeat": "Powtórz"
+    "repeat": "Powtórz",
+    "confirm-action": "Potwierdź działanie",
+    "sure": "Czy jesteś pewien?",
+    "yes": "Tak",
+    "records_per_page": "Rekordy na stronę"
 }

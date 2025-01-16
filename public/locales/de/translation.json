@@ -36,5 +36,9 @@
     "repeat-each-record": "Jeden Eintrag wiederholen",
     "current-record": "Aktueller Eintrag",
     "record": "Eintrag",
-    "repeat": "Wiederholen"
+    "repeat": "Wiederholen",
+    "confirm-action": "Aktion bestätigen",
+    "sure": "Sind Sie sicher?",
+    "yes": "Ja",
+    "records_per_page": "Einträge pro Seite"
 }

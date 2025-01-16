@@ -36,5 +36,9 @@
     "repeat-each-record": "Повторювати кожен запис",
     "current-record": "Поточний запис",
     "record": "Запис",
-    "repeat": "Повтор"
+    "repeat": "Повтор",
+    "confirm-action": "Підтвердити дію",
+    "sure": "Ви впевнені?",
+    "yes": "Так",
+    "records_per_page": "Записів на сторінку"
 }

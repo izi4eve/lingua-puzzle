@@ -36,5 +36,9 @@
     "repeat-each-record": "Ripeti ogni registrazione",
     "current-record": "Registrazione attuale",
     "record": "Registrazione",
-    "repeat": "Ripeti"
+    "repeat": "Ripeti",
+    "confirm-action": "Conferma azione",
+    "sure": "Sei sicuro?",
+    "yes": "Sì",
+    "records_per_page": "Record per pagina"
 }

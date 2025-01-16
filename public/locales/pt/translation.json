@@ -32,5 +32,9 @@
     "repeat-each-record": "Repetir cada registro",
     "current-record": "Registro atual",
     "record": "Registro",
-    "repeat": "Repetir"
+    "repeat": "Repetir",
+    "confirm-action": "Confirmar ação",
+    "sure": "Tem certeza?",
+    "yes": "Sim",
+    "records_per_page": "Registros por página"
 }

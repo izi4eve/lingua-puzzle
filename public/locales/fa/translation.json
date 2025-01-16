@@ -32,5 +32,9 @@
     "repeat-each-record": "هر ضبط را تکرار کنید",
     "current-record": "ضبط فعلی",
     "record": "ضبط",
-    "repeat": "تکرار"
+    "repeat": "تکرار",
+    "confirm-action": "تأیید اقدام",
+    "sure": "آیا مطمئن هستید؟",
+    "yes": "بله",
+    "records_per_page": "رکوردها در هر صفحه"
 }
