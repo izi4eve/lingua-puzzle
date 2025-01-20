@@ -55,6 +55,10 @@ Er erzählt uns über uns = Он рассказывает нам о нас.
 Er erzählt euch über euch = Он рассказывает вам о вас.
 Er erzählt Ihnen über Sie = Он рассказывает Вам о Вас.
 
+nicht nur ..., sondern auch ... = не только ..., но и ...
+sowohl ... als auch ... = как ..., так и ... / и ..., и ...
+weder ... oder ... = или ..., или ...
+
 Lass mich in Ruhe! = Оставь меня в покое!
 Das Problem lässt sich lösen. = Проблема может решиться (пассив с зих).
 Das Buch lässt sich leicht lesen. = Книгу может легко прочитаться (пассив с зих).
@@ -518,6 +522,48 @@ staubsaugen — gestaubsaugt = пылесосить
 zudecken sich — er deckt sich zu — zugedeckt = накрываться
 aufdecken sich — er deckt sich auf — aufgedeckt = раскрываться
 aufladen — es lädt auf — aufgeladen — lud auf = заряжать
+
+
+
+am Telefon zu hören = по телефону слушать
+Telefone verringern die Klangqualität. = Телефоны снижают качество звука.
+Das verwirrt Ausländer. = Это запутывает иностранцев.
+Am Anfang mache ich mir Sorgen. = Вначале я волнуюсь.
+Am Montag haben Sie mich angerufen. = В понедельник Вы мне звонили.
+über diese Telefonnummer = по этому телефонному номеру
+das Gespräch, Vorstellungsgespräch, Bewegungsgespräch = разговор, собеседование
+bezüglich einer Stelle = ... по поводу работы
+Sie haben mit mir einen Termin für Mittwoch um 11:00 Uhr vereinbart. = Вы согласовали со мной термин на среду в 11:00.
+Ich möchte Sie bitten = Я бы хотел вас попросить
+verschieben — verschoben — verschob = перенести, отложить
+Wäre das möglich? = Было бы это возможно?
+Ich schäme mich, nachzufragen. = Я стесняюсь переспросить.
+zögern — gezögert = колебаться, не решаться
+populär = популярный
+Damals war das Marketing sehr beliebt. = Тогда был маркетинг очень популярным.
+verfügbar; ab sofort = доступен; немедленно
+So schnell wie möglich = Как можно скорее
+der/das Gehalt; der Lohn = ЗП годовая/месячная; почасовая
+In der Zukunft = В будущем
+mit 41.000 anfangen; später zu ändern = начать с 41 тысячи; позже изменить
+zusätzlich = дополнительно
+dadurch = через, из-за
+der Plan, vielen Pläne = много планов
+träumen — geträumt = мечтать, сниться
+Dank Ihnen = Благодаря Вам
+bieten — geboten = предлагать
+Nachdem ich eingestellt wurde = После того, как я устроюсь
+das Fach; die Branche = отрасль
+der Zweig = ветка (гитхаб), отралсь
+das Gebiet = область, отрасль
+die Zulassung; die Bestätigung = разрешение; подтверждение
+nützlich sein = быть полезным
+die Logik; keine Logik; logisch / unlogisch = логика; нет логики; логично / нелогично
+die Behinderung; der Behinderte = инвалидность; инвалид
+die Kündigung; Ich wurde gekündigt. Ich kündige. Ich habe gekündigt. = Увольнение; Я — уволен. Я увольняюсь. Я уволился.
+
+
+
 
 Dieses Geschäft ist näher bei uns. = Этот магазин ближе к нам. 
 Ich wohne in der Nähe, nicht weit weg. = Я живу рядом, недалеко. 

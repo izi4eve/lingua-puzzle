@@ -84,6 +84,38 @@ const NavigationComponent = ({ data, firstElement, setFirstElement, count, setCo
         <div className="whiteBox rounded-4 p-3 my-3">
             <Title icon={<TbCircleNumber3Filled size={28} />} text={t('navigate')} />
 
+            <div className="d-flex flex-wrap gap-2 my-2">
+                <div className="btn-group">
+                    <Button onClick={handleBack} variant="outline-dark">
+                        {t('prev')}
+                    </Button>
+                    <Button onClick={handleForward} variant="outline-dark">
+                        {t('next')}
+                    </Button>
+                </div>
+
+                <div className="btn-group">
+                    <Form.Control
+                        type="text"
+                        value={inputValue}
+                        onChange={handleInputChange}
+                        onKeyUp={handleKeyPress}  // Добавляем обработчик для клавиши Enter
+                        className="rounded-start index-field"
+                    />
+
+                    <Button onClick={handleGo} variant="outline-dark" className="">
+                        <FaArrowRight />
+                    </Button>
+                </div>
+
+                <div className="">
+                    <Button onClick={handleNull} variant="outline-dark">
+                        {t('repeat')}
+                    </Button>
+                </div>
+
+            </div>
+
             <div className="mt-1 mb-3 d-flex align-items-center">
                 <label htmlFor="countSelect" className="form-label mt-1 me-2">
                     {t('records_per_page')}
@@ -100,37 +132,6 @@ const NavigationComponent = ({ data, firstElement, setFirstElement, count, setCo
                 </Form.Select>
             </div>
 
-            <div className="d-flex flex-wrap mb-1">
-                <div className="btn-group me-3 mt-1">
-                    <Button onClick={handleBack} variant="outline-dark">
-                        {t('prev')}
-                    </Button>
-
-                    <Button onClick={handleNull} variant="outline-dark">
-                        {t('repeat')}
-                    </Button>
-
-                    <Button onClick={handleForward} variant="outline-dark">
-                        {t('next')}
-                    </Button>
-                </div>
-
-                <div className="btn-group mt-1">
-                    <Form.Control
-                        type="text"
-                        value={inputValue}
-                        onChange={handleInputChange}
-                        onKeyUp={handleKeyPress}  // Добавляем обработчик для клавиши Enter
-                        className="rounded-start index-field"
-                    />
-
-                    <Button onClick={handleGo} variant="outline-dark" className="">
-                        <FaArrowRight />
-                    </Button>
-                </div>
-
-            </div>
-
             <div className="result d-flex mt-3 mb-1">
                 <div>
                     <div>{t('total')}: <br /> <span>{total}</span></div>
@@ -142,7 +143,7 @@ const NavigationComponent = ({ data, firstElement, setFirstElement, count, setCo
                 </div>
                 <div>
                     <div>{t('passed')}: <br /> <span>{passed}</span></div>
-                    <div className='mt-1'>{t('weak-percent')}: <br /> <span>{weakPercent}</span></div>
+                    <div className='mt-1'>{t('weak-percent')}: <br /> <span>{weakPercent}%</span></div>
                 </div>
             </div>
         </div>
