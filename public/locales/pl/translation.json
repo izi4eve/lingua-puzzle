@@ -39,5 +39,9 @@
     "records_per_page": "Rekordy na stronę",
     "add-entries": "Dodaj wpisy",
     "add-entries-instruction": "Dodaj każdy wpis w nowej linii. Oddziel tłumaczenie znakiem równości ( = ).",
-    "save-to-end": "Zapisz na końcu"
+    "save-to-end": "Zapisz na końcu",
+    "reset": {
+        "title": "Powtórzyć to, czego nie nauczono?",
+        "message": "Najważniejsze w nauce jest powtarzanie! Czy chcesz powtórzyć od początku to, czego jeszcze nie nauczyłeś się?"
+    }
 }

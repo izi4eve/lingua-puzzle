@@ -39,5 +39,9 @@
     "records_per_page": "Registros por página",
     "add-entries": "Adicionar entradas",
     "add-entries-instruction": "Adicione cada entrada em uma nova linha. Separe a tradução com um sinal de igual ( = ).",
-    "save-to-end": "Salvar até o fim"
+    "save-to-end": "Salvar até o fim",
+    "reset": {
+        "title": "Repetir o que não foi aprendido?",
+        "message": "O mais importante no aprendizado é a repetição! Você quer repetir desde o início o que ainda não aprendeu?"
+    }
 }

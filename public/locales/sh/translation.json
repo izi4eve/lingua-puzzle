@@ -39,5 +39,9 @@
     "records_per_page": "Zapisi po stranici",
     "add-entries": "Dodaj unose",
     "add-entries-instruction": "Dodajte svaki unos u novi red. Odvojite prevod znakom jednakosti ( = ).",
-    "save-to-end": "Sačuvaj na kraj"
+    "save-to-end": "Sačuvaj na kraj",
+    "reset": {
+        "title": "Ponoviti neupraćeno?",
+        "message": "Najvažnije u učenju je ponavljanje! Da li želite ponovo učiti ono što još niste naučili?"
+    }
 }
