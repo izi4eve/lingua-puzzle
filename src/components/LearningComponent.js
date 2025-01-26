@@ -4,6 +4,7 @@ import Title from './Title';
 import TextToSpeech from './TextToSpeech';
 import { TbCircleNumber2Filled } from "react-icons/tb";
 import { IoMdClose } from 'react-icons/io';
+import { IoTrashOutline } from "react-icons/io5";
 import { Toast, ToastContainer, Modal, Button, Form, Alert } from 'react-bootstrap';
 
 const WORD_SPLIT_REGEX = /(?=\s[\p{L}\p{N}])/u;
@@ -142,6 +143,15 @@ const LearningComponent = ({ data, firstElement, count, updateData, language }) 
         );
     }
 
+    const handleDeleteEntry = () => {
+        if (editRowIndex === null) return;
+
+        const updatedData = data.filter((_, i) => i !== elementsToDisplay[editRowIndex].originalIndex);
+
+        updateData(updatedData);
+        setShowEditModal(false);
+    };
+
     return (
         <div className="whiteBox rounded-4 p-3 my-3">
             <Title icon={<TbCircleNumber2Filled size={28} />} text={t('assemble-parts')} />
@@ -257,12 +267,24 @@ const LearningComponent = ({ data, firstElement, count, updateData, language }) 
                     />
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="outline-dark btn-sm rounded-2" onClick={handleCloseEditModal}>
-                        {t('cancel')}
-                    </Button>
-                    <Button variant="dark btn-sm rounded-2" onClick={handleSaveEdit}>
-                        {t('save')}
-                    </Button>
+                    <div className="d-flex justify-content-between w-100">
+                        <Button variant="link" className="text-black p-0 ps-1" onClick={handleDeleteEntry}>
+                            <IoTrashOutline
+                                size={20}
+                                className="mb-1"
+                                style={{ cursor: 'pointer' }}
+                            />
+                        </Button>
+
+                        <div className="d-flex gap-2">
+                            <Button variant="outline-dark btn-sm rounded-2" onClick={handleCloseEditModal}>
+                                {t('cancel')}
+                            </Button>
+                            <Button variant="dark btn-sm rounded-2" onClick={handleSaveEdit}>
+                                {t('save')}
+                            </Button>
+                        </div>
+                    </div>
                 </Modal.Footer>
             </Modal>
 
