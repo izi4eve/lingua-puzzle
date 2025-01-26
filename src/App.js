@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import * as bootstrap from "bootstrap";
 import { Trans, useTranslation } from 'react-i18next';
 import { QRCodeCanvas } from 'qrcode.react';
 import FileUploader from './components/FileUploader';
@@ -71,6 +72,10 @@ const App = () => {
 
   useEffect(() => {
     localStorage.setItem('firstElement', JSON.stringify(firstElement));
+
+    // Запись даты окончания сеанса
+    const today = new Date().toISOString().split('T')[0]; // Сохраняем только YYYY-MM-DD
+    localStorage.setItem('lastSessionDate', today);
   }, [firstElement]);
 
   useEffect(() => {
@@ -89,6 +94,23 @@ const App = () => {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [i18n]);
+
+  useEffect(() => {
+    const lastSessionDate = localStorage.getItem('lastSessionDate');
+    const today = new Date().toISOString().split('T')[0];
+  
+    if (lastSessionDate && lastSessionDate !== today) {
+      const modalElement = document.getElementById("resetModal");
+      if (modalElement) {
+        const modalInstance = new bootstrap.Modal(modalElement);
+        modalInstance.show();
+      }
+    }
+  }, []);
+
+  const handleResetYes = () => {
+    setFirstElement(0);
+  };
 
   return (
     <div
@@ -167,6 +189,28 @@ const App = () => {
               <a className="policy-link" href={privacyPolicyPath} target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
             </Trans>
           </CookieConsent>
+        </div>
+      </div>
+
+      <div className="modal fade" id="resetModal" tabIndex="-1" aria-hidden="true">
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title">{t("reset.title")}</h5>
+              <button type="button" className="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div className="modal-body">
+              <p>{t("reset.message")}</p>
+            </div>
+            <div className="modal-footer">
+              <button className="btn btn-danger" onClick={handleResetYes} data-bs-dismiss="modal">
+                {t("yes")}
+              </button>
+              <button className="btn btn-secondary" data-bs-dismiss="modal">
+                {t("cancel")}
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
