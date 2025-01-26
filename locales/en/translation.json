@@ -45,7 +45,7 @@
     "add-entries-instruction": "Add each entry on a new line. Separate the translation with an equal sign ( = ).",
     "save-to-end": "Save to end",
     "reset": {
-        "title": "Start Over?",
-        "message": "Repetition is the key to success! Would you like to start again and review what you haven’t learned yet?"
+        "title": "Repeat unfinished learning?",
+        "message": "The most important thing in learning is repetition! Do you want to start again with what you haven't learned yet?"
     }
 }

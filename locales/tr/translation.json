@@ -39,5 +39,9 @@
     "records_per_page": "Sayfa başına kayıt",
     "add-entries": "Girdileri ekle",
     "add-entries-instruction": "Her girişi yeni bir satıra ekleyin. Çeviriyi eşittir işareti ( = ) ile ayırın.",
-    "save-to-end": "Sonuna kaydet"
+    "save-to-end": "Sonuna kaydet",
+    "reset": {
+        "title": "Öğrenilmeyeni tekrar et?",
+        "message": "Öğrenmede en önemli şey tekrardır! Henüz öğrenmediğin şeyi baştan tekrar etmek ister misin?"
+    }
 }

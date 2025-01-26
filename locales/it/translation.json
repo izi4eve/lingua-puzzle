@@ -43,5 +43,9 @@
     "records_per_page": "Record per pagina",
     "add-entries": "Aggiungi voci",
     "add-entries-instruction": "Aggiungi ogni voce su una nuova riga. Separa la traduzione con un segno di uguale ( = ).",
-    "save-to-end": "Salva alla fine"
+    "save-to-end": "Salva alla fine",
+    "reset": {
+        "title": "Ripetere ciò che non è stato appreso?",
+        "message": "La cosa più importante nell'apprendimento è la ripetizione! Vuoi ricominciare con ciò che non hai ancora imparato?"
+    }
 }

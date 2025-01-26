@@ -43,5 +43,9 @@
     "records_per_page": "Registros por página",
     "add-entries": "Agregar entradas",
     "add-entries-instruction": "Agregue cada entrada en una nueva línea. Separe la traducción con un signo igual ( = ).",
-    "save-to-end": "Guardar hasta el final"
+    "save-to-end": "Guardar hasta el final",
+    "reset": {
+        "title": "¿Repetir lo no aprendido?",
+        "message": "¡Lo más importante en el aprendizaje es la repetición! ¿Quieres repetir desde el principio lo que aún no has aprendido?"
+    }
 }

@@ -43,5 +43,9 @@
     "records_per_page": "Enregistrements par page",
     "add-entries": "Ajouter des entrées",
     "add-entries-instruction": "Ajoutez chaque entrée sur une nouvelle ligne. Séparez la traduction avec un signe égal ( = ).",
-    "save-to-end": "Enregistrer à la fin"
+    "save-to-end": "Enregistrer à la fin",
+    "reset": {
+        "title": "Répéter ce qui n'est pas appris ?",
+        "message": "L'élément le plus important dans l'apprentissage est la répétition ! Voulez-vous recommencer ce que vous n'avez pas encore appris ?"
+    }
 }
