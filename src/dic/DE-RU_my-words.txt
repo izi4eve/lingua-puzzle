@@ -39,7 +39,9 @@ die Kamera = камера
 das Objektiv = объектив
 die Objektivdeckel = крышка объектива
 der Filter = фильтр
+das Licht = свет
 der Blitz = вспышка
+der Reflex = блик
 das Stativ; das Lichtstativ = штатив; стойка для света
 der Vordergrund = передний план
 der Hintergrund = задний план
@@ -251,6 +253,24 @@ Wie lautet Ihr Nachname? = Ваша фамилия?
 Wollen Sie jetzt bezahlen während das drückt? = Хотите сейчас заплатить, пока это печатается?
 Während ihr wartet, können Sie schon bezahlen. = Пока мы ждём, вы можете оплатить. 
 
+Stimmt so! Passt so! = (Без сдачи) Так правильно! Так подходит! 
+Der Rest ist für Sie. = Остальное для вас (вежливо).
+Behalten Sie den Rest. = Оставьте сдачу себе.
+echt = настоящий, правда, серьёзно
+deutlich = понятно
+zufrieden = удовлетворённый
+freilich = конечно
+
+
+erledigt = выполнено, закончено, улажено
+erledigen — erledigt = выполнять, завершать, улаживать
+
+Danke für Ihre Geduld. = Спасибо за терпение. 
+
+beziehungsweise = или точнее говоря
+die Beziehung = отношение, связь
+der Ruf = репутация
+
 
 dasselbe; gleich, ähnlich = то же; похожий
 mittlere; mittlerweile = средний; между этим
@@ -261,6 +281,8 @@ einweg = одноразовый
 die Retusche; retuschieren — retuschiert = ретушь; ретушировать 
 tönen, abtönen — abgetönt = тонировать
 der Schatten = тень
+
+der Treiber = драйвер (в технике), движущая сила
 
 
 die Gewohnheit = привычка
@@ -332,6 +354,7 @@ Ein Guten ~ Guten Appetit ~ An Gudn = Приятного аппетита
 
 Als ich ein Kind war, habe ich auch viel gegessen. = Когда я был маленьким, я тоже часто ел. 
 In meinem Alter werde ich leicht dick. = В моем возрасте я легко становлюсь толстыми. 
+die Bohnen; der Spargel = бобы; спаржа
 Normalerweise … = Обычно … 
 
 
@@ -488,6 +511,7 @@ Alles gefallen mir. — gefallen = Мне всё нравится.
 Welcher Beruf hat dir gefallen? Wenn nicht Fotograf. = Какая профессия тебе нравилась? Если не фотограф.
 Ich erinnere mich nicht, woher, aber ich kenne sie. = Я не помню откуда, но я её знаю.
 
+träumen — geträumt = мечтать / видеть сны
 Als ich meinen Führerschein gemacht habe, habe ich in den ersten sechs Monaten oft davon geträumt, wie ich bremse. = Когда я получил права, первых полгода мне снилось, что я торможу.
 Jetzt werde ich wohl davon träumen, wie ich … = Теперь мне будет сниться о том, как я …
 
@@ -524,6 +548,8 @@ der Eimer = ведро
 
 der nasse / trockene Lappen;  = тряпка мокрая / сухая
 Bub, Madl; Lumpn / Bixn = мальчик, девочка; озарной мальчик (тряпка) / девочка
+
+an Säule 3 tanken; Drei, bitte. = заправляться на колонке 3; Третья, пожалуйста.
 
 die Steckdose = розетка
 der Stecker = вилка
@@ -622,7 +648,8 @@ mit 41.000 anfangen; später zu ändern = начать с 41 тысячи; по�
 zusätzlich = дополнительно
 dadurch = через, из-за
 der Plan, vielen Pläne = много планов
-träumen — geträumt = мечтать, сниться
+die Barriere = барьер
+Das wirkt nicht. Das hilft nicht. = Это не действует. Это не помогает. 
 Dank Ihnen = Благодаря Вам
 bieten — geboten = предлагать
 Nachdem ich eingestellt wurde = После того, как я устроюсь
@@ -927,6 +954,16 @@ bilden — gebildet = образовывается / формируется
 der Eiter = гной
 Es hat sich Eiter gebildet. = Образовался гной.
 
+die Übelkeit = тошнота
+das Erbrechen = рвота
+das Fieber = температура
+der Hals = горло
+die Stimme = голос
+die Schwäche = слабость
+der Schwindel = головокружение
+der Schüttelfrost = озноб
+die Krankmeldung für die Schule = больничный для школы
+
 Pfüat di; Pfüat Eich = [пфюат ди]; [пфюат айх] — Да хранит тебя/вас Бог.
 
 
@@ -978,6 +1015,10 @@ erstechen — er ersticht — erstochen — erstach = зарезать
 
 eine Schneekanone = пушка для надувания снега
 
+die Drogen = наркотики
+die Waffen = оружие
+die Gewalt = насилие, власть
+
 die Kanone = пушка
 das Gewehr = винтовка
 das Sturmgewehr = автомат
@@ -995,9 +1036,11 @@ die Hülse = гильза
 der Nachruf = некролог
 
 
-nicht nur …, sondern auch … = не только …, но и …
 sowohl … als auch … = как …, так и … / и …, и …
-weder … oder … = или …, или …
+nicht nur …, sondern auch … = не только …, но и …
+weder … noch … = ни то …, ни это …
+entweder … oder … = или …, или … (строго одно)
+ob … oder … = или …, или … (безразличие)
 
 Der große Mann gibt dem kleinen Jungen den großen Ball. = Большой мужчина даёт маленькому мальчику большой мяч.
 Ein großer Mann gibt einem kleinen Jungen einen großen Ball. = Один большой мужчина даёт маленькому мальчику большой мяч.
