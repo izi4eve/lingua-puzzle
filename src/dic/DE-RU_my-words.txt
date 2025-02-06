@@ -71,6 +71,8 @@ die Drittelregel = правило третей
 der Kontrast = контраст
 die Sättigung = насыщенность (цвета)
 die Helligkeit = яркость
+fragil = хрупкий
+weitwinkel = широкоугольный (объектив)
 
 
 Dieser Sensor hat einen Dynamikumfang von 14 Blendenstufen. = Эта матрица имеет динамический диапазон 14 стопов.
@@ -182,6 +184,7 @@ die Stanze = пробойник
 
 
 Das kostet 19,99 für vier Fotos. = Это стоит 19,99 за 4 фото.
+die Anforderungsliste = список требований
 
 das Hochformat, das Querformat = книжная, альбомная ориентация
 Das ist besser, wann Baby wach ist. = Лучше, когда ребёнок проснётся (бодрый).
@@ -198,6 +201,7 @@ der Meterstab = рулетка
 ist belegt; ist besetzt = занято
 besetzen — besetzt = занимать, бронировать
 eilig = срочно
+beeilen sich — beeilt = спешить
 Kommen Sie mit mir. = Проходите со мной.
 Sie können mit mir kommen. = Вы можете пройти со мной. 
 Gehen Sie durch das Studio geradeaus und nach rechts. = Проходите в студию прямо и направо. 
@@ -260,6 +264,8 @@ echt = настоящий, правда, серьёзно
 deutlich = понятно
 zufrieden = удовлетворённый
 freilich = конечно
+tatsächlich = фактически / действительно
+plötzlich - неожиданный
 
 
 erledigt = выполнено, закончено, улажено
@@ -267,14 +273,15 @@ erledigen — erledigt = выполнять, завершать, улажива�
 
 Danke für Ihre Geduld. = Спасибо за терпение. 
 
-beziehungsweise = или точнее говоря
+das heißt (d.h.) - то есть
+beziehungsweise (bzw.) = или точнее говоря
 die Beziehung = отношение, связь
 der Ruf = репутация
-
 
 dasselbe; gleich, ähnlich = то же; похожий
 mittlere; mittlerweile = средний; между этим
 mindesten, meistens = по крайней мере, в основном
+
 
 einweg = одноразовый
 
@@ -285,8 +292,12 @@ der Schatten = тень
 der Treiber = драйвер (в технике), движущая сила
 
 
+Ich war an diesen Tagen bei der Arbeit. = Я был в эти дни на работе.
+Ich muss zur Arbeit fahren. = Мне нужно на работу ехать.
+
 die Gewohnheit = привычка
 Ich habe die Angewohnheit, tagsüber wenig zu essen. = У меня привычка днём мало кушать.
+für alle Fälle = на всякий случай
 
 die Bitte = просьба
 Ich werde Ingrid immer dankbar sein, dass sie mich eingestellt hat. = Я буду всегда благодарен Ингрид, что она взяла меня на работу.
@@ -548,6 +559,20 @@ der Eimer = ведро
 
 der nasse / trockene Lappen;  = тряпка мокрая / сухая
 Bub, Madl; Lumpn / Bixn = мальчик, девочка; озарной мальчик (тряпка) / девочка
+
+der Hammer = молоток
+die Schraubenzieher; der Schraubendreher = отвёртка
+der Nagel = гвоздь
+der Schraube = шуруп
+der Selbstschneider = саморез
+die Bohre = болт
+die Muttern = гайка
+die Wäsche = шайба; бельё
+der Schraubendreher = шуруповёрт
+die Bohrmaschine = дрель
+der Hammerbohrer = перфоратор
+das Jigsäge = электролобзик
+die Säge = пила
 
 an Säule 3 tanken; Drei, bitte. = заправляться на колонке 3; Третья, пожалуйста.
 
@@ -942,18 +967,30 @@ das Geschlecht: männlich, weiblich = пол: мужской, женский
 die Rechnungsnummern = номера счетов
 
 die Erzieherin; die Tagesmutter = воспитательница; нянька в садике
-der Husten; husten — gehustet = кашель; кашлять
+
+
+das Thermometer = термометр
+die Krankheit = болезнь
+die Grippe = грипп
+die Erkältung = простуда
+die Brust = грудь
+die Lunge = лёгкие
+die Bronchien = бронхи
+die Gliederschmerzen = ломка (от температуры)
+die Müdigkeit = усталость
 die Tuberkulose = туберкулёз
-der Verband = пластырь
+der Husten; husten — gehustet = кашель; кашлять
+der Pflaster = пластырь
+der Verband = бинт, повязка
 das Antiseptikum = антисептик
 das Jod = йод
 abreißen — er reißt ab — abgerissen — riss ab = оторвать / разрушить
 Ich habe mir die Haut in der Nähe des Nagels abgerissen. = Я сорвал себе кожу возле ногтей.
 Die Stelle ist gerötet. = Это место покраснело.
-bilden — gebildet = образовывается / формируется
+die Wunde = рана
 der Eiter = гной
-Es hat sich Eiter gebildet. = Образовался гной.
-
+bilden {sich} — gebildet = образовывать {образовывается}
+der Daumen = большой палец руки
 die Übelkeit = тошнота
 das Erbrechen = рвота
 das Fieber = температура
@@ -962,7 +999,11 @@ die Stimme = голос
 die Schwäche = слабость
 der Schwindel = головокружение
 der Schüttelfrost = озноб
+die Schweißigkeit = потливость
 die Krankmeldung für die Schule = больничный для школы
+das Krankenschreiben = больничный
+
+Er geht in Rente. = Он выходит на пенсию.
 
 Pfüat di; Pfüat Eich = [пфюат ди]; [пфюат айх] — Да хранит тебя/вас Бог.
 
