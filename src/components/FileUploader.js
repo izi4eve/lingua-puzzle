@@ -159,8 +159,9 @@ const FileUploader = ({ onDataLoaded, onTTSLanguageChange, data, firstElement, t
             updatedData.splice(insertIndex, 0, ...newRecords);
         }
 
+        // Обновляем данные в localStorage и передаём их в родительский компонент
         localStorage.setItem('data', JSON.stringify(updatedData));
-        onDataLoaded(updatedData);
+        onDataLoaded(updatedData); // Передаём обновлённые данные без изменения firstElement
         closeAddModal();
     };
 
