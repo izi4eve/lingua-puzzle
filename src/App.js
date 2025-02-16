@@ -51,7 +51,7 @@ const App = () => {
   }, [count]);
 
   const handleDataLoaded = (loadedData) => {
-    // setFirstElement(0);
+    setFirstElement(0);
     setData(loadedData);
   };
 
@@ -141,6 +141,7 @@ const App = () => {
             onTTSLanguageChange={handleTTSLanguageChange}
             data={data}
             firstElement={firstElement}
+            setFirstElement={setFirstElement}
             ttsLanguage={ttsLanguage}
             languages={languages}
           />

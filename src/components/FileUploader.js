@@ -4,7 +4,7 @@ import Title from './Title';
 import { TbCircleNumber1Filled } from "react-icons/tb";
 import { Button, Modal, Form } from 'react-bootstrap';
 
-const FileUploader = ({ onDataLoaded, onTTSLanguageChange, data, firstElement, ttsLanguage, languages }) => {
+const FileUploader = ({ onDataLoaded, onTTSLanguageChange, data, firstElement, setFirstElement, ttsLanguage, languages }) => {
     const { t } = useTranslation();
 
     const [fileList, setFileList] = useState([]);
@@ -159,9 +159,16 @@ const FileUploader = ({ onDataLoaded, onTTSLanguageChange, data, firstElement, t
             updatedData.splice(insertIndex, 0, ...newRecords);
         }
 
+        // Сохраняем текущее значение firstElement
+        const currentFirstElement = firstElement;
+
         // Обновляем данные в localStorage и передаём их в родительский компонент
         localStorage.setItem('data', JSON.stringify(updatedData));
-        onDataLoaded(updatedData); // Передаём обновлённые данные без изменения firstElement
+        onDataLoaded(updatedData); // Передаём обновлённые данные
+
+        // Восстанавливаем значение firstElement
+        setFirstElement(currentFirstElement);
+
         closeAddModal();
     };
 
