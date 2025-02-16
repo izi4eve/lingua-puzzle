@@ -51,7 +51,7 @@ const App = () => {
   }, [count]);
 
   const handleDataLoaded = (loadedData) => {
-    setFirstElement(0);
+    // setFirstElement(0);
     setData(loadedData);
   };
 

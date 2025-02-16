@@ -148,9 +148,15 @@ const FileUploader = ({ onDataLoaded, onTTSLanguageChange, data, firstElement, t
         let updatedData = [...storedData];
 
         if (toEnd) {
+            // Добавляем новые записи в конец
             updatedData = [...storedData, ...newRecords];
         } else {
-            updatedData.splice(firstElement, 0, ...newRecords);
+            // Находим индекс для вставки с учётом количества выученных слов
+            const learnedCount = storedData.slice(0, firstElement).filter(entry => entry.isLearned).length;
+            const insertIndex = firstElement + learnedCount;
+
+            // Вставляем новые записи по найденному индексу
+            updatedData.splice(insertIndex, 0, ...newRecords);
         }
 
         localStorage.setItem('data', JSON.stringify(updatedData));
