@@ -97,7 +97,7 @@ const App = () => {
 
   useEffect(() => {
     const lastSessionDate = localStorage.getItem('lastSessionDate');
-    const today = new Date().toLocaleDateString();
+    const today = new Date().toISOString().split('T')[0]; // Сохраняем только YYYY-MM-DD
   
     if (lastSessionDate && lastSessionDate !== today) {
       const modalElement = document.getElementById("resetModal");
