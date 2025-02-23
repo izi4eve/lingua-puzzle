@@ -883,7 +883,6 @@ der Hinterhof = задний двор
 hipp = современный (разг.)
 der Hop = хмель
 das Innendrin = внутри
-der Jour = день (от французского)
 das Kalb = теленок
 das Kalbfleisch = телятина
 der Kassensturz = пересчет (например, в кассе)

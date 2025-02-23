@@ -1,3 +1,0 @@
-english 1 = deutsch 1
-english 2 = deutsch 2
-english 3 = deutsch 3
