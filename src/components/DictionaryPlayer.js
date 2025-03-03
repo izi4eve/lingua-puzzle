@@ -21,6 +21,17 @@ const DictionaryPlayer = ({ data, firstElement, updateFirstElement, ttsLanguage,
     const filteredData = data.filter((item) => !item.isLearned); // Фильтруем записи
     const maxIndex = filteredData.length - 1;
 
+    // Эффект для отслеживания изменений в data
+    useEffect(() => {
+        if (data.length > 0) {
+            setIsPlaying(false); // Останавливаем воспроизведение
+            window.speechSynthesis.cancel(); // Прекращаем текущее воспроизведение
+            setCurrentRecord(0); // Сбрасываем текущую запись на первую
+            updateFirstElement(0); // Обновляем firstElement в родительском компоненте
+            setInputValue('0'); // Сбрасываем значение в поле ввода
+        }
+    }, [data, updateFirstElement]);
+
     useEffect(() => {
         if (!window.speechSynthesis) {
             alert('SpeechSynthesis is not supported in your browser.');
