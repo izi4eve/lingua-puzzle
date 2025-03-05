@@ -98,7 +98,7 @@ const App = () => {
   useEffect(() => {
     const lastSessionDate = localStorage.getItem('lastSessionDate');
     const today = new Date().toISOString().split('T')[0]; // Сохраняем только YYYY-MM-DD
-  
+
     if (lastSessionDate && lastSessionDate !== today) {
       const modalElement = document.getElementById("resetModal");
       if (modalElement) {
@@ -111,6 +111,13 @@ const App = () => {
   const handleResetYes = () => {
     setFirstElement(0);
   };
+
+  useEffect(() => {
+    // Отправляем событие page_view при загрузке приложения
+    window.gtag('event', 'page_view', {
+      page_path: window.location.pathname + window.location.search,
+    });
+  }, []);
 
   return (
     <div
