@@ -47,5 +47,6 @@
     "reset": {
         "title": "Nicht Gelerntes wiederholen?",
         "message": "Das Wichtigste beim Lernen ist die Wiederholung! Möchten Sie erneut mit dem beginnen, was Sie noch nicht gelernt haben?"
-    }
+    },
+    "telegram": "Haben Sie Fragen? Fragen Sie in unserer Telegram-Gruppe"
 }

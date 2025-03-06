@@ -43,5 +43,6 @@
     "reset": {
         "title": "Öğrenilmeyeni tekrar et?",
         "message": "Öğrenmede en önemli şey tekrardır! Henüz öğrenmediğin şeyi baştan tekrar etmek ister misin?"
-    }
+    },
+    "telegram": "Sorularınız mı var? Telegram grubumuzda sorun"
 }

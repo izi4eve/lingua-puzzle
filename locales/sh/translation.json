@@ -43,5 +43,6 @@
     "reset": {
         "title": "Ponoviti neupraćeno?",
         "message": "Najvažnije u učenju je ponavljanje! Da li želite ponovo učiti ono što još niste naučili?"
-    }
+    },
+    "telegram": "Имате питања? Питајте у нашој Телеграм групи"
 }

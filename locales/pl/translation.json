@@ -43,5 +43,6 @@
     "reset": {
         "title": "Powtórzyć to, czego nie nauczono?",
         "message": "Najważniejsze w nauce jest powtarzanie! Czy chcesz powtórzyć od początku to, czego jeszcze nie nauczyłeś się?"
-    }
+    },
+    "telegram": "Masz pytania? Zapytaj w naszej grupie na Telegramie"
 }
