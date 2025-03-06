@@ -73,6 +73,10 @@ body { background-color: var(--theme-yellow-color); }
   transition: background-color 2s ease;
 }
 
+.bg-telegram-blue {
+  background-color: #00a3cc;
+}
+
 .policy-link {
   color: var(--theme-yellow-color);
 }

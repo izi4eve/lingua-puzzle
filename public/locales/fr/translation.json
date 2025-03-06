@@ -47,5 +47,6 @@
     "reset": {
         "title": "Répéter ce qui n'est pas appris ?",
         "message": "L'élément le plus important dans l'apprentissage est la répétition ! Voulez-vous recommencer ce que vous n'avez pas encore appris ?"
-    }
+    },
+    "telegram": "Des questions ? Demandez dans notre groupe Telegram"
 }

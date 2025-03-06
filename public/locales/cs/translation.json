@@ -43,5 +43,6 @@
     "reset": {
         "title": "Opakovat neosvojené?",
         "message": "Nejdůležitější v učení je opakování! Chcete znovu opakovat to, co jste se ještě nenaučili?"
-    }
+    },
+    "telegram": "Máte otázky? Ptejte se v naší skupině na Telegramu"
 }

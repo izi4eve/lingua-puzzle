@@ -47,5 +47,6 @@
     "reset": {
         "title": "Repeat unfinished learning?",
         "message": "The most important thing in learning is repetition! Do you want to start again with what you haven't learned yet?"
-    }
+    },
+    "telegram": "Have questions? Ask in our Telegram group"
 }

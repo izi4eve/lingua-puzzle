@@ -8,11 +8,13 @@ import NavigationComponent from './components/NavigationComponent';
 import DictionaryPlayer from './components/DictionaryPlayer';
 import Tips from './components/Tips';
 import CookieConsent from "react-cookie-consent";
+import { FaTelegramPlane } from 'react-icons/fa';
 
 const App = () => {
   const { t, i18n } = useTranslation();
 
   const appUrl = "https://izi4eve.github.io/lingua-puzzle/";
+  const telegramLink = 'https://t.me/+4VltkaBLy4AzZmFi';
 
   const [data, setData] = useState(() => {
     const savedData = localStorage.getItem('data');
@@ -180,8 +182,17 @@ const App = () => {
 
           <Tips />
 
-          <div className="rounded-1 p-2 pb-1 my-4 bg-white d-inline-block float-end">
-            <QRCodeCanvas value={appUrl} size={128} />
+          <div className="d-flex justify-content-between align-items-start my-4">
+            <div className="d-flex flex-column align-items-start">
+              <p className="mb-3 fs-6 lh-sm fw-semibold">{t("telegram")}</p>
+              <a href={telegramLink} target="_blank" rel="noopener noreferrer" className="rounded-3 p-2 bg-telegram-blue">
+                <FaTelegramPlane size={32} color="white" />
+              </a>
+            </div>
+
+            <div className="rounded-1 p-2 pb-1 bg-white">
+              <QRCodeCanvas value={appUrl} size={128} />
+            </div>
           </div>
 
           <CookieConsent

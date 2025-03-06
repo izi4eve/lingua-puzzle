@@ -43,5 +43,6 @@
     "reset": {
         "title": "Repetir o que não foi aprendido?",
         "message": "O mais importante no aprendizado é a repetição! Você quer repetir desde o início o que ainda não aprendeu?"
-    }
+    },
+    "telegram": "Tem dúvidas? Pergunte no nosso grupo do Telegram"
 }
