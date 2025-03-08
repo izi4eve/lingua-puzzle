@@ -15,7 +15,6 @@ die Gestaltung = оформление
 die Urheberschaft = авторство
 der Einfluss = влияние
 die Überarbeitung = доработка
-die Gestaltung = оформление
 der Satz = набор текста
 die Bindung = переплет
 

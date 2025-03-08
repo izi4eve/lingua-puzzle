@@ -199,8 +199,14 @@ Sie können sich etwas ansehen. = Вы можете что-то посмотре
 der Haken = крюк, анкер, боковой удар, галочка, загвоздка
 der Kleiderhaken = вешалка
 Sie können die Jacke an den Haken hängen. = Вы можете повесить курточку на вешалку.
-der Kamm = расчёска 
+der Kragen = воротник
+die Kapuze = капюшон
+die Brust = грудь
+die Bürste = расчёска
+der Kamm = гребень
 kämmen — gekämmt = расчёсывать
+Bügeln Sie das Hemd und das Sakko. = Разгладьте рубашку и пиджак.
+Knöpfen Sie den Knopf zu. = Застегните пуговицу.
 Kopfhörer tragen = носить наушники
 tragen — er trägt — getragen = носить
 der Meterstab = рулетка
@@ -276,11 +282,13 @@ freilich = конечно
 tatsächlich = фактически / действительно
 plötzlich - неожиданный
 
-
+der Abschluss = окончание
 erledigt = выполнено, закончено, улажено
 erledigen — erledigt = выполнять, завершать, улаживать
 
 Danke für Ihre Geduld. = Спасибо за терпение. 
+Ich bin einverstanden. = Я согласен.
+Soweit ich verstanden habe = Насколько я понял
 
 das heißt (d.h.) - то есть
 beziehungsweise (bzw.) = или точнее говоря
@@ -293,13 +301,28 @@ mindesten, meistens = по крайней мере, в основном
 
 
 einweg = одноразовый
+ersatz = запасной
+das Ladegerät = зарядка для аккумулятора
+der Akkuschrauber = шуруповёрт
 
 die Retusche; retuschieren — retuschiert = ретушь; ретушировать 
 tönen, abtönen — abgetönt = тонировать
 der Schatten = тень
+weich = мягкий
+gering = незначительный
 
 der Treiber = драйвер (в технике), движущая сила
+fummeln – gefummelt = возиться, шарить руками, лапать
 
+das Gedächtnis = память
+die Erinnerung = воспоминание, напоминание
+das Merken = запоминание
+merken sich = запоминать
+
+das Klemmbrett = доска/планшет с прищепкой
+das Geschenk / Geschenke = подарок
+
+die Elster = сорока (налоговая)
 
 Ich war an diesen Tagen bei der Arbeit. = Я был в эти дни на работе.
 Ich muss zur Arbeit fahren. = Мне нужно на работу ехать.
@@ -996,7 +1019,6 @@ das Thermometer = термометр
 die Krankheit = болезнь
 die Grippe = грипп
 die Erkältung = простуда
-die Brust = грудь
 die Lunge = лёгкие
 die Bronchien = бронхи
 die Gliederschmerzen = ломка (от температуры)

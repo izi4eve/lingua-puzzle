@@ -1,0 +1,3263 @@
+der Abend — Abende 
+Guten Abend! 
+alles 
+antworten — geantwortet 
+Sie antworten 
+auch 
+auf { Akkusativ, Dativ } 
+aus { Dativ } 
+Ich komme aus Syrien. 
+die Aussage — Aussagen 
+bisschen 
+Er spricht ein bisschen Englisch. 
+bitte 
+danke 
+dann 
+das 
+der 
+Deutsch 
+Ich spreche Deutsch. 
+der Dialog — Dialoge 
+die 
+Wie geht‘s? 
+dir 
+Wie geht es dir? 
+du 
+Bist du aus Polen? 
+ein, eine 
+die Entschuldigung 
+er 
+es 
+die Form — Formen 
+die Frage — Fragen 
+fragen — gefragt 
+die Frau — Frauen 
+ganz 
+Es geht mir ganz gut. 
+gehen — ist gegangen — ging
+Es geht mir gut. 
+die Grammatik 
+gut — besser — am besten 
+hallo 
+heißen — geheißen 
+Ich heiße Anna. 
+der Herr — Herren 
+hören — gehört 
+ich 
+Ihnen 
+Wie geht es Ihnen? 
+ihr 
+im { Dativ } 
+Fragen Sie im Kurs. 
+ja 
+klar 
+Ja, klar. 
+kommen — ist gekommen 
+der Kurs — Kurse 
+der Kursteilnehmer — Kursteilnehmer 
+die Kursteilnehmerin — Kursteilnehmerinnen 
+das Land — Länder 
+lesen — gelesen — las 
+der Mann — Männer 
+mein, meine 
+mit { Dativ } 
+morgen 
+Bis morgen! 
+die Nacht — Nächte 
+Gute Nacht! 
+der Name — Namen 
+nein 
+Nein, danke. 
+neu 
+nicht 
+oder 
+die Person — Personen 
+richtig 
+Das ist richtig! 
+der Satz — Sätze 
+schreiben — geschrieben — schrieb 
+sehr 
+sein — ist gewesen — war 
+Seid ihr aus Afghanistan? 
+sie 
+Sie 
+so 
+die Sprache — Sprachen 
+sprechen mit { Dativ } über { Akkusativ } — gesprochen — sprach
+supergut 
+der Tag — Tage 
+Guten Tag, Herr Maier. 
+Tschüss 
+Tschüss, bis bald! 
+und 
+was 
+Was machst du morgen? 
+welche 
+Welche Sprachen sprichst du? 
+wer 
+Wer ist das? 
+das Wiedersehen 
+Auf Wiedersehen! 
+wie 
+Wie heißt du? 
+wissen — gewusst — wusste 
+wo 
+Wo wohnst du? 
+woher 
+Woher kommst du? 
+das Wort — Wörter 
+aber 
+die Adresse — Adressen 
+alt — älter — am ältesten 
+anmelden sich — angemeldet 
+die Anmeldung 
+arbeiten — gearbeitet 
+das Bild — Bilder 
+der Bruder — Brüder 
+buchstabieren — buchstabiert 
+dein, deine 
+einmal 
+Noch einmal, bitte. 
+die Eltern (Pl.) 
+falsch 
+die Familie — Familien 
+der Familienname — Familiennamen 
+der Familienstand 
+das Formular — Formulare 
+geschieden 
+die Geschwister (Pl.) 
+Hast du Geschwister? 
+haben — hat — gehabt — hatte
+die Handynummer — Handynummern 
+Wie ist deine Handynummer? 
+die Hausnummer — Hausnummern 
+das Heimatland — Heimatländer 
+hier 
+Ihr, Ihre 
+Wie ist Ihre Adresse? 
+in { Dativ, Akkusativ } 
+die Information — Informationen 
+das Jahr — Jahre 
+jetzt 
+kein, keine 
+das Kind — Kinder 
+Ich habe keine Kinder. 
+der Kindergarten — Kindergärten 
+der Kontakt — Kontakte 
+leben — gelebt 
+Wo lebst du? 
+ledig 
+die E-Mail — E-Mails 
+möchten — gemocht 
+die Mutter — Mütter 
+nach { Dativ } 
+der Nachname — Nachnamen 
+noch 
+die Postleitzahl — Postleitzahlen 
+die Schwester — Schwestern 
+die Schwägerin 
+die Schwiegertochter 
+der Schwiegervater 
+der Sohn — Söhne 
+die Straße — Straßen 
+die Telefonnummer — Telefonnummern 
+die Tochter — Töchter 
+über { Akkusativ } 
+Der Zug nach Basel fährt über Stuttgart. 
+der Vater — Väter 
+vergleichen — verglichen 
+verheiratet 
+Sind Sie verheiratet? 
+verwitwet 
+viel, viele — mehr — am meisten
+Wie viele Kinder haben Sie? 
+der Vorname — Vornamen 
+vorstellen sich — vorgestellt 
+welcher, welche, welches 
+willkommen 
+Herzlich willkommen! 
+wir 
+wohnen — gewohnt 
+der Wohnort 
+die Zahl — Zahlen 
+zu { Dativ } 
+Das ist jetzt leider zu spät. 
+also 
+an { Dativ, Akkusativ } 
+Am Samstag ist kein Deutschkurs. 
+andere 
+benutzen — benutzt 
+das Blatt — Blätter 
+der Bleistift — Bleistifte 
+das Buch — Bücher 
+da 
+der Deutschkurs 
+Der Deutschkurs ist am Montag. 
+der Dienstag 
+doch 
+der Donnerstag 
+endlich 
+erklären — erklärt 
+erzählen — erzählt 
+das Familienfoto 
+der Feiertag — Feiertage 
+das Fenster 
+das Foto 
+der Freitag 
+der Freund — Freunde 
+Hast du schon Freunde hier? 
+für { Akkusativ } 
+Sie nehmen die Wohnung für 750 Euro. 
+genau 
+gestern 
+groß 
+der Gruß — Grüße 
+Viele Grüße 
+die Hausaufgabe — Hausaufgaben 
+das Heft — Hefte 
+heute 
+ihr 
+immer 
+die Karte — Karten 
+klein 
+knifflig 
+der Kugelschreiber (Kuli) — Kugelschreiber 
+das Kursbuch 
+der Kursraum 
+die Lampe — Lampen 
+die Landkarte — Landkarten 
+langsam 
+der Lehrer — Lehrer 
+die Lehrerin — Lehrerinnen 
+lernen — gelernt 
+liebe, lieber 
+Liebe Laura, … 
+die Liste — Listen 
+machen — gemacht 
+mir 
+der Mittwoch 
+der Montag 
+natürlich 
+Noch einmal langsam bitte! – Natürlich. 
+nett 
+das Papier 
+der Papierkorb 
+die Pause — Pausen 
+das Problem — Probleme 
+der Projektor 
+der Radiergummi 
+der Raum 
+der Rucksack 
+die Sache — Sachen 
+sagen — gesagt — sagte 
+der Samstag 
+sehen — gesehen — sah 
+Was sehen Sie? 
+die Seite 
+der Schlüssel — Schlüssel 
+schnell 
+der Sonntag 
+der Spaß 
+spielen — gespielt 
+Spielen Sie die Dialoge. 
+der Spitzer 
+der Stuhl — Stühle 
+die Tabelle 
+die Tafel 
+die Tasche 
+der Text 
+der Tisch — Tische 
+die Tür 
+übermorgen 
+die Übung — Übungen 
+das Übungsbuch 
+verstehen — verstanden — verstand 
+vorgestern 
+die Wand 
+die Woche 
+das Wochenende 
+das Wörterbuch — Wörterbücher 
+zeigen — gezeigt 
+der Zettel — Zettel 
+zusammen 
+Wir gehen zusammen ins Kino. 
+Im Supermarkt 
+das Angebot — Angebote 
+die Antwort — Antworten 
+der Apfel — Äpfel 
+der Apfelsaft 
+die Aufgabe — Aufgaben 
+die Babynahrung 
+die Banane — Bananen 
+der Becher — Becher 
+ein Becher Joghurt 
+das Beispiel — Beispiele 
+das Bier 
+die Birne — Birnen 
+das Bistro 
+die Blaubeere — Blaubeeren 
+die Bohne — Bohnen 
+brauchen — gebraucht 
+das Brot — Brote 
+das Brötchen — Brötchen 
+der Cent — Cent 
+die Cola — Cola, Colas 
+der Couscous 
+denn 
+diese, dieser, dieses 
+die Dose — Dosen 
+durch { Akkusativ } 
+das Ei — Eier 
+der Einkaufszettel 
+einige 
+die Erbse — Erbsen 
+die Erdbeere — Erdbeeren 
+essen — gegessen — aß 
+etwas 
+fertig 
+der Fisch — Fische 
+die Flasche — Flaschen 
+das Fleisch 
+frisch 
+das Frühstück 
+frühstücken — gefrühstückt 
+gemeinsam 
+das Gemüse 
+gern 
+Ich esse gern Tomaten. 
+das Getränk — Getränke 
+das Glas — Gläser 
+gleich 
+das Gramm — Gramm 
+die Himbeere — Himbeeren 
+der Honig 
+der Joghurt — Joghurts 
+der Kaffee 
+die Kartoffel — Kartoffeln 
+der Käse 
+kaufen — gekauft 
+der Keks — Kekse 
+die Kichererbse — Kichererbsen 
+das Kilo — Kilos 
+die Kirsche — Kirschen 
+die Kiwi — Kiwis 
+die Kontrolle — Kontrollen 
+kosten — gekostet 
+der Kuchen 
+der Kunde — Kunden 
+die Kundin — Kundinnen 
+kurz 
+das Lammfleisch 
+das Lebensmittel — Lebensmittel 
+die Limonade (Limo) — Limonaden (Limos) 
+der Liter — Liter 
+man 
+die Mandarine — Mandarinen 
+die Mango — Mangos 
+der Markt — Märkte 
+die Marmelade — Marmeladen 
+das Mehl 
+meistens 
+die Mengenangabe 
+die Melone — Melonen 
+die Milch 
+das Milchprodukt — Milchprodukte 
+mögen — gemocht 
+die Möhre — Möhren 
+müssen — gemusst 
+nehmen — genommen — nahm 
+die Nudel — Nudeln 
+nur 
+das Obst 
+der Obstsalat 
+das Olivenöl 
+die Orange — Orangen 
+ordnen — geordnet 
+die Packung — Packungen 
+eine Packung Reis 
+die Paprika — Paprikas 
+der Partner — Partner 
+die Partnerin — Partnerinnen 
+das Pfund 
+der Pilz — Pilze 
+planen — geplant 
+der Preis — Preise 
+pro { Akkusativ } 
+Die Äpfel kosten 2,50 € pro Kilo. 
+der Pudding 
+der Reis 
+das Rindfleisch 
+der Saft — Säfte 
+die Sahne 
+der Salat — Salate 
+das Salz 
+sich 
+schmecken — geschmeckt 
+die Schokolade 
+schön 
+das Schweinefleisch 
+sonst 
+stehen — ist gestanden — stand 
+streichen — gestrichen 
+das Stück — Stücke 
+ein Stück Kuchen 
+die Tasse — Tassen 
+der Tee 
+teuer 
+der Tipp — Tipps 
+die Tomate — Tomaten 
+die Traube — Trauben 
+trinken — getrunken — trank 
+unterstreichen — unterstrichen 
+verbinden — verbunden 
+der Verkäufer — Verkäufer 
+die Verkäuferin — Verkäuferinnen 
+von { Dativ } 
+das Wasser 
+der Wein 
+die Zitrone — Zitronen 
+der Zucker 
+die Zwiebel — Zwiebeln 
+Von morgens bis abends 
+abends 
+der Alltag 
+anrufen — angerufen — rief an 
+Ich rufe dich an. 
+die Arbeit 
+aufstehen sich — ist sich aufgestanden — stand sich auf 
+beginnen — begonnen — begann 
+beide 
+das Bett — Betten 
+bis { Akkusativ } 
+das Büro — Büros 
+der Computer — Computer 
+das Computerspiel — Computerspiele 
+erst 
+Wir lernen erst Deutsch, dann gehen wir spazieren. 
+fernsehen — ferngesehen 
+der Film — Filme 
+die Freundin — Freundinnen 
+früh 
+der Fußball 
+Ich spiele gern Fußball. 
+geöffnet 
+grillen — gegrillt 
+halb 
+Es ist halb zwölf. 
+der Hunger 
+die Idee — Ideen 
+das Interview — Interviews 
+kochen — gekocht 
+können — gekonnt — konnte 
+lecker 
+leider 
+manchmal 
+der Mittag 
+mittags 
+die Mittagspause 
+der Morgen 
+morgens 
+müde 
+die Musik 
+der Nachmittag 
+nachmittags 
+nachts 
+nie 
+der Notizzettel 
+oft 
+die Pizza 
+putzen — geputzt 
+schade 
+schlafen — geschlafen — schlief 
+der Schluss 
+Um eins haben wir Schluss. 
+die Schule — Schulen 
+spät 
+spazieren — ist spazieren gegangen 
+das Spiel — Spiele 
+der Sport 
+die Stunde — Stunden 
+der Stundenplan 
+der Supermarkt 
+telefonieren — telefoniert 
+tun — getan — tat 
+die Uhr 
+Die Uhr steht im Wohnzimmer. 
+die Uhrzeit 
+Es ist 14 Uhr. 
+um { Akkusativ } 
+der Unterricht 
+das Viertel 
+Es ist Viertel vor zehn. 
+vor { Dativ } 
+der Vormittag 
+vormittags 
+wann
+die Wohnung — Wohnungen 
+zeichnen — gezeichnet 
+die Zeit 
+zu Hause 
+Ich bin zu Hause. 
+Auf Wohnungssuche 
+ab { Dativ } 
+Die Wohnung ist ab 1.5. frei. 
+der Altbau 
+die Angabe — Angaben 
+die Anzeige — Anzeigen 
+das Arbeitszimmer 
+das Bad — Bäder 
+baden — gebadet 
+die Badewanne 
+das Badezimmer 
+der Balkon — Balkone 
+der Bauernhof — Bauernhöfe 
+bei { Dativ } 
+bekommen — bekommen — bekam 
+Meine Blumen bekommen jeden Tag Wasser. 
+der Besichtigungstermin 
+besser 
+billig 
+breit 
+circa 
+die Diele 
+direkt 
+dort 
+draußen 
+dringend 
+dunkel 
+die Dusche 
+das Einfamilienhaus 
+einkaufen — eingekauft 
+das Elektrogerät — Elektrogeräte 
+das Erdgeschoss 
+ersetzen — ersetzt 
+der Euro — Euros 
+der Fernseher — Fernseher 
+finden — gefunden — fand 
+die Firma — Firmen 
+der Flur — Flure 
+frei 
+die Garage — Garagen 
+der Garten — Gärten 
+der Gast — Gäste 
+das Geld — Gelder 
+gemütlich 
+gepflegt 
+das Gerät — Geräte 
+das Geschäft — Geschäfte 
+das Gespräch — Gespräche 
+die Größe 
+grün 
+hängen — gehangen 
+hässlich 
+die Hauptsache 
+das Haus — Häuser 
+das Haustier — Haustiere 
+die Heizung 
+helfen — geholfen — half 
+hell 
+der Herd 
+die Hilfe 
+hinten 
+das Hochhaus 
+ihr, ihre 
+die Immobilie — Immobilien 
+insgesamt 
+interessant 
+jeder, jede, jedes 
+der Juni 
+die Kaffeemaschine 
+kalt 
+die Kaution 
+der Keller — Keller 
+das Kinderzimmer 
+der Kleiderschrank 
+die Küche — Küchen 
+der Kühlschrank — Kühlschränke 
+lang 
+lassen — gelassen — ließ 
+Lass uns in einem anderen Geschäft schauen. 
+laut 
+gerne — lieber — am liebsten
+liegen — ist gelegen — lag 
+Die Wohnung liegt direkt an der Hauptstraße. 
+maximal 
+das Mehrfamilienhaus 
+die Miete 
+mindestens 
+die Möbel (Pl.) 
+möbliert 
+modern 
+der Monat — Monate 
+die Monatsmiete — Monatsmieten 
+der Müll 
+neben { Dativ } 
+die Nebenkosten — Nebenkosten 
+ohne { Akkusativ } 
+das Obergeschoss 
+der Ort — Orte 
+die Pflanze — Pflanzen 
+der Plan — Pläne 
+der Platz — Plätze 
+Wir brauchen mehr Platz. 
+der Quadratmeter — Quadratmeter 
+das Regal — Regale 
+das Reihenhaus 
+ruhig 
+schauen — geschaut 
+das Schlafzimmer 
+schmal 
+der Schrank — Schränke 
+der Sessel — Sessel 
+singen — gesungen — sang 
+sitzen — gesessen — saß 
+das Sofa — Sofas 
+sofort 
+sollen — gesollt 
+Sollen wir ins Kino gehen? 
+das Sonderangebot — Sonderangebote 
+die Sonne 
+sonstiges 
+die Sprachschule 
+spülen — gespült 
+die Spülmaschine — Spülmaschinen 
+die Stadt — Städte 
+suchen — gesucht 
+super 
+der Teppich 
+die Terrasse — Terrassen 
+die Toilette — Toiletten 
+toll 
+die Traumwohnung 
+unbedingt 
+ungemütlich 
+unser, unsere 
+warum 
+waschen — gewaschen 
+die Waschmaschine 
+das WC 
+wegziehen — ist weggezogen 
+weiter 
+wenn 
+werden — ist geworden — wurde 
+wichtig 
+die Wohnungsanzeige 
+die Wohnungssuche 
+das Wohnzimmer 
+wunderschön 
+wünschen — gewünscht 
+zahlen — gezahlt 
+die Zeitung — Zeitungen 
+das Zentrum 
+das Zimmer — Zimmer 
+zu Fuß 
+In der Stadt unterwegs 
+die Ampel — Ampeln 
+die Ankunftszeit 
+die Ansage — Ansagen 
+die Apotheke — Apotheken 
+der Arzt — Ärzte 
+die Ärztin — Ärztinnen 
+die Auskunft 
+außerdem 
+außerplanmäßig 
+das Auto — Autos 
+die Bahn 
+der Bahnhof — Bahnhöfe 
+der Ball — Bälle 
+die Bank 
+bezahlen — bezahlt 
+die Bibliothek 
+das Bürgerbüro 
+der Bus — Busse 
+die Bushaltestelle — Bushaltestellen 
+das Café — Cafés 
+dafür 
+dritte 
+die Durchsage 
+einfach 
+die Einzelfahrkarte 
+erste 
+der Erwachsene — Erwachsenen 
+fahren — ist gefahren — fuhr 
+der Fahrgast — Fahrgäste 
+die Fahrkarte 
+das Fahrrad — Fahrräder 
+fallen — ist gefallen — fiel 
+fast 
+der Flughafen — Flughäfen 
+das Gebäude — Gebäude 
+geben — gegeben — gab 
+gegenüber { Dativ } 
+geradeaus 
+das Gleis — Gleise 
+gültig 
+halten — gehalten — hielt 
+die Haltestelle — Haltestellen 
+der Hauptbahnhof 
+hinter { Dativ } 
+das Hotel — Hotels 
+der Informationsschalter 
+der Intercity (IC) 
+das Jobcenter 
+das Kino — Kinos 
+die Kirche 
+das Krankenhaus — Krankenhäuser 
+die Krankenkasse 
+die Kreuzung 
+die Kurzstrecke 
+die Linie 
+links 
+die Lösung — Lösungen 
+der Meter — Meter 
+der Metzger 
+die Minute — Minuten 
+die Mobilität 
+das Motorrad — Motorräder 
+nachfragen — nachgefragt 
+nächster, nächste, nächstes 
+nichts 
+öffentlich 
+die Orientierung 
+der Park — Parks 
+die Parkgebühr — Parkgebühren 
+der Parkplatz — Parkplätze 
+die Polizei 
+die Position 
+die Post 
+praktisch 
+rechts 
+das Rathaus 
+die Regionalbahn 
+das Restaurant — Restaurants 
+die Ruhe 
+der Schienenersatzverkehr 
+das Schwimmbad — Schwimmbäder 
+selten 
+sowieso 
+später 
+der Stadtplan — Stadtpläne 
+der Stadtwald 
+steigen — ist gestiegen — stieg 
+die Straßenbahn — Straßenbahnen 
+die Tageskarte 
+das Taxi — Taxis 
+überall 
+umsteigen — ist umgestiegen 
+ungefähr 
+unter { Dativ } 
+die Verfügung 
+das Verkehrsmittel — Verkehrsmittel 
+verstanden 
+verzögern — verzögert 
+die Volkshochschule (VHS) 
+voll 
+vorbei 
+vorne 
+warten — gewartet 
+der Weg 
+der Winter — Winter 
+der Wochenmarkt 
+wohin 
+wollen — gewollt 
+der Zug — Züge 
+zweimal 
+zweite 
+zwischen { Dativ } 
+anfangen — angefangen — fing an 
+der Arbeitstag — Arbeitstage 
+die Ausbildung — Ausbildungen 
+ausfüllen — ausgefüllt 
+die Aushilfe — Aushilfen 
+der Automechaniker 
+die Automechanikerin 
+backen — gebacken 
+der Bäcker 
+die Bäckerin 
+bald 
+berichten — berichtet 
+der Beruf — Berufe 
+beruflich 
+die Bürokauffrau 
+der Bürokaufmann 
+der Chef — Chefs 
+die Chefin — Chefinnen 
+das Computerprogramm — Computerprogramme 
+das Computersystem — Computersysteme 
+dauern — gedauert 
+dreimal 
+der Fahrer — Fahrer 
+fangen — gefangen — fing 
+der Feierabend 
+flexibel 
+fotografieren — fotografiert 
+freundlich 
+der Führerschein 
+der Fußballspieler 
+die Gitarre — Gitarren 
+halbtags 
+die Hausfrau — Hausfrauen 
+der Hausmann — Hausmänner 
+der Hund — Hunde 
+installieren — installiert 
+die Kantine — Kantinen 
+kaputt 
+die Kasse — Kassen 
+der Kassierer 
+die Kassiererin — Kassiererinnen 
+die Kauffrau 
+der Kellner — Kellner 
+die Kellnerin — Kellnerinnen 
+klingeln — geklingelt 
+der Koch — Köche 
+die Köchin — Köchinnen 
+der Kollege — Kollegen 
+die Kollegin — Kolleginnen 
+das Konzert — Konzerte 
+korrigieren — korrigiert 
+das Kraftfahrzeug (KFZ) 
+der Krankenpfleger — Krankenpfleger 
+die Krankenschwester — Krankenschwestern 
+kreativ 
+langweilig 
+die Leute (Pl.) 
+die Mathematik 
+der Mechaniker — Mechaniker 
+der Mensch — Menschen 
+das Mittagessen 
+der Moment — Momente 
+der Musiklehrer 
+die Musiklehrerin 
+der Nachtdienst 
+organisieren — organisiert 
+der Pizzafahrer 
+die Pizzeria 
+die Pflege 
+prüfen — geprüft 
+pünktlich 
+das Radio — Radios 
+rechnen — gerechnet 
+der Rentner — Rentner 
+die Reparatur 
+reparieren — repariert 
+der Reporter 
+der Roman — Romane 
+schlimm 
+der Schüler — Schüler 
+die Schülerin — Schülerinnen 
+servieren — serviert 
+der Stress 
+der Student — Studenten 
+die Studentin — Studentinnen 
+studieren — studiert 
+der Taxifahrer 
+die Taxifahrerin 
+der Techniker 
+das Telefon — Telefone 
+der Traumberuf 
+treffen — getroffen — traf 
+die Universität — Universitäten 
+unterrichten — unterrichtet 
+vielleicht 
+wählen — gewählt 
+die Werkstatt 
+das Wiederhören 
+Auf Wiederhören! 
+zuerst 
+Beim Arzt 
+das Altenpflegeheim 
+anbei 
+die Anrede 
+Sehr geehrter Herr Maier, … 
+der Arm — Arme 
+atmen — geatmet 
+das Auge — Augen 
+der Bauch 
+das Bein — Beine 
+die Bauchschmerzen (Pl.) 
+der Bescheid 
+Ich sage dir Bescheid. 
+die Besserung 
+Gute Besserung! 
+der Betreff 
+bevor 
+bleiben — ist geblieben — blieb 
+der Brief — Briefe 
+der Briefteil — Briefteile 
+die Brust 
+danach 
+das Datum 
+dürfen — gedurft 
+der Ellbogen/Ellenbogen 
+der Empfänger — Empfänger 
+das Entschuldigungsschreiben 
+erkälten sich — erkältet 
+die Erkältung 
+euer, eure 
+das Fieber 
+der Finger — Finger 
+freundlich 
+Mit freundlichen Grüßen 
+geehrter, geehrte 
+Sehr geehrte Frau Müller, … 
+das Gesicht 
+die Gesundheit 
+die Gesundheitskarte 
+die Grippe 
+die Gruppe — Gruppen 
+das Haar — Haare 
+der Hals 
+der Hals-Nasen-Ohren-Arzt (HNO) 
+das Halsweh 
+die Hand — Hände 
+der Hausarzt — Hausärzte 
+heiß 
+der Husten 
+Hustensaft 
+das Knie — Knie 
+der Kopf — Köpfe 
+die Kopfschmerzen (Pl.) 
+der Körper — Körper 
+der Körperteil — Körperteile 
+krank 
+die Krankheit 
+die Krankmeldung 
+der März 
+das Medikament — Medikamente 
+der Mund 
+der Nacken 
+die Nase 
+die Notfallsprechstunde 
+das Ohr — Ohren 
+der Orthopäde 
+der Patient — Patienten 
+die Patientin — Patientinnen 
+per 
+das Pflaster — Pflaster 
+das Praktikum — Praktika 
+die Praktikumsbetreuerin 
+die Praxis — Praxen 
+die Praxisgemeinschaft 
+rauchen — geraucht 
+regelmäßig 
+das Rezept — Rezepte 
+rot 
+der Rücken 
+rund 
+die Salbe — Salben 
+schicken — geschickt 
+der Schmerz — Schmerzen 
+der Schnupfen 
+die Schulter — Schultern 
+schwanger 
+sein, seine 
+die Sprechstunde 
+die Sprechstundenhilfe 
+das Sprechzimmer 
+stark 
+die Stirn 
+die Tablette — Tabletten 
+der Termin — Termine 
+der Tropfen — Tropfen 
+die Unterschrift 
+die Untersuchung 
+der Verband 
+verschieden 
+die Vorsorge 
+das Wartezimmer 
+der Wechsel 
+wechseln — gewechselt 
+wehtun — wehgetan — tat weh 
+wieder 
+wiederkommen — ist wiedergekommen 
+der Zahn — Zähne 
+der Zeh — Zehen 
+zurzeit 
+Gestern und heute 
+aufwachsen — ist aufgewachsen 
+beantworten — beantwortet 
+der Besuch 
+die Bewegung — Bewegungen 
+bilden — gebildet 
+die Blume — Blumen 
+der Dienst 
+extra 
+das Ferienhaus — Ferienhäuser 
+früher 
+sein/wurden geboren — ist/wurde geboren — war 
+Ich bin in Kabul geboren. 
+gerade 
+gucken — geguckt 
+der Hausflur 
+heiraten — geheiratet 
+das Hobby — Hobbys 
+der Ingenieur 
+die Insel — Inseln 
+die Inselrundfahrt 
+kennen — gekannt 
+der Koffer — Koffer 
+letzte 
+das Meer 
+der Mond 
+der Nachbar — Nachbarn 
+die Nachbarin — Nachbarinnen 
+die Natur 
+packen — gepackt 
+die Postkarte — Postkarten 
+die Reise — Reisen 
+das Schiff — Schiffe 
+der Seehund — Seehunde 
+der Ski 
+der Strand — Strände 
+stressig 
+das Studium 
+stundenlang 
+die Suppe — Suppen 
+süß 
+das Tennis 
+der Tourist — Touristen 
+unregelmäßig 
+der Urlaub 
+verdienen — verdient 
+warten — gewartet 
+das Wetter 
+Wir gehen shoppen! 
+anziehen — angezogen — zog an 
+der Anzug — Anzüge 
+beige 
+bequem 
+besser 
+bestimmt 
+blau 
+blöd 
+die Bluse — Blusen 
+braun 
+bringen — gebracht — brachte 
+denken an { Akkusativ } — gedacht — dachte 
+der Einkaufsbummel 
+eng 
+euch 
+die Farbe — Farben 
+furchtbar 
+gefallen — ist gefallen — gefiel 
+Die Bluse gefällt mir. 
+gegenseitig 
+gelb 
+genauso 
+glauben an { Akkusativ } — geglaubt 
+grau 
+günstig 
+das Hemd — Hemden 
+die Hose — Hosen 
+ihm 
+die Jacke — Jacken 
+die Jeans — Jeans 
+der Jogginganzug 
+der Kassenbon 
+das Kaufhaus — Kaufhäuser 
+die Klamotten (Pl.) 
+klasse 
+das Kleid — Kleider 
+die Kleidung — Kleidung 
+das Kleidungsstück — Kleidungsstücke 
+lila 
+der Mantel — Mäntel 
+die Mode 
+das Modell 
+die Mütze 
+online 
+die Ordnung 
+Das ist in Ordnung. 
+das Paar — Paare 
+passen — gepasst 
+positiv 
+probieren — probiert 
+der Prospekt — Prospekte 
+der Pullover 
+raten — geraten — riet 
+der Rock 
+der Schal 
+der Schuh — Schuhe 
+schwarz 
+sicher 
+die Socke — Socken 
+der Sportschuh 
+die Strickjacke 
+der Strumpf — Strümpfe 
+tragen — getragen — trug 
+das T-Shirt — T-Shirts 
+typisch 
+überhaupt 
+umtauschen — umgetauscht 
+uns 
+vergessen — vergessen — vergaß 
+der Wintermantel 
+zurück 
+Endlich Frühling! 
+die Achtung 
+Achtung! 
+der April 
+aufregen sich — aufgeregt 
+Ich bin ganz aufgeregt. 
+der August 
+bauen — gebaut 
+der Baum — Bäume 
+besuchen — besucht 
+bewölkt 
+die Braut — Bräute 
+der Dank 
+Vielen Dank! 
+darüber 
+die Deutschlandkarte 
+der Dezember 
+eben 
+Na, da muss es eben ein Freitag sein. 
+einladen — eingeladen 
+die Einladung 
+einverstanden 
+das Eis 
+der Februar 
+die Feier — Feiern 
+feiern — gefeiert 
+das Fest — Feste 
+freuen sich auf { Akkusativ } — gefreut 
+froh 
+Frohe Ostern! 
+der Frühling 
+fühlen — gefühlt 
+die Gartenparty — Gartenpartys 
+der Geburtstag 
+die Geburtstagstorte 
+das Geschenk — Geschenke 
+glücklich 
+der Glückstag 
+der Grad 
+hageln — gehagelt 
+Es hagelt. 
+der Handschuh — Handschuhe 
+der Hase 
+der Herbst 
+die Himmelsrichtung — Himmelsrichtungen 
+die Hochzeit — Hochzeiten 
+die Hochzeitsfeier 
+die Jahreszahl 
+die Jahreszeit — Jahreszeiten 
+der Januar 
+der Juli 
+der Kalender — Kalender 
+lieben — geliebt 
+der Luftballon — Luftballons 
+lustig 
+der Mai 
+die Mama 
+minus 
+Es sind minus 15 Grad. 
+mitbringen — mitgebracht — brachte mit 
+nass 
+nebelig 
+der Norden 
+der November 
+nun 
+der Oktober 
+das Oktoberfest 
+die Oma 
+der Osten 
+das Osterei — Ostereier 
+das Osterfest 
+der Osterhase 
+das Ostern 
+der Papa 
+räumen — geräumt 
+reden — geredet 
+regnen — geregnet 
+Es regnet. 
+samstags 
+der Schatz 
+scheinen — geschienen — schien 
+Die Sonne scheint. 
+schenken — geschenkt 
+schlecht 
+der Schnee 
+der Schneemann 
+schneien — geschneit 
+Es schneit. 
+der Schokoladenkuchen 
+der Sekt 
+der September 
+der Sommer 
+sonnig 
+die Spezialität — Spezialitäten 
+das Standesamt 
+stellen — gestellt 
+der Süden 
+tanzen — getanzt 
+der Teller — Teller 
+die Torte — Torten 
+trocken 
+unglücklich 
+der Unglückstag 
+warm 
+das Weihnachten 
+der Weihnachtsbaum — Weihnachtsbäume 
+die Weihnachtsfeier 
+das Weihnachtsgeschenk 
+der Weihnachtsmann 
+das Westdeutschland 
+der Westen 
+der Wetterbericht 
+wieso 
+Chatten, mailen, sich informieren 
+die Abendkasse 
+abholen — abgeholt 
+aktuell 
+alle 
+anklicken — angeklickt 
+die App 
+aussuchen — ausgesucht 
+der Benutzername 
+bestellen — bestellt 
+chatten — gechattet 
+die Datei — Dateien 
+dich 
+diskutieren — diskutiert 
+drucken — gedruckt 
+der Eintritt — Eintritte 
+empfehlen — empfohlen 
+die Empfehlung — Empfehlungen 
+flirten — geflirtet 
+der Flohmarkt — Flohmärkte 
+das Forum 
+funktionieren — funktioniert 
+gebraucht 
+googeln — gegoogelt 
+herausfinden — herausgefunden — fand heraus 
+herunterladen — heruntergeladen 
+hochladen — hochgeladen 
+informieren sich — informiert 
+international 
+das Internet 
+das Kennwort — Kennwörter 
+die Kinokarte 
+klicken — geklickt 
+der Kommentar — Kommentare 
+kostenlos 
+das Kulturcafé 
+der/die Leser/in 
+löschen — gelöscht 
+mailen — gemailt 
+mich 
+mitkommen — ist mitgekommen — kam mit 
+Kommen deine Eltern mit? 
+mitmachen — mitgemacht 
+nachschauen — nachgeschaut 
+Schauen wir doch mal im Internet nach. 
+der Neffe 
+nervös 
+Newsletter 
+oben 
+die Politik 
+prima 
+das Programm — Programme 
+die Radtour — Radtouren 
+der Regen 
+der Regenschirm 
+die Reihenfolge 
+reservieren — reserviert 
+die Reservierung 
+die Rolle — Rollen 
+sinken — ist gesunken — sank 
+das Smartphone 
+speichern — gespeichert 
+das Spielzeug 
+starten — gestartet 
+die Startseite 
+steigen — ist gestiegen — stieg 
+das Straßenfest 
+das Symbol — Symbole 
+tauschen — getauscht 
+die Temperatur — Temperaturen 
+das Theater 
+der Treffpunkt 
+unternehmen — unternommen — unternahm 
+die Verabredung — Verabredungen 
+die Veranstaltung — Veranstaltungen 
+der Veranstaltungstipp — Veranstaltungstipps 
+der Vorschlag — Vorschläge 
+die Welt 
+die Wettervorhersage 
+die Wirtschaft 
+das Würstchen 
+zeitweise 
+zuhören — zugehört 
+zuschauen — zugeschaut 
+Mit Bus und Bahn 
+abfahren — ist abgefahren — fuhr ab 
+die Abfahrt — Abfahrten 
+ankommen — ist angekommen — kam an 
+die Ankunft — Ankünfte 
+der Anschluss 
+der Anschlusszug — Anschlusszüge 
+ausblenden — ausgeblendet 
+ausfallen — ist ausgefallen — fiel aus 
+aussteigen — ist ausgestiegen — stieg aus 
+das Autofahren 
+der Automat 
+das Bahnfahren 
+der Bahnsteig 
+bitten — gebeten 
+buchen — gebucht 
+die Dauer 
+defekt 
+deshalb 
+drehen — gedreht 
+drüben 
+die Einfahrt — Einfahrten 
+einsteigen — ist eingestiegen — stieg ein 
+erhalten — erhalten 
+erreichen — erreicht 
+der Fahrkartenschalter 
+der Fahrplan — Fahrpläne 
+der Fernbus 
+fliegen — ist geflogen — flog 
+das Flugzeug — Flugzeuge 
+der Grund 
+der Halt 
+hin 
+die Hinfahrt — Hinfahrten 
+der/die Mitarbeiter/in 
+mitnehmen — mitgenommen — nahm mit 
+nah 
+nämlich 
+die Nummer 
+die Option 
+passieren — passiert 
+das Pech 
+planmäßig 
+preiswert 
+die Reisemöglichkeit — Reisemöglichkeiten 
+das Reiseziel 
+die Richtung — Richtungen 
+die Rückfahrt — Rückfahrten 
+der/die Schaffner/in 
+das Schild — Schilder 
+schwarzfahren — ist schwarzgefahren — fuhr schwarz 
+schwierig 
+der/die Senior/in 
+der Serviceschalter 
+sondern 
+sparen — gespart 
+die Station 
+die Störung — Störungen 
+die Strafe — Strafen 
+die Strecke — Strecken 
+umsteigen — ist umgestiegen — stieg um 
+die Umwelt 
+unterwegs 
+die Verbindung — Verbindungen 
+verehrt, verehrte 
+„Verehrte Fahrgäste, achten Sie bitte auf die Durchsagen!“ 
+verpassen — verpasst 
+verschlafen — verschlafen — verschlief 
+verspätet 
+die Verspätung — Verspätungen 
+die Vorsicht 
+wenig 
+wohl 
+die Zeitschrift — Zeitschriften 
+der Zoo 
+Unsere neue Wohnung 
+ablesen — abgelesen — las ab 
+die Ablesung 
+abstellen — abgestellt 
+Wir stellen das Fahrrad in der Garage ab. 
+afrikanisch 
+das Altglas 
+aufschließen — aufgeschlossen 
+ausführen — ausgeführt 
+ausgeben — ausgegeben — gab aus 
+ausziehen — ist ausgezogen — zog aus 
+beachten — beachtet 
+bedeuten — bedeutet 
+der Beinbruch 
+berufstätig 
+die Beschwerde — Beschwerden 
+besichtigen — besichtigt 
+der Bezirk 
+der Biomüll 
+die Biotonne 
+das Brett 
+der Briefkasten — Briefkästen 
+darum 
+dass 
+die Ecke 
+die Einbauküche 
+einrichten — eingerichtet 
+die Einweihungsparty 
+die Einwurfzeit — Einwurfzeiten 
+einziehen — ist eingezogen — zog ein 
+der Einzug 
+entsorgen — entsorgt 
+erfolgen — ist erfolgt 
+der Fahrradständer 
+die Fernwärme 
+das Gas 
+Gassi gehen — ist Gassi gegangen — ging Gassi 
+Pablo geht mit seinem Hund Gassi. 
+gehören — gehört 
+gesondert 
+der Glascontainer 
+der/die Hausbewohner/in 
+der/die Hausmeister/in 
+die Hausordnung 
+die Hausregel — Hausregeln 
+die Hausreinigung 
+die Hausverwaltung 
+herzlich 
+hoch 
+Hof 
+hoffen — gehofft 
+jemand 
+der Kellerzugang 
+der Kinderwagen 
+die Kleinmöbel (Pl.) 
+die Kommode 
+kündigen — gekündigt 
+legen — gelegt 
+leidtun — leidgetan — tat leid 
+Es tut mir leid. 
+der/die Lieferant/in 
+liefern — geliefert 
+der/die Makler/in 
+der/die Mieter/in 
+der/die Mitbewohner/in 
+die Mitteilung 
+die Müllabfuhr 
+die Nachbarschaft 
+die Nachricht 
+der Nachtisch 
+die Nähe 
+ordnungsgerecht 
+privat 
+reichlich 
+der Restmüll 
+schließlich 
+schonen — geschont 
+setzen — gesetzt 
+sogar 
+sorgen — gesorgt 
+sorgfältig 
+Spaziergang 
+der Spiegel 
+der Stellplatz — Stellplätze 
+die Tiefgarage 
+die Tonne 
+trennen — getrennt 
+die Treppe 
+das Treppenhaus 
+übernehmen — übernommen — übernahm 
+umziehen — ist umgezogen — zog um 
+der Umzug 
+der Umzugskarton — Umzugskartons 
+die Vase — Vasen 
+der Verbraucherzähler 
+vereinbaren — vereinbart 
+der/die Vermieter/in 
+vermieten — vermietet 
+vorhanden 
+wegen { Genitiv } 
+weil 
+weiterhin 
+die Wohngemeinschaft 
+die Wohnungsbesichtigung 
+der Wunsch — Wünsche 
+der Zähler 
+der Zugang — Zugänge 
+zuletzt 
+zuzüglich 
+Auf dem Amt 
+abgeben — abgegeben — gab ab 
+ablehnen — abgelehnt 
+abmelden sich — abgemeldet 
+die Abmeldung 
+ähnlich 
+das Amt 
+das Amtsdeutsch 
+ändern — geändert 
+der/die Angehörige — Angehörigen 
+ankreuzen — angekreuzt 
+die Anschrift 
+der Antrag — Anträge 
+der/die Antragsteller/in 
+die Arbeitsagentur 
+die Arbeitserlaubnis 
+das Arbeitslosengeld 
+der Arbeitsplatz — Arbeitsplätze 
+die Arbeitsvermittlung 
+der Aufenthalt 
+die Aufenthaltserlaubnis 
+aufrufen — aufgerufen — rief auf 
+der Ausbildungsplatz 
+das Ausländeramt 
+die Ausländerbehörde 
+der Ausweis 
+beantragen — beantragt 
+bearbeiten — bearbeitet 
+die Behörde 
+die Berufsberatung 
+das Berufsinformationszentrum 
+der/die Cousin/e 
+dabei 
+das Dokument 
+der/die Ehepartner/in 
+die Eheschließung — Eheschließungen 
+das Einwohnermeldeamt 
+der/die Enkel/in 
+das Enkelkind — Enkelkinder 
+entschuldigen sich — entschuldigt 
+das Familienbuch 
+die Familienkasse 
+das Familienmitglied — Familienmitglieder 
+fehlen — gefehlt 
+das Finanzamt 
+die Geburt — Geburten 
+das Geburtsdatum — Geburtsdaten 
+das Geburtsland 
+der Geburtsname 
+der Geburtsort 
+die Geburtsurkunde 
+genehmigen — genehmigt 
+das Geschlecht — Geschlechter 
+herein 
+hingehen — ist hingegangen — ging hin 
+die Integration 
+der Integrationskurs 
+das Kindergeld 
+der/die Lebenspartner/in 
+der Lichtbildausweis 
+losfahren — ist losgefahren — fuhr los 
+männlich 
+die Nichte — Nichten 
+notieren — notiert 
+der Personalausweis 
+der Reisepass — Reisepässe 
+die Schwiegereltern (Pl.) 
+die Staatsangehörigkeit 
+das Team 
+der Teil 
+die Unterlagen (Pl.) 
+unterschreiben — unterschrieben 
+die Urkunde — Urkunden 
+vollständig 
+die Webseite — Webseiten 
+weiblich 
+wiederholen — wiederholt 
+die Zulassungsstelle 
+zuständig 
+die Schule, und dann? 
+das Abitur (Abi) 
+ablegen — abgelegt 
+eine Prüfung ablegen 
+abschließen — abgeschlossen 
+anbieten — angeboten — bot an 
+der/die Anfänger/in 
+die Architektur 
+das Ausland 
+der Autounfall — Autounfälle 
+beenden — beendet 
+die Beratung 
+der Bereich 
+die Berufsausbildung 
+die Berufsschule 
+besonders 
+der Bildungsweg 
+die Büroorganisation 
+das Chaos 
+die Decke 
+das Ende 
+die Energie 
+enthalten — enthalten 
+entscheiden sich — entschieden 
+erforderlich 
+die Fitness 
+fliehen — ist geflohen — floh 
+fortgeschritten 
+der/die Frisör/in 
+genial 
+hoffentlich 
+jobben — gejobbt 
+die Kategorie — Kategorien 
+kaufmännisch 
+die Kenntnisse (Pl.) 
+die Kommunikation 
+kompakt 
+kürzen — gekürzt 
+die Kursgebühr 
+das Kurzprogramm 
+der Lebensweg — Lebenswege 
+die Lehre 
+das Lehrmaterial 
+das Material 
+miserabel 
+mittlere 
+das Prost 
+die Prüfung 
+das Prüfungstraining 
+der Realschulabschluss 
+reisen — ist gereist 
+rhythmisch 
+schaffen — geschafft 
+die Schulzeit 
+seit 
+das Semester — Semester 
+separat 
+die Situation — Situationen 
+städtisch 
+die Terminplanung 
+der Test — Tests 
+das Thema — Themen 
+die Theorie 
+trainieren — trainiert 
+das Training 
+der Trick — Tricks 
+die Überraschung — Überraschungen 
+die Überschrift — Überschriften 
+umschreiben — umgeschrieben — schrieb um 
+verlieben sich — verliebt 
+verlieren — verloren — verlor 
+Vorbereitung 
+die Vorkenntnisse (Pl.) 
+das Vorstellungsgespräch 
+die Weiterbildung — Weiterbildungen 
+das Yoga 
+das Zeitmanagement 
+das Zertifikat 
+das Zeugnis 
+zufrieden 
+Auf Arbeitssuche 
+der/die Ansprechpartner/in 
+der Aushilfsjob 
+aussehen — ausgesehen — sah aus 
+der/die Auszubildende (Azubi) — Auszubildende 
+der/die Bäckereifachverkäufer/in 
+bedanken sich — bedankt 
+bedienen — bedient 
+beeilen sich — beeilt 
+begründen — begründet 
+das Beratungsgespräch 
+das Berufsfeld — Berufsfelder 
+der/die Bewerber/in 
+bieten — geboten — bot 
+eindecken — eingedeckt 
+genug 
+Grundschule 
+handwerklich 
+das Holz 
+der/die Informatiker/in 
+die Kneipe 
+kostenfrei 
+die Küchenhilfe 
+die Laufbahn 
+der Lebenslauf — Lebensläufe 
+lückenlos 
+melden sich — gemeldet 
+die Mittelschule 
+der/die Modedesigner/in 
+das Muster 
+nötig 
+ob 
+persönlich 
+professionell 
+die Reinigungsarbeiten (Pl.) 
+die Rente — Renten 
+der/die Restaurantfachmann/-frau 
+spezial 
+statt 
+die Stelle 
+das Stellenangebot 
+die Stellensuche 
+die Struktur 
+sympathisch 
+die Teilzeit 
+die Teilzeitstelle 
+tippen — getippt 
+der Tippfehler 
+der/die Tischler/in 
+üben — geübt 
+die Übersiedlung 
+unprofessionell 
+unsympathisch 
+unzufrieden 
+verrückt 
+das Volleyball 
+die Vollzeit 
+die Vollzeitstelle 
+die Voraussetzung — Voraussetzungen 
+die Vorlage — Vorlagen 
+zuverlässig 
+Ein Einkaufsbummel 
+die Accessoires (Pl.) 
+anhaben — angehabt 
+die Apfelschorle 
+die Aubergine — Auberginen 
+die Ausrüstung 
+der Babyartikel — Babyartikel 
+die Badesachen (Pl.) 
+der Bart — Bärte 
+die Bekleidung 
+bestimmt 
+Der Mantel ist bestimmt sehr teuer. 
+blond 
+braten — gebraten 
+bummeln — gebummelt 
+bunt 
+das Camping 
+der Champignon — Champignons 
+die Currywurst 
+die Dame — Damen 
+darin 
+dick 
+der/die Dieb/in 
+das Ding — Dinge 
+der Duft 
+dünn 
+das Duschgel 
+egal 
+das Ehepaar 
+einfarbig 
+die Elektronik 
+der Fahrradhelm 
+fantastisch 
+das Fast Food 
+die Flipflops (Pl.) 
+frittieren — frittiert 
+die Gemüselasagne 
+gepunktet 
+das Gericht 
+gestreift 
+glatt 
+die Glatze 
+das Gold 
+griechisch 
+die Gulaschsuppe 
+der Gürtel 
+die Haarpflege 
+das Hauptgericht 
+die Hautpflege 
+hübsch 
+die Kamera 
+kariert 
+das Kompliment — Komplimente 
+der Kopfhörer 
+die Kosmetiktasche 
+die Krawatte 
+das Küchengerät — Küchengeräte 
+laufen — ist gelaufen — lief 
+die Lieblingsfarbe 
+lockig 
+das Make-up 
+die Maus 
+das Mineralwasser 
+das Modegeschäft 
+der Modeschmuck 
+nachher 
+die Naturkosmetik 
+das Navigationsgerät (Navi) 
+der Ofen 
+der Ohrring — Ohrringe 
+die Parfümerie 
+die Pfanne 
+plötzlich 
+der/die Polizist/in 
+der Schafskäse 
+scharf 
+schauen — geschaut 
+das Schaufenster 
+schick 
+schlank 
+der Schmuck 
+das Schnäppchen 
+das Schnitzel 
+der Schnurrbart 
+der Schrei 
+die Schuhgröße 
+die Shorts 
+das Silber 
+der Snack — Snacks 
+die Spielwaren (Pl.) 
+das Steak 
+stehlen — gestohlen — stahl 
+der Stiefel — Stiefel 
+die Süßigkeiten 
+das Tattoo — Tattoos 
+der Toaster 
+ungarisch 
+die Unterwäsche 
+das Vanilleeis 
+der/die Vegetarier/in 
+vegetarisch 
+wandern — ist gewandert 
+der Wanderschuh — Wanderschuhe 
+der Wecker 
+wirklich 
+wunderbar 
+zubereiten — zubereitet 
+die Zucchini 
+Bei der Arbeit 
+absetzen — abgesetzt 
+die Abteilung — Abteilungen 
+angeben — angegeben — gab an 
+der Anruf — Anrufe 
+der/die Anrufer/in 
+der/die Arbeitgeber/in 
+der Arbeitsauftrag — Arbeitsaufträge 
+der Arbeitsbeginn 
+der Arbeitsschutz 
+der Arbeitsvertrag — Arbeitsverträge 
+der Aufzug 
+der Außendienst 
+ausmachen — ausgemacht 
+der/die Beauftragte 
+bereit 
+bereitstellen — bereitgestellt 
+besprechen — besprochen 
+die Besprechung 
+betätigen — betätigt 
+betreffen — betroffen 
+bewahren — bewahrt 
+bewegen — bewegt 
+der Bildschirm 
+der Brand 
+die Brandbekämpfung 
+der Brandfall 
+der Brandmelder 
+der Brandschutz 
+brennen — gebrannt — brannte 
+die Buchhaltung 
+danken — gedankt 
+deutlich 
+echt 
+die Einweisung 
+die Elektrik 
+der Entwurf — Entwürfe 
+erlauben — erlaubt 
+erwarten — erwartet 
+erwischen — erwischt 
+der Feuerlöscher 
+die Flamme — Flammen 
+folgen — gefolgt 
+gefährden — gefährdet 
+gestalten — gestaltet 
+gesund 
+die Grafik — Grafiken 
+der/die Grafiker/in 
+die Hektik 
+heraussuchen — herausgesucht 
+hinfahren — ist hingefahren — fuhr hin 
+höflich 
+der Internetzugang 
+der Kabelsalat 
+kennzeichnen — gekennzeichnet 
+die Kerze — Kerzen 
+das Konto — Konten 
+die Kontoverbindung 
+kopieren — kopiert 
+die Kraft — Kräfte 
+die Kundenbetreuung 
+der Laptop 
+das Marketing 
+die Mehrfachsteckdose 
+mitschreiben — mitgeschrieben — schrieb mit 
+die Nachbereitung 
+nennen — genannt 
+die Personalabteilung 
+das Personalbüro 
+der/die Personalleiter/in 
+das Protokoll 
+reagieren — reagiert 
+die Regel — Regeln 
+der Rettungswagen 
+die Rückfrage 
+das Sekretariat 
+die Sicherheit 
+die Steckdose 
+die Steuer 
+das Teelicht — Teelichter 
+überlasten — überlastet 
+unbürokratisch 
+unterstützen — unterstützt 
+verabschieden sich — verabschiedet 
+verbessern — verbessert 
+verboten 
+das Verhalten 
+verlegen — verlegt 
+vermeiden — vermieden 
+die Vermeidung 
+die Versicherung — Versicherungen 
+der Vertrieb 
+verwenden — verwendet 
+vorbeikommen — ist vorbeigekommen — kam vorbei 
+vorbereiten — vorbereitet 
+die Vorschrift — Vorschriften 
+der Werbeflyer 
+die Werbeagentur 
+der/die Werbetexter/in 
+In der Schule 
+aggressiv 
+anders 
+die Angst — Ängste 
+aufhören — aufgehört 
+aufpassen — aufgepasst 
+ausreichend 
+befriedigend 
+die Begrüßung — Begrüßungen 
+beraten — beraten 
+der Bericht — Berichte 
+das Berufskolleg 
+der Berufswunsch 
+die Biologie 
+das Bundesland 
+die Chemie 
+damals 
+dieselbe 
+das Diplom 
+der Elternabend 
+der Elternsprechtag 
+der/die Englischlehrer/in 
+die Erdkunde 
+etwa 
+das Fach — Fächer 
+die Fachhochschule 
+die Fachhochschulreife 
+der Fluss — Flüsse 
+formell 
+der/die Fotograf/in 
+freiwillig 
+die Gesamtschule 
+die Geschichte 
+das Gipsbein 
+das Glück 
+das Gymnasium 
+das Halbjahr 
+die Hauptschule 
+hinfallen — ist hingefallen — fiel hin 
+der Integrationsverein 
+der/die Jugendliche — Jugendlichen 
+der Junge 
+die Kindertagesstätte (Kita) — Kindertagesstätten (Kitas) 
+die Klasse 
+die Klassenarbeit 
+der/die Klassenlehrer/in 
+der Knöchel 
+der Korb 
+die Kunst 
+das Lieblingsfach — Lieblingsfächer 
+lösen — gelöst 
+die Lust 
+das Mädchen — Mädchen 
+mangelhaft 
+die Mathearbeit 
+die Meinung — Meinungen 
+die Nachhilfe 
+normal 
+die Note — Noten 
+die Oberschule 
+olympisch 
+die Pflicht 
+die Physik 
+der/die Pilot/in 
+die Planung 
+die Realschule 
+die Rede 
+die Religion 
+das Schaubild 
+schrecklich 
+die Schulform 
+der/die Schulleiter/in 
+die Schulpflicht 
+das Schulsystem 
+selbst 
+der/die Sozialpädagoge/-pädagogin 
+der Sportunterricht 
+streng 
+die Tagesordnung 
+der Teenager — Teenager 
+teilnehmen — teilgenommen — nahm teil 
+das Tier — Tiere 
+der/die Tierpfleger/in 
+träumen — geträumt 
+traurig 
+turnen — geturnt 
+umknicken — umgeknickt 
+unfair 
+ungenügend
+die Uniform 
+Gesund sein und gesund bleiben 
+die Akupunktur 
+die Alternative 
+anerkannt 
+die Anweisung — Anweisungen 
+die Auflistung 
+die Behandlung — Behandlungen 
+belegen — belegt 
+die Bescheinigung — Bescheinigungen 
+der Boden — Böden 
+dagegen 
+damit 
+der Eiswürfel — Eiswürfel 
+empfindlich 
+engagieren sich — engagiert 
+entspannen sich — entspannt 
+die Entspannung 
+erfahren — erfahren — erfuhr 
+erstatten — erstattet 
+fit 
+gesamt 
+gesundheitlich 
+die Gymnastik 
+das Handgelenk 
+das Hausmittel — Hausmittel 
+die Haut 
+hiermit 
+hierzu 
+hochlegen — hochgelegt 
+holen — geholt 
+klagen — geklagt 
+kommunizieren — kommuniziert 
+kompliziert 
+die Kostenerstattung 
+die Kostenübernahme 
+kühlen — gekühlt 
+leihen — geliehen 
+manche 
+die Massage 
+massieren — massiert 
+die Meditation 
+der Muskel — Muskeln 
+die Nebenwirkung — Nebenwirkungen 
+das Pilates 
+der Rat 
+reizen — gereizt 
+die Rückenmuskulatur 
+schlafengehen — ist schlafen gegangen — ging schlafen 
+schlagen — geschlagen — schlug 
+die Schmerztablette 
+die Schwellung 
+selber 
+speziell 
+die Sportart 
+der Sportverein 
+ständig 
+stärken — gestärkt 
+der Tanzkurs 
+die Teilnahme 
+die Teilnahmebescheinigung 
+telefonisch 
+die Therapie 
+der/die Trainer/in 
+treiben — getrieben — trieb 
+die Tüte 
+die Übelkeit 
+übersenden — übersandt 
+überweisen — überwiesen 
+übrigens 
+die Verabschiedung 
+vermitteln — vermittelt 
+verschreiben — verschrieben 
+der/die Versicherungsnehmer/in 
+der Versicherungstarif 
+die Verspannung — Verspannungen 
+während { Genitiv } 
+die Wärmflasche 
+weggehen — ist weggegangen — ging weg 
+zwischendurch 
+Auf der Bank 
+abheben — abgehoben 
+die Aktivität — Aktivitäten 
+anfordern — angefordert 
+die Armut 
+aufheben — aufgehoben 
+ausdrucken — ausgedruckt 
+die Bankkarte 
+der/die Bankkaufmann/Bankkauffrau 
+die Bankleitzahl 
+der Bankschalter 
+bar 
+das Bargeld 
+bargeldlos 
+die Basis 
+begleichen — beglichen 
+berechnen — berechnet 
+die Bestellnummer 
+die Bestellung 
+der BIC 
+der Blick 
+die Broschüre 
+drücken — gedrückt 
+eigen 
+die Eingabe — Eingaben 
+eingeben — eingegeben — gab ein 
+einzahlen — eingezahlt 
+erledigen — erledigt 
+eröffnen — eröffnet 
+die Filiale 
+folgend 
+formulieren — formuliert 
+die Gebühr — Gebühren 
+der Geldautomat 
+die Geldbörse 
+das Geldstück — Geldstücke 
+genießen — genossen 
+gewinnen — gewonnen — gewann 
+die Girocard 
+das Girokonto 
+das Hufeisen 
+die IBAN 
+indirekt 
+die Innenstadt 
+jederzeit 
+das Kleeblatt 
+das Kleingeld 
+der Kontoauszug — Kontoauszüge 
+der/die Kontoinhaber/in 
+die Kontonummer — Kontonummern 
+der Kontostand 
+kontrollieren — kontrolliert 
+das Kreditinstitut — Kreditinstitute 
+die Kreditkarte — Kreditkarten 
+die Kundennummer — Kundennummern 
+die Kundenreferenz 
+der Laden — Läden 
+die Leistung — Leistungen 
+die Menge 
+mobil 
+monatlich 
+die Münze — Münzen 
+niemand 
+der Nulltarif 
+nutzen — genutzt 
+das Online-Banking 
+der Pfennig — Pfennige 
+der PIN 
+der Quatsch 
+die Rechnung 
+der Rechnungsbetrag 
+die Rechnungsnummer 
+reich 
+der Reichtum 
+der Respekt 
+der Schein — Scheine 
+schieben — geschoben — schob 
+schlachten — geschlachtet 
+der/die Schornsteinfeger/in 
+das Sparkonto — Sparkonten 
+das Sparschwein — Sparschweine 
+spätestens 
+stecken — gesteckt 
+stoßen — gestoßen — stieß 
+die TAN 
+die Taste — Tasten 
+der/die Täter/in 
+der Überfall — Überfälle 
+überfallen — überfallen — überfiel 
+die Überwachungskamera — Überwachungskameras 
+die Überweisung — Überweisungen 
+das Überweisungsformular 
+der Versuch — Versuche 
+der Verwendungszweck — Verwendungszwecke 
+der Vorteil — Vorteile 
+weglaufen — ist weggelaufen — lief weg 
+der/die Zahlungsempfänger/in 
+der Zeitungsartikel — Zeitungsartikel 
+der/die Zeuge/Zeugin 
+zurückgeben — zurückgegeben — gab zurück 
+Freizeitvergnügen 
+abschalten — abgeschaltet 
+der Appetit 
+ärgern sich — geärgert 
+asiatisch 
+der Ausflug — Ausflüge 
+ausgezeichnet 
+der Ausgleich 
+außer { Dativ } 
+die Aussicht 
+der/die Babysitter/in 
+die Band 
+das Basketball 
+basteln — gebastelt 
+das Besteck 
+der Chor 
+daheim 
+der Daumen 
+der Einlass 
+entlang { Dativ } 
+das Event 
+das Feuerzeug 
+die Freizeit 
+die Freizeitaktivität — Freizeitaktivitäten 
+das Freizeitangebot — Freizeitangebote 
+das Freizeitvergnügen 
+die Gabel — Gabeln 
+die Gastronomie 
+das Gedicht — Gedichte 
+der Gegensatz 
+der/die Geiger/in 
+gemischt 
+das Geschirr 
+der Grill 
+die Grillkohle 
+der Grillplatz 
+die Grillsoße 
+die Grillzange 
+herrlich 
+herum 
+interessieren sich für { Akkusativ } — interessiert 
+der/die Interviewpartner/in 
+irgendwo 
+jährlich 
+jeweils 
+knackig 
+konzentrieren sich — konzentriert 
+der Kumpel 
+die Leidenschaft 
+der Löffel — Löffel 
+malen — gemalt 
+meist 
+das Messer — Messer 
+mitfahren — ist mitgefahren — fuhr mit 
+nähen — genäht 
+normalerweise 
+das Open-Air-Konzert 
+der Poetry-Slam 
+die Regie 
+der Saal — Säle 
+das Schach 
+der Schnupperkurs 
+die Schüssel 
+segeln — gesegelt 
+der Sieg 
+das Spielfeld 
+das Sportergebnis — Sportergebnisse 
+der Sportplatz 
+surfen — gesurft 
+der Tango 
+der/die Tänzer/in 
+die Tischdecke 
+die Tischdekoration 
+trotzdem 
+umfangreich 
+die Umfrage 
+die Umkleide 
+unterhalten sich — unterhalten 
+veranstalten — veranstaltet 
+der Veranstaltungshinweis — Veranstaltungshinweise 
+verbringen — verbracht 
+die Verpackung — Verpackungen 
+verteilen — verteilt 
+das Volleyballspiel 
+die Vorlesung — Vorlesungen 
+wundervoll 
+Gute Reise! 
+der Abfall — Abfälle 
+der Abflug 
+die Absage 
+aktiv 
+der Alkohol 
+angenehm 
+annulliert 
+die Anzeigetafel — Anzeigetafeln 
+der Aufruf 
+der Ausgang — Ausgänge 
+die Ausstattung 
+der Behälter — Behälter 
+betreten — betreten 
+der/die Bewohner/in — Bewohner/innen 
+die Bordkarte 
+der/die Camper/in — Camper/innen 
+der Campingplatz — Campingplätze 
+der Check-in-Schalter 
+der Container — Container 
+die Dienstreise 
+das Doppelbett — Doppelbetten 
+das Doppelzimmer (DZ) — Doppelzimmer 
+einchecken — eingecheckt 
+die Einsteigezeit 
+das Einzelzimmer (EZ) 
+erleben — erlebt 
+der Flug — Flüge 
+der/die Flugbegleiter/in — Flugbegleiter/innen 
+der Fluggast — Fluggäste 
+die Fluggesellschaft — Fluggesellschaften 
+führen — geführt 
+füttern — gefüttert 
+das Gate 
+das Gepäck 
+die Gepäckausgabe 
+das Gepäckband 
+sein gestattet 
+die Halbpension (HP) 
+das Handgepäck 
+historisch 
+das Hostel 
+hygienisch 
+das Inlineskaten 
+die Jugendherberge — Jugendherbergen 
+der Katalog — Kataloge 
+klettern — geklettert 
+komfortabel 
+die Lage 
+das Lagerfeuer 
+landen — gelandet 
+der Lärm 
+die Lautsprecherdurchsage — Lautsprecherdurchsagen 
+lebhaft 
+die Leine 
+der Leuchtturm — Leuchttürme 
+der Meerblick 
+mitten 
+der Nebel 
+neblig 
+das Paradies 
+der/die Passagier/in — Passagiere 
+die Passkontrolle 
+der Pilotenstreik 
+der Pool 
+rechtzeitig 
+das Reisebüro 
+der Reiseplan — Reisepläne 
+die Reiseplanung 
+reiten — geritten — ritt 
+die Ruhezeit — Ruhezeiten 
+sauber 
+die Sauberkeit 
+der Schalter — Schalter 
+die Schlange 
+der Sonnenschirm — Sonnenschirme 
+die Sonnenterrasse — Sonnenterrassen 
+der Sonnenuntergang — Sonnenuntergänge 
+der Stern — Sterne 
+stören — gestört 
+das Streichholz — Streichhölzer 
+streiken — gestreikt 
+die Taschenlampe 
+das Taschenmesser 
+traumhaft 
+übernachten — übernachtet 
+die Übernachtung 
+die Übernachtung mit Frühstück (ÜF) 
+die Umgebung 
+umgehend 
+verärgert 
+verreisen — ist verreist 
+verschieben — verschoben 
+der Wanderer 
+die Wandertour — Wandertouren 
+der Waschraum — Waschräume 
+der Wohnwagen 
+das Zelt 
+der Zoll 
+der Zuschlag — Zuschläge 
+die Nachbarn 
+absprechen — abgesprochen 
+der Abstellplatz — Abstellplätze 
+akzeptieren — akzeptiert 
+anstreichen — angestrichen 
+der Ärger 
+ärgerlich 
+die Aufregung 
+die Ausnahme 
+das Balkongeländer 
+befestigen — befestigt 
+behalten — behalten — behielt 
+beleidigen — beleidigt 
+die Beleidigung — Beleidigungen 
+berechtigt 
+beschimpfen — beschimpft 
+die Beschimpfung — Beschimpfungen 
+beschweren sich — beschwert 
+der Blumentopf — Blumentöpfe 
+bohren — gebohrt 
+deswegen 
+dumm 
+eilig 
+einhalten — eingehalten — hielt ein 
+einlegen — eingelegt 
+einstellen — eingestellt 
+enden — geendet 
+die Entscheidung — Entscheidungen 
+entspannend 
+entsprechen — entsprochen 
+erhöhen — erhöht 
+erleichtern — erleichtert 
+erwähnen — erwähnt 
+eskalieren — eskaliert 
+exotisch 
+fair 
+festkleben — festgeklebt 
+die Freude 
+die Frist — Fristen 
+fristgerecht 
+fristlos 
+der Gemeinschaftsraum — Gemeinschaftsräume 
+gesetzlich 
+hämmern — gehämmert 
+heizen — geheizt 
+die Instandhaltung 
+klug 
+der Konflikt — Konflikte 
+die Kündigung 
+lüften — gelüftet 
+massiv 
+meckern — gemeckert 
+das Meerschweinchen 
+die Mieterhöhung 
+der Mietspiegel 
+der Mietvertrag — Mietverträge 
+die Modernisierung 
+nachsehen — nachgesehen — sah nach 
+neugierig 
+obwohl 
+offenbar 
+protestieren — protestiert 
+der/die Richter/in — Richter/innen 
+die Rücksicht 
+sammeln — gesammelt 
+sauer 
+der Schaden — Schäden 
+schmutzig 
+selbstverständlich 
+sinnlos 
+sinnvoll 
+sortieren — sortiert 
+stinken — gestunken — stank 
+streiten sich — gestritten 
+total 
+treu 
+überlegen — überlegt 
+üblich 
+unglaublich 
+das Unrecht 
+das Urteil 
+vergleichbar 
+verpflichten — verpflichtet 
+das Verständnis 
+der Verstoß — Verstöße 
+verstoßen — verstoßen — verstieß 
+völlig 
+vorher 
+wegräumen — weggeräumt 
+der Widerspruch — Widersprüche 
+wütend 
+der Zeitraum — Zeiträume 
+ziemlich 
+die Zimmerlautstärke 
+zugeben — zugegeben — gab zu 
+zurücklassen — zurückgelassen — ließ zurück 
+das Zusammenleben 
+zustimmen — zugestimmt 
+der Zutritt 
+Ein Schulprojekt zum Umweltschutz 
+das Abgas — Abgase 
+das Abwasser 
+das Altöl 
+das Altpapier 
+das Aluminium 
+andauernd 
+ankündigen — angekündigt 
+anstatt { Genitiv } 
+die Begleitperson 
+belasten — belastet 
+die Belastung 
+beobachten — beobachtet 
+der Beutel — Beutel 
+biologisch 
+die Chemikalie — Chemikalien 
+der Deckel 
+doof 
+der Eierkarton — Eierkartons 
+die Eierschale — Eierschalen 
+einfallen — ist eingefallen — fiel ein 
+das Elektroauto 
+das Energiesparhaus 
+die Energiesparlampe 
+das Erdbeben 
+die Erde 
+die Erderwärmung 
+die Erlaubnis 
+der/die Förster/in — Förster/innen 
+der Gegenstand — Gegenstände 
+der Gegenvorschlag — Gegenvorschläge 
+giftig 
+der Haushalt 
+das Hochwasser 
+der/die Hörer/in — Hörer/innen 
+der Kaffeefilter 
+das Klima 
+der Klimawandel 
+die Konservendose 
+der Kunststoff — Kunststoffe 
+die Luft 
+die Matratze 
+das Metall 
+der Milchkarton 
+die Mülltonne 
+die Mülltrennung 
+die Naturkatastrophe 
+das Naturprodukt — Naturprodukte 
+die Obstschale — Obstschalen 
+der Papiermüll 
+die Pappe 
+das Picknick 
+der Planet — Planeten 
+das Plastik 
+recyceln — recycelt 
+der Sack — Säcke 
+die Sammelstelle 
+schädigen — geschädigt 
+schädlich 
+der Schadstoff — Schadstoffe 
+schützen — geschützt 
+die Solarenergie 
+der Sondermüll 
+der Sonnenschein 
+die Sorge 
+sparsam 
+der Sperrmüll 
+stattfinden — stattgefunden — fand statt 
+der Tierschutz 
+das Trinkwasser 
+trüb 
+der Tsunami 
+der Turm 
+umdrehen — umgedreht 
+umgehen — umgangen — umging 
+umweltfreundlich 
+der Umweltschutz 
+die Umweltverschmutzung 
+das Unwetter — Unwetter 
+verändern — verändert 
+verlaufen — ist verlaufen — verlief 
+verschmutzen — verschmutzt 
+verschwenden — verschwendet 
+die Verschwendung 
+versprechen — versprochen — versprach 
+verwerten — verwertet 
+voraussichtlich 
+vorhersagen — vorhergesagt — sagte vorher 
+wahrscheinlich 
+wegschmeißen (ugs.) — weggeschmissen — schmiss weg 
+wegwerfen — weggeworfen — warf weg 
+der Wertstoff — Wertstoffe 
+der Wind 
+die Windel — Windeln 
+der Wirbelsturm — Wirbelstürme 
+die Wolke — Wolken 
+zerstören — zerstört 
+die Zerstörung 
+die Zigarettenkippe — Zigarettenkippen 
+zurückfahren — ist zurückgefahren — fuhr zurück 
+Online einkaufen 
+AGB (Allgemeine Geschäftsbedingungen) 
+anfassen — angefasst 
+die Anprobe 
+anprobieren — anprobiert 
+die Art — Arten 
+die Artikelnummer — Artikelnummern 
+die Atmung 
+atmungsaktiv 
+aufmerksam 
+der Auftrag 
+die Auftragsnummer 
+ausliefern — ausgeliefert 
+die Auswahl 
+der Bankeinzug 
+bereits 
+beschädigt 
+die Bestellhotline 
+der Betrag — Beträge 
+der Bezahlvorgang — Bezahlvorgänge 
+das Callcenter 
+der Datenschutz 
+dicht 
+durchlässig 
+ebenso 
+eher 
+das Eigentum 
+die Ergänzung — Ergänzungen 
+erhältlich 
+eventuell 
+falls 
+der Gutschein 
+herstellen — hergestellt 
+die Herstellung 
+das Impressum 
+innerhalb { Genitiv } 
+irgendwie 
+der Kauf 
+die Kaufbestätigung 
+der/die Käufer/in — Käufer/innen 
+der Kaufvertrag 
+die Kosmetik 
+die Kundenbefragung 
+kundenfreundlich 
+das Lager 
+lieferbar 
+die Lieferbedingung — Lieferbedingungen 
+die Lieferung 
+luftdurchlässig 
+die Mehrkosten (Pl.) 
+die Nachnahme 
+der Nachteil 
+der Onlineeinkauf 
+der Onlineshop 
+das Onlineshopping 
+das Paket 
+der Paketbote 
+der Paketdienst 
+das Porto 
+portofrei 
+die Portokosten (Pl.) 
+produzieren — produziert 
+die Qualität 
+die Reklamation — Reklamationen 
+die Retoure — Retouren 
+der Retourenschein 
+die Rücksendung 
+das Shopping 
+unverbindlich 
+der/die Verbraucher/in — Verbraucher/innen 
+verpacken — verpackt 
+der Versand 
+die Versandkosten (Pl.) 
+versandkostenfrei 
+die Versandkostenpauschale 
+versenden — versandt 
+die Ware — Waren 
+der Warenkorb 
+wasserdicht 
+der Werktag — Werktage 
+wetterfest 
+widerrufen — widerrufen 
+das Widerrufsrecht 
+die Zahlung 
+zurückschicken — zurückgeschickt 
+zurücksenden — zurückgesandt 
+zurücktreten — ist zurückgetreten — trat zurück 
+zustellen — zugestellt 
+Fernsehen und Unterhaltung 
+das Alter 
+anschauen — angeschaut 
+der Anstoß 
+anstrengend 
+das Autorennen 
+befragen — befragt 
+begeistern sich — begeistert 
+beliebt 
+der Biergarten 
+das Boxen 
+die Chips (Pl.) 
+demnächst 
+die Detektivgeschichte 
+das Diagramm 
+die Diskussion 
+die Dokumentation (Doku) — Dokumentationen (Dokus) 
+doppelt 
+dramatisch 
+der Durchschnitt 
+die DVD 
+ehrlich 
+einschlafen — ist eingeschlafen — schlief ein 
+einsetzen — eingesetzt 
+das Eishockey 
+der Eiskunstlauf 
+entstehen — ist entstanden — entstand 
+das Ereignis — Ereignisse 
+erfolgreich 
+das Ergebnis — Ergebnisse 
+der/die Experte/Expertin — Experten/Expertinnen 
+der Fan — Fans 
+der Fußballclub 
+die Gewohnheit — Gewohnheiten 
+das Golf 
+der Handball 
+das Herz 
+der Horrorfilm 
+der/die Kandidat/in — Kandidaten/Kandidatinnen 
+der/die Kommissar/in — Kommissare/Kommissarinnen 
+der/die Kommentator/in — Kommentatoren/Kommentatorinnen 
+die Komödie — Komödien 
+der Krimi — Krimis 
+kuscheln — gekuschelt 
+die Langeweile 
+die Leichtathletik 
+die Lieblingsbeschäftigung 
+das Magazin 
+die Mannschaft 
+die Mehrheit 
+die Minderheit 
+mitreden — mitgeredet 
+das Mittelfeld 
+die Moderation 
+der Mord 
+motiviert 
+naschen — genascht 
+die Niederlage 
+objektiv 
+die Quizshow 
+das Radrennen 
+die Rangliste 
+das Rätsel — Rätsel 
+die Reportage 
+der/die Reporter/in — Reporter/innen 
+retten — gerettet 
+romantisch 
+die Runde 
+schalten — geschaltet 
+der Schiedsrichter 
+schießen — geschossen — schoss 
+die Seifenoper — Seifenopern 
+die Sendung — Sendungen 
+die Serie — Serien 
+siegen — gesiegt 
+der/die Sieger/in — Sieger/innen 
+der Skisport 
+die Soap 
+spannend 
+der/die Spieler/in — Spieler/innen 
+der Spielfilm 
+das Stadion 
+die Statistik 
+der Tagesablauf 
+die Talkshow 
+das Tor — Tore 
+der/die Torwart/in 
+der/die Tote — Toten 
+die Übertragung 
+unentschieden 
+ungesund 
+die Unterhaltung 
+der/die Verlierer/in — Verlierer/innen 
+die Weltmeisterschaft (WM) 
+weshalb 
+zappen — gezappt 
+der Zeichentrickfilm 
+die Zeitverschwendung 
+der/die Zuschauer/in — Zuschauer/innen 
+So war das damals … 
+der/die Alliierte — Alliierten 
+die Amtssprache — Amtssprachen 
+anfangs 
+anheben — angehoben 
+die Arbeitskraft — Arbeitskräfte 
+die Arbeitslosigkeit 
+der/die Astronaut/in — Astronauten/Astronautinnen 
+das Asyl 
+aufschreiben — aufgeschrieben — schrieb auf 
+aufteilen — aufgeteilt 
+der Auswanderer — Auswanderer 
+die Auswanderung 
+die Besatzungszone — Besatzungszonen 
+besiegen — besiegt 
+der/die Bundeskanzler/in 
+die Bundesrepublik (BRD) 
+der/die Bürger/in — Bürger/innen 
+der Bürgerkrieg 
+die Demokratie 
+demokratisch 
+die Demonstration — Demonstrationen 
+die Deutsche Demokratische Republik (DDR) 
+ehemalig 
+einführen — eingeführt 
+einsperren — eingesperrt 
+die Einwanderung 
+emotional 
+entwickeln — entwickelt 
+erinnern sich an { Akkusativ } — erinnert 
+die Erinnerung — Erinnerungen 
+ernähren — ernährt 
+die Europäische Union (EU) 
+die Euroeinführung 
+der Flüchtling — Flüchtlinge 
+fördern — gefördert 
+die Fremdsprache — Fremdsprachen 
+friedlich 
+der/die Gastarbeiter/in — Gastarbeiter/innen 
+das Gefühl — Gefühle 
+der/die Gegner/in — Gegner/innen 
+das Gehalt — Gehälter 
+das Gewürz — Gewürze 
+die Grenze — Grenzen 
+gründen — gegründet 
+hart 
+die Hauptstadt — Hauptstädte 
+die Heimat 
+die Industrie 
+irgendwann 
+jahrelang 
+das Jahrhundert — Jahrhunderte 
+das Jahrzehnt — Jahrzehnte 
+der/die Jude/Jüdin — Juden/Jüdinnen 
+kaum 
+die Kindheit 
+der Krieg — Kriege 
+das Kriegsende 
+die Krippe — Krippen 
+der/die Kritiker/in — Kritiker/innen 
+die Mauer — Mauern 
+der Mauerbau 
+der Mauerfall 
+die Medizin 
+merken — gemerkt 
+die Migration 
+miteinander 
+miterleben — mitgelebt 
+musikalisch 
+die Muttersprache — Muttersprachen 
+die Nachkriegszeit 
+der Nationalsozialismus 
+die NATO 
+die Notunterkunft — Notunterkünfte 
+die Öffnung 
+die Phase — Phasen 
+politisch 
+der Protest — Proteste 
+die Regierung — Regierungen 
+die Republik — Republiken 
+der/die Russlanddeutsche — Russlanddeutschen 
+der Staat — Staaten 
+die Staatsgründung 
+das Stipendium — Stipendien 
+tatsächlich 
+die Teilung — Teilungen 
+verdrängen — verdrängt 
+vereinigen — vereinigt 
+verfolgen — verfolgt 
+verhaften — verhaftet 
+verlängern — verlängert 
+verlassen — verlassen — verließ 
+vermischen — vermischt 
+das Visum — Visa 
+das Weltall 
+wiedervereinigen — wiedervereinigt 
+die Wiedervereinigung 
+zerschlagen — zerschlagen — zerschlug 
+zurückkehren — ist zurückgekehrt — kehrte zurück 
+Deutschland – zweite Heimat? 
+abschicken — abgeschickt 
+die Abwicklung 
+amtlich 
+anerkennen — anerkannt 
+die Anerkennung 
+der Anfang — Anfänge 
+ansteckend 
+ausstellen — ausgestellt 
+die Bearbeitung 
+beglaubigen — beglaubigt 
+die Beglaubigung 
+der/die Bekannte — Bekannten 
+benötigen — benötigt 
+berufen sich — berufen 
+bescheinigen — bescheinigt 
+sein dran — ist dran gewesen — war dran 
+einreichen — eingereicht 
+enttäuschen — enttäuscht 
+die Enttäuschung — Enttäuschungen 
+der Erhalt 
+die Erklärung — Erklärungen 
+erkundigen sich — erkundigt 
+die Fähigkeit — Fähigkeiten 
+die Fantasie 
+die Formalität — Formalitäten 
+förmlich 
+die Fotokopie — Fotokopien 
+der Frieden 
+das Führungszeugnis 
+garantieren — garantiert 
+der Gedanke — Gedanken 
+die Geduld 
+geduldig 
+die Gemeinsamkeit — Gemeinsamkeiten 
+der Geruch — Gerüche 
+das Gesundheitszeugnis 
+gewährleisten — gewährleistet 
+häufig 
+das Heimweh 
+herkommen — ist hergekommen — kam her 
+das Herkunftsland — Herkunftsländer 
+hierher 
+hilfsbereit 
+inzwischen 
+die Kopie — Kopien 
+die Mentalität — Mentalitäten 
+nachdenklich 
+der/die Pflegehelfer/in — Pflegehelfer/innen 
+die Pflegekraft — Pflegekräfte 
+die Reihe 
+der/die Sachbearbeiter/in — Sachbearbeiter/innen 
+der Sprachnachweis 
+übereinstimmen — übereingestimmt 
+überglücklich 
+übersetzen — übersetzt 
+die Übersetzung — Übersetzungen 
+das Übersetzungsbüro 
+ungeduldig 
+vermissen — vermisst 
+verurteilen — verurteilt 
+wahr 
+weitergehen — ist weitergegangen — ging weiter 
+wohlfühlen sich — wohlgefühlt 
+das Ziel — Ziele 
+zügig 
+zusammenstellen — zusammengestellt 
+Ein neuer Arbeitsplatz 
+abhängig 
+absolvieren — absolviert 
+der/die Abteilungsleiter/in — Abteilungsleiter/innen 
+abwechslungsreich 
+der/die Altenpfleger/in — Altenpfleger/innen 
+die Anlage 
+die Annahme 
+anrechnen — angerechnet 
+die Anstellung 
+die Arbeitsstelle 
+die Arbeitsweise 
+die Arbeitszeit — Arbeitszeiten 
+die Assistenz 
+die Aufteilung 
+der Auszug — Auszüge 
+der Bachelor 
+beherrschen — beherrscht 
+beilegen — beigelegt 
+die Berufsbezeichnung 
+die Berufserfahrung 
+das Berufsleben 
+die Betriebswirtschaft 
+beurteilen — beurteilt 
+das Bewerbungsschreiben 
+der/die Bilanzbuchhalter/in — Bilanzbuchhalter/innen 
+bisher 
+das Briefpapier 
+das Büromaterial 
+die Bürozeit — Bürozeiten 
+das Catering 
+daneben 
+eigenverantwortlich 
+eingehen — ist eingegangen — ging ein 
+einschreiben — eingeschrieben — schrieb ein 
+das Eintrittsdatum 
+der Empfang 
+empfangen — empfangen — empfing 
+englischsprachig 
+entnehmen — entnommen — entnahm 
+die Erstellung 
+färben — gefärbt 
+das Fax 
+die Festanstellung 
+festlegen — festgelegt 
+finanziell 
+das Finanzwesen 
+der Firmensitz 
+fließend 
+der Föhn 
+fordern — gefordert 
+die Formulierung 
+die Fortbildung 
+die Frisur 
+die Gehaltsvorstellung 
+der/die Geschäftsführer/in — Geschäftsführer/innen 
+die Geschäftsführung 
+gleichzeitig 
+die Handlung 
+die Herausforderung 
+individuell 
+insofern 
+intern 
+die Jobbezeichnung 
+der Kamm 
+die Kommunikationsstärke 
+kommunikativ 
+der Konferenzraum 
+die Kontaktdaten (Pl.) 
+kümmern sich — gekümmert 
+leistungsgerecht 
+leiten — geleitet 
+der/die Manager/in — Manager/innen 
+der Maschinenbau 
+meistern — gemeistert 
+der/die Millionär/in 
+mittelständisch 
+nachdem 
+das Niveau 
+das Original 
+der PC — PCs 
+der Posteingang 
+die Probezeit 
+die Qualifikation — Qualifikationen 
+regeln — geregelt 
+der/die Sales Manager/in — Sales Manager/innen 
+schneiden — geschnitten — schnitt 
+das Schreiben 
+seitdem 
+der/die Selbstständige — Selbstständigen 
+senden — gesandt 
+das Seniorenheim 
+soweit 
+die Speise — Speisen 
+spezialisieren sich — spezialisiert 
+die Stellenanzeige — Stellenanzeigen 
+der Steuerberater 
+das Steuerberatungsbüro 
+die Teamfähigkeit 
+die Telekommunikation 
+der Terminkalender 
+traditionsreich 
+die Überstunde — Überstunden 
+der Umgang 
+die Umschulung 
+unbefristet 
+das Unternehmen — Unternehmen 
+der Urlaubstag — Urlaubstage 
+verabreden — verabredet 
+die Vergütung 
+die Verstärkung 
+weiterhelfen — weitergeholfen — half weiter 
+die Weiterleitung 
+das Werkzeug 
+zaubern — gezaubert 
+zeitlich 
+der Zeitpunkt 
+zusätzlich 
+die Zusatzqualifikation 
+die Zuverlässigkeit 
+Büroalltag 
+abdrehen — abgedreht 
+abheften — abgeheftet 
+allerdings 
+anmachen — angemacht 
+ansehen — angesehen — sah an 
+aufdrehen — aufgedreht 
+aufmachen — aufgemacht 
+ausschalten — ausgeschaltet 
+ausschlafen — ausgeschlafen 
+das Besprechungszimmer 
+der Büroalltag 
+der/die Büroassistent/in — Büroassistenten/Büroassistentinnen 
+der Büroraum — Büroräume 
+die Dienstleistung — Dienstleistungen 
+drinnen 
+einschalten — eingeschaltet 
+die Energiekosten (Pl.) 
+die Energieverschwendung 
+der/die Handwerker/in — Handwerker/innen 
+die Heizkosten (Pl.) 
+indem 
+kippen — gekippt 
+der/die König/in — Könige/Königinnen 
+der Kopierer — Kopierer 
+langfristig 
+mehrmals 
+die Million — Millionen 
+mitdenken — mitgedacht — dachte mit 
+offen 
+die Privatnummer 
+rasieren sich — rasiert 
+die Reinigungsfirma 
+der Reinigungsvertrag 
+senken — gesenkt 
+stinksauer (ugs.) 
+der Strom 
+der Stromanbieter 
+die Stromkosten (Pl.) 
+tropfen — getropft 
+übergeben — übergeben — übergab 
+unnötig 
+der Verbrauch 
+verschwenden — verschwendet 
+das Vertragsende 
+die Vertragsnummer 
+die Wärme 
+der Wasserhahn 
+die Weise 
+zudrehen — zugedreht 
+zumachen — zugemacht 
+die Zusammenarbeit 
+zusammenarbeiten — zusammengearbeitet 
+Gesunde Ernährung 
+abnehmen — abgenommen — nahm ab 
+achten — geachtet 
+die Allergie 
+allergisch 
+der Anbau 
+angewöhnen sich — angewöhnt 
+auseinandersetzen sich — auseinandergesetzt 
+ausgewogen 
+ausprobieren — ausprobiert 
+bedenklich 
+die Bedingung — Bedingungen 
+behaupten — behauptet 
+die Berufstätigkeit 
+die Bevölkerung 
+bewusst 
+bio (biologisch) 
+das Bioprodukt — Bioprodukte 
+bloß 
+der/die Diabetiker/in — Diabetiker/innen 
+der Döner 
+durchschnittlich 
+das Einkommen — Einkommen 
+einseitig 
+das Eiweiß 
+erkennen — erkannt 
+die Ernährung 
+der/die Esser/in — Esser/innen 
+das Fertiggericht 
+fett 
+fix 
+fleischfrei 
+fleischlos 
+der Freundeskreis 
+der Frust 
+furchtbar 
+der Gang — Gänge 
+der/die Gemüsehändler/in — Gemüsehändler/innen 
+der Geschmack 
+das Getreide 
+glutenfrei 
+grundsätzlich 
+der Hartweizen 
+die Haselnuss — Haselnüsse 
+der Hauptgrund — Hauptgründe 
+die Hülsenfrucht — Hülsenfrüchte 
+industriell 
+die Institution — Institutionen 
+irgendwelche 
+irgendwer 
+das Kochbuch — Kochbücher 
+kulinarisch 
+laktosefrei 
+die Laune 
+leiden — gelitten 
+die Massentierhaltung 
+der Milchzucker 
+moralisch 
+der Nährstoff — Nährstoffe 
+das Nahrungsmittel — Nahrungsmittel 
+nebenbei 
+die Nuss — Nüsse 
+präsentieren — präsentiert 
+problemlos 
+der Quark 
+reduzieren — reduziert 
+die Studie 
+die Tiefkühlpizza — Tiefkühlpizzen 
+tierisch 
+der Trend 
+überzeugen — überzeugt 
+vegan 
+der/die Veganer/in — Veganer/innen 
+vereinbar 
+versorgen — versorgt 
+vertragen — vertragen 
+der Verzehr 
+verzichten — verzichtet 
+vorbeigehen — ist vorbeigegangen — ging vorbei 
+der Wert — Werte 
+die Wurst — Würste 
+der Zeitmangel 
+der Zeitungsbericht 
+zufällig 
+zunehmen — zugenommen — nahm zu 
+der Zusatzstoff — Zusatzstoffe 
+Gut versichert! 
+abdecken — abgedeckt 
+absichtlich 
+anfahren — ist angefahren — fuhr an 
+ärztlich 
+aufkommen — ist aufgekommen — kam auf 
+ausparken — ausgeparkt 
+der Außenspiegel — Außenspiegel 
+der/die Autofahrer/in — Autofahrer/innen 
+die Automarke 
+das Autoteil — Autoteile 
+die Autoversicherung 
+das Benzin 
+beschädigen — beschädigt 
+betrunken 
+der Blinker — Blinker 
+bremsen — gebremst 
+das Dach 
+der Diebstahl 
+das Dorf 
+einbrechen — ist eingebrochen — brach ein 
+der/die Einbrecher/in — Einbrecher/innen 
+der Einbruch 
+einparken — eingeparkt 
+die Fahrerseite 
+der/die Freiwillige — Freiwilligen 
+frustriert 
+der Gebrauchtwagen — Gebrauchtwagen 
+die Haftpflicht 
+die Haftpflichtversicherung 
+der Hagel 
+der Hügel 
+die Kaskoversicherung 
+der Kilometer 
+der Kofferraum 
+korrekt 
+krachen — gekracht 
+der Kratzer — Kratzer 
+lenken — gelenkt 
+lohnen sich — gelohnt 
+der Motor — Motoren 
+die Motorhaube 
+der/die Motorradfahrer/in — Motorradfahrer/innen 
+nachdenken — nachgedacht — dachte nach 
+der Neuwagen — Neuwagen 
+das Nummernschild — Nummernschilder 
+der Oldtimer 
+optimistisch 
+parken — geparkt 
+die Parklücke 
+der Personenschaden — Personenschäden 
+PS (Pferdestärke) 
+quietschen — gequietscht 
+regulieren — reguliert 
+die Regulierung 
+der Reifen — Reifen 
+das Rücklicht — Rücklichter 
+die Rückscheibe 
+rückwärts 
+rutschen — ist gerutscht 
+der Sachschaden — Sachschäden 
+der Schadensfall 
+die Scheibe — Scheiben 
+der Scheinwerfer — Scheinwerfer 
+der Schläger 
+schwingen — geschwungen — schwang 
+der Sinn 
+der Sportwagen 
+die Stoßstange 
+der Straßenrand 
+der Straßenverkehr 
+der Sturm 
+das/der Sport Utiliy Vehicle (SUV) 
+die Teilkaskoversicherung (Teilkasko) 
+überraschen — überrascht 
+die Überschwemmung 
+umfallen — ist umgefallen — fiel um 
+umso 
+der Unfall — Unfälle 
+die Unfallgefahr 
+verletzen — verletzt 
+versehentlich 
+versichern — versichert 
+der/die Versicherungsberater/in — Versicherungsberater/innen 
+der Versicherungsschutz 
+verursachen — verursacht 
+die Vollkaskoversicherung (Vollkasko) 
+vorschreiben — vorgeschrieben — schrieb vor 
+vorsichtig 
+wegfahren — ist weggefahren — fuhr weg 
+die Windschutzscheibe 
+zulassen — zugelassen — ließ zu 
+zusammenstoßen — ist zusammengestoßen — stieß zusammen 
+die Zusatzversicherung
