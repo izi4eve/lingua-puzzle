@@ -3,8 +3,10 @@
     "download-dic": "Aktuelles Wörterbuch herunterladen",
     "reset-dic": "Aktuelles Wörterbuch zurücksetzen",
     "select-dic": "Wählen Sie ein neues Wörterbuch",
-    "open-txt": "Oder wählen Sie Ihre eigene .txt-Datei. Trennen Sie die Übersetzung dort mit einem Gleichheitszeichen ( = )",
-    "tts-lang": "Wählen Sie eine Sprache für die Textwiedergabe",
+    "open-txt": "Oder laden Sie Ihr Wörterbuch unten als .txt-Datei hoch. Schreiben Sie jedes neue Wort darin in eine neue Zeile. Trennen Sie die Übersetzung mit einem Gleichheitszeichen. So:",
+    "example": "fremdes Wort = Übersetzung in Ihre Sprache",
+    "example2": "anderes Wort = seine Übersetzung",
+    "tts-lang": "Wählen Sie die Sprache für die Sprachausgabe des fremden Textes",
     "assemble-parts": "Stellen Sie die Übersetzung aus den Teilen unten zusammen",
     "all-matched": "<strong>Herzlichen Glückwunsch!</strong> Sie haben alle zugeordnet. <strong>Löschen</strong> Sie das Bekannte und klicken Sie auf <strong>Weiter</strong>",
     "all-learned": "Jetzt ist Ihr Wörterbuch leer. Wählen Sie ein Wörterbuch zum Lernen.",
@@ -48,5 +50,7 @@
         "title": "Nicht Gelerntes wiederholen?",
         "message": "Das Wichtigste beim Lernen ist die Wiederholung! Möchten Sie erneut mit dem beginnen, was Sie noch nicht gelernt haben?"
     },
-    "telegram": "Haben Sie Fragen? Fragen Sie in unserer Telegram-Gruppe"
+    "telegram": "Haben Sie Fragen? Fragen Sie in unserer Telegram-Gruppe",
+    "howto": "Führe die folgenden Schritte von 1 bis 4 aus",
+    "all": "alles"
 }

@@ -9,6 +9,7 @@ import DictionaryPlayer from './components/DictionaryPlayer';
 import Tips from './components/Tips';
 import CookieConsent from "react-cookie-consent";
 import { FaTelegramPlane } from 'react-icons/fa';
+import { MdTipsAndUpdates } from "react-icons/md";
 
 const App = () => {
   const { t, i18n } = useTranslation();
@@ -130,7 +131,12 @@ const App = () => {
         <div className="col-12 col-md-10 col-lg-8 col-xl-7 overflow-hidden">
 
           <div className="d-flex pt-2 pb-0 overflow-hidden">
-            <div className="logo h4 px-2 pt-1 mb-0 fw-bold">Lingua <br />Puzzle</div>
+            <div>
+              <h4 className='logo px-2 pt-1 pb-1 mb-2 fw-bold'>Lingua Puzzle</h4>
+              <p className='fs-6 fw-medium fst-italic lh-1 px-2 m-0'>
+                <MdTipsAndUpdates size={19} /> {t('howto')}
+              </p>
+            </div>
             <div className="flex-grow-1 px-2 text-end">
               {supportedLanguages.map((lng) => (
                 <button

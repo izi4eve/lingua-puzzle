@@ -3,8 +3,10 @@
     "download-dic": "Télécharger le dictionnaire actuel",
     "reset-dic": "Réinitialiser le dictionnaire actuel",
     "select-dic": "Sélectionnez un nouveau dictionnaire",
-    "open-txt": "Ou sélectionnez votre propre fichier .txt. Séparez la traduction par un signe égal ( = )",
-    "tts-lang": "Sélectionnez la langue pour la lecture du texte",
+    "open-txt": "Ou téléchargez votre dictionnaire ci-dessous sous forme de fichier .txt. Écrivez chaque nouveau mot sur une nouvelle ligne. Séparez la traduction par un signe égal. Comme ceci :",
+    "example": "mot étranger = traduction dans votre langue",
+    "example2": "autre mot = sa traduction",
+    "tts-lang": "Choisissez la langue pour la synthèse vocale du texte étranger",
     "assemble-parts": "Assemblez la traduction à partir des parties ci-dessous",
     "all-matched": "<strong>Félicitations!</strong> Vous avez tout associé. <strong>Supprimez</strong> les éléments familiers et cliquez sur <strong>Suivant</strong>",
     "all-learned": "Votre dictionnaire est maintenant vide. Sélectionnez un dictionnaire pour étudier.",
@@ -48,5 +50,7 @@
         "title": "Répéter ce qui n'est pas appris ?",
         "message": "L'élément le plus important dans l'apprentissage est la répétition ! Voulez-vous recommencer ce que vous n'avez pas encore appris ?"
     },
-    "telegram": "Des questions ? Demandez dans notre groupe Telegram"
+    "telegram": "Des questions ? Demandez dans notre groupe Telegram",
+    "howto": "Effectue les étapes ci-dessous de 1 à 4",
+    "all": "tout"
 }

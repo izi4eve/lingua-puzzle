@@ -185,7 +185,11 @@ const FileUploader = ({ onDataLoaded, onTTSLanguageChange, data, firstElement, s
                 </Form.Select>
             </div>
 
-            <div className="h6 py-1 pt-2">{t('open-txt')}</div>
+            <div>
+                <p className="h6 py-1 pt-2 mb-0 mt-1">{t('open-txt')}</p>
+                <p className="fst-italic text-secondary h6 py-1 lh-1 p-0 m-0 mt-1 fw-semibold">{t('example')}</p>
+                <p className="fst-italic text-secondary h6 py-1 lh-1 p-0 m-0 pb-3 fw-semibold">{t('example2')}</p>
+            </div>
 
             <div>
                 <Form.Control
@@ -197,7 +201,7 @@ const FileUploader = ({ onDataLoaded, onTTSLanguageChange, data, firstElement, s
                 />
             </div>
 
-            <div className="h6 pt-2 d-flex align-items-center">
+            <div className="h6 pt-2 mt-1 d-flex align-items-center">
                 <label className="form-label mt-1 me-2">
                     {t('tts-lang')}
                 </label>
@@ -208,17 +212,17 @@ const FileUploader = ({ onDataLoaded, onTTSLanguageChange, data, firstElement, s
                 </Form.Select>
             </div>
 
-            <div className="pt-2">
+            <div className="pt-2 pb-1">
                 {data.length > 0 && (
                     <div className="d-flex flex-row flex-wrap gap-2">
-                        <Button variant="btn btn-sm btn-outline-dark" onClick={openModal}>
-                            {t('reset-dic')}
+                        <Button variant="btn btn-sm btn-dark" onClick={openAddModal}>
+                            {t('add-entries')}
                         </Button>
                         <Button variant="btn btn-sm btn-dark" onClick={exportDictionary}>
                             {t('download-dic')}
                         </Button>
-                        <Button variant="btn btn-sm btn-dark" onClick={openAddModal}>
-                            {t('add-entries')}
+                        <Button variant="btn btn-sm btn-outline-dark" onClick={openModal}>
+                            {t('reset-dic')}
                         </Button>
                     </div>
                 )}

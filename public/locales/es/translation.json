@@ -3,8 +3,10 @@
     "download-dic": "Descargar el diccionario actual",
     "reset-dic": "Restablecer el diccionario actual",
     "select-dic": "Selecciona un nuevo diccionario",
-    "open-txt": "O selecciona tu propio archivo .txt. Separa la traducción con un signo igual ( = )",
-    "tts-lang": "Selecciona el idioma para la lectura de texto",
+    "open-txt": "O sube tu diccionario abajo como archivo .txt. Escribe cada palabra nueva en él en una nueva línea. Separa la traducción con un signo igual. Así:",
+    "example": "palabra extranjera = traducción a tu idioma",
+    "example2": "otra palabra = su traducción",
+    "tts-lang": "Selecciona el idioma para la locución del texto extranjero",
     "assemble-parts": "Arma la traducción con las partes de abajo",
     "all-matched": "<strong>¡Felicidades!</strong> Has emparejado todo. <strong>Elimina</strong> lo familiar y haz clic en <strong>Siguiente</strong>",
     "all-learned": "Ahora tu diccionario está vacío. Selecciona un diccionario para estudiar.",
@@ -48,5 +50,7 @@
         "title": "¿Repetir lo no aprendido?",
         "message": "¡Lo más importante en el aprendizaje es la repetición! ¿Quieres repetir desde el principio lo que aún no has aprendido?"
     },
-    "telegram": "¿Tienes preguntas? Pregunta en nuestro grupo de Telegram"
+    "telegram": "¿Tienes preguntas? Pregunta en nuestro grupo de Telegram",
+    "howto": "Realiza los pasos a continuación de 1 a 4",
+    "all": "todo"
 }
