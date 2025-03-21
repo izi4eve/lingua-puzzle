@@ -3,8 +3,10 @@
     "download-dic": "Pobierz bieżący słownik",
     "reset-dic": "Zresetuj bieżący słownik",
     "select-dic": "Wybierz nowy słownik",
-    "open-txt": "Lub wybierz swój plik .txt. Oddziel tłumaczenie znakiem równości ( = )",
-    "tts-lang": "Wybierz język do odczytu tekstu",
+    "open-txt": "Lub prześlij swój słownik poniżej jako plik .txt. Każde nowe słowo zapisuj w nim w nowej linii. Oddziel tłumaczenie znakiem równości. Tak:",
+    "example": "obce słowo = tłumaczenie na twój język",
+    "example2": "inne słowo = jego tłumaczenie",
+    "tts-lang": "Wybierz język do odczytania obcego tekstu",
     "assemble-parts": "Złóż tłumaczenie z poniższych części",
     "all-matched": "<strong>Gratulacje!</strong> Dopasowałeś wszystko. <strong>Usuń</strong> znane i kliknij <strong>Następny</strong>",
     "all-learned": "Teraz Twój słownik jest pusty. Wybierz słownik do nauki.",
@@ -44,5 +46,7 @@
         "title": "Powtórzyć to, czego nie nauczono?",
         "message": "Najważniejsze w nauce jest powtarzanie! Czy chcesz powtórzyć od początku to, czego jeszcze nie nauczyłeś się?"
     },
-    "telegram": "Masz pytania? Zapytaj w naszej grupie na Telegramie"
+    "telegram": "Masz pytania? Zapytaj w naszej grupie na Telegramie",
+    "howto": "Wykonaj poniższe kroki od 1 do 4",
+    "all": "wszystko"
 }

@@ -3,8 +3,10 @@
     "download-dic": "Stáhnout aktuální slovník",
     "reset-dic": "Obnovit aktuální slovník",
     "select-dic": "Vyberte nový slovník",
-    "open-txt": "Nebo zvolte svůj vlastní .txt soubor. Oddělte překlad znaménkem rovnosti ( = )",
-    "tts-lang": "Vyberte jazyk pro čtení textu",
+    "open-txt": "Nebo nahrajte svůj slovník níže jako soubor .txt. Každé nové slovo v něm zapište na nový řádek. Oddělte překlad znakem rovnosti. Takto:",
+    "example": "cizí slovo = překlad do vašeho jazyka",
+    "example2": "jiné slovo = jeho překlad",
+    "tts-lang": "Vyberte jazyk pro namluvení cizího textu",
     "assemble-parts": "Sestavte překlad z částí níže",
     "all-matched": "<strong>Gratulujeme!</strong> Podařilo se vám spojit všechny. <strong>Smažte</strong> známé a klikněte na <strong>Další</strong>",
     "all-learned": "Nyní je váš slovník prázdný. Vyberte slovník k učení.",
@@ -44,5 +46,7 @@
         "title": "Opakovat neosvojené?",
         "message": "Nejdůležitější v učení je opakování! Chcete znovu opakovat to, co jste se ještě nenaučili?"
     },
-    "telegram": "Máte otázky? Ptejte se v naší skupině na Telegramu"
+    "telegram": "Máte otázky? Ptejte se v naší skupině na Telegramu",
+    "howto": "Proveď níže uvedené kroky od 1 do 4",
+    "all": "vše"
 }

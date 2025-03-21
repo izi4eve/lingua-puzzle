@@ -3,8 +3,10 @@
     "download-dic": "Preuzmi trenutni rečnik",
     "reset-dic": "Resetuj trenutni rečnik",
     "select-dic": "Odaberite novi rečnik",
-    "open-txt": "Ili izaberite svoj .txt fajl. Odvojite prevod znakom jednakosti ( = )",
-    "tts-lang": "Izaberite jezik za čitanje teksta",
+    "open-txt": "Ili otpremite svoj rečnik ispod kao .txt fajl. Svaku novu reč u njemu zapisujte u novom redu. Odvojite prevod znakom jednakosti. Ovako:",
+    "example": "strana reč = prevod na vaš jezik",
+    "example2": "druga reč = njen prevod",
+    "tts-lang": "Izaberite jezik za izgovor stranog teksta",
     "assemble-parts": "Sastavite prevod iz donjih delova",
     "all-matched": "<strong>Čestitamo!</strong> Sve ste uparili. <strong>Obrišite</strong> poznate reči i kliknite <strong>Dalje</strong>",
     "all-learned": "Sada je vaš rečnik prazan. Odaberite rečnik za učenje.",
@@ -44,5 +46,7 @@
         "title": "Ponoviti neupraćeno?",
         "message": "Najvažnije u učenju je ponavljanje! Da li želite ponovo učiti ono što još niste naučili?"
     },
-    "telegram": "Имате питања? Питајте у нашој Телеграм групи"
+    "telegram": "Imate pitanja? Pitajte u našoj Telegram grupi",
+    "howto": "Izvrši korake ispod od 1 do 4",
+    "all": "sve"
 }

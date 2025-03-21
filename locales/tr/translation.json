@@ -3,8 +3,10 @@
     "download-dic": "Mevcut sözlüğü indir",
     "reset-dic": "Mevcut sözlüğü sıfırla",
     "select-dic": "Yeni bir sözlük seçin",
-    "open-txt": "Veya kendi .txt dosyanızı seçin. Çeviriyi bir eşittir işareti ( = ) ile ayırın",
-    "tts-lang": "Metin okuma için bir dil seçin",
+    "open-txt": "Veya sözlüğünüzü aşağıda .txt dosyası olarak yükleyin. İçindeki her yeni kelimeyi yeni bir satıra yazın. Çeviriyi eşittir işaretiyle ayırın. Şöyle:",
+    "example": "yabancı kelime = dilinize çevirisi",
+    "example2": "başka kelime = onun çevirisi",
+    "tts-lang": "Yabancı metnin seslendirmesi için dili seçin",
     "assemble-parts": "Çeviriyi aşağıdaki parçalardan birleştirin",
     "all-matched": "<strong>Tebrikler!</strong> Hepsini eşleştirdiniz. Bildiklerinizi <strong>silin</strong> ve <strong>İleri</strong> tıklayın",
     "all-learned": "Şimdi sözlüğünüz boş. Çalışmak için bir sözlük seçin.",
@@ -44,5 +46,7 @@
         "title": "Öğrenilmeyeni tekrar et?",
         "message": "Öğrenmede en önemli şey tekrardır! Henüz öğrenmediğin şeyi baştan tekrar etmek ister misin?"
     },
-    "telegram": "Sorularınız mı var? Telegram grubumuzda sorun"
+    "telegram": "Sorularınız mı var? Telegram grubumuzda sorun",
+    "howto": "Aşağıdaki adımları 1'den 4'e kadar gerçekleştir",
+    "all": "hepsi"
 }

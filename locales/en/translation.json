@@ -3,8 +3,10 @@
     "download-dic": "Download the current dictionary",
     "reset-dic": "Reset the current dictionary",
     "select-dic": "Select a new dictionary",
-    "open-txt": "Or select your own .txt file. Separate there translation by an equal sign ( = )",
-    "tts-lang": "Select language for text reading",
+    "open-txt": "Or upload your dictionary below as a .txt file. Write each new word in it on a new line. Separate the translation with an equals sign. Like this:",
+    "example": "foreign word = translation to your language",
+    "example2": "another word = its translation",
+    "tts-lang": "Select the language for voicing the foreign text",
     "assemble-parts": "Assemble the translation from the parts below",
     "all-matched": "<strong>Congratulations!</strong> You've matched all. <strong>Delete</strong> the familiar and click <strong>Next</strong>",
     "all-learned": "Now your dictionary is empty. Select a dictionary to study.",
@@ -48,5 +50,7 @@
         "title": "Repeat unfinished learning?",
         "message": "The most important thing in learning is repetition! Do you want to start again with what you haven't learned yet?"
     },
-    "telegram": "Have questions? Ask in our Telegram group"
+    "telegram": "Have questions? Ask in our Telegram group",
+    "howto": "Perform the steps below from 1 to 4",
+    "all": "all"
 }

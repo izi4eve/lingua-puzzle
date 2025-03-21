@@ -82,6 +82,7 @@ weitwinkel = широкоугольный (объектив)
 Dieser Sensor = Эта матрица 
 der Dynamikumfang von 14 Blendenstufen = динамический диапазон 14 стопов
 der Verschluss = затвор (объектива)
+die Auslösungen des Verschlusses = срабатывания затвора
 
 die Luftfeuchtigkeit = влажность
 feuchte Luft = влажный воздух
@@ -464,6 +465,10 @@ Kann ich Ihnen ein bisschen helfen? = Я могу вам немного помо
 
 
 
+der Stift = ручка, карандаш
+der Bleistift = карандаш
+der Kugelschreiber = шариковая ручка
+der Füller; die Tinte = чернильная ручка; чернила
 
 
 das Fenster = окно программы
@@ -684,6 +689,11 @@ mindestens = как минимум
 Es gibt 2 Arten / Sorten von Menschen. = Существует 2 типа / вида людей.
 Menschen lassen sich in 2 Gruppen einteilen. – Людей можно разделить на 2 группы.
 Man unterscheidet 2 Arten von Menschen. – Различают 2 типа людей.
+
+die Beleidigung = оскорбление
+erledigen — erledigt = выполнять, завершать
+schaffen — geschafft = справиться, успеть, достичь
+schaffen — geschaffen — schuf = создавать
 
 
 am Telefon zu hören = по телефону слушать
@@ -1055,6 +1065,7 @@ Soe i? (Soll ich?) = Я должен?
 Was datn da Si song? (Was täten [würden] da Sie sagen?) = Что бы вы сказали?
 Was song Si? (Was sagen Sie?) = Что вы скажете?
 Foitn wegmocha (Falten wegmachen) = морщины убрать
+fein = утончённый
 Kema lossn? (Können wir lassen?) = Можем мы оставить?
 Konn ma need mocha? (Kann mann nicht machen?) = Нельзя сделать?
 Na, deaf i ned. (Nein, darf ich nicht.) = Нет, мне нельзя.
