@@ -30,6 +30,7 @@ const App = () => {
   const supportedLanguages = ['en', 'de', 'fr', 'it', 'es', 'pt', 'pl', 'cs', 'uk', 'sh', 'ru', 'tr', 'ar', 'fa'];
   const [language, setLanguage] = useState(localStorage.getItem('selectedLanguage') || 'en');
   const [ttsLanguage, setTTSLanguage] = useState(localStorage.getItem('ttsLanguage') || 'en-US');
+  const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('selectedLanguage') || 'en'); // Добавляем selectedLanguage
 
   const languages = [
     { name: 'English', code: 'en-US' },
@@ -39,7 +40,7 @@ const App = () => {
     { name: 'Español', code: 'es-ES' },
     { name: 'Português', code: 'pt-PT' },
     { name: 'Polski', code: 'pl-PL' },
-    { name: 'Čeština', code: 'cs-CZ' }
+    { name: 'Čeština', code: 'cs-CZ' },
   ];
 
   const privacyPolicyPath = i18n.language === 'en' ? '/policies/privacy-policy.md' : `/policies/privacy-policy.${i18n.language}.md`;
@@ -67,6 +68,11 @@ const App = () => {
   const handleTTSLanguageChange = (newTTSLanguage) => {
     setTTSLanguage(newTTSLanguage);
     localStorage.setItem('ttsLanguage', newTTSLanguage);
+  };
+
+  const handleSelectedLanguageChange = (newSelectedLanguage) => { // Новый обработчик
+    setSelectedLanguage(newSelectedLanguage);
+    localStorage.setItem('selectedLanguage', newSelectedLanguage);
   };
 
   useEffect(() => {
@@ -154,10 +160,12 @@ const App = () => {
           <FileUploader
             onDataLoaded={handleDataLoaded}
             onTTSLanguageChange={handleTTSLanguageChange}
+            onSelectedLanguageChange={handleSelectedLanguageChange} // Добавляем новый пропс
             data={data}
             firstElement={firstElement}
             setFirstElement={setFirstElement}
             ttsLanguage={ttsLanguage}
+            selectedLanguage={selectedLanguage} // Передаем selectedLanguage
             languages={languages}
           />
 
@@ -182,7 +190,9 @@ const App = () => {
             firstElement={firstElement}
             updateFirstElement={setFirstElement}
             ttsLanguage={ttsLanguage}
+            selectedLanguage={selectedLanguage} // Передаем selectedLanguage
             onTTSLanguageChange={handleTTSLanguageChange}
+            onSelectedLanguageChange={handleSelectedLanguageChange} // Добавляем новый пропс
             languages={languages}
           />
 
