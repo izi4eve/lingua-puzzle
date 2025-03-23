@@ -189,15 +189,18 @@ const App = () => {
           <Tips />
 
           <div className="d-flex justify-content-between align-items-start my-4">
-            <div className="d-flex flex-column align-items-start">
-              <p className="mb-3 fs-6 lh-sm fw-semibold">{t("telegram")}</p>
-              <a href={telegramLink} target="_blank" rel="noopener noreferrer" className="rounded-3 p-2 bg-telegram-blue">
+            <div className="d-flex flex-column align-items-start px-2 pe-3">
+              <p className="mb-3 fs-6 lh-sm fw-semibold fst-italic">{t("telegram")}</p>
+              <a href={telegramLink} target="_blank" rel="noopener noreferrer" className="rounded-4 p-2 bg-telegram-blue">
                 <FaTelegramPlane size={32} color="white" />
               </a>
             </div>
 
-            <div className="rounded-1 p-2 pb-1 bg-white">
-              <QRCodeCanvas value={appUrl} size={128} />
+            <div>
+              <p className="mb-3 fs-6 lh-sm fw-semibold fst-italic">{t("share")}</p>
+              <div className="rounded-1 p-2 pb-1 bg-white d-inline-block">
+                <QRCodeCanvas value={appUrl} size={128} />
+              </div>
             </div>
           </div>
 
