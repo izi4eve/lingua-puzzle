@@ -17,6 +17,7 @@ const DictionaryPlayer = ({ data, firstElement, updateFirstElement, ttsLanguage,
     const [readingSpeed, setReadingSpeed] = useState(0.5);
     const [inputValue, setInputValue] = useState(firstElement.toString());
     const [isSpeaking, setIsSpeaking] = useState(false); // Условие, чтобы избежать повторов
+    const [recordsToPlay, setRecordsToPlay] = useState(10); // Новое состояние для количества записей
 
     const filteredData = data.filter((item) => !item.isLearned); // Фильтруем записи
     const maxIndex = filteredData.length - 1;
@@ -42,10 +43,11 @@ const DictionaryPlayer = ({ data, firstElement, updateFirstElement, ttsLanguage,
     useEffect(() => {
         const savedSettings = localStorage.getItem('playerSettings');
         if (savedSettings) {
-            const { selectedLanguage, readingSpeed, repeatCount } = JSON.parse(savedSettings);
+            const { selectedLanguage, readingSpeed, repeatCount, recordsToPlay } = JSON.parse(savedSettings);
             setSelectedLanguage(selectedLanguage);
             setReadingSpeed(readingSpeed);
             setRepeatCount(repeatCount);
+            setRecordsToPlay(recordsToPlay || 10); // Если recordsToPlay не сохранено, используем 10
         }
     }, []);
 
@@ -54,8 +56,9 @@ const DictionaryPlayer = ({ data, firstElement, updateFirstElement, ttsLanguage,
             selectedLanguage,
             readingSpeed,
             repeatCount,
+            recordsToPlay,
         }));
-    }, [selectedLanguage, readingSpeed, repeatCount]);
+    }, [selectedLanguage, readingSpeed, repeatCount, recordsToPlay]);
 
     // Синхронизация currentRecord с firstElement
     useEffect(() => {
@@ -89,10 +92,18 @@ const DictionaryPlayer = ({ data, firstElement, updateFirstElement, ttsLanguage,
         window.speechSynthesis.cancel(); // Прекращаем текущее проигрывание
         setIsSpeaking(false); // Сбрасываем состояние, чтобы позволить новый запуск
         setCurrentRepeat(0); // Сбрасываем счётчик повторов
-        const nextRecord = Math.min(currentRecord + 1, maxIndex);
-        setCurrentRecord(nextRecord);
-        updateFirstElement(nextRecord);
-    }, [currentRecord, maxIndex, updateFirstElement]);
+
+        const nextRecord = currentRecord + 1;
+        const maxRecordToPlay = recordsToPlay === Infinity ? maxIndex : Math.min(maxIndex, recordsToPlay - 1);
+
+        if (nextRecord > maxRecordToPlay) {
+            setCurrentRecord(0); // Начинаем сначала, если достигли конца
+            updateFirstElement(0);
+        } else {
+            setCurrentRecord(nextRecord);
+            updateFirstElement(nextRecord);
+        }
+    }, [currentRecord, maxIndex, recordsToPlay, updateFirstElement]);
 
     const playCurrentRecord = useCallback(async () => {
         if (!window.speechSynthesis) {
@@ -256,6 +267,24 @@ const DictionaryPlayer = ({ data, firstElement, updateFirstElement, ttsLanguage,
                     >
                         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((count) => (
                             <option key={count} value={count}>{count}</option>
+                        ))}
+                    </Form.Select>
+                </div>
+
+                <div className="d-flex align-items-center">
+                    <label>{t('records-to-play')}</label>
+                    <Form.Select
+                        value={recordsToPlay === Infinity ? 'all' : recordsToPlay} // Отображаем 'all' для Infinity
+                        onChange={(e) => {
+                            const value = e.target.value === 'all' ? Infinity : Number(e.target.value);
+                            setRecordsToPlay(value);
+                        }}
+                        className="ms-2 w-auto"
+                    >
+                        {[10, 20, 30, 50, 100, 200, 300, 500, 1000, 'all'].map((count) => (
+                            <option key={count} value={count === 'all' ? 'all' : count}>
+                                {count === 'all' ? t('all') : count}
+                            </option>
                         ))}
                     </Form.Select>
                 </div>
