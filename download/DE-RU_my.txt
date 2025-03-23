@@ -58,6 +58,7 @@ der Weißabgleich = баланс белого
 Licht, Farbe und Kontrast = свет, цвет и контраст
 Das setzen Akzente im Bild und verstärken sie. = Это ставит акценты и усиливает их.
 
+
 das Motiv = объект съёмки
 das Streiflicht = поперечный свет
 das Frontallicht = фронтальный свет
@@ -128,6 +129,8 @@ der Lieferschein = накладная
 liefern — geliefert = доставлять
 kriegen — gekriegt = получать
 bekommen — bekommen = получать
+der Empfang = получение, ресепшн
+ausstehend = ожидаемый, нерешённый
 steuern — gesteuert = управлять, регулировать
 der Auftraggeber = заказчик
 der Anbieter = поставщик
@@ -266,7 +269,7 @@ Lehnen Sie sich  daran / an die Wand / an den Tisch. = Облокотитесь 
 
 
 Ich kann gleich es auf dem Computer zeigen. = Я могу сейчас это показать на компьютере. 
-der Pickel; das Muttermal = прыщ; родинка
+der Pickel; das Muttermal; der Fleck = прыщ; родинка; пятно
 Wie lautet Ihr Nachname? = Ваша фамилия? 
 Wollen Sie jetzt bezahlen während das drückt? = Хотите сейчас заплатить, пока это печатается?
 Während ihr wartet, können Sie schon bezahlen. = Пока мы ждём, вы можете оплатить. 
@@ -462,7 +465,7 @@ Meto, Auszeichenmachine = машина для ценников
 Sie dürfen vorne warten oder zum Kasse gehen. = Вы можете подождать впереди или к кассе идти. 
 Gehen Sie zur Kasse. = Проходите к кассе. 
 Kann ich Ihnen ein bisschen helfen? = Я могу вам немного помочь?
-
+überprüfen — überprüft = проверять
 
 
 der Stift = ручка, карандаш
