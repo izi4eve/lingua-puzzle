@@ -7,7 +7,7 @@
     "example": "foreign word = translation to your language",
     "example2": "another word = its translation",
     "tts-lang": "Select the language for voicing the foreign text",
-    "assemble-parts": "Assemble the translation from the parts below",
+    "assemble-parts": "Check how well you know. Assemble the translation from the parts below",
     "all-matched": "<strong>Congratulations!</strong> You've matched all. <strong>Delete</strong> the familiar and click <strong>Next</strong>",
     "all-learned": "Now your dictionary is empty. Select a dictionary to study.",
     "navigate": "Navigate and track the progress",
