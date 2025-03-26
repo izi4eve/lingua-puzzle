@@ -169,6 +169,17 @@ const App = () => {
             languages={languages}
           />
 
+          <DictionaryPlayer
+            data={data}
+            firstElement={firstElement}
+            updateFirstElement={setFirstElement}
+            ttsLanguage={ttsLanguage}
+            selectedLanguage={selectedLanguage} // Передаем selectedLanguage
+            onTTSLanguageChange={handleTTSLanguageChange}
+            onSelectedLanguageChange={handleSelectedLanguageChange} // Добавляем новый пропс
+            languages={languages}
+          />
+
           <LearningComponent
             data={data}
             firstElement={firstElement}
@@ -183,17 +194,6 @@ const App = () => {
             setFirstElement={setFirstElement}
             count={count}
             setCount={setCount}
-          />
-
-          <DictionaryPlayer
-            data={data}
-            firstElement={firstElement}
-            updateFirstElement={setFirstElement}
-            ttsLanguage={ttsLanguage}
-            selectedLanguage={selectedLanguage} // Передаем selectedLanguage
-            onTTSLanguageChange={handleTTSLanguageChange}
-            onSelectedLanguageChange={handleSelectedLanguageChange} // Добавляем новый пропс
-            languages={languages}
           />
 
           <Tips />

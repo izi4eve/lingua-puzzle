@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 import Title from './Title';
 import TextToSpeech from './TextToSpeech';
-import { TbCircleNumber2Filled } from "react-icons/tb";
+import { TbCircleNumber3Filled } from "react-icons/tb";
 import { IoMdClose } from 'react-icons/io';
 import { IoTrashOutline } from "react-icons/io5";
 import { Toast, ToastContainer, Modal, Button, Form, Alert } from 'react-bootstrap';
@@ -154,7 +154,7 @@ const LearningComponent = ({ data, firstElement, count, updateData, language }) 
 
     return (
         <div className="whiteBox rounded-4 p-3 my-3">
-            <Title icon={<TbCircleNumber2Filled size={28} />} text={t('assemble-parts')} />
+            <Title icon={<TbCircleNumber3Filled size={28} />} text={t('assemble-parts')} />
 
             <div className="table-box fw-bold">
                 {elementsToDisplay.map((item, rowIndex) => {

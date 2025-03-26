@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import { FaArrowRight, FaPause, FaPlay } from "react-icons/fa";
-import { TbCircleNumber4Filled, TbPlayerTrackNextFilled, TbPlayerTrackPrevFilled } from "react-icons/tb";
+import { TbCircleNumber2Filled, TbPlayerTrackNextFilled, TbPlayerTrackPrevFilled } from "react-icons/tb";
 import Title from './Title';
 import PreventScreenSleep from './PreventScreenSleep';
 
@@ -202,7 +202,7 @@ const DictionaryPlayer = ({
   return (
     <div className="whiteBox rounded-4 p-3 my-3">
       <PreventScreenSleep isPlaying={isPlaying} />
-      <Title icon={<TbCircleNumber4Filled size={28} />} text={t('listen-dictionary')} />
+      <Title icon={<TbCircleNumber2Filled size={28} />} text={t('listen-dictionary')} />
 
       <div className="d-flex flex-row flex-wrap gap-2">
         <div className="d-flex align-items-center">

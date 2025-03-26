@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Button, Form } from 'react-bootstrap';
 import Title from './Title';
-import { TbCircleNumber3Filled } from "react-icons/tb";
+import { TbCircleNumber4Filled } from "react-icons/tb";
 import { FaArrowRight } from "react-icons/fa";
 
 const NavigationComponent = ({ data, firstElement, setFirstElement, count, setCount }) => {
@@ -82,7 +82,7 @@ const NavigationComponent = ({ data, firstElement, setFirstElement, count, setCo
 
     return (
         <div className="whiteBox rounded-4 p-3 my-3">
-            <Title icon={<TbCircleNumber3Filled size={28} />} text={t('navigate')} />
+            <Title icon={<TbCircleNumber4Filled size={28} />} text={t('navigate')} />
 
             <div className="d-flex flex-wrap gap-2 my-2">
                 <div className="btn-group">
