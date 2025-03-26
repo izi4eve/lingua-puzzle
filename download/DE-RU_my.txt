@@ -766,6 +766,8 @@ faul = ленивый
 die höfliche Forme = вежливая форма
 miteinander = друг с другом
 Schritt für Schritt / Zug um Zug; schrittweise = шаг за шагом; пошагово
+der Pechvogel — Pechvögel = неудачник
+das Pech — Peche = неудача
 
 Spreche ich mit Yurii? = Я разговариваю с Юрием?
 Ja, das bin ich. = Да, это я.
