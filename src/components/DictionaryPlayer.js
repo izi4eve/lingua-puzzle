@@ -25,7 +25,7 @@ const DictionaryPlayer = ({
   const [readingSpeed, setReadingSpeed] = useState(0.5);
   const [inputValue, setInputValue] = useState(firstElement.toString());
   const [isSpeaking, setIsSpeaking] = useState(false);
-  const [recordsToPlay, setRecordsToPlay] = useState(10);
+  const [recordsToPlay, setRecordsToPlay] = useState('all');
 
   const filteredData = data.filter((item) => !item.isLearned);
   const maxIndex = filteredData.length - 1;
