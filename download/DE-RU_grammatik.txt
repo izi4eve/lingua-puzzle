@@ -1,14 +1,14 @@
-Der große Mann gibt dem kleinen Jungen den großen Ball. = Большой мужчина даёт маленькому мальчику большой мяч.
-Ein großer Mann gibt einem kleinen Jungen einen großen Ball. = Один большой мужчина даёт маленькому мальчику большой мяч.
+Der große Mann gibt dem kleinen Jungen den großen Ball. = Этот большой мужчина даёт этому маленькому мальчику этот большой мяч.
+Ein großer Mann gibt einem kleinen Jungen einen großen Ball. = Какой-то большой мужчина даёт какому-то маленькому мальчику какой-то большой мяч.
 Großer Mann gibt kleinem Jungen großen Ball. = Большой мужчина даёт маленькому мальчику большой мяч.
 
-Die kleine Frau gibt der jungen Freundin die schöne Blume. = Маленькая женщина даёт молодой подруге красивый цветок.
-Eine kleine Frau gibt einer jungen Freundin eine schöne Blume. = Одна маленькая женщина даёт молодой подруге красивый цветок.
+Die kleine Frau gibt der jungen Freundin die schöne Blume. = Эта маленькая женщина даёт этой молодой подруге этот красивый цветок.
+Eine kleine Frau gibt einer jungen Freundin eine schöne Blume. = Какая-то маленькая женщина даёт какой-то молодой подруге какой-то красивый цветок.
 
-Das kleine Kind gibt dem kleinen Mädchen das schöne Spielzeug. = Маленький ребёнок даёт маленькой девочке красивую игрушку.
-Ein kleines Kind gibt einem kleinen Mädchen ein schönes Spielzeug. = Один маленький ребёнок даёт одной маленькой девочке красивую игрушку.
+Das kleine Kind gibt dem kleinen Mädchen das schöne Spielzeug. = Этот маленький ребёнок даёт этой маленькой девочке эту красивую игрушку.
+Ein kleines Kind gibt einem kleinen Mädchen ein schönes Spielzeug. = Какой-то маленький ребёнок даёт какой-то маленькой девочке какую-то красивую игрушку.
 
-Die kleinen Kinder geben den alten Männern die schönen Blumen. = Маленькие дети дают старым мужчинам красивые цветы.
+Die kleinen Kinder geben den alten Männern die schönen Blumen. = Эти маленькие дети дают этим старым мужчинам эти красивые цветы.
 Keine kleinen Kinder geben keinen alten Männern keine schönen Blumen. = Никакие маленькие дети не дают никаким старым мужчинам никаких красивых цветов.
 
 Mein Sohn gibt meinem Freund meinen Ball. = Мой сын даёт моему другу мой мяч.
