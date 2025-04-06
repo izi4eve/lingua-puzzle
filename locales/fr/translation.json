@@ -54,5 +54,8 @@
     "howto": "Effectue les étapes ci-dessous de 1 à 4",
     "all": "tout",
     "share": "Partagez le lien de l'application",
-    "records-to-play": "Combien d'enregistrements répéter"
+    "records-to-play": "Combien d'enregistrements répéter",
+    "dictionary": "Dictionnaire",
+    "search-hint": "Rechercher (min. 2 caractères)",
+    "known": "Connu"
 }

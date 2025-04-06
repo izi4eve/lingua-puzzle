@@ -54,5 +54,8 @@
     "howto": "Realiza los pasos a continuación de 1 a 4",
     "all": "todo",
     "share": "Comparte el enlace de la aplicación",
-    "records-to-play": "¿Cuántos registros repetir?"
+    "records-to-play": "¿Cuántos registros repetir?",
+    "dictionary": "Diccionario",
+    "search-hint": "Buscar (mín. 2 caracteres)",
+    "known": "Conocido"
 }
