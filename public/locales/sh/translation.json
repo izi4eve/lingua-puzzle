@@ -50,5 +50,8 @@
     "howto": "Izvrši korake ispod od 1 do 4",
     "all": "sve",
     "share": "Podelite vezu do aplikacije",
-    "records-to-play": "Koliko zapisa ponoviti"
+    "records-to-play": "Koliko zapisa ponoviti",
+    "dictionary": "Rečnik",
+    "search-hint": "Pretraga (min. 2 karaktera)",
+    "known": "Poznato"
 }

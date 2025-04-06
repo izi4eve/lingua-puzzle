@@ -50,5 +50,8 @@
     "howto": "Aşağıdaki adımları 1'den 4'e kadar gerçekleştir",
     "all": "hepsi",
     "share": "Uygulama bağlantısını paylaş",
-    "records-to-play": "Kaç kaydı tekrarlayayım"
+    "records-to-play": "Kaç kaydı tekrarlayayım",
+    "dictionary": "Sözlük",
+    "search-hint": "Ara (en az 2 karakter)",
+    "known": "Bilinen"
 }

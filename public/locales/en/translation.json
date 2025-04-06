@@ -54,5 +54,8 @@
     "howto": "Perform the steps below from 1 to 4",
     "all": "all",
     "share": "Share the application link",
-    "records-to-play": "How many records to repeat"
+    "records-to-play": "How many records to repeat",
+    "dictionary": "Dictionary",
+    "search-hint": "Search (min 2 characters)",
+    "known": "Known"
 }

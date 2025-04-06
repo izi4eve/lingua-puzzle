@@ -50,5 +50,8 @@
     "howto": "Wykonaj poniższe kroki od 1 do 4",
     "all": "wszystko",
     "share": "Udostępnij link do aplikacji",
-    "records-to-play": "Ile nagrań powtórzyć"
+    "records-to-play": "Ile nagrań powtórzyć",
+    "dictionary": "Słownik",
+    "search-hint": "Szukaj (min. 2 znaki)",
+    "known": "Znane"
 }

@@ -54,5 +54,8 @@
     "howto": "Führe die folgenden Schritte von 1 bis 4 aus",
     "all": "alles",
     "share": "Teilen Sie den Link zur Anwendung",
-    "records-to-play": "Wie viele Aufnahmen sollen wiederholt werden"
+    "records-to-play": "Wie viele Aufnahmen sollen wiederholt werden",
+    "dictionary": "Wörterbuch",
+    "search-hint": "Suchen (mind. 2 Zeichen)",
+    "known": "Bekannt"
 }

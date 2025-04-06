@@ -121,3 +121,5 @@ body { background-color: var(--theme-yellow-color); }
 .alert { --bs-alert-margin-bottom: .7rem; }
 
 code { font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; }
+
+.fs-7 { font-size: 14px; }
