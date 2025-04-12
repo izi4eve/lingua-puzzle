@@ -34,11 +34,10 @@ const DictionaryPlayer = ({
     if (data.length > 0) {
       setIsPlaying(false);
       window.speechSynthesis.cancel();
-      setCurrentRecord(0);
-      updateFirstElement(0);
-      setInputValue('0');
+      setCurrentRecord(firstElement); // Синхронизируем с firstElement
+      setInputValue(firstElement.toString());
     }
-  }, [data, updateFirstElement]);
+  }, [data, firstElement]);
 
   useEffect(() => {
     if (!window.speechSynthesis) {

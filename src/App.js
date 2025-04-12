@@ -164,6 +164,7 @@ const App = () => {
             count={count}
             updateData={setData}
             language={ttsLanguage}
+            setFirstElement={setFirstElement}
           />
 
           <NavigationComponent

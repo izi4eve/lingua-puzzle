@@ -40,10 +40,11 @@ const NavigationComponent = ({ data, firstElement, setFirstElement, count, setCo
 
     // Обработчик для кнопки "Вперёд"
     const handleForward = () => {
-        if (firstElement >= maxUnlearnedIndex) {
-            setFirstElement(0); // Перемещаем на начало
+        const newMaxUnlearnedIndex = Math.max(0, data.filter(item => !item.isLearned).length - count);
+        if (firstElement >= newMaxUnlearnedIndex) {
+            setFirstElement(newMaxUnlearnedIndex); // Остаёмся на последнем
         } else {
-            setFirstElement(Math.min(firstElement + count, maxUnlearnedIndex));
+            setFirstElement(Math.min(firstElement + count, newMaxUnlearnedIndex));
         }
     };
 
