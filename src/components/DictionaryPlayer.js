@@ -61,7 +61,7 @@ const DictionaryPlayer = ({
     }));
   }, [selectedLanguage, readingSpeed, repeatCount, recordsToPlay]);
 
-  const playAudio = useCallback(async (text, lang) => {
+  const playAudio = useCallback(async (text, lang, useReadingSpeed = false) => {
     if (!window.speechSynthesis) {
       console.error('SpeechSynthesis is not supported.');
       return Promise.reject(new Error('SpeechSynthesis is not supported.'));
@@ -71,16 +71,16 @@ const DictionaryPlayer = ({
       try {
         const utterance = new SpeechSynthesisUtterance(text);
         utterance.lang = lang;
-        utterance.rate = readingSpeed;
+        utterance.rate = useReadingSpeed ? readingSpeed : 1.0; // Фиксированная скорость для translation
         utterance.onend = () => {
-          console.log(`playAudio completed: ${text}`);
+          console.log(`playAudio completed: ${text}, rate=${utterance.rate}`);
           resolve();
         };
         utterance.onerror = (e) => {
           console.error(`playAudio error: ${text}`, e);
           reject(e);
         };
-        console.log(`playAudio started: ${text}, lang=${lang}`);
+        console.log(`playAudio started: ${text}, lang=${lang}, rate=${utterance.rate}`);
         window.speechSynthesis.speak(utterance);
       } catch (error) {
         console.error(`playAudio exception: ${text}`, error);
@@ -130,8 +130,9 @@ const DictionaryPlayer = ({
     const { foreignPart, translation } = filteredData[currentRecord];
 
     try {
-      await playAudio(translation, selectedLanguage);
-      await playAudio(foreignPart, ttsLanguage);
+      // await playAudio(translation, selectedLanguage, false); // Без readingSpeed
+      await playAudio(translation, selectedLanguage, true); // С readingSpeed
+      await playAudio(foreignPart, ttsLanguage, true); // С readingSpeed
       setIsSpeaking(false);
       const nextRepeat = currentRepeat + 1;
       console.log(`setCurrentRepeat: prev=${currentRepeat}, nextRepeat=${nextRepeat}, repeatCount=${repeatCount}`);
