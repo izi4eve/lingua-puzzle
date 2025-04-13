@@ -140,7 +140,7 @@ code { font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', mon
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  z-index: 1050; /* Выше iframe */
+  z-index: 1050;
   transition: background-color 0.3s;
 }
 
