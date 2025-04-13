@@ -159,7 +159,7 @@ const App = () => {
             languages={languages}
           />
 
-          {/* <Relax /> */}
+          <Relax />
 
           <LearningComponent
             data={data}
