@@ -11,9 +11,9 @@ const DictionaryPlayer = ({
   firstElement,
   updateFirstElement,
   ttsLanguage,
-  selectedLanguage, // Получаем из пропсов
+  selectedLanguage,
   onTTSLanguageChange,
-  onSelectedLanguageChange, // Получаем из пропсов
+  onSelectedLanguageChange,
   languages,
 }) => {
   const { t } = useTranslation();
@@ -24,19 +24,16 @@ const DictionaryPlayer = ({
   const [isPlaying, setIsPlaying] = useState(false);
   const [readingSpeed, setReadingSpeed] = useState(0.5);
   const [inputValue, setInputValue] = useState(firstElement.toString());
-  const [isSpeaking, setIsSpeaking] = useState(false);
   const [recordsToPlay, setRecordsToPlay] = useState('all');
+  const [isSpeaking, setIsSpeaking] = useState(false);
 
   const filteredData = data.filter((item) => !item.isLearned);
-  const maxIndex = filteredData.length - 1;
+  const maxIndex = Math.max(0, filteredData.length - 1);
 
   useEffect(() => {
-    if (data.length > 0) {
-      setIsPlaying(false);
-      window.speechSynthesis.cancel();
-      setCurrentRecord(firstElement); // Синхронизируем с firstElement
-      setInputValue(firstElement.toString());
-    }
+    window.speechSynthesis.cancel();
+    setCurrentRecord(firstElement);
+    setInputValue(firstElement.toString());
   }, [data, firstElement]);
 
   useEffect(() => {
@@ -57,21 +54,16 @@ const DictionaryPlayer = ({
 
   useEffect(() => {
     localStorage.setItem('playerSettings', JSON.stringify({
-      selectedLanguage, // Сохраняем значение из пропсов
+      selectedLanguage,
       readingSpeed,
       repeatCount,
       recordsToPlay,
     }));
   }, [selectedLanguage, readingSpeed, repeatCount, recordsToPlay]);
 
-  useEffect(() => {
-    setCurrentRecord(firstElement);
-    setInputValue(firstElement.toString());
-  }, [firstElement]);
-
   const playAudio = useCallback(async (text, lang) => {
     if (!window.speechSynthesis) {
-      alert('SpeechSynthesis is not supported in your browser.');
+      console.error('SpeechSynthesis is not supported.');
       return Promise.reject(new Error('SpeechSynthesis is not supported.'));
     }
 
@@ -80,19 +72,25 @@ const DictionaryPlayer = ({
         const utterance = new SpeechSynthesisUtterance(text);
         utterance.lang = lang;
         utterance.rate = readingSpeed;
-        utterance.onend = () => resolve();
-        utterance.onerror = (e) => reject(e);
+        utterance.onend = () => {
+          console.log(`playAudio completed: ${text}`);
+          resolve();
+        };
+        utterance.onerror = (e) => {
+          console.error(`playAudio error: ${text}`, e);
+          reject(e);
+        };
+        console.log(`playAudio started: ${text}, lang=${lang}`);
         window.speechSynthesis.speak(utterance);
       } catch (error) {
+        console.error(`playAudio exception: ${text}`, error);
         reject(error);
       }
     });
   }, [readingSpeed]);
 
   const handleNext = useCallback(() => {
-    window.speechSynthesis.cancel();
-    setIsSpeaking(false);
-    setCurrentRepeat(0);
+    console.log(`handleNext: currentRecord=${currentRecord}`);
     const nextRecord = currentRecord + 1;
     const maxRecordToPlay = recordsToPlay === Infinity ? maxIndex : Math.min(maxIndex, recordsToPlay - 1);
     if (nextRecord > maxRecordToPlay) {
@@ -102,52 +100,94 @@ const DictionaryPlayer = ({
       setCurrentRecord(nextRecord);
       updateFirstElement(nextRecord);
     }
+    setCurrentRepeat(0);
   }, [currentRecord, maxIndex, recordsToPlay, updateFirstElement]);
 
   const playCurrentRecord = useCallback(async () => {
-    if (!window.speechSynthesis || currentRecord < 0 || currentRecord > maxIndex || isSpeaking) return;
+    console.log(`playCurrentRecord: currentRecord=${currentRecord}, currentRepeat=${currentRepeat}, isPlaying=${isPlaying}, isSpeaking=${isSpeaking}`);
+    if (
+      !window.speechSynthesis ||
+      filteredData.length === 0 ||
+      currentRecord < 0 ||
+      currentRecord > maxIndex ||
+      !isPlaying ||
+      isSpeaking
+    ) {
+      console.log('Остановка воспроизведения:', {
+        speechSynthesis: !!window.speechSynthesis,
+        filteredDataLength: filteredData.length,
+        currentRecord,
+        maxIndex,
+        isPlaying,
+        isSpeaking,
+      });
+      setIsSpeaking(false);
+      setIsPlaying(false);
+      return;
+    }
 
     setIsSpeaking(true);
     const { foreignPart, translation } = filteredData[currentRecord];
 
     try {
-      await playAudio(translation, selectedLanguage); // Используем selectedLanguage из пропсов
+      await playAudio(translation, selectedLanguage);
       await playAudio(foreignPart, ttsLanguage);
-      setCurrentRepeat((prev) => {
-        const nextRepeat = prev + 1;
-        if (nextRepeat < repeatCount) {
-          setIsSpeaking(false);
-          playCurrentRecord();
-        } else {
-          setCurrentRepeat(0);
-          setIsSpeaking(false);
-          handleNext();
-        }
-        return nextRepeat;
-      });
+      setIsSpeaking(false);
+      const nextRepeat = currentRepeat + 1;
+      console.log(`setCurrentRepeat: prev=${currentRepeat}, nextRepeat=${nextRepeat}, repeatCount=${repeatCount}`);
+      if (nextRepeat < repeatCount) {
+        setCurrentRepeat(nextRepeat);
+      } else {
+        setCurrentRepeat(0);
+        handleNext();
+      }
     } catch (error) {
       console.error("Ошибка воспроизведения аудио:", error);
       setIsSpeaking(false);
+      setIsPlaying(false);
     }
   }, [
     currentRecord,
     maxIndex,
     filteredData,
-    selectedLanguage, // Зависимость от пропса
+    selectedLanguage,
     ttsLanguage,
     repeatCount,
     handleNext,
+    isPlaying,
     isSpeaking,
+    currentRepeat,
     playAudio,
   ]);
 
   useEffect(() => {
-    if (isPlaying) {
+    console.log(`useEffect воспроизведения: isPlaying=${isPlaying}, filteredData.length=${filteredData.length}, currentRecord=${currentRecord}, currentRepeat=${currentRepeat}`);
+    if (isPlaying && filteredData.length > 0 && !isSpeaking) {
       playCurrentRecord();
+    } else if (filteredData.length === 0) {
+      setIsPlaying(false);
     }
-  }, [currentRecord, isPlaying, playCurrentRecord]);
+  }, [isPlaying, filteredData.length, currentRecord, currentRepeat, isSpeaking, playCurrentRecord]);
+
+  // Проверка активности speechSynthesis в Safari
+  useEffect(() => {
+    if (!isPlaying) return;
+
+    const checkSynthesis = () => {
+      if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
+        console.log('speechSynthesis active');
+      } else if (isPlaying && !isSpeaking) {
+        console.log('speechSynthesis stopped unexpectedly, restarting...');
+        playCurrentRecord();
+      }
+    };
+
+    const interval = setInterval(checkSynthesis, 1000);
+    return () => clearInterval(interval);
+  }, [isPlaying, isSpeaking, playCurrentRecord]);
 
   const handlePlayPause = useCallback(() => {
+    console.log(`handlePlayPause: isPlaying=${isPlaying}`);
     if (isPlaying) {
       window.speechSynthesis.cancel();
       setIsPlaying(false);
@@ -155,11 +195,11 @@ const DictionaryPlayer = ({
       setCurrentRepeat(0);
     } else {
       setIsPlaying(true);
-      playCurrentRecord();
     }
-  }, [isPlaying, playCurrentRecord]);
+  }, [isPlaying]);
 
   const handlePrev = useCallback(() => {
+    console.log(`handlePrev: currentRecord=${currentRecord}`);
     window.speechSynthesis.cancel();
     setIsSpeaking(false);
     setCurrentRepeat(0);
@@ -207,8 +247,8 @@ const DictionaryPlayer = ({
         <div className="d-flex align-items-center">
           <label>{t('your-language')}</label>
           <Form.Select
-            value={selectedLanguage} // Используем пропс
-            onChange={(e) => onSelectedLanguageChange(e.target.value)} // Обновляем через пропс
+            value={selectedLanguage}
+            onChange={(e) => onSelectedLanguageChange(e.target.value)}
             className="ms-2 w-auto"
           >
             {['en', 'de', 'fr', 'it', 'es', 'pt', 'pl', 'cs', 'uk', 'sh', 'ru', 'tr', 'ar', 'fa'].map((lang) => (

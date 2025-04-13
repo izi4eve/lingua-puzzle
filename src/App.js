@@ -5,6 +5,7 @@ import FileUploader from './components/FileUploader';
 import LearningComponent from './components/LearningComponent';
 import NavigationComponent from './components/NavigationComponent';
 import DictionaryPlayer from './components/DictionaryPlayer';
+import Relax from './components/Relax';
 import Tips from './components/Tips';
 import CookieConsent from "react-cookie-consent";
 import { FaTelegramPlane } from 'react-icons/fa';
@@ -157,6 +158,8 @@ const App = () => {
             onSelectedLanguageChange={handleSelectedLanguageChange} // Добавляем новый пропс
             languages={languages}
           />
+
+          {/* <Relax /> */}
 
           <LearningComponent
             data={data}
