@@ -79,6 +79,18 @@ const Relax = () => {
                     mode="button"
                 />
                 <BrowserButton
+                    link="https://www.youtube.com/embed/videoseries?list=PLJ8cMiYb3G5cX8x8hoIcd8NhMin3hqxzf"
+                    buttonText="VOX"
+                    variant="warning"
+                    mode="button"
+                />
+                <BrowserButton
+                    link="https://www.youtube.com/embed/videoseries?list=PL5113EDF7E1116D32"
+                    buttonText="DW"
+                    variant="info"
+                    mode="button"
+                />
+                <BrowserButton
                     buttonText="YouTube link"
                     variant="success"
                     mode="input"
