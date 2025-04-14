@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { Modal, Form, Button } from 'react-bootstrap';
 import { FixedSizeList } from 'react-window';
 
-const Dictionary = ({ show, onHide, data, onDataUpdate }) => {
+const Dictionary = ({ show, onHide, data, onDataUpdate, setFirstElement }) => {
   const [filter, setFilter] = useState('');
 
   const filteredData = useMemo(() => {
@@ -22,13 +22,25 @@ const Dictionary = ({ show, onHide, data, onDataUpdate }) => {
     onDataUpdate(updatedData);
   };
 
+  const handleWordClick = (originalIndex) => {
+    // Подсчитываем количество isLearned до originalIndex
+    const learnedCountBefore = data.slice(0, originalIndex).filter(item => item.isLearned).length;
+    // Устанавливаем firstElement: индекс слова минус количество выученных до него
+    const newFirstElement = originalIndex - learnedCountBefore;
+    setFirstElement(newFirstElement);
+    onHide(); // Закрываем модалку
+  };
+
   const Row = ({ index, style }) => {
     const entry = filteredData[index];
-    const originalIndex = data.indexOf(entry); // Получаем индекс в исходном массиве data
+    const originalIndex = data.indexOf(entry); // Индекс в исходном массиве data
     return (
       <div
         className={`fs-7 d-flex flex-column w-100 ${entry.isLearned ? 'text-muted' : ''}`}
         style={{ ...style }}
+        onClick={() => handleWordClick(originalIndex)} // Добавляем обработчик клика
+        role="button" // Для доступности
+        tabIndex={0} // Для доступности
       >
         <div className="text-bg-secondary rounded-pill px-2 d-flex justify-content-between align-items-center mb-1">
           <span className="flex-shrink-0" style={{ width: '60px' }}>#{originalIndex}</span>
@@ -37,7 +49,10 @@ const Dictionary = ({ show, onHide, data, onDataUpdate }) => {
             <Form.Check
               type="checkbox"
               checked={entry.isLearned}
-              onChange={() => handleCheckboxChange(originalIndex)} // Используем originalIndex
+              onChange={(e) => {
+                e.stopPropagation(); // Предотвращаем срабатывание handleWordClick при клике на чекбокс
+                handleCheckboxChange(originalIndex);
+              }}
               className="flex-shrink-0"
               style={{ width: '20px' }}
             />

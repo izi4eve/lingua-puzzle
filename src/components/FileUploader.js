@@ -306,6 +306,7 @@ const FileUploader = ({
                     onHide={closeDictionaryModal}
                     data={data}
                     onDataUpdate={handleDataUpdate}
+                    setFirstElement={setFirstElement}
                 />
             </div>
         </div>
