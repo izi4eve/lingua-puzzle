@@ -46,9 +46,9 @@ const DictionaryPlayer = ({
     const savedSettings = localStorage.getItem('playerSettings');
     if (savedSettings) {
       const { readingSpeed, repeatCount, recordsToPlay } = JSON.parse(savedSettings);
-      setReadingSpeed(readingSpeed);
-      setRepeatCount(repeatCount);
-      setRecordsToPlay(recordsToPlay || 10);
+      setReadingSpeed(readingSpeed ?? 0.75); // Используем значение по умолчанию, если не задано
+      setRepeatCount(repeatCount ?? 3); // Используем значение по умолчанию, если не задано
+      setRecordsToPlay(recordsToPlay ?? 'all'); // Используем 'all', если значение не задано
     }
   }, []);
 
