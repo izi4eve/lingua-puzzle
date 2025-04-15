@@ -54,5 +54,7 @@
     "dictionary": "Sözlük",
     "search-hint": "Ara (en az 2 karakter)",
     "known": "Bilinen",
-    "relax": "Tam burada dinlen"
+    "relax": "Tam burada dinlen",
+    "no-entries-found": "Hiçbir kayıt bulunamadı",
+    "close": "Kapat"
 }

@@ -1,9 +1,12 @@
 import React, { useState, useMemo } from 'react';
 import { Modal, Form, Button, InputGroup } from 'react-bootstrap';
 import { FixedSizeList } from 'react-window';
+import { useTranslation } from 'react-i18next';
 import { FaTimes } from 'react-icons/fa'; // Импортируем иконку крестика
 
 const Dictionary = ({ show, onHide, data, onDataUpdate, setFirstElement }) => {
+  const { t } = useTranslation();
+
   const [filter, setFilter] = useState('');
 
   const filteredData = useMemo(() => {
@@ -48,7 +51,7 @@ const Dictionary = ({ show, onHide, data, onDataUpdate, setFirstElement }) => {
         <div className="text-bg-secondary rounded-pill px-2 d-flex justify-content-between align-items-center mb-1">
           <span className="flex-shrink-0" style={{ width: '60px' }}>#{originalIndex}</span>
           <div className="d-flex align-items-center flex-shrink-0 ms-auto">
-            <span className="me-2">Знаю</span>
+            <span className="me-2">{t('known')}</span>
             <Form.Check
               type="checkbox"
               checked={entry.isLearned}
@@ -71,14 +74,14 @@ const Dictionary = ({ show, onHide, data, onDataUpdate, setFirstElement }) => {
   return (
     <Modal show={show} onHide={onHide} size="lg" scrollable>
       <Modal.Header closeButton>
-        <Modal.Title>Dictionary</Modal.Title>
+        <Modal.Title>{t('dictionary')}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <Form.Group className="mb-3">
           <InputGroup>
             <Form.Control
               type="text"
-              placeholder="Filter (min 2 characters)"
+              placeholder={t('search-hint')}
               value={filter}
               onChange={(e) => setFilter(e.target.value)}
             />
@@ -106,12 +109,12 @@ const Dictionary = ({ show, onHide, data, onDataUpdate, setFirstElement }) => {
             </FixedSizeList>
           </div>
         ) : (
-          <p>No entries found</p>
+          <p>{t('no-entries-found')}</p>
         )}
       </Modal.Body>
       <Modal.Footer>
         <Button variant="btn btn-sm btn-outline-dark" onClick={onHide}>
-          Close
+          {t('close')}
         </Button>
       </Modal.Footer>
     </Modal>

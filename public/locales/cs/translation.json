@@ -54,5 +54,7 @@
     "dictionary": "Slovník",
     "search-hint": "Hledat (min. 2 znaky)",
     "known": "Známé",
-    "relax": "Odpočívejte přímo zde"
+    "relax": "Odpočívejte přímo zde",
+    "no-entries-found": "Nebyly nalezeny žádné záznamy",
+    "close": "Zavřít"
 }

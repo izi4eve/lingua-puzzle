@@ -54,5 +54,7 @@
     "dictionary": "Dicionário",
     "search-hint": "Pesquisar (mín. 2 caracteres)",
     "known": "Conhecido",
-    "relax": "Relaxe bem aqui"
+    "relax": "Relaxe bem aqui",
+    "no-entries-found": "Nenhuma entrada encontrada",
+    "close": "Fechar"
 }

@@ -58,5 +58,7 @@
     "dictionary": "Diccionario",
     "search-hint": "Buscar (mín. 2 caracteres)",
     "known": "Conocido",
-    "relax": "Relájate justo aquí"
+    "relax": "Relájate justo aquí",
+    "no-entries-found": "No se encontraron entradas",
+    "close": "Cerrar"
 }
