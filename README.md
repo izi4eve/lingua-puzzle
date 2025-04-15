@@ -1,4 +1,4 @@
-=ABOUT=
+#ABOUT
 
 Foreign languages open borders and provide new opportunities.
 Our brain remembers what it encounters frequently.
