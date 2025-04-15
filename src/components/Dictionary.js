@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
-import { Modal, Form, Button } from 'react-bootstrap';
+import { Modal, Form, Button, InputGroup } from 'react-bootstrap';
 import { FixedSizeList } from 'react-window';
+import { FaTimes } from 'react-icons/fa'; // Импортируем иконку крестика
 
 const Dictionary = ({ show, onHide, data, onDataUpdate, setFirstElement }) => {
   const [filter, setFilter] = useState('');
@@ -23,24 +24,26 @@ const Dictionary = ({ show, onHide, data, onDataUpdate, setFirstElement }) => {
   };
 
   const handleWordClick = (originalIndex) => {
-    // Подсчитываем количество isLearned до originalIndex
     const learnedCountBefore = data.slice(0, originalIndex).filter(item => item.isLearned).length;
-    // Устанавливаем firstElement: индекс слова минус количество выученных до него
     const newFirstElement = originalIndex - learnedCountBefore;
     setFirstElement(newFirstElement);
-    onHide(); // Закрываем модалку
+    onHide();
+  };
+
+  const handleClearFilter = () => {
+    setFilter(''); // Очищаем поле фильтра
   };
 
   const Row = ({ index, style }) => {
     const entry = filteredData[index];
-    const originalIndex = data.indexOf(entry); // Индекс в исходном массиве data
+    const originalIndex = data.indexOf(entry);
     return (
       <div
         className={`fs-7 d-flex flex-column w-100 ${entry.isLearned ? 'text-muted' : ''}`}
         style={{ ...style }}
-        onClick={() => handleWordClick(originalIndex)} // Добавляем обработчик клика
-        role="button" // Для доступности
-        tabIndex={0} // Для доступности
+        onClick={() => handleWordClick(originalIndex)}
+        role="button"
+        tabIndex={0}
       >
         <div className="text-bg-secondary rounded-pill px-2 d-flex justify-content-between align-items-center mb-1">
           <span className="flex-shrink-0" style={{ width: '60px' }}>#{originalIndex}</span>
@@ -50,7 +53,7 @@ const Dictionary = ({ show, onHide, data, onDataUpdate, setFirstElement }) => {
               type="checkbox"
               checked={entry.isLearned}
               onChange={(e) => {
-                e.stopPropagation(); // Предотвращаем срабатывание handleWordClick при клике на чекбокс
+                e.stopPropagation();
                 handleCheckboxChange(originalIndex);
               }}
               className="flex-shrink-0"
@@ -72,12 +75,24 @@ const Dictionary = ({ show, onHide, data, onDataUpdate, setFirstElement }) => {
       </Modal.Header>
       <Modal.Body>
         <Form.Group className="mb-3">
-          <Form.Control
-            type="text"
-            placeholder="Filter (min 2 characters)"
-            value={filter}
-            onChange={(e) => setFilter(e.target.value)}
-          />
+          <InputGroup>
+            <Form.Control
+              type="text"
+              placeholder="Filter (min 2 characters)"
+              value={filter}
+              onChange={(e) => setFilter(e.target.value)}
+            />
+            {filter && (
+              <Button
+                variant="outline-secondary"
+                onClick={handleClearFilter}
+                aria-label="Clear filter"
+                style={{ borderLeft: 'none' }}
+              >
+                <FaTimes />
+              </Button>
+            )}
+          </InputGroup>
         </Form.Group>
         {filteredData.length > 0 ? (
           <div style={{ height: '400px', overflow: 'auto' }}>
