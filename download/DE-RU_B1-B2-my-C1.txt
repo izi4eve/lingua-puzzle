@@ -1,87 +1,87 @@
-der Abend — Abende = вечер
-Guten Abend! = Добрый вечер!
-alles = всё
-antworten auf (Akkusativ }; mit (Dativ) — geantwortet = отвечать на; с помощью чего-либо
-Sie antworten = Вы отвечаете
-auch = тоже
-auf (Akkusativ, Dativ) = на
-aus (Dativ) = из
-Ich komme aus Syrien. = Я приехал из Сирии.
+der Abend — Abende = вечер =
+Guten Abend! = Добрый вечер! =
+alles = всё =
+antworten auf (Akkusativ); mit (Dativ) — geantwortet = отвечать на; с помощью чего-либо
+Sie antworten = Вы отвечаете =
+auch = тоже =
+auf (Akkusativ, Dativ) = на =
+aus (Dativ) = из =
+Ich komme aus Syrien. = Я приехал из Сирии. =
 die Aussage — Aussagen = утверждение
-bisschen = немного
-Er spricht ein bisschen Englisch. = Он говорит немного по-английски.
-bitte = пожалуйста
-danke = спасибо
-dann = потом
-das = это
-der = этот
-Deutsch = немецкий
-Ich spreche Deutsch. = Я говорю по-немецки.
+bisschen = немного =
+Er spricht ein bisschen Englisch. = Он говорит немного по-английски. =
+bitte = пожалуйста =
+danke = спасибо =
+dann = потом =
+das = это =
+der = этот =
+Deutsch = немецкий =
+Ich spreche Deutsch. = Я говорю по-немецки. =
 der Dialog — Dialoge = диалог
-die = эта
-Wie geht‘s? = Как дела?
-dir = тебе
-Wie geht es dir? = Как дела у тебя?
-du = ты
-Bist du aus Polen? = Ты из Польши?
-ein, eine = один; одна
-die Entschuldigung — Entschuldigungen = извинение
-er = он
-es = это
+die = эта =
+Wie geht‘s? = Как дела? =
+dir = тебе =
+Wie geht es dir? = Как дела у тебя? =
+du = ты =
+Bist du aus Polen? = Ты из Польши? =
+ein, eine = один; одна =
+die Entschuldigung — Entschuldigungen = извинение =
+er = он =
+es = это =
 die Form — Formen = форма
 die Frage nach (Dativ) — Fragen = вопрос о
 fragen nach (Dativ) — gefragt = спрашивать о
-die Frau — Frauen = женщина, жена
-ganz = весь, совсем, полностью
-Es geht mir ganz gut. = У меня всё довольно хорошо.
+die Frau — Frauen = женщина, жена =
+ganz = весь, совсем, полностью =
+Es geht mir ganz gut. = У меня всё довольно хорошо. =
 gehen — ist gegangen — ging = идти
 gehen um (Akkusativ) — ist gegangen — ging = речь идёт о
-Es geht mir gut. = У меня всё хорошо.
-die Grammatik — Grammatiken = грамматика
-gut — besser — am besten = хороший
-hallo = привет
+Es geht mir gut. = У меня всё хорошо. =
+die Grammatik — Grammatiken = грамматика =
+gut — besser — am besten = хороший =
+hallo = привет =
 heißen — heißt — geheißen — hieß = называться
-Ich heiße Anna. = Меня зовут Анна.
-der Herr — Herren = господин
+Ich heiße Anna. = Меня зовут Анна. =
+der Herr — Herren = господин =
 hören — gehört = слушать
-ich = я
+ich = я =
 Ihnen = вам; им
 Wie geht es Ihnen? = Как дела у вас?
 ihr = вы, ваш, её
-im (Dativ) = в
-Fragen Sie im Kurs. = Спрашивайте на курсе.
-ja = да
-klar = ясно
+im (Dativ) = в =
+Fragen Sie im Kurs. = Спрашивайте на курсе. =
+ja = да =
+klar = ясно =
 Ja, klar. = Да, ясно.
 kommen — ist gekommen — kam = приходить; приезжать
-der Kurs — Kurse = курс
+der Kurs — Kurse = курс =
 der Kursteilnehmer — Kursteilnehmer = участник курса
 die Kursteilnehmerin — Kursteilnehmerinnen = участница курса
 das Land — Länder = страна
 lesen — liest — gelesen — las = читать
 der Mann — Männer = мужчина, муж
-mein, meine = мой; моя
-mit (Dativ) = с
-morgen = завтра
+mein, meine = мой; моя =
+mit (Dativ) = с =
+morgen = завтра =
 Bis morgen! = До завтра!
 die Nacht — Nächte = ночь
 Gute Nacht! = Спокойной ночи!
 der Name — Namen = имя
-nein = нет
+nein = нет =
 Nein, danke. = Нет, спасибо.
-neu = новый
-nicht = не
-oder = или
+neu = новый =
+nicht = не =
+oder = или =
 die Person — Personen = человек
 richtig = правильный
 Das ist richtig! = Это правильно!
 der Satz — Sätze = предложение
-schreiben an (Akkusativ }; über (Akkusativ) — geschrieben — schrieb = писать кому-то; про что-то
-sehr = очень
+schreiben an (Akkusativ); über (Akkusativ) — geschrieben — schrieb = писать кому-то; про что-то
+sehr = очень =
 sein — ist gewesen — war — wäre = быть
 Seid ihr aus Afghanistan? = Вы из Афганистана?
 Sie = вы, она, они
-so = так
+so = так =
 die Sprache — Sprachen = язык
 sprechen mit (Dativ) über (Akkusativ) — spricht — gesprochen — sprach = говорить с кем-то; о чём-то
 sprechen von (Dativ) — spricht — gesprochen — sprach = говорить о чём-то
@@ -777,7 +777,7 @@ backen — gebacken = печь
 der Bäcker = пекарь
 die Bäckerin = пекарь (жен.)
 bald = скоро
-berichten über (Akkusativ }; von (Dativ) — berichtet = сообщать о; рассказывать о
+berichten über (Akkusativ); von (Dativ) — berichtet = сообщать о; рассказывать о
 der Beruf — Berufe = профессия
 beruflich = профессионально
 die Bürokauffrau = офисный работник (жен.)
@@ -820,7 +820,7 @@ korrigieren — korrigiert = исправлять
 das Kraftfahrzeug (KFZ) = автомобиль
 der Krankenpfleger — Krankenpfleger = медбрат
 die Krankenschwester — Krankenschwestern = медсестра
-kreativ = креативный
+kreativ = креативний; творческий
 langweilig = скучный
 die Leute (Plural) = люди
 die Mathematik = математика
@@ -919,6 +919,9 @@ Hustensaft = сироп от кашля
 das Knie — Knie = колено
 der Kopf — Köpfe = голова
 die Kopfschmerzen (Plural) = головные боли
+der Schwindel — Schwindel = головокружение
+schwindeln — geschwindelt = кружится голова; ощущать головокружение
+ohnmächtig werden — er wird ohnmächtig — ist ohnmächtig geworden — wurde ohnmächtig = терять сознание
 der Körper — Körper = тело
 der Körperteil — Körperteile = часть тела
 krank = больной
@@ -989,7 +992,7 @@ früher = раньше
 sein/wurden geboren — ist/wurde geboren — war = родиться
 Ich bin in Kabul geboren. = Я родился в Кабуле.
 gerade = только что
-gucken — geguckt = смотреть, наблюдать (проверять }
+gucken — geguckt = смотреть, наблюдать (проверять)
 der Hausflur = коридор дома
 heiraten — geheiratet = жениться; выходить замуж
 das Hobby — Hobbys = хобби
@@ -1443,7 +1446,7 @@ reichlich = обильно
 der Restmüll = остаточный мусор
 schließlich = наконец
 schonen — geschont = беречь
-setzen {sich} — gesetzt = садиться; устанавливать
+setzen (sich) — gesetzt = садиться; устанавливать
 sogar = даже
 sorgen für (Akkusativ) — gesorgt = заботиться о
 sorgen sich um (Akkusativ) — gesorgt = беспокоиться о
@@ -1642,7 +1645,7 @@ der Aushilfsjob = подработка
 aussehen — ausgesehen — sah aus = выглядеть
 der/die Auszubildende (Azubi) — Auszubildende = стажёр; стажёрка
 der/die Bäckereifachverkäufer/in = продавец в пекарне
-bedanken sich bei (Dativ }; für (Akkusativ) — bedankt = благодарить кого-то; за что-то
+bedanken sich bei (Dativ); für (Akkusativ) — bedankt = благодарить кого-то; за что-то
 bedienen — bedient = обслуживать
 beeilen sich — beeilt = спешить
 begründen — begründet = обосновывать
@@ -1826,7 +1829,7 @@ die Besprechung = совещание
 betätigen — betätigt = задействовать
 betreffen — betroffen = касаться
 bewahren — bewahrt = сохранять
-bewegen {sich} — bewegt = двигать, {двигаться}
+bewegen (sich) — bewegt = двигать, (двигаться)
 der Bildschirm = экран
 der Brand = пожар
 die Brandbekämpfung = тушение пожара
@@ -1983,7 +1986,7 @@ der Sportunterricht = урок физкультуры
 streng = строгий
 die Tagesordnung = повестка дня
 der Teenager — Teenager = подросток
-teilnehmen an (Dativ) — nimmt teil — teilgenommen — nahm teil = участвовать в (чем? }
+teilnehmen an (Dativ) — nimmt teil — teilgenommen — nahm teil = участвовать в (чем?)
 das Tier — Tiere = животное
 der/die Tierpfleger/in = смотритель животных
 träumen von (Dativ) — geträumt = мечтать о; сниться
@@ -2289,7 +2292,7 @@ der Flug — Flüge = полёт; рейс
 der/die Flugbegleiter/in — Flugbegleiter/innen = бортпроводник
 der Fluggast — Fluggäste = авиапассажир
 die Fluggesellschaft — Fluggesellschaften = авиакомпания
-führen {zu} — geführt = руководить, приводить {к чему-то}
+führen (zu) — geführt = руководить, приводить (к чему-то)
 füttern — gefüttert = кормить
 das Gate = выход на посадку
 das Gepäck = багаж
@@ -2374,7 +2377,7 @@ die Beleidigung — Beleidigungen = оскорбление
 berechtigt = обоснованный
 beschimpfen — beschimpft = ругать
 die Beschimpfung — Beschimpfungen = ругательство
-beschweren sich bei (Dativ }; über (Akkusativ) — beschwert = жаловаться кому-то; о чём-то
+beschweren sich bei (Dativ); über (Akkusativ) — beschwert = жаловаться кому-то; о чём-то
 der Blumentopf — Blumentöpfe = цветочный горшок
 bohren — gebohrt = сверлить
 deswegen = поэтому
@@ -2394,7 +2397,7 @@ eskalieren — eskaliert = обостряться
 exotisch = экзотический
 fair = справедливый
 festkleben — festgeklebt = приклеивать
-die Freude an (Dativ }; über (Akkusativ }; auf (Akkusativ) — Freuden = радость от; в будущем
+die Freude an (Dativ); über (Akkusativ); auf (Akkusativ) — Freuden = радость от; в будущем
 die Frist — Fristen = срок
 fristgerecht = своевременный
 fristlos = без уведомления
@@ -2716,7 +2719,7 @@ romantisch = романтичный
 die Runde — Runden = круг, раунд
 schalten — geschaltet = переключать
 der Schiedsrichter — Schiedsrichter = судья
-schießen auf (Akkusativ) — geschossen — schoss = стрелять в (кого? что? }
+schießen auf (Akkusativ) — geschossen — schoss = стрелять в (кого? что?)
 die Seifenoper — Seifenopern = мыльная опера
 die Sendung — Sendungen = передача
 die Serie — Serien = сериал
@@ -2838,7 +2841,7 @@ vereinigen — vereinigt = объединять
 verfolgen — verfolgt = преследовать
 verhaften — verhaftet = арестовывать
 verlängern — verlängert = продлевать
-verlassen — verlässt — verlassen — verließ = покидать; оставлять (место; кого-то }
+verlassen — verlässt — verlassen — verließ = покидать; оставлять (место; кого-то)
 verlassen sich auf (Akkusativ) — verlässt — verlassen — verließ = полагаться на
 vermischen — vermischt = смешивать
 das Visum — Visa = виза
@@ -3024,6 +3027,7 @@ der Umgang = общение; обращение
 die Umschulung = переподготовка
 unbefristet = бессрочный
 das Unternehmen — Unternehmen = предприятие
+der Urlaub — Urlaube = отпуск
 der Urlaubstag — Urlaubstage = день отпуска
 verabreden — verabredet = договариваться
 die Vergütung = вознаграждение
@@ -3356,9 +3360,9 @@ die Lese = чтение
 das Recht — Rechte = право
 der Satzbau — Satzbaus = построение предложения
 bestehen — bestanden — bestand = выдержать, преодолеть (экзамен, испытание)
-bestehen aus (Dativ) — bestanden — bestand = состоять из (чего? }
-bestehen auf (Dativ) — bestanden — bestand = настаивать на (чём? }
-bestehen in (Dativ) — bestanden — bestand = заключаться в (чём? }
+bestehen aus (Dativ) — bestanden — bestand = состоять из (чего?)
+bestehen auf (Dativ) — bestanden — bestand = настаивать на (чём?)
+bestehen in (Dativ) — bestanden — bestand = заключаться в (чём?)
 lachen — gelacht = смеяться
 meinen — gemeint = считать; думать
 das Deutsch = немецкий язык
@@ -3747,7 +3751,7 @@ finanzieren — finanziert = финансировать
 fünfter = пятый
 gelingen — ist gelungen — gelang = удаваться
 genannt = названный
-geraten in (Akkusativ) — gerät — ist geraten — geriet = попадать в (какую-то ситуацию }
+geraten in (Akkusativ) — gerät — ist geraten — geriet = попадать в (какую-то ситуацию)
 gespannt = напряжённый; взволнованный
 gespannt auf (Akkusativ) = с нетерпением ожидающий чего-то
 grübeln — gegrübelt = размышлять; ломать голову
@@ -4469,7 +4473,7 @@ Ich habe ein Durcheinander im Kopf. = У меня каша в голове.
 Ich habe vergessen, dass ich heute früher kommen sollte. = Я забыл, что сегодня нужно раньше прийти.
 Ich habe gestern vergessen, das zu sagen. = Я забыл вчера сказать.
 die Brennweite = фокусное расстояние
-die Distanz {zu} = дистанция {до}
+die Distanz (zu) = дистанция (до)
 die Blende = диафрагма
 die Streulicht = рассеянный свет
 die Streulichtblende = бленда
@@ -4517,7 +4521,7 @@ feuchte Luft = влажный воздух
 die Bewertung; die Kundenbewertung; die Kamerabewertung = отзыв (на сайте); отзыв покупателя; обзор камеры
 die Beschwerde; beschweren sich — beschwert = жалоба; жаловаться
 loben — gelobt = хвалить
-beleidigen {sich} — beleidigt = обижать {обижаться}
+beleidigen (sich) — beleidigt = обижать (обижаться)
 das Drehbuch = сценарий
 die Storyboard = раскадровка
 die Vertonung = озвучка
@@ -4676,6 +4680,7 @@ Ich muss zur Arbeit fahren. = Мне нужно на работу ехать.
 Ich habe die Angewohnheit, tagsüber wenig zu essen. = У меня привычка днём мало кушать.
 für alle Fälle = на всякий случай
 Ingrid geht in Rente. = Ингрид выходит на пенсию.
+Das war dank Ihnen. = Это было благодаря вам.
 Ich werde Ingrid immer dankbar sein, dass sie mich eingestellt hat. = Я буду всегда благодарен Ингрид, что она взяла меня на работу.
 Ich möchte nacheinander alle Arten von Arbeiten lernen. = Я бы хотел по-очереди учить все виды работ.
 Ich möchte alles selbst machen. = Я бы хотел делать всё сам.
@@ -4803,7 +4808,7 @@ die Druckerpatrone = картридж для принтера
 die Träne = слеза
 weinen — geweint = плакать
 schimpfen — geschimpft = ругаться
-ärgern (sich) — geärgert = обижать (обижаться }
+ärgern (sich) — geärgert = обижать (обижаться)
 Böser Mann ist wütend auf mich. = Злой человек злиться на меня.
 Gut und Böse, Krieg und Frieden = добро и зло, война и мир
 Gegenstand und Subjekt des Rechts = объект и субъект права
@@ -4883,7 +4888,7 @@ der Bettbezug = пододеяльник
 die Hausschuhe = тапочки
 die Stiefel = сапоги
 die Taste; der Button; der Knopf = кнопка
-drücken — gedrückt; klicken — geklickt = нажимать (на кнопку }
+drücken — gedrückt; klicken — geklickt = нажимать (на кнопку)
 der Monitor; der Bildschirm; der Schirm = монитор; экран/дисплей; зонт, экран/заслон
 der Vorhang = штора
 die Theke = прилавок
@@ -4963,7 +4968,7 @@ ein guter Zeitpunkt = удобное время
 Vielen Dank für Ihren Anruf. = Спасибо за ваш звонок.
 beworben sich auf die Position des Entwicklers bei uns = подаваться на позицию разработчика у нас
 Das stimmt. = Это правильно.
-Bewerbung als = бевербунг на (кого? }
+Bewerbung als = бевербунг на (кого?)
 Erinnern Sie sich an die Stellenausschreibung? = Вы помните описание вакансии?
 Ich sende derzeit viele Bewerbungen. = Я сейчас отправляю много резюме.
 Ich kann mich nicht an alle Details erinnern. = Я не могу вспомнить все детали.
@@ -4976,7 +4981,7 @@ Erzählen Sie uns etwas über sich. = Расскажите немного о с�
 Was hat Sie zur Bewerbung motiviert? = Что вас замотивировало на бевербунг?
 Ich bin auf die Stelle bei euch aufmerksam geworden. = Я стал внимательным к вакансии у вас.
 Ich fand das sehr interessant. = Я нашел это очень интересным.
-melden (sich) — gemeldet = сообщать (связатья }
+melden (sich) — gemeldet = сообщать (связатья)
 Wir melden uns bald bei Ihnen. = Мы свяжемся скоро с вами.
 Ich freue mich auf Ihre Rückmeldung. = Я с нетерпением жду вашего ответа.
 Haben Sie noch Fragen an uns? = У вас есть еще вопросы к нам?
@@ -5017,7 +5022,7 @@ ausbauen — baut aus — ausgebaut = расширять; развивать
 agil = гибкий
 gut zu Ihrem Team passen = хорошо вашей команде подходит
 das Projektmanagement = управление проектами
-beitragen zu (Dativ) — trägt bei — beigetragen — trug bei = вносить вклад в (что-то }
+beitragen zu (Dativ) — trägt bei — beigetragen — trug bei = вносить вклад в (что-то)
 Was sind Ihre größten Stärken? = Каковы ваши сильные стороны?
 Was sind Ihre Schwächen? = Каковы ваши слабые стороны?
 komplex; effizient = сложный; эффективно
@@ -5042,10 +5047,10 @@ maßgeschneiderte und nachhaltige Lösungen bieten = предлагать инд
 Bei uns erwartet Sie … = У нас вас ожидает …
 ein dynamisches und internationales Team = динамическая и международная команда
 kontinuierlicher Weiterentwicklung = непрерывное развитие
-legen großen Wert auf (Akkusativ) = придавать большое значение (чему-то }
+legen großen Wert auf (Akkusativ) = придавать большое значение (чему-то)
 offene Unternehmenskultur = открытая корпоративная культура
 erfahren = опытный
-der Schwerpunkt auf (Akkusativ) = основной упор, приоритет (на }
+der Schwerpunkt auf (Akkusativ) = основной упор, приоритет (на)
 die Wartung = обслуживание, техобслуживание
 sein verantwortlich = быть ответственным
 Zu Ihren Aufgaben gehören … = К вашим задачам относится …
@@ -5100,7 +5105,7 @@ die Einführung = внедрение, введение
 Wir planen eine gestaffelte Markteinführung, beginnend mit einer Pilotphase und einer regionalen Einführung. = Мы планируем поэтапный запуск, начиная с пилотной фазы и регионального запуска.
 momentan = на данный момент
 die Fertigstellung = завершающее состояние
-das MVP {Minimum Viable Product} = минимально жизнеспособный продукт
+das MVP (Minimum Viable Product) = минимально жизнеспособный продукт
 das Feedback erhalten = фидбек получать
 ansprechen (Akkusativ) — spricht an — angesprochen = завести разговор
 feilschen — gefeilscht = торговаться
@@ -5116,7 +5121,7 @@ die aktuelle Marktlage = текущее положение на рынке
 das Vorhaben = проект; начинание
 die Zeit nehmen = взять; выделить время
 Ich freue mich darauf, … = Я жду с нетерпением того, чтобы …
-abzielen auf (Akkusativ) — zielt darauf ab — darauf abgezielt = нацеливаться на (что? }
+abzielen auf (Akkusativ) — zielt darauf ab — darauf abgezielt = нацеливаться на (что?)
 enorm = огромный
 das Wachstum = рост
 sein zuversichtlich = быть уверенным
@@ -5169,7 +5174,7 @@ Ich habe mir die Haut in der Nähe des Nagels abgerissen. = Я сорвал се
 Die Stelle ist gerötet. = Это место покраснело.
 die Wunde = рана
 der Eiter = гной
-bilden {sich} — gebildet = образовывать {образовывается}
+bilden (sich) — gebildet = образовывать (образовывается)
 das Erbrechen = рвота
 die Schwäche = слабость
 der Schwindel = головокружение
@@ -5220,8 +5225,8 @@ der Verbrecher = преступник
 der Dieb = вор
 verstoßen gegen (Akkusativ) — verstoßen — verstieß = нарушить закон
 die Idee, der Einfall = идея
-befreunden sich mit (Dativ) — befreundet = подружиться с (кем? }
-sein befreundet mit (Dativ) = дружить с (кем? }
+befreunden sich mit (Dativ) — befreundet = подружиться с (кем?)
+sein befreundet mit (Dativ) = дружить с (кем?)
 Sie denken, dass Sie niemals in so eine Situation geraten werden. = Вы думаете, что никогда в такой ситуации не окажетесь.
 schuldig = виноватый
 Sie suchen die Schuldigen an der falschen Stelle. = Вы ищите виноватых в неправильном месте.
@@ -5296,8 +5301,8 @@ gegen = против
 schwer = тяжёлый
 das Mal = раз
 pro = за (единицу)
-treffen {sich} — trifft — getroffen = встречать, {встречаться}
-fühlen {sich} — gefühlt = чувствовать что-то {чувствовать себя}
+treffen (sich) — trifft — getroffen = встречать, (встречаться)
+fühlen (sich) — gefühlt = чувствовать что-то (чувствовать себя)
 ein paar = пара
 zwischen = между
 ne = не (разговорное)
@@ -5306,7 +5311,7 @@ bissch = немного (сокращение от „ein bisschen”)
 sogenannter = так называемый
 suchensuchen nach (Akkusativ) — gesucht = искать
 leicht = лёгкий
-verändern {sich} — verändert = изменять что-то {изменяться}
+verändern (sich) — verändert = изменять что-то (изменяться)
 während = во время
 mittlerweile = тем временем
 die Generation = поколение
@@ -5959,7 +5964,7 @@ bekräftigen — bekräftigt = подтверждать
 belebt = оживлённый
 beleuchten — beleuchtet = освещать
 bergen — birgt — geborgen — barg = спасать; укрывать
-beruhen auf (Dativ) — beruht = основываться на (чём? }
+beruhen auf (Dativ) — beruht = основываться на (чём?)
 beschränken — beschränkt = ограничивать
 besitzen — besessen — besaß = владеть
 bestreiten — bestritten — bestritt = оспаривать
@@ -6001,7 +6006,7 @@ gestiegen = увеличившийся
 gewohnt = привычный
 grundlegend = фундаментальный
 hilfreich = полезный
-hinweisen auf (Akkusativ) — weist hin — hingewiesen — wies hin = указывать на (что? }
+hinweisen auf (Akkusativ) — weist hin — hingewiesen — wies hin = указывать на (что?)
 hölzern = деревянный
 inspirierend = вдохновляющий
 klonen — klont — geklont = клонировать
@@ -6021,10 +6026,10 @@ luxuriös = роскошный
 meiden — gemieden — mied = избегать
 mild = мягкий
 militärisch = военный
-nachkommen (Dativ) — kommt nach — ist nachgekommen — kam nach = выполнять; следовать (чему? }
-neigen zu (Dativ) — geneigt = склоняться к (чему? }
+nachkommen (Dativ) — kommt nach — ist nachgekommen — kam nach = выполнять; следовать (чему?)
+neigen zu (Dativ) — geneigt = склоняться к (чему?)
 organisiert = организованный
-orientieren sich an (Dativ) — orientiert = ориентироваться на (что? }
+orientieren sich an (Dativ) — orientiert = ориентироваться на (что?)
 pflegen — gepflegt = ухаживать
 polizeilich = полицейский
 posten — gepostet = публиковать (в соцсетях)
@@ -6036,7 +6041,7 @@ sarkastisch = саркастический
 schimmernd = мерцающий
 schroff = резкий; грубый
 schrumpfen — ist geschrumpft = сокращаться; уменьшаться
-schwärmen von (Dativ) — geschwärmt = восторгаться (чем? }
+schwärmen von (Dativ) — geschwärmt = восторгаться (чем?)
 siedeln — gesiedelt = заселять
 sozialistisch = социалистический
 spektakulär = впечатляющий
@@ -6375,7 +6380,7 @@ investigativ = расследовательский
 irreführend = вводящий в заблуждение
 irritierend = раздражающий
 kandidieren — kandidiert = баллотироваться
-kassieren — kassiert = получать деньги
+kassieren — kassiert = получать деньги, инкассировать, взыскивать
 klimaneutral = климатически нейтральный
 klären — geklärt = выяснять
 kommentieren — kommentiert = комментировать
@@ -6608,3 +6613,4 @@ zweifellos = несомненный
 die Bereitschaft zu (Dativ) — Bereitschaften = готовность к
 getrennt von (Dativ) = разлучённый с
 überzeugt von (Dativ) = убеждённый в
+der Schluck — Schlucke = глоток

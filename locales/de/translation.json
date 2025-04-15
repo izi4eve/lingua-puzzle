@@ -58,5 +58,7 @@
     "dictionary": "Wörterbuch",
     "search-hint": "Suchen (mind. 2 Zeichen)",
     "known": "Bekannt",
-    "relax": "Entspannen Sie direkt hier"
+    "relax": "Entspannen Sie direkt hier",
+    "no-entries-found": "Keine Einträge gefunden",
+    "close": "Schließen"
 }

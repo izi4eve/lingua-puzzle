@@ -54,5 +54,7 @@
     "dictionary": "Słownik",
     "search-hint": "Szukaj (min. 2 znaki)",
     "known": "Znane",
-    "relax": "Odpoczywaj tutaj"
+    "relax": "Odpoczywaj tutaj",
+    "no-entries-found": "Nie znaleziono wpisów",
+    "close": "Zamknij"
 }
