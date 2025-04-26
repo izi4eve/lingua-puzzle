@@ -1,14 +1,15 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { Modal, Form, Button, InputGroup } from 'react-bootstrap';
 import { FixedSizeList } from 'react-window';
 import { useTranslation } from 'react-i18next';
-import { FaTimes } from 'react-icons/fa'; // Импортируем иконку крестика
+import { FaTimes } from 'react-icons/fa';
 
-const Dictionary = ({ show, onHide, data, onDataUpdate, setFirstElement }) => {
+const Dictionary = ({ show, onHide, data, onDataUpdate, setFirstElement, firstElement }) => {
   const { t } = useTranslation();
-
   const [filter, setFilter] = useState('');
+  const listRef = useRef(null); // Ref для FixedSizeList
 
+  // Мемоизация отфильтрованных данных
   const filteredData = useMemo(() => {
     if (!filter || filter.length < 2) return data;
     const lowerFilter = filter.toLowerCase();
@@ -19,11 +20,60 @@ const Dictionary = ({ show, onHide, data, onDataUpdate, setFirstElement }) => {
     );
   }, [data, filter]);
 
+  // Вычисление индекса для прокрутки при открытии модального окна
+  const initialScrollIndex = useMemo(() => {
+    if (!data.length || filter.length >= 2) return 0; // При фильтре или пустом data возвращаем 0
+
+    // Находим originalIndex для firstElement
+    let nonLearnedCount = 0;
+    let targetOriginalIndex = 0;
+
+    for (let i = 0; i < data.length; i++) {
+      if (!data[i].isLearned) {
+        if (nonLearnedCount === firstElement) {
+          targetOriginalIndex = i;
+          break;
+        }
+        nonLearnedCount++;
+      }
+    }
+
+    // Находим индекс этой записи в filteredData
+    const targetEntry = data[targetOriginalIndex];
+    const indexInFiltered = filteredData.indexOf(targetEntry);
+    return indexInFiltered >= 0 ? indexInFiltered : 0;
+  }, [data, firstElement, filteredData, filter]);
+
+  // Прокрутка при открытии модального окна
+  useEffect(() => {
+    if (show && listRef.current) {
+      const scrollIndex = filter.length >= 2 ? 0 : initialScrollIndex;
+      console.log('Modal opened, scrolling to:', scrollIndex, 'filter:', filter, 'filteredData.length:', filteredData.length);
+      // Откладываем прокрутку, чтобы перезаписать поведение FixedSizeList
+      requestAnimationFrame(() => {
+        listRef.current.scrollToItem(scrollIndex, 'start');
+      });
+    }
+  }, [show, initialScrollIndex, filter, filteredData.length]);
+
+  // Прокрутка при изменении фильтра
+  useEffect(() => {
+    if (show && listRef.current && filter.length >= 2) {
+      console.log('Filter applied, scrolling to 0, filter:', filter, 'filteredData.length:', filteredData.length);
+      // Откладываем прокрутку, чтобы перезаписать поведение FixedSizeList
+      requestAnimationFrame(() => {
+        listRef.current.scrollToItem(0, 'start');
+      });
+    }
+  }, [show, filter, filteredData.length]);
+
   const handleCheckboxChange = (index) => {
+    const currentFirstElement = firstElement; // Сохраняем firstElement
     const updatedData = [...data];
     updatedData[index].isLearned = !updatedData[index].isLearned;
     localStorage.setItem('data', JSON.stringify(updatedData));
     onDataUpdate(updatedData);
+    setFirstElement(currentFirstElement); // Восстанавливаем firstElement
   };
 
   const handleWordClick = (originalIndex) => {
@@ -34,7 +84,7 @@ const Dictionary = ({ show, onHide, data, onDataUpdate, setFirstElement }) => {
   };
 
   const handleClearFilter = () => {
-    setFilter(''); // Очищаем поле фильтра
+    setFilter('');
   };
 
   const Row = ({ index, style }) => {
@@ -63,7 +113,7 @@ const Dictionary = ({ show, onHide, data, onDataUpdate, setFirstElement }) => {
             />
           </div>
         </div>
-        <div 
+        <div
           className="w-100 text-break"
           onClick={() => handleWordClick(originalIndex)}
         >
@@ -102,10 +152,15 @@ const Dictionary = ({ show, onHide, data, onDataUpdate, setFirstElement }) => {
         {filteredData.length > 0 ? (
           <div style={{ height: '400px', overflow: 'auto' }}>
             <FixedSizeList
+              ref={listRef}
               height={400}
               width="100%"
               itemCount={filteredData.length}
               itemSize={100}
+              key={filter} // Сбрасываем состояние FixedSizeList при изменении фильтра
+              onItemsRendered={({ visibleStartIndex }) => {
+                console.log('List rendered, visibleStartIndex:', visibleStartIndex, 'filter:', filter, 'filteredData.length:', filteredData.length);
+              }}
             >
               {Row}
             </FixedSizeList>

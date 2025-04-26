@@ -307,6 +307,7 @@ const FileUploader = ({
                     data={data}
                     onDataUpdate={handleDataUpdate}
                     setFirstElement={setFirstElement}
+                    firstElement={firstElement}
                 />
             </div>
         </div>
