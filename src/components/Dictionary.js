@@ -44,7 +44,6 @@ const Dictionary = ({ show, onHide, data, onDataUpdate, setFirstElement }) => {
       <div
         className={`fs-7 d-flex flex-column w-100 ${entry.isLearned ? 'text-muted' : ''}`}
         style={{ ...style }}
-        onClick={() => handleWordClick(originalIndex)}
         role="button"
         tabIndex={0}
       >
@@ -64,7 +63,10 @@ const Dictionary = ({ show, onHide, data, onDataUpdate, setFirstElement }) => {
             />
           </div>
         </div>
-        <div className="w-100 text-break">
+        <div 
+          className="w-100 text-break"
+          onClick={() => handleWordClick(originalIndex)}
+        >
           {`${entry.foreignPart} = ${entry.translation}`}
         </div>
       </div>
