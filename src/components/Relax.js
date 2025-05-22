@@ -73,6 +73,48 @@ const Relax = () => {
                     mode="button"
                 />
                 <BrowserButton
+                    link="https://www.pexels.com"
+                    buttonText="Pexel"
+                    variant="dark"
+                    mode="button"
+                />
+                <BrowserButton
+                    link="https://petapixel.com"
+                    buttonText="Petapixel"
+                    variant="primary"
+                    mode="button"
+                />
+                <BrowserButton
+                    link="https://reasonstobecheerful.world"
+                    buttonText="Reasonstobecheerful"
+                    variant="warning"
+                    mode="button"
+                />
+                <BrowserButton
+                    link="https://contently.com/strategist/"
+                    buttonText="Contently"
+                    variant="info"
+                    mode="button"
+                />
+                <BrowserButton
+                    link="https://t3n.de"
+                    buttonText="T3n.de"
+                    variant="danger"
+                    mode="button"
+                />
+                <BrowserButton
+                    link="https://www.online-marketing.de"
+                    buttonText="Online-marketing.de"
+                    variant="dark"
+                    mode="button"
+                />
+                <BrowserButton
+                    link="https://www.fotomagazin.de"
+                    buttonText="Fotomagazin.de"
+                    variant="info"
+                    mode="button"
+                />
+                <BrowserButton
                     link="https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG"
                     buttonText="Music"
                     variant="danger"
