@@ -133,6 +133,42 @@ const Relax = () => {
                     mode="button"
                 />
                 <BrowserButton
+                    link="https://www.radioeins.de/livestream/"
+                    buttonText="radioeins"
+                    variant="warning"
+                    mode="button"
+                />
+                <BrowserButton
+                    link="https://www.radioeins.de/"
+                    buttonText="radioeins Podcasts"
+                    variant="warning"
+                    mode="button"
+                />
+                <BrowserButton
+                    link="https://www.ardmediathek.de/"
+                    buttonText="ARD Mediathek"
+                    variant="primary"
+                    mode="button"
+                />
+                <BrowserButton
+                    link="https://mitvergnuegen.com/"
+                    buttonText="Mit Vergnügen"
+                    variant="warning"
+                    mode="button"
+                />
+                <BrowserButton
+                    link="https://slowgerman.com/"
+                    buttonText="Slow German"
+                    variant="danger"
+                    mode="button"
+                />
+                <BrowserButton
+                    link="https://www.youtube.com/playlist?list=PLzGUl7yQTTKq2i_zvo-6MBbroqTw5gFgv"
+                    buttonText="14 Minuten"
+                    variant="warning"
+                    mode="button"
+                />
+                <BrowserButton
                     buttonText="YouTube link"
                     variant="success"
                     mode="input"
