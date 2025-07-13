@@ -264,11 +264,10 @@ const DictionaryPlayer = ({
       
       if (nextRepeat < currentSettingsRef.current.repeatCount) {
         setCurrentRepeat(nextRepeat);
-        // Задержка между повторами одной записи
-        await delayWithCancel(currentSettingsRef.current.delayBetweenRecords);
+        // Без задержки между повторами одной записи - сразу переходим к следующему повтору
       } else {
         setCurrentRepeat(0);
-        // Задержка перед переходом к следующей записи
+        // Задержка только перед переходом к следующей записи
         await delayWithCancel(currentSettingsRef.current.delayBetweenRecords);
         handleNext();
       }
