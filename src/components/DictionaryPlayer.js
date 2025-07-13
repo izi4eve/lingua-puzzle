@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState, useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import { FaArrowRight, FaPause, FaPlay } from 'react-icons/fa';
@@ -42,9 +42,44 @@ const DictionaryPlayer = ({
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [availableVoices, setAvailableVoices] = useState([]);
   const [selectedVoice, setSelectedVoice] = useState(null);
+  const [delayBetweenRecords, setDelayBetweenRecords] = useState(2); // Новый параметр задержки
+  const [isInDelay, setIsInDelay] = useState(false); // Состояние задержки
+
+  // Refs для отслеживания изменений во время воспроизведения
+  const delayTimeoutRef = useRef(null);
+  const isPlayingRef = useRef(isPlaying);
+  const currentSettingsRef = useRef({
+    readingSpeed,
+    repeatCount,
+    delayBetweenRecords,
+    selectedVoice,
+  });
+
+  // Обновляем refs при изменении состояний
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
+
+  useEffect(() => {
+    currentSettingsRef.current = {
+      readingSpeed,
+      repeatCount,
+      delayBetweenRecords,
+      selectedVoice,
+    };
+  }, [readingSpeed, repeatCount, delayBetweenRecords, selectedVoice]);
 
   const filteredData = data.filter((item) => !item.isLearned);
   const maxIndex = Math.max(0, filteredData.length - 1);
+
+  // Функция для очистки таймаута задержки
+  const clearDelayTimeout = useCallback(() => {
+    if (delayTimeoutRef.current) {
+      clearTimeout(delayTimeoutRef.current);
+      delayTimeoutRef.current = null;
+      setIsInDelay(false);
+    }
+  }, []);
 
   // Загрузка доступных голосов
   useEffect(() => {
@@ -72,9 +107,10 @@ const DictionaryPlayer = ({
   // Очистка при изменении данных
   useEffect(() => {
     window.speechSynthesis.cancel();
+    clearDelayTimeout();
     setCurrentRecord(firstElement);
     setInputValue(firstElement.toString());
-  }, [data, firstElement]);
+  }, [data, firstElement, clearDelayTimeout]);
 
   // Проверка поддержки Web Speech API
   useEffect(() => {
@@ -87,14 +123,16 @@ const DictionaryPlayer = ({
   useEffect(() => {
     const savedSettings = localStorage.getItem('playerSettings');
     if (savedSettings) {
-      const { readingSpeed, repeatCount, recordsToPlay } = JSON.parse(savedSettings);
+      const { readingSpeed, repeatCount, recordsToPlay, selectedVoice, delayBetweenRecords } = JSON.parse(savedSettings);
       setReadingSpeed(readingSpeed ?? 0.75);
       setRepeatCount(repeatCount ?? 3);
       setRecordsToPlay(recordsToPlay ?? 'all');
+      setSelectedVoice(selectedVoice ?? null);
+      setDelayBetweenRecords(delayBetweenRecords ?? 2);
     }
   }, []);
 
-  // Сохранение настроек
+  // Сохранение настроек (теперь включает selectedVoice и delayBetweenRecords)
   useEffect(() => {
     localStorage.setItem('playerSettings', JSON.stringify({
       selectedLanguage,
@@ -102,8 +140,25 @@ const DictionaryPlayer = ({
       repeatCount,
       recordsToPlay,
       selectedVoice,
+      delayBetweenRecords,
     }));
-  }, [selectedLanguage, readingSpeed, repeatCount, recordsToPlay, selectedVoice]);
+  }, [selectedLanguage, readingSpeed, repeatCount, recordsToPlay, selectedVoice, delayBetweenRecords]);
+
+  // Функция задержки с возможностью отмены
+  const delayWithCancel = useCallback((seconds) => {
+    return new Promise((resolve, reject) => {
+      setIsInDelay(true);
+      delayTimeoutRef.current = setTimeout(() => {
+        delayTimeoutRef.current = null;
+        setIsInDelay(false);
+        if (isPlayingRef.current) {
+          resolve();
+        } else {
+          reject(new Error('Playback stopped during delay'));
+        }
+      }, seconds * 1000);
+    });
+  }, []);
 
   const playAudio = useCallback(async (text, lang, useReadingSpeed = false) => {
     if (!window.speechSynthesis) {
@@ -115,16 +170,16 @@ const DictionaryPlayer = ({
       try {
         const utterance = new SpeechSynthesisUtterance(text);
         utterance.lang = lang;
-        utterance.rate = useReadingSpeed ? readingSpeed : 1.0;
+        utterance.rate = useReadingSpeed ? currentSettingsRef.current.readingSpeed : 1.0;
 
         // Выбор голоса
-        if (selectedVoice) {
-          const voice = availableVoices.find(v => v.name === selectedVoice && v.lang === lang);
+        if (currentSettingsRef.current.selectedVoice) {
+          const voice = availableVoices.find(v => v.name === currentSettingsRef.current.selectedVoice && v.lang === lang);
           if (voice) {
             utterance.voice = voice;
             console.log(`Выбран голос: ${voice.name} для языка ${lang}`);
           } else {
-            console.warn(`Голос ${selectedVoice} не найден для языка ${lang}`);
+            console.warn(`Голос ${currentSettingsRef.current.selectedVoice} не найден для языка ${lang}`);
           }
         }
 
@@ -143,7 +198,7 @@ const DictionaryPlayer = ({
         reject(error);
       }
     });
-  }, [readingSpeed, availableVoices, selectedVoice]);
+  }, [availableVoices]);
 
   const handleNext = useCallback(() => {
     console.log(`handleNext: currentRecord=${currentRecord}`);
@@ -179,6 +234,7 @@ const DictionaryPlayer = ({
       });
       setIsSpeaking(false);
       setIsPlaying(false);
+      clearDelayTimeout();
       return;
     }
 
@@ -187,20 +243,42 @@ const DictionaryPlayer = ({
 
     try {
       await playAudio(translation, selectedLanguage, true);
+      
+      // Проверяем, не остановлено ли воспроизведение
+      if (!isPlayingRef.current) {
+        setIsSpeaking(false);
+        return;
+      }
+      
       await playAudio(foreignPart, ttsLanguage, true);
+      
+      // Проверяем, не остановлено ли воспроизведение
+      if (!isPlayingRef.current) {
+        setIsSpeaking(false);
+        return;
+      }
+      
       setIsSpeaking(false);
       const nextRepeat = currentRepeat + 1;
-      console.log(`setCurrentRepeat: prev=${currentRepeat}, nextRepeat=${nextRepeat}, repeatCount=${repeatCount}`);
-      if (nextRepeat < repeatCount) {
+      console.log(`setCurrentRepeat: prev=${currentRepeat}, nextRepeat=${nextRepeat}, repeatCount=${currentSettingsRef.current.repeatCount}`);
+      
+      if (nextRepeat < currentSettingsRef.current.repeatCount) {
         setCurrentRepeat(nextRepeat);
+        // Задержка между повторами одной записи
+        await delayWithCancel(currentSettingsRef.current.delayBetweenRecords);
       } else {
         setCurrentRepeat(0);
+        // Задержка перед переходом к следующей записи
+        await delayWithCancel(currentSettingsRef.current.delayBetweenRecords);
         handleNext();
       }
     } catch (error) {
       console.error('Ошибка воспроизведения аудио:', error);
       setIsSpeaking(false);
-      setIsPlaying(false);
+      setIsInDelay(false);
+      if (error.message !== 'Playback stopped during delay') {
+        setIsPlaying(false);
+      }
     }
   }, [
     currentRecord,
@@ -208,22 +286,23 @@ const DictionaryPlayer = ({
     filteredData,
     selectedLanguage,
     ttsLanguage,
-    repeatCount,
     handleNext,
     isPlaying,
     isSpeaking,
     currentRepeat,
     playAudio,
+    delayWithCancel,
+    clearDelayTimeout,
   ]);
 
   useEffect(() => {
     console.log(`useEffect воспроизведения: isPlaying=${isPlaying}, filteredData.length=${filteredData.length}, currentRecord=${currentRecord}, currentRepeat=${currentRepeat}`);
-    if (isPlaying && filteredData.length > 0 && !isSpeaking) {
+    if (isPlaying && filteredData.length > 0 && !isSpeaking && !isInDelay) {
       playCurrentRecord();
     } else if (filteredData.length === 0) {
       setIsPlaying(false);
     }
-  }, [isPlaying, filteredData.length, currentRecord, currentRepeat, isSpeaking, playCurrentRecord]);
+  }, [isPlaying, filteredData.length, currentRecord, currentRepeat, isSpeaking, isInDelay, playCurrentRecord]);
 
   useEffect(() => {
     if (!isPlaying) return;
@@ -231,7 +310,7 @@ const DictionaryPlayer = ({
     const checkSynthesis = () => {
       if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
         console.log('speechSynthesis active');
-      } else if (isPlaying && !isSpeaking) {
+      } else if (isPlaying && !isSpeaking && !isInDelay) {
         console.log('speechSynthesis stopped unexpectedly, restarting...');
         playCurrentRecord();
       }
@@ -239,29 +318,31 @@ const DictionaryPlayer = ({
 
     const interval = setInterval(checkSynthesis, 1000);
     return () => clearInterval(interval);
-  }, [isPlaying, isSpeaking, playCurrentRecord]);
+  }, [isPlaying, isSpeaking, isInDelay, playCurrentRecord]);
 
   const handlePlayPause = useCallback(() => {
     console.log(`handlePlayPause: isPlaying=${isPlaying}`);
     if (isPlaying) {
       window.speechSynthesis.cancel();
+      clearDelayTimeout();
       setIsPlaying(false);
       setIsSpeaking(false);
       setCurrentRepeat(0);
     } else {
       setIsPlaying(true);
     }
-  }, [isPlaying]);
+  }, [isPlaying, clearDelayTimeout]);
 
   const handlePrev = useCallback(() => {
     console.log(`handlePrev: currentRecord=${currentRecord}`);
     window.speechSynthesis.cancel();
+    clearDelayTimeout();
     setIsSpeaking(false);
     setCurrentRepeat(0);
     const prevRecord = Math.max(currentRecord - 1, 0);
     setCurrentRecord(prevRecord);
     updateFirstElement(prevRecord);
-  }, [currentRecord, updateFirstElement]);
+  }, [currentRecord, updateFirstElement, clearDelayTimeout]);
 
   const handleInputChange = (e) => setInputValue(e.target.value);
 
@@ -273,6 +354,23 @@ const DictionaryPlayer = ({
 
   const handleKeyPress = (e) => {
     if (e.key === 'Enter') handleGo();
+  };
+
+  // Обработчики изменения параметров во время воспроизведения
+  const handleReadingSpeedChange = (e) => {
+    setReadingSpeed(Number(e.target.value));
+  };
+
+  const handleRepeatCountChange = (e) => {
+    setRepeatCount(Number(e.target.value));
+  };
+
+  const handleDelayChange = (e) => {
+    setDelayBetweenRecords(Number(e.target.value));
+  };
+
+  const handleVoiceChange = (e) => {
+    setSelectedVoice(e.target.value);
   };
 
   useEffect(() => {
@@ -329,7 +427,7 @@ const DictionaryPlayer = ({
           <label>{t('voice')}</label>
           <Form.Select
             value={selectedVoice || ''}
-            onChange={(e) => setSelectedVoice(e.target.value)}
+            onChange={handleVoiceChange}
             className="ms-2 w-auto"
           >
             <option value="">{t('default-voice')}</option>
@@ -347,7 +445,7 @@ const DictionaryPlayer = ({
           <label>{t('reading-speed')}</label>
           <Form.Select
             value={readingSpeed}
-            onChange={(e) => setReadingSpeed(Number(e.target.value))}
+            onChange={handleReadingSpeedChange}
             className="ms-2 w-auto"
           >
             {[0.25, 0.5, 0.75, 1, 1.25, 1.5].map((speed) => (
@@ -360,11 +458,24 @@ const DictionaryPlayer = ({
           <label>{t('repeat-each-record')}</label>
           <Form.Select
             value={repeatCount}
-            onChange={(e) => setRepeatCount(Number(e.target.value))}
+            onChange={handleRepeatCountChange}
             className="ms-2 w-auto"
           >
             {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((count) => (
               <option key={count} value={count}>{count}</option>
+            ))}
+          </Form.Select>
+        </div>
+
+        <div className="d-flex align-items-center">
+          <label>{t('delay-between-records') || 'Задержка между записями (сек)'}</label>
+          <Form.Select
+            value={delayBetweenRecords}
+            onChange={handleDelayChange}
+            className="ms-2 w-auto"
+          >
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((seconds) => (
+              <option key={seconds} value={seconds}>{seconds}</option>
             ))}
           </Form.Select>
         </div>
@@ -427,6 +538,7 @@ const DictionaryPlayer = ({
             <div className="d-flex gap-3">
               <div>{t('record')}: <span className="fw-bold">{currentRecord + 1}/{maxIndex + 1}</span></div>
               <div>{t('repeat')}: <span className="fw-bold">{currentRepeat + 1}/{repeatCount}</span></div>
+              {isInDelay && <div className="text-warning">{t('delay') || 'Задержка...'}</div>}
             </div>
           </div>
         )}

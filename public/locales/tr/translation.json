@@ -57,5 +57,7 @@
     "relax": "Tam burada dinlen",
     "no-entries-found": "Hiçbir kayıt bulunamadı",
     "close": "Kapat",
-    "voice": "Ses"
+    "voice": "Ses",
+    "delay-between-records": "Kayıtlar arasındaki gecikme (saniye)",
+    "delay": "Gecikme..."
 }

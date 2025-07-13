@@ -57,5 +57,7 @@
     "relax": "Relaxe bem aqui",
     "no-entries-found": "Nenhuma entrada encontrada",
     "close": "Fechar",
-    "voice": "Voz"
+    "voice": "Voz",
+    "delay-between-records": "Atraso entre registros (segundos)",
+    "delay": "Atraso..."
 }

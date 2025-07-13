@@ -57,5 +57,7 @@
     "relax": "Odpoczywaj tutaj",
     "no-entries-found": "Nie znaleziono wpisów",
     "close": "Zamknij",
-    "voice": "Głos"
+    "voice": "Głos",
+    "delay-between-records": "Opóźnienie między nagraniami (sekundy)",
+    "delay": "Opóźnienie..."
 }

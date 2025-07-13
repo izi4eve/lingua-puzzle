@@ -57,5 +57,7 @@
     "relax": "Odpočívejte přímo zde",
     "no-entries-found": "Nebyly nalezeny žádné záznamy",
     "close": "Zavřít",
-    "voice": "Hlas"
+    "voice": "Hlas",
+    "delay-between-records": "Zpoždění mezi záznamy (sekundy)",
+    "delay": "Zpoždění..."
 }
