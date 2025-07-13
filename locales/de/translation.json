@@ -61,5 +61,7 @@
     "relax": "Entspannen Sie direkt hier",
     "no-entries-found": "Keine Einträge gefunden",
     "close": "Schließen",
-    "voice": "Stimme"
+    "voice": "Stimme",
+    "delay-between-records": "Verzögerung zwischen Einträgen (Sekunden)",
+    "delay": "Verzögerung..."
 }

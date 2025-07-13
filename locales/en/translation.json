@@ -61,5 +61,7 @@
     "relax": "Relax right here",
     "no-entries-found": "No entries found",
     "close": "Close",
-    "voice": "Voice"
+    "voice": "Voice",
+    "delay-between-records": "Delay between records (seconds)",
+    "delay": "Delay..."
 }

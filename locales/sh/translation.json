@@ -57,5 +57,7 @@
     "relax": "Opustite se upravo ovde",
     "no-entries-found": "Nijedan zapis nije pronađen",
     "close": "Zatvori",
-    "voice": "Glas"
+    "voice": "Glas",
+    "delay-between-records": "Kašnjenje između zapisa (sekunde)",
+    "delay": "Kašnjenje..."
 }

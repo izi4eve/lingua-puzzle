@@ -61,5 +61,7 @@
     "relax": "Rilassati proprio qui",
     "no-entries-found": "Nessuna voce trovata",
     "close": "Chiudi",
-    "voice": "Voce"
+    "voice": "Voce",
+    "delay-between-records": "Ritardo tra i record (secondi)",
+    "delay": "Ritardo..."
 }
