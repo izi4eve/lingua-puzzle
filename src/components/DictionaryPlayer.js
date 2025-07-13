@@ -1,10 +1,24 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
-import { FaArrowRight, FaPause, FaPlay } from "react-icons/fa";
-import { TbCircleNumber2Filled, TbPlayerTrackNextFilled, TbPlayerTrackPrevFilled } from "react-icons/tb";
+import { FaArrowRight, FaPause, FaPlay } from 'react-icons/fa';
+import { TbCircleNumber2Filled, TbPlayerTrackNextFilled, TbPlayerTrackPrevFilled } from 'react-icons/tb';
 import Title from './Title';
 import PreventScreenSleep from './PreventScreenSleep';
+
+// Приоритетные голоса для каждого языка (можно расширить)
+const voicePriority = {
+  'de-DE': ['Petra (Premium)', 'Anna', 'Eddy (Немецкий (Германия))', 'Flo (Немецкий (Германия))'],
+  'en-US': ['Samantha', 'Ava (Premium)', 'Joelle (Enhanced)', 'Alex'],
+  'fr-FR': ['Amélie', 'Thomas', 'Jacques'],
+  'it-IT': ['Alice', 'Eddy (Итальянский (Италия))'],
+  'es-ES': ['Mónica', 'Eddy (Испанский (Испания))'],
+  'pt-PT': ['Joana', 'Luciana'],
+  'pl-PL': ['Zosia'],
+  'cs-CZ': ['Zuzana'],
+  'ru-RU': ['Milena (Enhanced)', 'Milena'],
+  // Добавьте другие языки по необходимости
+};
 
 const DictionaryPlayer = ({
   data,
@@ -26,40 +40,70 @@ const DictionaryPlayer = ({
   const [inputValue, setInputValue] = useState(firstElement.toString());
   const [recordsToPlay, setRecordsToPlay] = useState('all');
   const [isSpeaking, setIsSpeaking] = useState(false);
+  const [availableVoices, setAvailableVoices] = useState([]);
+  const [selectedVoice, setSelectedVoice] = useState(null);
 
   const filteredData = data.filter((item) => !item.isLearned);
   const maxIndex = Math.max(0, filteredData.length - 1);
 
+  // Загрузка доступных голосов
+  useEffect(() => {
+    const loadVoices = () => {
+      const voices = window.speechSynthesis.getVoices();
+      setAvailableVoices(voices);
+      console.log('Доступные голоса:', voices.map(v => ({ name: v.name, lang: v.lang, default: v.default })));
+
+      // Выбираем лучший голос для ttsLanguage
+      const priorityVoices = voicePriority[ttsLanguage] || [];
+      const bestVoice = voices.find(v => priorityVoices.includes(v.name) && v.lang === ttsLanguage) ||
+                       voices.find(v => v.lang === ttsLanguage && !v.default) ||
+                       voices.find(v => v.lang === ttsLanguage) ||
+                       voices.find(v => v.default); // Запасной вариант
+      setSelectedVoice(bestVoice ? bestVoice.name : null);
+    };
+
+    window.speechSynthesis.onvoiceschanged = loadVoices;
+    loadVoices(); // Первичная загрузка
+    return () => {
+      window.speechSynthesis.onvoiceschanged = null;
+    };
+  }, [ttsLanguage]);
+
+  // Очистка при изменении данных
   useEffect(() => {
     window.speechSynthesis.cancel();
     setCurrentRecord(firstElement);
     setInputValue(firstElement.toString());
   }, [data, firstElement]);
 
+  // Проверка поддержки Web Speech API
   useEffect(() => {
     if (!window.speechSynthesis) {
-      alert('SpeechSynthesis is not supported in your browser.');
+      alert(t('speech-synthesis-not-supported'));
     }
-  }, []);
+  }, [t]);
 
+  // Загрузка сохранённых настроек
   useEffect(() => {
     const savedSettings = localStorage.getItem('playerSettings');
     if (savedSettings) {
       const { readingSpeed, repeatCount, recordsToPlay } = JSON.parse(savedSettings);
-      setReadingSpeed(readingSpeed ?? 0.75); // Используем значение по умолчанию, если не задано
-      setRepeatCount(repeatCount ?? 3); // Используем значение по умолчанию, если не задано
-      setRecordsToPlay(recordsToPlay ?? 'all'); // Используем 'all', если значение не задано
+      setReadingSpeed(readingSpeed ?? 0.75);
+      setRepeatCount(repeatCount ?? 3);
+      setRecordsToPlay(recordsToPlay ?? 'all');
     }
   }, []);
 
+  // Сохранение настроек
   useEffect(() => {
     localStorage.setItem('playerSettings', JSON.stringify({
       selectedLanguage,
       readingSpeed,
       repeatCount,
       recordsToPlay,
+      selectedVoice,
     }));
-  }, [selectedLanguage, readingSpeed, repeatCount, recordsToPlay]);
+  }, [selectedLanguage, readingSpeed, repeatCount, recordsToPlay, selectedVoice]);
 
   const playAudio = useCallback(async (text, lang, useReadingSpeed = false) => {
     if (!window.speechSynthesis) {
@@ -71,7 +115,19 @@ const DictionaryPlayer = ({
       try {
         const utterance = new SpeechSynthesisUtterance(text);
         utterance.lang = lang;
-        utterance.rate = useReadingSpeed ? readingSpeed : 1.0; // Фиксированная скорость для translation
+        utterance.rate = useReadingSpeed ? readingSpeed : 1.0;
+
+        // Выбор голоса
+        if (selectedVoice) {
+          const voice = availableVoices.find(v => v.name === selectedVoice && v.lang === lang);
+          if (voice) {
+            utterance.voice = voice;
+            console.log(`Выбран голос: ${voice.name} для языка ${lang}`);
+          } else {
+            console.warn(`Голос ${selectedVoice} не найден для языка ${lang}`);
+          }
+        }
+
         utterance.onend = () => {
           console.log(`playAudio completed: ${text}, rate=${utterance.rate}`);
           resolve();
@@ -80,14 +136,14 @@ const DictionaryPlayer = ({
           console.error(`playAudio error: ${text}`, e);
           reject(e);
         };
-        console.log(`playAudio started: ${text}, lang=${lang}, rate=${utterance.rate}`);
+        console.log(`playAudio started: ${text}, lang=${lang}, rate=${utterance.rate}, voice=${utterance.voice?.name || 'default'}`);
         window.speechSynthesis.speak(utterance);
       } catch (error) {
         console.error(`playAudio exception: ${text}`, error);
         reject(error);
       }
     });
-  }, [readingSpeed]);
+  }, [readingSpeed, availableVoices, selectedVoice]);
 
   const handleNext = useCallback(() => {
     console.log(`handleNext: currentRecord=${currentRecord}`);
@@ -130,9 +186,8 @@ const DictionaryPlayer = ({
     const { foreignPart, translation } = filteredData[currentRecord];
 
     try {
-      // await playAudio(translation, selectedLanguage, false); // Без readingSpeed
-      await playAudio(translation, selectedLanguage, true); // С readingSpeed
-      await playAudio(foreignPart, ttsLanguage, true); // С readingSpeed
+      await playAudio(translation, selectedLanguage, true);
+      await playAudio(foreignPart, ttsLanguage, true);
       setIsSpeaking(false);
       const nextRepeat = currentRepeat + 1;
       console.log(`setCurrentRepeat: prev=${currentRepeat}, nextRepeat=${nextRepeat}, repeatCount=${repeatCount}`);
@@ -143,7 +198,7 @@ const DictionaryPlayer = ({
         handleNext();
       }
     } catch (error) {
-      console.error("Ошибка воспроизведения аудио:", error);
+      console.error('Ошибка воспроизведения аудио:', error);
       setIsSpeaking(false);
       setIsPlaying(false);
     }
@@ -170,7 +225,6 @@ const DictionaryPlayer = ({
     }
   }, [isPlaying, filteredData.length, currentRecord, currentRepeat, isSpeaking, playCurrentRecord]);
 
-  // Проверка активности speechSynthesis в Safari
   useEffect(() => {
     if (!isPlaying) return;
 
@@ -272,13 +326,31 @@ const DictionaryPlayer = ({
         </div>
 
         <div className="d-flex align-items-center">
+          <label>{t('voice')}</label>
+          <Form.Select
+            value={selectedVoice || ''}
+            onChange={(e) => setSelectedVoice(e.target.value)}
+            className="ms-2 w-auto"
+          >
+            <option value="">{t('default-voice')}</option>
+            {availableVoices
+              .filter((voice) => voice.lang === ttsLanguage)
+              .map((voice) => (
+                <option key={voice.name} value={voice.name}>
+                  {voice.name} {voice.default ? `(${t('default')})` : ''}
+                </option>
+              ))}
+          </Form.Select>
+        </div>
+
+        <div className="d-flex align-items-center">
           <label>{t('reading-speed')}</label>
           <Form.Select
             value={readingSpeed}
             onChange={(e) => setReadingSpeed(Number(e.target.value))}
             className="ms-2 w-auto"
           >
-            {[0.25, 0.5, 0.75, 1].map((speed) => (
+            {[0.25, 0.5, 0.75, 1, 1.25, 1.5].map((speed) => (
               <option key={speed} value={speed}>{speed}</option>
             ))}
           </Form.Select>
