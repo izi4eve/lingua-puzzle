@@ -163,7 +163,7 @@ const Relax = () => {
                     mode="button"
                 />
                 <BrowserButton
-                    link="https://www.youtube.com/playlist?list=PLzGUl7yQTTKq2i_zvo-6MBbroqTw5gFgv"
+                    link="https://www.youtube.com/embed/videoseries?list=PLzGUl7yQTTKq2i_zvo-6MBbroqTw5gFgv"
                     buttonText="14 Minuten"
                     variant="warning"
                     mode="button"
