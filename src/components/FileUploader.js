@@ -24,7 +24,7 @@ const FileUploader = ({
     const [newEntries, setNewEntries] = useState('');
     const [showModal, setShowModal] = useState(false);
     const [errorMessage, setErrorMessage] = useState('');
-    const [showDictionaryModal, setShowDictionaryModal] = useState(false); // Добавлено состояние
+    const [showDictionaryModal, setShowDictionaryModal] = useState(false);
 
     const supportedLanguages = ['en', 'de', 'fr', 'it', 'es', 'pt', 'pl', 'cs', 'uk', 'sh', 'ru', 'tr', 'ar', 'fa'];
 
@@ -37,8 +37,19 @@ const FileUploader = ({
     const handleNewEntriesChange = (event) => {
         const input = event.target.value;
         setNewEntries(input);
-        const equalitySigns = (input.match(/=/g) || []).length;
-        if (equalitySigns !== input.split("\n").length) {
+        const lines = input.split("\n");
+        let hasError = false;
+
+        for (const line of lines) {
+            if (line.trim().length === 0) continue;
+            const equalitySigns = (line.match(/=/g) || []).length;
+            if (equalitySigns < 1 || equalitySigns > 3) {
+                hasError = true;
+                break;
+            }
+        }
+
+        if (hasError) {
             setErrorMessage(t('equal-sign-error'));
         } else {
             setErrorMessage('');
@@ -74,17 +85,51 @@ const FileUploader = ({
     const processFileContent = (content) => {
         const filteredData = content
             .split('\n')
-            .filter(line => line.trim().length >= 3 && line.includes('=')) // Проверяем наличие '='
+            .filter(line => line.trim().length >= 3 && line.includes('='))
             .map(line => {
-                const [foreignPart, translation] = line.split('=').map(part => part.trim());
-                const isLearned = line.trim().endsWith('=');
+                const trimmedLine = line.trim();
+                const parts = trimmedLine.split('=');
+                
+                if (parts.length < 2 || parts.length > 4) {
+                    return null;
+                }
+
+                const foreignPart = parts[0].trim();
+                const translation = parts[1].trim();
+                
+                let tipPart = '';
+                let isLearned = false;
+
+                if (parts.length >= 3) {
+                    const thirdPart = parts[2].trim();
+                    
+                    if (parts.length === 3) {
+                        // Если третья часть пустая, то это learned
+                        if (thirdPart === '') {
+                            isLearned = true;
+                        } else {
+                            // Если третья часть не пустая, то это tipPart
+                            tipPart = thirdPart;
+                        }
+                    } else if (parts.length === 4) {
+                        // Если есть четвертая часть
+                        tipPart = thirdPart;
+                        const fourthPart = parts[3].trim();
+                        if (fourthPart === '') {
+                            isLearned = true;
+                        }
+                    }
+                }
+
                 return {
                     foreignPart: foreignPart || '',
                     translation: translation || '',
+                    tipPart: tipPart || '',
                     isLearned
                 };
             })
-            .filter(entry => entry.foreignPart && entry.translation); // Убеждаемся, что оба поля не пустые
+            .filter(entry => entry && entry.foreignPart && entry.translation);
+
         onDataLoaded(filteredData);
         return filteredData;
     };
@@ -154,9 +199,20 @@ const FileUploader = ({
 
     const exportDictionary = () => {
         const data = JSON.parse(localStorage.getItem('data')) || [];
-        const content = data.map(({ foreignPart, translation, isLearned }) => {
-            return `${foreignPart} = ${translation}${isLearned ? ' =' : ''}`;
+        const content = data.map(({ foreignPart, translation, tipPart, isLearned }) => {
+            let line = `${foreignPart} = ${translation}`;
+            
+            if (tipPart && tipPart.trim() !== '') {
+                line += ` = ${tipPart}`;
+            }
+            
+            if (isLearned) {
+                line += ' =';
+            }
+            
+            return line;
         }).join('\n');
+        
         const blob = new Blob([`\uFEFF${content}`], { type: 'text/plain;charset=utf-8' });
         const url = URL.createObjectURL(blob);
         const link = document.createElement('a');
@@ -284,7 +340,7 @@ const FileUploader = ({
                             rows={5}
                             value={newEntries}
                             onChange={handleNewEntriesChange}
-                            placeholder="word = translation"
+                            placeholder="word = translation = tip ="
                         />
                         {errorMessage && <div className="text-danger mt-2">{errorMessage}</div>}
                     </Modal.Body>

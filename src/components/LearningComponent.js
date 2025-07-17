@@ -2,10 +2,10 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 import Title from './Title';
 import TextToSpeech from './TextToSpeech';
+import EditEntryModal from './EditEntryModal';
 import { TbCircleNumber3Filled } from "react-icons/tb";
 import { IoMdClose } from 'react-icons/io';
-import { IoTrashOutline } from "react-icons/io5";
-import { Toast, ToastContainer, Modal, Button, Form, Alert } from 'react-bootstrap';
+import { Toast, ToastContainer } from 'react-bootstrap';
 
 const WORD_SPLIT_REGEX = /(?=\s[\p{L}\p{N}])/u;
 
@@ -19,8 +19,7 @@ const LearningComponent = ({ data, firstElement, count, updateData, language, se
   const [matchedSpots, setMatchedSpots] = useState([]);
   const [showWarning, setShowWarning] = useState(false);
   const [showEditModal, setShowEditModal] = useState(false);
-  const [editableTranslation, setEditableTranslation] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
+  const [editingEntry, setEditingEntry] = useState(null);
   const [editRowIndex, setEditRowIndex] = useState(null);
 
   const unlearnedData = data
@@ -94,36 +93,34 @@ const LearningComponent = ({ data, firstElement, count, updateData, language, se
     }
   };
 
-  const handleOpenEditModal = (foreignPart, translation, rowIndex) => {
-    setEditableTranslation(`${foreignPart} = ${translation}`);
+  const handleOpenEditModal = (item, rowIndex) => {
+    setEditingEntry(item);
     setEditRowIndex(rowIndex);
     setShowEditModal(true);
   };
 
   const handleCloseEditModal = () => {
     setShowEditModal(false);
-    setEditableTranslation('');
-    setErrorMessage('');
+    setEditingEntry(null);
+    setEditRowIndex(null);
   };
 
-  const handleSaveEdit = () => {
-    const [foreignPart, translation] = editableTranslation.split('=');
-    const equalitySigns = (editableTranslation.match(/=/g) || []).length;
-
-    if (equalitySigns !== 1) {
-      setErrorMessage(t('equal-sign-error'));
-      return;
-    }
+  const handleSaveEdit = (updatedEntry) => {
+    if (editRowIndex === null) return;
 
     const updatedData = data.map((item, i) =>
       i === elementsToDisplay[editRowIndex].originalIndex
-        ? { ...item, foreignPart: foreignPart.trim(), translation: translation.trim() }
+        ? { 
+            ...item, 
+            foreignPart: updatedEntry.foreignPart,
+            translation: updatedEntry.translation,
+            tipPart: updatedEntry.tipPart,
+            isLearned: updatedEntry.isLearned
+          }
         : item
     );
 
     updateData(updatedData);
-    setShowEditModal(false);
-    setErrorMessage('');
 
     // Корректируем firstElement
     const newUnlearnedData = updatedData.filter(item => !item.isLearned);
@@ -133,24 +130,12 @@ const LearningComponent = ({ data, firstElement, count, updateData, language, se
     }
   };
 
-  const handleTextareaChange = (e) => {
-    const input = e.target.value;
-    const equalitySigns = (input.match(/=/g) || []).length;
-    if (equalitySigns > 1) {
-      setErrorMessage(t('equal-sign-error'));
-    } else {
-      setErrorMessage('');
-    }
-    setEditableTranslation(input);
-  };
-
   const handleDeleteEntry = () => {
     if (editRowIndex === null) return;
 
     const updatedData = data.filter((_, i) => i !== elementsToDisplay[editRowIndex].originalIndex);
 
     updateData(updatedData);
-    setShowEditModal(false);
 
     // Корректируем firstElement
     const newUnlearnedData = updatedData.filter(item => !item.isLearned);
@@ -186,7 +171,7 @@ const LearningComponent = ({ data, firstElement, count, updateData, language, se
                 <div className="pt-1 c-translate">
                   <button
                     type="button"
-                    onClick={() => handleOpenEditModal(item.foreignPart, item.translation, rowIndex)}
+                    onClick={() => handleOpenEditModal(item, rowIndex)}
                     className="btn btn-link p-0 m-0"
                   >
                     {item.translation}
@@ -259,49 +244,14 @@ const LearningComponent = ({ data, firstElement, count, updateData, language, se
         </Toast>
       </ToastContainer>
 
-      <Modal show={showEditModal} onHide={handleCloseEditModal}>
-        <Modal.Header closeButton>
-          <Modal.Title>{t('editing-entry')}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          {errorMessage && (
-            <Alert variant="danger" className="p-2">
-              {errorMessage}
-            </Alert>
-          )}
-          <Form.Control
-            as="textarea"
-            rows={3}
-            value={editableTranslation}
-            onChange={handleTextareaChange}
-            onKeyDown={(e) => {
-              if (e.key === 'Enter') {
-                e.preventDefault();
-              }
-            }}
-          />
-        </Modal.Body>
-        <Modal.Footer>
-          <div className="d-flex justify-content-between w-100">
-            <Button variant="link" className="text-black p-0 ps-1" onClick={handleDeleteEntry}>
-              <IoTrashOutline
-                size={20}
-                className="mb-1"
-                style={{ cursor: 'pointer' }}
-              />
-            </Button>
-
-            <div className="d-flex gap-2">
-              <Button variant="outline-dark btn-sm rounded-2" onClick={handleCloseEditModal}>
-                {t('cancel')}
-              </Button>
-              <Button variant="dark btn-sm rounded-2" onClick={handleSaveEdit}>
-                {t('save')}
-              </Button>
-            </div>
-          </div>
-        </Modal.Footer>
-      </Modal>
+      <EditEntryModal
+        show={showEditModal}
+        onHide={handleCloseEditModal}
+        entry={editingEntry}
+        onSave={handleSaveEdit}
+        onDelete={handleDeleteEntry}
+        showDeleteButton={true}
+      />
     </div>
   );
 };
