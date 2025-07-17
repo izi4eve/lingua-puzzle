@@ -467,7 +467,7 @@ const DictionaryPlayer = ({
         </div>
 
         <div className="d-flex align-items-center">
-          <label>{t('delay-between-records') || 'Задержка между записями (сек)'}</label>
+          <label>{t('delay-between-records')}</label>
           <Form.Select
             value={delayBetweenRecords}
             onChange={handleDelayChange}
@@ -537,7 +537,7 @@ const DictionaryPlayer = ({
             <div className="d-flex gap-3">
               <div>{t('record')}: <span className="fw-bold">{currentRecord + 1}/{maxIndex + 1}</span></div>
               <div>{t('repeat')}: <span className="fw-bold">{currentRepeat + 1}/{repeatCount}</span></div>
-              {isInDelay && <div className="text-warning">{t('delay') || 'Задержка...'}</div>}
+              {isInDelay && <div className="text-warning">{t('delay')}</div>}
             </div>
           </div>
         )}
