@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 import { QRCodeCanvas } from 'qrcode.react';
 import FileUploader from './components/FileUploader';
@@ -27,7 +27,22 @@ const App = () => {
     return savedFirstElement ? JSON.parse(savedFirstElement) : 0;
   });
 
-  const supportedLanguages = ['en', 'de', 'fr', 'it', 'es', 'pt', 'pl', 'cs', 'uk', 'sh', 'ru', 'tr', 'ar', 'fa'];
+  const supportedLanguages = useMemo(() => [
+    { code: 'en', name: 'English' },
+    { code: 'de', name: 'Deutsch' },
+    { code: 'fr', name: 'Français' },
+    { code: 'it', name: 'Italiano' },
+    { code: 'es', name: 'Español' },
+    { code: 'pt', name: 'Português' },
+    { code: 'pl', name: 'Polski' },
+    { code: 'cs', name: 'Čeština' },
+    { code: 'uk', name: 'Українська' },
+    { code: 'sh', name: 'Srpski' },
+    { code: 'ru', name: 'Русский' },
+    { code: 'tr', name: 'Türkçe' },
+    { code: 'ar', name: 'العربية' },
+    { code: 'fa', name: 'فارسی' },
+  ], []);
   const [language, setLanguage] = useState(localStorage.getItem('selectedLanguage') || 'en');
   const [ttsLanguage, setTTSLanguage] = useState(localStorage.getItem('ttsLanguage') || 'en-US');
   const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('selectedLanguage') || 'en'); // Добавляем selectedLanguage
@@ -84,12 +99,11 @@ const App = () => {
   }, [firstElement]);
 
   useEffect(() => {
-    // Определяем язык браузера и выбираем его, если он поддерживается; иначе - английский
     const browserLanguage = navigator.language.split('-')[0];
     const savedLanguage = localStorage.getItem('selectedLanguage');
 
     if (!savedLanguage) {
-      const defaultLanguage = supportedLanguages.includes(browserLanguage) ? browserLanguage : 'en';
+      const defaultLanguage = supportedLanguages.find(lang => lang.code === browserLanguage)?.code || 'en';
       setLanguage(defaultLanguage);
       localStorage.setItem('selectedLanguage', defaultLanguage);
       i18n.changeLanguage(defaultLanguage);
@@ -97,8 +111,7 @@ const App = () => {
       i18n.changeLanguage(savedLanguage);
       setLanguage(savedLanguage);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [i18n]);
+  }, [i18n, supportedLanguages]);
 
   useEffect(() => {
     // Отправляем событие page_view при загрузке приложения
@@ -125,12 +138,11 @@ const App = () => {
             <div className="flex-grow-1 px-2 text-end">
               {supportedLanguages.map((lng) => (
                 <button
-                  key={lng}
-                  className={`btn btn-sm rounded-pill m-1 ${language === lng ? 'btn-dark' : 'btn-outline-dark'
-                    }`}
-                  onClick={() => handleLanguageChange(lng)}
+                  key={lng.code}
+                  className={`btn btn-sm rounded-pill m-1 ${language === lng.code ? 'btn-dark' : 'btn-outline-dark'}`}
+                  onClick={() => handleLanguageChange(lng.code)}
                 >
-                  {lng.toUpperCase()}
+                  {lng.code.toUpperCase()}
                 </button>
               ))}
             </div>
@@ -153,10 +165,11 @@ const App = () => {
             firstElement={firstElement}
             updateFirstElement={setFirstElement}
             ttsLanguage={ttsLanguage}
-            selectedLanguage={selectedLanguage} // Передаем selectedLanguage
+            selectedLanguage={selectedLanguage}
             onTTSLanguageChange={handleTTSLanguageChange}
-            onSelectedLanguageChange={handleSelectedLanguageChange} // Добавляем новый пропс
+            onSelectedLanguageChange={handleSelectedLanguageChange}
             languages={languages}
+            supportedLanguages={supportedLanguages}
           />
 
           <Relax />

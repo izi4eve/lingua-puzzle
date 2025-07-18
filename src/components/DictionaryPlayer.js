@@ -29,6 +29,7 @@ const DictionaryPlayer = ({
   onTTSLanguageChange,
   onSelectedLanguageChange,
   languages,
+  supportedLanguages,
 }) => {
   const { t } = useTranslation();
 
@@ -403,8 +404,8 @@ const DictionaryPlayer = ({
             onChange={(e) => onSelectedLanguageChange(e.target.value)}
             className="ms-2 w-auto"
           >
-            {['en', 'de', 'fr', 'it', 'es', 'pt', 'pl', 'cs', 'uk', 'sh', 'ru', 'tr', 'ar', 'fa'].map((lang) => (
-              <option key={lang} value={lang}>{lang.toUpperCase()}</option>
+            {supportedLanguages.map((lang) => (
+              <option key={lang.code} value={lang.code}>{lang.name}</option>
             ))}
           </Form.Select>
         </div>
@@ -412,11 +413,14 @@ const DictionaryPlayer = ({
         <div className="d-flex align-items-center">
           <label>{t('learning-language')}</label>
           <Form.Select
-            value={ttsLanguage}
-            onChange={(e) => onTTSLanguageChange(e.target.value)}
+            value={ttsLanguage.split('-')[0]}
+            onChange={(e) => {
+              const selectedLang = languages.find(lang => lang.code.split('-')[0] === e.target.value);
+              onTTSLanguageChange(selectedLang?.code || 'en-US');
+            }}
             className="ms-2 w-auto"
           >
-            {languages.map((lang) => (
+            {supportedLanguages.map((lang) => (
               <option key={lang.code} value={lang.code}>{lang.name}</option>
             ))}
           </Form.Select>
