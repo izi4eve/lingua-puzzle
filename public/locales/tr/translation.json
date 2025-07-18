@@ -59,5 +59,6 @@
     "close": "Kapat",
     "voice": "Ses",
     "delay-between-records": "Kayıtlar arasındaki gecikme (saniye)",
-    "delay": "Gecikme..."
+    "delay": "Gecikme...",
+    "tip-language": "İpucu"
 }

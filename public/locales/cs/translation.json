@@ -59,5 +59,6 @@
     "close": "Zavřít",
     "voice": "Hlas",
     "delay-between-records": "Zpoždění mezi záznamy (sekundy)",
-    "delay": "Zpoždění..."
+    "delay": "Zpoždění...",
+    "tip-language": "Nápověda"
 }

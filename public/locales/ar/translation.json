@@ -59,5 +59,6 @@
     "close": "إغلاق",
     "voice": "صوت",
     "delay-between-records": "التأخير بين التسجيلات (ثوانٍ)",
-    "delay": "تأخير..."
+    "delay": "تأخير...",
+    "tip-language": "تلميح"
 }

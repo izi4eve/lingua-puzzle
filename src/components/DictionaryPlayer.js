@@ -44,6 +44,8 @@ const DictionaryPlayer = ({
   const [availableVoices, setAvailableVoices] = useState([]);
   const [selectedVoice, setSelectedVoice] = useState(null);
   const [selectedVoiceYourLang, setSelectedVoiceYourLang] = useState(null);
+  const [tipLanguage, setTipLanguage] = useState(selectedLanguage);
+  const [selectedVoiceTip, setSelectedVoiceTip] = useState(null);
   const [delayBetweenRecords, setDelayBetweenRecords] = useState(2); // Новый параметр задержки
   const [isInDelay, setIsInDelay] = useState(false); // Состояние задержки
 
@@ -69,8 +71,9 @@ const DictionaryPlayer = ({
       delayBetweenRecords,
       selectedVoice,
       selectedVoiceYourLang,
+      selectedVoiceTip,
     };
-  }, [readingSpeed, repeatCount, delayBetweenRecords, selectedVoice, selectedVoiceYourLang]);
+  }, [readingSpeed, repeatCount, delayBetweenRecords, selectedVoice, selectedVoiceYourLang, selectedVoiceTip]);
 
   const filteredData = data.filter((item) => !item.isLearned);
   const maxIndex = Math.max(0, filteredData.length - 1);
@@ -107,6 +110,15 @@ const DictionaryPlayer = ({
         voices.find(v => v.lang.startsWith(selectedLanguage)) ||
         voices.find(v => v.default);
       setSelectedVoiceYourLang(bestVoiceYourLang ? bestVoiceYourLang.name : null);
+
+      // Для языка подсказки
+      const tipLangCode = languages.find(lang => lang.code.split('-')[0] === tipLanguage)?.code || 'en-US';
+      const priorityVoicesTip = voicePriority[tipLangCode] || [];
+      const bestVoiceTip = voices.find(v => priorityVoicesTip.includes(v.name) && v.lang.startsWith(tipLanguage)) ||
+        voices.find(v => v.lang.startsWith(tipLanguage) && !v.default) ||
+        voices.find(v => v.lang.startsWith(tipLanguage)) ||
+        voices.find(v => v.default);
+      setSelectedVoiceTip(bestVoiceTip ? bestVoiceTip.name : null);
     };
 
     window.speechSynthesis.onvoiceschanged = loadVoices;
@@ -114,7 +126,7 @@ const DictionaryPlayer = ({
     return () => {
       window.speechSynthesis.onvoiceschanged = null;
     };
-  }, [ttsLanguage, selectedLanguage, languages]);
+  }, [ttsLanguage, selectedLanguage, tipLanguage, languages]);
 
   // Очистка при изменении данных
   useEffect(() => {
@@ -135,15 +147,17 @@ const DictionaryPlayer = ({
   useEffect(() => {
     const savedSettings = localStorage.getItem('playerSettings');
     if (savedSettings) {
-      const { readingSpeed, repeatCount, recordsToPlay, selectedVoice, selectedVoiceYourLang, delayBetweenRecords } = JSON.parse(savedSettings);
+      const { readingSpeed, repeatCount, recordsToPlay, selectedVoice, selectedVoiceYourLang, delayBetweenRecords, tipLanguage, selectedVoiceTip } = JSON.parse(savedSettings);
       setReadingSpeed(readingSpeed ?? 0.75);
       setRepeatCount(repeatCount ?? 3);
       setRecordsToPlay(recordsToPlay ?? 'all');
       setSelectedVoice(selectedVoice ?? null);
       setSelectedVoiceYourLang(selectedVoiceYourLang ?? null);
       setDelayBetweenRecords(delayBetweenRecords ?? 2);
+      setTipLanguage(tipLanguage ?? selectedLanguage);
+      setSelectedVoiceTip(selectedVoiceTip ?? null);
     }
-  }, []);
+  }, [selectedLanguage]);
 
   // Сохранение настроек (теперь включает selectedVoice и delayBetweenRecords)
   useEffect(() => {
@@ -155,8 +169,10 @@ const DictionaryPlayer = ({
       selectedVoice,
       selectedVoiceYourLang,
       delayBetweenRecords,
+      tipLanguage,
+      selectedVoiceTip,
     }));
-  }, [selectedLanguage, readingSpeed, repeatCount, recordsToPlay, selectedVoice, selectedVoiceYourLang, delayBetweenRecords]);
+  }, [selectedLanguage, readingSpeed, repeatCount, recordsToPlay, selectedVoice, selectedVoiceYourLang, delayBetweenRecords, tipLanguage, selectedVoiceTip]);
 
   // Функция задержки с возможностью отмены
   const delayWithCancel = useCallback((seconds) => {
@@ -372,6 +388,14 @@ const DictionaryPlayer = ({
     setSelectedVoiceYourLang(e.target.value);
   };
 
+  const handleTipLanguageChange = (value) => {
+    setTipLanguage(value);
+  };
+
+  const handleVoiceTipChange = (e) => {
+    setSelectedVoiceTip(e.target.value);
+  };
+
   useEffect(() => {
     if ('mediaSession' in navigator) {
       navigator.mediaSession.metadata = new window.MediaMetadata({
@@ -395,7 +419,7 @@ const DictionaryPlayer = ({
       <PreventScreenSleep isPlaying={isPlaying} />
       <Title icon={<TbCircleNumber2Filled size={28} />} text={t('listen-dictionary')} />
 
-      <div className="d-flex flex-row flex-wrap gap-2">
+      <div className="d-flex flex-row flex-wrap column-gap-2 row-gap-1 mt-1">
         <div className="d-flex align-items-center">
           <label>{t('your-language')}</label>
           <Form.Select
@@ -427,6 +451,8 @@ const DictionaryPlayer = ({
           </Form.Select>
         </div>
 
+        <div className="w-100"></div>
+
         <div className="d-flex align-items-center">
           <label>{t('learning-language')}</label>
           <Form.Select
@@ -457,6 +483,41 @@ const DictionaryPlayer = ({
               ))}
           </Form.Select>
         </div>
+
+        <div className="w-100"></div>
+
+        <div className="d-flex align-items-center">
+          <label>{t('tip-language')}</label>
+          <Form.Select
+            value={tipLanguage}
+            onChange={(e) => handleTipLanguageChange(e.target.value)}
+            className="ms-2 w-auto"
+          >
+            {supportedLanguages.map((lang) => (
+              <option key={lang.code} value={lang.code}>{lang.name}</option>
+            ))}
+          </Form.Select>
+        </div>
+
+        <div className="d-flex align-items-center">
+          <label>{t('voice')}</label>
+          <Form.Select
+            value={selectedVoiceTip || ''}
+            onChange={handleVoiceTipChange}
+            className="ms-2 w-auto"
+          >
+            <option value="">{t('default-voice')}</option>
+            {availableVoices
+              .filter((voice) => voice.lang.startsWith(tipLanguage))
+              .map((voice) => (
+                <option key={voice.name} value={voice.name}>
+                  {voice.name} {voice.default ? `(${t('default')})` : ''}
+                </option>
+              ))}
+          </Form.Select>
+        </div>
+
+        <div className="w-100"></div>
 
         <div className="d-flex align-items-center">
           <label>{t('reading-speed')}</label>
