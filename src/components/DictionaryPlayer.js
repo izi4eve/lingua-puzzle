@@ -686,18 +686,22 @@ const DictionaryPlayer = ({
               {filteredData[currentRecord]?.tipPart && (
                 <span className="tip-part"> = {filteredData[currentRecord].tipPart}</span>
               )}
-              <FiEdit
-                size={28}
-                className="light-grey ms-4"
-                style={{ cursor: 'pointer' }}
-                onClick={handleEditClick}
-              />
-              <IoIosCloseCircleOutline
-                size={32}
-                className="light-grey ms-3"
-                style={{ cursor: 'pointer' }}
-                onClick={handleMarkAsLearned}
-              />
+              {!isPlaying && (
+                <>
+                  <FiEdit
+                    size={28}
+                    className="light-grey ms-4"
+                    style={{ cursor: 'pointer' }}
+                    onClick={handleEditClick}
+                  />
+                  <IoIosCloseCircleOutline
+                    size={32}
+                    className="light-grey ms-3"
+                    style={{ cursor: 'pointer' }}
+                    onClick={handleMarkAsLearned}
+                  />
+                </>
+              )}
             </p>
             <div className="d-flex gap-3">
               <div>{t('record')}: <span className="fw-bold">{currentRecord + 1}/{maxIndex + 1}</span></div>
