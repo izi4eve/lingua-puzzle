@@ -91,21 +91,20 @@ const DictionaryPlayer = ({
       setAvailableVoices(voices);
 
       // Для изучаемого языка
-      // Для изучаемого языка
       const ttsLangCode = languages.find(lang => lang.code.split('-')[0] === ttsLanguage)?.code || 'en-US';
       const priorityVoices = voicePriority[ttsLangCode] || [];
-      const bestVoice = voices.find(v => priorityVoices.includes(v.name) && v.lang === ttsLangCode) ||
-        voices.find(v => v.lang === ttsLangCode && !v.default) ||
-        voices.find(v => v.lang === ttsLangCode) ||
+      const bestVoice = voices.find(v => priorityVoices.includes(v.name) && v.lang.startsWith(ttsLanguage)) ||
+        voices.find(v => v.lang.startsWith(ttsLanguage) && !v.default) ||
+        voices.find(v => v.lang.startsWith(ttsLanguage)) ||
         voices.find(v => v.default);
       setSelectedVoice(bestVoice ? bestVoice.name : null);
 
       // Для вашего языка
       const yourLangCode = languages.find(lang => lang.code.split('-')[0] === selectedLanguage)?.code || 'en-US';
       const priorityVoicesYourLang = voicePriority[yourLangCode] || [];
-      const bestVoiceYourLang = voices.find(v => priorityVoicesYourLang.includes(v.name) && v.lang === yourLangCode) ||
-        voices.find(v => v.lang === yourLangCode && !v.default) ||
-        voices.find(v => v.lang === yourLangCode) ||
+      const bestVoiceYourLang = voices.find(v => priorityVoicesYourLang.includes(v.name) && v.lang.startsWith(selectedLanguage)) ||
+        voices.find(v => v.lang.startsWith(selectedLanguage) && !v.default) ||
+        voices.find(v => v.lang.startsWith(selectedLanguage)) ||
         voices.find(v => v.default);
       setSelectedVoiceYourLang(bestVoiceYourLang ? bestVoiceYourLang.name : null);
     };
@@ -419,7 +418,7 @@ const DictionaryPlayer = ({
           >
             <option value="">{t('default-voice')}</option>
             {availableVoices
-              .filter((voice) => voice.lang === (languages.find(lang => lang.code.split('-')[0] === selectedLanguage)?.code || 'en-US'))
+              .filter((voice) => voice.lang.startsWith(selectedLanguage))
               .map((voice) => (
                 <option key={voice.name} value={voice.name}>
                   {voice.name} {voice.default ? `(${t('default')})` : ''}
@@ -450,7 +449,7 @@ const DictionaryPlayer = ({
           >
             <option value="">{t('default-voice')}</option>
             {availableVoices
-              .filter((voice) => voice.lang === (languages.find(lang => lang.code.split('-')[0] === ttsLanguage)?.code || 'en-US'))
+              .filter((voice) => voice.lang.startsWith(ttsLanguage))
               .map((voice) => (
                 <option key={voice.name} value={voice.name}>
                   {voice.name} {voice.default ? `(${t('default')})` : ''}
