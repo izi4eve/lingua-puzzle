@@ -203,7 +203,7 @@ const DictionaryPlayer = ({
         utterance.rate = useReadingSpeed ? currentSettingsRef.current.readingSpeed : 1.0;
 
         if (voiceName) {
-          const voice = availableVoices.find(v => v.name === voiceName && v.lang === lang);
+          const voice = availableVoices.find(v => v.name === voiceName && v.lang.startsWith(lang));
           if (voice) {
             utterance.voice = voice;
           }
@@ -272,6 +272,14 @@ const DictionaryPlayer = ({
         return;
       }
 
+      if (filteredData[currentRecord].tipPart) {
+        await playAudio(filteredData[currentRecord].tipPart, tipLanguage, true, selectedVoiceTip);
+        if (!isPlayingRef.current) {
+          setIsSpeaking(false);
+          return;
+        }
+      }
+
       setIsSpeaking(false);
       const nextRepeat = currentRepeat + 1;
 
@@ -304,6 +312,8 @@ const DictionaryPlayer = ({
     clearDelayTimeout,
     selectedVoice,
     selectedVoiceYourLang,
+    selectedVoiceTip,
+    tipLanguage
   ]);
 
   useEffect(() => {
