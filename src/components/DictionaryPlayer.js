@@ -91,9 +91,9 @@ const DictionaryPlayer = ({
       // Выбираем лучший голос для ttsLanguage
       const priorityVoices = voicePriority[ttsLanguage] || [];
       const bestVoice = voices.find(v => priorityVoices.includes(v.name) && v.lang === ttsLanguage) ||
-                       voices.find(v => v.lang === ttsLanguage && !v.default) ||
-                       voices.find(v => v.lang === ttsLanguage) ||
-                       voices.find(v => v.default); // Запасной вариант
+        voices.find(v => v.lang === ttsLanguage && !v.default) ||
+        voices.find(v => v.lang === ttsLanguage) ||
+        voices.find(v => v.default); // Запасной вариант
       setSelectedVoice(bestVoice ? bestVoice.name : null);
     };
 
@@ -243,25 +243,25 @@ const DictionaryPlayer = ({
 
     try {
       await playAudio(translation, selectedLanguage, true);
-      
+
       // Проверяем, не остановлено ли воспроизведение
       if (!isPlayingRef.current) {
         setIsSpeaking(false);
         return;
       }
-      
+
       await playAudio(foreignPart, ttsLanguage, true);
-      
+
       // Проверяем, не остановлено ли воспроизведение
       if (!isPlayingRef.current) {
         setIsSpeaking(false);
         return;
       }
-      
+
       setIsSpeaking(false);
       const nextRepeat = currentRepeat + 1;
       console.log(`setCurrentRepeat: prev=${currentRepeat}, nextRepeat=${nextRepeat}, repeatCount=${currentSettingsRef.current.repeatCount}`);
-      
+
       if (nextRepeat < currentSettingsRef.current.repeatCount) {
         setCurrentRepeat(nextRepeat);
         // Без задержки между повторами одной записи - сразу переходим к следующему повтору
@@ -532,7 +532,10 @@ const DictionaryPlayer = ({
             <p className="fs-5 fw-bold">
               <span className="text-success">{`${filteredData[currentRecord]?.foreignPart}`}</span>
               <span> = </span>
-              <span>{`${filteredData[currentRecord]?.translation}`}</span>
+              <span>{`${filteredData[currentRecord]?.translation}`} </span>
+              {filteredData[currentRecord]?.tipPart && (
+                <span className="tip-part"> = {filteredData[currentRecord].tipPart}</span>
+              )}
             </p>
             <div className="d-flex gap-3">
               <div>{t('record')}: <span className="fw-bold">{currentRecord + 1}/{maxIndex + 1}</span></div>

@@ -147,3 +147,9 @@ code { font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', mon
 .close-button:hover {
   background-color: darkred;
 }
+
+.tip-part {
+  font-size: .9rem;
+  color: #aaa;
+  font-weight: 600;
+}
