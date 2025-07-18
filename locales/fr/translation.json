@@ -63,5 +63,6 @@
     "close": "Fermer",
     "voice": "Voix",
     "delay-between-records": "Délai entre les enregistrements (secondes)",
-    "delay": "Délai..."
+    "delay": "Délai...",
+    "tip-language": "Astuce"
 }

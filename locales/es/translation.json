@@ -63,5 +63,6 @@
     "close": "Cerrar",
     "voice": "Voz",
     "delay-between-records": "Retraso entre registros (segundos)",
-    "delay": "Retraso..."
+    "delay": "Retraso...",
+    "tip-language": "Consejo"
 }

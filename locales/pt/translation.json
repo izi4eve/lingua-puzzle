@@ -59,5 +59,6 @@
     "close": "Fechar",
     "voice": "Voz",
     "delay-between-records": "Atraso entre registros (segundos)",
-    "delay": "Atraso..."
+    "delay": "Atraso...",
+    "tip-language": "Dica"
 }

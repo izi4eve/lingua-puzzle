@@ -63,5 +63,6 @@
     "close": "Close",
     "voice": "Voice",
     "delay-between-records": "Delay between records (seconds)",
-    "delay": "Delay..."
+    "delay": "Delay...",
+    "tip-language": "Tip"
 }

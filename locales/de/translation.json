@@ -63,5 +63,6 @@
     "close": "Schließen",
     "voice": "Stimme",
     "delay-between-records": "Verzögerung zwischen Einträgen (Sekunden)",
-    "delay": "Verzögerung..."
+    "delay": "Verzögerung...",
+    "tip-language": "Hinweis"
 }

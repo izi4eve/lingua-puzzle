@@ -63,5 +63,6 @@
     "close": "Chiudi",
     "voice": "Voce",
     "delay-between-records": "Ritardo tra i record (secondi)",
-    "delay": "Ritardo..."
+    "delay": "Ritardo...",
+    "tip-language": "Suggerimento"
 }

@@ -59,5 +59,6 @@
     "close": "بستن",
     "voice": "صدا",
     "delay-between-records": "تأخیر بین رکوردها (ثانیه)",
-    "delay": "تأخیر..."
+    "delay": "تأخیر...",
+    "tip-language": "نکته"
 }

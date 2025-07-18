@@ -59,5 +59,6 @@
     "close": "Zatvori",
     "voice": "Glas",
     "delay-between-records": "Kašnjenje između zapisa (sekunde)",
-    "delay": "Kašnjenje..."
+    "delay": "Kašnjenje...",
+    "tip-language": "Savjet"
 }
