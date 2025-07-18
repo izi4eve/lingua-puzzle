@@ -3,6 +3,7 @@ import { Button, Form } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import { FaArrowRight, FaPause, FaPlay } from 'react-icons/fa';
 import { TbCircleNumber2Filled, TbPlayerTrackNextFilled, TbPlayerTrackPrevFilled } from 'react-icons/tb';
+import { IoIosCloseCircleOutline } from 'react-icons/io';
 import Title from './Title';
 import PreventScreenSleep from './PreventScreenSleep';
 
@@ -30,6 +31,7 @@ const DictionaryPlayer = ({
   onSelectedLanguageChange,
   languages,
   supportedLanguages,
+  onMarkAsLearned,
 }) => {
   const { t } = useTranslation();
 
@@ -406,6 +408,40 @@ const DictionaryPlayer = ({
     setSelectedVoiceTip(e.target.value);
   };
 
+  const handleMarkAsLearned = useCallback(() => {
+    if (filteredData.length === 0) return;
+
+    // Остановить воспроизведение
+    window.speechSynthesis.cancel();
+    clearDelayTimeout();
+    setIsPlaying(false);
+    setIsSpeaking(false);
+    setCurrentRepeat(0);
+
+    // Отметить текущую запись как изученную
+    const recordToMark = filteredData[currentRecord];
+    onMarkAsLearned(recordToMark);
+
+    // Найти следующую неизученную запись
+    const newFilteredData = filteredData.filter((_, index) => index !== currentRecord);
+
+    if (newFilteredData.length === 0) {
+      // Если больше нет неизученных записей
+      setCurrentRecord(0);
+      updateFirstElement(0);
+      return;
+    }
+
+    // Если текущая запись была последней, переходим к первой
+    if (currentRecord >= newFilteredData.length) {
+      setCurrentRecord(0);
+      updateFirstElement(0);
+    } else {
+      // Остаемся на том же индексе (следующая запись займет место текущей)
+      updateFirstElement(currentRecord);
+    }
+  }, [filteredData, currentRecord, onMarkAsLearned, updateFirstElement, clearDelayTimeout]);
+
   useEffect(() => {
     if ('mediaSession' in navigator) {
       navigator.mediaSession.metadata = new window.MediaMetadata({
@@ -625,6 +661,12 @@ const DictionaryPlayer = ({
               {filteredData[currentRecord]?.tipPart && (
                 <span className="tip-part"> = {filteredData[currentRecord].tipPart}</span>
               )}
+              <IoIosCloseCircleOutline
+                size={32}
+                className="light-grey ms-2"
+                style={{ cursor: 'pointer' }}
+                onClick={handleMarkAsLearned}
+              />
             </p>
             <div className="d-flex gap-3">
               <div>{t('record')}: <span className="fw-bold">{currentRecord + 1}/{maxIndex + 1}</span></div>

@@ -90,6 +90,17 @@ const App = () => {
     localStorage.setItem('selectedLanguage', newSelectedLanguage);
   };
 
+  const handleMarkAsLearned = (recordToMark) => {
+    setData(prevData => {
+      return prevData.map(item =>
+        item.foreignPart === recordToMark.foreignPart &&
+          item.translation === recordToMark.translation
+          ? { ...item, isLearned: true }
+          : item
+      );
+    });
+  };
+
   useEffect(() => {
     localStorage.setItem('data', JSON.stringify(data));
   }, [data]);
@@ -170,6 +181,7 @@ const App = () => {
             onSelectedLanguageChange={handleSelectedLanguageChange}
             languages={languages}
             supportedLanguages={supportedLanguages}
+            onMarkAsLearned={handleMarkAsLearned}
           />
 
           <Relax />
