@@ -43,6 +43,7 @@ const DictionaryPlayer = ({
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [availableVoices, setAvailableVoices] = useState([]);
   const [selectedVoice, setSelectedVoice] = useState(null);
+  const [selectedVoiceYourLang, setSelectedVoiceYourLang] = useState(null);
   const [delayBetweenRecords, setDelayBetweenRecords] = useState(2); // Новый параметр задержки
   const [isInDelay, setIsInDelay] = useState(false); // Состояние задержки
 
@@ -67,8 +68,9 @@ const DictionaryPlayer = ({
       repeatCount,
       delayBetweenRecords,
       selectedVoice,
+      selectedVoiceYourLang,
     };
-  }, [readingSpeed, repeatCount, delayBetweenRecords, selectedVoice]);
+  }, [readingSpeed, repeatCount, delayBetweenRecords, selectedVoice, selectedVoiceYourLang]);
 
   const filteredData = data.filter((item) => !item.isLearned);
   const maxIndex = Math.max(0, filteredData.length - 1);
@@ -87,23 +89,33 @@ const DictionaryPlayer = ({
     const loadVoices = () => {
       const voices = window.speechSynthesis.getVoices();
       setAvailableVoices(voices);
-      console.log('Доступные голоса:', voices.map(v => ({ name: v.name, lang: v.lang, default: v.default })));
 
-      // Выбираем лучший голос для ttsLanguage
-      const priorityVoices = voicePriority[ttsLanguage] || [];
-      const bestVoice = voices.find(v => priorityVoices.includes(v.name) && v.lang === ttsLanguage) ||
-        voices.find(v => v.lang === ttsLanguage && !v.default) ||
-        voices.find(v => v.lang === ttsLanguage) ||
-        voices.find(v => v.default); // Запасной вариант
+      // Для изучаемого языка
+      // Для изучаемого языка
+      const ttsLangCode = languages.find(lang => lang.code.split('-')[0] === ttsLanguage)?.code || 'en-US';
+      const priorityVoices = voicePriority[ttsLangCode] || [];
+      const bestVoice = voices.find(v => priorityVoices.includes(v.name) && v.lang === ttsLangCode) ||
+        voices.find(v => v.lang === ttsLangCode && !v.default) ||
+        voices.find(v => v.lang === ttsLangCode) ||
+        voices.find(v => v.default);
       setSelectedVoice(bestVoice ? bestVoice.name : null);
+
+      // Для вашего языка
+      const yourLangCode = languages.find(lang => lang.code.split('-')[0] === selectedLanguage)?.code || 'en-US';
+      const priorityVoicesYourLang = voicePriority[yourLangCode] || [];
+      const bestVoiceYourLang = voices.find(v => priorityVoicesYourLang.includes(v.name) && v.lang === yourLangCode) ||
+        voices.find(v => v.lang === yourLangCode && !v.default) ||
+        voices.find(v => v.lang === yourLangCode) ||
+        voices.find(v => v.default);
+      setSelectedVoiceYourLang(bestVoiceYourLang ? bestVoiceYourLang.name : null);
     };
 
     window.speechSynthesis.onvoiceschanged = loadVoices;
-    loadVoices(); // Первичная загрузка
+    loadVoices();
     return () => {
       window.speechSynthesis.onvoiceschanged = null;
     };
-  }, [ttsLanguage]);
+  }, [ttsLanguage, selectedLanguage, languages]);
 
   // Очистка при изменении данных
   useEffect(() => {
@@ -124,11 +136,12 @@ const DictionaryPlayer = ({
   useEffect(() => {
     const savedSettings = localStorage.getItem('playerSettings');
     if (savedSettings) {
-      const { readingSpeed, repeatCount, recordsToPlay, selectedVoice, delayBetweenRecords } = JSON.parse(savedSettings);
+      const { readingSpeed, repeatCount, recordsToPlay, selectedVoice, selectedVoiceYourLang, delayBetweenRecords } = JSON.parse(savedSettings);
       setReadingSpeed(readingSpeed ?? 0.75);
       setRepeatCount(repeatCount ?? 3);
       setRecordsToPlay(recordsToPlay ?? 'all');
       setSelectedVoice(selectedVoice ?? null);
+      setSelectedVoiceYourLang(selectedVoiceYourLang ?? null);
       setDelayBetweenRecords(delayBetweenRecords ?? 2);
     }
   }, []);
@@ -141,9 +154,10 @@ const DictionaryPlayer = ({
       repeatCount,
       recordsToPlay,
       selectedVoice,
+      selectedVoiceYourLang,
       delayBetweenRecords,
     }));
-  }, [selectedLanguage, readingSpeed, repeatCount, recordsToPlay, selectedVoice, delayBetweenRecords]);
+  }, [selectedLanguage, readingSpeed, repeatCount, recordsToPlay, selectedVoice, selectedVoiceYourLang, delayBetweenRecords]);
 
   // Функция задержки с возможностью отмены
   const delayWithCancel = useCallback((seconds) => {
@@ -161,7 +175,7 @@ const DictionaryPlayer = ({
     });
   }, []);
 
-  const playAudio = useCallback(async (text, lang, useReadingSpeed = false) => {
+  const playAudio = useCallback(async (text, lang, useReadingSpeed = false, voiceName = null) => {
     if (!window.speechSynthesis) {
       console.error('SpeechSynthesis is not supported.');
       return Promise.reject(new Error('SpeechSynthesis is not supported.'));
@@ -173,29 +187,17 @@ const DictionaryPlayer = ({
         utterance.lang = lang;
         utterance.rate = useReadingSpeed ? currentSettingsRef.current.readingSpeed : 1.0;
 
-        // Выбор голоса
-        if (currentSettingsRef.current.selectedVoice) {
-          const voice = availableVoices.find(v => v.name === currentSettingsRef.current.selectedVoice && v.lang === lang);
+        if (voiceName) {
+          const voice = availableVoices.find(v => v.name === voiceName && v.lang === lang);
           if (voice) {
             utterance.voice = voice;
-            console.log(`Выбран голос: ${voice.name} для языка ${lang}`);
-          } else {
-            console.warn(`Голос ${currentSettingsRef.current.selectedVoice} не найден для языка ${lang}`);
           }
         }
 
-        utterance.onend = () => {
-          console.log(`playAudio completed: ${text}, rate=${utterance.rate}`);
-          resolve();
-        };
-        utterance.onerror = (e) => {
-          console.error(`playAudio error: ${text}`, e);
-          reject(e);
-        };
-        console.log(`playAudio started: ${text}, lang=${lang}, rate=${utterance.rate}, voice=${utterance.voice?.name || 'default'}`);
+        utterance.onend = () => resolve();
+        utterance.onerror = (e) => reject(e);
         window.speechSynthesis.speak(utterance);
       } catch (error) {
-        console.error(`playAudio exception: ${text}`, error);
         reject(error);
       }
     });
@@ -243,17 +245,13 @@ const DictionaryPlayer = ({
     const { foreignPart, translation } = filteredData[currentRecord];
 
     try {
-      await playAudio(translation, selectedLanguage, true);
-
-      // Проверяем, не остановлено ли воспроизведение
+      await playAudio(translation, selectedLanguage, true, selectedVoiceYourLang);
       if (!isPlayingRef.current) {
         setIsSpeaking(false);
         return;
       }
 
-      await playAudio(foreignPart, ttsLanguage, true);
-
-      // Проверяем, не остановлено ли воспроизведение
+      await playAudio(foreignPart, ttsLanguage, true, selectedVoice);
       if (!isPlayingRef.current) {
         setIsSpeaking(false);
         return;
@@ -261,19 +259,15 @@ const DictionaryPlayer = ({
 
       setIsSpeaking(false);
       const nextRepeat = currentRepeat + 1;
-      console.log(`setCurrentRepeat: prev=${currentRepeat}, nextRepeat=${nextRepeat}, repeatCount=${currentSettingsRef.current.repeatCount}`);
 
       if (nextRepeat < currentSettingsRef.current.repeatCount) {
         setCurrentRepeat(nextRepeat);
-        // Без задержки между повторами одной записи - сразу переходим к следующему повтору
       } else {
         setCurrentRepeat(0);
-        // Задержка только перед переходом к следующей записи
         await delayWithCancel(currentSettingsRef.current.delayBetweenRecords);
         handleNext();
       }
     } catch (error) {
-      console.error('Ошибка воспроизведения аудио:', error);
       setIsSpeaking(false);
       setIsInDelay(false);
       if (error.message !== 'Playback stopped during delay') {
@@ -293,6 +287,8 @@ const DictionaryPlayer = ({
     playAudio,
     delayWithCancel,
     clearDelayTimeout,
+    selectedVoice,
+    selectedVoiceYourLang,
   ]);
 
   useEffect(() => {
@@ -373,6 +369,10 @@ const DictionaryPlayer = ({
     setSelectedVoice(e.target.value);
   };
 
+  const handleVoiceYourLangChange = (e) => {
+    setSelectedVoiceYourLang(e.target.value);
+  };
+
   useEffect(() => {
     if ('mediaSession' in navigator) {
       navigator.mediaSession.metadata = new window.MediaMetadata({
@@ -411,13 +411,28 @@ const DictionaryPlayer = ({
         </div>
 
         <div className="d-flex align-items-center">
+          <label>{t('voice')}</label>
+          <Form.Select
+            value={selectedVoiceYourLang || ''}
+            onChange={handleVoiceYourLangChange}
+            className="ms-2 w-auto"
+          >
+            <option value="">{t('default-voice')}</option>
+            {availableVoices
+              .filter((voice) => voice.lang === (languages.find(lang => lang.code.split('-')[0] === selectedLanguage)?.code || 'en-US'))
+              .map((voice) => (
+                <option key={voice.name} value={voice.name}>
+                  {voice.name} {voice.default ? `(${t('default')})` : ''}
+                </option>
+              ))}
+          </Form.Select>
+        </div>
+
+        <div className="d-flex align-items-center">
           <label>{t('learning-language')}</label>
           <Form.Select
             value={ttsLanguage.split('-')[0]}
-            onChange={(e) => {
-              const selectedLang = languages.find(lang => lang.code.split('-')[0] === e.target.value);
-              onTTSLanguageChange(selectedLang?.code || 'en-US');
-            }}
+            onChange={(e) => onTTSLanguageChange(e.target.value)}
             className="ms-2 w-auto"
           >
             {supportedLanguages.map((lang) => (
@@ -435,7 +450,7 @@ const DictionaryPlayer = ({
           >
             <option value="">{t('default-voice')}</option>
             {availableVoices
-              .filter((voice) => voice.lang === ttsLanguage)
+              .filter((voice) => voice.lang === (languages.find(lang => lang.code.split('-')[0] === ttsLanguage)?.code || 'en-US'))
               .map((voice) => (
                 <option key={voice.name} value={voice.name}>
                   {voice.name} {voice.default ? `(${t('default')})` : ''}
