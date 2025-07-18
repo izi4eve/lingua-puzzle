@@ -4,6 +4,8 @@ import { useTranslation } from 'react-i18next';
 import { FaArrowRight, FaPause, FaPlay } from 'react-icons/fa';
 import { TbCircleNumber2Filled, TbPlayerTrackNextFilled, TbPlayerTrackPrevFilled } from 'react-icons/tb';
 import { IoIosCloseCircleOutline } from 'react-icons/io';
+import { FiEdit } from 'react-icons/fi';
+import EditEntryModal from './EditEntryModal';
 import Title from './Title';
 import PreventScreenSleep from './PreventScreenSleep';
 
@@ -32,6 +34,8 @@ const DictionaryPlayer = ({
   languages,
   supportedLanguages,
   onMarkAsLearned,
+  onEditEntry,
+  onDeleteEntry,
 }) => {
   const { t } = useTranslation();
 
@@ -50,6 +54,7 @@ const DictionaryPlayer = ({
   const [selectedVoiceTip, setSelectedVoiceTip] = useState(null);
   const [delayBetweenRecords, setDelayBetweenRecords] = useState(2); // Новый параметр задержки
   const [isInDelay, setIsInDelay] = useState(false); // Состояние задержки
+  const [showEditModal, setShowEditModal] = useState(false);
 
   // Refs для отслеживания изменений во время воспроизведения
   const delayTimeoutRef = useRef(null);
@@ -442,6 +447,26 @@ const DictionaryPlayer = ({
     }
   }, [filteredData, currentRecord, onMarkAsLearned, updateFirstElement, clearDelayTimeout]);
 
+  const handleEditClick = useCallback(() => {
+    setShowEditModal(true);
+  }, []);
+
+  const handleEditSave = useCallback((updatedEntry) => {
+    if (filteredData.length === 0) return;
+
+    const currentEntry = filteredData[currentRecord];
+    onEditEntry(currentEntry, updatedEntry);
+    setShowEditModal(false);
+  }, [filteredData, currentRecord, onEditEntry]);
+
+  const handleEditDelete = useCallback(() => {
+    if (filteredData.length === 0) return;
+
+    const currentEntry = filteredData[currentRecord];
+    onDeleteEntry(currentEntry);
+    setShowEditModal(false);
+  }, [filteredData, currentRecord, onDeleteEntry]);
+
   useEffect(() => {
     if ('mediaSession' in navigator) {
       navigator.mediaSession.metadata = new window.MediaMetadata({
@@ -661,9 +686,15 @@ const DictionaryPlayer = ({
               {filteredData[currentRecord]?.tipPart && (
                 <span className="tip-part"> = {filteredData[currentRecord].tipPart}</span>
               )}
+              <FiEdit
+                size={28}
+                className="light-grey ms-4"
+                style={{ cursor: 'pointer' }}
+                onClick={handleEditClick}
+              />
               <IoIosCloseCircleOutline
                 size={32}
-                className="light-grey ms-2"
+                className="light-grey ms-3"
                 style={{ cursor: 'pointer' }}
                 onClick={handleMarkAsLearned}
               />
@@ -676,6 +707,15 @@ const DictionaryPlayer = ({
           </div>
         )}
       </div>
+
+      <EditEntryModal
+        show={showEditModal}
+        onHide={() => setShowEditModal(false)}
+        entry={filteredData[currentRecord]}
+        onSave={handleEditSave}
+        onDelete={handleEditDelete}
+        showDeleteButton={true}
+      />
     </div>
   );
 };

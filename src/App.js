@@ -101,6 +101,46 @@ const App = () => {
     });
   };
 
+  const handleEditEntry = (oldEntry, newEntry) => {
+    setData(prevData => {
+      return prevData.map(item =>
+        item.foreignPart === oldEntry.foreignPart &&
+          item.translation === oldEntry.translation &&
+          item.tipPart === oldEntry.tipPart
+          ? { ...item, ...newEntry }
+          : item
+      );
+    });
+  };
+
+  const handleDeleteEntry = (entryToDelete) => {
+    setData(prevData => {
+      const newData = prevData.filter(item =>
+        !(item.foreignPart === entryToDelete.foreignPart &&
+          item.translation === entryToDelete.translation &&
+          item.tipPart === entryToDelete.tipPart)
+      );
+
+      // Если удаляем текущую запись, сбрасываем позицию
+      if (newData.length === 0) {
+        setFirstElement(0);
+      } else {
+        const currentFilteredData = prevData.filter(item => !item.isLearned);
+        const currentIndex = currentFilteredData.findIndex(item =>
+          item.foreignPart === entryToDelete.foreignPart &&
+          item.translation === entryToDelete.translation &&
+          item.tipPart === entryToDelete.tipPart
+        );
+
+        if (currentIndex !== -1 && firstElement >= currentIndex) {
+          setFirstElement(Math.max(0, firstElement - 1));
+        }
+      }
+
+      return newData;
+    });
+  };
+
   useEffect(() => {
     localStorage.setItem('data', JSON.stringify(data));
   }, [data]);
@@ -182,6 +222,8 @@ const App = () => {
             languages={languages}
             supportedLanguages={supportedLanguages}
             onMarkAsLearned={handleMarkAsLearned}
+            onEditEntry={handleEditEntry}
+            onDeleteEntry={handleDeleteEntry}
           />
 
           <Relax />
