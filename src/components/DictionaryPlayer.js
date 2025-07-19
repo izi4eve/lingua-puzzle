@@ -5,6 +5,7 @@ import { FaArrowRight } from 'react-icons/fa';
 import { TbCircleNumber2Filled } from 'react-icons/tb';
 
 import PlayerControls from './PlayerControls';
+import { PlayerProvider } from './PlayerContext';
 import Title from './Title';
 import PreventScreenSleep from './PreventScreenSleep';
 
@@ -361,7 +362,7 @@ const DictionaryPlayer = ({
       <div className="w-100 pt-4"></div>
 
       {/* Используем компонент PlayerControls */}
-      <PlayerControls
+      <PlayerProvider
         data={data}
         firstElement={firstElement}
         updateFirstElement={updateFirstElement}
@@ -379,7 +380,9 @@ const DictionaryPlayer = ({
         selectedVoiceTip={selectedVoiceTip}
         delayBetweenRecords={delayBetweenRecords}
         availableVoices={availableVoices}
-      />
+      >
+        <PlayerControls />
+      </PlayerProvider>
 
       <div className="mt-3">
         {filteredData.length > 0 && (
