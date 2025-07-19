@@ -1,10 +1,14 @@
 import React, { useCallback, useEffect, useState, useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
-import { FaArrowRight, FaPause, FaPlay } from 'react-icons/fa';
-import { TbCircleNumber2Filled, TbPlayerTrackNextFilled, TbPlayerTrackPrevFilled } from 'react-icons/tb';
-import { IoIosCloseCircleOutline } from 'react-icons/io';
-import { FiEdit } from 'react-icons/fi';
+import { FaArrowRight } from 'react-icons/fa';
+import { TbCircleNumber2Filled } from 'react-icons/tb';
+
+import { IoPlay, IoPause, IoPlayBack, IoPlayForward } from "react-icons/io5";
+import { RiEdit2Fill } from "react-icons/ri";
+import { ImCross } from "react-icons/im";
+import { IoPlaySkipBack } from "react-icons/io5";
+
 import EditEntryModal from './EditEntryModal';
 import Title from './Title';
 import PreventScreenSleep from './PreventScreenSleep';
@@ -467,6 +471,16 @@ const DictionaryPlayer = ({
     setShowEditModal(false);
   }, [filteredData, currentRecord, onDeleteEntry]);
 
+  const handleGoToFirst = useCallback(() => {
+    console.log('handleGoToFirst: переход на первый элемент');
+    window.speechSynthesis.cancel();
+    clearDelayTimeout();
+    setIsSpeaking(false);
+    setCurrentRepeat(0);
+    setCurrentRecord(0);
+    updateFirstElement(0);
+  }, [updateFirstElement, clearDelayTimeout]);
+
   useEffect(() => {
     if ('mediaSession' in navigator) {
       navigator.mediaSession.metadata = new window.MediaMetadata({
@@ -481,9 +495,9 @@ const DictionaryPlayer = ({
       navigator.mediaSession.setActionHandler('play', handlePlayPause);
       navigator.mediaSession.setActionHandler('pause', handlePlayPause);
       navigator.mediaSession.setActionHandler('nexttrack', handleNext);
-      navigator.mediaSession.setActionHandler('previoustrack', handlePrev);
+      navigator.mediaSession.setActionHandler('previoustrack', handleGoToFirst);
     }
-  }, [handlePlayPause, handleNext, handlePrev]);
+  }, [handlePlayPause, handleNext, handleGoToFirst]);
 
   return (
     <div className="whiteBox rounded-4 p-3 my-3">
@@ -664,15 +678,33 @@ const DictionaryPlayer = ({
         </div>
       </div>
 
-      <div className="btn-group mt-3">
-        <button className="btn btn-lg rounded-start-pill btn-outline-dark pt-1" onClick={handlePrev}>
-          <TbPlayerTrackPrevFilled />
+      <div className="w-100 pt-4"></div>
+
+
+
+      
+      <div class="btn-group btn-group-sm w-100">
+        <button type="button" class="btn btn-success rounded-start-pill" onClick={handlePlayPause}>
+          {isPlaying ? <IoPause /> : <IoPlay />}
         </button>
-        <button className="btn btn-lg btn-dark pt-1" onClick={handlePlayPause}>
-          {isPlaying ? <FaPause /> : <FaPlay />}
+        {!isPlaying && (
+          <>
+            <button type="button" class="btn btn-info" onClick={handleEditClick}>
+              <RiEdit2Fill />
+            </button>
+            <button type="button" class="btn btn-primary" onClick={handleMarkAsLearned}>
+              <ImCross size={10} />
+            </button>
+          </>
+        )}
+        <button type="button" class="btn btn-dark" onClick={handleGoToFirst}>
+          <IoPlaySkipBack />
         </button>
-        <button className="btn btn-lg rounded-end-circle btn-outline-dark pt-1" onClick={handleNext}>
-          <TbPlayerTrackNextFilled />
+        <button type="button" class="btn btn-danger" onClick={handlePrev}>
+          <IoPlayBack />
+        </button>
+        <button type="button" class="btn btn-warning rounded-end-pill" onClick={handleNext}>
+          <IoPlayForward />
         </button>
       </div>
 
@@ -686,23 +718,17 @@ const DictionaryPlayer = ({
               {filteredData[currentRecord]?.tipPart && (
                 <span className="tip-part"> = {filteredData[currentRecord].tipPart}</span>
               )}
-              {!isPlaying && (
-                <>
-                  <FiEdit
-                    size={28}
-                    className="light-grey ms-4"
-                    style={{ cursor: 'pointer' }}
-                    onClick={handleEditClick}
-                  />
-                  <IoIosCloseCircleOutline
-                    size={32}
-                    className="light-grey ms-3"
-                    style={{ cursor: 'pointer' }}
-                    onClick={handleMarkAsLearned}
-                  />
-                </>
-              )}
             </p>
+          </div>
+        )}
+      </div>
+
+
+
+
+      <div>
+        {filteredData.length > 0 && (
+          <div>
             <div className="d-flex gap-3">
               <div>{t('record')}: <span className="fw-bold">{currentRecord + 1}/{maxIndex + 1}</span></div>
               <div>{t('repeat')}: <span className="fw-bold">{currentRepeat + 1}/{repeatCount}</span></div>
