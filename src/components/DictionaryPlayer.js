@@ -3,13 +3,8 @@ import { Button, Form } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import { FaArrowRight } from 'react-icons/fa';
 import { TbCircleNumber2Filled } from 'react-icons/tb';
-
-import { IoPlay, IoPause, IoPlayBack, IoPlayForward } from "react-icons/io5";
-import { RiEdit2Fill } from "react-icons/ri";
-import { ImCross } from "react-icons/im";
-import { IoPlaySkipBack } from "react-icons/io5";
-
 import EditEntryModal from './EditEntryModal';
+import PlayerControls from './PlayerControls';
 import Title from './Title';
 import PreventScreenSleep from './PreventScreenSleep';
 
@@ -681,49 +676,17 @@ const DictionaryPlayer = ({
       <div className="w-100 pt-4"></div>
 
 
-
-      
-      <div class="btn-group btn-group-sm w-100">
-        <button type="button" class="btn btn-success rounded-start-pill" onClick={handlePlayPause}>
-          {isPlaying ? <IoPause /> : <IoPlay />}
-        </button>
-        {!isPlaying && (
-          <>
-            <button type="button" class="btn btn-info" onClick={handleEditClick}>
-              <RiEdit2Fill />
-            </button>
-            <button type="button" class="btn btn-primary" onClick={handleMarkAsLearned}>
-              <ImCross size={10} />
-            </button>
-          </>
-        )}
-        <button type="button" class="btn btn-dark" onClick={handleGoToFirst}>
-          <IoPlaySkipBack />
-        </button>
-        <button type="button" class="btn btn-danger" onClick={handlePrev}>
-          <IoPlayBack />
-        </button>
-        <button type="button" class="btn btn-warning rounded-end-pill" onClick={handleNext}>
-          <IoPlayForward />
-        </button>
-      </div>
-
-      <div className="mt-3">
-        {filteredData.length > 0 && (
-          <div>
-            <p className="fs-5 fw-bold">
-              <span className="text-success">{`${filteredData[currentRecord]?.foreignPart}`}</span>
-              <span> = </span>
-              <span>{`${filteredData[currentRecord]?.translation}`} </span>
-              {filteredData[currentRecord]?.tipPart && (
-                <span className="tip-part"> = {filteredData[currentRecord].tipPart}</span>
-              )}
-            </p>
-          </div>
-        )}
-      </div>
-
-
+      <PlayerControls
+        isPlaying={isPlaying}
+        onPlayPause={handlePlayPause}
+        onEdit={handleEditClick}
+        onMarkAsLearned={handleMarkAsLearned}
+        onGoToFirst={handleGoToFirst}
+        onPrev={handlePrev}
+        onNext={handleNext}
+        currentRecord={currentRecord}
+        filteredData={filteredData}
+      />
 
 
       <div>
