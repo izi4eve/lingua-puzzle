@@ -5,6 +5,7 @@ import { ImCross } from "react-icons/im";
 import { IoPlaySkipBack } from "react-icons/io5";
 
 import EditEntryModal from './EditEntryModal';
+import PreventScreenSleep from './PreventScreenSleep'; // Добавить этот импорт
 import { usePlayerContext } from './PlayerContext';
 
 const PlayerControls = () => {
@@ -25,6 +26,9 @@ const PlayerControls = () => {
 
     return (
         <>
+            {/* Добавить этот компонент */}
+            <PreventScreenSleep isPlaying={playerState.isPlaying} />
+            
             <div className="btn-group btn-group-sm w-100">
                 <button type="button" className="btn btn-success rounded-start-pill" onClick={handlePlayPause}>
                     {playerState.isPlaying ? <IoPause /> : <IoPlay />}

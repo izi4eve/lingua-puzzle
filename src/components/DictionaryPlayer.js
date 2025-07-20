@@ -382,6 +382,7 @@ const DictionaryPlayer = ({
         availableVoices={availableVoices}
       >
         <PlayerControls />
+        <PreventScreenSleep />
       </PlayerProvider>
 
       <div className="mt-3">
