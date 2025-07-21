@@ -226,7 +226,20 @@ const App = () => {
             onDeleteEntry={handleDeleteEntry}
           />
 
-          <Relax />
+          <Relax
+            data={data}
+            firstElement={firstElement}
+            updateFirstElement={setFirstElement}
+            ttsLanguage={ttsLanguage}
+            selectedLanguage={selectedLanguage}
+            onTTSLanguageChange={handleTTSLanguageChange}
+            onSelectedLanguageChange={handleSelectedLanguageChange}
+            languages={languages}
+            supportedLanguages={supportedLanguages}
+            onMarkAsLearned={handleMarkAsLearned}
+            onEditEntry={handleEditEntry}
+            onDeleteEntry={handleDeleteEntry}
+          />
 
           <LearningComponent
             data={data}

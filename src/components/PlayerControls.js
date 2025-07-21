@@ -54,10 +54,10 @@ const PlayerControls = () => {
                 </button>
             </div>
 
-            <div className="mt-3">
+            <div className="mt-2 lh-sm text-center w-100">
                 {filteredData.length > 0 && currentEntry && (
                     <div>
-                        <p className="fs-5 fw-bold">
+                        <p className="fs-6 fw-bold pt-1">
                             <span className="text-success">{currentEntry.foreignPart}</span>
                             <span> = </span>
                             <span>{currentEntry.translation} </span>

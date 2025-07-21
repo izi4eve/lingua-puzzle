@@ -4,7 +4,20 @@ import { FaUmbrellaBeach } from "react-icons/fa6";
 import BrowserButton from './BrowserButton';
 import Title from './Title';
 
-const Relax = () => {
+const Relax = ({
+    data,
+    firstElement,
+    updateFirstElement,
+    ttsLanguage,
+    selectedLanguage,
+    onTTSLanguageChange,
+    onSelectedLanguageChange,
+    languages,
+    supportedLanguages,
+    onMarkAsLearned,
+    onEditEntry,
+    onDeleteEntry,
+}) => {
     const { t } = useTranslation();
 
     return (
@@ -17,161 +30,485 @@ const Relax = () => {
                     buttonText="Sudoku"
                     variant="primary"
                     mode="button"
+  data={data}
+  firstElement={firstElement}
+  updateFirstElement={updateFirstElement}
+  ttsLanguage={ttsLanguage}
+  selectedLanguage={selectedLanguage}
+  onTTSLanguageChange={onTTSLanguageChange}
+  onSelectedLanguageChange={onSelectedLanguageChange}
+  languages={languages}
+  supportedLanguages={supportedLanguages}
+  onMarkAsLearned={onMarkAsLearned}
+  onEditEntry={onEditEntry}
+  onDeleteEntry={onDeleteEntry}
                 />
                 <BrowserButton
                     link="https://playpager.com/embed/domino-game/"
                     buttonText="Domino"
                     variant="success"
                     mode="button"
+  data={data}
+  firstElement={firstElement}
+  updateFirstElement={updateFirstElement}
+  ttsLanguage={ttsLanguage}
+  selectedLanguage={selectedLanguage}
+  onTTSLanguageChange={onTTSLanguageChange}
+  onSelectedLanguageChange={onSelectedLanguageChange}
+  languages={languages}
+  supportedLanguages={supportedLanguages}
+  onMarkAsLearned={onMarkAsLearned}
+  onEditEntry={onEditEntry}
+  onDeleteEntry={onDeleteEntry}
                 />
                 <BrowserButton
                     link="https://playpager.com/embed/battleship/"
                     buttonText="Battleship"
                     variant="secondary"
                     mode="button"
+  data={data}
+  firstElement={firstElement}
+  updateFirstElement={updateFirstElement}
+  ttsLanguage={ttsLanguage}
+  selectedLanguage={selectedLanguage}
+  onTTSLanguageChange={onTTSLanguageChange}
+  onSelectedLanguageChange={onSelectedLanguageChange}
+  languages={languages}
+  supportedLanguages={supportedLanguages}
+  onMarkAsLearned={onMarkAsLearned}
+  onEditEntry={onEditEntry}
+  onDeleteEntry={onDeleteEntry}
                 />
                 <BrowserButton
                     link="https://playpager.com/embed/mahjong/"
                     buttonText="Mahjong"
                     variant="light"
                     mode="button"
+  data={data}
+  firstElement={firstElement}
+  updateFirstElement={updateFirstElement}
+  ttsLanguage={ttsLanguage}
+  selectedLanguage={selectedLanguage}
+  onTTSLanguageChange={onTTSLanguageChange}
+  onSelectedLanguageChange={onSelectedLanguageChange}
+  languages={languages}
+  supportedLanguages={supportedLanguages}
+  onMarkAsLearned={onMarkAsLearned}
+  onEditEntry={onEditEntry}
+  onDeleteEntry={onDeleteEntry}
                 />
                 <BrowserButton
                     link="https://playpager.com/embed/falling-cubes/"
                     buttonText="Cubes"
                     variant="info"
                     mode="button"
+  data={data}
+  firstElement={firstElement}
+  updateFirstElement={updateFirstElement}
+  ttsLanguage={ttsLanguage}
+  selectedLanguage={selectedLanguage}
+  onTTSLanguageChange={onTTSLanguageChange}
+  onSelectedLanguageChange={onSelectedLanguageChange}
+  languages={languages}
+  supportedLanguages={supportedLanguages}
+  onMarkAsLearned={onMarkAsLearned}
+  onEditEntry={onEditEntry}
+  onDeleteEntry={onDeleteEntry}
                 />
                 <BrowserButton
                     link="https://playpager.com/embed/pool-billiards/"
                     buttonText="Billiard"
                     variant="success"
                     mode="button"
+  data={data}
+  firstElement={firstElement}
+  updateFirstElement={updateFirstElement}
+  ttsLanguage={ttsLanguage}
+  selectedLanguage={selectedLanguage}
+  onTTSLanguageChange={onTTSLanguageChange}
+  onSelectedLanguageChange={onSelectedLanguageChange}
+  languages={languages}
+  supportedLanguages={supportedLanguages}
+  onMarkAsLearned={onMarkAsLearned}
+  onEditEntry={onEditEntry}
+  onDeleteEntry={onDeleteEntry}
                 />
                 <BrowserButton
                     link="https://playpager.com/embed/baseball-titan/"
                     buttonText="Baseball"
                     variant="info"
                     mode="button"
+  data={data}
+  firstElement={firstElement}
+  updateFirstElement={updateFirstElement}
+  ttsLanguage={ttsLanguage}
+  selectedLanguage={selectedLanguage}
+  onTTSLanguageChange={onTTSLanguageChange}
+  onSelectedLanguageChange={onSelectedLanguageChange}
+  languages={languages}
+  supportedLanguages={supportedLanguages}
+  onMarkAsLearned={onMarkAsLearned}
+  onEditEntry={onEditEntry}
+  onDeleteEntry={onDeleteEntry}
                 />
                 <BrowserButton
                     link="https://playpager.com/embed/snake/"
                     buttonText="Snake"
                     variant="primary"
                     mode="button"
+  data={data}
+  firstElement={firstElement}
+  updateFirstElement={updateFirstElement}
+  ttsLanguage={ttsLanguage}
+  selectedLanguage={selectedLanguage}
+  onTTSLanguageChange={onTTSLanguageChange}
+  onSelectedLanguageChange={onSelectedLanguageChange}
+  languages={languages}
+  supportedLanguages={supportedLanguages}
+  onMarkAsLearned={onMarkAsLearned}
+  onEditEntry={onEditEntry}
+  onDeleteEntry={onDeleteEntry}
                 />
                 <BrowserButton
                     link="https://playpager.com/embed/brick-breakout/"
                     buttonText="Breakout"
                     variant="info"
                     mode="button"
+  data={data}
+  firstElement={firstElement}
+  updateFirstElement={updateFirstElement}
+  ttsLanguage={ttsLanguage}
+  selectedLanguage={selectedLanguage}
+  onTTSLanguageChange={onTTSLanguageChange}
+  onSelectedLanguageChange={onSelectedLanguageChange}
+  languages={languages}
+  supportedLanguages={supportedLanguages}
+  onMarkAsLearned={onMarkAsLearned}
+  onEditEntry={onEditEntry}
+  onDeleteEntry={onDeleteEntry}
                 />
                 <BrowserButton
                     link="https://playpager.com/embed/blackjack-game/"
                     buttonText="Blackjack"
                     variant="success"
                     mode="button"
+  data={data}
+  firstElement={firstElement}
+  updateFirstElement={updateFirstElement}
+  ttsLanguage={ttsLanguage}
+  selectedLanguage={selectedLanguage}
+  onTTSLanguageChange={onTTSLanguageChange}
+  onSelectedLanguageChange={onSelectedLanguageChange}
+  languages={languages}
+  supportedLanguages={supportedLanguages}
+  onMarkAsLearned={onMarkAsLearned}
+  onEditEntry={onEditEntry}
+  onDeleteEntry={onDeleteEntry}
                 />
                 <BrowserButton
                     link="https://www.pexels.com"
                     buttonText="Pexel"
                     variant="dark"
                     mode="button"
+  data={data}
+  firstElement={firstElement}
+  updateFirstElement={updateFirstElement}
+  ttsLanguage={ttsLanguage}
+  selectedLanguage={selectedLanguage}
+  onTTSLanguageChange={onTTSLanguageChange}
+  onSelectedLanguageChange={onSelectedLanguageChange}
+  languages={languages}
+  supportedLanguages={supportedLanguages}
+  onMarkAsLearned={onMarkAsLearned}
+  onEditEntry={onEditEntry}
+  onDeleteEntry={onDeleteEntry}
                 />
                 <BrowserButton
                     link="https://petapixel.com"
                     buttonText="Petapixel"
                     variant="primary"
                     mode="button"
+  data={data}
+  firstElement={firstElement}
+  updateFirstElement={updateFirstElement}
+  ttsLanguage={ttsLanguage}
+  selectedLanguage={selectedLanguage}
+  onTTSLanguageChange={onTTSLanguageChange}
+  onSelectedLanguageChange={onSelectedLanguageChange}
+  languages={languages}
+  supportedLanguages={supportedLanguages}
+  onMarkAsLearned={onMarkAsLearned}
+  onEditEntry={onEditEntry}
+  onDeleteEntry={onDeleteEntry}
                 />
                 <BrowserButton
                     link="https://reasonstobecheerful.world"
                     buttonText="Reasonstobecheerful"
                     variant="warning"
                     mode="button"
+  data={data}
+  firstElement={firstElement}
+  updateFirstElement={updateFirstElement}
+  ttsLanguage={ttsLanguage}
+  selectedLanguage={selectedLanguage}
+  onTTSLanguageChange={onTTSLanguageChange}
+  onSelectedLanguageChange={onSelectedLanguageChange}
+  languages={languages}
+  supportedLanguages={supportedLanguages}
+  onMarkAsLearned={onMarkAsLearned}
+  onEditEntry={onEditEntry}
+  onDeleteEntry={onDeleteEntry}
                 />
                 <BrowserButton
                     link="https://contently.com/strategist/"
                     buttonText="Contently"
                     variant="info"
                     mode="button"
+  data={data}
+  firstElement={firstElement}
+  updateFirstElement={updateFirstElement}
+  ttsLanguage={ttsLanguage}
+  selectedLanguage={selectedLanguage}
+  onTTSLanguageChange={onTTSLanguageChange}
+  onSelectedLanguageChange={onSelectedLanguageChange}
+  languages={languages}
+  supportedLanguages={supportedLanguages}
+  onMarkAsLearned={onMarkAsLearned}
+  onEditEntry={onEditEntry}
+  onDeleteEntry={onDeleteEntry}
                 />
                 <BrowserButton
                     link="https://t3n.de"
                     buttonText="T3n.de"
                     variant="danger"
                     mode="button"
+  data={data}
+  firstElement={firstElement}
+  updateFirstElement={updateFirstElement}
+  ttsLanguage={ttsLanguage}
+  selectedLanguage={selectedLanguage}
+  onTTSLanguageChange={onTTSLanguageChange}
+  onSelectedLanguageChange={onSelectedLanguageChange}
+  languages={languages}
+  supportedLanguages={supportedLanguages}
+  onMarkAsLearned={onMarkAsLearned}
+  onEditEntry={onEditEntry}
+  onDeleteEntry={onDeleteEntry}
                 />
                 <BrowserButton
                     link="https://www.online-marketing.de"
                     buttonText="Online-marketing.de"
                     variant="dark"
                     mode="button"
+  data={data}
+  firstElement={firstElement}
+  updateFirstElement={updateFirstElement}
+  ttsLanguage={ttsLanguage}
+  selectedLanguage={selectedLanguage}
+  onTTSLanguageChange={onTTSLanguageChange}
+  onSelectedLanguageChange={onSelectedLanguageChange}
+  languages={languages}
+  supportedLanguages={supportedLanguages}
+  onMarkAsLearned={onMarkAsLearned}
+  onEditEntry={onEditEntry}
+  onDeleteEntry={onDeleteEntry}
                 />
                 <BrowserButton
                     link="https://www.fotomagazin.de"
                     buttonText="Fotomagazin.de"
                     variant="info"
                     mode="button"
+  data={data}
+  firstElement={firstElement}
+  updateFirstElement={updateFirstElement}
+  ttsLanguage={ttsLanguage}
+  selectedLanguage={selectedLanguage}
+  onTTSLanguageChange={onTTSLanguageChange}
+  onSelectedLanguageChange={onSelectedLanguageChange}
+  languages={languages}
+  supportedLanguages={supportedLanguages}
+  onMarkAsLearned={onMarkAsLearned}
+  onEditEntry={onEditEntry}
+  onDeleteEntry={onDeleteEntry}
                 />
                 <BrowserButton
                     link="https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG"
                     buttonText="Music"
                     variant="danger"
                     mode="button"
+  data={data}
+  firstElement={firstElement}
+  updateFirstElement={updateFirstElement}
+  ttsLanguage={ttsLanguage}
+  selectedLanguage={selectedLanguage}
+  onTTSLanguageChange={onTTSLanguageChange}
+  onSelectedLanguageChange={onSelectedLanguageChange}
+  languages={languages}
+  supportedLanguages={supportedLanguages}
+  onMarkAsLearned={onMarkAsLearned}
+  onEditEntry={onEditEntry}
+  onDeleteEntry={onDeleteEntry}
                 />
                 <BrowserButton
                     link="https://www.youtube.com/embed/videoseries?list=PLJ8cMiYb3G5cX8x8hoIcd8NhMin3hqxzf"
                     buttonText="VOX"
                     variant="warning"
                     mode="button"
+  data={data}
+  firstElement={firstElement}
+  updateFirstElement={updateFirstElement}
+  ttsLanguage={ttsLanguage}
+  selectedLanguage={selectedLanguage}
+  onTTSLanguageChange={onTTSLanguageChange}
+  onSelectedLanguageChange={onSelectedLanguageChange}
+  languages={languages}
+  supportedLanguages={supportedLanguages}
+  onMarkAsLearned={onMarkAsLearned}
+  onEditEntry={onEditEntry}
+  onDeleteEntry={onDeleteEntry}
                 />
                 <BrowserButton
                     link="https://www.youtube.com/embed/videoseries?list=PL5113EDF7E1116D32"
                     buttonText="DW"
                     variant="info"
                     mode="button"
+  data={data}
+  firstElement={firstElement}
+  updateFirstElement={updateFirstElement}
+  ttsLanguage={ttsLanguage}
+  selectedLanguage={selectedLanguage}
+  onTTSLanguageChange={onTTSLanguageChange}
+  onSelectedLanguageChange={onSelectedLanguageChange}
+  languages={languages}
+  supportedLanguages={supportedLanguages}
+  onMarkAsLearned={onMarkAsLearned}
+  onEditEntry={onEditEntry}
+  onDeleteEntry={onDeleteEntry}
                 />
                 <BrowserButton
                     link="https://www.radioeins.de/livestream/"
                     buttonText="radioeins"
                     variant="warning"
                     mode="button"
+  data={data}
+  firstElement={firstElement}
+  updateFirstElement={updateFirstElement}
+  ttsLanguage={ttsLanguage}
+  selectedLanguage={selectedLanguage}
+  onTTSLanguageChange={onTTSLanguageChange}
+  onSelectedLanguageChange={onSelectedLanguageChange}
+  languages={languages}
+  supportedLanguages={supportedLanguages}
+  onMarkAsLearned={onMarkAsLearned}
+  onEditEntry={onEditEntry}
+  onDeleteEntry={onDeleteEntry}
                 />
                 <BrowserButton
                     link="https://www.radioeins.de/"
                     buttonText="radioeins Podcasts"
                     variant="warning"
                     mode="button"
+  data={data}
+  firstElement={firstElement}
+  updateFirstElement={updateFirstElement}
+  ttsLanguage={ttsLanguage}
+  selectedLanguage={selectedLanguage}
+  onTTSLanguageChange={onTTSLanguageChange}
+  onSelectedLanguageChange={onSelectedLanguageChange}
+  languages={languages}
+  supportedLanguages={supportedLanguages}
+  onMarkAsLearned={onMarkAsLearned}
+  onEditEntry={onEditEntry}
+  onDeleteEntry={onDeleteEntry}
                 />
                 <BrowserButton
                     link="https://www.ardmediathek.de/"
                     buttonText="ARD Mediathek"
                     variant="primary"
                     mode="button"
+                    data={data}
+  firstElement={firstElement}
+  updateFirstElement={updateFirstElement}
+  ttsLanguage={ttsLanguage}
+  selectedLanguage={selectedLanguage}
+  onTTSLanguageChange={onTTSLanguageChange}
+  onSelectedLanguageChange={onSelectedLanguageChange}
+  languages={languages}
+  supportedLanguages={supportedLanguages}
+  onMarkAsLearned={onMarkAsLearned}
+  onEditEntry={onEditEntry}
+  onDeleteEntry={onDeleteEntry}
                 />
                 <BrowserButton
                     link="https://mitvergnuegen.com/"
                     buttonText="Mit Vergnügen"
                     variant="warning"
                     mode="button"
+  data={data}
+  firstElement={firstElement}
+  updateFirstElement={updateFirstElement}
+  ttsLanguage={ttsLanguage}
+  selectedLanguage={selectedLanguage}
+  onTTSLanguageChange={onTTSLanguageChange}
+  onSelectedLanguageChange={onSelectedLanguageChange}
+  languages={languages}
+  supportedLanguages={supportedLanguages}
+  onMarkAsLearned={onMarkAsLearned}
+  onEditEntry={onEditEntry}
+  onDeleteEntry={onDeleteEntry}
                 />
                 <BrowserButton
                     link="https://slowgerman.com/"
                     buttonText="Slow German"
                     variant="danger"
                     mode="button"
+  data={data}
+  firstElement={firstElement}
+  updateFirstElement={updateFirstElement}
+  ttsLanguage={ttsLanguage}
+  selectedLanguage={selectedLanguage}
+  onTTSLanguageChange={onTTSLanguageChange}
+  onSelectedLanguageChange={onSelectedLanguageChange}
+  languages={languages}
+  supportedLanguages={supportedLanguages}
+  onMarkAsLearned={onMarkAsLearned}
+  onEditEntry={onEditEntry}
+  onDeleteEntry={onDeleteEntry}
                 />
                 <BrowserButton
                     link="https://www.youtube.com/embed/videoseries?list=PLzGUl7yQTTKq2i_zvo-6MBbroqTw5gFgv"
                     buttonText="14 Minuten"
                     variant="warning"
                     mode="button"
+  data={data}
+  firstElement={firstElement}
+  updateFirstElement={updateFirstElement}
+  ttsLanguage={ttsLanguage}
+  selectedLanguage={selectedLanguage}
+  onTTSLanguageChange={onTTSLanguageChange}
+  onSelectedLanguageChange={onSelectedLanguageChange}
+  languages={languages}
+  supportedLanguages={supportedLanguages}
+  onMarkAsLearned={onMarkAsLearned}
+  onEditEntry={onEditEntry}
+  onDeleteEntry={onDeleteEntry}
                 />
                 <BrowserButton
                     buttonText="YouTube link"
                     variant="success"
                     mode="input"
+  data={data}
+  firstElement={firstElement}
+  updateFirstElement={updateFirstElement}
+  ttsLanguage={ttsLanguage}
+  selectedLanguage={selectedLanguage}
+  onTTSLanguageChange={onTTSLanguageChange}
+  onSelectedLanguageChange={onSelectedLanguageChange}
+  languages={languages}
+  supportedLanguages={supportedLanguages}
+  onMarkAsLearned={onMarkAsLearned}
+  onEditEntry={onEditEntry}
+  onDeleteEntry={onDeleteEntry}
                 />
             </div>
         </div>
