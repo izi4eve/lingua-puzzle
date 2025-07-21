@@ -45,7 +45,18 @@ const App = () => {
   ], []);
   const [language, setLanguage] = useState(localStorage.getItem('selectedLanguage') || 'en');
   const [ttsLanguage, setTTSLanguage] = useState(localStorage.getItem('ttsLanguage') || 'en-US');
-  const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('selectedLanguage') || 'en'); // Добавляем selectedLanguage
+  const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('selectedLanguage') || 'en');
+  // Состояния для настроек плеера
+  const [playerSettings, setPlayerSettings] = useState({
+    repeatCount: 3,
+    readingSpeed: 0.5,
+    selectedVoice: null,
+    selectedVoiceYourLang: null,
+    tipLanguage: 'en',
+    selectedVoiceTip: null,
+    delayBetweenRecords: 2,
+    availableVoices: [],
+  });
 
   const languages = [
     { name: 'English', code: 'en-US' },
@@ -141,6 +152,10 @@ const App = () => {
     });
   };
 
+  const handlePlayerSettingsChange = (settings) => {
+    setPlayerSettings(settings);
+  };
+
   useEffect(() => {
     localStorage.setItem('data', JSON.stringify(data));
   }, [data]);
@@ -224,6 +239,7 @@ const App = () => {
             onMarkAsLearned={handleMarkAsLearned}
             onEditEntry={handleEditEntry}
             onDeleteEntry={handleDeleteEntry}
+            onPlayerSettingsChange={handlePlayerSettingsChange}
           />
 
           <Relax
@@ -239,6 +255,15 @@ const App = () => {
             onMarkAsLearned={handleMarkAsLearned}
             onEditEntry={handleEditEntry}
             onDeleteEntry={handleDeleteEntry}
+
+            repeatCount={playerSettings.repeatCount}
+            readingSpeed={playerSettings.readingSpeed}
+            selectedVoice={playerSettings.selectedVoice}
+            selectedVoiceYourLang={playerSettings.selectedVoiceYourLang}
+            tipLanguage={playerSettings.tipLanguage}
+            selectedVoiceTip={playerSettings.selectedVoiceTip}
+            delayBetweenRecords={playerSettings.delayBetweenRecords}
+            availableVoices={playerSettings.availableVoices}
           />
 
           <LearningComponent

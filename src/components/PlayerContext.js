@@ -1,13 +1,23 @@
 import React, { createContext, useContext, useReducer, useRef, useCallback, useEffect } from 'react';
 
 // Начальное состояние плеера
-const initialState = {
-    currentRecord: 0,
-    currentRepeat: 0,
-    isPlaying: false,
-    isSpeaking: false,
-    isInDelay: false,
-    showEditModal: false,
+const getInitialState = () => {
+    const saved = localStorage.getItem('playerGlobalState');
+    if (saved) {
+        const parsedState = JSON.parse(saved);
+        return {
+            ...parsedState,
+            showEditModal: false, // Всегда false при инициализации
+        };
+    }
+    return {
+        currentRecord: 0,
+        currentRepeat: 0,
+        isPlaying: false,
+        isSpeaking: false,
+        isInDelay: false,
+        showEditModal: false,
+    };
 };
 
 // Редьюсер для управления состоянием (тот же самый)
@@ -38,8 +48,8 @@ const playerReducer = (state, action) => {
 const PlayerContext = createContext();
 
 // Провайдер компонента
-export const PlayerProvider = ({ 
-    children, 
+export const PlayerProvider = ({
+    children,
     data,
     firstElement,
     updateFirstElement,
@@ -60,9 +70,37 @@ export const PlayerProvider = ({
     availableVoices = [],
 }) => {
     const [playerState, dispatch] = useReducer(playerReducer, {
-        ...initialState,
+        ...getInitialState(),
         currentRecord: firstElement
     });
+
+    // Синхронизация состояния с localStorage
+useEffect(() => {
+    localStorage.setItem('playerGlobalState', JSON.stringify({
+        currentRecord: playerState.currentRecord,
+        currentRepeat: playerState.currentRepeat,
+        isPlaying: playerState.isPlaying,
+        isSpeaking: playerState.isSpeaking,
+        isInDelay: playerState.isInDelay,
+    }));
+}, [playerState.currentRecord, playerState.currentRepeat, playerState.isPlaying, playerState.isSpeaking, playerState.isInDelay]);
+
+// Слушатель изменений localStorage для синхронизации между экземплярами
+useEffect(() => {
+    const handleStorageChange = (e) => {
+        if (e.key === 'playerGlobalState' && e.newValue) {
+            const newState = JSON.parse(e.newValue);
+            dispatch({ type: 'SET_CURRENT_RECORD', payload: newState.currentRecord });
+            dispatch({ type: 'SET_CURRENT_REPEAT', payload: newState.currentRepeat });
+            dispatch({ type: 'SET_PLAYING', payload: newState.isPlaying });
+            dispatch({ type: 'SET_SPEAKING', payload: newState.isSpeaking });
+            dispatch({ type: 'SET_DELAY', payload: newState.isInDelay });
+        }
+    };
+
+    window.addEventListener('storage', handleStorageChange);
+    return () => window.removeEventListener('storage', handleStorageChange);
+}, []);
 
     const delayTimeoutRef = useRef(null);
     const cancelTokenRef = useRef({ cancelled: false });
@@ -488,7 +526,7 @@ export const PlayerProvider = ({
         dispatch,
         filteredData,
         currentEntry: filteredData[playerState.currentRecord],
-        
+
         // Методы
         handlePlayPause,
         handleNext,

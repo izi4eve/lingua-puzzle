@@ -36,6 +36,7 @@ const DictionaryPlayer = ({
   onMarkAsLearned,
   onEditEntry,
   onDeleteEntry,
+  onPlayerSettingsChange,
 }) => {
   const { t } = useTranslation();
 
@@ -126,7 +127,7 @@ const DictionaryPlayer = ({
 
   // Сохранение настроек
   useEffect(() => {
-    localStorage.setItem('playerSettings', JSON.stringify({
+    const settings = {
       selectedLanguage,
       readingSpeed,
       repeatCount,
@@ -136,8 +137,24 @@ const DictionaryPlayer = ({
       delayBetweenRecords,
       tipLanguage,
       selectedVoiceTip,
-    }));
-  }, [selectedLanguage, readingSpeed, repeatCount, recordsToPlay, selectedVoice, selectedVoiceYourLang, delayBetweenRecords, tipLanguage, selectedVoiceTip]);
+    };
+
+    localStorage.setItem('playerSettings', JSON.stringify(settings));
+
+    // Передаем настройки в родительский компонент
+    if (onPlayerSettingsChange) {
+      onPlayerSettingsChange({
+        repeatCount,
+        readingSpeed,
+        selectedVoice,
+        selectedVoiceYourLang,
+        tipLanguage,
+        selectedVoiceTip,
+        delayBetweenRecords,
+        availableVoices,
+      });
+    }
+  }, [selectedLanguage, readingSpeed, repeatCount, recordsToPlay, selectedVoice, selectedVoiceYourLang, delayBetweenRecords, tipLanguage, selectedVoiceTip, availableVoices, onPlayerSettingsChange]);
 
   const handleInputChange = (e) => setInputValue(e.target.value);
 

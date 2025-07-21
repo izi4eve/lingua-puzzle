@@ -49,18 +49,6 @@ const getEmbedUrl = (url) => {
   }
 };
 
-const voicePriority = {
-  'de-DE': ['Petra (Premium)', 'Anna', 'Eddy (Немецкий (Германия))', 'Flo (Немецкий (Германия))'],
-  'en-US': ['Samantha', 'Ava (Premium)', 'Joelle (Enhanced)', 'Alex'],
-  'fr-FR': ['Amélie', 'Thomas', 'Jacques'],
-  'it-IT': ['Alice', 'Eddy (Итальянский (Италия))'],
-  'es-ES': ['Mónica', 'Eddy (Испанский (Испания))'],
-  'pt-PT': ['Joana', 'Luciana'],
-  'pl-PL': ['Zosia'],
-  'cs-CZ': ['Zuzana'],
-  'ru-RU': ['Milena (Enhanced)', 'Milena'],
-};
-
 const BrowserButton = ({
   link,
   buttonText,
@@ -78,65 +66,21 @@ const BrowserButton = ({
   onMarkAsLearned,
   onEditEntry,
   onDeleteEntry,
+  repeatCount = 3,
+  readingSpeed = 0.5,
+  selectedVoice = null,
+  selectedVoiceYourLang = null,
+  tipLanguage = selectedLanguage,
+  selectedVoiceTip = null,
+  delayBetweenRecords = 2,
+  availableVoices = [],
 }) => {
   const { t } = useTranslation();
-
-  // Добавить все состояния
-  const [repeatCount, setRepeatCount] = useState(3);
-  const [readingSpeed, setReadingSpeed] = useState(0.5);
-  const [availableVoices, setAvailableVoices] = useState([]);
-  const [selectedVoice, setSelectedVoice] = useState(null);
-  const [selectedVoiceYourLang, setSelectedVoiceYourLang] = useState(null);
-  const [tipLanguage, setTipLanguage] = useState(selectedLanguage);
-  const [selectedVoiceTip, setSelectedVoiceTip] = useState(null);
-  const [delayBetweenRecords, setDelayBetweenRecords] = useState(2);
-  const [recordsToPlay, setRecordsToPlay] = useState('all');
 
   const [showModal, setShowModal] = useState(false);
   const [iframeError, setIframeError] = useState(false);
   const [inputUrl, setInputUrl] = useState('');
   const [embedUrl, setEmbedUrl] = useState(null);
-
-  // Загрузка доступных голосов
-  useEffect(() => {
-    const loadVoices = () => {
-      const voices = window.speechSynthesis.getVoices();
-      setAvailableVoices(voices);
-
-      // Для изучаемого языка
-      const ttsLangCode = languages.find(lang => lang.code.split('-')[0] === ttsLanguage)?.code || 'en-US';
-      const priorityVoices = voicePriority[ttsLangCode] || [];
-      const bestVoice = voices.find(v => priorityVoices.includes(v.name) && v.lang.startsWith(ttsLanguage)) ||
-        voices.find(v => v.lang.startsWith(ttsLanguage) && !v.default) ||
-        voices.find(v => v.lang.startsWith(ttsLanguage)) ||
-        voices.find(v => v.default);
-      setSelectedVoice(bestVoice ? bestVoice.name : null);
-
-      // Для вашего языка
-      const yourLangCode = languages.find(lang => lang.code.split('-')[0] === selectedLanguage)?.code || 'en-US';
-      const priorityVoicesYourLang = voicePriority[yourLangCode] || [];
-      const bestVoiceYourLang = voices.find(v => priorityVoicesYourLang.includes(v.name) && v.lang.startsWith(selectedLanguage)) ||
-        voices.find(v => v.lang.startsWith(selectedLanguage) && !v.default) ||
-        voices.find(v => v.lang.startsWith(selectedLanguage)) ||
-        voices.find(v => v.default);
-      setSelectedVoiceYourLang(bestVoiceYourLang ? bestVoiceYourLang.name : null);
-
-      // Для языка подсказки
-      const tipLangCode = languages.find(lang => lang.code.split('-')[0] === tipLanguage)?.code || 'en-US';
-      const priorityVoicesTip = voicePriority[tipLangCode] || [];
-      const bestVoiceTip = voices.find(v => priorityVoicesTip.includes(v.name) && v.lang.startsWith(tipLanguage)) ||
-        voices.find(v => v.lang.startsWith(tipLanguage) && !v.default) ||
-        voices.find(v => v.lang.startsWith(tipLanguage)) ||
-        voices.find(v => v.default);
-      setSelectedVoiceTip(bestVoiceTip ? bestVoiceTip.name : null);
-    };
-
-    window.speechSynthesis.onvoiceschanged = loadVoices;
-    loadVoices();
-    return () => {
-      window.speechSynthesis.onvoiceschanged = null;
-    };
-  }, [ttsLanguage, selectedLanguage, tipLanguage, languages]); // Убрал voicePriority из зависимостей
 
   // Проверка поддержки Web Speech API
   useEffect(() => {
@@ -144,37 +88,6 @@ const BrowserButton = ({
       alert(t('speech-synthesis-not-supported'));
     }
   }, [t]);
-
-  // Загрузка сохранённых настроек
-  useEffect(() => {
-    const savedSettings = localStorage.getItem('browserButtonSettings'); // Изменил ключ
-    if (savedSettings) {
-      const { readingSpeed: savedReadingSpeed, repeatCount: savedRepeatCount, recordsToPlay: savedRecordsToPlay, selectedVoice: savedSelectedVoice, selectedVoiceYourLang: savedSelectedVoiceYourLang, delayBetweenRecords: savedDelayBetweenRecords, tipLanguage: savedTipLanguage, selectedVoiceTip: savedSelectedVoiceTip } = JSON.parse(savedSettings);
-      setReadingSpeed(savedReadingSpeed ?? 0.75);
-      setRepeatCount(savedRepeatCount ?? 3);
-      setRecordsToPlay(savedRecordsToPlay ?? 'all');
-      setSelectedVoice(savedSelectedVoice ?? null);
-      setSelectedVoiceYourLang(savedSelectedVoiceYourLang ?? null);
-      setDelayBetweenRecords(savedDelayBetweenRecords ?? 2);
-      setTipLanguage(savedTipLanguage ?? selectedLanguage);
-      setSelectedVoiceTip(savedSelectedVoiceTip ?? null);
-    }
-  }, [selectedLanguage]);
-
-  // Сохранение настроек
-  useEffect(() => {
-    localStorage.setItem('browserButtonSettings', JSON.stringify({ // Изменил ключ
-      selectedLanguage,
-      readingSpeed,
-      repeatCount,
-      recordsToPlay,
-      selectedVoice,
-      selectedVoiceYourLang,
-      delayBetweenRecords,
-      tipLanguage,
-      selectedVoiceTip,
-    }));
-  }, [selectedLanguage, readingSpeed, repeatCount, recordsToPlay, selectedVoice, selectedVoiceYourLang, delayBetweenRecords, tipLanguage, selectedVoiceTip]);
 
   const handleClose = () => {
     setShowModal(false);
