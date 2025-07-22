@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { IoPlay, IoPause, IoPlayBack, IoPlayForward } from "react-icons/io5";
 import { RiEdit2Fill } from "react-icons/ri";
 import { ImCross } from "react-icons/im";
 import { IoPlaySkipBack } from "react-icons/io5";
 
 import EditEntryModal from './EditEntryModal';
-import PreventScreenSleep from './PreventScreenSleep'; // Добавить этот импорт
+import PreventScreenSleep from './PreventScreenSleep';
 import { usePlayerContext } from './PlayerContext';
 
 const PlayerControls = () => {
@@ -24,9 +24,57 @@ const PlayerControls = () => {
         handleEditDelete,
     } = usePlayerContext();
 
+    const isFirstRender = useRef(true);
+
+    // Автоматическая постановка на паузу при монтировании компонента
+    useEffect(() => {
+        if (isFirstRender.current && playerState.isPlaying) {
+            // Останавливаем воспроизведение при создании нового экземпляра
+            dispatch({ type: 'SET_PLAYING', payload: false });
+            // Также можно вызвать полную остановку
+            window.speechSynthesis.cancel();
+        }
+        isFirstRender.current = false;
+    }, [playerState.isPlaying, dispatch]);
+
+    // Обёртки для кнопок с автоматической паузой
+    const handleEditClickWithPause = () => {
+        if (playerState.isPlaying) {
+            handlePlayPause(); // Ставим на паузу
+        }
+        handleEditClick();
+    };
+
+    const handleMarkAsLearnedWithPause = () => {
+        if (playerState.isPlaying) {
+            handlePlayPause(); // Ставим на паузу
+        }
+        handleMarkAsLearned();
+    };
+
+    const handleGoToFirstWithPause = () => {
+        if (playerState.isPlaying) {
+            handlePlayPause(); // Ставим на паузу
+        }
+        handleGoToFirst();
+    };
+
+    const handlePrevWithPause = () => {
+        if (playerState.isPlaying) {
+            handlePlayPause(); // Ставим на паузу
+        }
+        handlePrev();
+    };
+
+    const handleNextWithPause = () => {
+        if (playerState.isPlaying) {
+            handlePlayPause(); // Ставим на паузу
+        }
+        handleNext();
+    };
+
     return (
         <>
-            {/* Добавить этот компонент */}
             <PreventScreenSleep isPlaying={playerState.isPlaying} />
             
             <div className="btn-group btn-group-sm w-100">
@@ -35,21 +83,21 @@ const PlayerControls = () => {
                 </button>
                 {!playerState.isPlaying && (
                     <>
-                        <button type="button" className="btn btn-info" onClick={handleEditClick}>
+                        <button type="button" className="btn btn-info" onClick={handleEditClickWithPause}>
                             <RiEdit2Fill />
                         </button>
-                        <button type="button" className="btn btn-primary" onClick={handleMarkAsLearned}>
+                        <button type="button" className="btn btn-primary" onClick={handleMarkAsLearnedWithPause}>
                             <ImCross size={10} />
                         </button>
-                        <button type="button" className="btn btn-dark" onClick={handleGoToFirst}>
+                        <button type="button" className="btn btn-dark" onClick={handleGoToFirstWithPause}>
                             <IoPlaySkipBack />
                         </button>
                     </>
                 )}
-                <button type="button" className="btn btn-danger" onClick={handlePrev}>
+                <button type="button" className="btn btn-danger" onClick={handlePrevWithPause}>
                     <IoPlayBack />
                 </button>
-                <button type="button" className="btn btn-warning rounded-end-pill" onClick={handleNext}>
+                <button type="button" className="btn btn-warning rounded-end-pill" onClick={handleNextWithPause}>
                     <IoPlayForward />
                 </button>
             </div>
