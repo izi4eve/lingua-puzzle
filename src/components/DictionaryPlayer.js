@@ -51,9 +51,23 @@ const DictionaryPlayer = ({
   const [tipLanguage, setTipLanguage] = useState(selectedLanguage);
   const [selectedVoiceTip, setSelectedVoiceTip] = useState(null);
   const [delayBetweenRecords, setDelayBetweenRecords] = useState(2);
+  
+  // Флаги для отслеживания того, были ли голоса выбраны пользователем вручную
+  const [voiceManuallySelected, setVoiceManuallySelected] = useState(false);
+  const [voiceYourLangManuallySelected, setVoiceYourLangManuallySelected] = useState(false);
+  const [voiceTipManuallySelected, setVoiceTipManuallySelected] = useState(false);
 
   const filteredData = data.filter((item) => !item.isLearned);
   const maxIndex = Math.max(0, filteredData.length - 1);
+
+  // Функция для поиска лучшего голоса
+  const findBestVoice = (langCode, voices) => {
+    const priorityVoices = voicePriority[langCode] || [];
+    return voices.find(v => priorityVoices.includes(v.name) && v.lang.startsWith(langCode.split('-')[0])) ||
+           voices.find(v => v.lang.startsWith(langCode.split('-')[0]) && !v.default) ||
+           voices.find(v => v.lang.startsWith(langCode.split('-')[0])) ||
+           voices.find(v => v.default);
+  };
 
   // Загрузка доступных голосов
   useEffect(() => {
@@ -61,32 +75,28 @@ const DictionaryPlayer = ({
       const voices = window.speechSynthesis.getVoices();
       setAvailableVoices(voices);
 
+      // Автоматический выбор голосов только если они не были выбраны пользователем вручную
+      
       // Для изучаемого языка
-      const ttsLangCode = languages.find(lang => lang.code.split('-')[0] === ttsLanguage)?.code || 'en-US';
-      const priorityVoices = voicePriority[ttsLangCode] || [];
-      const bestVoice = voices.find(v => priorityVoices.includes(v.name) && v.lang.startsWith(ttsLanguage)) ||
-        voices.find(v => v.lang.startsWith(ttsLanguage) && !v.default) ||
-        voices.find(v => v.lang.startsWith(ttsLanguage)) ||
-        voices.find(v => v.default);
-      setSelectedVoice(bestVoice ? bestVoice.name : null);
+      if (!voiceManuallySelected) {
+        const ttsLangCode = languages.find(lang => lang.code.split('-')[0] === ttsLanguage)?.code || 'en-US';
+        const bestVoice = findBestVoice(ttsLangCode, voices);
+        setSelectedVoice(bestVoice ? bestVoice.name : null);
+      }
 
       // Для вашего языка
-      const yourLangCode = languages.find(lang => lang.code.split('-')[0] === selectedLanguage)?.code || 'en-US';
-      const priorityVoicesYourLang = voicePriority[yourLangCode] || [];
-      const bestVoiceYourLang = voices.find(v => priorityVoicesYourLang.includes(v.name) && v.lang.startsWith(selectedLanguage)) ||
-        voices.find(v => v.lang.startsWith(selectedLanguage) && !v.default) ||
-        voices.find(v => v.lang.startsWith(selectedLanguage)) ||
-        voices.find(v => v.default);
-      setSelectedVoiceYourLang(bestVoiceYourLang ? bestVoiceYourLang.name : null);
+      if (!voiceYourLangManuallySelected) {
+        const yourLangCode = languages.find(lang => lang.code.split('-')[0] === selectedLanguage)?.code || 'en-US';
+        const bestVoiceYourLang = findBestVoice(yourLangCode, voices);
+        setSelectedVoiceYourLang(bestVoiceYourLang ? bestVoiceYourLang.name : null);
+      }
 
       // Для языка подсказки
-      const tipLangCode = languages.find(lang => lang.code.split('-')[0] === tipLanguage)?.code || 'en-US';
-      const priorityVoicesTip = voicePriority[tipLangCode] || [];
-      const bestVoiceTip = voices.find(v => priorityVoicesTip.includes(v.name) && v.lang.startsWith(tipLanguage)) ||
-        voices.find(v => v.lang.startsWith(tipLanguage) && !v.default) ||
-        voices.find(v => v.lang.startsWith(tipLanguage)) ||
-        voices.find(v => v.default);
-      setSelectedVoiceTip(bestVoiceTip ? bestVoiceTip.name : null);
+      if (!voiceTipManuallySelected) {
+        const tipLangCode = languages.find(lang => lang.code.split('-')[0] === tipLanguage)?.code || 'en-US';
+        const bestVoiceTip = findBestVoice(tipLangCode, voices);
+        setSelectedVoiceTip(bestVoiceTip ? bestVoiceTip.name : null);
+      }
     };
 
     window.speechSynthesis.onvoiceschanged = loadVoices;
@@ -94,7 +104,7 @@ const DictionaryPlayer = ({
     return () => {
       window.speechSynthesis.onvoiceschanged = null;
     };
-  }, [ttsLanguage, selectedLanguage, tipLanguage, languages]);
+  }, [ttsLanguage, selectedLanguage, tipLanguage, languages, voiceManuallySelected, voiceYourLangManuallySelected, voiceTipManuallySelected]);
 
   // Обновление currentRecord при изменении firstElement
   useEffect(() => {
@@ -113,15 +123,26 @@ const DictionaryPlayer = ({
   useEffect(() => {
     const savedSettings = localStorage.getItem('playerSettings');
     if (savedSettings) {
-      const { readingSpeed, repeatCount, recordsToPlay, selectedVoice, selectedVoiceYourLang, delayBetweenRecords, tipLanguage, selectedVoiceTip } = JSON.parse(savedSettings);
-      setReadingSpeed(readingSpeed ?? 0.75);
-      setRepeatCount(repeatCount ?? 3);
-      setRecordsToPlay(recordsToPlay ?? 'all');
-      setSelectedVoice(selectedVoice ?? null);
-      setSelectedVoiceYourLang(selectedVoiceYourLang ?? null);
-      setDelayBetweenRecords(delayBetweenRecords ?? 2);
-      setTipLanguage(tipLanguage ?? selectedLanguage);
-      setSelectedVoiceTip(selectedVoiceTip ?? null);
+      const settings = JSON.parse(savedSettings);
+      setReadingSpeed(settings.readingSpeed ?? 0.75);
+      setRepeatCount(settings.repeatCount ?? 3);
+      setRecordsToPlay(settings.recordsToPlay ?? 'all');
+      setDelayBetweenRecords(settings.delayBetweenRecords ?? 2);
+      setTipLanguage(settings.tipLanguage ?? selectedLanguage);
+      
+      // Если голоса были сохранены, значит они были выбраны пользователем
+      if (settings.selectedVoice !== undefined) {
+        setSelectedVoice(settings.selectedVoice);
+        setVoiceManuallySelected(true);
+      }
+      if (settings.selectedVoiceYourLang !== undefined) {
+        setSelectedVoiceYourLang(settings.selectedVoiceYourLang);
+        setVoiceYourLangManuallySelected(true);
+      }
+      if (settings.selectedVoiceTip !== undefined) {
+        setSelectedVoiceTip(settings.selectedVoiceTip);
+        setVoiceTipManuallySelected(true);
+      }
     }
   }, [selectedLanguage]);
 
@@ -183,18 +204,36 @@ const DictionaryPlayer = ({
 
   const handleVoiceChange = (e) => {
     setSelectedVoice(e.target.value);
+    setVoiceManuallySelected(true); // Отмечаем, что голос был выбран вручную
   };
 
   const handleVoiceYourLangChange = (e) => {
     setSelectedVoiceYourLang(e.target.value);
+    setVoiceYourLangManuallySelected(true); // Отмечаем, что голос был выбран вручную
   };
 
   const handleTipLanguageChange = (value) => {
     setTipLanguage(value);
+    // При смене языка подсказки сбрасываем флаг ручного выбора голоса для этого языка
+    setVoiceTipManuallySelected(false);
   };
 
   const handleVoiceTipChange = (e) => {
     setSelectedVoiceTip(e.target.value);
+    setVoiceTipManuallySelected(true); // Отмечаем, что голос был выбран вручную
+  };
+
+  // Обработчики изменения основных языков
+  const handleTTSLanguageChangeWrapper = (value) => {
+    onTTSLanguageChange(value);
+    // При смене изучаемого языка сбрасываем флаг ручного выбора голоса
+    setVoiceManuallySelected(false);
+  };
+
+  const handleSelectedLanguageChangeWrapper = (value) => {
+    onSelectedLanguageChange(value);
+    // При смене вашего языка сбрасываем флаг ручного выбора голоса
+    setVoiceYourLangManuallySelected(false);
   };
 
   return (
@@ -207,7 +246,7 @@ const DictionaryPlayer = ({
           <label>{t('your-language')}</label>
           <Form.Select
             value={selectedLanguage}
-            onChange={(e) => onSelectedLanguageChange(e.target.value)}
+            onChange={(e) => handleSelectedLanguageChangeWrapper(e.target.value)}
             className="ms-2 w-auto"
           >
             {supportedLanguages.map((lang) => (
@@ -240,7 +279,7 @@ const DictionaryPlayer = ({
           <label>{t('learning-language')}</label>
           <Form.Select
             value={ttsLanguage.split('-')[0]}
-            onChange={(e) => onTTSLanguageChange(e.target.value)}
+            onChange={(e) => handleTTSLanguageChangeWrapper(e.target.value)}
             className="ms-2 w-auto"
           >
             {supportedLanguages.map((lang) => (
