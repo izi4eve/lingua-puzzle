@@ -299,7 +299,6 @@ fliegen — fliegt — ist geflogen — flog = летать
 gesund = здоровый
 lachen — lacht — gelacht — lachte = смеяться
 meinen — meint — gemeint — meinte = считать; думать
-müssen — muss — gemusst — musste = должен; нужно
 sitzen — sitzt — gesessen — saß = сидеть
 studieren — studiert — studiert — studierte = учиться (в вузе)
 trinken — trinkt — getrunken — trank = пить

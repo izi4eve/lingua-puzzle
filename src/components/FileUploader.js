@@ -287,16 +287,16 @@ const FileUploader = ({
                 />
             </div>
 
-            <div className="h6 pt-2 mt-1 d-flex align-items-center">
+            {/* <div className="h6 pt-2 mt-1 d-flex align-items-center">
                 <label className="form-label mt-1 me-2">{t('tts-lang')}</label>
                 <Form.Select value={ttsLanguage} onChange={(e) => onTTSLanguageChange(e.target.value)} className="w-auto">
                     {languages.map((lang) => (
                         <option key={lang.code} value={lang.code}>{lang.name}</option>
                     ))}
                 </Form.Select>
-            </div>
+            </div> */}
 
-            <div className="pt-2 pb-1">
+            <div className="pt-4 pb-1">
                 {data.length > 0 && (
                     <div className="d-flex flex-row flex-wrap gap-2">
                         <Button variant="btn btn-sm btn-dark" onClick={openDictionaryModal}>
