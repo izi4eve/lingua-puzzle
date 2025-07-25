@@ -14,9 +14,10 @@ const Dictionary = ({ show, onHide, data, onDataUpdate, setFirstElement, firstEl
     if (!filter || filter.length < 2) return data;
     const lowerFilter = filter.toLowerCase();
     return data.filter(
-      ({ foreignPart, translation }) =>
+      ({ foreignPart, translation, tipPart }) =>
         (foreignPart?.toLowerCase() || '').includes(lowerFilter) ||
-        (translation?.toLowerCase() || '').includes(lowerFilter)
+        (translation?.toLowerCase() || '').includes(lowerFilter) ||
+        (tipPart?.toLowerCase() || '').includes(lowerFilter)
     );
   }, [data, filter]);
 
@@ -117,7 +118,7 @@ const Dictionary = ({ show, onHide, data, onDataUpdate, setFirstElement, firstEl
           className="w-100 text-break"
           onClick={() => handleWordClick(originalIndex)}
         >
-          {`${entry.foreignPart} = ${entry.translation}`}
+          {`${entry.foreignPart} = ${entry.translation} = ${entry.tipPart}`}
         </div>
       </div>
     );
