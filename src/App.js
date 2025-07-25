@@ -17,6 +17,7 @@ const App = () => {
   const appUrl = "https://izi4eve.github.io/lingua-puzzle/";
   const telegramLink = 'https://t.me/+4VltkaBLy4AzZmFi';
 
+  // Данные словаря
   const [data, setData] = useState(() => {
     const savedData = localStorage.getItem('data');
     return savedData ? JSON.parse(savedData) : [];
@@ -27,7 +28,8 @@ const App = () => {
     return savedFirstElement ? JSON.parse(savedFirstElement) : 0;
   });
 
-  const supportedLanguages = useMemo(() => [
+  // ЯЗЫКИ ИНТЕРФЕЙСА
+  const supportedUILanguages = useMemo(() => [
     { code: 'en', name: 'English' },
     { code: 'de', name: 'Deutsch' },
     { code: 'fr', name: 'Français' },
@@ -43,22 +45,27 @@ const App = () => {
     { code: 'ar', name: 'العربية' },
     { code: 'fa', name: 'فارسی' },
   ], []);
-  const [language, setLanguage] = useState(localStorage.getItem('selectedLanguage') || 'en');
-  const [ttsLanguage, setTTSLanguage] = useState(localStorage.getItem('ttsLanguage') || 'en-US');
-  const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('selectedLanguage') || 'en');
-  // Состояния для настроек плеера
-  const [playerSettings, setPlayerSettings] = useState({
-    repeatCount: 3,
-    readingSpeed: 0.5,
-    selectedVoice: null,
-    selectedVoiceYourLang: null,
-    tipLanguage: 'en',
-    selectedVoiceTip: null,
-    delayBetweenRecords: 2,
-    availableVoices: [],
-  });
 
-  const languages = [
+  // ЯЗЫКИ КОНТЕНТА
+  const supportedContentLanguages = useMemo(() => [
+    { code: 'en', name: 'English' },
+    { code: 'de', name: 'Deutsch' },
+    { code: 'fr', name: 'Français' },
+    { code: 'it', name: 'Italiano' },
+    { code: 'es', name: 'Español' },
+    { code: 'pt', name: 'Português' },
+    { code: 'pl', name: 'Polski' },
+    { code: 'cs', name: 'Čeština' },
+    { code: 'uk', name: 'Українська' },
+    { code: 'sh', name: 'Srpski' },
+    { code: 'ru', name: 'Русский' },
+    { code: 'tr', name: 'Türkçe' },
+    { code: 'ar', name: 'العربية' },
+    { code: 'fa', name: 'فارسی' },
+  ], []);
+
+  // TTS языки для speechSynthesis
+  const ttsLanguages = useMemo(() => [
     { name: 'English', code: 'en-US' },
     { name: 'Deutsch', code: 'de-DE' },
     { name: 'Français', code: 'fr-FR' },
@@ -67,38 +74,110 @@ const App = () => {
     { name: 'Português', code: 'pt-PT' },
     { name: 'Polski', code: 'pl-PL' },
     { name: 'Čeština', code: 'cs-CZ' },
-  ];
+    { name: 'Русский', code: 'ru-RU' },
+    { name: 'Українська', code: 'uk-UA' },
+    { name: 'Türkçe', code: 'tr-TR' },
+  ], []);
 
-  const privacyPolicyPath = i18n.language === 'en' ? '/policies/privacy-policy.md' : `/policies/privacy-policy.${i18n.language}.md`;
+  // 1. ЯЗЫК ИНТЕРФЕЙСА
+  const [uiLanguage, setUILanguage] = useState(() => {
+    return localStorage.getItem('uiLanguage') || 'en';
+  });
+
+  // 2. ЯЗЫК ИЗУЧАЕМЫХ СЛОВ (foreignPart)
+  const [foreignLanguage, setForeignLanguage] = useState(() => {
+    return localStorage.getItem('foreignLanguage') || 'de';
+  });
+
+  // 3. ЯЗЫК ПЕРЕВОДОВ (translation)
+  const [translationLanguage, setTranslationLanguage] = useState(() => {
+    return localStorage.getItem('translationLanguage') || 'en';
+  });
+
+  // 4. ЯЗЫК ПОДСКАЗОК (tipPart)
+  const [tipLanguage, setTipLanguage] = useState(() => {
+    return localStorage.getItem('tipLanguage') || 'en';
+  });
+
+  // Настройки плеера
+  const [playerSettings, setPlayerSettings] = useState({
+    repeatCount: 3,
+    readingSpeed: 0.5,
+    selectedVoice: null,
+    selectedVoiceYourLang: null,
+    selectedVoiceTip: null,
+    delayBetweenRecords: 2,
+    availableVoices: [],
+  });
+
+  const privacyPolicyPath = uiLanguage === 'en' ? '/policies/privacy-policy.md' : `/policies/privacy-policy.${uiLanguage}.md`;
 
   const [count, setCount] = useState(() => {
     const savedCount = localStorage.getItem('count');
-    return savedCount ? JSON.parse(savedCount) : 5; // Значение по умолчанию - 5
+    return savedCount ? JSON.parse(savedCount) : 5;
   });
+
+  // Сохранение в localStorage
+  useEffect(() => {
+    localStorage.setItem('data', JSON.stringify(data));
+  }, [data]);
+
+  useEffect(() => {
+    localStorage.setItem('firstElement', JSON.stringify(firstElement));
+  }, [firstElement]);
 
   useEffect(() => {
     localStorage.setItem('count', JSON.stringify(count));
   }, [count]);
 
+  useEffect(() => {
+    localStorage.setItem('uiLanguage', uiLanguage);
+  }, [uiLanguage]);
+
+  useEffect(() => {
+    localStorage.setItem('foreignLanguage', foreignLanguage);
+  }, [foreignLanguage]);
+
+  useEffect(() => {
+    localStorage.setItem('translationLanguage', translationLanguage);
+  }, [translationLanguage]);
+
+  useEffect(() => {
+    localStorage.setItem('tipLanguage', tipLanguage);
+  }, [tipLanguage]);
+
+  // Обработчики
   const handleDataLoaded = (loadedData) => {
     setFirstElement(0);
     setData(loadedData);
   };
 
-  const handleLanguageChange = (newLanguage) => {
-    setLanguage(newLanguage);
-    localStorage.setItem('selectedLanguage', newLanguage);
+  // ОБРАБОТЧИК СМЕНЫ ЯЗЫКА ИНТЕРФЕЙСА
+  const handleUILanguageChange = (newLanguage) => {
+    setUILanguage(newLanguage);
     i18n.changeLanguage(newLanguage);
   };
 
-  const handleTTSLanguageChange = (newTTSLanguage) => {
-    setTTSLanguage(newTTSLanguage);
-    localStorage.setItem('ttsLanguage', newTTSLanguage);
+  // ОБРАБОТЧИКИ СМЕНЫ ЯЗЫКОВ КОНТЕНТА
+  const handleForeignLanguageChange = (newLanguage) => {
+    setForeignLanguage(newLanguage);
   };
 
-  const handleSelectedLanguageChange = (newSelectedLanguage) => { // Новый обработчик
-    setSelectedLanguage(newSelectedLanguage);
-    localStorage.setItem('selectedLanguage', newSelectedLanguage);
+  const handleTranslationLanguageChange = (newLanguage) => {
+    setTranslationLanguage(newLanguage);
+  };
+
+  const handleTipLanguageChange = (newLanguage) => {
+    setTipLanguage(newLanguage);
+  };
+
+  // ОБРАБОТЧИК ОПРЕДЕЛЕНИЯ ЯЗЫКОВ ИЗ НАЗВАНИЯ ФАЙЛА
+  const handleLanguagesFromFileName = (sourceLang, targetLang) => {
+    if (sourceLang && targetLang) {
+      setForeignLanguage(sourceLang);
+      setTranslationLanguage(targetLang);
+      setTipLanguage(targetLang); // По умолчанию tipLanguage = translationLanguage
+    }
   };
 
   const handleMarkAsLearned = (recordToMark) => {
@@ -132,7 +211,6 @@ const App = () => {
           item.tipPart === entryToDelete.tipPart)
       );
 
-      // Если удаляем текущую запись, сбрасываем позицию
       if (newData.length === 0) {
         setFirstElement(0);
       } else {
@@ -156,41 +234,31 @@ const App = () => {
     setPlayerSettings(settings);
   };
 
+  // Инициализация языка интерфейса при первом запуске
   useEffect(() => {
-    localStorage.setItem('data', JSON.stringify(data));
-  }, [data]);
+    const savedUILanguage = localStorage.getItem('uiLanguage');
 
-  useEffect(() => {
-    localStorage.setItem('firstElement', JSON.stringify(firstElement));
-  }, [firstElement]);
-
-  useEffect(() => {
-    const browserLanguage = navigator.language.split('-')[0];
-    const savedLanguage = localStorage.getItem('selectedLanguage');
-
-    if (!savedLanguage) {
-      const defaultLanguage = supportedLanguages.find(lang => lang.code === browserLanguage)?.code || 'en';
-      setLanguage(defaultLanguage);
-      localStorage.setItem('selectedLanguage', defaultLanguage);
+    if (!savedUILanguage) {
+      const browserLanguage = navigator.language.split('-')[0];
+      const defaultLanguage = supportedUILanguages.find(lang => lang.code === browserLanguage)?.code || 'en';
+      setUILanguage(defaultLanguage);
       i18n.changeLanguage(defaultLanguage);
     } else {
-      i18n.changeLanguage(savedLanguage);
-      setLanguage(savedLanguage);
+      i18n.changeLanguage(savedUILanguage);
     }
-  }, [i18n, supportedLanguages]);
+  }, [i18n, supportedUILanguages]);
 
   useEffect(() => {
     // Отправляем событие page_view при загрузке приложения
-    window.gtag('event', 'page_view', {
-      page_path: window.location.pathname + window.location.search,
-    });
+    if (window.gtag) {
+      window.gtag('event', 'page_view', {
+        page_path: window.location.pathname + window.location.search,
+      });
+    }
   }, []);
 
   return (
-    <div
-      className="container no-select"
-    // onContextMenu={(e) => e.preventDefault()} // Disable the context menu
-    >
+    <div className="container no-select">
       <div className="row justify-content-center">
         <div className="col-12 col-md-10 col-lg-8 col-xl-7 overflow-hidden">
 
@@ -202,11 +270,11 @@ const App = () => {
               </p>
             </div>
             <div className="flex-grow-1 px-2 text-end">
-              {supportedLanguages.map((lng) => (
+              {supportedUILanguages.map((lng) => (
                 <button
                   key={lng.code}
-                  className={`btn btn-sm rounded-pill m-1 ${language === lng.code ? 'btn-dark' : 'btn-outline-dark'}`}
-                  onClick={() => handleLanguageChange(lng.code)}
+                  className={`btn btn-sm rounded-pill m-1 ${uiLanguage === lng.code ? 'btn-dark' : 'btn-outline-dark'}`}
+                  onClick={() => handleUILanguageChange(lng.code)}
                 >
                   {lng.code.toUpperCase()}
                 </button>
@@ -216,26 +284,29 @@ const App = () => {
 
           <FileUploader
             onDataLoaded={handleDataLoaded}
-            onTTSLanguageChange={handleTTSLanguageChange}
-            onSelectedLanguageChange={handleSelectedLanguageChange} // Добавляем новый пропс
+            onLanguagesFromFileName={handleLanguagesFromFileName}
             data={data}
             firstElement={firstElement}
             setFirstElement={setFirstElement}
-            ttsLanguage={ttsLanguage}
-            selectedLanguage={selectedLanguage} // Передаем selectedLanguage
-            languages={languages}
+            foreignLanguage={foreignLanguage}
+            translationLanguage={translationLanguage}
+            tipLanguage={tipLanguage}
+            supportedContentLanguages={supportedContentLanguages}
+            ttsLanguages={ttsLanguages}
           />
 
           <DictionaryPlayer
             data={data}
             firstElement={firstElement}
             updateFirstElement={setFirstElement}
-            ttsLanguage={ttsLanguage}
-            selectedLanguage={selectedLanguage}
-            onTTSLanguageChange={handleTTSLanguageChange}
-            onSelectedLanguageChange={handleSelectedLanguageChange}
-            languages={languages}
-            supportedLanguages={supportedLanguages}
+            foreignLanguage={foreignLanguage}
+            translationLanguage={translationLanguage}
+            tipLanguage={tipLanguage}
+            onForeignLanguageChange={handleForeignLanguageChange}
+            onTranslationLanguageChange={handleTranslationLanguageChange}
+            onTipLanguageChange={handleTipLanguageChange}
+            supportedContentLanguages={supportedContentLanguages}
+            ttsLanguages={ttsLanguages}
             onMarkAsLearned={handleMarkAsLearned}
             onEditEntry={handleEditEntry}
             onDeleteEntry={handleDeleteEntry}
@@ -246,21 +317,21 @@ const App = () => {
             data={data}
             firstElement={firstElement}
             updateFirstElement={setFirstElement}
-            ttsLanguage={ttsLanguage}
-            selectedLanguage={selectedLanguage}
-            onTTSLanguageChange={handleTTSLanguageChange}
-            onSelectedLanguageChange={handleSelectedLanguageChange}
-            languages={languages}
-            supportedLanguages={supportedLanguages}
+            foreignLanguage={foreignLanguage}
+            translationLanguage={translationLanguage}
+            tipLanguage={tipLanguage}
+            onForeignLanguageChange={handleForeignLanguageChange}
+            onTranslationLanguageChange={handleTranslationLanguageChange}
+            onTipLanguageChange={handleTipLanguageChange}
+            supportedContentLanguages={supportedContentLanguages}
+            ttsLanguages={ttsLanguages}
             onMarkAsLearned={handleMarkAsLearned}
             onEditEntry={handleEditEntry}
             onDeleteEntry={handleDeleteEntry}
-
             repeatCount={playerSettings.repeatCount}
             readingSpeed={playerSettings.readingSpeed}
             selectedVoice={playerSettings.selectedVoice}
             selectedVoiceYourLang={playerSettings.selectedVoiceYourLang}
-            tipLanguage={playerSettings.tipLanguage}
             selectedVoiceTip={playerSettings.selectedVoiceTip}
             delayBetweenRecords={playerSettings.delayBetweenRecords}
             availableVoices={playerSettings.availableVoices}
@@ -271,8 +342,9 @@ const App = () => {
             firstElement={firstElement}
             count={count}
             updateData={setData}
-            language={ttsLanguage}
+            language={foreignLanguage} // Используем foreignLanguage для TTS
             setFirstElement={setFirstElement}
+            ttsLanguages={ttsLanguages}
           />
 
           <NavigationComponent
@@ -316,7 +388,6 @@ const App = () => {
           </CookieConsent>
         </div>
       </div>
-
     </div>
   );
 };

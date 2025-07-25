@@ -8,20 +8,20 @@ const Relax = ({
     data,
     firstElement,
     updateFirstElement,
-    ttsLanguage,
-    selectedLanguage,
-    onTTSLanguageChange,
-    onSelectedLanguageChange,
-    languages,
-    supportedLanguages,
+    foreignLanguage,           // переименовано с ttsLanguage
+    translationLanguage,       // переименовано с selectedLanguage
+    tipLanguage,
+    onForeignLanguageChange,   // переименовано с onTTSLanguageChange
+    onTranslationLanguageChange, // переименовано с onSelectedLanguageChange
+    supportedContentLanguages,   // переименовано с supportedLanguages
+    ttsLanguages,              // переименовано с languages
     onMarkAsLearned,
     onEditEntry,
     onDeleteEntry,
     repeatCount = 3,
     readingSpeed = 0.5,
-    selectedVoice = null,
-    selectedVoiceYourLang = null,
-    tipLanguage = selectedLanguage,
+    selectedVoice = null,          // будет переименовано в selectedVoiceForeign
+    selectedVoiceYourLang = null,  // будет переименовано в selectedVoiceTranslation
     selectedVoiceTip = null,
     delayBetweenRecords = 2,
     availableVoices = [],
@@ -71,20 +71,20 @@ const Relax = ({
         data,
         firstElement,
         updateFirstElement,
-        ttsLanguage,
-        selectedLanguage,
-        onTTSLanguageChange,
-        onSelectedLanguageChange,
-        languages,
-        supportedLanguages,
+        foreignLanguage,
+        translationLanguage,
+        tipLanguage,
+        onForeignLanguageChange,
+        onTranslationLanguageChange,
+        ttsLanguages,
+        supportedContentLanguages,
         onMarkAsLearned,
         onEditEntry,
         onDeleteEntry,
         repeatCount,
         readingSpeed,
-        selectedVoice,
-        selectedVoiceYourLang,
-        tipLanguage,
+        selectedVoiceForeign: selectedVoice,        // маппим старое название в новое
+        selectedVoiceTranslation: selectedVoiceYourLang, // маппим старое название в новое
         selectedVoiceTip,
         delayBetweenRecords,
         availableVoices,

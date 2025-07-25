@@ -7,14 +7,15 @@ import Dictionary from './Dictionary';
 
 const FileUploader = ({
     onDataLoaded,
-    onTTSLanguageChange,
-    onSelectedLanguageChange,
+    onLanguagesFromFileName,
     data,
     firstElement,
     setFirstElement,
-    ttsLanguage,
-    selectedLanguage,
-    languages,
+    foreignLanguage,
+    translationLanguage,
+    tipLanguage,
+    supportedContentLanguages,
+    ttsLanguages,
 }) => {
     const { t } = useTranslation();
 
@@ -25,8 +26,6 @@ const FileUploader = ({
     const [showModal, setShowModal] = useState(false);
     const [errorMessage, setErrorMessage] = useState('');
     const [showDictionaryModal, setShowDictionaryModal] = useState(false);
-
-    const supportedLanguages = ['en', 'de', 'fr', 'it', 'es', 'pt', 'pl', 'cs', 'uk', 'sh', 'ru', 'tr', 'ar', 'fa'];
 
     const openAddModal = () => setShowAddModal(true);
     const closeAddModal = () => {
@@ -62,11 +61,6 @@ const FileUploader = ({
         resetDictionary();
         closeModal();
     };
-
-    useEffect(() => {
-        const savedTTSLanguage = localStorage.getItem('ttsLanguage') || 'en-US';
-        onTTSLanguageChange(savedTTSLanguage);
-    }, [onTTSLanguageChange]);
 
     const fetchFileList = () => {
         try {
@@ -139,6 +133,7 @@ const FileUploader = ({
         const separators = ['-', '_', ' '];
         let sourceLang, targetLang;
 
+        // Пытаемся найти языки в названии файла
         for (const sep of separators) {
             const parts = prefix.split(sep);
             if (parts.length === 2 && parts[0].length === 2 && parts[1].length === 2) {
@@ -148,15 +143,16 @@ const FileUploader = ({
             }
         }
 
+        // Проверяем, что найденные языки поддерживаются
+        const supportedCodes = supportedContentLanguages.map(lang => lang.code);
         if (
             sourceLang &&
             targetLang &&
-            supportedLanguages.includes(sourceLang) &&
-            supportedLanguages.includes(targetLang)
+            supportedCodes.includes(sourceLang) &&
+            supportedCodes.includes(targetLang)
         ) {
-            const ttsLang = languages.find(lang => lang.code.startsWith(sourceLang))?.code || `${sourceLang}-${sourceLang.toUpperCase()}`;
-            onTTSLanguageChange(ttsLang);
-            onSelectedLanguageChange(targetLang);
+            // Уведомляем родительский компонент о найденных языках
+            onLanguagesFromFileName(sourceLang, targetLang);
         }
     };
 
@@ -165,6 +161,7 @@ const FileUploader = ({
         setSelectedFile(selectedFileName);
 
         if (selectedFileName) {
+            // Анализируем название файла для определения языков
             analyzeFileName(selectedFileName);
 
             const filePath = require(`../dic/${selectedFileName}.txt`);
@@ -287,14 +284,17 @@ const FileUploader = ({
                 />
             </div>
 
-            {/* <div className="h6 pt-2 mt-1 d-flex align-items-center">
-                <label className="form-label mt-1 me-2">{t('tts-lang')}</label>
-                <Form.Select value={ttsLanguage} onChange={(e) => onTTSLanguageChange(e.target.value)} className="w-auto">
-                    {languages.map((lang) => (
-                        <option key={lang.code} value={lang.code}>{lang.name}</option>
-                    ))}
-                </Form.Select>
-            </div> */}
+            {/* Показываем текущие настройки языков */}
+            {data.length > 0 && (
+                <div className="mt-3 p-2 bg-light rounded">
+                    <small className="text-muted">
+                        <strong>{t('current-languages')}:</strong><br/>
+                        {t('foreign-language')}: <span className="badge bg-primary">{supportedContentLanguages.find(l => l.code === foreignLanguage)?.name || foreignLanguage}</span>{' '}
+                        {t('translation-language')}: <span className="badge bg-success">{supportedContentLanguages.find(l => l.code === translationLanguage)?.name || translationLanguage}</span>{' '}
+                        {t('tip-language')}: <span className="badge bg-info">{supportedContentLanguages.find(l => l.code === tipLanguage)?.name || tipLanguage}</span>
+                    </small>
+                </div>
+            )}
 
             <div className="pt-4 pb-1">
                 {data.length > 0 && (

@@ -20,7 +20,7 @@ const getInitialState = () => {
     };
 };
 
-// Редьюсер для управления состоянием (тот же самый)
+// Редьюсер для управления состоянием
 const playerReducer = (state, action) => {
     switch (action.type) {
         case 'SET_PLAYING':
@@ -53,18 +53,18 @@ export const PlayerProvider = ({
     data,
     firstElement,
     updateFirstElement,
-    ttsLanguage,
-    selectedLanguage,
-    languages,
+    foreignLanguage,        // переименовано с ttsLanguage
+    translationLanguage,    // переименовано с selectedLanguage
+    tipLanguage,
+    ttsLanguages,          // переименовано с languages
     onMarkAsLearned,
     onEditEntry,
     onDeleteEntry,
     // Настройки плеера
     readingSpeed = 0.5,
     repeatCount = 3,
-    selectedVoice = null,
-    selectedVoiceYourLang = null,
-    tipLanguage = 'en',
+    selectedVoiceForeign = null,        // переименовано с selectedVoice
+    selectedVoiceTranslation = null,    // переименовано с selectedVoiceYourLang
     selectedVoiceTip = null,
     delayBetweenRecords = 2,
     availableVoices = [],
@@ -75,36 +75,42 @@ export const PlayerProvider = ({
     });
 
     // Синхронизация состояния с localStorage
-useEffect(() => {
-    localStorage.setItem('playerGlobalState', JSON.stringify({
-        currentRecord: playerState.currentRecord,
-        currentRepeat: playerState.currentRepeat,
-        isPlaying: playerState.isPlaying,
-        isSpeaking: playerState.isSpeaking,
-        isInDelay: playerState.isInDelay,
-    }));
-}, [playerState.currentRecord, playerState.currentRepeat, playerState.isPlaying, playerState.isSpeaking, playerState.isInDelay]);
+    useEffect(() => {
+        localStorage.setItem('playerGlobalState', JSON.stringify({
+            currentRecord: playerState.currentRecord,
+            currentRepeat: playerState.currentRepeat,
+            isPlaying: playerState.isPlaying,
+            isSpeaking: playerState.isSpeaking,
+            isInDelay: playerState.isInDelay,
+        }));
+    }, [playerState.currentRecord, playerState.currentRepeat, playerState.isPlaying, playerState.isSpeaking, playerState.isInDelay]);
 
-// Слушатель изменений localStorage для синхронизации между экземплярами
-useEffect(() => {
-    const handleStorageChange = (e) => {
-        if (e.key === 'playerGlobalState' && e.newValue) {
-            const newState = JSON.parse(e.newValue);
-            dispatch({ type: 'SET_CURRENT_RECORD', payload: newState.currentRecord });
-            dispatch({ type: 'SET_CURRENT_REPEAT', payload: newState.currentRepeat });
-            dispatch({ type: 'SET_PLAYING', payload: newState.isPlaying });
-            dispatch({ type: 'SET_SPEAKING', payload: newState.isSpeaking });
-            dispatch({ type: 'SET_DELAY', payload: newState.isInDelay });
-        }
-    };
+    // Слушатель изменений localStorage для синхронизации между экземплярами
+    useEffect(() => {
+        const handleStorageChange = (e) => {
+            if (e.key === 'playerGlobalState' && e.newValue) {
+                const newState = JSON.parse(e.newValue);
+                dispatch({ type: 'SET_CURRENT_RECORD', payload: newState.currentRecord });
+                dispatch({ type: 'SET_CURRENT_REPEAT', payload: newState.currentRepeat });
+                dispatch({ type: 'SET_PLAYING', payload: newState.isPlaying });
+                dispatch({ type: 'SET_SPEAKING', payload: newState.isSpeaking });
+                dispatch({ type: 'SET_DELAY', payload: newState.isInDelay });
+            }
+        };
 
-    window.addEventListener('storage', handleStorageChange);
-    return () => window.removeEventListener('storage', handleStorageChange);
-}, []);
+        window.addEventListener('storage', handleStorageChange);
+        return () => window.removeEventListener('storage', handleStorageChange);
+    }, []);
 
     const delayTimeoutRef = useRef(null);
     const cancelTokenRef = useRef({ cancelled: false });
     const filteredData = data.filter((item) => !item.isLearned);
+
+    // Функция для получения TTS кода языка
+    const getTTSLanguageCode = useCallback((langCode) => {
+        const ttsLang = ttsLanguages.find(lang => lang.code.startsWith(langCode));
+        return ttsLang ? ttsLang.code : `${langCode}-${langCode.toUpperCase()}`;
+    }, [ttsLanguages]);
 
     // Функция для полной остановки воспроизведения
     const stopPlayback = useCallback(() => {
@@ -134,7 +140,7 @@ useEffect(() => {
     }, []);
 
     // Функция воспроизведения аудио
-    const playAudio = useCallback(async (text, lang, useReadingSpeed = false, voiceName = null) => {
+    const playAudio = useCallback(async (text, langCode, useReadingSpeed = false, voiceName = null) => {
         if (!window.speechSynthesis) {
             console.error('SpeechSynthesis is not supported.');
             return Promise.reject(new Error('SpeechSynthesis is not supported.'));
@@ -156,11 +162,12 @@ useEffect(() => {
                     }
 
                     const utterance = new SpeechSynthesisUtterance(text);
-                    utterance.lang = lang;
+                    // Получаем правильный TTS код для языка
+                    utterance.lang = getTTSLanguageCode(langCode);
                     utterance.rate = useReadingSpeed ? readingSpeed : 1.0;
 
                     if (voiceName) {
-                        const voice = availableVoices.find(v => v.name === voiceName && v.lang.startsWith(lang));
+                        const voice = availableVoices.find(v => v.name === voiceName && v.lang.startsWith(langCode));
                         if (voice) {
                             utterance.voice = voice;
                         }
@@ -190,7 +197,7 @@ useEffect(() => {
                 reject(error);
             }
         });
-    }, [readingSpeed, availableVoices]);
+    }, [readingSpeed, availableVoices, getTTSLanguageCode]);
 
     // Функция для сброса токена отмены
     const resetCancelToken = useCallback(() => {
@@ -260,11 +267,12 @@ useEffect(() => {
                 );
             };
 
+            // Сначала читаем translation на языке translationLanguage с голосом selectedVoiceTranslation
             if (!shouldContinue()) {
                 dispatch({ type: 'SET_SPEAKING', payload: false });
                 return;
             }
-            await playAudio(translation, selectedLanguage, true, selectedVoiceYourLang);
+            await playAudio(translation, translationLanguage, true, selectedVoiceTranslation);
 
             if (!shouldContinue()) {
                 dispatch({ type: 'SET_SPEAKING', payload: false });
@@ -273,18 +281,20 @@ useEffect(() => {
 
             await new Promise(resolve => setTimeout(resolve, 100));
 
+            // Затем читаем foreignPart на языке foreignLanguage с голосом selectedVoiceForeign
             if (!shouldContinue()) {
                 dispatch({ type: 'SET_SPEAKING', payload: false });
                 return;
             }
 
-            await playAudio(foreignPart, ttsLanguage, true, selectedVoice);
+            await playAudio(foreignPart, foreignLanguage, true, selectedVoiceForeign);
 
             if (!shouldContinue()) {
                 dispatch({ type: 'SET_SPEAKING', payload: false });
                 return;
             }
 
+            // Если есть tipPart, читаем его на языке tipLanguage с голосом selectedVoiceTip
             if (tipPart) {
                 await new Promise(resolve => setTimeout(resolve, 100));
 
@@ -333,11 +343,11 @@ useEffect(() => {
         playerState.currentRepeat,
         playerState.isSpeaking,
         filteredData,
-        selectedLanguage,
-        selectedVoiceYourLang,
-        ttsLanguage,
-        selectedVoice,
+        foreignLanguage,
+        translationLanguage,
         tipLanguage,
+        selectedVoiceForeign,
+        selectedVoiceTranslation,
         selectedVoiceTip,
         repeatCount,
         delayBetweenRecords,

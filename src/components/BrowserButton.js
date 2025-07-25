@@ -57,20 +57,20 @@ const BrowserButton = ({
   data,
   firstElement,
   updateFirstElement,
-  ttsLanguage,
-  selectedLanguage,
-  onTTSLanguageChange,
-  onSelectedLanguageChange,
-  languages,
-  supportedLanguages,
+  foreignLanguage,           // переименовано с ttsLanguage
+  translationLanguage,       // переименовано с selectedLanguage
+  tipLanguage,
+  onForeignLanguageChange,   // переименовано с onTTSLanguageChange
+  onTranslationLanguageChange, // переименовано с onSelectedLanguageChange
+  ttsLanguages,              // переименовано с languages
+  supportedContentLanguages, // переименовано с supportedLanguages
   onMarkAsLearned,
   onEditEntry,
   onDeleteEntry,
   repeatCount = 3,
   readingSpeed = 0.5,
-  selectedVoice = null,
-  selectedVoiceYourLang = null,
-  tipLanguage = selectedLanguage,
+  selectedVoiceForeign = null,     // переименовано с selectedVoice
+  selectedVoiceTranslation = null, // переименовано с selectedVoiceYourLang
   selectedVoiceTip = null,
   delayBetweenRecords = 2,
   availableVoices = [],
@@ -178,7 +178,7 @@ const BrowserButton = ({
             paddingBottom: 'env(safe-area-inset-bottom)',
             paddingLeft: 'env(safe-area-inset-left)',
             paddingRight: 'env(safe-area-inset-right)',
-            background: '#ffc800'
+            background: '#ffffff'
           }}
         >
           {/* Контейнер для iframe - занимает всё доступное место минус высота PlayerControls */}
@@ -221,22 +221,22 @@ const BrowserButton = ({
               flexShrink: 0 // Предотвращает сжатие контейнера
             }}
           >
-            {/* Используем компонент PlayerControls */}
+            {/* Используем компонент PlayerControls с обновленными названиями переменных */}
             <PlayerProvider
               data={data}
               firstElement={firstElement}
               updateFirstElement={updateFirstElement}
-              ttsLanguage={ttsLanguage}
-              selectedLanguage={selectedLanguage}
-              languages={languages}
+              foreignLanguage={foreignLanguage}
+              translationLanguage={translationLanguage}
+              tipLanguage={tipLanguage}
+              ttsLanguages={ttsLanguages}
               onMarkAsLearned={onMarkAsLearned}
               onEditEntry={onEditEntry}
               onDeleteEntry={onDeleteEntry}
               readingSpeed={readingSpeed}
               repeatCount={repeatCount}
-              selectedVoice={selectedVoice}
-              selectedVoiceYourLang={selectedVoiceYourLang}
-              tipLanguage={tipLanguage}
+              selectedVoiceForeign={selectedVoiceForeign}
+              selectedVoiceTranslation={selectedVoiceTranslation}
               selectedVoiceTip={selectedVoiceTip}
               delayBetweenRecords={delayBetweenRecords}
               availableVoices={availableVoices}
