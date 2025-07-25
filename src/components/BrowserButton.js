@@ -159,10 +159,36 @@ const BrowserButton = ({
         fullscreen={true}
         dialogClassName="m-0"
         contentClassName="p-0"
+        style={{
+          // Заливка для области за пределами безопасной зоны
+          background: '#000',
+          // Используем dvh (dynamic viewport height) для корректной работы с iOS
+          height: '100dvh',
+          maxHeight: '100dvh'
+        }}
       >
-        <Modal.Body className="p-0 position-relative d-flex flex-column">
-          {/* Контейнер для iframe - занимает всё доступное место минус 80px */}
-          <div className="position-relative flex-grow-1" style={{ height: 'calc(100vh - 80px)' }}>
+        <Modal.Body 
+          className="p-0 position-relative d-flex flex-column"
+          style={{
+            // Основной контейнер занимает всю безопасную зону
+            height: '100dvh',
+            maxHeight: '100dvh',
+            // Отступы для безопасных зон (notch, home indicator)
+            paddingTop: 'env(safe-area-inset-top)',
+            paddingBottom: 'env(safe-area-inset-bottom)',
+            paddingLeft: 'env(safe-area-inset-left)',
+            paddingRight: 'env(safe-area-inset-right)',
+            background: '#ffc800'
+          }}
+        >
+          {/* Контейнер для iframe - занимает всё доступное место минус высота PlayerControls */}
+          <div 
+            className="position-relative flex-grow-1" 
+            style={{ 
+              height: 'calc(100% - 120px)',
+              minHeight: 0 // Важно для правильной работы flex
+            }}
+          >
             {iframeError ? (
               <div
                 className="d-flex align-items-center justify-content-center w-100 h-100 bg-light"
@@ -186,10 +212,14 @@ const BrowserButton = ({
             <div className="overlay-content" style={{ position: 'absolute', top: 0, left: 0 }} />
           </div>
 
-          {/* Контейнер для PlayerControls - фиксированная высота 80px */}
+          {/* Контейнер для PlayerControls - фиксированная высота 120px */}
           <div
             className="bg-white border-top p-2 align-items-center"
-            style={{ height: '120px', minHeight: '120px' }}
+            style={{ 
+              height: '120px', 
+              minHeight: '120px',
+              flexShrink: 0 // Предотвращает сжатие контейнера
+            }}
           >
             {/* Используем компонент PlayerControls */}
             <PlayerProvider
@@ -222,9 +252,9 @@ const BrowserButton = ({
             aria-label="Close modal"
             style={{
               position: 'absolute',
-              top: '10px',
-              right: '10px',
-              background: 'rgba(0,0,0,0.5)',
+              top: 'calc(env(safe-area-inset-top) + 10px)', // Отступ от безопасной зоны
+              right: 'calc(env(safe-area-inset-right) + 10px)', // Отступ от безопасной зоны
+              background: '#ffc800',
               color: 'white',
               border: 'none',
               borderRadius: '50%',

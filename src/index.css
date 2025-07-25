@@ -158,3 +158,13 @@ code { font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', mon
   padding-top: -0rem;
   padding-bottom: .1rem;
 }
+
+/* Поддержка viewport-fit для iOS */
+@supports (padding: max(0px)) {
+  .modal-fullscreen {
+    padding-top: max(0px, env(safe-area-inset-top));
+    padding-bottom: max(0px, env(safe-area-inset-bottom));
+    padding-left: max(0px, env(safe-area-inset-left));
+    padding-right: max(0px, env(safe-area-inset-right));
+  }
+}
