@@ -255,7 +255,7 @@ const DictionaryPlayer = ({
 
         {/* НАСТРОЙКИ ЯЗЫКА ПЕРЕВОДОВ (translation) */}
         <div className="d-flex align-items-center">
-          <label>{t('translation-language')}</label>
+          <label>{t('your-language')}</label>
           <Form.Select
             value={translationLanguage}
             onChange={(e) => handleTranslationLanguageChangeWrapper(e.target.value)}
@@ -289,7 +289,7 @@ const DictionaryPlayer = ({
 
         {/* НАСТРОЙКИ ИЗУЧАЕМОГО ЯЗЫКА (foreignPart) */}
         <div className="d-flex align-items-center">
-          <label>{t('foreign-language')}</label>
+          <label>{t('learning-language')}</label>
           <Form.Select
             value={foreignLanguage}
             onChange={(e) => handleForeignLanguageChangeWrapper(e.target.value)}

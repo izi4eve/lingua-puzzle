@@ -285,7 +285,7 @@ const FileUploader = ({
             </div>
 
             {/* Показываем текущие настройки языков */}
-            {data.length > 0 && (
+            {/* {data.length > 0 && (
                 <div className="mt-3 p-2 bg-light rounded">
                     <small className="text-muted">
                         <strong>{t('current-languages')}:</strong><br/>
@@ -294,7 +294,7 @@ const FileUploader = ({
                         {t('tip-language')}: <span className="badge bg-info">{supportedContentLanguages.find(l => l.code === tipLanguage)?.name || tipLanguage}</span>
                     </small>
                 </div>
-            )}
+            )} */}
 
             <div className="pt-4 pb-1">
                 {data.length > 0 && (
