@@ -1971,5 +1971,5 @@ geschieden von (Dativ) = разведённый с
 getrennt von (Dativ) = отделённый от
 scharf auf (Akkusativ) = быть без ума от; очень хотеть (что-то)
 überzeugt von (Dativ) = уверенный в
-verheiratet mit (Dativ) = женатый на / замужем за
+verheiratet mit (Dativ) = женатый (замужем) c
 zornig auf (Akkusativ) = (очень сильно) злой на
