@@ -60,5 +60,6 @@
     "voice": "Ses",
     "delay-between-records": "Kayıtlar arasındaki gecikme (saniye)",
     "delay": "Gecikme...",
-    "tip-language": "İpucu"
+    "tip-language": "İpucu",
+    "default-voice": "Varsayılan ses"
 }

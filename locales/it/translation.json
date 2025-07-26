@@ -64,5 +64,6 @@
     "voice": "Voce",
     "delay-between-records": "Ritardo tra i record (secondi)",
     "delay": "Ritardo...",
-    "tip-language": "Suggerimento"
+    "tip-language": "Suggerimento",
+    "default-voice": "Voce predefinita"
 }

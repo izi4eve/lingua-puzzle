@@ -60,5 +60,6 @@
     "voice": "صدا",
     "delay-between-records": "تأخیر بین رکوردها (ثانیه)",
     "delay": "تأخیر...",
-    "tip-language": "نکته"
+    "tip-language": "نکته",
+    "default-voice": "صدای پیش‌فرض"
 }

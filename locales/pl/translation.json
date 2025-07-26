@@ -60,5 +60,6 @@
     "voice": "Głos",
     "delay-between-records": "Opóźnienie między nagraniami (sekundy)",
     "delay": "Opóźnienie...",
-    "tip-language": "Podpowiedź"
+    "tip-language": "Podpowiedź",
+    "default-voice": "Domyślny głos"
 }
