@@ -1,201 +1,206 @@
-sein — du bist, er ist, ihr seid, wir (sie) sind — ist gewesen — war = быть; существовать
-haben — du hast, er hat, ihr habt — gehabt — hatte — hätte = иметь
-werden — wird — ist geworden — wurde = становиться; быть (вспомогательный глагол)
-mit (Dativ) = с
-an = на; у; к
-auf = на
-sich = себя
-können — kann — gekonnt — konnte = мочь; уметь
-für (Akkusativ) = для
+ist gewesen — wäre = был — был бы
+ihr habt — hätte = прошедшее — имел бы
+wird — ist geworden — wurde = будущее — стал — бы 
+konnte — könnte = мог — мог бы
 von (Dativ) = от
-ihr = вы (мн.ч.); её
-der Mann — Männer = мужчина; человек
+der Mann — Männer = мужчина; человек = 
 aus (Dativ) = из
-richtig = правильно; верный
+richtig = правильно = 
 nach (Dativ) = после; в
-machen — gemacht = делать
-geben — gibt — gegeben — gab = давать
+machen — gemacht = делать =
+er gibt — gegeben — gab = давать
 um (Akkusativ) = вокруг; ради; в (о времени)
-gut — besser — am besten = хороший
-wenn = если
+gut — besser — am besten = хороший = 
+wenn = если = 
 bei (Dativ) = у; при
-gehen — geht — ist gegangen — ging = идти; ходить
-gehen um (Akkusativ) — geht — ist gegangen — ging = (речь) идёт про
-kommen — kommt — ist gekommen — kam = приходить; приезжать
-als = как; чем; когда
-über = о; над; через
-der Text — Texte = текст
-noch = ещё
-dann = тогда; затем
-der Mensch — Menschen = человек
-das Wort — Wörter = слово
-falsch = неправильно; ложный
-der Herr — Herren = господин
-viel — mehr — am meisten = много
-der Moderator — Moderatoren = модератор
-immer = всегда
+ist gegangen — ging = ходил
+gehen um (Akkusativ) = (речь) идёт про
+ist gekommen — kam = пришел; приехал
+als = как; чем; когда = 
+über = о; над; через = 
+der Text — Texte = текст = 
+noch = ещё = 
+dann = тогда; затем = 
+der Mensch — Menschen = человек = 
+das Wort — Wörter = слово = 
+falsch = неправильно
+der Herr — Herren = господин = 
+viel — mehr — am meisten = много = 
+der Moderator — Moderatoren = модератор = 
+immer = всегда = 
 vor (Dativ) = перед; до
-die Präposition — Präpositionen = предлог
-schon = уже
-sehr = очень
-das Kind — Kinder = ребёнок
-der Schuh — Schuhe = туфля; обувь
-neu = новый
-der Teil — Teile = часть
+die Präposition — Präpositionen = предлог = 
+schon = уже = 
+sehr = очень = 
+das Kind — Kinder = ребёнок = 
+der Schuh — Schuhe = туфля; обувь = 
+neu = новый = 
+der Teil — Teile = часть = 
 stehen — steht — gestanden — stand = стоять
 sehen — sieht — gesehen — sah = видеть
-heute = сегодня
-ergänzen — ergänzt — ergänzt = дополнять
-wollen — will — gewollt — wollte = хотеть
-groß — größer — am größten = большой
-da = там; здесь; так как
-das Jahr — Jahre = год
-die Leute = люди
-sollen — soll — gesollt — sollte = должен; следует
-die Frau — Frauen = женщина
-doch = всё же; однако
-mir = мне
-andere = другой
-welcher = какой; который
-ihnen = им; Вам
-sprechen mit (Dativ) über (Akkusativ) — spricht — gesprochen — sprach = говорить с (кем?) про (кого? что?)
-sprechen von (Dativ) — spricht — gesprochen — sprach = упоминать о
-sprechen für (Akkusativ) — spricht — gesprochen — sprach = говорить в пользу
-sagen — sagt — gesagt — sagte = сказать; говорить
+heute = сегодня = 
+ergänzen — ergänzt = дополнять
+wollen — will — wollte = хотеть = 
+groß — größer — am größten = большой = 
+da = там; здесь; так как = 
+das Jahr — Jahre = год = 
+die Leute = люди = 
+sollen — soll — sollte = должен; следует
+die Frau — Frauen = женщина = 
+doch = всё же; однако = 
+mir = мне = 
+andere = другой = 
+welche = какой; который = 
+ihnen = им; Вам = 
+sprechen — spricht — gesprochen — sprach = говорить
+er spricht mit (Dativ) über (Akkusativ) = он говорит с (кем?) про (кого? что?)
+sprechen von (Dativ) = упоминать о
+sprechen für (Akkusativ) = говорить в пользу
+sagen — gesagt = сказать; говорить
 finden — findet — gefunden — fand = находить
-das Leben — Leben = жизнь
-etwas = что-то
-das Haus — Häuser = дом
-benutzen — benutzt — benutzt — benutzte = использовать
+das Leben — Leben = жизнь = 
+etwas = что-то = 
+das Haus — Häuser = дом = 
+benutzen — benutzt = использовать = 
 bis (Akkusativ) = до
-ganz = весь; совсем
-wissen — weiß — gewusst — wusste — wüsste = знать
-hören — hört — gehört — hörte = слышать; слушать
-jetzt = сейчас
-möchten — möchte — gemöchtet — möchte = хотеть (вежливая форма)
+ganz = весь; совсем = 
+wissen — weiß — gewusst — wusste = знать
+hören — gehört = слышать; слушать = 
+jetzt = сейчас = 
+möchten — möchte — möchte = хотел бы = 
 passend = подходящий
-schreiben an (Akkusativ) über (Akkusativ) — schreibt — geschrieben — schrieb = писать на (кого?) про (кого? что?)
+schreiben — schreibt — geschrieben — schrieb = писать
+schreibt an (Akkusativ) über (Akkusativ) = писать на (кого?) про (кого? что?)
 das Kreuz — Kreuze = крест
-denn = ведь; потому что
-die Lösung — Lösungen = решение
-der Tag — Tage = день
-unser = наш
-viel; viele = много; многие
-wieder = снова
+denn = ведь; потому что = 
+die Lösung — Lösungen = решение = 
+der Tag — Tage = день = 
+unser = наш = 
+viel; viele = много; многие = 
+wieder = снова = 
 die Frage nach (Dativ) — Fragen = вопрос о
-der Satz — Sätze = предложение
+der Satz — Sätze = предложение = 
 folgend = следующий
 der Artikel — Artikel = статья; артикль
-Deutschland = Германия
+Deutschland = Германия = 
 die Person — Personen = человек; личность
 also = итак; следовательно
-helfen bei (Dativ) — hilft — geholfen — half = помогать в
-hier = здесь
-leben — lebt — gelebt — lebte = жить
-lernen — lernt — gelernt — lernte = учить; учиться
-wichtig = важный
-die Aufgabe — Aufgaben = задание; задача
-das Auto — Autos = автомобиль
-der Freund — Freunde = друг
-die Grammatik — Grammatiken = грамматика
-alle = все
-denken an (Akkusativ) — denkt — gedacht — dachte = думать о
+helfen — hilft — geholfen — half = помогать
+er hilft bei (Dativ) = он помогает в
+hier = здесь = 
+leben — gelebt = жить = 
+lernen — gelernt = учиться = 
+wichtig = важный = 
+die Aufgabe — Aufgaben = задание = 
+das Auto — Autos = автомобиль = 
+der Freund — Freunde = друг = 
+die Grammatik — Grammatiken = грамматика = 
+alle = все = 
+denken — denkt — gedacht — dachte = думать
+denken an (Akkusativ) = думать про
 durch (Akkusativ) = через; сквозь
-gern = охотно
-ob = ли; если
-das Beispiel — Beispiele = пример
+gern = охотно = 
+ob = ли; если = 
+das Beispiel — Beispiele = пример = 
 fahren — fährt — ist gefahren — fuhr = ехать; водить
-jeder = каждый
+jeder = каждый = 
 lesen — liest — gelesen — las = читать
-mich = меня
-der Film — Filme = фильм
+mich = меня = 
+der Film — Filme = фильм = 
 der Hauptsatz — Hauptsätze = главное предложение
-die Mail — Mails = письмо (электронное)
-die Schule — Schulen = школа
-die Zeit für (Akkusativ) — Zeiten = время для
+die Mail — Mails = письмо (электронное) = 
+die Schule — Schulen = школа = 
+die Zeit für (Akkusativ) — Zeiten = время для = 
 bekommen — bekommt — bekommen — bekam = получать
-dazu = к этому
-einmal = один раз; однажды
-früh = рано
+dazu = к этому = 
+einmal = один раз; однажды = 
+früh = рано = 
 verstehen — versteht — verstanden — verstand = понимать
-warum = почему
-wo = где
+warum = почему = 
+wo = где = 
 die Antwort auf (Akkusativ) — Antworten = ответ на
-der Computer — Computer = компьютер
-das Verb — Verben = глагол
-weil = потому что
+der Computer — Computer = компьютер = 
+das Verb — Verben = глагол = 
+weil = потому что = 
 die Aussage — Aussagen = утверждение
-das Partizip — Partizipien = причастие
+das Partizip — Partizipien = причастие (делающий)
 ohne (Akkusativ) = без
-weniger = меньше
-wer = кто
+wenig = мело = 
+wer = кто = 
 der Ausdruck — Ausdrücke = выражение
-die Information — Informationen = информация
-die Stadt — Städte = город
-arbeiten — arbeitet — gearbeitet — arbeitete = работать
+die Information — Informationen = информация = 
+die Stadt — Städte = город = 
+arbeiten — gearbeitet = работать = 
 heißen — heißt — geheißen — hieß = называться; звать
-kaufen — kauft — gekauft — kaufte = покупать
+kaufen — gekauft = покупать = 
 der Kasten — Kästen = ящик; коробка
-ordnen — ordnet — geordnet — ordnete = упорядочивать
+ordnen — geordnet = упорядочивать
 alt — älter — am ältesten = старый
 bleiben — bleibt — ist geblieben — blieb = оставаться
-erste = первый
-müssen — muss — gemusst — musste = должен; нужно
-suchen nach (Dativ) — sucht — gesucht — suchte = искать (что?)
+erste = первый = 
+müssen — muss — musste = нужно (сделать)
+suchen — gesucht = искать = 
+sucht nach (Dativ) = искать (что?)
 treffen sich — trifft — getroffen — traf = встречаться
-uns = нас, нам
-die Arbeit an (Dativ) — Arbeiten = работа над
+uns = нас, нам = 
+die Arbeit an (Dativ) — Arbeiten = работа над = 
 der Grund für (Akkusativ) — Gründe = причина для
 das Land — Länder = страна
-der Plural = множественное число
-das Thema — Themen = тема
+der Plural = множественное число = 
+das Thema — Themen = тема = 
 die Uhr — Uhren = часы
 der Wortschatz — Wortschätze = словарный запас
-brauchen — braucht — gebraucht — brauchte = нуждаться
-dafür = для этого
-dort = там
+brauchen — gebraucht — brauchte = нуждаться
+dafür = для этого = 
+dort = там = 
 die Überschrift — Überschriften = заголовок
-bringen zu (Dativ) — bringt — gebracht — brachte = приносить (кому?)
-die Familie — Familien = семья
-das Geld = деньги
-das Kino — Kinos = кино
-der Nebensatz — Nebensätze = придаточное предложение
-der Relativsatz — Relativsätze = относительное придаточное предложение
-beginnen mit (Dativ) — beginnt — begonnen — begann = начинать с
-einfach = просто; простой
-lange = долго
-markieren — markiert — markiert — markierte = отмечать
-zusammen = вместе
-die Form — Formen = форма
-die Kirche — Kirchen = церковь
+bringen — bringt — gebracht — brachte = приносить
+er bringt zu (Dativ) = приносить (кому?)
+die Familie — Familien = семья = 
+das Geld = деньги = 
+das Kino — Kinos = кино = 
+der Nebensatz — Nebensätze = придаточное предложение = 
+der Relativsatz — Relativsätze = относительное придаточное предложение = 
+beginnen — beginnt — begonnen — begann = начинать с
+er beginnt mit (Dativ) = он начинает с 
+einfach = просто; простой = 
+lange = долго = 
+markieren — markiert = отмечать
+zusammen = вместе = 
+die Form — Formen = форма = 
+die Kirche — Kirchen = церковь = 
 der Konjunktiv = сослагательное наклонение
-der Passiv = пассивный залог
-die Prüfung — Prüfungen = экзамен; проверка
+der Passiv = пассивный залог = 
+die Prüfung — Prüfungen = экзамен; проверка = 
 ab (Dativ) = с; от
-dein = твой
-dürfen — darf — gedurft — durfte = мочь; иметь разрешение
-freuen sich über (Akkusativ) auf (Akkusativ) — freut — gefreut — freute = радоваться о (прошлом, настоящем) в (будущем)
+dein = твой = 
+dürfen — darf — durfte = мочь; разрешать
+freuen sich — freut — gefreut — freute = радоваться
+er freut sich über (Akkusativ) auf (Akkusativ) = радоваться о (прошлом, настоящем) в (будущем)
 kennen — kennt — gekannt — kannte = знать; быть знакомым
-oft = часто
+oft — öfter — am öftesten = часто
+häufig — häufiger — am häufigsten = часто
 zufrieden mit (Dativ) = довольный (чем?)
-die Eltern = родители
-der Euro — Euros = евро
-die Sprache — Sprachen = язык
+die Eltern = родители = 
+der Euro — Euros = евро = 
+die Sprache — Sprachen = язык = 
 das Tier — Tiere = животное
-deutsch = немецкий
-dir = тебе
-fragen nach (Dativ) — fragt — gefragt — fragte = спрашивать о (ком? чём?)
+deutsch = немецкий = 
+dir = тебе = 
+fragen — fragt — gefragt — fragte = спрашивать
+er fragt nach (Dativ) = он спрашивает о (ком? чём?)
 nehmen — nimmt — genommen — nahm = брать
 nächste = следующий
-passen zu (Dativ) — passt — gepasst — passte = подходить к
-schnell — schneller — am schnellsten = быстрый
+passen — passt — gepasst — passte = подходит
+es passt zu (Dativ) = это подходит к
+schnell — schneller — am schnellsten = быстрый = 
 zwischen (Dativ) = между
 das Ende — Enden = конец
-die Freundin — Freundinnen = подруга
+die Freundin — Freundinnen = подруга = 
 die Hilfe für (Akkusativ) — Hilfen = помощь для
 der Partner — Partner = партнёр
-die Partnerin — Partnerinnen = партнёрша
-der Singular = единственное число
+die Partnerin — Partnerinnen = партнёрша = 
+der Singular = единственное число = 
 der Urlaub — Urlaube = отпуск
 die Zahl — Zahlen = число
 beide = оба
@@ -225,7 +230,6 @@ möglich = возможный
 schlecht — schlechter — am schlechtesten = плохой
 spät = поздно
 statt (Dativ) = вместо
-wenig = мало
 die Angst vor (Dativ) — Ängste = страх перед
 das Internet = интернет
 das Kapitel — Kapitel = глава
