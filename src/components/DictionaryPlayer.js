@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState, useCallback, useMemo } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import { FaArrowRight } from 'react-icons/fa';
@@ -35,7 +35,7 @@ const DictionaryPlayer = ({
   onTranslationLanguageChange,
   onTipLanguageChange,
   supportedContentLanguages,
-  ttsLanguages, // Переименуем в speechSynthesisLanguages в будущем
+  ttsLanguages,
   onMarkAsLearned,
   onEditEntry,
   onDeleteEntry,
@@ -155,7 +155,20 @@ const DictionaryPlayer = ({
     }
   }, []);
 
-  // Сохранение настроек
+  // Мемоизируем объект настроек для предотвращения лишних вызовов
+  const playerSettings = useMemo(() => ({
+    repeatCount,
+    readingSpeed,
+    selectedVoice: selectedVoiceForeign, // для обратной совместимости
+    selectedVoiceYourLang: selectedVoiceTranslation, // для обратной совместимости
+    tipLanguage,
+    selectedVoiceTip,
+    delayBetweenRecords,
+    availableVoices,
+  }), [repeatCount, readingSpeed, selectedVoiceForeign, selectedVoiceTranslation, 
+      tipLanguage, selectedVoiceTip, delayBetweenRecords, availableVoices]);
+
+  // Сохранение настроек - УБИРАЕМ availableVoices из зависимостей
   useEffect(() => {
     const settings = {
       foreignLanguage,
@@ -171,23 +184,16 @@ const DictionaryPlayer = ({
     };
 
     localStorage.setItem('playerSettings', JSON.stringify(settings));
-
-    // Передаем настройки в родительский компонент (для обратной совместимости)
-    if (onPlayerSettingsChange) {
-      onPlayerSettingsChange({
-        repeatCount,
-        readingSpeed,
-        selectedVoice: selectedVoiceForeign, // для обратной совместимости
-        selectedVoiceYourLang: selectedVoiceTranslation, // для обратной совместимости
-        tipLanguage,
-        selectedVoiceTip,
-        delayBetweenRecords,
-        availableVoices,
-      });
-    }
   }, [foreignLanguage, translationLanguage, tipLanguage, readingSpeed, repeatCount, recordsToPlay,
-    selectedVoiceForeign, selectedVoiceTranslation, selectedVoiceTip, delayBetweenRecords,
-    availableVoices, onPlayerSettingsChange]);
+    selectedVoiceForeign, selectedVoiceTranslation, selectedVoiceTip, delayBetweenRecords]);
+
+  // Отдельный useEffect для передачи настроек в родительский компонент
+  useEffect(() => {
+    if (onPlayerSettingsChange) {
+      onPlayerSettingsChange(playerSettings);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [playerSettings]); // Убираем onPlayerSettingsChange из зависимостей
 
   const handleInputChange = (e) => setInputValue(e.target.value);
 

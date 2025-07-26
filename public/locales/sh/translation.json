@@ -60,5 +60,6 @@
     "voice": "Glas",
     "delay-between-records": "Kašnjenje između zapisa (sekunde)",
     "delay": "Kašnjenje...",
-    "tip-language": "Savjet"
+    "tip-language": "Savjet",
+    "default-voice": "Podrazumevani glas"
 }

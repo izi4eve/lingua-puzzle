@@ -64,5 +64,6 @@
     "voice": "Голос",
     "delay-between-records": "Задержка между записями (сек)",
     "delay": "Задержка...",
-    "tip-language": "Подсказка"
+    "tip-language": "Подсказка",
+    "default-voice": "Голос по умолчанию"
 }

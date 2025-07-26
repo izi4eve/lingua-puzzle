@@ -64,5 +64,6 @@
     "voice": "Voz",
     "delay-between-records": "Retraso entre registros (segundos)",
     "delay": "Retraso...",
-    "tip-language": "Consejo"
+    "tip-language": "Consejo",
+    "default-voice": "Voz predeterminada"
 }
