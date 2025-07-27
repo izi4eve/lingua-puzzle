@@ -344,6 +344,10 @@ const App = () => {
             updateData={setData}
             language={foreignLanguage} // Используем foreignLanguage для TTS
             setFirstElement={setFirstElement}
+            // Передаем настройки озвучки из playerSettings
+            selectedVoiceForeign={playerSettings.selectedVoice}
+            readingSpeed={playerSettings.readingSpeed}
+            availableVoices={playerSettings.availableVoices}
             ttsLanguages={ttsLanguages}
           />
 

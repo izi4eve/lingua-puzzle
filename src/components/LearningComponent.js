@@ -9,7 +9,19 @@ import { Toast, ToastContainer } from 'react-bootstrap';
 
 const WORD_SPLIT_REGEX = /(?=\s[\p{L}\p{N}])/u;
 
-const LearningComponent = ({ data, firstElement, count, updateData, language, setFirstElement }) => {
+const LearningComponent = ({ 
+  data, 
+  firstElement, 
+  count, 
+  updateData, 
+  language, // foreignLanguage
+  setFirstElement,
+  // Новые пропсы для настроек озвучки
+  selectedVoiceForeign,
+  readingSpeed,
+  availableVoices,
+  ttsLanguages
+}) => {
   const { t } = useTranslation();
 
   const [allParts, setAllParts] = useState([]);
@@ -165,7 +177,14 @@ const LearningComponent = ({ data, firstElement, count, updateData, language, se
             <div key={rowIndex} className="row-box d-flex pt-2 pb-2">
               <div className="flex-grow-1 d-flex flex-wrap gap-2 justify-content-start align-items-start">
                 <div className="pe-2">
-                  <TextToSpeech text={item.foreignPart} language={language} />
+                  <TextToSpeech 
+                    text={item.foreignPart} 
+                    language={language}
+                    selectedVoice={selectedVoiceForeign}
+                    readingSpeed={readingSpeed}
+                    availableVoices={availableVoices}
+                    ttsLanguages={ttsLanguages}
+                  />
                 </div>
 
                 <div className="pt-1 c-translate">
