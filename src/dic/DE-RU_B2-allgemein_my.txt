@@ -428,45 +428,46 @@ wohnen — wohnt — gewohnt = жить (проживать)
 zahlen — zahlt — gezahlt = платить = 
 zeigen — zeigt — gezeigt = показывать = 
 der Absatz — Absätze = абзац; каблук
-die Ausbildung — Ausbildungen = образование; обучение
-Europa = Европа
-der Gast — Gäste = гость
-die Homepage — Homepages = домашняя страница
-die Katze — Katzen = кошка
+die Ausbildung — Ausbildungen = образование; обучение = 
+Europa = Европа = 
+der Gast — Gäste = гость = 
+die Homepage — Homepages = домашняя страница = 
+die Katze — Katzen = кошка = 
 der Kauf — Käufe = покупка
-die Kleidung — Kleidungen = одежда
+die Kleidung — Kleidungen = одежда = 
 der Konnektor — Konnektoren = соединитель
 Latein = латынь
-der Lehrer — Lehrer = учитель
+der Lehrer — Lehrer = учитель = 
 das Leseverstehen = понимание прочитанного
-die Minute — Minuten = минута
-der Monat — Monate = месяц
-das Musical — Musicals = мюзикл
-die Musik = музыка
-die Nummer — Nummern = номер
-die Sache — Sachen = вещь; дело
-die Schweiz = Швейцария
-der Schüler — Schüler = ученик
-der Sprecher — Sprecher = оратор; диктор
+die Minute — Minuten = минута = 
+der Monat — Monate = месяц = 
+das Musical — Musicals = мюзикл = 
+die Musik = музыка = 
+die Nummer — Nummern = номер = 
+die Sache — Sachen = вещь; дело = 
+die Schweiz = Швейцария = 
+der Schüler — Schüler = ученик = 
+der Sprecher — Sprecher = оратор; диктор = 
 die Stelle — Stellen = место; должность
-die Straße — Straßen = улица
-die Stunde — Stunden = час
-Stuttgart = Штутгарт
-der Termin — Termine = срок; встреча
-der Tipp — Tipps = совет
-die Transkription — Transkriptionen = транскрипция
+die Straße — Straßen = улица = 
+die Stunde — Stunden = час = 
+Stuttgart = Штутгарт = 
+der Termin — Termine = срок; встреча = 
+der Tipp — Tipps = совет = 
+die Transkription — Transkriptionen = транскрипция = 
 der Unfall — Unfälle = авария
-das Ziel — Ziele = цель
+das Ziel — Ziele = цель = 
 anbieten — bietet an — angeboten — bot an = предлагать
 ausdrücken — drückt aus — ausgedrückt — drückte aus = выражать
 bitten um (Akkusativ) — bittet — gebeten — bat = просить о
-dabei = при этом
+dabei = при этом = 
 dankbar für (Akkusativ) = благодарный за
-dauern — dauert — gedauert — dauerte = длиться; продолжаться
+dauern — dauert — gedauert = длиться; продолжаться = 
 eingehen — geht ein — ist eingegangen — ging ein = входить, поступать (о сообщении, предложении)
-eingehen auf (Akkusativ) — geht ein — ist eingegangen — ging ein = вдаваться в, принять во внимание, согласится на
+eingehen auf (Akkusativ) — er geht auf (Akkusativ) ein = вдаваться в, принять во внимание, согласится на
 einverstanden mit (Dativ) = согласный с
-erinnern (sich) an (Akkusativ) — erinnert — erinnert — erinnerte = напоминать (вспомнить)
+erinnern (sich) — erinnert — erinnert = напоминать (вспомнить)
+erinnern (sich) an (Akkusativ) = напоминать (вспомнить) про (кого? что?)
 fallen — fällt — ist gefallen — fiel = падать
 fühlen sich — fühlt — gefühlt — fühlte = чувствовать
 gegenüber (Dativ) = напротив; по отношению к
@@ -476,15 +477,15 @@ interessiert an (Dativ) = заинтересованный в
 jeweils = каждый раз; соответственно
 kaum = едва; почти не
 kurz — kürzer — am kürzesten = короткий
-lieben — liebt — geliebt — liebte = любить
-lösen — löst — gelöst — löste = решать; развязывать
+lieben — liebt — geliebt = любить
+lösen — löst — gelöst = решать; развязывать
 müde von (Dativ) = уставший от
 neutral = нейтральный
 niemand = никто
-reparieren — repariert — repariert — reparierte = ремонтировать
-schicken — schickt — geschickt — schickte = отправлять
+reparieren — repariert — repariert = ремонтировать
+schicken — schickt — geschickt = отправлять
 sowie = а также
-stimmen — stimmt — gestimmt — stimmte = соответствовать; голосовать
+stimmen — stimmt — gestimmt = соответствовать; голосовать
 teils = частично
 verlassen — verlässt — verlassen — verließ = покидать; оставлять
 verlieren — verliert — verloren — verlor = терять; проигрывать
@@ -496,14 +497,14 @@ die Adjektivendung — Adjektivendungen = окончание прилагате�
 das Alter — Alter = возраст
 das Argument — Argumente = аргумент
 die Bedeutung — Bedeutungen = значение
-Berlin = Берлин
-der Beruf — Berufe = профессия
+Berlin = Берлин = 
+der Beruf — Berufe = профессия = 
 die Bildung — Bildungen = образование; формирование
-das Cafe — Cafes = кафе
+das Cafe — Cafes = кафе = 
 das Einkaufszentrum — Einkaufszentren = торговый центр
-das Fahrrad — Fahrräder = велосипед
-der Fehler — Fehler = ошибка
-das Fenster — Fenster = окно
+das Fahrrad — Fahrräder = велосипед = 
+der Fehler — Fehler = ошибка = 
+das Fenster — Fenster = окно = 
 das Fernsehen = телевидение
 der Fernseher — Fernseher = телевизор
 das Fest — Feste = праздник
@@ -517,10 +518,10 @@ das Komma — Kommata = запятая
 die Kosten = расходы
 das Krankenhaus — Krankenhäuser = больница
 das Modell — Modelle = модель
-die Möglichkeit — Möglichkeiten = возможность
-der Müll = мусор
+die Möglichkeit — Möglichkeiten = возможность = 
+der Müll = мусор = 
 die Polizei — Polizeien = полиция
-die Post — Posten = почта
+die Post — Posten = почта = 
 der Preis — Preise = цена; приз
 der Rat — Räte = совет
 der Satzteil — Satzteile = часть предложения
@@ -531,66 +532,69 @@ das Stück — Stücke = кусок; штука
 das Telefon — Telefone = телефон
 die Veranstaltung — Veranstaltungen = мероприятие
 der Verkehr = движение; транспорт
-der Vorteil — Vorteile = преимущество
+der Vorteil — Vorteile = преимущество = 
 die Werkstatt — Werkstätten = мастерская
 die Wohnung — Wohnungen = квартира
 das Wörterbuch — Wörterbücher = словарь
 der Zweifel — Zweifel = сомнение
 abholen — holt ab — abgeholt — holte ab = забирать
 dagegen = против этого
-darin = в этом; внутри
-entspannen — entspannt — entspannt — entspannte = расслабляться
+darin = в этом; внутри = 
+entspannen — entspannt — entspannt = расслабляться
 entstehen — entsteht — ist entstanden — entstand = возникать
 etwa = примерно
-folgen — folgt — ist gefolgt — folgte = следовать
+folgen — folgt — ist gefolgt = следовать
 formell = формальный
-froh über (Akkusativ) = радостный по поводу
-fällen — fällt — gefällt — fällte = валить (дерево)
-führen — führt — geführt — führte = вести; руководить
+froh über; auf (Akkusativ) = радостный по поводу
+fällen — fällt — gefällt = валить (дерево)
+führen — führt — geführt = вести; руководить
 gar = вовсе; даже
 gering — geringer — am geringsten = небольшой; низкий
-grau = серый
+grau = серый = 
 hängen — hängt — gehangen — hing = висеть
-kochen — kocht — gekocht — kochte = готовить (еду)
-konzentrieren sich auf (Akkusativ) — konzentriert — konzentriert — konzentrierte = сосредотачиваться на
+kochen — kocht — gekocht = готовить (еду)
+konzentrieren sich — konzentriert — konzentriert = сосредотачиваться
+konzentrieren sich auf (Akkusativ) = сосредотачиваться на
 laufen — läuft — ist gelaufen — lief = бегать; идти (о ТВ)
-leider = к сожалению
+leider = к сожалению = 
 lieb = милый; дорогой
 maskulin = мужской
 nachdem = после того как
-nachdenken über (Akkusativ) — denkt nach — nachgedacht — dachte nach = размышлять о
+nachdenken — denkt nach — nachgedacht — dachte nach = размышлять
+nachdenken über (Akkusativ) = размышлять о
 nämlich = а именно
-plötzlich = внезапно
+plötzlich = внезапно = 
 schließlich = в конце концов
 der Sprachbaustein — Sprachbausteine = языковой элемент
 ständig = постоянно
 tatsächlich = действительно
-toll = классный; большой
-verwenden — verwendet — verwendet — verwendete = использовать
-wann = когда
+toll = классный; большой = 
+verwenden — verwendet — verwendet = использовать
+wann = когда = 
 weder … noch … = ни то …, ни это …
-wohin = куда
+wohin = куда = 
 zwar = хотя; правда
-ärgern sich über (Akkusativ) — ärgert — geärgert — ärgerte = сердиться из-за
+ärgern sich — ärgert — geärgert — ärgerte = сердиться
+ärgern sich über (Akkusativ) = сердиться из-за
 übrigens = кстати
-das Adverb — Adverbien = наречие
+das Adverb — Adverbien = наречие (прилагательное у глагола)
 der Arbeitnehmer — Arbeitnehmer = работник
 der Arm — Arme = рука
-der Arzt — Ärzte = врач
+der Arzt — Ärzte = врач = 
 der Aspekt — Aspekte = аспект
-die Autobahn — Autobahnen = автобан
-der Bauer — Bauern = крестьянин; фермер
+die Autobahn — Autobahnen = автобан = 
+der Bauer — Bauern = крестьянин; фермер = 
 der Begriff — Begriffe = понятие, термин
 die Behinderung — Behinderungen = инвалидность; препятствие
 der Bekannte — Bekannten = знакомый
 der Besuch — Besuche = визит
-das Büro — Büros = офис
-die Dame — Damen = дама; женщина
+das Büro — Büros = офис = 
+die Dame — Damen = дама; женщина = 
 der Dank für (Akkusativ) — Danke = благодарность за
-der Deutschkurs — Deutschkurse = курс немецкого языка
-der Dialekt — Dialekte = диалект
-das Ding — Dinge = вещь
-das Eis — Eise = лёд; мороженое
+der Deutschkurs — Deutschkurse = курс немецкого языка = 
+der Dialekt — Dialekte = диалект = 
+das Ding — Dinge = вещь = 
+das Eis — Eise = лёд; мороженое = 
 die Freude an (Dativ) — Freuden = радость от
 die Freude über (Akkusativ) auf (Akkusativ) — Freuden = радость в (прошлом, сейчас) в (будущем)
 der Geburtstag — Geburtstage = день рождения
