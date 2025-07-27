@@ -49,11 +49,11 @@ sollen — soll — sollte = должен; следует
 die Frau — Frauen = женщина = 
 doch = всё же; однако = 
 mir = мне = 
-andere = другой = 
+ander = другой = 
 welche = какой; который = 
 ihnen = им; Вам = 
 sprechen — spricht — gesprochen — sprach = говорить
-er spricht mit (Dativ) über (Akkusativ) = он говорит с (кем?) про (кого? что?)
+sprechen mit (Dativ) über (Akkusativ) = говорить с (кем?) про (кого? что?)
 sprechen von (Dativ) = упоминать о
 sprechen für (Akkusativ) = говорить в пользу
 sagen — gesagt = сказать; говорить
@@ -86,7 +86,7 @@ Deutschland = Германия =
 die Person — Personen = человек; личность
 also = итак; следовательно
 helfen — hilft — geholfen — half = помогать
-er hilft bei (Dativ) = он помогает в
+helfen bei (Dativ) = помогать в
 hier = здесь = 
 leben — gelebt = жить = 
 lernen — gelernt = учиться = 
@@ -155,14 +155,14 @@ dafür = для этого =
 dort = там = 
 die Überschrift — Überschriften = заголовок
 bringen — bringt — gebracht — brachte = приносить
-er bringt zu (Dativ) = приносить (кому?)
+bringen zu (Dativ) = приносить (кому?)
 die Familie — Familien = семья = 
 das Geld = деньги = 
 das Kino — Kinos = кино = 
 der Nebensatz — Nebensätze = придаточное предложение = 
 der Relativsatz — Relativsätze = относительное придаточное предложение = 
 beginnen — beginnt — begonnen — begann = начинать с
-er beginnt mit (Dativ) = он начинает с 
+beginnen mit (Dativ) = начинать с 
 einfach = просто; простой = 
 lange = долго = 
 markieren — markiert = отмечать
@@ -176,7 +176,7 @@ ab (Dativ) = с; от
 dein = твой = 
 dürfen — darf — durfte = мочь; разрешать
 freuen sich — freut — gefreut — freute = радоваться
-er freut sich über (Akkusativ) auf (Akkusativ) = радоваться о (прошлом, настоящем) в (будущем)
+freuen sich über (Akkusativ) auf (Akkusativ) = радоваться о (прошлом, настоящем) в (будущем)
 kennen — kennt — gekannt — kannte = знать; быть знакомым
 oft — öfter — am öftesten = часто
 häufig — häufiger — am häufigsten = часто
@@ -188,11 +188,11 @@ das Tier — Tiere = животное
 deutsch = немецкий = 
 dir = тебе = 
 fragen — fragt — gefragt — fragte = спрашивать
-er fragt nach (Dativ) = он спрашивает о (ком? чём?)
+fragen nach (Dativ) = спрашивать о (ком? чём?)
 nehmen — nimmt — genommen — nahm = брать
 nächste = следующий
 passen — passt — gepasst — passte = подходит
-es passt zu (Dativ) = это подходит к
+passen zu (Dativ) = подходит к
 schnell — schneller — am schnellsten = быстрый = 
 zwischen (Dativ) = между
 das Ende — Enden = конец
@@ -203,10 +203,10 @@ die Partnerin — Partnerinnen = партнёрша =
 der Singular = единственное число = 
 der Urlaub — Urlaube = отпуск
 die Zahl — Zahlen = число
-beide = оба
-bilden — bildet — gebildet — bildete = образовывать
+beide = оба = 
+bilden — bildet — gebildet = образовывать
 gegen; wider (Akkusativ) = против
-gestern = вчера
+gestern = вчера = 
 gleich = сразу; одинаковый
 klein — kleiner — am kleinsten = маленький
 liegen — liegt — gelegen — lag = лежать
@@ -226,171 +226,174 @@ erhalten — erhält — erhalten — erhielt = получать
 essen — isst — gegessen — aß = есть; кушать
 geradeaus = прямо
 gerade = только что
-möglich = возможный
-schlecht — schlechter — am schlechtesten = плохой
-spät = поздно
+möglich = возможный = 
+schlecht — schlechter — am schlechtesten = плохой =
+spät = поздно = 
 statt (Dativ) = вместо
-die Angst vor (Dativ) — Ängste = страх перед
-das Internet = интернет
+die Angst vor (Dativ) — Ängste = страх перед = 
+das Internet = интернет = 
 das Kapitel — Kapitel = глава
 das Subjekt — Subjekte = подлежащее
 die Vorstellung von (Dativ) — Vorstellungen = представление, воображение о
-die Zeitung — Zeitungen = газета
+die Zeitung — Zeitungen = газета = 
 allerdings = однако
-bitte = пожалуйста
-damit = этим; чтобы
+bitte = пожалуйста = 
+damit = этим; чтобы = 
 halten — hält — gehalten — hielt = держать
-ihm = ему
+ihm = ему = 
 mögen — mag — mochte = любить; нравиться
-setzen — setzt — gesetzt — setzte = ставить; садиться
-wählen — wählt — gewählt — wählte = выбирать
+setzen — setzt — gesetzt = ставить; садиться
+wählen — wählt — gewählt = выбирать
 das Hörverstehen = аудирование
-der Ort — Orte = место
-das Wetter — Wetter = погода
-die Zukunft = будущее
-bauen — baut — gebaut — baute = строить
+der Ort — Orte = место = 
+das Wetter — Wetter = погода = 
+die Zukunft = будущее = 
+bauen — baut — gebaut = строить
 bieten — bietet — geboten — bot = предлагать
-deshalb = поэтому
+deshalb = поэтому = 
 eigen = собственный
-erzählen von (Dativ) — erzählt — erzählt — erzählte = рассказывать о
+erzählen — erzählt — erzählt = рассказывать
+erzählen von (Dativ) = рассказывать о
 jemand = кто-то
 nennen — nennt — genannt — nannte = называть
-passieren — passiert — ist passiert — passierte = происходить
-schwer — schwerer — am schwersten = тяжёлый; сложный
-selbst = сам
-stellen — stellt — gestellt — stellte = ставить
-vielleicht = возможно; может быть
+passieren — passiert — ist passiert = происходить = 
+schwer — schwerer — am schwersten = тяжёлый; сложный = 
+selbst = сам = 
+stellen — stellt — gestellt = ставить
+vielleicht = возможно; может быть = 
 wegen (Genitiv) = из-за
 während (Genitiv) = во время
-zuerst = сначала
-das Adjektiv — Adjektive = прилагательное
+zuerst = сначала = 
+das Adjektiv — Adjektive = прилагательное = 
 das Bild — Bilder = картина; образ
 die Endung — Endungen = окончание
 die Firma — Firmen = фирма
 das Hotel — Hotels = отель
 mündlich — mündlicher — mündlichsten = устный
 die Nachricht von (Dativ) — Nachrichten = сообщение, новость о
-Präteritum = прошедшее время (претерит)
+Präteritum = прошедшее время = 
 die Reihenfolge — Reihenfolgen = последовательность
-bedeuten — bedeutet — bedeutet — bedeutete = означать
+bedeuten — bedeutet — bedeutet = означать = 
 eben = только что; ровно
 entscheiden — entscheidet — entschieden — entschied = решать
-genau = точно
-handeln — handelt — gehandelt — handelte = действовать (поступать), торговать
-handeln sich um (Akkusativ) — es handelt — gehandelt — handelte = говорится про (кого? что?)
-handeln von (Dativ) — handelt — gehandelt — handelte = говорит про
-ihn = его
-manchmal = иногда
-sondern = а; но (в противопоставлении)
-spielen — spielt — gespielt — spielte = играть
+genau = точно = 
+handeln — handelt — gehandelt = действовать (поступать), торговать
+es handelt sich um (Akkusativ) = говорится про (кого? что?)
+handeln von (Dativ) = говорит про
+ihn = его = 
+manchmal = иногда = 
+sondern = а (в противопоставлении)
+spielen — spielt — gespielt = играть = 
 steigen — steigt — ist gestiegen — stieg = подниматься
-der Berg — Berge = гора
+der Berg — Berge = гора = 
 die Deklination — Deklinationen = склонение
 die Lese = чтение
-die Meinung — Meinungen = мнение
+die Meinung — Meinungen = мнение = 
 das Recht — Rechte = право
 der Satzbau — Satzbaus = построение предложения
-die Situation — Situationen = ситуация
-die Tür — Türen = дверь
-der Vater — Väter = отец
-die Welt — Welten = мир
-bald = скоро
+die Situation — Situationen = ситуация = 
+die Tür — Türen = дверь = 
+der Vater — Väter = отец = 
+die Welt — Welten = мир = 
+bald = скоро = 
 bestehen — besteht — bestanden — bestand = выдерживать
-bestehen auf (Dativ) — besteht — bestanden — bestand = настаивать на
-bestehen aus (Dativ) — besteht — bestanden — bestand = состоять из
+bestehen auf (Dativ) = настаивать на
+es besteht aus (Dativ) = это состоит из
 fliegen — fliegt — ist geflogen — flog = летать
 gesund = здоровый
 lachen — lacht — gelacht — lachte = смеяться
-meinen — meint — gemeint — meinte = считать; думать
+meinen — meint — gemeint = иметь в виду
 sitzen — sitzt — gesessen — saß = сидеть
-studieren — studiert — studiert — studierte = учиться (в вузе)
+studieren — studiert — studiert = учиться (в вузе)
 trinken — trinkt — getrunken — trank = пить
 tun — tut — getan — tat = делать
-verdienen — verdient — verdient — verdiente = зарабатывать
+verdienen — verdient — verdient = зарабатывать
 vergessen — vergisst — vergessen — vergaß = забывать
-warten auf (Akkusativ) — wartet — gewartet — wartete = ждать (кого? что?)
-weiter = дальше
+warten — wartet — gewartet — wartete = ждать
+warten auf (Akkusativ) = ждать (кого? что?)
 wohl = вероятно; хорошо
 überhaupt = вообще
-überzeugen von (Dativ) — überzeugt — überzeugt — überzeugte = убеждать в
+überzeugen — überzeugt — überzeugt = убеждать
+überzeugen von (Dativ) = убеждать в
 der Anfang — Anfänge = начало
 die Beschwerde über (Akkusativ) — Beschwerden = жалоба про 
 die Ernährung — Ernährungen = питание
 die Geschichte — Geschichten = история
 das Interesse an (Dativ) — Interessen = интерес к
 die Lücke — Lücken = пробел
-die Million — Millionen = миллион
-der Nachbar — Nachbarn = сосед
-die Party — Partys = вечеринка
+die Million — Millionen = миллион = 
+der Nachbar — Nachbarn = сосед = 
+die Party — Partys = вечеринка = 
 der Roman — Romane = роман
 der Track — Tracks = трек
 der Vortrag — Vorträge = доклад
 die Wahl — Wahlen = выбор
 bestimmt = определённый
-besuchen — besucht — besucht — besuchte = посещать
-daran = об этом
-darüber = об этом; над этим
-dich = тебя
+besuchen — besucht — besucht = посещать
+daran = об этом = 
+darüber = об этом; над этим = 
+dich = тебя = 
 endlich = наконец
 fest = твёрдый; постоянный
-gehören — gehört — gehört — gehörte = принадлежать
+gehören — gehört — gehört = принадлежать
 gemeinsam = вместе
-glauben an (Akkusativ) — glaubt — geglaubt — glaubte = верить в
+glauben — glaubt — geglaubt — glaubte = верить в
+glauben an (Akkusativ) = верить в
 lang — länger — am längsten = длинный; долгий
 lassen — lässt — gelassen — ließ = оставлять; позволять
-letzte = последний
+letzte = последний = 
 mehrere = несколько
 seit (Dativ) = с (о времени)
 tragen — trägt — getragen — trug = носить
 vorstellen — stellt vor — vorgestellt — stellte vor = представлять
-wahrscheinlich = вероятно
-zurück = обратно
+wahrscheinlich = вероятно = 
+zurück = обратно = 
 die Angabe — Angaben = указание
-das Angebot — Angebote = предложение
-der August = август
-das Bio = био (органический)
-der Chef — Chefs = начальник
+das Angebot — Angebote = предложение = 
+der August = август = 
+das Bio = био (органический) = 
+der Chef — Chefs = начальник = 
 die Entscheidung — Entscheidungen = решение
-der Erfolg — Erfolge = успех
+der Erfolg — Erfolge = успех = 
 die Ergänzung — Ergänzungen = дополнение
 der Fall — Fälle = случай
 das Gefühl — Gefühle = чувство
 der Hund — Hunde = собака
-die Idee — Ideen = идея
-der Kunde — Kunden = клиент
-Plusquamperfekt = предпрошедшее время
-die Position — Positionen = позиция
-das Produkt — Produkte = продукт
-die Pronominaladverbien = местоименные наречия
-das Relativpronomen — Relativpronomen = относительное местоимение
-der Sport — Sportarten = спорт
+die Idee — Ideen = идея = 
+der Kunde — Kunden = клиент = 
+Plusquamperfekt = предпрошедшее время = 
+die Position — Positionen = позиция = 
+das Produkt — Produkte = продукт = 
+die Pronominaladverbien (da-, wo-) = местоименные наречия 
+das Relativpronomen — Relativpronomen (der, die, das) = относительное местоимение (который, которая, которые)
+der Sport — Sportarten = спорт = 
 am (Dativ) = в; на
 besonders = особенно
 bloß = только; лишь
 daher = поэтому
-davon = об этом; от этого
-erleben — erlebt — erlebt — erlebte = переживать; испытывать
+davon = об этом; от этого = 
+erleben — erlebt — erlebt = переживать; испытывать
 frei von (Dativ) = свободный от
 gelten — gilt — gegolten — galt = действовать; считаться
 hoch — höher — am höchsten = высокий
-laut — lauter — lautesten = громкий
+laut — lauter — lautesten = громкий = 
 schließen — schließt — geschlossen — schloss = закрывать
 unter = под
 wirklich = действительно
-ändern — ändert — geändert — änderte = менять
-der Abend — Abende = вечер
+ändern — ändert — geändert = менять
+der Abend — Abende = вечер = 
 die Anzeige — Anzeigen = объявление
-die Erfahrung — Erfahrungen = опыт
+die Erfahrung — Erfahrungen = опыт = 
 die Erwartung — Erwartungen = ожидание
 das Essen — Essen = еда
 der Gedanke an (Akkusativ) — Gedanken = мысль о
-der Infinitiv — Infinitive = инфинитив
-der Kurs — Kurse = курс
+der Infinitiv — Infinitive = инфинитив = 
+der Kurs — Kurse = курс = 
 die Liebe zu (Dativ) — Lieben = любовь к
 die Maßschuhe = обувь на заказ
-die Modalverben = модальные глаголы
+das Modalverb — Modalverben = модальный глагол = 
 das Paar — Paare = пара
-das Problem — Probleme = проблема
+das Problem — Probleme = проблема = 
 das Pronomen — Pronomen = местоимение
 das Präsens = настоящее время
 der Prüfungsteil — Prüfungsteile = часть экзамена
@@ -402,29 +405,28 @@ der Slum — Slums = трущобы
 der Spaß = веселье
 das Theater — Theater = театр
 die Vergangenheit — Vergangenheiten = прошлое
-ander = другой
 außer (Dativ) = кроме
 eigentlich = вообще-то; на самом деле
 einige = некоторый
-entwickeln — entwickelt — entwickelt — entwickelte = развивать
+entwickeln — entwickelt — entwickelt = развивать
 erkennen — erkennt — erkannt — erkannte = узнавать; распознавать
 erst = только; сначала
-funktionieren — funktioniert — funktioniert — funktionierte = работать (о механизмах)
-glücklich = счастливый
+funktionieren — funktioniert — funktioniert = работать (о механизмах)
+glücklich = счастливый = 
 infolge (Genitiv) = вследствие
 jung — jünger — am jüngsten = молодой
-manche = некоторый
-der Meister — Meister = мастер
-natürlich = естественно
-nie = никогда
-obwohl = хотя
-ordnen — ordnet — geordnet — ordnete = упорядочивать
-sicher = уверенный; безопасный
+manche = некоторый = 
+der Meister — Meister = мастер = 
+natürlich = естественно = 
+nie = никогда = 
+obwohl = хотя = 
+ordnen — ordnet — geordnet = упорядочивать
+sicher = уверенный; безопасный = 
 trotz (Genitiv) = несмотря на
 verbringen — verbringt — verbracht — verbrachte = проводить (время)
-wohnen — wohnt — gewohnt — wohnte = жить (проживать)
-zahlen — zahlt — gezahlt — zahlte = платить
-zeigen — zeigt — gezeigt — zeigte = показывать
+wohnen — wohnt — gewohnt = жить (проживать)
+zahlen — zahlt — gezahlt = платить = 
+zeigen — zeigt — gezeigt = показывать = 
 der Absatz — Absätze = абзац; каблук
 die Ausbildung — Ausbildungen = образование; обучение
 Europa = Европа
@@ -438,7 +440,6 @@ Latein = латынь
 der Lehrer — Lehrer = учитель
 das Leseverstehen = понимание прочитанного
 die Minute — Minuten = минута
-die Modalverben = модальные глаголы
 der Monat — Monate = месяц
 das Musical — Musicals = мюзикл
 die Musik = музыка
@@ -515,7 +516,6 @@ die Karte — Karten = карта; билет
 das Komma — Kommata = запятая
 die Kosten = расходы
 das Krankenhaus — Krankenhäuser = больница
-das Modalverb — Modalverben = модальный глагол
 das Modell — Modelle = модель
 die Möglichkeit — Möglichkeiten = возможность
 der Müll = мусор
