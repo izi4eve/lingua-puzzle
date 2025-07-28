@@ -1,21 +1,21 @@
-ist gewesen — wäre = был — был бы
-ihr habt — hätte = прошедшее — имел бы
-wird — ist geworden — wurde = будущее — стал — бы 
-konnte — könnte = мог — мог бы
-von (Dativ) = от
+ist gewesen — wäre = был — был бы = 
+ihr habt — hätte = прошедшее — имел бы = 
+wird — ist geworden — wurde = будущее — стал — бы = 
+konnte — könnte = мог — мог бы = 
+von (Dativ) = от = 
 der Mann — Männer = мужчина; человек = 
-aus (Dativ) = из
+aus (Dativ) = из = 
 richtig = правильно = 
-nach (Dativ) = после; в
+nach (Dativ) = после; в = 
 machen — gemacht = делать =
-er gibt — gegeben — gab = давать
-um (Akkusativ) = вокруг; ради; в (о времени)
+er gibt — gegeben — gab = давать = 
+um (Akkusativ) = вокруг; ради; в (о времени) = 
 gut — besser — am besten = хороший = 
 wenn = если = 
-bei (Dativ) = у; при
-ist gegangen — ging = ходил
+bei (Dativ) = у; при = 
+ist gegangen — ging = ходил = 
 gehen um (Akkusativ) = (речь) идёт про
-ist gekommen — kam = пришел; приехал
+ist gekommen — kam = пришел; приехал = 
 als = как; чем; когда = 
 über = о; над; через = 
 der Text — Texte = текст = 
@@ -23,12 +23,12 @@ noch = ещё =
 dann = тогда; затем = 
 der Mensch — Menschen = человек = 
 das Wort — Wörter = слово = 
-falsch = неправильно
+falsch = неправильно = 
 der Herr — Herren = господин = 
 viel — mehr — am meisten = много = 
 der Moderator — Moderatoren = модератор = 
 immer = всегда = 
-vor (Dativ) = перед; до
+vor (Dativ) = перед; до = 
 die Präposition — Präpositionen = предлог = 
 schon = уже = 
 sehr = очень = 
@@ -597,432 +597,441 @@ das Ding — Dinge = вещь =
 das Eis — Eise = лёд; мороженое = 
 die Freude an (Dativ) — Freuden = радость от
 die Freude über (Akkusativ) auf (Akkusativ) — Freuden = радость в (прошлом, сейчас) в (будущем)
-der Geburtstag — Geburtstage = день рождения
+der Geburtstag — Geburtstage = день рождения = 
 die Gegenwart = настоящее (время)
-das Gerät — Geräte = устройство
+das Gerät — Geräte = устройство = 
 das Gespräch — Gespräche = разговор
 die Grafik — Grafiken = графика
-die Hausaufgabe — Hausaufgaben = домашнее задание
+die Hausaufgabe — Hausaufgaben = домашнее задание = 
 indirekt = косвенный
-die Kartoffel — Kartoffeln = картофель
-der Kollege — Kollegen = коллега
-der Kontext — Kontexte = контекст
-der Kopfschmerz — Kopfschmerzen = головная боль
+die Kartoffel — Kartoffeln = картофель = 
+der Kollege — Kollegen = коллега = 
+der Kontext — Kontexte = контекст = 
+der Kopfschmerz — Kopfschmerzen = головная боль = 
 die Kritik — Kritiken = критика
 der Liebesfilm — Liebesfilme = мелодрама
-maskulin = мужской
 die Meldung — Meldungen = сообщение
-der Montag — Montage = понедельник
-der Morgen — Morgen = утро
-das Paket — Pakete = посылка
-der Patient — Patienten = пациент
-das Programm — Programme = программа
-die Reise — Reisen = путешествие
-der Rhein = Рейн (река)
-die Schlange — Schlangen = змея; очередь
-die Schokolade — Schokoladen = шоколад
-der Stau — Staus = пробка (дорожная)
+der Montag — Montage = понедельник = 
+der Morgen — Morgen = утро = 
+das Paket — Pakete = посылка = 
+der Patient — Patienten = пациент = 
+das Programm — Programme = программа = 
+die Reise — Reisen = путешествие = 
+der Rhein = Рейн (река) = 
+die Schlange — Schlangen = змея; очередь = 
+die Schokolade — Schokoladen = шоколад = 
+der Stau — Staus = пробка (дорожная) = 
 die Tabelle — Tabellen = таблица
-der Test — Tests = тест
+der Test — Tests = тест = 
 die Textstelle — Textstellen = место в тексте
-der Tisch — Tische = стол
-die Tochter — Töchter = дочь
+der Tisch — Tische = стол = 
+die Tochter — Töchter = дочь = 
 die Umfrage — Umfragen = опрос
-der Umlaut — Umlaute = умляут (знак над гласными)
+der Umlaut — Umlaute = умляут = 
 das Unternehmen — Unternehmen = предприятие
 die Verbindung — Verbindungen = связь
 der Verlust — Verluste = потеря
 das Warenhaus — Warenhäuser = универмаг
 die Warnung vor (Dativ) — Warnungen = предупреждение о
 der Wunsch — Wünsche = желание
-der Zug — Züge = поезд
-allein = один; одиноко
-außerdem = кроме того
-begeistern — begeistert — begeistert — begeisterte = восхищать
-beherrschen — beherrscht — beherrscht — beherrschte = владеть
-berichten über (Akkusativ) — berichtet — berichtet — berichtete = сообщать о
-berichten von (Dativ) — berichtet — berichtet — berichtete = упоминать о
-berücksichtigen — berücksichtigt — berücksichtigt — berücksichtigte = учитывать
-bevor = прежде чем
-bezahlen — bezahlt — bezahlt — bezahlte = платить
+der Zug — Züge = поезд = 
+allein = один; одиноко = 
+außerdem = кроме того = 
+begeistern — begeistert — begeistert = восхищать
+beherrschen — beherrscht — beherrscht = владеть
+berichten — berichtet — berichtet = сообщать, упоминать
+berichten über (Akkusativ) = сообщать о
+berichten von (Dativ) = упоминать о
+berücksichtigen — berücksichtigt — berücksichtigt = учитывать
+bevor = перед тем как
+bezahlen — bezahlt — bezahlt = платить
 christlich = христианский
-danken — dankt — gedankt — dankte = благодарить
+danken — dankt — gedankt = благодарить
 davor = до этого
 deutlich = ясно; отчётливо
-dritte = третий
-drücken — drückt — gedrückt — drückte = нажимать; прижимать
-durchführen — führt durch — durchgeführt — führte durch = проводить
+dritte = третий = 
+drücken — drückt — gedrückt = нажимать; прижимать
+durchführen — führt durch — durchgeführt = проводить
 eher = скорее; раньше
 erfahren — erfährt — erfahren — erfuhr = узнавать; испытывать
 ergeben — ergibt — ergeben — ergab = давать (результат)
-erklären — erklärt — erklärt — erklärte = объяснять
-erwarten — erwartet — erwartet — erwartete = ожидать
+erklären — erklärt — erklärt = объяснять = 
+erwarten — erwartet — erwartet = ожидать = 
 fertig mit (Dativ) = закончить (готово) что-то
-freundlich = дружелюбный
+freundlich = дружелюбный = 
 geehrt = уважаемый
-halb = половина
-interessieren sich für (Akkusativ) — interessiert — interessiert — interessierte = интересоваться про (кого? что?)
+halb = половина = 
+interessieren sich — interessiert — interessiert = интересоваться
+interessieren sich für (Akkusativ) = интересоваться про (кого? что?)
 kaputt = сломанный
-kosten — kostet — gekostet — kostete = стоить
+kosten — kostet — gekostet = стоить = 
 kulturell = культурный
-leiden an (Dativ) — leidet — gelitten — litt = страдать от
-leiden unter (Dativ) — leidet — gelitten — litt = страдать под (влиянием)
+leiden — leidet — gelitten — litt = страдать от
+leiden an (Dativ) = страдать от
+leiden unter (Dativ) = страдать под (влиянием)
 meistens = чаще всего
-morgens = утром
-paar = пара
-planen — plant — geplant — plante = планировать
-reden — redet — geredet — redete = говорить
+morgens = по утрам = 
+paar = пара = 
+planen — plant — geplant = планировать = 
+reden — redet — geredet = говорить = 
 reich an (Dativ) — reicher — am reichsten = богатый (чем?)
-reisen — reist — gereist — reiste = путешествовать
-rot = красный
+reisen — reist — gereist = путешествовать = 
+rot = красный = 
 scheinen — scheint — geschienen — schien = казаться; светить
-schenken — schenkt — geschenkt — schenkte = дарить
-schlafen — schläft — geschlafen — schlief = спать
+schenken — schenkt — geschenkt = дарить
+schlafen — schläft — geschlafen — schlief = спать = 
 singen — singt — gesungen — sang = петь
-spazieren — spaziert — spaziert — spazierte = гулять
+spazieren — spaziert — spaziert = гулять = 
 stark — stärker — am stärksten = сильный
 stolz auf (Akkusativ) = гордый чем-то
-teuer — teurer — am teuersten = дорогой
-typisch = типичный
+teuer — teurer — am teuersten = дорогой = 
+typisch = типичный = 
 unbedingt = обязательно
-unterrichten in (Dativ) — unterrichtet — unterrichtet — unterrichtete = преподавать (что?)
-unterrichten von (Dativ) — unterrichtet — unterrichtet — unterrichtete = сообщать о
+unterrichten — unterrichtet — unterrichtet = преподавать, сообщать
+unterrichten in (Dativ) = преподавать (что?)
+unterrichten von (Dativ) = сообщать о
 unterstrichen = подчёркнутый
 versprechen — verspricht — versprochen — versprach = обещать
 vorbei = мимо; законченный
 warm — wärmer — am wärmsten = тёплый
-weiß = белый
-wen = кого
-wünschen — wünscht — gewünscht — wünschte = желать
+weiß = белый = 
+wen = кого = 
+wünschen — wünscht — gewünscht = желать
 übrig = оставшийся
-das Aktiv — Aktive = активный залог
+das Aktiv — Aktive = активный залог = 
 das Amt — Ämter = ведомство; должность
-die App — Apps = приложение
-der Arbeitgeber — Arbeitgeber = работодатель
-der Architekt — Architekten = архитектор
+die App — Apps = приложение = 
+der Arbeitgeber — Arbeitgeber = работодатель = 
+der Architekt — Architekten = архитектор = 
 die Armut = бедность
 die Art — Arten = вид; тип
 die Auffassung — Auffassungen = мнение; понимание
 die Auskunft — Auskünfte = справка; информация
 das Ausland — Ausländer = заграница
-das Baby — Babys = младенец
-der Ball — Bälle = мяч
-die Bank — Bänke = банк; скамейка
+das Baby — Babys = младенец = 
+der Ball — Bälle = мяч = 
+die Bank — Bänke = банк; скамейка = 
 der Beginn — Beginne = начало
 die Beispielprüfung — Beispielprüfungen = примерный экзамен
 der Besucher — Besucher = посетитель
 die Bevölkerung — Bevölkerungen = население
-der Brief — Briefe = письмо
+der Brief — Briefe = письмо = 
 die Chemie — Chemien = химия
-der Club — Clubs = клуб
+der Club — Clubs = клуб = 
 die Diät — Diäten = диета
 der Einsteiger — Einsteiger = новичок
-der Elefant — Elefanten = слон
-das Ergebnis — Ergebnisse = результат
-das Erlebnis — Erlebnisse = переживание
+der Elefant — Elefanten = слон = 
+das Ergebnis — Ergebnisse = результат = 
+das Erlebnis — Erlebnisse = переживание = 
 die Erziehung — Erziehungen = воспитание
 das Fahrzeug — Fahrzeuge = транспортное средство
-das Fleisch — Fleischer = мясо
+das Fleisch — Fleischer = мясо = 
 die Folge — Folgen = следствие; эпизод
-die Freizeit — Freizeiten = свободное время
+die Freizeit — Freizeiten = свободное время = 
 die Fußprobleme = проблемы с ногами
 das Gemüse — Gemüse = овощи
 der Geschmack nach (Dativ) — Geschmäcker = вкус (чего?)
-die Gitarre — Gitarren = гитара
-das Glück = счастье
+die Gitarre — Gitarren = гитара = 
+das Glück = счастье = 
 griechisch = греческий язык
-das Gymnasium — Gymnasien = гимназия
-die Hand — Hände = рука
+das Gymnasium — Gymnasien = гимназия = 
+die Hand — Hände = рука = 
 die Handlung — Handlungen = действие; сюжет
-das Handy — Handys = мобильный телефон
+das Handy — Handys = мобильный телефон = 
 das Heimatland — Heimatländer = родина
 die Heirat — Heiraten = свадьба; женитьба
-das Herz — Herzen = сердце
-die Hose — Hosen = брюки
+das Herz — Herzen = сердце = 
+die Hose — Hosen = брюки = 
 die Impfung — Impfungen = прививка
-Indien = Индия
-die Insel — Inseln = остров
-die Intuition — Intuitionen = интуиция
-Italien = Италия
-die Jahreszeit — Jahreszeiten = время года
+Indien = Индия = 
+die Insel — Inseln = остров = 
+die Intuition — Intuitionen = интуиция = 
+Italien = Италия = 
+die Jahreszeit — Jahreszeiten = время года = 
 das Jahrhundert — Jahrhunderte = век
 das Kasussymbol — Kasussymbole = символ падежа
-die Konjunktur — Konjunkturen = конъюнктура
-das Konzert — Konzerte = концерт
-der Kopf — Köpfe = голова
-das Korrelat — Korrelate = соответствие
-die Krankheit — Krankheiten = болезнь
-Köln = Кёльн
+die Konjunktur — Konjunkturen = конъюнктура (условия, влияющие на ситуацию) = 
+das Konzert — Konzerte = концерт = 
+der Kopf — Köpfe = голова = 
+das Korrelat — Korrelate = соответствие (что-то, что относится к чему-то другому)
+die Krankheit — Krankheiten = болезнь = 
+Köln = Кёльн = 
 das Können = умение
 der Liebeskummer = любовная тоска
-die Luft — Lüfte = воздух
+die Luft — Lüfte = воздух = 
 die Lust auf (Akkusativ) — Lüste = желание (чего?)
-der Mai = май
-die Maschine — Maschinen = машина
-der Meter — Meter = метр
-der Mitarbeiter — Mitarbeiter = сотрудник
-die Mutter — Mütter = мать
-die Nacht — Nächte = ночь
-das Nomen — Nomen = существительное
+der Mai = май = 
+die Maschine — Maschinen = машина = 
+der Meter — Meter = метр = 
+der Mitarbeiter — Mitarbeiter = сотрудник = 
+die Mutter — Mütter = мать = 
+die Nacht — Nächte = ночь = 
+das Nomen — Nomen = существительное = 
 die Not — Nöte = нужда
 die Note — Noten = оценка; нота
 die Notiz — Notizen = заметка
 der Nullartikel — Nullartikel = нулевой артикль
 die Ortsangabe — Ortsangaben = указание места
-das Parlament — Parlamente = парламент
-die Pause — Pausen = пауза
-der Plan — Pläne = план
-der Platz — Plätze = место
-der Punkt — Punkte = точка
+das Parlament — Parlamente = парламент = 
+die Pause — Pausen = пауза = 
+der Plan — Pläne = план = 
+der Platz — Plätze = место = 
+der Punkt — Punkte = точка = 
 die Redemittel = средства выражения
 die Regenbogenpresse = жёлтая пресса
-die Richtung — Richtungen = направление
-der Schweizer — Schweizer = швейцарец
-die Schwester — Schwestern = сестра
-der See — Seen = озеро
-die Sehenswürdigkeit — Sehenswürdigkeiten = достопримечательность
+die Richtung — Richtungen = направление = 
+der Schweizer — Schweizer = швейцарец = 
+die Schwester — Schwestern = сестра = 
+der See — Seen = озеро = 
+die Sehenswürdigkeit — Sehenswürdigkeiten = достопримечательность = 
 das Sein = бытие
-der Sommer — Sommer = лето
-der Sonntag — Sonntage = воскресенье
-das Spiel — Spiele = игра
-der Stadtpark — Stadtparks = городской парк
+der Sommer — Sommer = лето = 
+der Sonntag — Sonntage = воскресенье = 
+das Spiel — Spiele = игра = 
+der Stadtpark — Stadtparks = городской парк = 
 die Stimme — Stimmen = голос
-die Suche nach (Dativ) — Suchen = поиск (чего?)
-die Tastatur — Tastaturen = клавиатура
+die Suche nach (Dativ) — Suchen = поиск (чего?) = 
+die Tastatur — Tastaturen = клавиатура = 
 die Tollwut = бешенство
 der Unsinn = чепуха
 der Unterricht — Unterrichte = урок; преподавание
 die Vermutung — Vermutungen = предположение
 das Verständnis für (Akkusativ) — Verständnisse = понимание (чего?)
-das Wasser = вода
-der Winter — Winter = зима
-die Wirtschaft — Wirtschaften = экономика
-der Zustand — Zustände = состояние
+das Wasser = вода = 
+der Winter — Winter = зима = 
+die Wirtschaft — Wirtschaften = экономика = 
+der Zustand — Zustände = состояние = 
 abhalten — hält ab — abgehalten — hielt ab = проводить; удерживать
-ach; achso = ах; ах так
-anfangen mit (Dativ) — fängt an — angefangen — fing an = начинать с
+ach; achso = ах; ах так = 
+anfangen — fängt an — angefangen — fing an = начинать
+anfangen mit (Dativ) = начинать с
 angenehm für (Akkusativ) = приятный для
 ankommen — kommt an — ist angekommen — kam an = прибывать
-ankommen auf (Akkusativ) — kommt an — ist angekommen — kam an = зависеть от (кого? что?)
+ankommen auf (Akkusativ) = зависеть от (кого? что?)
 anlässlich (Genitiv) = по случаю
-anrufen bei (Dativ) — ruft an — angerufen — rief an = звонить (кому?)
-ansehen — sieht an — angesehen — sah an = смотреть; рассматривать
-antworten auf (Akkusativ) mit (Dativ) — antwortet — geantwortet — antwortete = отвечать на (что?) с помощью (чего?)
+anrufen — ruft an — angerufen — rief an = звонить
+anrufen bei (Dativ) = звонить (кому?)
+ansehen — sieht an — angesehen — sah an = рассматривать
+antworten — antwortet — geantwortet = отвечать = 
+antworten auf (Akkusativ) mit (Dativ) = отвечать на (что?) с помощью (чего?)
 aufgrund (Genitiv) = на основании
 ausbilden — bildet aus — ausgebildet — bildete aus = обучать
 aussehen — sieht aus — ausgesehen — sah aus = выглядеть
-bedanken sich bei (Dativ) für (Akkusativ) — bedankt — bedankt — bedankte = благодарить у (кого?) за (что?)
-beenden — beendet — beendet — beendete = заканчивать
+bedanken — bedankt — bedankt — bedankte = благодарить
+bedanken sich bei (Dativ) für (Akkusativ) = благодарить у (кого?) за (что?)
+beenden — beendet — beendet = заканчивать
 bereit zu (Dativ) = готовый к
-beschweren sich bei (Dativ) über (Akkusativ) — beschwert — beschwert — beschwerte = жаловаться (кому?) про (кого? что?)
-bestätigen — bestätigt — bestätigt — bestätigte = подтверждать
-beteiligen — beteiligt — beteiligt — beteiligte = участвовать
-bewegen (sich) — bewegt — bewegt — bewegte = двигать (двигаться)
+beschweren sich — beschwert — beschwert = жаловаться
+beschweren sich bei (Dativ) über (Akkusativ) = жаловаться (кому?) про (кого? что?)
+bestätigen — bestätigt — bestätigt = подтверждать
+beteiligen — beteiligt — beteiligt = участвовать
+bewegen (sich) — bewegt — bewegt = двигать (двигаться)
 bewusst = сознательный
 bezüglich (Genitiv) = относительно
 danach = после этого
-je mehr, desto (umso) besser = чем больше, тем лучше
-deswegen = поэтому
-direkt = прямо; непосредственно
-drehen — dreht — gedreht — drehte = вращать
+je mehr, desto (umso) besser = чем больше, тем лучше = 
+deswegen = поэтому = 
+direkt = прямо; непосредственно = 
+drehen — dreht — gedreht = вращать = 
 enthalten — enthält — enthalten — enthielt = содержать
 entlang (Genitiv) = вдоль
-enttäuschen — enttäuscht — enttäuscht — enttäuschte = разочаровывать
-erledigen — erledigt — erledigt — erledigte = выполнять; завершать
-erreichen — erreicht — erreicht — erreichte = достигать
-erzielen — erzielt — erzielt — erzielte = достигать; получать
+enttäuschen — enttäuscht — enttäuscht = разочаровывать
+erledigen — erledigt — erledigt = выполнять; завершать
+erreichen — erreicht — erreicht = достигать
+erzielen — erzielt — erzielt = достигать; получать
 europäisch = европейский
 fehlend = отсутствующий
-feiern — feiert — gefeiert — feierte = праздновать
-fordern — fordert — gefordert — forderte = требовать
-französisch = французский
-frisch — frischer — am frischesten = свежий
+feiern — feiert — gefeiert = праздновать
+fordern — fordert — gefordert = требовать
+französisch = французский = 
+frisch — frischer — am frischesten = свежий = 
 fähig zu (Dativ) = способный к
-gerne = с удовольствием
 gültig = действительный
-günstig — günstiger — am günstigsten = выгодный; дешёвый
+günstig — günstiger — am günstigsten = выгодный; дешёвый = 
 halt = ну; ведь
-heiraten — heiratet — geheiratet — heiratete = жениться; выходить замуж
-insgesamt = всего, вообще
-international = международный
+heiraten — heiratet — geheiratet = жениться; выходить замуж
+insgesamt = всего, вообще = 
+international = международный = 
 jugendliche = юношеский (подростковый)
-klingeln — klingelt — geklingelt — klingelte = звонить (о звонке)
-kostenlos = бесплатный
-kümmern sich um (Akkusativ) — kümmert — gekümmert — kümmerte = заботиться о
-langweilen — langweilt — gelangweilt — langweilte = скучать; надоедать
+klingeln — klingelt — geklingelt = звонить (о звонке)
+kostenlos = бесплатный = 
+kümmern sich — kümmert — gekümmert = заботиться о
+kümmern sich um (Akkusativ) = заботиться о
+langweilen — langweilt — gelangweilt = скучать; надоедать
 leicht — leichter — am leichtesten = лёгкий
-lenken — lenkt — gelenkt — lenkte = направлять; управлять
+lenken — lenkt — gelenkt = направлять; управлять
 los = прочь; началось
 mindestens = по крайней мере
-mitteilen — teilt mit — mitgeteilt — teilte mit = сообщать
+mitteilen — teilt mit — mitgeteilt = сообщать
 neugierig auf (Akkusativ) = любопытный к
-nun = теперь
-pünktlich = пунктуальный
-reagieren auf (Akkusativ) — reagiert — reagiert — reagierte = реагировать на
-renovieren — renoviert — renoviert — renovierte = ремонтировать (обновлять)
-sauer = кислый
+nun = теперь = 
+pünktlich = пунктуальный = 
+reagieren — reagiert — reagiert = реагировать на
+reagieren auf (Akkusativ) = реагировать на
+renovieren — renoviert — renoviert = ремонтировать (обновлять)
+sauer = кислый = 
 sauer auf (Akkusativ) = обида, досада от
-schaffen — schafft — geschafft — schaffte = справляться; создавать
-schmecken nach (Dativ) — es schmeckt — geschmeckt — schmeckte = иметь вкус (чего?)
+schaffen — schafft — geschafft = справляться; создавать
+schmecken — es schmeckt — geschmeckt = иметь вкус
+schmecken nach (Dativ) = иметь вкус (чего?)
 schreien — schreit — geschrien — schrie = кричать
 schriftlich = письменный
 seitdem = с тех пор
-selten = редкий
+selten — seltener — am seltensten = редкий
 sowohl … als auch … = и …, и …
 nicht nur …, sondern auch … = не только …, но и …
-sperren — sperrt — gesperrt — sperrte = запирать; блокировать
+sperren — sperrt — gesperrt = запирать; блокировать
 stattfinden — findet statt — stattgefunden — fand statt = происходить
 treten — tritt — getreten — trat = наступать; пинать
-träumen von (Dativ) — träumt — geträumt — träumte = мечтать о; видеть сон о
+träumen — träumt — geträumt = мечтать; видеть сон
+träumen von (Dativ) = мечтать о; видеть сон о
 täglich = ежедневный
 unbekannt = неизвестный
-verkaufen — verkauft — verkauft — verkaufte = продавать
-verlieben sich in (Akkusativ) — verliebt — verliebt — verliebte = влюбляться в
+verkaufen — verkauft — verkauft = продавать
+verlieben sich — verliebt — verliebt = влюбляться в
+verlieben sich in (Akkusativ) = влюбляться в
 vermutlich = предположительно
-versuchen — versucht — versucht — versuchte = пытаться
+versuchen — versucht — versucht = пытаться
 verweisen — verweist — verwiesen — verwies = ссылаться; указывать
-verzichten — verzichtet — verzichtet — verzichtete = отказываться
-verändern — verändert — verändert — veränderte = изменить (существенно)
+verzichten — verzichtet — verzichtet = отказываться
+verändern — verändert — verändert = изменить (существенно)
 vorgegeben = заданный
-wofür = для чего
+wofür = для чего = 
 wütend auf (Akkusativ) = (сильно) злой на
-zustimmen — stimmt zu — zugestimmt — stimmte zu = соглашаться
-die Überraschung — Überraschungen = сюрприз
+zustimmen — stimmt zu — zugestimmt = соглашаться
+die Überraschung — Überraschungen = сюрприз = 
 das Übungsbuch — Übungsbücher = учебник с упражнениями
 ähnlich = похожий
-überlegen — überlegt — überlegt — überlegte = обдумывать
+überlegen — überlegt — überlegt = обдумывать
 überreichen — reicht über — überreicht — reichte über = вручать
 der Actionfilm — Actionfilme = боевик
-die Adverbien = наречия
-das Afrika = Африка
-die Ampel — Ampeln = светофор
-der Arbeitstag — Arbeitstage = рабочий день
+das Afrika = Африка = 
+die Ampel — Ampeln = светофор = 
+der Arbeitstag — Arbeitstage = рабочий день = 
 die Aufforderung — Aufforderungen = требование; призыв
 der Ausflug — Ausflüge = экскурсия
-der Autor — Autoren = автор
+der Autor — Autoren = автор = 
 die Bahnhofstraße — Bahnhofstraßen = вокзальная улица
 der Baum — Bäume = дерево
 der Bayer — Bayer = баварец
-der Belang — Belange = интерес; значение
+der Belang — Belange = важность, значение
 der Bereich — Bereiche = область
 der Berufsverkehr = час пик
 die Beschreibung — Beschreibungen = описание
 der Betreff — Betreffe = тема (письма)
 der Bezug auf (Akkusativ) — Bezüge = отношение к, ссылка на, связь с
-das Bioprodukt — Bioprodukte = биопродукт
+das Bioprodukt — Bioprodukte = биопродукт = 
 die Bitte um (Akkusativ) — Bitten = просьба о
 der Blumenstrauß — Blumensträuße = букет цветов
 der Blödsinn = чушь
-der Bus — Busse = автобус
-der Cent — Cents = цент
-das Computerspiel — Computerspiele = компьютерная игра
+der Bus — Busse = автобус = 
+der Cent — Cents = цент = 
+das Computerspiel — Computerspiele = компьютерная игра = 
 die Datei — Dateien = файл
 das Datum — Daten = дата
-der Deckel — Deckel = крышка
-der Dialog — Dialoge = диалог
+der Deckel — Deckel = крышка = 
+der Dialog — Dialoge = диалог = 
 die Diskussion — Diskussionen = дискуссия
 der Druck — Drücke = давление; печать
 die Ehe — Ehen = брак
 das Ei — Eier = яйцо
 die Einladung zu (Dativ) — Einladungen = приглашение на
 die Einzelheit — Einzelheiten = деталь
-englisch = английский
+englisch = английский = 
 die Entspannung — Entspannungen = расслабление
 das Erbe — Erben = наследство
 die Erklärung — Erklärungen = объяснение
 der Ernst = серьёзность
-der Experte — Experten = эксперт
-extra = дополнительно; экстра
+der Experte — Experten = эксперт = 
+extra = дополнительно; экстра = 
 feminin = женский
 das Ferienziel — Ferienziele = место отдыха
-der Flohmarkt — Flohmärkte = блошиный рынок
+der Flohmarkt — Flohmärkte = блошиный рынок = 
 die Forderung — Forderungen = требование
-das Foto — Fotos = фотография
-Frankfurt = Франкфурт
+das Foto — Fotos = фотография = 
+Frankfurt = Франкфурт = 
 das Freizeitverhalten — Freizeitverhalten = поведение в свободное время
 der Frieden — Frieden = мир
 der Frühling — Frühlinge = весна
 die Fähigkeit — Fähigkeiten = способность
-das Gas — Gase = газ
+das Gas — Gase = газ = 
 die Gefahr — Gefahren = опасность
-das Gehalt — Gehälter = зарплата; содержание
+das Gehalt — Gehälter = зарплата; содержание = 
 das Geräusch — Geräusche = шум
 das Geschirr — Geschirre = посуда
-das Geschäft — Geschäfte = магазин; дело
+das Geschäft — Geschäfte = магазин; дело = 
 das Getränk — Getränke = напиток
-die Grundschule — Grundschulen = начальная школа
-die Gruppe — Gruppen = группа
+die Grundschule — Grundschulen = начальная школа = 
+die Gruppe — Gruppen = группа = 
 die Hauptaussage — Hauptaussagen = основное утверждение
-die Hochzeit — Hochzeiten = свадьба
-die Hotline — Hotlines = горячая линия
+die Hochzeit — Hochzeiten = свадьба = 
+die Hotline — Hotlines = горячая линия = 
 der Inhalt — Inhalte = содержание
-die Institution — Institutionen = учреждение
-italienisch = итальянский
-jemand = кто-то
-der Junge — Jungen = мальчик; юноша
+die Institution — Institutionen = учреждение = 
+italienisch = итальянский = 
+der Junge — Jungen = мальчик; юноша = 
 der Juniorchef — Juniorchefs = младший руководитель
-der Kindergarten — Kindergärten = детский сад
+der Kindergarten — Kindergärten = детский сад = 
 das Kleid — Kleider = платье
 das Kleinkind — Kleinkinder = малыш
 die Kleinstadt — Kleinstädte = небольшой город
-die Komposita = составные слова
+die Komposita = составные слова (слова из нескольких)
 die Konjunktion — Konjunktionen = союз
-der Kontakt — Kontakte = контакт
+der Kontakt — Kontakte = контакт = 
 die Krise — Krisen = кризис
-der Käse — Käse = сыр
-der Körper — Körper = тело
+der Käse — Käse = сыр = 
+der Körper — Körper = тело = 
 der Künstler — Künstler = художник; артист
-der Laden — Läden = магазин
+der Laden — Läden = магазин = 
 die Laune — Launen = настроение
 die Leistung — Leistungen = достижение; мощность
 der Lernerfolg — Lernerfolge = успех в обучении
 das Licht — Lichter = свет
-das Lied — Lieder = песня
-die Medizin — Medizinen = медицина
+das Lied — Lieder = песня  
+die Medizin — Medizinen = медицина = 
 der Meinungsmacher — Meinungsmacher = формирующий мнение
-der Meister — Meister = мастер
-das Milchprodukt — Milchprodukte = молочный продукт
-das Mitglied — Mitglieder = член
-das Mittel — Mittel = средство
-der Mittwoch — Mittwoche = среда
-das Modalwort — Modalwörter = модальное слово
-der Moment — Momente = момент
-das Motiv — Motive = мотив; узор
+das Milchprodukt — Milchprodukte = молочный продукт = 
+das Mitglied — Mitglieder = член = 
+das Mittel — Mittel = средство = 
+der Mittwoch — Mittwoche = среда = 
+das Modalwort — Modalwörter = модальное слово = 
+der Moment — Momente = момент = 
+das Motiv — Motive = мелодия; повод; сюжет; узор
 der Mut = смелость
-das Mädchen — Mädchen = девочка
-das Nachtleben — Nachtleben = ночная жизнь
-der Nobelpreis — Nobelpreise = Нобелевская премия
-die Oma — Omas = бабушка
+das Mädchen — Mädchen = девочка = 
+das Nachtleben — Nachtleben = ночная жизнь = 
+der Nobelpreis — Nobelpreise = Нобелевская премия = 
+die Oma — Omas = бабушка = 
 der Pfeffer — Pfeffer = перец
 die Politik — Politiken = политика
 der Polizist — Polizisten = полицейский
-polnisch = польский
-der Postman — Postmen = почтальон
-das Prinzip — Prinzipien = принцип
+polnisch = польский = 
+der Postman — Postmen = почтальон = 
+das Prinzip — Prinzipien = принцип = 
 das Präsens — Präsen = настоящее время
-die Präsentation — Präsentationen = презентация
+die Präsentation — Präsentationen = презентация = 
 der Prüfer — Prüfer = экзаменатор
-der Prüfungspartner — Prüfungspartner = партнёр по экзамену
+der Prüfungspartner — Prüfungspartner = партнёр по экзамену = 
 die Prüfungsteile = части экзамена
-das Radio — Radios = радио
+das Radio — Radios = радио = 
 der Ratschlag — Ratschläge = совет
-der Raum — Räume = комната; пространство
+der Raum — Räume = комната; пространство = 
 die Reaktion auf (Akkusativ) — Reaktionen = реакция на
 das Regal — Regale = полка
 die Reparatur — Reparaturen = ремонт
 der Ring — Ringe = кольцо
-der Rollstuhl — Rollstühle = инвалидная коляска
-das Rad — Räder = колесо; велосипед
+der Rollstuhl — Rollstühle = инвалидная коляска = 
+das Rad — Räder = колесо; велосипед = 
 der Schaden — Schäden = ущерб
 der Schneider — Schneider = портной
 die Schuld — Schulden = вина; долг
 die Schwierigkeit — Schwierigkeiten = трудность
-der Schal — Schals = шарф
+der Schal — Schals = шарф = 
 der Silvesterabend — Silvesterabende = канун Нового года
 das Sportereignis — Sportereignisse = спортивное событие
 das Sprichwort — Sprichwörter = пословица
 die Strecke — Strecken = участок (пути); расстояние
-der Stress — Stresse = стресс
+der Stress — Stresse = стресс = 
 die Subjunktion — Subjunktionen = подчинительный союз
 das Synonym — Synonyme = синоним
 der Süden = юг
