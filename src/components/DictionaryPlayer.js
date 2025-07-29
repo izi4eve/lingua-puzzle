@@ -165,8 +165,9 @@ const DictionaryPlayer = ({
     selectedVoiceTip,
     delayBetweenRecords,
     availableVoices,
+    recordsToPlay, // ДОБАВЛЯЕМ recordsToPlay в настройки
   }), [repeatCount, readingSpeed, selectedVoiceForeign, selectedVoiceTranslation, 
-      tipLanguage, selectedVoiceTip, delayBetweenRecords, availableVoices]);
+      tipLanguage, selectedVoiceTip, delayBetweenRecords, availableVoices, recordsToPlay]);
 
   // Сохранение настроек - УБИРАЕМ availableVoices из зависимостей
   useEffect(() => {
@@ -457,6 +458,7 @@ const DictionaryPlayer = ({
         selectedVoiceTip={selectedVoiceTip}
         delayBetweenRecords={delayBetweenRecords}
         availableVoices={availableVoices}
+        recordsToPlay={recordsToPlay} // ПЕРЕДАЁМ recordsToPlay в PlayerProvider
       >
         <PlayerControls />
       </PlayerProvider>

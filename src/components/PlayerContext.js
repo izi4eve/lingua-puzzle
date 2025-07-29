@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useReducer, useRef, useCallback, useEffect } from 'react';
+import React, { createContext, useContext, useReducer, useRef, useCallback, useEffect, useMemo } from 'react';
 
 // Начальное состояние плеера
 const getInitialState = () => {
@@ -68,6 +68,7 @@ export const PlayerProvider = ({
     selectedVoiceTip = null,
     delayBetweenRecords = 2,
     availableVoices = [],
+    recordsToPlay = Infinity,
 }) => {
     const [playerState, dispatch] = useReducer(playerReducer, {
         ...getInitialState(),
@@ -104,7 +105,19 @@ export const PlayerProvider = ({
 
     const delayTimeoutRef = useRef(null);
     const cancelTokenRef = useRef({ cancelled: false });
-    const filteredData = data.filter((item) => !item.isLearned);
+    
+    // Мемоизируем filteredData и recordsToPlayData
+    const filteredData = useMemo(() => 
+        data.filter((item) => !item.isLearned), 
+        [data]
+    );
+
+    const recordsToPlayData = useMemo(() => 
+        recordsToPlay === Infinity 
+            ? filteredData 
+            : filteredData.slice(0, Math.min(recordsToPlay, filteredData.length)),
+        [filteredData, recordsToPlay]
+    );
 
     // Функция для получения TTS кода языка
     const getTTSLanguageCode = useCallback((langCode) => {
@@ -219,7 +232,7 @@ export const PlayerProvider = ({
         resetCancelToken();
 
         const nextRecord = playerState.currentRecord + 1;
-        const maxIndex = Math.max(0, filteredData.length - 1);
+        const maxIndex = Math.max(0, recordsToPlayData.length - 1);
 
         if (nextRecord > maxIndex) {
             dispatch({ type: 'SET_CURRENT_RECORD', payload: 0 });
@@ -230,15 +243,15 @@ export const PlayerProvider = ({
             dispatch({ type: 'RESET_REPEAT' });
             updateFirstElement(nextRecord);
         }
-    }, [playerState.currentRecord, filteredData.length, updateFirstElement, resetCancelToken]);
+    }, [playerState.currentRecord, recordsToPlayData, updateFirstElement, resetCancelToken]);
 
     // Функция воспроизведения текущей записи
     const playCurrentRecord = useCallback(async () => {
         if (
             !window.speechSynthesis ||
-            filteredData.length === 0 ||
+            recordsToPlayData.length === 0 ||
             playerState.currentRecord < 0 ||
-            playerState.currentRecord >= filteredData.length ||
+            playerState.currentRecord >= recordsToPlayData.length ||
             !playerState.isPlaying ||
             playerState.isSpeaking
         ) {
@@ -252,7 +265,7 @@ export const PlayerProvider = ({
 
         const currentRecordAtStart = playerState.currentRecord;
         const currentRepeatAtStart = playerState.currentRepeat;
-        const { foreignPart, translation, tipPart } = filteredData[currentRecordAtStart];
+        const { foreignPart, translation, tipPart } = recordsToPlayData[currentRecordAtStart];
 
         try {
             const isPlayingAtStart = playerState.isPlaying;
@@ -342,7 +355,7 @@ export const PlayerProvider = ({
         playerState.currentRecord,
         playerState.currentRepeat,
         playerState.isSpeaking,
-        filteredData,
+        recordsToPlayData,
         foreignLanguage,
         translationLanguage,
         tipLanguage,
@@ -384,7 +397,9 @@ export const PlayerProvider = ({
 
         resetCancelToken();
 
-        const prevRecord = Math.max(playerState.currentRecord - 1, 0);
+        const maxIndex = Math.max(0, recordsToPlayData.length - 1);
+        const prevRecord = playerState.currentRecord <= 0 ? maxIndex : playerState.currentRecord - 1;
+
         dispatch({ type: 'SET_CURRENT_RECORD', payload: prevRecord });
         dispatch({ type: 'RESET_REPEAT' });
         updateFirstElement(prevRecord);
@@ -415,7 +430,7 @@ export const PlayerProvider = ({
 
     // Обработчик отметки как изученной
     const handleMarkAsLearned = () => {
-        if (filteredData.length === 0) return;
+        if (recordsToPlayData.length === 0) return;
 
         window.speechSynthesis.cancel();
         if (delayTimeoutRef.current) {
@@ -424,21 +439,24 @@ export const PlayerProvider = ({
         }
         dispatch({ type: 'STOP_ALL' });
 
-        const recordToMark = filteredData[playerState.currentRecord];
+        const recordToMark = recordsToPlayData[playerState.currentRecord];
         if (onMarkAsLearned) {
             onMarkAsLearned(recordToMark);
         }
 
-        const newFilteredData = filteredData.filter((_, index) => index !== playerState.currentRecord);
+        // После удаления записи пересчитываем массив
+        const newRecordsToPlayData = recordsToPlay === Infinity ?
+            data.filter((item) => !item.isLearned) :
+            data.filter((item) => !item.isLearned).slice(0, Math.min(recordsToPlay, data.filter((item) => !item.isLearned).length));
 
-        if (newFilteredData.length === 0) {
+        if (newRecordsToPlayData.length === 0) {
             dispatch({ type: 'SET_CURRENT_RECORD', payload: 0 });
             dispatch({ type: 'RESET_REPEAT' });
             updateFirstElement(0);
             return;
         }
 
-        if (playerState.currentRecord >= newFilteredData.length) {
+        if (playerState.currentRecord >= newRecordsToPlayData.length) {
             dispatch({ type: 'SET_CURRENT_RECORD', payload: 0 });
             dispatch({ type: 'RESET_REPEAT' });
             updateFirstElement(0);
@@ -474,19 +492,19 @@ export const PlayerProvider = ({
 
     // Синхронизация currentRecord с firstElement
     useEffect(() => {
-        const maxIndex = Math.max(0, filteredData.length - 1);
+        const maxIndex = Math.max(0, recordsToPlayData.length - 1);
         const newRecord = Math.min(firstElement, maxIndex);
         if (newRecord !== playerState.currentRecord) {
             dispatch({ type: 'SET_CURRENT_RECORD', payload: newRecord });
         }
-    }, [firstElement, filteredData.length, playerState.currentRecord]);
+    }, [firstElement, recordsToPlayData.length, playerState.currentRecord]);
 
     // Эффект для воспроизведения
     useEffect(() => {
         if (playerState.isPlaying && filteredData.length > 0 &&
             !playerState.isSpeaking && !playerState.isInDelay) {
             playCurrentRecord();
-        } else if (filteredData.length === 0) {
+        } else if (recordsToPlayData.length === 0) {
             dispatch({ type: 'SET_PLAYING', payload: false });
         }
     }, [
@@ -495,6 +513,7 @@ export const PlayerProvider = ({
         playerState.currentRepeat,
         playerState.isSpeaking,
         playerState.isInDelay,
+        recordsToPlayData.length,
         filteredData.length,
         playCurrentRecord
     ]);
@@ -534,8 +553,8 @@ export const PlayerProvider = ({
         // Состояние
         playerState,
         dispatch,
-        filteredData,
-        currentEntry: filteredData[playerState.currentRecord],
+        filteredData: recordsToPlayData,
+        currentEntry: recordsToPlayData[playerState.currentRecord],
 
         // Методы
         handlePlayPause,
