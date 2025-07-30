@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useCallback, useMemo } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
-import { FaArrowRight } from 'react-icons/fa';
+import { FaArrowRight, FaCheck } from 'react-icons/fa';
 import { TbCircleNumber2Filled } from 'react-icons/tb';
 
 import PlayerControls from './PlayerControls';
@@ -253,6 +253,25 @@ const DictionaryPlayer = ({
     setVoiceTipManuallySelected(false); // Сбрасываем флаг при смене языка
   };
 
+  // Обработчик для кнопки "Mark as Known"
+  const handleMarkAsKnown = () => {
+    const unlearnedRecords = data.filter(item => !item.isLearned);
+    const recordsToMark = recordsToPlay === Infinity ? unlearnedRecords.length : Math.min(recordsToPlay, unlearnedRecords.length);
+    
+    // Помечаем первые recordsToMark записей как изученные
+    for (let i = 0; i < recordsToMark; i++) {
+      if (unlearnedRecords[i] && onMarkAsLearned) {
+        onMarkAsLearned(unlearnedRecords[i]);
+      }
+    }
+  };
+
+  // Формируем текст для кнопки
+  const getMarkAsKnownButtonText = () => {
+    const recordsText = recordsToPlay === Infinity ? t('all') : recordsToPlay;
+    return `${t('known')} ${recordsText}`;
+  };
+
   return (
     <div className="whiteBox rounded-4 p-3 my-3">
       <PreventScreenSleep />
@@ -434,6 +453,19 @@ const DictionaryPlayer = ({
               <FaArrowRight />
             </Button>
           </div>
+        </div>
+
+        {/* КНОПКА "MARK AS KNOWN" */}
+        <div className="d-flex align-items-center">
+          <Button 
+            onClick={handleMarkAsKnown} 
+            variant="outline-dark"
+            disabled={filteredData.length === 0}
+            className="d-flex align-items-center gap-2"
+          >
+            <FaCheck />
+            {getMarkAsKnownButtonText()}
+          </Button>
         </div>
       </div>
 
