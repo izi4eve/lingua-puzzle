@@ -69,6 +69,7 @@ export const PlayerProvider = ({
     delayBetweenRecords = 2,
     availableVoices = [],
     recordsToPlay = Infinity,
+    onRequestPause,
 }) => {
     const [playerState, dispatch] = useReducer(playerReducer, {
         ...getInitialState(),
@@ -105,16 +106,16 @@ export const PlayerProvider = ({
 
     const delayTimeoutRef = useRef(null);
     const cancelTokenRef = useRef({ cancelled: false });
-    
+
     // Мемоизируем filteredData и recordsToPlayData
-    const filteredData = useMemo(() => 
-        data.filter((item) => !item.isLearned), 
+    const filteredData = useMemo(() =>
+        data.filter((item) => !item.isLearned),
         [data]
     );
 
-    const recordsToPlayData = useMemo(() => 
-        recordsToPlay === Infinity 
-            ? filteredData 
+    const recordsToPlayData = useMemo(() =>
+        recordsToPlay === Infinity
+            ? filteredData
             : filteredData.slice(0, Math.min(recordsToPlay, filteredData.length)),
         [filteredData, recordsToPlay]
     );
@@ -247,6 +248,12 @@ export const PlayerProvider = ({
 
     // Функция воспроизведения текущей записи
     const playCurrentRecord = useCallback(async () => {
+        // Ждем полной остановки предыдущего воспроизведения
+        if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
+            window.speechSynthesis.cancel();
+            await new Promise(resolve => setTimeout(resolve, 200));
+        }
+
         if (
             !window.speechSynthesis ||
             recordsToPlayData.length === 0 ||
@@ -374,8 +381,18 @@ export const PlayerProvider = ({
         if (playerState.isPlaying) {
             stopPlayback();
         } else {
-            resetCancelToken();
-            dispatch({ type: 'SET_PLAYING', payload: true });
+            // Принудительно останавливаем любое активное воспроизведение
+            window.speechSynthesis.cancel();
+
+            // Сброс внутреннего состояния
+            dispatch({ type: 'SET_SPEAKING', payload: false });
+            dispatch({ type: 'SET_DELAY', payload: false });
+
+            // Небольшая задержка для корректной остановки
+            setTimeout(() => {
+                resetCancelToken();
+                dispatch({ type: 'SET_PLAYING', payload: true });
+            }, 100);
         }
     };
 
@@ -548,6 +565,18 @@ export const PlayerProvider = ({
         };
     }, []);
 
+    const handlePause = useCallback(() => {
+        if (playerState.isPlaying) {
+            stopPlayback();
+        }
+    }, [playerState.isPlaying, stopPlayback]);
+
+    useEffect(() => {
+        if (onRequestPause && typeof onRequestPause === 'function') {
+            onRequestPause(handlePause);
+        }
+    }, [onRequestPause, handlePause]);
+
     // Значение контекста
     const contextValue = {
         // Состояние
@@ -565,6 +594,7 @@ export const PlayerProvider = ({
         handleEditClick,
         handleEditSave,
         handleEditDelete,
+        handlePause,
     };
 
     return (

@@ -25,6 +25,8 @@ const Relax = ({
     selectedVoiceTip = null,
     delayBetweenRecords = 2,
     availableVoices = [],
+    recordsToPlay,
+    onRequestPlayerPause,
 }) => {
     const { t } = useTranslation();
 
@@ -100,6 +102,8 @@ const Relax = ({
                         key={index}
                         {...commonProps}
                         {...config}
+                        recordsToPlay={recordsToPlay}
+                        onRequestPlayerPause={onRequestPlayerPause}
                     />
                 ))}
             </div>

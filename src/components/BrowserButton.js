@@ -74,6 +74,8 @@ const BrowserButton = ({
   selectedVoiceTip = null,
   delayBetweenRecords = 2,
   availableVoices = [],
+  recordsToPlay = Infinity,
+  onRequestPlayerPause,
 }) => {
   const { t } = useTranslation();
 
@@ -89,7 +91,15 @@ const BrowserButton = ({
     }
   }, [t]);
 
+  const handleRequestPlayerPause = () => {
+    if (onRequestPlayerPause) {
+      onRequestPlayerPause();
+    }
+  };
+
   const handleClose = () => {
+    handleRequestPlayerPause();
+    
     setShowModal(false);
     setIframeError(false);
     setInputUrl('');
@@ -97,6 +107,8 @@ const BrowserButton = ({
   };
 
   const handleShow = () => {
+    handleRequestPlayerPause();
+
     if (mode === 'input' && inputUrl) {
       const embed = getEmbedUrl(inputUrl);
       if (embed) {
@@ -240,6 +252,8 @@ const BrowserButton = ({
               selectedVoiceTip={selectedVoiceTip}
               delayBetweenRecords={delayBetweenRecords}
               availableVoices={availableVoices}
+              recordsToPlay={recordsToPlay}
+              onRequestPause={handleRequestPlayerPause}
             >
               <PlayerControls />
               <PreventScreenSleep />

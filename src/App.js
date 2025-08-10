@@ -335,6 +335,12 @@ const App = () => {
             selectedVoiceTip={playerSettings.selectedVoiceTip}
             delayBetweenRecords={playerSettings.delayBetweenRecords}
             availableVoices={playerSettings.availableVoices}
+            recordsToPlay={playerSettings.recordsToPlay}
+            onRequestPlayerPause={() => {
+              if (window.dictionaryPlayerPause) {
+                window.dictionaryPlayerPause();
+              }
+            }}
           />
 
           <LearningComponent

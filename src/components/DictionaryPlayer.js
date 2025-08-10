@@ -166,8 +166,8 @@ const DictionaryPlayer = ({
     delayBetweenRecords,
     availableVoices,
     recordsToPlay, // ДОБАВЛЯЕМ recordsToPlay в настройки
-  }), [repeatCount, readingSpeed, selectedVoiceForeign, selectedVoiceTranslation, 
-      tipLanguage, selectedVoiceTip, delayBetweenRecords, availableVoices, recordsToPlay]);
+  }), [repeatCount, readingSpeed, selectedVoiceForeign, selectedVoiceTranslation,
+    tipLanguage, selectedVoiceTip, delayBetweenRecords, availableVoices, recordsToPlay]);
 
   // Сохранение настроек - УБИРАЕМ availableVoices из зависимостей
   useEffect(() => {
@@ -257,7 +257,7 @@ const DictionaryPlayer = ({
   const handleMarkAsKnown = () => {
     const unlearnedRecords = data.filter(item => !item.isLearned);
     const recordsToMark = recordsToPlay === Infinity ? unlearnedRecords.length : Math.min(recordsToPlay, unlearnedRecords.length);
-    
+
     // Помечаем первые recordsToMark записей как изученные
     for (let i = 0; i < recordsToMark; i++) {
       if (unlearnedRecords[i] && onMarkAsLearned) {
@@ -457,8 +457,8 @@ const DictionaryPlayer = ({
 
         {/* КНОПКА "MARK AS KNOWN" */}
         <div className="d-flex align-items-center">
-          <Button 
-            onClick={handleMarkAsKnown} 
+          <Button
+            onClick={handleMarkAsKnown}
             variant="outline-dark"
             disabled={filteredData.length === 0}
             className="d-flex align-items-center gap-2"
@@ -491,6 +491,10 @@ const DictionaryPlayer = ({
         delayBetweenRecords={delayBetweenRecords}
         availableVoices={availableVoices}
         recordsToPlay={recordsToPlay} // ПЕРЕДАЁМ recordsToPlay в PlayerProvider
+        onRequestPause={(pauseHandler) => {
+          // Сохраняем ссылку на функцию паузы для внешнего использования
+          window.dictionaryPlayerPause = pauseHandler;
+        }}
       >
         <PlayerControls />
       </PlayerProvider>
