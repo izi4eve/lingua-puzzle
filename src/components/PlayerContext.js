@@ -490,7 +490,7 @@ export const PlayerProvider = ({
     const handleEditSave = (updatedEntry) => {
         if (filteredData.length === 0) return;
 
-        const currentEntry = filteredData[playerState.currentRecord];
+        const currentEntry = recordsToPlayData[playerState.currentRecord];
         if (onEditEntry) {
             onEditEntry(currentEntry, updatedEntry);
         }
@@ -500,7 +500,7 @@ export const PlayerProvider = ({
     const handleEditDelete = () => {
         if (filteredData.length === 0) return;
 
-        const currentEntry = filteredData[playerState.currentRecord];
+        const currentEntry = recordsToPlayData[playerState.currentRecord];
         if (onDeleteEntry) {
             onDeleteEntry(currentEntry);
         }
@@ -582,8 +582,9 @@ export const PlayerProvider = ({
         // Состояние
         playerState,
         dispatch,
-        filteredData: recordsToPlayData,
-        currentEntry: recordsToPlayData[playerState.currentRecord],
+        filteredData,  // <- ИСПРАВЛЕНО: теперь передаем реальный filteredData
+        recordsToPlayData, // <- Добавляем recordsToPlayData отдельно
+        currentEntry: filteredData[playerState.currentRecord],
 
         // Методы
         handlePlayPause,
