@@ -411,7 +411,7 @@ const DictionaryPlayer = ({
             }}
             className="ms-2 w-auto"
           >
-            {[1, 3, 5, 7, 10, 20, 30, 50, 100, 200, 300, 500, 1000, 1500, 2000, 2500, 3000, 'all'].map((count) => (
+            {[1, 3, 5, 7, 10, 20, 30, 50, 100, 200, 300, 500, 700, 1000, 1500, 2000, 2500, 3000, 'all'].map((count) => (
               <option key={count} value={count === 'all' ? 'all' : count}>
                 {count === 'all' ? t('all') : count}
               </option>
@@ -457,6 +457,7 @@ const DictionaryPlayer = ({
         selectedVoiceTip={selectedVoiceTip}
         delayBetweenRecords={delayBetweenRecords}
         availableVoices={availableVoices}
+        recordsToPlay={recordsToPlay}
       >
         <PlayerControls />
       </PlayerProvider>

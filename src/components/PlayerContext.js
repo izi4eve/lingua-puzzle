@@ -68,6 +68,7 @@ export const PlayerProvider = ({
     selectedVoiceTip = null,
     delayBetweenRecords = 2,
     availableVoices = [],
+    recordsToPlay = Infinity,
 }) => {
     const [playerState, dispatch] = useReducer(playerReducer, {
         ...getInitialState(),
@@ -219,7 +220,7 @@ export const PlayerProvider = ({
         resetCancelToken();
 
         const nextRecord = playerState.currentRecord + 1;
-        const maxIndex = Math.max(0, filteredData.length - 1);
+        const maxIndex = Math.max(0, Math.min(filteredData.length - 1, (recordsToPlay === Infinity ? filteredData.length : recordsToPlay) - 1));
 
         if (nextRecord > maxIndex) {
             dispatch({ type: 'SET_CURRENT_RECORD', payload: 0 });
@@ -230,7 +231,7 @@ export const PlayerProvider = ({
             dispatch({ type: 'RESET_REPEAT' });
             updateFirstElement(nextRecord);
         }
-    }, [playerState.currentRecord, filteredData.length, updateFirstElement, resetCancelToken]);
+    }, [playerState.currentRecord, filteredData.length, recordsToPlay, updateFirstElement, resetCancelToken]);
 
     // Функция воспроизведения текущей записи
     const playCurrentRecord = useCallback(async () => {
@@ -474,12 +475,12 @@ export const PlayerProvider = ({
 
     // Синхронизация currentRecord с firstElement
     useEffect(() => {
-        const maxIndex = Math.max(0, filteredData.length - 1);
+        const maxIndex = Math.max(0, Math.min(filteredData.length - 1, (recordsToPlay === Infinity ? filteredData.length : recordsToPlay) - 1));
         const newRecord = Math.min(firstElement, maxIndex);
         if (newRecord !== playerState.currentRecord) {
             dispatch({ type: 'SET_CURRENT_RECORD', payload: newRecord });
         }
-    }, [firstElement, filteredData.length, playerState.currentRecord]);
+    }, [firstElement, filteredData.length, recordsToPlay, playerState.currentRecord]);
 
     // Эффект для воспроизведения
     useEffect(() => {
