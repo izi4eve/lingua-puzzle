@@ -382,7 +382,7 @@ const DictionaryPlayer = ({
             onChange={handleRepeatCountChange}
             className="ms-2 w-auto"
           >
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((count) => (
+            {[1, 2, 3, 5, 7, 10, 20, 30, 50, 100].map((count) => (
               <option key={count} value={count}>{count}</option>
             ))}
           </Form.Select>
