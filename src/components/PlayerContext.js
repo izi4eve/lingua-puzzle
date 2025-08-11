@@ -370,25 +370,31 @@ export const PlayerProvider = ({
     // Обработчик перехода к предыдущей записи
     const handlePrev = () => {
         window.speechSynthesis.cancel();
-
         if (cancelTokenRef.current) {
             cancelTokenRef.current.cancelled = true;
         }
-
         if (delayTimeoutRef.current) {
             clearTimeout(delayTimeoutRef.current);
             delayTimeoutRef.current = null;
         }
-
         dispatch({ type: 'SET_SPEAKING', payload: false });
         dispatch({ type: 'SET_DELAY', payload: false });
-
         resetCancelToken();
 
-        const prevRecord = Math.max(playerState.currentRecord - 1, 0);
-        dispatch({ type: 'SET_CURRENT_RECORD', payload: prevRecord });
+        // Вычисляем максимальный индекс с учетом recordsToPlay
+        const maxAllowedIndex = Math.max(0, Math.min(filteredData.length - 1, (recordsToPlay === Infinity ? filteredData.length : recordsToPlay) - 1));
+
+        const prevRecord = playerState.currentRecord - 1;
+        if (prevRecord < 0) {
+            // Если предыдущая запись меньше 0, переходим на последнюю в разрешенном диапазоне
+            dispatch({ type: 'SET_CURRENT_RECORD', payload: maxAllowedIndex });
+            updateFirstElement(maxAllowedIndex);
+        } else {
+            // Иначе переходим к предыдущей записи
+            dispatch({ type: 'SET_CURRENT_RECORD', payload: prevRecord });
+            updateFirstElement(prevRecord);
+        }
         dispatch({ type: 'RESET_REPEAT' });
-        updateFirstElement(prevRecord);
     };
 
     // Обработчик перехода к первой записи
@@ -475,12 +481,13 @@ export const PlayerProvider = ({
 
     // Синхронизация currentRecord с firstElement
     useEffect(() => {
-        const maxIndex = Math.max(0, Math.min(filteredData.length - 1, (recordsToPlay === Infinity ? filteredData.length : recordsToPlay) - 1));
-        const newRecord = Math.min(firstElement, maxIndex);
+        // Вычисляем максимальный индекс с учетом recordsToPlay
+        const maxAllowedIndex = Math.max(0, Math.min(filteredData.length - 1, (recordsToPlay === Infinity ? filteredData.length : recordsToPlay) - 1));
+        const newRecord = Math.min(firstElement, maxAllowedIndex);
         if (newRecord !== playerState.currentRecord) {
             dispatch({ type: 'SET_CURRENT_RECORD', payload: newRecord });
         }
-    }, [firstElement, filteredData.length, recordsToPlay, playerState.currentRecord]);
+    }, [firstElement, filteredData.length, recordsToPlay, playerState.currentRecord]); // Добавлен recordsToPlay в зависимости
 
     // Эффект для воспроизведения
     useEffect(() => {
