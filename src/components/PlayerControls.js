@@ -3,7 +3,6 @@ import { IoPlay, IoPause, IoPlayBack, IoPlayForward } from "react-icons/io5";
 import { RiEdit2Fill } from "react-icons/ri";
 import { ImCross } from "react-icons/im";
 import { IoPlaySkipBack } from "react-icons/io5";
-
 import EditEntryModal from './EditEntryModal';
 import PreventScreenSleep from './PreventScreenSleep';
 import { usePlayerContext } from './PlayerContext';
@@ -12,7 +11,8 @@ const PlayerControls = () => {
     const {
         playerState,
         dispatch,
-        filteredData,
+        // filteredData, // Убираем, если не используется напрямую
+        recordsToPlayData, // Используем recordsToPlayData для проверки длины
         currentEntry,
         handlePlayPause,
         handleNext,
@@ -76,7 +76,6 @@ const PlayerControls = () => {
     return (
         <>
             <PreventScreenSleep isPlaying={playerState.isPlaying} />
-            
             <div className="btn-group btn-group-sm w-100">
                 <button type="button" className="btn btn-success rounded-start-pill" onClick={handlePlayPause}>
                     {playerState.isPlaying ? <IoPause /> : <IoPlay />}
@@ -101,9 +100,9 @@ const PlayerControls = () => {
                     <IoPlayForward />
                 </button>
             </div>
-
             <div className="mt-2 lh-sm text-center w-100">
-                {filteredData.length > 0 && currentEntry && (
+                {/* Используем recordsToPlayData.length для проверки */}
+                {recordsToPlayData.length > 0 && currentEntry && (
                     <div>
                         <p className="fs-6 fw-bold pt-1">
                             <span className="text-success">{currentEntry.foreignPart}</span>
@@ -116,7 +115,6 @@ const PlayerControls = () => {
                     </div>
                 )}
             </div>
-
             <EditEntryModal
                 show={playerState.showEditModal}
                 onHide={() => dispatch({ type: 'SET_MODAL', payload: false })}
