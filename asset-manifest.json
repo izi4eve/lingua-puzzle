@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.61705555.css",
-    "main.js": "./static/js/main.fc7c29e7.js",
+    "main.js": "./static/js/main.bd141894.js",
     "static/js/453.30a07008.chunk.js": "./static/js/453.30a07008.chunk.js",
     "static/media/DE-RU_B1-B2-my-C1.txt": "./static/media/DE-RU_B1-B2-my-C1.70abd20f2725bd46dbe5.txt",
     "static/media/DE-EN-RU-B2.txt": "./static/media/DE-EN-RU-B2.432918e2eb186824a7c5.txt",
@@ -20,16 +20,16 @@
     "static/media/DE-EN_80pct.txt": "./static/media/DE-EN_80pct.678b2c6a6d5a77223172.txt",
     "static/media/DE-TR_80pct.txt": "./static/media/DE-TR_80pct.abd4da3d7109935d19d0.txt",
     "static/media/EN-RU_idioms.txt": "./static/media/EN-RU_idioms.87803978ad40b57fd864.txt",
+    "static/media/EN-RU_my.txt": "./static/media/EN-RU_my.9a1aefbe762d0e095dea.txt",
     "index.html": "./index.html",
-    "static/media/EN-RU_my.txt": "./static/media/EN-RU_my.5fd00ffa46c797190c4e.txt",
     "static/media/getFetch.cjs": "./static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
     "static/media/Empty.txt": "./static/media/Empty.e949653f00becc0dfbbd.txt",
     "main.61705555.css.map": "./static/css/main.61705555.css.map",
-    "main.fc7c29e7.js.map": "./static/js/main.fc7c29e7.js.map",
+    "main.bd141894.js.map": "./static/js/main.bd141894.js.map",
     "453.30a07008.chunk.js.map": "./static/js/453.30a07008.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.61705555.css",
-    "static/js/main.fc7c29e7.js"
+    "static/js/main.bd141894.js"
   ]
 }
