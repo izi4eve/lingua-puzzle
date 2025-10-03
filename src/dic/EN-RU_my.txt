@@ -58,3 +58,6 @@ storm = шторм
 adapted = адаптированный
 ancestors = предки
 courage = мужество
+stuck = застрял
+steals = ворует
+flee = бежать
