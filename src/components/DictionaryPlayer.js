@@ -64,6 +64,22 @@ const DictionaryPlayer = ({
   const filteredData = data.filter((item) => !item.isLearned);
   const maxIndex = Math.max(0, filteredData.length - 1);
 
+  useEffect(() => {
+    if (currentRecord > maxIndex) {
+      const newRecord = Math.min(currentRecord, maxIndex);
+      setCurrentRecord(newRecord);
+      setInputValue(newRecord.toString());
+      updateFirstElement(newRecord);
+    }
+  }, [maxIndex, currentRecord, updateFirstElement]);
+
+  // ✅ Обновление currentRecord при изменении firstElement
+  useEffect(() => {
+    const validFirstElement = Math.min(Math.max(0, firstElement), maxIndex);
+    setCurrentRecord(validFirstElement);
+    setInputValue(validFirstElement.toString());
+  }, [firstElement, maxIndex]);
+
   // Функция для получения TTS кода языка - используем useCallback для стабильности
   const getTTSLanguageCode = useCallback((langCode) => {
     const ttsLang = ttsLanguages.find(lang => lang.code.startsWith(langCode));
@@ -165,8 +181,8 @@ const DictionaryPlayer = ({
     selectedVoiceTip,
     delayBetweenRecords,
     availableVoices,
-  }), [repeatCount, readingSpeed, selectedVoiceForeign, selectedVoiceTranslation, 
-      tipLanguage, selectedVoiceTip, delayBetweenRecords, availableVoices]);
+  }), [repeatCount, readingSpeed, selectedVoiceForeign, selectedVoiceTranslation,
+    tipLanguage, selectedVoiceTip, delayBetweenRecords, availableVoices]);
 
   // Сохранение настроек - УБИРАЕМ availableVoices из зависимостей
   useEffect(() => {
@@ -251,6 +267,22 @@ const DictionaryPlayer = ({
     onTipLanguageChange(value);
     setVoiceTipManuallySelected(false); // Сбрасываем флаг при смене языка
   };
+
+  // ✅ ДОБАВЬТЕ ЭТИ ЛОГИ ПЕРЕД RETURN
+  console.log('🔴 DictionaryPlayer RENDER:', {
+    dataLength: data.length,
+    filteredDataLength: filteredData.length,
+    firstElement: firstElement,
+    currentRecord: currentRecord,
+    maxIndex: maxIndex,
+    calculatedFirstElement: Math.min(currentRecord, Math.max(0, filteredData.length - 1)),
+    currentRecordData: filteredData[currentRecord] 
+      ? {
+          foreign: filteredData[currentRecord].foreignPart,
+          translation: filteredData[currentRecord].translation
+        }
+      : null
+  });
 
   return (
     <div className="whiteBox rounded-4 p-3 my-3">
@@ -441,7 +473,7 @@ const DictionaryPlayer = ({
       {/* Используем компонент PlayerControls */}
       <PlayerProvider
         data={data}
-        firstElement={firstElement}
+        firstElement={Math.min(currentRecord, Math.max(0, filteredData.length - 1))}
         updateFirstElement={updateFirstElement}
         foreignLanguage={foreignLanguage}
         translationLanguage={translationLanguage}

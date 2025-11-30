@@ -30,7 +30,7 @@ const Relax = ({
 
     // Массив с конфигурацией для каждой кнопки
     const buttonConfigs = [
-        { link: "https://chat.qwen.ai", buttonText: "AI Chat", variant: "dark", mode: "button" },
+        // { link: "https://chat.qwen.ai", buttonText: "AI Chat", variant: "dark", mode: "button" },
         // Игры
         { link: "https://playpager.com/embed/sudoku/index.html", buttonText: "Sudoku", variant: "primary", mode: "button" },
         { link: "https://playpager.com/embed/domino-game/", buttonText: "Domino", variant: "success", mode: "button" },

@@ -1,17 +1,22 @@
 import React, { createContext, useContext, useReducer, useRef, useCallback, useEffect } from 'react';
 
-// Начальное состояние плеера
-const getInitialState = () => {
-    const saved = localStorage.getItem('playerGlobalState');
+const getInitialState = (instanceId) => {
+    const saved = localStorage.getItem(`playerGlobalState-${instanceId}`);
     if (saved) {
-        const parsedState = JSON.parse(saved);
-        return {
-            ...parsedState,
-            showEditModal: false, // Всегда false при инициализации
-        };
+        try {
+            const parsedState = JSON.parse(saved);
+            return {
+                currentRepeat: parsedState.currentRepeat || 0,
+                isPlaying: false,
+                isSpeaking: false,
+                isInDelay: false,
+                showEditModal: false,
+            };
+        } catch (e) {
+            console.error('Failed to parse playerGlobalState:', e);
+        }
     }
     return {
-        currentRecord: 0,
         currentRepeat: 0,
         isPlaying: false,
         isSpeaking: false,
@@ -20,7 +25,6 @@ const getInitialState = () => {
     };
 };
 
-// Редьюсер для управления состоянием
 const playerReducer = (state, action) => {
     switch (action.type) {
         case 'SET_PLAYING':
@@ -30,6 +34,10 @@ const playerReducer = (state, action) => {
         case 'SET_DELAY':
             return { ...state, isInDelay: action.payload };
         case 'SET_CURRENT_RECORD':
+            if (isNaN(action.payload)) {
+                console.error('❌ SET_CURRENT_RECORD received NaN!', action.payload);
+                return state;
+            }
             return { ...state, currentRecord: action.payload, currentRepeat: 0, isSpeaking: false, isInDelay: false };
         case 'SET_CURRENT_REPEAT':
             return { ...state, currentRepeat: action.payload };
@@ -44,79 +52,59 @@ const playerReducer = (state, action) => {
     }
 };
 
-// Создаем контекст
 const PlayerContext = createContext();
 
-// Провайдер компонента
 export const PlayerProvider = ({
     children,
     data,
     firstElement,
     updateFirstElement,
-    foreignLanguage,        // переименовано с ttsLanguage
-    translationLanguage,    // переименовано с selectedLanguage
+    foreignLanguage,
+    translationLanguage,
     tipLanguage,
-    ttsLanguages,          // переименовано с languages
+    ttsLanguages,
     onMarkAsLearned,
     onEditEntry,
     onDeleteEntry,
-    // Настройки плеера
     readingSpeed = 0.5,
     repeatCount = 3,
-    selectedVoiceForeign = null,        // переименовано с selectedVoice
-    selectedVoiceTranslation = null,    // переименовано с selectedVoiceYourLang
+    selectedVoiceForeign = null,
+    selectedVoiceTranslation = null,
     selectedVoiceTip = null,
     delayBetweenRecords = 2,
     availableVoices = [],
     recordsToPlay = Infinity,
 }) => {
+    const instanceId = useRef(`player-${Math.random().toString(36).substr(2, 9)}`).current;
+    const isPlayingRef = useRef(false);
+
     const [playerState, dispatch] = useReducer(playerReducer, {
-        ...getInitialState(),
-        currentRecord: firstElement
+        ...getInitialState(instanceId),
+        currentRecord: typeof firstElement === 'number' && !isNaN(firstElement) ? firstElement : 0
     });
 
-    // Синхронизация состояния с localStorage
     useEffect(() => {
-        localStorage.setItem('playerGlobalState', JSON.stringify({
-            currentRecord: playerState.currentRecord,
+        localStorage.setItem(`playerGlobalState-${instanceId}`, JSON.stringify({
             currentRepeat: playerState.currentRepeat,
             isPlaying: playerState.isPlaying,
             isSpeaking: playerState.isSpeaking,
             isInDelay: playerState.isInDelay,
         }));
-    }, [playerState.currentRecord, playerState.currentRepeat, playerState.isPlaying, playerState.isSpeaking, playerState.isInDelay]);
-
-    // Слушатель изменений localStorage для синхронизации между экземплярами
-    useEffect(() => {
-        const handleStorageChange = (e) => {
-            if (e.key === 'playerGlobalState' && e.newValue) {
-                const newState = JSON.parse(e.newValue);
-                dispatch({ type: 'SET_CURRENT_RECORD', payload: newState.currentRecord });
-                dispatch({ type: 'SET_CURRENT_REPEAT', payload: newState.currentRepeat });
-                dispatch({ type: 'SET_PLAYING', payload: newState.isPlaying });
-                dispatch({ type: 'SET_SPEAKING', payload: newState.isSpeaking });
-                dispatch({ type: 'SET_DELAY', payload: newState.isInDelay });
-            }
-        };
-
-        window.addEventListener('storage', handleStorageChange);
-        return () => window.removeEventListener('storage', handleStorageChange);
-    }, []);
+    }, [playerState.currentRepeat, playerState.isPlaying, playerState.isSpeaking, playerState.isInDelay, instanceId]);
 
     const delayTimeoutRef = useRef(null);
     const cancelTokenRef = useRef({ cancelled: false });
     const filteredData = data.filter((item) => !item.isLearned);
 
-    // Функция для получения TTS кода языка
     const getTTSLanguageCode = useCallback((langCode) => {
         const ttsLang = ttsLanguages.find(lang => lang.code.startsWith(langCode));
         return ttsLang ? ttsLang.code : `${langCode}-${langCode.toUpperCase()}`;
     }, [ttsLanguages]);
 
-    // Функция для полной остановки воспроизведения
     const stopPlayback = useCallback(() => {
         window.speechSynthesis.cancel();
         cancelTokenRef.current.cancelled = true;
+        isPlayingRef.current = false;
         if (delayTimeoutRef.current) {
             clearTimeout(delayTimeoutRef.current);
             delayTimeoutRef.current = null;
@@ -124,7 +112,6 @@ export const PlayerProvider = ({
         dispatch({ type: 'STOP_ALL' });
     }, []);
 
-    // Функция задержки с возможностью отмены
     const delayWithCancel = useCallback((seconds, sessionToken) => {
         return new Promise((resolve, reject) => {
             dispatch({ type: 'SET_DELAY', payload: true });
@@ -140,7 +127,6 @@ export const PlayerProvider = ({
         });
     }, []);
 
-    // Функция воспроизведения аудио
     const playAudio = useCallback(async (text, langCode, useReadingSpeed = false, voiceName = null) => {
         if (!window.speechSynthesis) {
             console.error('SpeechSynthesis is not supported.');
@@ -163,7 +149,6 @@ export const PlayerProvider = ({
                     }
 
                     const utterance = new SpeechSynthesisUtterance(text);
-                    // Получаем правильный TTS код для языка
                     utterance.lang = getTTSLanguageCode(langCode);
                     utterance.rate = useReadingSpeed ? readingSpeed : 1.0;
 
@@ -200,12 +185,10 @@ export const PlayerProvider = ({
         });
     }, [readingSpeed, availableVoices, getTTSLanguageCode]);
 
-    // Функция для сброса токена отмены
     const resetCancelToken = useCallback(() => {
         cancelTokenRef.current = { cancelled: false };
     }, []);
 
-    // Функция для перехода к следующей записи
     const handleNext = useCallback(() => {
         window.speechSynthesis.cancel();
         cancelTokenRef.current.cancelled = true;
@@ -233,8 +216,11 @@ export const PlayerProvider = ({
         }
     }, [playerState.currentRecord, filteredData.length, recordsToPlay, updateFirstElement, resetCancelToken]);
 
-    // Функция воспроизведения текущей записи
     const playCurrentRecord = useCallback(async () => {
+        if (isPlayingRef.current) {
+            return;
+        }
+
         if (
             !window.speechSynthesis ||
             filteredData.length === 0 ||
@@ -246,6 +232,8 @@ export const PlayerProvider = ({
             return;
         }
 
+        isPlayingRef.current = true;
+
         const sessionToken = { cancelled: false };
         cancelTokenRef.current = sessionToken;
 
@@ -253,6 +241,15 @@ export const PlayerProvider = ({
 
         const currentRecordAtStart = playerState.currentRecord;
         const currentRepeatAtStart = playerState.currentRepeat;
+
+        if (!filteredData[currentRecordAtStart]) {
+            console.error('Record not found at index:', currentRecordAtStart);
+            dispatch({ type: 'SET_SPEAKING', payload: false });
+            dispatch({ type: 'SET_PLAYING', payload: false });
+            isPlayingRef.current = false;
+            return;
+        }
+
         const { foreignPart, translation, tipPart } = filteredData[currentRecordAtStart];
 
         try {
@@ -268,23 +265,24 @@ export const PlayerProvider = ({
                 );
             };
 
-            // Сначала читаем translation на языке translationLanguage с голосом selectedVoiceTranslation
             if (!shouldContinue()) {
                 dispatch({ type: 'SET_SPEAKING', payload: false });
+                isPlayingRef.current = false;
                 return;
             }
             await playAudio(translation, translationLanguage, true, selectedVoiceTranslation);
 
             if (!shouldContinue()) {
                 dispatch({ type: 'SET_SPEAKING', payload: false });
+                isPlayingRef.current = false;
                 return;
             }
 
             await new Promise(resolve => setTimeout(resolve, 100));
 
-            // Затем читаем foreignPart на языке foreignLanguage с голосом selectedVoiceForeign
             if (!shouldContinue()) {
                 dispatch({ type: 'SET_SPEAKING', payload: false });
+                isPlayingRef.current = false;
                 return;
             }
 
@@ -292,15 +290,16 @@ export const PlayerProvider = ({
 
             if (!shouldContinue()) {
                 dispatch({ type: 'SET_SPEAKING', payload: false });
+                isPlayingRef.current = false;
                 return;
             }
 
-            // Если есть tipPart, читаем его на языке tipLanguage с голосом selectedVoiceTip
             if (tipPart) {
                 await new Promise(resolve => setTimeout(resolve, 100));
 
                 if (!shouldContinue()) {
                     dispatch({ type: 'SET_SPEAKING', payload: false });
+                    isPlayingRef.current = false;
                     return;
                 }
 
@@ -308,11 +307,13 @@ export const PlayerProvider = ({
 
                 if (!shouldContinue()) {
                     dispatch({ type: 'SET_SPEAKING', payload: false });
+                    isPlayingRef.current = false;
                     return;
                 }
             }
 
             dispatch({ type: 'SET_SPEAKING', payload: false });
+            isPlayingRef.current = false;
 
             const nextRepeat = currentRepeatAtStart + 1;
 
@@ -333,6 +334,7 @@ export const PlayerProvider = ({
         } catch (error) {
             dispatch({ type: 'SET_SPEAKING', payload: false });
             dispatch({ type: 'SET_DELAY', payload: false });
+            isPlayingRef.current = false;
 
             if (error.message !== 'Cancelled' && error.message !== 'Playback stopped during delay') {
                 dispatch({ type: 'SET_PLAYING', payload: false });
@@ -357,7 +359,6 @@ export const PlayerProvider = ({
         playAudio
     ]);
 
-    // Обработчик воспроизведения/паузы
     const handlePlayPause = () => {
         if (playerState.isPlaying) {
             stopPlayback();
@@ -367,7 +368,6 @@ export const PlayerProvider = ({
         }
     };
 
-    // Обработчик перехода к предыдущей записи
     const handlePrev = () => {
         window.speechSynthesis.cancel();
         if (cancelTokenRef.current) {
@@ -381,23 +381,19 @@ export const PlayerProvider = ({
         dispatch({ type: 'SET_DELAY', payload: false });
         resetCancelToken();
 
-        // Вычисляем максимальный индекс с учетом recordsToPlay
         const maxAllowedIndex = Math.max(0, Math.min(filteredData.length - 1, (recordsToPlay === Infinity ? filteredData.length : recordsToPlay) - 1));
 
         const prevRecord = playerState.currentRecord - 1;
         if (prevRecord < 0) {
-            // Если предыдущая запись меньше 0, переходим на последнюю в разрешенном диапазоне
             dispatch({ type: 'SET_CURRENT_RECORD', payload: maxAllowedIndex });
             updateFirstElement(maxAllowedIndex);
         } else {
-            // Иначе переходим к предыдущей записи
             dispatch({ type: 'SET_CURRENT_RECORD', payload: prevRecord });
             updateFirstElement(prevRecord);
         }
         dispatch({ type: 'RESET_REPEAT' });
     };
 
-    // Обработчик перехода к первой записи
     const handleGoToFirst = () => {
         window.speechSynthesis.cancel();
 
@@ -420,7 +416,6 @@ export const PlayerProvider = ({
         updateFirstElement(0);
     };
 
-    // Обработчик отметки как изученной
     const handleMarkAsLearned = () => {
         if (filteredData.length === 0) return;
 
@@ -454,7 +449,6 @@ export const PlayerProvider = ({
         }
     };
 
-    // Обработчики модального окна редактирования
     const handleEditClick = () => {
         dispatch({ type: 'SET_MODAL', payload: true });
     };
@@ -479,24 +473,32 @@ export const PlayerProvider = ({
         dispatch({ type: 'SET_MODAL', payload: false });
     };
 
-    // Синхронизация currentRecord с firstElement
     useEffect(() => {
-        // Вычисляем максимальный индекс с учетом recordsToPlay
-        const maxAllowedIndex = Math.max(0, Math.min(filteredData.length - 1, (recordsToPlay === Infinity ? filteredData.length : recordsToPlay) - 1));
-        const newRecord = Math.min(firstElement, maxAllowedIndex);
-        if (newRecord !== playerState.currentRecord) {
+        const maxDataIndex = Math.max(0, filteredData.length - 1);
+        const recordsLimit = recordsToPlay === Infinity || recordsToPlay === 'all'
+            ? filteredData.length
+            : Number(recordsToPlay) || filteredData.length;
+
+        const maxAllowedIndex = Math.max(0, Math.min(maxDataIndex, recordsLimit - 1));
+
+        const validFirstElement = typeof firstElement === 'number' && !isNaN(firstElement)
+            ? firstElement
+            : 0;
+        const newRecord = Math.min(validFirstElement, maxAllowedIndex);
+
+        if (newRecord !== playerState.currentRecord && !isNaN(newRecord)) {
             dispatch({ type: 'SET_CURRENT_RECORD', payload: newRecord });
         }
-    }, [firstElement, filteredData.length, recordsToPlay, playerState.currentRecord]); // Добавлен recordsToPlay в зависимости
+    }, [firstElement, filteredData.length, recordsToPlay, playerState.currentRecord]);
 
-    // Эффект для воспроизведения
     useEffect(() => {
         if (playerState.isPlaying && filteredData.length > 0 &&
-            !playerState.isSpeaking && !playerState.isInDelay) {
+            !playerState.isSpeaking && !playerState.isInDelay && !isPlayingRef.current) {
             playCurrentRecord();
         } else if (filteredData.length === 0) {
             dispatch({ type: 'SET_PLAYING', payload: false });
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [
         playerState.isPlaying,
         playerState.currentRecord,
@@ -504,10 +506,8 @@ export const PlayerProvider = ({
         playerState.isSpeaking,
         playerState.isInDelay,
         filteredData.length,
-        playCurrentRecord
     ]);
 
-    // Мониторинг speechSynthesis
     useEffect(() => {
         if (!playerState.isPlaying) return;
 
@@ -515,7 +515,8 @@ export const PlayerProvider = ({
             if (window.speechSynthesis.speaking ||
                 window.speechSynthesis.pending ||
                 playerState.isSpeaking ||
-                playerState.isInDelay) {
+                playerState.isInDelay ||
+                isPlayingRef.current) {
                 return;
             }
 
@@ -526,26 +527,23 @@ export const PlayerProvider = ({
 
         const interval = setInterval(checkSynthesis, 1000);
         return () => clearInterval(interval);
-    }, [playerState.isPlaying, playerState.isSpeaking, playerState.isInDelay, playCurrentRecord]);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [playerState.isPlaying, playerState.isSpeaking, playerState.isInDelay]);
 
-    // Очистка таймаута при размонтировании
     useEffect(() => {
         return () => {
+            window.speechSynthesis.cancel();
             if (delayTimeoutRef.current) {
                 clearTimeout(delayTimeoutRef.current);
             }
         };
     }, []);
 
-    // Значение контекста
     const contextValue = {
-        // Состояние
         playerState,
         dispatch,
         filteredData,
         currentEntry: filteredData[playerState.currentRecord],
-
-        // Методы
         handlePlayPause,
         handleNext,
         handlePrev,
@@ -563,7 +561,6 @@ export const PlayerProvider = ({
     );
 };
 
-// Хук для использования контекста
 export const usePlayerContext = () => {
     const context = useContext(PlayerContext);
     if (context === undefined) {
