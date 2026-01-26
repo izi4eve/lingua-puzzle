@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "./static/css/main.61705555.css",
-    "main.js": "./static/js/main.1460dba8.js",
+    "main.js": "./static/js/main.6d2a2ae4.js",
     "static/js/453.30a07008.chunk.js": "./static/js/453.30a07008.chunk.js",
     "static/media/DE-RU_B1-B2-my-C1.txt": "./static/media/DE-RU_B1-B2-my-C1.70abd20f2725bd46dbe5.txt",
     "static/media/DE-EN-RU-B2.txt": "./static/media/DE-EN-RU-B2.432918e2eb186824a7c5.txt",
     "static/media/DE-UK_B1.txt": "./static/media/DE-UK_B1.27adadf893f23a625e09.txt",
     "static/media/DE-RU_B1.txt": "./static/media/DE-RU_B1.fb7a8cfa176486c446cb.txt",
-    "static/media/DE-EN-RU_B2-Beruf.txt": "./static/media/DE-EN-RU_B2-Beruf.0b29b374c4eb5ac3fdc7.txt",
+    "static/media/DE-EN-RU_B2-Beruf.txt": "./static/media/DE-EN-RU_B2-Beruf.bbfc7a06e01ed9ab08f2.txt",
     "static/media/DE-RU-EN_B2-allgemein_my.txt": "./static/media/DE-RU-EN_B2-allgemein_my.4b0ed37d2ebec5f87ad1.txt",
     "static/media/DE-RU_B2-allgemein_my.txt": "./static/media/DE-RU_B2-allgemein_my.85c7072a75283883d58c.txt",
     "static/media/DE-RU_B2-allgemein.txt": "./static/media/DE-RU_B2-allgemein.6376c26a7227e16e7954.txt",
@@ -26,11 +26,11 @@
     "static/media/getFetch.cjs": "./static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
     "static/media/Empty.txt": "./static/media/Empty.e949653f00becc0dfbbd.txt",
     "main.61705555.css.map": "./static/css/main.61705555.css.map",
-    "main.1460dba8.js.map": "./static/js/main.1460dba8.js.map",
+    "main.6d2a2ae4.js.map": "./static/js/main.6d2a2ae4.js.map",
     "453.30a07008.chunk.js.map": "./static/js/453.30a07008.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.61705555.css",
-    "static/js/main.1460dba8.js"
+    "static/js/main.6d2a2ae4.js"
   ]
 }
