@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { IoPlay, IoPause, IoPlayBack, IoPlayForward } from "react-icons/io5";
 import { RiEdit2Fill } from "react-icons/ri";
 import { ImCross } from "react-icons/im";
-import { IoPlaySkipBack } from "react-icons/io5";
+import { IoPlaySkipBack, IoVolumeHigh } from "react-icons/io5";
 
 import EditEntryModal from './EditEntryModal';
 import PreventScreenSleep from './PreventScreenSleep';
@@ -15,6 +15,7 @@ const PlayerControls = () => {
         filteredData,
         currentEntry,
         handlePlayPause,
+        handleToggleReadSingle,
         handleNext,
         handlePrev,
         handleGoToFirst,
@@ -76,13 +77,20 @@ const PlayerControls = () => {
     return (
         <>
             <PreventScreenSleep isPlaying={playerState.isPlaying} />
-            
+
             <div className="btn-group btn-group-sm w-100">
                 <button type="button" className="btn btn-success rounded-start-pill" onClick={handlePlayPause}>
                     {playerState.isPlaying ? <IoPause /> : <IoPlay />}
                 </button>
                 {!playerState.isPlaying && (
                     <>
+                        <button
+                            type="button"
+                            className={`btn ${playerState.isReadingSingle ? 'btn-danger' : 'btn-secondary'}`}
+                            onClick={handleToggleReadSingle}
+                        >
+                            <IoVolumeHigh />
+                        </button>
                         <button type="button" className="btn btn-info" onClick={handleEditClickWithPause}>
                             <RiEdit2Fill />
                         </button>

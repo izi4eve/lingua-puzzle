@@ -1957,3 +1957,4 @@ die Überweisung = bank transfer = банковский перевод
 überzeugen — überzeugt = convince = убеждать
 träumen = dream = мечтать  
 vertrauen — vertraut = trust = доверять
+loben = praise = хвалить

@@ -11,6 +11,7 @@ const getInitialState = (instanceId) => {
                 isSpeaking: false,
                 isInDelay: false,
                 showEditModal: false,
+                isReadingSingle: false,
             };
         } catch (e) {
             console.error('Failed to parse playerGlobalState:', e);
@@ -22,6 +23,7 @@ const getInitialState = (instanceId) => {
         isSpeaking: false,
         isInDelay: false,
         showEditModal: false,
+        isReadingSingle: false,
     };
 };
 
@@ -45,6 +47,8 @@ const playerReducer = (state, action) => {
             return { ...state, currentRepeat: 0 };
         case 'SET_MODAL':
             return { ...state, showEditModal: action.payload };
+        case 'SET_READING_SINGLE': // НОВОЕ
+            return { ...state, isReadingSingle: action.payload };
         case 'STOP_ALL':
             return { ...state, isPlaying: false, isSpeaking: false, isInDelay: false, currentRepeat: 0 };
         default:
@@ -94,6 +98,7 @@ export const PlayerProvider = ({
 
     const delayTimeoutRef = useRef(null);
     const cancelTokenRef = useRef({ cancelled: false });
+    const singleReadCancelTokenRef = useRef({ cancelled: false });
     const filteredData = data.filter((item) => !item.isLearned);
 
     const getTTSLanguageCode = useCallback((langCode) => {
@@ -127,14 +132,16 @@ export const PlayerProvider = ({
         });
     }, []);
 
-    const playAudio = useCallback(async (text, langCode, useReadingSpeed = false, voiceName = null) => {
+    const playAudio = useCallback(async (text, langCode, useReadingSpeed = false, voiceName = null, customCancelToken = null) => {
         if (!window.speechSynthesis) {
             console.error('SpeechSynthesis is not supported.');
             return Promise.reject(new Error('SpeechSynthesis is not supported.'));
         }
 
         return new Promise((resolve, reject) => {
-            if (cancelTokenRef.current?.cancelled) {
+            const tokenToCheck = customCancelToken || cancelTokenRef.current;
+
+            if (tokenToCheck?.cancelled) {
                 reject(new Error('Cancelled'));
                 return;
             }
@@ -143,7 +150,7 @@ export const PlayerProvider = ({
                 window.speechSynthesis.cancel();
 
                 setTimeout(() => {
-                    if (cancelTokenRef.current?.cancelled) {
+                    if (tokenToCheck?.cancelled) {
                         reject(new Error('Cancelled'));
                         return;
                     }
@@ -160,7 +167,7 @@ export const PlayerProvider = ({
                     }
 
                     utterance.onend = () => {
-                        if (cancelTokenRef.current?.cancelled) {
+                        if (tokenToCheck?.cancelled) {
                             reject(new Error('Cancelled'));
                         } else {
                             resolve();
@@ -171,7 +178,7 @@ export const PlayerProvider = ({
                         reject(e);
                     };
 
-                    if (cancelTokenRef.current?.cancelled) {
+                    if (tokenToCheck?.cancelled) {
                         reject(new Error('Cancelled'));
                         return;
                     }
@@ -184,6 +191,107 @@ export const PlayerProvider = ({
             }
         });
     }, [readingSpeed, availableVoices, getTTSLanguageCode]);
+
+    const readSingleRecord = useCallback(async () => {
+        if (
+            !window.speechSynthesis ||
+            filteredData.length === 0 ||
+            playerState.currentRecord < 0 ||
+            playerState.currentRecord >= filteredData.length
+        ) {
+            return;
+        }
+
+        const sessionToken = { cancelled: false };
+        singleReadCancelTokenRef.current = sessionToken;
+
+        dispatch({ type: 'SET_READING_SINGLE', payload: true });
+
+        const currentRecordIndex = playerState.currentRecord;
+
+        if (!filteredData[currentRecordIndex]) {
+            console.error('Record not found at index:', currentRecordIndex);
+            dispatch({ type: 'SET_READING_SINGLE', payload: false });
+            return;
+        }
+
+        const { foreignPart, translation, tipPart } = filteredData[currentRecordIndex];
+
+        try {
+            const shouldContinue = () => {
+                return !sessionToken.cancelled && playerState.isReadingSingle;
+            };
+
+            if (tipPart) {
+                // Если есть tip, читаем: tip > foreign > translation
+                await playAudio(tipPart, tipLanguage, true, selectedVoiceTip, sessionToken); // ДОБАВЛЕН sessionToken
+
+                if (!shouldContinue()) {
+                    dispatch({ type: 'SET_READING_SINGLE', payload: false });
+                    return;
+                }
+
+                await new Promise(resolve => setTimeout(resolve, 100));
+
+                if (!shouldContinue()) {
+                    dispatch({ type: 'SET_READING_SINGLE', payload: false });
+                    return;
+                }
+
+                await playAudio(foreignPart, foreignLanguage, true, selectedVoiceForeign, sessionToken); // ДОБАВЛЕН sessionToken
+
+                if (!shouldContinue()) {
+                    dispatch({ type: 'SET_READING_SINGLE', payload: false });
+                    return;
+                }
+
+                await new Promise(resolve => setTimeout(resolve, 100));
+
+                if (!shouldContinue()) {
+                    dispatch({ type: 'SET_READING_SINGLE', payload: false });
+                    return;
+                }
+
+                await playAudio(translation, translationLanguage, true, selectedVoiceTranslation, sessionToken); // ДОБАВЛЕН sessionToken
+            } else {
+                // Если tip пуст, читаем: translation > foreign
+                await playAudio(translation, translationLanguage, true, selectedVoiceTranslation, sessionToken); // ДОБАВЛЕН sessionToken
+
+                if (!shouldContinue()) {
+                    dispatch({ type: 'SET_READING_SINGLE', payload: false });
+                    return;
+                }
+
+                await new Promise(resolve => setTimeout(resolve, 100));
+
+                if (!shouldContinue()) {
+                    dispatch({ type: 'SET_READING_SINGLE', payload: false });
+                    return;
+                }
+
+                await playAudio(foreignPart, foreignLanguage, true, selectedVoiceForeign, sessionToken); // ДОБАВЛЕН sessionToken
+            }
+
+            dispatch({ type: 'SET_READING_SINGLE', payload: false });
+        } catch (error) {
+            dispatch({ type: 'SET_READING_SINGLE', payload: false });
+
+            if (error.message !== 'Cancelled') {
+                console.error('Error during single read:', error);
+            }
+        }
+    }, [
+        playerState.currentRecord,
+        playerState.isReadingSingle,
+        filteredData,
+        foreignLanguage,
+        translationLanguage,
+        tipLanguage,
+        selectedVoiceForeign,
+        selectedVoiceTranslation,
+        selectedVoiceTip,
+        playAudio
+    ]);
 
     const resetCancelToken = useCallback(() => {
         cancelTokenRef.current = { cancelled: false };
@@ -395,6 +503,19 @@ export const PlayerProvider = ({
         }
     };
 
+    const handleToggleReadSingle = useCallback(() => {
+        if (playerState.isReadingSingle) {
+            // Останавливаем чтение
+            window.speechSynthesis.cancel();
+            singleReadCancelTokenRef.current.cancelled = true;
+            dispatch({ type: 'SET_READING_SINGLE', payload: false });
+        } else {
+            // Запускаем чтение
+            singleReadCancelTokenRef.current = { cancelled: false };
+            dispatch({ type: 'SET_READING_SINGLE', payload: true });
+        }
+    }, [playerState.isReadingSingle]);
+
     const handlePrev = () => {
         window.speechSynthesis.cancel();
         if (cancelTokenRef.current) {
@@ -558,11 +679,19 @@ export const PlayerProvider = ({
     }, [playerState.isPlaying, playerState.isSpeaking, playerState.isInDelay]);
 
     useEffect(() => {
+        if (playerState.isReadingSingle && filteredData.length > 0) {
+            readSingleRecord();
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [playerState.isReadingSingle]);
+
+    useEffect(() => {
         return () => {
             window.speechSynthesis.cancel();
             if (delayTimeoutRef.current) {
                 clearTimeout(delayTimeoutRef.current);
             }
+            singleReadCancelTokenRef.current.cancelled = true;
         };
     }, []);
 
@@ -572,6 +701,7 @@ export const PlayerProvider = ({
         filteredData,
         currentEntry: filteredData[playerState.currentRecord],
         handlePlayPause,
+        handleToggleReadSingle,
         handleNext,
         handlePrev,
         handleGoToFirst,
