@@ -1958,3 +1958,9 @@ die Überweisung = bank transfer = банковский перевод
 träumen = dream = мечтать  
 vertrauen — vertraut = trust = доверять
 loben = praise = хвалить
+träumen = dream = мечтать  
+vertrauen — vertraut = trust = доверять
+loben = praise = хвалить
+mühen sich = strive — strove — striven = стараться; утруждать себя
+bewilligen — bewilligt = approve = одобрять; утверждать; выделять (средства)
+anfassen — fasst an — angefasst = touch = трогать
