@@ -1,0 +1,583 @@
+Bahn / Flug buchen = Booking train / flight = Бронирование поезда / самолета
+Ich buche zwei Tickets nach München, Hin- und Rückfahrt, Economy-Klasse. = I'm booking two tickets to Munich, round trip, economy class. = Я бронирую два билета в Мюнхен, туда и обратно, эконом-класс.
+Wann fährt der nächste Zug nach Frankfurt, und muss ich umsteigen? = When does the next train to Frankfurt leave, and do I need to transfer? = Когда отправляется следующий поезд во Франкфурт, и нужно ли мне делать пересадку?
+Rail&Fly-Ticket mit dem Flug: Fensterplatz, Economy, ab Berlin. = Rail&Fly ticket with the flight: window seat, economy, departing from Berlin. = Билет Rail&Fly вместе с авиабилетом: место у окна, эконом-класс, вылет из Берлина.
+Am Automaten: Erwachsener + Kind, Flexpreis für späte Änderungen. = At the ticket machine: adult + child, flexible fare for late changes. = В автомате: взрослый + ребенок, гибкий тариф для поздних изменений.
+Der Flug ist verspätet, kann ich das Ticket umtauschen oder Geld zurück? = The flight is delayed, can I exchange the ticket or get a refund? = Рейс задерживается, могу ли я обменять билет или получить возврат денег?
+Hotel / Airbnb = Hotel / Airbnb = Отель / Airbnb
+Ich habe Zimmer 204 im Hotel gebucht, mit Aufzug im zweiten Stock. = I booked room 204 in the hotel, with an elevator on the second floor. = Я забронировал номер 204 в отеле, с лифтом на втором этаже.
+Der Schlüssel liegt am Empfang, gehen Sie den Flur entlang bis links. = The key is at the reception, go down the hallway to the left. = Ключ находится на ресепшене, пройдите по коридору налево.
+Im Zimmer: Bett, Schrank, Bad mit Dusche, kein Balkon. = In the room: bed, closet, bathroom with shower, no balcony. = В номере: кровать, шкаф, ванная с душем, без балкона.
+Airbnb-Check-in: PIN am Schloss, Treppen hoch, dritter Stock. = Airbnb check-in: PIN on the lock, go up the stairs, third floor. = Заезд в Airbnb: PIN-код на замке, поднимитесь по лестнице, третий этаж.
+Frühstück im Hotel: acht bis zehn Uhr im Erdgeschoss rechts. = Breakfast at the hotel: eight to ten a.m. on the ground floor to the right. = Завтрак в отеле: с восьми до десяти утра на первом этаже справа.
+Gepäck verloren / verspätet / Zoll / Passkontrolle = Lost / delayed luggage / customs / passport control = Потерянный / задержанный багаж / таможня / паспортный контроль
+Mein Gepäck ist verloren, bitte Property Irregularity Report ausfüllen. = My luggage is lost, please fill out a Property Irregularity Report. = Мой багаж потерян, пожалуйста, заполните отчет о неисправности имущества (Property Irregularity Report).
+Am Gepäckschalter: Koffer schwarz, mit rotem Band, Referenznummer notiert. = At the baggage counter: black suitcase, with red ribbon, reference number noted. = На стойке багажа: чемодан черный, с красной лентой, номер ссылки записан.
+Zollkontrolle: Haben Sie Waren über 430 Euro oder Lebensmittel dabei? = Customs control: Do you have goods over 430 euros or food items with you? = Таможенный контроль: Есть ли у вас товары на сумму более 430 евро или продукты питания?
+Passkontrolle: Bleiben Sie in der Schlange, Visum prüfen lassen. = Passport control: Stay in line, have your visa checked. = Паспортный контроль: Оставайтесь в очереди, дайте проверить визу.
+Verspätetes Gepäck: Nach 21 Tagen gilt es als verloren, Entschädigung bis 1300 Euro. = Delayed luggage: After 21 days it is considered lost, compensation up to 1300 euros. = Задержанный багаж: Через 21 день он считается потерянным, компенсация до 1300 евро.
+Wegbeschreibung: Fußweg = Directions: Walking route = Описание пути: Пешеходный маршрут
+Gehen Sie geradeaus 100 Meter, dann links an der Ampel. = Go straight 100 meters, then left at the traffic light. = Идите прямо 100 метров, затем налево на светофоре.
+Biegen Sie rechts ab, über die Fußgängerampel und geradeaus zum Park. = Turn right, cross the pedestrian crossing, and go straight to the park. = Поверните направо, перейдите пешеходный переход и идите прямо к парку.
+Am Kreisverkehr zweiter Ausgang, dann 200 Meter bergauf. = At the roundabout, take the second exit, then 200 meters uphill. = На круговой развязке второй выезд, затем 200 метров в горку.
+Kehren Sie um, wenn Sie die Kirche sehen, dann links. = Turn around when you see the church, then left. = Развернитесь, когда увидите церковь, затем налево.
+Folgen Sie der Straße geradeaus bis zum Ende, drittes Haus rechts. = Follow the street straight to the end, third house on the right. = Следуйте по улице прямо до конца, третий дом справа.
+ÖPNV: Bus/Tram/U-Bahn = Public transport: Bus/Tram/Subway = Общественный транспорт: Автобус/Трамвай/Метро
+Steigen Sie an der Haltestelle Hauptbahnhof in den Bus 12 Richtung Zentrum ein. = Board bus 12 towards the city center at the main train station stop. = Сядьте на автобус 12 в направлении центра на остановке главного вокзала.
+Fahren Sie drei Haltestellen, dann an der Kirche aussteigen. = Ride three stops, then get off at the church. = Проедьте три остановки, затем выйдите у церкви.
+Umsteigen: Von U1 auf U3 an der Station Marienplatz, links die Rolltreppe. = Transfer: From U1 to U3 at Marienplatz station, escalator on the left. = Пересадка: с U1 на U3 на станции Мариенплац, эскалатор слева.
+Tram Linie 4 bis Ingolstadt Zentrum, dann 300 Meter zu Fuß. = Tram line 4 to Ingolstadt center, then 300 meters on foot. = Трамвай линии 4 до центра Ингольштадта, затем 300 метров пешком.
+S-Bahn RB nach München, zweiter Wagen, Ausgang links. = S-Bahn regional train to Munich, second car, exit on the left. = Электричка S-Bahn/RB в Мюнхен, второй вагон, выход слева.
+Vom Flughafen: Bus 635 bis U-Bahn, dann Linie S8 nach Marienplatz umsteigen. = From the airport: Bus 635 to the subway, then transfer to line S8 to Marienplatz. = Из аэропорта: автобус 635 до метро, затем пересадка на линию S8 до Мариенплац.
+Ticket lösen: Erwachsener + Kind, Tagesticket für alle Linien. = Buy ticket: adult + child, day ticket for all lines. = Купить билет: взрослый + ребенок, дневной билет на все линии.
+Der Zug hat 40 Minuten Verspätung, ich verpasse meinen Anschluss! = The train is 40 minutes delayed, I'm missing my connection! = Поезд опаздывает на 40 минут, я опаздываю на пересадку!
+Im Hotel kein heißes Wasser, bitte den Manager rufen. = No hot water in the hotel, please call the manager. = В отеле нет горячей воды, пожалуйста, позовите управляющего.
+Gepäck beschädigt, wie beantrage ich Schadensersatz? = Luggage damaged, how do I file a compensation claim? = Багаж поврежден, как мне подать заявку на компенсацию?
+Restaurant / Bestellen = Restaurant / Ordering = Ресторан / Заказ
+Ein Tisch für zwei Personen, Nichtraucherbereich bitte. = A table for two people, non-smoking area please. = Столик на двоих, зону для некурящих, пожалуйста.
+Als Vorspeise hätte ich gern die Tomatensuppe oder den Caprese-Salat. = For an appetizer, I would like the tomato soup or the Caprese salad. = В качестве закуски я бы хотел томатный суп или салат Капрезе.
+Zum Hauptgericht nehme ich Spaghetti Carbonara mit Parmesan und Pfeffer. = For the main course, I'll have Spaghetti Carbonara with parmesan and pepper. = На основное блюдо я возьму спагетти Карбонара с пармезаном и перцем.
+Beilagen: Pommes frites, Salat oder Gemüse vom Tag? = Side dishes: french fries, salad, or vegetable of the day? = Гарниры: картофель фри, салат или овощи дня?
+Als Dessert Tiramisu oder Eis mit Sahne. = For dessert, tiramisu or ice cream with whipped cream. = На десерт тирамису или мороженое со взбитыми сливками.
+Zu trinken ein großes Pils und Mineralwasser mit Gas. = To drink, a large Pilsner and sparkling mineral water. = Из напитков большой пильзнер и минеральную воду с газом.
+Ist das Schnitzel glutenfrei, oder haben Sie Alternativen? = Is the schnitzel gluten-free, or do you have alternatives? = Шницель без глютена, или у вас есть альтернативы?
+Die Pizza Margherita bitte mit extra Mozzarella und frischen Basilikumblättern. = The Pizza Margherita please with extra mozzarella and fresh basil leaves. = Пиццу Маргарита, пожалуйста, с дополнительной моцареллой и свежими листьями базилика.
+Lieferando / Essen bestellen = Lieferando / Ordering food = Lieferando / Заказ еды
+Bei Lieferando: Döner mit allem, mittel scharf, und Falafel fürs Kind. = On Lieferando: Döner with everything, medium spicy, and falafel for the child. = На Lieferando: дёнер со всем, средней остроты, и фалафель для ребенка.
+Lieferzeit 35 Minuten, Gesamtkosten 22 Euro inklusive Liefergebühr. = Delivery time 35 minutes, total cost 22 euros including delivery fee. = Время доставки 35 минут, общая стоимость 22 евро, включая плату за доставку.
+Das Essen ist kalt angekommen, bitte als Nächstes warm liefern. = The food arrived cold, please deliver it warm next time. = Еда пришла холодной, пожалуйста, в следующий раз доставьте горячей.
+Bäcker / Metzgerei = Bakery / Butcher shop = Пекарня / Мясная лавка
+Beim Bäcker: Ein halbes Roggenbrot, zwei Brötchen und ein Croissant bitte. = At the bakery: half a rye loaf, two rolls, and a croissant please. = В пекарне: полбуханки ржаного хлеба, две булочки и круассан, пожалуйста.
+Metzgerei: 200 Gramm Salami, Schinken und Leberwurst zum Probieren. = At the butcher shop: 200 grams of salami, ham, and liverwurst to try. = В мясной лавке: 200 грамм салями, ветчины и ливерной колбасы на пробу.
+Fünf Pfund Hackfleisch für Spaghetti Bolognese, mager bitte. = Five pounds of ground meat for Spaghetti Bolognese, lean please. = Пять фунтов фарша для спагетти Болоньезе, постный, пожалуйста.
+Kochen / Rezepte einkaufen = Cooking / Shopping for recipes = Приготовление еды / Покупки по рецептам
+Für Lasagne brauche ich Hackfleisch, Tomatensauce, Lasagneplatten und Käse. = For lasagna I need ground meat, tomato sauce, lasagna sheets, and cheese. = Для лазаньи мне нужен фарш, томатный соус, листы для лазаньи и сыр.
+Zutaten einkaufen: Zwiebeln, Knoblauch, Paprika, Reis und Gewürze. = Shopping for ingredients: onions, garlic, bell peppers, rice, and spices. = Покупаю ингредиенты: лук, чеснок, болгарский перец, рис и специи.
+Rezept für Kinder: Nudeln mit Tomatensoße, Karotten und Hack. = Recipe for kids: pasta with tomato sauce, carrots, and ground meat. = Рецепт для детей: макароны с томатным соусом, морковью и фаршем.
+Die Rechnung bitte — zusammen zahlen oder getrennt? = The bill please — pay together or separately? = Счет, пожалуйста — платим вместе или раздельно?
+Getrennt bitte, ich habe nur die Suppe und das Wasser genommen. = Separately please, I only had the soup and the water. = Раздельно, пожалуйста, я брал только суп и воду.
+Zusammen zahlen wir, fünf Euro Trinkgeld in bar. = We'll pay together, five euros tip in cash. = Платим вместе, пять евро чаевых наличными.
+Die Pizza war falsch, bitte umtauschen oder Geld zurück. = The pizza was wrong, please exchange it or give me a refund. = Пицца была не та, пожалуйста, обменяйте или верните деньги.
+Service war langsam, kein Trinkgeld diesmal. = Service was slow, no tip this time. = Обслуживание было медленным, без чаевых в этот раз.
+Kartenzahlung geht nicht, EC-Karte oder Bar? = Card payment doesn't work, debit card or cash? = Оплата картой не проходит, банковской картой или наличными?
+
+
+
+
+Meine Tochter ist im letzten Jahr im Kindergarten und kommt nach dem Sommer in die Schule. = My daughter is in her last year of kindergarten and will start school after the summer. = Моя дочь в последнем году детского сада и пойдет в школу после лета.
+Ich bringe sie morgens gegen acht Uhr und hole sie nachmittags wieder ab. = I drop her off around eight in the morning and pick her up again in the afternoon. = Я отвожу её утром около восьми часов и забираю снова днем.
+Die Erzieherin erzählt mir oft kurz an der Tür, wie der Tag gelaufen ist. = The teacher often briefly tells me at the door how the day went. = Воспитательница часто кратко рассказывает мне у двери, как прошел день.
+Meine Tochter ist eher schüchtern und braucht manchmal etwas Zeit, bis sie auftaut. = My daughter is rather shy and sometimes needs a little time to warm up. = Моя дочь довольно застенчива и иногда нуждается в небольшом времени, чтобы раскрепоститься.
+Sie ist am Anfang ein bisschen zurückhaltend, aber wenn sie Vertrauen hat, spricht sie viel. = She is a bit reserved at first, but when she has trust, she talks a lot. = Вначале она немного сдержанна, но когда она доверяет, то много говорит.
+Können Sie mir bitte sagen, wie sie in der Gruppe zurechtkommt? = Can you please tell me how she is getting along in the group? = Не могли бы вы сказать мне, как она справляется в группе?
+Gibt es etwas, worauf wir zu Hause besonders achten sollten? = Is there anything we should pay special attention to at home? = Есть ли что-то, на что нам стоит особенно обращать внимание дома?
+Bitte sagen Sie mir Bescheid, wenn sie sich sehr zurückzieht oder mit anderen Kindern Probleme hat. = Please let me know if she withdraws a lot or has problems with other children. = Пожалуйста, сообщите мне, если она сильно замкнется или у неё возникнут проблемы с другими детьми.
+Morgen gehen die Kinder in den Zoo, sie sollen wetterfeste Kleidung und eine Trinkflasche mitbringen. = Tomorrow the children are going to the zoo, they should bring weather-appropriate clothing and a water bottle. = Завтра дети идут в зоопарк, им следует взять с собой одежду по погоде и бутылку для воды.
+Für den Ausflug ins Kino brauchen die Kinder Hausschuhe, eine kleine Brotzeit und etwas zu trinken. = For the trip to the cinema, the children need indoor shoes, a small snack, and something to drink. = Для поездки в кинотеатр детям нужны сменная обувь, небольшой перекус и что-то попить.
+Am Freitag ist der Kindergarten wegen eines Festes nur bis zwölf Uhr geöffnet. = On Friday, the kindergarten is only open until twelve o'clock because of a celebration. = В пятницу детский сад открыт только до двенадцати часов из-за праздника.
+Nächste Woche ist der Kindergarten ganz geschlossen, weil ein Brückentag und ein Feiertag sind. = Next week the kindergarten is completely closed because there is a bridge day and a public holiday. = На следующей неделе детский сад полностью закрыт, потому что есть выходной день между праздниками и государственный праздник.
+Mein Sohn ist in der dritten Klasse in der Grundschule. = My son is in third grade at elementary school. = Мой сын в третьем классе начальной школы.
+Sein Deutsch ist noch schwierig, aber in Mathematik kommt er gut mit. = His German is still challenging, but he does well in math. = Немецкий язык для него всё ещё сложен, но с математикой он справляется хорошо.
+Können wir bitte einen Termin für ein Elterngespräch vereinbaren? = Can we please schedule an appointment for a parent-teacher conference? = Можем ли мы, пожалуйста, договориться о встрече для родительского собрания?
+Ich würde gern wissen, was er verbessern muss und was schon gut läuft. = I would like to know what he needs to improve and what is already going well. = Я хотел бы знать, что ему нужно улучшить и что уже идет хорошо.
+Zu Hause fällt es ihm schwer, die Hausaufgaben in Deutsch allein zu machen. = At home, he finds it difficult to do his German homework alone. = Дома ему трудно делать домашние задания по немецкому языку самостоятельно.
+Wie schätzen Sie seine Chancen ein, später auf das Gymnasium zu gehen? = How do you assess his chances of going to Gymnasium (academic high school) later? = Как вы оцениваете его шансы позже пойти в гимназию?
+Wir überlegen noch zwischen Gymnasium, Realschule und Mittelschule. = We are still considering between Gymnasium, Realschule, and Mittelschule. = Мы всё ещё выбираем между гимназией, реальным училищем и средней школой.
+Er ist im Unterricht eher still und meldet sich selten, vor allem in Deutsch. = He is rather quiet in class and rarely raises his hand, especially in German. = На уроках он довольно тихий и редко поднимает руку, особенно на немецком языке.
+In der Pause spielt er viel mit anderen Kindern, da fühlt er sich sicherer. = During recess, he plays a lot with other children; he feels more secure there. = На перемене он много играет с другими детьми, там он чувствует себя увереннее.
+Er bleibt normalerweise bis sechzehn Uhr in der Betreuung und spielt dort mit den anderen Kindern. = He normally stays in after-school care until four p.m. and plays there with the other children. = Обычно он остается в группе продленного дня до шестнадцати часов и играет там с другими детьми.
+Die richtige Ganztagsbetreuung bis siebzehn Uhr nutzen wir im Moment nicht. = We are not currently using the full-day care until five p.m. = Мы в настоящее время не пользуемся полноценным дневным уходом до семнадцати часов.
+Manchmal ruft die Schule an und sagt, dass er sich nicht wohlfühlt und wir ihn abholen sollen. = Sometimes the school calls and says that he is not feeling well and that we should pick him up. = Иногда школа звонит и говорит, что он плохо себя чувствует и мы должны его забрать.
+Wo soll ich ihn dann abholen, im Klassenzimmer oder im Sekretariat? = Where should I pick him up then, in the classroom or in the office? = Где мне тогда его забирать, в классе или в секретариате?
+Heute ist nur ein kurzer Schultag, die Kinder haben wegen eines Schulfestes früher frei. = Today is only a short school day, the children have an early day off because of a school celebration. = Сегодня только короткий учебный день, у детей раньше конец занятий из-за школьного праздника.
+Bitte schauen Sie regelmäßig in die E-Mails, dort informieren wir über Änderungen und Feiertage. = Please check your emails regularly, we inform you there about changes and holidays. = Пожалуйста, регулярно проверяйте электронную почту, там мы информируем об изменениях и праздничных днях.
+In den Elternmails geht es manchmal um Vandalismus oder schlechtes Verhalten einiger Schüler. = In the parent emails, it sometimes concerns vandalism or bad behavior of some students. = В письмах для родителей иногда речь идет о вандализме или плохом поведении некоторых учеников.
+Wir werden das Thema zu Hause mit unserem Sohn in Ruhe besprechen. = We will discuss the topic at home with our son calmly. = Мы спокойно обсудим эту тему дома с нашим сыном.
+Es ist uns wichtig, dass er versteht, dass Beschädigungen und Beleidigungen nicht akzeptabel sind. = It is important to us that he understands that damage and insults are not acceptable. = Для нас важно, чтобы он понимал, что порча имущества и оскорбления неприемлемы.
+Mein Sohn ist im Unterricht oft sehr still, weil er Angst hat, Fehler zu machen. = My son is often very quiet in class because he is afraid of making mistakes. = Мой сын на уроках часто очень тихий, потому что боится делать ошибки.
+Er ist nicht unmotiviert, sondern einfach ein bisschen unsicher und schüchtern. = He is not unmotivated, but simply a bit insecure and shy. = Он не демотивирован, а просто немного неуверен и застенчив.
+In kleinen Gruppen spricht er viel mehr als vor der ganzen Klasse. = In small groups, he talks much more than in front of the whole class. = В маленьких группах он говорит гораздо больше, чем перед всем классом.
+Könnten Sie ihm vielleicht manchmal Fragen stellen, bei denen er kurze, einfache Antworten geben kann? = Could you perhaps sometimes ask him questions where he can give short, simple answers? = Не могли бы вы иногда задавать ему вопросы, на которые он может давать короткие, простые ответы?
+Ich war als Kind auch eher schüchtern, deshalb kenne ich das sehr gut. = I was also rather shy as a child, so I know that very well. = Я тоже был довольно застенчивым в детстве, поэтому очень хорошо это понимаю.
+Ich habe einen Termin beim Hausarzt für nächsten Dienstag um 10 Uhr. = I have an appointment with my primary care physician next Tuesday at 10 a.m. = У меня назначен прием у врача общей практики на следующий вторник в 10 часов.
+Können Sie bitte einen Termin für Impfung oder Grippe-Impfung vereinbaren? = Can you please schedule an appointment for a vaccination or flu shot? = Не могли бы вы, пожалуйста, записать меня на прививку или вакцинацию от гриппа?
+Rufen Sie bitte unter 116 117 an, wenn Sie dringend einen Arzttermin brauchen. = Please call 116 117 if you urgently need a doctor's appointment. = Пожалуйста, позвоните по номеру 116 117, если вам срочно нужен прием у врача.
+Meine Krankenkassenkarte liegt zu Hause, ist das ein Problem? = My health insurance card is at home, is that a problem? = Моя медицинская страховая карта осталась дома, это проблема?
+Der Arzt ist in der Pause, kommen Sie in 15 Minuten wieder. = The doctor is on a break, please come back in 15 minutes. = Врач на перерыве, пожалуйста, вернитесь через 15 минут.
+Wir haben eine Wartezeit von 20 Minuten, bitte setzen Sie sich. = We have a waiting time of 20 minutes, please have a seat. = У нас время ожидания 20 минут, пожалуйста, присядьте.
+Der Junge fühlt sich plötzlich schlecht, können Sie ihn früher einbestellen? = The boy suddenly feels unwell, can you schedule him for an earlier appointment? = Мальчику вдруг стало плохо, можете ли вы записать его на более ранний прием?
+Wo soll ich warten, wenn ich ihn aus der Schule abhole? = Where should I wait when I pick him up from school? = Где мне ждать, когда я забираю его из школы?
+Ich habe seit drei Tagen Schnupfen, Halsschmerzen und leichten Husten. = I have had a runny nose, sore throat, and mild cough for three days. = У меня уже три дня насморк, боль в горле и легкий кашель.
+Mir ist übel, der Hals kratzt, und ich habe Fieber über 38 Grad. = I feel nauseous, my throat is scratchy, and I have a fever over 38 degrees Celsius. = Меня тошнит, в горле першит, и у меня температура выше 38 градусов.
+Es fühlt sich an wie Bronchitis: tiefer Husten und Pfeifen in den Bronchien. = It feels like bronchitis: deep cough and wheezing in the bronchi. = Это похоже на бронхит: глубокий кашель и хрипы в бронхах.
+Die Lunge tut weh, und ich huste grünbraunen Schleim ab. = My lungs hurt, and I am coughing up greenish-brown mucus. = У меня болят легкие, и я откашливаю зеленовато-коричневую мокроту.
+Bei Erkältung nehme ich erstmal viel trinken und Lutschpastillen. = For a cold, I first drink plenty of fluids and use lozenges. = При простуде я сначала пью много жидкости и использую леденцы от боли в горле.
+Seit gestern Übelkeit, Durchfall und leichte Bauchkrämpfe. = Since yesterday, nausea, diarrhea, and mild stomach cramps. = Со вчерашнего дня тошнота, диарея и легкие спазмы в животе.
+Es brennt im Magen, nach dem Essen kommt Erbrechen. = There is a burning sensation in my stomach, and I vomit after eating. = У меня жжение в желудке, и после еды возникает рвота.
+Verdacht auf Magenschleimhautentzündung oder Gallensteine. = Suspected gastritis or gallstones. = Подозрение на воспаление слизистой желудка или камни в желчном пузыре.
+Bei Verstopfung trinke ich viel Wasser und esse ballaststoffreiche Lebensmittel. = For constipation, I drink plenty of water and eat high-fiber foods. = При запоре я пью много воды и ем продукты, богатые клетчаткой.
+Mein Knie schmerzt beim Beugen, und ich kann die Treppen kaum steigen. = My knee hurts when I bend it, and I can hardly climb stairs. = У меня болит колено при сгибании, и я с трудом могу подниматься по лестнице.
+Rückenschmerzen machen es schwer, sich richtig zu bücken oder zu drehen. = Back pain makes it difficult to bend down or turn properly. = Боль в спине мешает мне нормально наклоняться или поворачиваться.
+Die Schulter ist verspannt, Bewegungen mit dem Arm sind eingeschränkt. = My shoulder is tense, and arm movements are limited. = Плечо напряжено, движения рукой ограничены.
+Ich soll Kniebeugen vermeiden, bis der Arzt grünes Licht gibt. = I should avoid squats until the doctor gives the green light. = Мне следует избегать приседаний, пока врач не даст добро.
+Schreiben Sie bitte ein Rezept für Hustenmittel und Nasenspray aus. = Please write a prescription for cough medicine and nasal spray. = Пожалуйста, выпишите рецепт на средство от кашля и назальный спрей.
+Nehme ich die Tabletten vor oder nach dem Essen ein? = Should I take the tablets before or after meals? = Мне принимать таблетки до или после еды?
+In der Apotheke brauche ich rezeptfreie Mittel gegen Bronchitis: Thymian oder Efeu-Hustensaft. = At the pharmacy, I need over-the-counter remedies for bronchitis: thyme or ivy cough syrup. = В аптеке мне нужны безрецептурные средства от бронхита: сироп от кашля с тимьяном или плющом.
+Paracetamol und Ibuprofen helfen bei Fieber und Gliederschmerzen. = Paracetamol and ibuprofen help with fever and body aches. = Парацетамол и ибупрофен помогают при температуре и ломоте в теле.
+Brustwickel mit Quark oder Zwiebeln lindern die Bronchitis-Symptome. = Chest compresses with quark or onions relieve bronchitis symptoms. = Грудные компрессы с творогом или луком облегчают симптомы бронхита.
+Wann ist der nächste Termin für Grippe- oder Corona-Impfung? = When is the next appointment for flu or COVID vaccination? = Когда следующий прием для вакцинации от гриппа или коронавируса?
+Die Impfung gegen Viren schützt die ganze Familie. = Vaccination against viruses protects the whole family. = Вакцинация от вирусов защищает всю семью.
+Nach der Impfung soll ich zwei Tage auf Sport verzichten. = After vaccination, I should avoid sports for two days. = После прививки мне следует воздержаться от занятий спортом в течение двух дней.
+Ich mache täglich Dehnübungen, aber keine Liegestütze wegen der Schulter. = I do stretching exercises daily, but no push-ups because of my shoulder. = Я ежедневно делаю упражнения на растяжку, но не отжимаюсь из-за плеча.
+Kniebeugen und Springen sind gut für die Gelenke, aber bei Schmerzen stoppen. = Squats and jumping are good for the joints, but stop if there is pain. = Приседания и прыжки полезны для суставов, но при боли нужно остановиться.
+Der Arzt hat mich zu lange warten lassen, das war unprofessionell. = The doctor made me wait too long, that was unprofessional. = Врач заставил меня ждать слишком долго, это было непрофессионально.
+Die Medikamente haben nicht geholfen, kann ich sie umtauschen? = The medications did not help, can I exchange them? = Лекарства не помогли, могу ли я их обменять?
+Bei starkem Durchfall brauche ich sofort einen Termin, nicht in zwei Wochen. = For severe diarrhea, I need an appointment immediately, not in two weeks. = При сильной диарее мне нужен прием немедленно, а не через две недели.
+Haben Sie nächste Woche noch einen freien Termin für meinen Sohn? = Do you still have an available appointment next week for my son? = Есть ли у вас ещё свободный приём на следующей неделе для моего сына?
+Ich brauche dringend einen Termin wegen starker Rückenschmerzen. = I urgently need an appointment because of severe back pain. = Мне срочно нужен приём из-за сильной боли в спине.
+Können Sie mich auf die Warteliste setzen, falls jemand absagt? = Can you put me on the waiting list in case someone cancels? = Можете ли вы поставить меня в лист ожидания, если кто-то отменит запись?
+Der früheste Termin ist in drei Wochen — kann ich zur Vertretung gehen? = The earliest appointment is in three weeks — can I see the substitute doctor? = Самый ранний приём через три недели — могу ли я пойти к замещающему врачу?
+Mein Kind ist hingefallen und hat eine starke Beule — soll ich ins Krankenhaus? = My child fell down and has a big bump — should I go to the hospital? = Мой ребёнок упал, и у него большая шишка — мне следует ехать в больницу?
+Bei starken Bauchschmerzen nach Mitternacht rufen Sie 112 oder fahren selbst hin. = For severe stomach pain after midnight, call 112 or go there yourself. = При сильной боли в животе после полуночи позвоните 112 или поезжайте самостоятельно.
+Im Krankenhaus muss ich die Krankenkassenkarte und den Personalausweis mitbringen. = At the hospital, I need to bring my health insurance card and ID card. = В больницу мне нужно взять с собой медицинскую страховую карту и удостоверение личности.
+Nach dem Unfall haben sie ihn geröntgt, zum Glück nur eine Prellung. = After the accident, they X-rayed him, fortunately it's only a bruise. = После аварии ему сделали рентген, к счастью, только ушиб.
+Guten Morgen, ich bin krank und komme heute nicht ins Fotogeschäft. = Good morning, I am sick and won't come to the photo shop today. = Доброе утро, я болен и сегодня не приду в фотомагазин.
+Ich habe starken Husten und Fieber, ich bleibe zu Hause bis Donnerstag. = I have a severe cough and fever, I'm staying home until Thursday. = У меня сильный кашель и температура, я остаюсь дома до четверга.
+Die Krankmeldung vom Arzt liegt digital im Portal, schicken Sie sie bitte weiter. = The doctor's sick note is available digitally in the portal, please forward it. = Больничный лист от врача находится в цифровом виде в портале, пожалуйста, перешлите его.
+Morgen bin ich wieder fit und übernehme die Kasse wie gewohnt. = Tomorrow I'll be fit again and will take over the cash register as usual. = Завтра я снова буду в форме и возьму на себя кассу, как обычно.
+Haben Sie Aspirin-Spritzen gegen Halsschmerzen oder reichen Lutschpastillen? = Do you have aspirin injections for sore throat or are lozenges enough? = У вас есть инъекции аспирина от боли в горле или достаточно леденцов?
+Das Antibiotikum kostet 25 Euro, bezahle ich selbst oder übernimmt die Kasse? = The antibiotic costs 25 euros, do I pay myself or does the insurance cover it? = Антибиотик стоит 25 евро, я плачу сам или это покрывает страховка?
+Nehmen Sie die Tabletten dreimal täglich nach dem Essen mit viel Wasser. = Take the tablets three times daily after meals with plenty of water. = Принимайте таблетки три раза в день после еды, запивая большим количеством воды.
+Bei Durchfall helfen Elektrolytlösungen und Flohsamenschalen besser als Loperamid. = For diarrhea, electrolyte solutions and psyllium husks help better than loperamide. = При диарее растворы электролитов и шелуха подорожника помогают лучше, чем лоперамид.
+Beim Zahnarzt habe ich einen Zahn füllen lassen, morgen ist das Kauen noch empfindlich. = At the dentist, I had a tooth filled, chewing is still sensitive tomorrow. = У стоматолога мне запломбировали зуб, завтра жевать ещё чувствительно.
+Meine Tochter braucht eine Zahnspange, die erste Kostenübernahme klären wir morgen. = My daughter needs braces, we'll clarify the initial cost coverage tomorrow. = Моей дочери нужна брекет-система, вопрос о первом покрытии расходов мы уточним завтра.
+Beim Augenarzt hat er eine Brille verschrieben, -1,5 Dioptrien links und rechts. = At the ophthalmologist, he prescribed glasses, -1.5 diopters left and right. = У офтальмолога ему выписали очки, -1,5 диоптрии на левый и правый глаз.
+Augentropfen zweimal täglich, aber beim Sport nicht zu viel rennen. = Use eye drops twice daily, but don't run too much during sports. = Капать глаза два раза в день, но при занятиях спортом не бегать слишком много.
+Die Kinder wollen gleich auf die Rutsche, aber sie müssen erst die Sandkuchen fertig backen. = The kids want to go on the slide right away, but they have to finish baking their sand cakes first. = Дети хотят сразу пойти на горку, но сначала им нужно закончить печь песочные пироги.
+Achtung, die Schaukel schwingt hoch, halt dich gut fest! = Watch out, the swing is swinging high, hold on tight! = Осторожно, качели раскачиваются высоко, держись крепче!
+Meine Tochter ist auf dem Klettergerüst, sie hat keine Angst vor der Höhe. = My daughter is on the climbing frame, she is not afraid of heights. = Моя дочь на лазалке, она не боится высоты.
+Der Sandkasten ist voll, aber die Kinder teilen sich die Eimer brav. = The sandbox is full, but the children are nicely sharing the buckets. = Песочница заполнена, но дети добросовестно делят ведерки.
+Komm, wir bauen einen Turm, aber pass auf die anderen Kinder auf. = Come on, let's build a tower, but watch out for the other children. = Давай, построим башню, но следи за другими детьми.
+Die kleine Rutsche ist für Babys, die große für größere Kinder. = The small slide is for babies, the big one for bigger kids. = Маленькая горка для малышей, большая — для детей постарше.
+Es ist rutschig vom Regen, zieh deine Gummistiefel an. = It's slippery from the rain, put on your rain boots. = После дождя скользко, надень резиновые сапоги.
+Dein Sohn hat meinem Kind Sand ins Gesicht geworfen, bitte sag ihm, dass das nicht geht. = Your son threw sand in my child's face, please tell him that's not okay. = Твой сын бросил песок в лицо моему ребенку, пожалуйста, скажи ему, что так нельзя.
+Die Kinder streiten sich um den Bagger, sollen wir eingreifen oder allein klären lassen? = The children are arguing over the toy excavator, should we step in or let them work it out themselves? = Дети спорят из-за экскаватора, нам стоит вмешаться или позволить им разобраться самим?
+Er ist ein bisschen schüchtern und spielt lieber allein am Rand. = He is a bit shy and prefers to play by himself on the side. = Он немного застенчив и предпочитает играть в одиночестве на краю.
+Nicht schubsen! Warte, bis der andere von der Rutsche runter ist. = Don't push! Wait until the other child has gotten off the slide. = Не толкайся! Подожди, пока другой ребенок не слезет с горки.
+Die Eltern dort rufen laut, das stört die Kleinen beim Spielen. = The parents over there are shouting loudly, which disturbs the little ones while they're playing. = Родители там громко кричат, это мешает малышам играть.
+Morgen geht die Kita ins Kino, sie sollen eine kleine Brotzeit mitnehmen. = Tomorrow the daycare is going to the cinema, they should bring a small snack. = Завтра детский сад идет в кино, им следует взять с собой небольшой перекус.
+Für den Eislauf brauchen die Kinder Handschuhe, Mütze und warme Socken. = For ice skating, the children need gloves, a hat, and warm socks. = Для катания на коньках детям нужны перчатки, шапка и теплые носки.
+Im Museum dürfen sie mitlaufen, aber nicht rennen oder berühren. = At the museum they can walk along, but they cannot run or touch anything. = В музее им разрешено ходить вместе с группой, но нельзя бегать или трогать экспонаты.
+Zu Hause machen wir Kniebeugen, 10 Mal, und dann Armkreisen. = At home we do squats, 10 times, and then arm circles. = Дома мы делаем приседания, 10 раз, а затем вращения руками.
+Er kann schon ein paar Liegestütze, aber unter Aufsicht. = He can already do a few push-ups, but under supervision. = Он уже может сделать несколько отжиманий, но под присмотром.
+Am Wochenende fahren wir Rad, aber Helme sind Pflicht. = On the weekend we're going biking, but helmets are mandatory. = В выходные мы едем кататься на велосипеде, но шлемы обязательны.
+Was machst du den ganzen Tag? Ich spiele oft auf dem Spielplatz. = What do you do all day? I often play at the playground. = Что ты делаешь весь день? Я часто играю на детской площадке.
+Die Schaukel ist besetzt, warte bitte, bis sie frei ist. = The swing is taken, please wait until it's free. = Качели заняты, подожди, пожалуйста, пока они освободятся.
+Lass uns zum Bauernhof gehen, da gibt es Tiere zum Streicheln. = Let's go to the farm, there are animals to pet there. = Давай пойдем на ферму, там есть животные, которых можно погладить.
+Sie malt gerne, aber draußen beim Sandkuchen backen mag sie auch. = She likes to paint, but she also enjoys baking sand cakes outside. = Она любит рисовать, но ей также нравится печь песочные пироги на улице.
+Im Park balancieren wir auf dem Baumstamm, das trainiert das Gleichgewicht. = In the park we balance on the tree trunk, that trains our balance. = В парке мы балансируем на бревне, это тренирует равновесие.
+Nach dem Spielplatz Eis essen, aber nur eins pro Kind. = After the playground, we'll have ice cream, but only one per child. = После детской площадки съедим мороженое, но только по одному на ребенка.
+Die anderen Eltern organisieren ein Picknick, sollen wir mitmachen? = The other parents are organizing a picnic, should we join in? = Другие родители организуют пикник, нам стоит присоединиться?
+Die Nachbarnkinder machen zu viel Lärm auf unserem Spielplatz, das geht nicht. = The neighbors' children are making too much noise on our playground, that's not acceptable. = Дети соседей слишком шумят на нашей детской площадке, так нельзя.
+Er will nicht mit anderen spielen, weil er sich schämt vor Fremden. = He doesn't want to play with others because he's shy around strangers. = Он не хочет играть с другими, потому что стесняется незнакомцев.
+Beim Fußball haben sie sich gestritten, wer den Ball tritt. = During soccer, they argued about who gets to kick the ball. = Во время футбола они спорили, кто будет бить по мячу.
+ÖPNV (Tickets, Fahrplan) = Public transport (tickets, schedule) = Общественный транспорт (билеты, расписание)
+Ein Tagesticket für Erwachsene + Kind nach Ingolstadt Zentrum bitte. = A day ticket for adult + child to Ingolstadt center please. = Дневной билет для взрослого + ребенка до центра Ингольштадта, пожалуйста.
+Der nächste Bus 11 fährt um 14:17 von Haltestelle Audi Werke ab. = The next bus 11 departs at 2:17 p.m. from the Audi Werke stop. = Следующий автобус 11 отправляется в 14:17 от остановки Audi Werke.
+Mit dem Bayern-Ticket gilt für Regionalzüge bis 9 Uhr morgens. = With the Bayern-Ticket, it is valid for regional trains from 9 a.m. = С билетом Bayern-Ticket он действителен для региональных поездов с 9 утра.
+Umsteigen an der Haltestelle Rathaus: Linie 3 nach Südstadt. = Transfer at the Rathaus stop: Line 3 to Südstadt. = Пересадка на остановке Rathaus: линия 3 до Südstadt.
+Die U-Bahn fährt alle 10 Minuten, Fahrkarte im Automaten lösen. = The subway runs every 10 minutes, buy a ticket at the machine. = Метро ходит каждые 10 минут, билет купите в автомате.
+Kontrolle kommt, bitte zeigen Sie Ihre Fahrausweise vor. = Inspection is coming, please show your tickets. = Идет проверка, пожалуйста, предъявите ваши проездные документы.
+Führerschein / TÜV = Driver's license / Vehicle inspection = Водительское удостоверение / Техосмотр
+Mein Führerschein aus der Ukraine muss umgeschrieben werden, brauche ich Fahrschule? = My driver's license from Ukraine needs to be converted, do I need driving school? = Мое водительское удостоверение из Украины нужно переоформить, нужна ли мне автошкола?
+TÜV-Termin beim Dekra, bitte vorher Ölstand und Reifendruck prüfen. = TÜV appointment at Dekra, please check oil level and tire pressure beforehand. = Запись на техосмотр в Dekra, пожалуйста, заранее проверьте уровень масла и давление в шинах.
+Der Führerschein ist abgelaufen, neue Augenuntersuchung machen lassen. = The driver's license has expired, get a new eye exam. = Срок действия водительского удостоверения истек, нужно пройти новое обследование зрения.
+Fahrstunden für Klasse B: Montag 15 Uhr, bitte Vorbereitung mitholen. = Driving lessons for Class B: Monday 3 p.m., please bring preparation materials. = Уроки вождения для категории B: понедельник 15:00, пожалуйста, возьмите материалы для подготовки.
+Prüfung bestanden! Jetzt nur noch Zulassungsstelle für Plaketten. = Passed the test! Now just the registration office for the stickers. = Экзамен сдан! Теперь только в регистрационный орган за наклейками.
+Tankstelle / Werkstatt = Gas station / Workshop = Заправочная станция / Автосервис
+Super E10 bleifrei, bitte volltanken für 70 Liter. = Super E10 unleaded, please fill up with 70 liters. = Супер Е10 без свинца, пожалуйста, заправьте на 70 литров.
+AdBlue nachfüllen oder Waschanlage für Innen- und Außenreinigung? = Refill AdBlue or car wash for interior and exterior cleaning? = Долить AdBlue или мойка для внутренней и внешней очистки?
+Reifen platt, Werkstatt kann erst morgen ran — Pannendienst rufen? = Tire is flat, workshop can only do it tomorrow — call roadside assistance? = Шина спущена, сервис сможет только завтра — вызвать службу помощи на дороге?
+Ölwechsel fällig, bitte 5W30 synthetisch und neue Filter. = Oil change due, please use 5W30 synthetic and new filters. = Пора менять масло, пожалуйста, используйте синтетическое 5W30 и новые фильтры.
+Winterreifen aufziehen lassen, TÜV-Plakette bis Dezember gültig. = Have winter tires mounted, TÜV sticker valid until December. = Установите зимние шины, наклейка техосмотра действительна до декабря.
+Verkehrsinfos / Radio / Staus (Ingolstadt) = Traffic info / Radio / Traffic jams (Ingolstadt) = Информация о трафике / Радио / Пробки (Ингольштадт)
+A9 Richtung Nürnberg bei Ingolstadt Nord: LKW-Unfall, komplette Sperrung. = A9 towards Nuremberg near Ingolstadt North: truck accident, complete closure. = A9 в направлении Нюрнберга у Ингольштадт-Норд: авария с грузовиком, полное перекрытие.
+Stau auf der A8 München-Salzburg durch Baustelle bei Holzkirchen, 15 km. = Traffic jam on A8 Munich-Salzburg due to construction near Holzkirchen, 15 km. = Пробка на A8 Мюнхен-Зальцбург из-за стройки у Хольцкирхена, 15 км.
+Verkehrsfunk Bayern 2: B13 Sperrung nach Zusammenstoß, Umleitung Richtung Stadtzentrum. = Traffic report Bayern 2: B13 closed after collision, detour towards city center. = Новости о трафике Bayern 2: B13 закрыта после столкновения, объезд в направлении центра города.
+A93 Regensburg-Ingolstadt: Ölspur, Standstreifen gesperrt, 8 Minuten Zeitverlust. = A93 Regensburg-Ingolstadt: oil spill, shoulder closed, 8 minutes delay. = A93 Регенсбург-Ингольштадт: следы масла, обочина закрыта, задержка 8 минут.
+Stau Ingolstadt Zentrum: Audi-Werke Pendler, besser B13 nehmen. = Traffic jam Ingolstadt center: Audi factory commuters, better take B13. = Пробка в центре Ингольштадта: пассажиры завода Audi, лучше выберите B13.
+Verkehrsmeldung: A99 München Nord komplett dicht durch Unfall, Polizei vor Ort. = Traffic report: A99 Munich North completely blocked due to accident, police on site. = Сообщение о трафике: A99 Мюнхен-Норд полностью перекрыт из-за аварии, полиция на месте.
+Baustellenkalender: A9 Ingolstadt Süd nächste Woche Tagessperrung 9-15 Uhr. = Construction calendar: A9 Ingolstadt South next week daytime closure 9 a.m.-3 p.m. = Календарь стройработ: A9 Ингольштадт-Юг на следующей неделе дневное перекрытие с 9:00 до 15:00.
+Parkstrafe bekommen, obwohl Blaue Zone — Einspruch beim Ordnungsamt einlegen. = Received parking ticket even though in Blue Zone — file an appeal with the regulatory office. = Получил штраф за парковку, хотя это синяя зона — подайте возражение в ведомство общественного порядка.
+Busfahrer hat mich nicht rausgelassen, nächstes Mal weiter vorn klingeln. = Bus driver didn't let me off, next time ring the bell further forward. = Водитель автобуса не выпустил меня, в следующий раз звоните ближе к передней двери.
+Zündkerzen müssen gewechselt werden, bitte NGK Iridium für Benzinmotor. = Spark plugs need to be replaced, please use NGK Iridium for gasoline engine. = Свечи зажигания нужно заменить, пожалуйста, используйте NGK Iridium для бензинового двигателя.
+Scheinwerfer polieren und einstellen vor TÜV — Verglasung ist matt geworden. = Polish and adjust headlights before TÜV — the lens has become cloudy. = Отполируйте и отрегулируйте фары перед техосмотром — стекло стало матовым.
+Bremsbeläge und -scheiben hinten: Neue ATE-Keramik, bitte mit Kolben zurückdrehen. = Rear brake pads and discs: new ATE ceramic, please retract the pistons. = Задние тормозные колодки и диски: новые керамические ATE, пожалуйста, вдавите поршни обратно.
+Lenkhebel und Spurstangenköpfe klappern, bitte Spiel prüfen und nachstellen. = Steering arms and tie rod ends are rattling, please check play and adjust. = Рычаги рулевого управления и наконечники рулевых тяг стучат, пожалуйста, проверьте люфт и отрегулируйте.
+Generator lädt nicht richtig, Riemenspanner und Bürsten prüfen lassen. = Alternator not charging properly, have belt tensioner and brushes checked. = Генератор заряжает неправильно, проверьте натяжитель ремня и щетки.
+Starter-Akku ist schwach, bitte neuer Varta 74Ah mit Garantie testen. = Starter battery is weak, please test new Varta 74Ah with warranty. = Стартерный аккумулятор слабый, пожалуйста, протестируйте новый Varta 74Ah с гарантией.
+Zündspule defekt, Fehlzündung bei Gasgeben — einzeln oder komplett tauschen? = Ignition coil defective, misfire when accelerating — replace individually or completely? = Катушка зажигания неисправна, пропуски зажигания при нажатии на газ — менять по отдельности или полностью?
+Auspuffanlage riecht nach Abgasen, Loch in der Mittelschalldämpfer schweißen. = Exhaust system smells of fumes, weld hole in the center muffler. = Выхлопная система пахнет выхлопными газами, заварите отверстие в среднем глушителе.
+Scheibenwischerstreifen schlecht, neue Bosch Aerotwin plus Spritzflüssigkeit. = Wiper blades worn, new Bosch Aerotwin plus washer fluid. = Щетки стеклоочистителя изношены, новые Bosch Aerotwin плюс жидкость для омывателя.
+Scheibenwischerflüssigkeit nachfüllen, bitte Frostschutz bis -20 Grad. = Refill washer fluid, please with antifreeze down to -20 degrees Celsius. = Долейте жидкость для омывателя, пожалуйста, с антифризом до -20 градусов.
+Bremsflüssigkeit DOT4 wechseln, Kolben der Hauptbremszylinder prüfen. = Change DOT4 brake fluid, check master brake cylinder pistons. = Замените тормозную жидкость DOT4, проверьте поршни главного тормозного цилиндра.
+Servolenkung quietscht, Lenkgetriebeöl nachfüllen oder komplett spülen. = Power steering squeaks, refill steering gear oil or flush completely. = Гидроусилитель руля скрипит, долейте масло в рулевой механизм или полностью промойте.
+TÜV-Vorbereitung komplett: Bremsen, Auspuff, Lenkung — bitte Kostenvoranschlag. = Complete TÜV preparation: brakes, exhaust, steering — please provide cost estimate. = Полная подготовка к техосмотру: тормоза, выхлоп, рулевое управление — пожалуйста, предоставьте смету.
+Zündkerzenwechsel + Ölfilter: 180 Euro, TÜV-Plakette bis 2028 gültig. = Spark plug change + oil filter: 180 euros, TÜV sticker valid until 2028. = Замена свечей зажигания + масляного фильтра: 180 евро, наклейка техосмотра действительна до 2028 года.
+Bremsenscheiben + Beläge vorne/hinten: 420 Euro Teile + Arbeit. = Brake discs + pads front/rear: 420 euros parts + labor. = Тормозные диски + колодки спереди/сзади: 420 евро запчасти + работа.
+Scheinwerfer polieren mit Klarlack: 80 Euro pro Seite, TÜV-tauglich. = Polish headlights with clear coat: 80 euros per side, TÜV-compliant. = Полировка фар с лаком: 80 евро за сторону, соответствует требованиям техосмотра.
+Akku-Test und Austausch: 140 Euro, Garantie 3 Jahre. = Battery test and replacement: 140 euros, 3-year warranty. = Тест и замена аккумулятора: 140 евро, гарантия 3 года.
+Lenkhebel komplett neu: 320 Euro pro Seite inklusive Montage. = Steering arms completely new: 320 euros per side including installation. = Рычаги рулевого управления полностью новые: 320 евро за сторону, включая установку.
+Die Werkstatt hat zu wenig Bremsflüssigkeit nachgefüllt, jetzt quietscht wieder. = The workshop refilled too little brake fluid, now it's squeaking again. = В сервисе долили слишком мало тормозной жидкости, теперь снова скрипит.
+Generator repariert, aber Rechnung 850 Euro — zu teuer für Gebrauchtwagen! = Alternator repaired, but invoice 850 euros — too expensive for a used car! = Генератор отремонтирован, но счет 850 евро — слишком дорого для подержанного авто!
+Nach TÜV drei Mängel gemeldet, bitte vorher Besichtigung machen lassen. = After TÜV, three defects reported, please have inspection done beforehand. = После техосмотра сообщили о трех неисправностях, пожалуйста, проведите осмотр заранее.
+Supermarkt (Kasse, Rabatt, Lebensmittel) = Supermarket (checkout, discount, groceries) = Супермаркет (касса, скидка, продукты)
+Ein Kilo Äpfel, bitte, und drei Bananen aus der Bio-Ecke. = One kilo of apples, please, and three bananas from the organic section. = Один килограмм яблок, пожалуйста, и три банана из органического отдела.
+Milch 3,5% fettarm, Joghurt Natur und Käse Gouda in Scheiben. = Milk 3.5% low-fat, plain yogurt, and Gouda cheese in slices. = Молоко 3,5% низкой жирности, натуральный йогурт и сыр Гауда ломтиками.
+Fleisch: 300 Gramm Hack mager für Bolognese und Pute Filet. = Meat: 300 grams lean ground meat for Bolognese and turkey fillet. = Мясо: 300 грамм постного фарша для болоньезе и филе индейки.
+Gemüse: Karotten, Zwiebeln, Paprika rot/gelb und Salat-Box. = Vegetables: carrots, onions, red/yellow bell peppers, and salad box. = Овощи: морковь, лук, красный/желтый болгарский перец и коробка салата.
+Bei der Kasse: Haben Sie eine Payback-Karte für Rabatt? = At the checkout: Do you have a Payback card for discounts? = На кассе: У вас есть карта Payback для скидки?
+Der Kaffee ist heute 20% reduziert, zwei Packungen bitte. = The coffee is reduced by 20% today, two packs please. = Кофе сегодня со скидкой 20%, две упаковки, пожалуйста.
+Pfandflaschen einwerfen: Drei Euro zurück auf die Karte. = Return deposit bottles: three euros back on the card. = Сдать бутылки под залог: три евро вернутся на карту.
+Kassenbon behalten für Rabattaktionen nächste Woche. = Keep the receipt for discount promotions next week. = Сохраните чек для акций со скидками на следующей неделе.
+Kleidung kaufen / Größen = Buying clothes / Sizes = Покупка одежды / Размеры
+Jacke Größe M, bitte probieren — Schulter zu eng, eine Nummer größer. = Jacket size M, please try on — shoulder too tight, one size larger. = Куртка размера M, пожалуйста, примерьте — плечо слишком узкое, на размер больше.
+Jeans 32/34, Bundweite 86 cm, Beinlänge 89 cm, Slim Fit. = Jeans 32/34, waist 86 cm, leg length 89 cm, slim fit. = Джинсы 32/34, обхват талии 86 см, длина штанины 89 см, узкий крой.
+Schuhe EU 42, bitte mit Einlegesohlen für besseren Halt. = Shoes EU 42, please with insoles for better support. = Обувь размер EU 42, пожалуйста, со стельками для лучшей поддержки.
+Kinder-T-Shirt Größe 128, Baumwolle, kurzarm für Sommer. = Kids' T-shirt size 128, cotton, short sleeve for summer. = Детская футболка размер 128, хлопок, с коротким рукавом для лета.
+Pullover XL, Wolle-Mix, bitte in Grau oder Navyblau. = Sweater XL, wool blend, please in gray or navy blue. = Свитер XL, смесь шерсти, пожалуйста, серый или темно-синий.
+Fotogeschäft (Passfotos, Druck) = Photo shop (passport photos, printing) = Фотомагазин (фото на документы, печать)
+Vier Passfotos 3,5x4,5 cm für Bewerbung, glänzend auf Fotopapier. = Four passport photos 3.5x4.5 cm for application, glossy on photo paper. = Четыре фото на документы 3,5x4,5 см для заявки, глянцевые на фотобумаге.
+Biometrisches Passfoto mit QR-Code, 17 Euro für sechs Stück. = Biometric passport photo with QR code, 17 euros for six pieces. = Биометрическое фото на документы с QR-кодом, 17 евро за шесть штук.
+10x15 cm Druck, Hochglanz, Datei per USB-Stick. = 10x15 cm print, high gloss, file via USB stick. = Печать 10x15 см, глянцевая, файл с флешки.
+Leinwanddruck 40x60 cm aus Urlaubsfoto, inklusive Rahmen. = Canvas print 40x60 cm from vacation photo, including frame. = Печать на холсте 40x60 см из отпускного фото, включая рамку.
+Preis für US-Visafotos: 20 Euro für vier Stück. = Price for US visa photos: 20 euros for four pieces. = Цена за фото на визу в США: 20 евро за четыре штуки.
+Fotobuch 20x20 cm, 30 Seiten, bis morgen fertig. = Photo book 20x20 cm, 30 pages, ready by tomorrow. = Фотокнига 20x20 см, 30 страниц, готово к завтрашнему дню.
+Passbilder schwarz-weiß, 4x6 cm Set für 17 Euro. = Passport photos black and white, 4x6 cm set for 17 euros. = Фото на документы черно-белые, набор 4x6 см за 17 евро.
+Markt / Bauhaus (Werkzeug) = Market / Bauhaus (tools) = Рынок / Bauhaus (инструменты)
+Auf dem Markt: Zwei Kilo Erdbeeren, frisch geerntet, bitte wiegen. = At the market: two kilos of strawberries, freshly picked, please weigh. = На рынке: два килограмма клубники, свежесобранной, пожалуйста, взвесьте.
+Bauhaus: Bohrer-Set 4-10 mm, Akku-Bohrer Bosch und Schrauben 5x40. = Bauhaus: drill bit set 4-10 mm, Bosch cordless drill, and screws 5x40. = Bauhaus: набор сверл 4-10 мм, аккумуляторная дрель Bosch и шурупы 5x40.
+Farbe Streichen: 2,5 Liter Deckweiß matt für 25 Quadratmeter. = Paint for painting: 2.5 liters matte covering white for 25 square meters. = Краска для покраски: 2,5 литра матовой укрывистой белой на 25 квадратных метров.
+Hammer, Schraubendreher-Set, Maßband und Wasserwaage bitte. = Hammer, screwdriver set, measuring tape, and level please. = Молоток, набор отверток, рулетка и уровень, пожалуйста.
+Werkzeugverleih: Bohrmaschine für Wochenende, Kaution 50 Euro. = Tool rental: drill for the weekend, deposit 50 euros. = Прокат инструментов: дрель на выходные, залог 50 евро.
+EC-Karte oder Bar? Trennabrechnung für zwei Personen bitte. = Debit card or cash? Separate billing for two people please. = Банковская карта или наличными? Раздельный счет на двоих, пожалуйста.
+Rabattgutschein scannen: 10% auf alle Haushaltswaren. = Scan discount coupon: 10% off all household items. = Отсканируйте купон на скидку: 10% на все товары для дома.
+Das Brot ist beschädigt, bitte umtauschen oder erstatten. = The bread is damaged, please exchange or refund. = Хлеб поврежден, пожалуйста, обменяйте или верните деньги.
+Kundenkarte für Punkte sammeln, nächster Einkauf günstiger. = Customer card for collecting points, next purchase cheaper. = Карта клиента для накопления баллов, следующая покупка дешевле.
+Kino / Theater / Museum = Cinema / Theater / Museum = Кинотеатр / Театр / Музей
+Im Cinestar Ingolstadt: Tickets für „Super Mario Galaxy" um 17 Uhr, Reihe 5 Mitte. = At Cinestar Ingolstadt: tickets for "Super Mario Galaxy" at 5 p.m., row 5 center. = В кинотеатре Cinestar Ингольштадт: билеты на «Супер Марио Галактика» на 17:00, ряд 5, середина.
+Theaterkarte für Union-Kino: „Gelbe Briefe" um 16:40, Seniorenrabatt 5 Euro. = Theater ticket for Union-Kino: "Yellow Letters" at 4:40 p.m., senior discount 5 euros. = Билет в театр Union-Kino: «Желтые письма» в 16:40, скидка для пенсионеров 5 евро.
+Museum Ingolstadt: Audi-Museum, Familienkarte 25 Euro, geführte Tour Sonntag 14 Uhr. = Museum Ingolstadt: Audi Museum, family ticket 25 euros, guided tour Sunday 2 p.m. = Музей Ингольштадта: музей Audi, семейный билет 25 евро, экскурсия с гидом в воскресенье в 14:00.
+Im Kino Popcorn groß mit Butter und zwei Colas light bitte. = At the cinema: large popcorn with butter and two diet Cokes please. = В кинотеатре: большой попкорн с маслом и две колы лайт, пожалуйста.
+Theaterprogramm: „Das geheime Stockwerk" um 15 Uhr, Pause mit Getränk. = Theater program: "The Secret Floor" at 3 p.m., intermission with drink. = Театральная программа: «Тайный этаж» в 15:00, перерыв с напитком.
+Sport (Fitnessstudio, Verein) = Sports (gym, club) = Спорт (фитнес-клуб, спортивное общество)
+Fitnessstudio McFit Ingolstadt: Monatsabo 24,99 Euro, Zutritt 24/7 mit Chipkarte. = McFit Ingolstadt gym: monthly subscription 24.99 euros, 24/7 access with chip card. = Фитнес-клуб McFit Ингольштадт: месячная подписка 24,99 евро, доступ 24/7 по чип-карте.
+Fußballverein in Gaimersheim: Jugendtraining Dienstag 18 Uhr, Ausrüstung mitbringen. = Soccer club in Gaimersheim: youth training Tuesday 6 p.m., bring equipment. = Футбольный клуб в Гаймерсхайме: тренировка молодежи во вторник в 18:00, приносите снаряжение.
+Fitnessraum im Verein: Geräte frei nutzen, Duschen nach dem Training. = Gym in the club: use equipment freely, showers after training. = Тренажерный зал в клубе: свободное пользование тренажерами, душ после тренировки.
+CrossFit-Kurs VHS Ingolstadt: Zehn Euro pro Stunde, Anfänger willkommen. = CrossFit course at VHS Ingolstadt: ten euros per hour, beginners welcome. = Курс кроссфита в народном университете Ингольштадта: десять евро в час, новички приветствуются.
+Konzert / Festival = Concert / Festival = Концерт / Фестиваль
+Konzert im Gaimerschlauch: Tickets online, Stehplatz 35 Euro ab 20 Uhr. = Concert at Gaimerschlauch: tickets online, standing room 35 euros from 8 p.m. = Концерт в Gaimerschlauch: билеты онлайн, стоячее место 35 евро с 20:00.
+Oktoberfest Ingolstadt: Zelt „Audi-Wiesn", Maß Bier 13 Euro, Lederhose empfohlen. = Oktoberfest Ingolstadt: tent "Audi-Wiesn", liter of beer 13 euros, leather pants recommended. = Октоберфест Ингольштадт: шатер «Audi-Wiesn», литр пива 13 евро, рекомендуется ледерхозе.
+Rockfestival am Donaupark: Familienbändel 25 Euro, Kinder bis 12 gratis. = Rock festival at Donaupark: family wristband 25 euros, children up to 12 free. = Рок-фестиваль в Донаупарке: семейный браслет 25 евро, дети до 12 лет бесплатно.
+Open Air Konzert: Bringt Picknick mit, Rasenplatzreservierung nötig. = Open air concert: bring a picnic, lawn seat reservation required. = Концерт под открытым небом: приносите пикник, необходима резервация места на траве.
+Bibliothek / VHS = Library / Adult education center = Библиотека / Народный университет
+Stadtbibliothek Ingolstadt: Ausleihe mit Karte, drei Wochen Frist, drei Euro pro Buch. = City library Ingolstadt: borrowing with card, three-week period, three euros per book. = Городская библиотека Ингольштадта: выдача по карте, срок три недели, три евро за книгу.
+VHS Ingolstadt Frühjahrskurs: Deutsch B2 Beruf, acht Termine à 19 Uhr, 120 Euro. = VHS Ingolstadt spring course: German B2 Professional, eight sessions at 7 p.m., 120 euros. = Народный университет Ингольштадта, весенний курс: немецкий язык B2 для работы, восемь занятий в 19:00, 120 евро.
+Bibliothek Medien: Hörbücher für Kinder, Filme DVD, Computer frei nutzen. = Library media: audiobooks for children, DVD movies, free computer use. = Медиатека библиотеки: аудиокниги для детей, фильмы на DVD, бесплатное пользование компьютером.
+VHS Anmeldung: Online über vhs-in-ei.de oder telefonisch unter 0841 3051854. = VHS registration: online via vhs-in-ei.de or by phone at 0841 3051854. = Регистрация в народном университете: онлайн через vhs-in-ei.de или по телефону 0841 3051854.
+Kino-Saal voll, bitte in Reihe 8 hinten sitzen, nicht quatschen. = Cinema hall full, please sit in row 8 at the back, no chatting. = Зал кинотеатра полон, пожалуйста, садитесь в ряду 8 сзади, не разговаривайте.
+Fitnessstudio überfüllt, Geräte abwischen nach Nutzung. = Gym overcrowded, wipe down equipment after use. = Фитнес-клуб переполнен, протирайте тренажеры после использования.
+Festival-Ticket gefälscht, Einlass verweigert — Original prüfen lassen. = Festival ticket forged, entry denied — have original checked. = Билет на фестиваль поддельный, во входе отказано — проверьте оригинал.
+Bibliothek Buch überfällig, Mahngebühr 2 Euro zahlen. = Library book overdue, pay 2 euro late fee. = Книга из библиотеки просрочена, оплатите штраф 2 евро.
+Bank / Konto eröffnen = Bank / Opening an account = Банк / Открытие счета
+Ich möchte ein Girokonto eröffnen als Ausländer mit §24 Aufenthalt, brauche Video-Ident. = I would like to open a checking account as a foreigner with §24 residence permit, need Video-Ident. = Я хочу открыть расчетный счет как иностранец с видом на жительство по §24, нужен Video-Ident.
+Meldebescheinigung und Pass mitnehmen, EC-Karte kommt per Post. = Bring registration certificate and passport, EC card arrives by mail. = Возьмите с собой справку о регистрации и паспорт, банковская карта придет по почте.
+Dauerauftrag einrichten: Miete 850 Euro monatlich an Vermieter. = Set up standing order: rent 850 euros monthly to landlord. = Настройте постоянный платеж: аренда 850 евро ежемесячно арендодателю.
+Abbuchung für Strom: 120 Euro, bitte SEPA-Mandat unterschreiben. = Direct debit for electricity: 120 euros, please sign SEPA mandate. = Прямое списание за электричество: 120 евро, пожалуйста, подпишите мандат SEPA.
+Überweisung / Abbuchung = Transfer / Direct debit = Перевод / Прямое списание
+Überweisung an MediaMarkt: IBAN DE89 3704 0044 0532 0130 00, Verwendungszweck Fotodrucker. = Transfer to MediaMarkt: IBAN DE89 3704 0044 0532 0130 00, purpose photo printer. = Перевод в MediaMarkt: IBAN DE89 3704 0044 0532 0130 00, назначение платежа — фотопринтер.
+Abbuchungsfehler behoben, bitte nächstes Mal prüfen vor Bestätigung. = Direct debit error fixed, please check next time before confirmation. = Ошибка прямого списания исправлена, пожалуйста, в следующий раз проверьте перед подтверждением.
+Steuererklärung / Finanzamt = Tax return / Tax office = Налоговая декларация / Налоговая инспекция
+Steuererklärung ElsterFormular: Minijob-Einkommen 520 Euro, Freibetrag nutzen. = Tax return ElsterFormular: mini-job income 520 euros, use tax allowance. = Налоговая декларация ElsterFormular: доход с миниджоба 520 евро, используйте налоговый вычет.
+Finanzamt Ingolstadt: Termin online über meinELSTER, Lohnsteuerbescheid mitbringen. = Tax office Ingolstadt: appointment online via meinELSTER, bring income tax notice. = Налоговая инспекция Ингольштадта: запись онлайн через meinELSTER, возьмите с собой уведомление о подоходном налоге.
+Steuernachzahlung 200 Euro, Ratenzahlung über Konto vereinbaren. = Additional tax payment 200 euros, arrange installment payment via account. = Доплата налога 200 евро, договоритесь о рассрочке через счет.
+Arbeitsamt / ALG II / Jobcenter = Employment agency / ALG II / Jobcenter = Агентство по трудоустройству / ALG II / Центр занятости
+Jobcenter Ingolstadt: Online-Termin unter jc-vermittlung@ingolstadt.de oder 0841 305-45112. = Jobcenter Ingolstadt: online appointment at jc-vermittlung@ingolstadt.de or 0841 305-45112. = Центр занятости Ингольштадта: онлайн-запись через jc-vermittlung@ingolstadt.de или 0841 305-45112.
+Antrag auf ALG II / Bürgergeld: Formular ausfüllen, Mietebelege und Kontoauszug anhängen. = Application for ALG II / Bürgergeld: fill out form, attach rent receipts and bank statement. = Заявление на ALG II / Bürgergeld: заполните форму, приложите квитанции об аренде и выписку со счета.
+Leistungsbewilligung verlängern: Nachweise über Fotogeschäft-Job und Sprachkurs vorlegen. = Extend benefit approval: submit proof of photo shop job and language course. = Продлить утверждение пособий: предоставьте подтверждение работы в фотомагазине и языкового курса.
+Kursgenehmigung beantragen: Telc B2 Beruf, Kostenübernahme durch Jobcenter. = Apply for course approval: Telc B2 Professional, cost coverage by Jobcenter. = Подать заявку на одобрение курса: Telc B2 для работы, покрытие расходов через Центр занятости.
+Upload Unterlagen Bildung und Teilhabe: Rechnungen für Kita und Schulmaterial. = Upload documents for Education and Participation: invoices for daycare and school supplies. = Загрузите документы по программе «Образование и участие»: счета за детский сад и школьные принадлежности.
+Widerspruch gegen Bescheid einlegen: Formular herunterladen, innerhalb eines Monats. = File objection against notice: download form, within one month. = Подайте возражение против уведомления: скачайте форму, в течение одного месяца.
+Arbeitsvermittlung: Minijob im Fotogeschäft melden, Sozialversicherung prüfen. = Employment mediation: report mini-job at photo shop, check social insurance. = Посредничество в трудоустройстве: сообщите о миниджобе в фотомагазине, проверьте социальное страхование.
+ALG II gekürzt wegen Nebenverdienst — Nachweis Minijob 520 Euro einreichen. = ALG II reduced due to additional income — submit proof of mini-job 520 euros. = ALG II сокращен из-за дополнительного дохода — предоставьте подтверждение миниджоба на 520 евро.
+Termin Arbeitsvermittlung Alleinerziehende: jc-vermittlung-alleinerziehende@ingolstadt.de. = Appointment for single parents employment mediation: jc-vermittlung-alleinerziehende@ingolstadt.de. = Запись на посредничество в трудоустройстве для одиноких родителей: jc-vermittlung-alleinerziehende@ingolstadt.de.
+Nebenjob / Minijob = Side job / Mini-job = Подработка / Миниджоб
+Minijob anmelden bei Minijob-Zentrale: Personalfragebogen ausfüllen, erste Abrechnung. = Register mini-job at Mini-job Center: fill out personnel questionnaire, first payroll. = Зарегистрируйте миниджоб в центре миниджобов: заполните анкету сотрудника, первая расчетная ведомость.
+Minijob 520 Euro Fotogeschäft: Pauschalsteuer 2%, Rentenversicherung optional. = Mini-job 520 euros photo shop: flat-rate tax 2%, pension insurance optional. = Миниджоб 520 евро в фотомагазине: фиксированный налог 2%, пенсионное страхование по желанию.
+Minijob mit ALG II: Freibetrag 165 Euro, Rest wird angerechnet. = Mini-job with ALG II: allowance 165 euros, remainder is offset. = Миниджоб с ALG II: льготная сумма 165 евро, остаток учитывается.
+Sozialversicherung melden: Spätestens sechs Wochen nach Jobstart. = Report to social insurance: at latest six weeks after job start. = Сообщите в социальную страховку: не позднее шести недель после начала работы.
+Jobcenter Öffnungszeiten: Montag bis 16 Uhr, Donnerstag bis 17:30, Mi/Fr nur Termin. = Jobcenter opening hours: Monday until 4 p.m., Thursday until 5:30 p.m., Wed/Fri by appointment only. = Часы работы Центра занятости: понедельник до 16:00, четверг до 17:30, среда/пятница только по записи.
+Antrag abgelehnt, bitte Begründung und Widerspruchsrecht erklären. = Application rejected, please explain reason and right to object. = Заявление отклонено, пожалуйста, объясните причину и право на возражение.
+Konto gesperrt durch Abbuchung Jobcenter — Freigabe beantragen. = Account blocked due to Jobcenter direct debit — apply for release. = Счет заблокирован из-за списания Центром занятости — подайте заявку на разблокировку.
+Am Geldautomaten: Karte einführen, PIN verdeckt eintippen, 100 Euro abheben. = At the ATM: insert card, enter PIN discreetly, withdraw 100 euros. = В банкомате: вставьте карту, введите ПИН-код, закрывая его от посторонних глаз, снимите 100 евро.
+Betrag wählen: 50 Euro in Fünfziger und Zwanziger, Gebührenhinweis beachten. = Select amount: 50 euros in fifties and twenties, pay attention to fee notice. = Выберите сумму: 50 евро купюрами по 50 и 20 евро, обратите внимание на уведомление о комиссиях.
+Cash Group Automat (Commerzbank, Deutsche Bank): Kostenlos abheben bis 2000 Euro/Tag. = Cash Group ATM (Commerzbank, Deutsche Bank): free withdrawals up to 2000 euros/day. = Банкомат Cash Group (Commerzbank, Deutsche Bank): бесплатное снятие до 2000 евро в день.
+Einzahlen: Scheine und Münzen bis 9999,99 Euro, sofort gutgeschrieben. = Deposit: bills and coins up to 9999.99 euros, credited immediately. = Внесение наличных: купюры и монеты до 9999,99 евро, зачисляются немедленно.
+Karte entnehmen, nicht vergessen, und Quittung für Nachweis. = Remove card, don't forget it, and take receipt for proof. = Извлеките карту, не забудьте её, и возьмите чек для подтверждения.
+Limit erhöhen: In der App Tageslimit von 2000 auf 5000 Euro setzen. = Increase limit: in the app, set daily limit from 2000 to 5000 euros. = Увеличьте лимит: в приложении установите дневной лимит с 2000 до 5000 евро.
+Filiale mit Kasse: Bargeld abheben ohne Karte, Personalausweis vorlegen. = Branch with cashier: withdraw cash without card, present ID card. = Отделение с кассой: снимайте наличные без карты, предъявите удостоверение личности.
+Einzahlung Schalter: Münzen zählen lassen, Safebag für große Beträge. = Deposit counter: have coins counted, safe bag for large amounts. = Окно приема вкладов: дайте пересчитать монеты, используйте безопасный пакет для крупных сумм.
+Partnerbank (Cash Group): Kostenlos abheben, aber Fremdgebühren prüfen. = Partner bank (Cash Group): free withdrawals, but check third-party fees. = Банк-партнер (Cash Group): бесплатное снятие, но проверьте сторонние комиссии.
+Große Abhebung vorbestellen: 5000 Euro, 10 Minuten später am Automaten bereit. = Pre-order large withdrawal: 5000 euros, ready at ATM 10 minutes later. = Закажите крупное снятие заранее: 5000 евро, будет готово в банкомате через 10 минут.
+Öffnungszeiten / Arbeitszeiten = Opening hours / Working hours = Часы работы / Рабочее время
+Geschäfte = Shops / Stores = Магазины
+Unser Fotogeschäft hat Mo–Sa 9–19 Uhr geöffnet, Sonntag Ruhetag. = Our photo shop is open Mon-Sat 9 a.m.-7 p.m., Sunday closed. = Наш фотомагазин открыт с понедельника по субботу с 9:00 до 19:00, воскресенье — выходной.
+Mittagspause 13–14 Uhr, Kunden bitte danach kommen. = Lunch break 1-2 p.m., customers please come after. = Обеденный перерыв с 13:00 до 14:00, пожалуйста, приходите после.
+Vor Feiertag schließen wir um 16 Uhr, Passfotos bis 15:30. = Before a public holiday we close at 4 p.m., passport photos until 3:30 p.m. = Перед праздником мы закрываемся в 16:00, фото на документы до 15:30.
+Ladenschlussgesetz Bayern: Sa bis 20 Uhr, Bäckerei bis 21 Uhr Ausnahme. = Bavarian Shop Closing Law: Saturday until 8 p.m., bakery until 9 p.m. exception. = Закон о закрытии магазинов в Баварии: суббота до 20:00, пекарни до 21:00 — исключение.
+Arbeitszeiten = Working hours = Рабочее время
+Ich arbeite im Fotogeschäft Mo–Fr 8–16:30 Uhr, 40 Stunden pro Woche. = I work at the photo shop Mon-Fri 8 a.m.-4:30 p.m., 40 hours per week. = Я работаю в фотомагазине с понедельника по пятницу с 8:00 до 16:30, 40 часов в неделю.
+Pause 30 Minuten Mittag, Schichtplan wird wöchentlich verteilt. = 30-minute lunch break, shift schedule distributed weekly. = Обеденный перерыв 30 минут, график смен распределяется еженедельно.
+Überstunden genehmigen lassen, Zuschlag 25% nach 8 Stunden. = Get overtime approved, 25% supplement after 8 hours. = Согласовывайте сверхурочные, доплата 25% после 8 часов.
+Wochenendarbeit nur mit Zustimmung, Sonntagszuschlag 50%. = Weekend work only with consent, Sunday supplement 50%. = Работа в выходные только с согласия, доплата за воскресенье 50%.
+Behörden / Dienstleistungen = Authorities / Services = Ведомства / Услуги
+Jobcenter Ingolstadt: Mo 8–16, Do bis 17:30, nur mit Termin. = Jobcenter Ingolstadt: Mon 8 a.m.-4 p.m., Thu until 5:30 p.m., by appointment only. = Центр занятости Ингольштадта: пн 8:00-16:00, чт до 17:30, только по записи.
+Sparkasse Filiale: Mo–Fr 9–13 und 14–16 Uhr, Sa geschlossen. = Sparkasse branch: Mon-Fri 9 a.m.-1 p.m. and 2-4 p.m., Sat closed. = Отделение Sparkasse: пн-пт 9:00-13:00 и 14:00-16:00, сб закрыто.
+VHS Ingolstadt: Kurse abends 18:30–20 Uhr, online buchen. = VHS Ingolstadt: courses evenings 6:30-8 p.m., book online. = Народный университет Ингольштадта: курсы по вечерам 18:30-20:00, запись онлайн.
+Feiertage / Brückentage = Public holidays / Bridge days = Праздничные дни / Выходные между праздниками
+Fronleichnam Feiertag, Fotogeschäft geschlossen, nächster Tag Brückentag. = Corpus Christi public holiday, photo shop closed, next day bridge day. = Праздник Тела Христова, фотомагазин закрыт, следующий день — выходной между праздниками.
+Dezember verkürzter Tag bis 14 Uhr, 31. Dezember bis 13 Uhr. = December shortened day until 2 p.m., December 31 until 1 p.m. = В декабре сокращенный день до 14:00, 31 декабря до 13:00.
+Karnevalsdienstag ab 12 Uhr Stadtverwaltung geschlossen. = Carnival Tuesday from 12 p.m. city administration closed. = Во вторник карнавала с 12:00 городская администрация закрыта.
+Weihnachten 25./26.12. und Neujahr 1.1. alles zu, keine Ausnahmen. = Christmas Dec 25/26 and New Year Jan 1 everything closed, no exceptions. = Рождество 25/26 декабря и Новый год 1 января всё закрыто, без исключений.
+Ist das Geschäft heute offen, oder wegen Feiertag geschlossen? = Is the shop open today, or closed due to public holiday? = Магазин сегодня открыт или закрыт из-за праздника?
+Öffnungszeiten geändert? Website sagt 19 Uhr, Schild 18 Uhr. = Opening hours changed? Website says 7 p.m., sign says 6 p.m. = Часы работы изменены? На сайте указано 19:00, на вывеске 18:00.
+Pause bis wann? Ich warte seit 13:15 an der Tür. = Break until when? I've been waiting at the door since 1:15 p.m. = Перерыв до какого времени? Я жду у двери с 13:15.
+Warum Sonntag immer zu? Notfallfotos für Pass brauche ich! = Why always closed on Sunday? I need emergency passport photos! = Почему всегда закрыто в воскресенье? Мне срочно нужны фото на паспорт!
+Arbeitszeitverkürzung beantragen wegen Kinderbetreuung. = Apply for reduced working hours due to childcare. = Подайте заявку на сокращение рабочего времени из-за ухода за детьми.
+Beschwerde Restaurant = Restaurant complaint = Жалоба в ресторане
+Das Essen war kalt, der Kellner unhöflich — Rechnung bitte korrigieren oder erstatten. = The food was cold, the waiter was rude — please correct or refund the bill. = Еда была холодной, официант был груб — пожалуйста, исправьте счет или верните деньги.
+Die Suppe war fade, Steak durchgebraten statt medium — bitte umtauschen. = The soup was bland, steak overcooked instead of medium — please exchange. = Суп был пресным, стейк пережарен вместо medium — пожалуйста, замените.
+Im Restaurant zu laut, Nachbartisch gestritten — ungemütliche Atmosphäre. = In the restaurant too loud, neighboring table arguing — uncomfortable atmosphere. = В ресторане слишком громко, соседи за столиком ссорятся — неприятная атмосфера.
+Reklamation Produkt (Fotogeschäft/MediaMarkt) = Product complaint (photo shop/MediaMarkt) = Рекламация товара (фотомагазин/MediaMarkt)
+Der Drucker ist defekt, Kaufbeleg dabei — Umtausch oder Geld zurück innerhalb 14 Tagen. = The printer is defective, receipt included — exchange or refund within 14 days. = Принтер неисправен, чек прилагается — обмен или возврат денег в течение 14 дней.
+Passfotos unscharf gedruckt, bitte neu machen oder 17 Euro erstatten. = Passport photos printed blurry, please redo or refund 17 euros. = Фото на документы напечатаны нечетко, пожалуйста, переделайте или верните 17 евро.
+MediaMarkt-Produkt gebraucht statt neu geliefert — Reklamation einreichen. = MediaMarkt product delivered used instead of new — file a complaint. = Товар MediaMarkt доставлен б/у вместо нового — подайте рекламацию.
+Lärmende Nachbarn = Noisy neighbors = Шумные соседи
+Die Nachbarn machen bis Mitternacht Musik laut — Ruhestörung nach 22 Uhr. = The neighbors play loud music until midnight — noise disturbance after 10 p.m. = Соседи громко включают музыку до полуночи — нарушение тишины после 22:00.
+Mietrecht: Abmahnen lassen durch Vermieter, bei Wiederholung Polizei. = Rental law: have landlord issue warning, call police if it repeats. = Арендное право: пусть арендодатель вынесет предупреждение, при повторении — полиция.
+Ordnungsamt anzeigen wegen wiederholter Lärmbelästigung nachts. = Report to regulatory office due to repeated nighttime noise disturbance. = Подайте жалобу в ведомство общественного порядка из-за повторяющегося ночного шума.
+Probleme Arbeit (Chef, Kollegen, Fotogeschäft) = Work problems (boss, colleagues, photo shop) = Проблемы на работе (начальник, коллеги, фотомагазин)
+Der Chef schreit mich an wegen kleiner Fehler — bitte Gespräch mit Personalabteilung. = The boss yells at me for small mistakes — please arrange a meeting with HR. = Начальник кричит на меня из-за мелких ошибок — пожалуйста, организуйте разговор с отделом кадров.
+Kollegen machen Überstunden, ich nicht — faire Schichtplanung fordern. = Colleagues work overtime, I don't — demand fair shift scheduling. = Коллеги работают сверхурочно, я нет — требуйте справедливого графика смен.
+Im Fotogeschäft Kasse falsch abgerechnet — Nachprüfung und Entschuldigung. = At the photo shop, cash register incorrectly balanced — request review and apology. = В фотомагазине касса рассчитана неверно — запросите перепроверку и извинения.
+Polizei / Anzeige (Diebstahl, Ingolstadt) = Police / Report (theft, Ingolstadt) = Полиция / Заявление (кража, Ингольштадт)
+Mein Fahrrad gestohlen vor MediaMarkt — Anzeige bei Polizei Ingolstadt erstatten. = My bicycle stolen in front of MediaMarkt — file a report with Ingolstadt police. = Мой велосипед украден перед MediaMarkt — подайте заявление в полицию Ингольштадта.
+Ladendiebstahl im Fotogeschäft: Unbekannter mit Kamera weg — Beschreibung geben. = Shoplifting at photo shop: unknown person left with camera — provide description. = Кража в магазине в фотомагазине: неизвестный ушел с камерой — дайте описание.
+Online-Anzeige Polizei Bayern: Diebstahl Koffer, Seriennummer notiert. = Online report Bavaria police: theft of suitcase, serial number noted. = Онлайн-заявление в полицию Баварии: кража чемодана, серийный номер записан.
+Bei Ruhestörung akut 110 rufen, Protokoll für Vermieter verlangen. = For acute noise disturbance call 110, request report for landlord. = При остром нарушении тишины звоните 110, запросите протокол для арендодателя.
+Bitte den Pony kürzer schneiden, nur ein paar Millimeter von der Länge abnehmen. = Please trim the bangs shorter, just take off a few millimeters of length. = Пожалуйста, подстригите челку короче, снимите всего несколько миллиметров длины.
+Ansätze nachfärben auf Dunkelblond 6.1, Tönung für natürlichen Glanz. = Touch up roots to dark blonde 6.1, toning for natural shine. = Подкрасьте корни в темно-русый 6.1, тонирование для естественного блеска.
+Haare schulterlang lassen, Spitzen gerade schneiden ohne Stufen. = Keep hair shoulder-length, cut ends straight without layers. = Оставьте волосы длиной до плеч, подстригите концы ровно, без ступенек.
+Für mich: Oben länger lassen, seitlich kürzer schneiden, Schläfen gerade mit Umrandung. = For me: leave longer on top, cut shorter on the sides, temples straight with outline. = Для меня: сверху оставить длиннее, по бокам короче подстричь, виски ровно с окантовкой.
+Seitenscheitel, Nacken kurz, aber nicht zu aggressiv rasiert. = Side part, neck short, but not too aggressively shaved. = Боковой пробор, затылок короткий, но не слишком агрессивно выбритый.
+Preis Haarwäsche + Färben + Schneiden: 85 Euro, bitte bar. = Price hair wash + coloring + cut: 85 euros, please cash. = Цена мытье головы + окрашивание + стрижка: 85 евро, пожалуйста, наличными.
+Nächster Termin in sechs Wochen, erinnern Sie mich per SMS. = Next appointment in six weeks, remind me by SMS. = Следующая запись через шесть недель, напомните мне по СМС.
+Nagelstudio = Nail studio = Ногтевой салон
+Maniküre mit Gel-Nägeln, French Look, bitte Form mandelförmig. = Manicure with gel nails, French look, please almond shape. = Маникюр с гель-лаком, французский стиль, пожалуйста, миндалевидная форма.
+Nägel entfernen und neu lackieren, Rosa mit Glitzer 25 Euro. = Remove nails and repaint, pink with glitter 25 euros. = Снимите ногти и нанесите новый лак, розовый с блестками, 25 евро.
+Waschsalon / Reinigung = Laundromat / Dry cleaning = Прачечная / Химчистка
+Waschmaschine 60 Grad für Bettwäsche, Waschmittel-Dosierball reinigen. = Washing machine 60 degrees for bed linen, clean detergent dosing ball. = Стиральная машина 60 градусов для постельного белья, очистите дозатор для стирального порошка.
+Trockner 30 Minuten, dann Bügeln im Waschsalon-Service. = Dryer 30 minutes, then ironing at laundromat service. = Сушка 30 минут, затем глажка в сервисе прачечной.
+Anzug chemisch reinigen, Fleckentfernung inklusive 18 Euro. = Dry clean suit, stain removal included 18 euros. = Химчистка костюма, удаление пятен включено, 18 евро.
+Post / Paket aufgeben = Post office / Sending packages = Почта / Отправка посылок
+Paket DHL bis 2 kg aufgeben, Maxibrief 1 Euro oder Paket 5,49 Euro. = Send DHL package up to 2 kg, Maxibrief 1 euro or package 5.49 euros. = Отправьте посылку DHL до 2 кг, большое письмо 1 евро или посылка 5,49 евро.
+Postfiliale: Brief Porto 1,20 Euro, Einschreiben mit Rückschein 4,90 Euro. = Post office branch: letter postage 1.20 euros, registered mail with return receipt 4.90 euros. = Почтовое отделение: почтовый сбор за письмо 1,20 евро, заказное письмо с уведомлением о вручении 4,90 евро.
+Packstation: QR-Code scannen, Paket einlegen, Empfänger-Postnummer eingeben. = Packstation: scan QR code, insert package, enter recipient postal code. = Пункт выдачи посылок: отсканируйте QR-код, вложите посылку, введите почтовый индекс получателя.
+Zoll für Ukraine-Paket: Warenwertdeklaration ausfüllen, keine Lebensmittel. = Customs for Ukraine package: fill out goods value declaration, no food items. = Таможня для посылки в Украину: заполните декларацию стоимости товаров, без продуктов питания.
+Telefonie / Vertrag = Telephony / Contract = Телефония / Договор
+Handyvertrag Vodafone verlängern, 12 GB Daten, Unlimited Anrufe 20 Euro/Monat. = Extend Vodafone mobile contract, 12 GB data, unlimited calls 20 euros/month. = Продлите мобильный договор Vodafone, 12 ГБ данных, безлимитные звонки 20 евро/месяц.
+Kündigung per Brief sechs Wochen vor Laufzeitende, keine automatische Verlängerung. = Cancellation by letter six weeks before contract end, no automatic extension. = Расторжение договора письмом за шесть недель до окончания срока, без автоматического продления.
+SIM-Karte aktivieren, PIN ändern und Roaming für Ukraine einschalten. = Activate SIM card, change PIN, and enable roaming for Ukraine. = Активируйте SIM-карту, измените ПИН-код и включите роуминг для Украины.
+Rechnung zu hoch wegen Roaming, bitte Korrektur und Gutschrift. = Bill too high due to roaming, please correction and credit. = Счет слишком высокий из-за роуминга, пожалуйста, исправьте и начислите кредит.
+Ausländerbehörde / Termin = Immigration office / Appointment = Ведомство по делам иностранцев / Запись на прием
+Ausländerbehörde Ingolstadt Termin online über Terminvergabe, §24 Verlängerung bis 2027. = Ingolstadt Immigration Office appointment online via appointment system, §24 extension until 2027. = Запись в ведомство по делам иностранцев Ингольштадта онлайн через систему записи, продление по §24 до 2027 года.
+Online-Termin reservieren: Name, Geburtsdatum, Anliegen „Aufenthaltserlaubnis verlängern". = Reserve online appointment: name, date of birth, reason "extend residence permit". = Забронируйте онлайн-запись: имя, дата рождения, цель «продлить вид на жительство».
+Unterlagen: Pass, Meldebescheinigung, Jobvertrag Fotogeschäft, Krankenkassenbescheinigung. = Documents: passport, registration certificate, photo shop employment contract, health insurance certificate. = Документы: паспорт, справка о регистрации, трудовой договор с фотомагазином, справка из медицинской страховки.
+§24 Schutzstatus Ukraine: Automatische Verlängerung, Nachweis kein Heimkehrgrund. = §24 protection status Ukraine: automatic extension, proof of no reason to return home. = Статус защиты по §24 для Украины: автоматическое продление, подтверждение отсутствия причин для возвращения.
+Familienzusammenführung: Ehegattennachweis, Unterkunftsnachweis 12 m² pro Person. = Family reunification: proof of marriage, proof of accommodation 12 m² per person. = Воссоединение семьи: подтверждение брака, подтверждение жилья 12 м² на человека.
+Anmeldung / Abmeldung = Registration / Deregistration = Регистрация / Снятие с регистрации
+Anmeldung Bürgeramt Ingolstadt: Meldeschein ausfüllen, Wohnungsgeberbestätigung Vermieter. = Registration at Ingolstadt citizen's office: fill out registration form, landlord's confirmation of residence. = Регистрация в ведомстве граждан Ингольштадта: заполните регистрационный бланк, подтверждение арендодателя о предоставлении жилья.
+Meldebescheinigung 5 Euro, elektronisch kostenlos über meinIngolstadt-App. = Registration certificate 5 euros, electronically free via meinIngolstadt app. = Справка о регистрации 5 евро, электронная версия бесплатно через приложение meinIngolstadt.
+Abmeldung bei Umzug: 14 Tage vor Auszug, neuer Wohnort angeben. = Deregistration when moving: 14 days before moving out, specify new address. = Снятие с регистрации при переезде: за 14 дней до выезда, укажите новый адрес проживания.
+Zweiter Wohnsitz anmelden: Ferienwohnung, Hauptwohnsitz bleibt Ingolstadt. = Register second residence: vacation apartment, main residence remains Ingolstadt. = Зарегистрируйте второе место жительства: квартира для отдыха, основное место жительства остается в Ингольштадте.
+Führerschein umtauschen = Exchange driver's license = Обмен водительского удостоверения
+Ukrainischer Führerschein umschreiben: Theorie- und Praxisprüfung, Sehtest, Erste-Hilfe-Kurs. = Convert Ukrainian driver's license: theory and practical exam, eye test, first aid course. = Переоформите украинское водительское удостоверение: теоретический и практический экзамен, проверка зрения, курс первой помощи.
+Fahrschule Ingolstadt: 30 Fahrstunden B Klasse, TÜV-Prüfung danach. = Driving school Ingolstadt: 30 driving lessons Class B, TÜV exam afterwards. = Автошкола Ингольштадта: 30 уроков вождения категории B, затем экзамен в TÜV.
+Fahrerlaubnis beantragen: Pass, Meldebescheinigung, Übersetzung Führerschein beglaubigt. = Apply for driver's license: passport, registration certificate, certified translation of driver's license. = Подайте заявку на водительское удостоверение: паспорт, справка о регистрации, заверенный перевод водительского удостоверения.
+Bis 6 Monate gültig, dann umtauschen oder Fahrverbot. = Valid for up to 6 months, then exchange or driving ban. = Действительно до 6 месяцев, затем обмен или запрет на вождение.
+Versicherungen (Kranken-/Haftpflicht) = Insurance (health/liability) = Страхование (медицинское/ответственности)
+Gesetzliche Krankenversicherung AOK: Beiträge 14,6% vom Minijob-Einkommen. = Statutory health insurance AOK: contributions 14.6% of mini-job income. = Обязательное медицинское страхование AOK: взносы 14,6% от дохода с миниджоба.
+Haftpflichtversicherung Allianz: 80 Euro/Jahr, Familie inklusive, Schaden melden online. = Liability insurance Allianz: 80 euros/year, family included, report damage online. = Страхование ответственности Allianz: 80 евро/год, семья включена, сообщайте о ущербе онлайн.
+Ausländer Incoming-Versicherung Mawista: Nachweis für Behörde bei Visa-Verlängerung. = Foreigner incoming insurance Mawista: proof for authority for visa extension. = Страховка для иностранцев Mawista: подтверждение для ведомства при продлении визы.
+Kfz-Haftpflicht: Grüne Karte für Ukraine-Reisen, Grenzversicherungsschutz. = Car liability insurance: Green Card for Ukraine trips, border insurance coverage. = Автострахование ответственности: Зеленая карта для поездок в Украину, страховая защита на границе.
+Termin Ausländerbehörde versäumt: Nachruf-Termin beantragen, Strafe 30 Euro vermeiden. = Missed immigration office appointment: apply for follow-up appointment, avoid 30 euro fine. = Пропустили запись в ведомство по делам иностранцев: подайте заявку на повторную запись, избежите штрафа 30 евро.
+Führerschein abgelaufen: Bußgeld 10–30 Tage, sofort Fahrschule kontaktieren. = Driver's license expired: fine 10-30 days, contact driving school immediately. = Срок действия водительского удостоверения истек: штраф 10-30 дней, немедленно свяжитесь с автошколой.
+Krankenversicherungslücke: Nachzahlung AOK, Ratenzahlung vereinbaren. = Health insurance gap: additional payment to AOK, arrange installment payment. = Перерыв в медицинском страховании: доплата в AOK, договоритесь о рассрочке.
+Politik (Wahl, AfD, Ampel) = Politics (election, AfD, traffic light coalition) = Политика (выборы, AfD, коалиция «светофор»)
+CDU gewinnt Landtagswahl Rheinland-Pfalz mit 39%, SPD historisch schwach bei 32%. = CDU wins Rhineland-Palatinate state election with 39%, SPD historically weak at 32%. = ХДС выигрывает выборы в ландтаг Рейнланд-Пфальца с 39%, СДПГ исторически слаба с 32%.
+AfD stärkste Opposition mit 19,5%, Schwarz-Rot Koalition wahrscheinlich. = AfD strongest opposition with 19.5%, black-red coalition likely. = АдГ — сильнейшая оппозиция с 19,5%, вероятно формирование черно-красной коалиции.
+Ampel-Koalition zerbricht: FDP und Grüne verlieren massiv. = Traffic light coalition collapses: FDP and Greens lose massively. = Коалиция «светофор» распадается: СвДП и «Зеленые» существенно теряют.
+Kanzler Merz (CDU) berät mit SPD über Haushalt und Iran-Krieg. = Chancellor Merz (CDU) consults with SPD on budget and Iran war. = Канцлер Мерц (ХДС) консультируется с СДПГ по бюджету и войне в Иране.
+Europawahl 2026: AfD und Rechtsruck bedrohen EU-Klimaziele. = European election 2026: AfD and shift to the right threaten EU climate goals. = Выборы в Европарламент 2026: АдГ и правый поворот угрожают климатическим целям ЕС.
+Wirtschaft (Inflation, Energie) = Economy (inflation, energy) = Экономика (инфляция, энергия)
+Inflationsrate Februar 2026 bei 1,9%, Energiepreise sinken um 1,9%. = Inflation rate February 2026 at 1.9%, energy prices drop by 1.9%. = Уровень инфляции в феврале 2026 года составляет 1,9%, цены на энергию снижаются на 1,9%.
+Strompreis aktuell 31,68 Cent/kWh, Netzentgelte gesunken um 7%. = Electricity price currently 31.68 cents/kWh, grid fees decreased by 7%. = Цена на электроэнергию в настоящее время 31,68 цента/кВт·ч, сетевые сборы снизились на 7%.
+Spritpreise steigen durch Iran-Krieg, Super E10 bei 1,89 Euro/Liter. = Fuel prices rise due to Iran war, Super E10 at 1.89 euros/liter. = Цены на топливо растут из-за войны в Иране, Супер Е10 по 1,89 евро/литр.
+Bundeshaushalt 2026: Schuldenbremse ausgesetzt wegen Energiekrise. = Federal budget 2026: debt brake suspended due to energy crisis. = Федеральный бюджет 2026: правило долгового тормоза приостановлено из-за энергетического кризиса.
+Kriminalität (Einbruch, Diebstahl) = Crime (burglary, theft) = Преступность (взлом, кража)
+Einbruchserie Ingolstadt: Audi-Mitarbeiter Häuser aufgebrochen, Polizei fahndet. = Burglary series Ingolstadt: Audi employees' houses broken into, police searching. = Серия взломов в Ингольштадте: взломаны дома сотрудников Audi, полиция ведет розыск.
+Ladendiebstahl MediaMarkt: Kameras gestohlen, Täter geflüchtet Richtung A9. = Shoplifting MediaMarkt: cameras stolen, perpetrator fled towards A9. = Кража в магазине MediaMarkt: украдены камеры, преступник скрылся в направлении A9.
+Drogenrazzia Gaimersheim: 20 Festnahmen, Kokain und Cannabis beschlagnahmt. = Drug raid Gaimersheim: 20 arrests, cocaine and cannabis seized. = Рейд по наркотикам в Гаймерсхайме: 20 арестов, изъяты кокаин и каннабис.
+Wetter / Unwetter = Weather / Severe weather = Погода / Стихийные бедствия
+Starkregenwarnung Bayern: 50 l/m² erwartet, Hochwasser an Donau möglich. = Heavy rain warning Bavaria: 50 l/m² expected, flooding on Danube possible. = Предупреждение о сильном дожде в Баварии: ожидается 50 л/м², возможно наводнение на Дунае.
+Schneesturm Allgäu: A7 gesperrt, Bahnverkehr Richtung München eingestellt. = Snowstorm Allgäu: A7 closed, train traffic towards Munich suspended. = Снежная буря в Альгой: A7 закрыта, движение поездов в направлении Мюнхена приостановлено.
+Pollenflug beginnt: Birkenpollen hoch, Allergiker Hausapotheke auffüllen. = Pollen season begins: birch pollen high, allergy sufferers restock home pharmacy. = Начинается сезон пыльцы: высокая концентрация пыльцы березы, аллергикам пополнить домашнюю аптечку.
+Streik / Demo = Strike / Demonstration = Забастовка / Демонстрация
+Bahnstreik DB: Regionalzüge ausfallen, Fahrgäste auf Busse umsteigen. = DB train strike: regional trains canceled, passengers switch to buses. = Забастовка поездов DB: региональные поезда отменены, пассажиры пересаживаются на автобусы.
+Lehrerstreik Bayern: Schüler zu Hause, Elternbetreuung organisieren. = Teachers' strike Bavaria: students at home, organize parental care. = Забастовка учителей в Баварии: ученики дома, организуйте присмотр родителей.
+Klimademo München: Letzte Generation blockiert A99, Polizei räumt. = Climate demo Munich: Last Generation blocks A99, police clear. = Климатическая демонстрация в Мюнхене: «Последнее поколение» блокирует A99, полиция очищает.
+Aktuelle Schlagzeile: „CDU triumphiert, SPD in Krise". = Current headline: "CDU triumphs, SPD in crisis". = Актуальный заголовок: «ХДС триумфует, СДПГ в кризисе».
+Breaking News: „Iran-Krieg: Atomanlage Natanz zerstört". = Breaking news: "Iran war: Natanz nuclear facility destroyed". = Срочная новость: «Война в Иране: ядерный объект в Натанзе уничтожен».
+Live-Ticker: „Stau A9 Ingolstadt 12 km durch LKW-Unfall". = Live ticker: "Traffic jam A9 Ingolstadt 12 km due to truck accident". = Лента новостей: «Пробка на A9 у Ингольштадта 12 км из-за аварии с грузовиком».
+Wettervorhersage: „Morgen sonnig, 18 Grad, abends Schauer möglich". = Weather forecast: "Tomorrow sunny, 18 degrees, evening showers possible". = Прогноз погоды: «Завтра солнечно, 18 градусов, вечером возможны ливни».
+Börse: „DAX steigt auf 19.200 Punkte, Energieaktien im Plus". = Stock market: "DAX rises to 19,200 points, energy stocks in the plus". = Фондовый рынок: «DAX растет до 19 200 пунктов, энергетические акции в плюсе».
+Alltag = Daily life = Повседневная жизнь
+Handy / Vertrag = Mobile phone / Contract = Мобильный телефон / Договор
+O2-Vertrag kündigen: Online-Kündigungsvormerkung, Hotline 0800 9910190 bestätigen. = Cancel O2 contract: online cancellation pre-registration, confirm via hotline 0800 9910190. = Расторгнуть договор с O2: онлайн-предварительная регистрация отказа, подтвердите по горячей линии 0800 9910190.
+Vodafone Roaming Ukraine aktivieren, 10 GB für 20 Euro. = Activate Vodafone roaming for Ukraine, 10 GB for 20 euros. = Активируйте роуминг Vodafone для Украины, 10 ГБ за 20 евро.
+Internetprobleme = Internet problems = Проблемы с интернетом
+Vodafone-Störung melden: Router neu starten, dann 0221 46619112. = Report Vodafone outage: restart router, then call 0221 46619112. = Сообщите о сбое Vodafone: перезагрузите роутер, затем позвоните 0221 46619112.
+Internet langsam: Glasfaser-Upgrade anfragen, 50 Mbit kostenlos testen. = Internet slow: request fiber upgrade, test 50 Mbps for free. = Интернет медленный: запросите обновление на оптоволокно, протестируйте 50 Мбит/с бесплатно.
+Computer / Drucker = Computer / Printer = Компьютер / Принтер
+Drucker mit WLAN verbinden: Router-Signal wählen, PIN eingeben. = Connect printer to Wi-Fi: select router signal, enter PIN. = Подключите принтер к Wi-Fi: выберите сигнал роутера, введите ПИН-код.
+Fotodrucker im Geschäft: Treiber für Windows 11 laden, Testdruck starten. = Photo printer in shop: download drivers for Windows 11, start test print. = Фотопринтер в магазине: загрузите драйверы для Windows 11, запустите тестовую печать.
+App / Online-Formular = App / Online form = Приложение / Онлайн-форма
+Jobcenter-Formular online ausfüllen: PDF signieren, per E-Mail an jc-ingolstadt.de senden. = Fill out Jobcenter form online: sign PDF, send via email to jc-ingolstadt.de. = Заполните форму Центра занятости онлайн: подпишите PDF, отправьте по электронной почте на jc-ingolstadt.de.
+MeinIngolstadt-App: Termin Bürgeramt buchen, Meldebescheinigung 5 Euro. = MeinIngolstadt app: book citizen's office appointment, registration certificate 5 euros. = Приложение MeinIngolstadt: запишитесь в ведомство граждан, справка о регистрации 5 евро.
+Bekanntschaft machen = Making acquaintances = Знакомство
+Hallo, ich bin Yurii aus dem Fotogeschäft, Sie auch bei Audi? = Hello, I'm Yurii from the photo shop, do you work at Audi too? = Здравствуйте, я Юрий из фотомагазина, вы тоже работаете в Audi?
+Einladung / Party = Invitation / Party = Приглашение / Вечеринка
+Kommt ihr zum Geburtstagsgrillen Samstag 18 Uhr? Bringt Bier mit. = Are you coming to the birthday barbecue Saturday 6 p.m.? Bring beer. = Вы придете на день рождения-гриль в субботу в 18:00? Принесите пиво.
+Geburtstag / Gratulieren = Birthday / Congratulations = День рождения / Поздравления
+Alles Gute zum Geburtstag! 40 Jahre, Gesundheit und Erfolg. = Happy birthday! 40 years, health and success. = С днем рождения! 40 лет, здоровья и успехов.
+Tandem / Sprachpartner = Tandem / Language partner = Тандем / Языковой партнер
+Tandem Ingolstadt: Deutsch-Ukrainisch, dienstags 19 Uhr Café Donaupark. = Tandem Ingolstadt: German-Ukrainian, Tuesdays 7 p.m. Café Donaupark. = Тандем Ингольштадт: немецко-украинский, по вторникам в 19:00 в кафе Донаупарк.
+Praktisches = Practical matters = Практические вопросы
+Handwerker / Maler = Craftsman / Painter = Мастер / Маляр
+Maler Angebote einholen: 2 Zimmer streichen, 25 qm, 800 Euro inkl. Material. = Get painter quotes: paint 2 rooms, 25 sqm, 800 euros including materials. = Запросите предложения от маляров: покраска 2 комнат, 25 кв.м, 800 евро включая материалы.
+Auto kaputt / Abschleppen = Car broken down / Towing = Машина сломалась / Эвакуация
+Auto springt nicht an, Pannendienst ADAC rufen, 60 Euro Abschleppen. = Car won't start, call ADAC roadside assistance, 60 euros towing. = Машина не заводится, вызовите службу помощи на дорогах ADAC, эвакуация 60 евро.
+Schlüssel verloren = Lost keys = Потерянные ключи
+Wohnungsschlüssel verloren, Schlüsseldienst 120 Euro, Nachschlüssel bestellen. = Lost apartment key, locksmith 120 euros, order duplicate key. = Потерян ключ от квартиры, слесарь 120 евро, закажите дубликат ключа.
+Parkstrafe / Bußgeld = Parking ticket / Fine = Штраф за парковку / Штраф
+Parkstrafe 40 Euro Blaue Zone, Einspruch innerhalb 14 Tagen online einlegen. = Parking ticket 40 euros Blue Zone, file objection online within 14 days. = Штраф за парковку 40 евро в синей зоне, подайте возражение онлайн в течение 14 дней.
+Flirten / Dating = Flirting / Dating = Флирт / Знакомства
+Die Neue bei Audi ist total sympathisch, haben uns auf dem Spielplatz kennengelernt. = The new woman at Audi is totally likable, we met at the playground. = Новая сотрудница в Audi очень приятная, мы познакомились на детской площадке.
+Er hat sie auf Tinder angeschrieben, nach drei Dates schon zusammengezogen. = He messaged her on Tinder, after three dates they already moved in together. = Он написал ей в Tinder, после трех свиданий они уже съехались.
+Flirten im Café: Lächeln, Komplimente, Nummer tauschen. = Flirting at the café: smiling, compliments, exchanging numbers. = Флирт в кафе: улыбки, комплименты, обмен номерами.
+Speeddating VHS Ingolstadt: Fünf Minuten pro Person, Zettel mit Matches. = Speed dating at VHS Ingolstadt: five minutes per person, sheet with matches. = Спиддейтинг в народном университете Ингольштадта: пять минут на человека, листок с совпадениями.
+Sie passen perfekt zusammen, ergänzen sich wie Yin und Yang. = They fit together perfectly, complement each other like yin and yang. = Они идеально подходят друг другу, дополняют друг друга как инь и ян.
+Beziehung auf Probe: Wohnen zusammen, aber noch nicht verheiratet. = Trial relationship: living together, but not married yet. = Отношения на пробу: живут вместе, но еще не женаты.
+Er macht alles mit, kocht, putzt — Traumtyp für viele Frauen. = He does everything, cooks, cleans — dream guy for many women. = Он делает всё, готовит, убирает — мечта многих женщин.
+Die Chemie stimmt, körperlich und seelisch total kompatibel. = The chemistry is right, totally compatible physically and emotionally. = Химия есть, полная совместимость физически и эмоционально.
+Intimität wichtig, aber erst nach Vertrauen aufbauen. = Intimacy important, but only after building trust. = Интимность важна, но только после построения доверия.
+Hochzeit = Wedding = Свадьба
+Standesamt Ingolstadt, 150 Gäste, Brautkleid weiß, Anzug dunkelblau. = Registry office Ingolstadt, 150 guests, white wedding dress, dark blue suit. = ЗАГС Ингольштадт, 150 гостей, белое свадебное платье, темно-синий костюм.
+Flitterwochen Mallorca, zwei Wochen All-inclusive für 2500 Euro. = Honeymoon Mallorca, two weeks all-inclusive for 2500 euros. = Медовый месяц на Майорке, две недели «всё включено» за 2500 евро.
+Ringtauschen, „Ja ich will", dann Party bis Mitternacht. = Exchange rings, "Yes I do", then party until midnight. = Обмен кольцами, «Да, я согласен/согласна», затем вечеринка до полуночи.
+Trennung = Breakup = Расставание
+Nach fünf Jahren getrennt, er hat sie mit Kollegin betrogen. = Separated after five years, he cheated on her with a colleague. = Расстались после пяти лет, он изменил ей с коллегой.
+Trennungsschmerzen hart, aber besser jetzt als später Kinder. = Breakup pain is hard, but better now than having kids later. = Боль от расставания тяжела, но лучше сейчас, чем потом с детьми.
+Sie hat gepackt und ist zu ihren Eltern gezogen, Streit um Miete. = She packed and moved in with her parents, argument about rent. = Она собрала вещи и переехала к родителям, спор из-за аренды.
+Scheidung = Divorce = Развод
+Scheidung nach zwei Jahren, Zugewinnausgleich und Sorgerecht klären. = Divorce after two years, clarify property division and custody. = Развод после двух лет, урегулировать раздел имущества и опеку.
+Trennungsjahr läuft, Anwalt empfohlen für Unterhalt. = Separation year in progress, lawyer recommended for alimony. = Год раздельного проживания идет, рекомендуется адвокат для алиментов.
+Ex-Frau hat neuen, er zahlt immer noch Kindesunterhalt. = Ex-wife has a new partner, he still pays child support. = У бывшей жены новый партнер, он всё ещё платит алименты на ребенка.
+Eltern streiten wegen Schwiegersohn, „zu jung, kein Job". = Parents argue about son-in-law, "too young, no job". = Родители спорят из-за зятя: «слишком молод, нет работы».
+Schwägerin tratscht: „Sie hat Botox gemacht, sieht unnatürlich aus". = Sister-in-law gossips: "She got Botox, looks unnatural". = Невестка сплетничает: «Она сделала ботокс, выглядит неестественно».
+Nachbarn geklatscht: „Die Hochzeit war Show, schon wieder getrennt". = Neighbors gossiping: "The wedding was a show, separated again". = Соседи сплетничают: «Свадьба была шоу, снова расстались».
+Kollegin im Fotogeschäft: „Mein Typ ghostet mich seit Tinder-Match". = Colleague at photo shop: "My guy has been ghosting me since the Tinder match". = Коллега в фотомагазине: «Мой парень игнорирует меня с момента совпадения в Tinder».
+Weihnachten / Silvester = Christmas / New Year's Eve = Рождество / Канун Нового года
+Weihnachtsmarkt Ingolstadt: Glühwein 5 Euro, Lebkuchen und Christkindlmarkt bis 22 Uhr. = Ingolstadt Christmas market: mulled wine 5 euros, gingerbread and Christkindlmarkt until 10 p.m. = Рождественская ярмарка в Ингольштадте: глинтвейн 5 евро, имбирные пряники и рынок Кристкиндльмаркт до 22:00.
+Adventskalender für Kinder, Schokolade hinter Türchen, erst ab 1. Dezember öffnen. = Advent calendar for children, chocolate behind little doors, only open from December 1st. = Адвент-календарь для детей, шоколад за дверцами, открывать только с 1 декабря.
+Heiligabend 24.12. Kirche um 22 Uhr, danach Gans mit Rotkohl und Klöße. = Christmas Eve Dec 24, church at 10 p.m., then goose with red cabbage and dumplings. = Сочельник 24 декабря, церковь в 22:00, затем гусь с красной капустой и кнёдели.
+Silvesterparty Donaupark: Feuerwerk um Mitternacht, Sekt und Blechmusik. = New Year's Eve party Donaupark: fireworks at midnight, sparkling wine and brass band music. = Вечеринка в канун Нового года в Донаупарке: фейерверк в полночь, игристое вино и духовой оркестр.
+Neujahrsempfang Rathaus: Bürgermeister Rede, Sekt und Brezeln gratis. = New Year's reception at city hall: mayor's speech, sparkling wine and pretzels free. = Новогодний прием в ратуше: речь бургомистра, игристое вино и крендели бесплатно.
+Karneval / Oktoberfest = Carnival / Oktoberfest = Карнавал / Октоберфест
+Karneval Ingolstadt: Alaaf! Kostüm Dirndl, Rosenmontag Zug um 14 Uhr. = Carnival Ingolstadt: Alaaf! Dirndl costume, Rose Monday parade at 2 p.m. = Карнавал в Ингольштадте: Алааф! Костюм дирндль, парад в Розенмонтаг в 14:00.
+Wiesn Ingolstadt Audi-Zelt: Maßkrug 14 Euro, Weißwurst mit Senf vor 12 Uhr. = Wiesn Ingolstadt Audi tent: liter mug 14 euros, white sausage with mustard before 12 p.m. = Визн в Ингольштадте, шатер Audi: кружка пива 14 евро, вайсвурст с горчицей до 12:00.
+Dirndl Länge midi, Lederhose mit Haferl, Trachtenmiete 80 Euro/Tag. = Dirndl length midi, leather pants with Haferl shoes, traditional costume rental 80 euros/day. = Дирндль длины миди, ледерхозе с обувью Хаферль, прокат традиционной одежды 80 евро/день.
+O'zapft is! Bürgermeister zapft erstes Fass, Party bis 23 Uhr. = O'zapft is! Mayor taps first keg, party until 11 p.m. = О'цапфт ис! Бургомистр открывает первую бочку, вечеринка до 23:00.
+Sommerferien / Urlaub = Summer holidays / Vacation = Летние каникулы / Отпуск
+Sommerferien Bayern 6 Wochen Juli/August, Kita/Schule geschlossen. = Summer holidays Bavaria 6 weeks July/August, daycare/school closed. = Летние каникулы в Баварии 6 недель июль/август, детский сад/школа закрыты.
+Familienurlaub Gardasee: Ferienwohnung 1200 Euro/Woche, Strand und Achterbahn Gardaland. = Family vacation Lake Garda: vacation apartment 1200 euros/week, beach and roller coaster Gardaland. = Семейный отпуск на озере Гарда: квартира 1200 евро/неделя, пляж и американские горки в Гардаланде.
+Camping Deggendorf: Zeltplatz 25 Euro/Nacht, Kinderanimation inklusive. = Camping Deggendorf: campsite 25 euros/night, children's entertainment included. = Кемпинг в Деггендорфе: место для палатки 25 евро/ночь, детская анимация включена.
+Urlaubsantrag Arbeit: Zwei Wochen Juli, Arztbescheinigung bei Krankheit. = Vacation request at work: two weeks in July, doctor's certificate if sick. = Заявление на отпуск на работе: две недели в июле, справка от врача в случае болезни.
+Winterreifen / Schneeketten = Winter tires / Snow chains = Зимние шины / Цепи противоскольжения
+Winterreifenpflicht Bayern ab 1. November bis Ostersonntag, Mindestprofiltiefe 4 mm. = Winter tire requirement Bavaria from November 1 until Easter Sunday, minimum tread depth 4 mm. = Обязательные зимние шины в Баварии с 1 ноября до Пасхального воскресенья, минимальная глубина протектора 4 мм.
+Schneeketten mitnehmen bei Alpenfahrt, A8 Richtung Österreich prüfen. = Bring snow chains for Alps trip, check A8 towards Austria. = Возьмите цепи противоскольжения для поездки в Альпы, проверьте трассу A8 в направлении Австрии.
+Reifenwechsel Werkstatt: 80 Euro, Sommer-/Winter komplett getauscht. = Tire change at workshop: 80 euros, summer/winter completely swapped. = Смена шин в сервисе: 80 евро, полная замена летних/зимних.
+Glatteiswarnung A9 Ingolstadt: Langsam fahren, Abstand 4 Sekunden halten. = Black ice warning A9 Ingolstadt: drive slowly, keep 4-second distance. = Предупреждение о гололеде на A9 у Ингольштадта: ездить медленно, держать дистанцию 4 секунды.
+Weihnachtsmarkt voll, Glühwein kalt — bitte umtauschen oder Gutschrift. = Christmas market crowded, mulled wine cold — please exchange or credit. = Рождественская ярмарка переполнена, глинтвейн холодный — пожалуйста, замените или начислите кредит.
+Karneval zu laut, Nachbarn beschweren sich nach 22 Uhr Ruhestörung. = Carnival too loud, neighbors complain about noise disturbance after 10 p.m. = Карнавал слишком громкий, соседи жалуются на нарушение тишины после 22:00.
+Ferienplanung Chaos: Kita geschlossen, Oma babysitten lassen. = Vacation planning chaos: daycare closed, have grandma babysit. = Хаос с планированием отпуска: детский сад закрыт, пусть бабушка посидит с детьми.
+Feuerwehr / Notruf = Fire department / Emergency call = Пожарная служба / Экстренный вызов
+Feuerwehr 112: „Rauch im Keller, Fenster offen, Haus Buchnerstraße 12!" = Fire department 112: "Smoke in basement, windows open, house Buchnerstraße 12!" = Пожарная служба 112: «Дым в подвале, окна открыты, дом Бухнерштрассе 12!»
+Notruf Polizei 110: „Einbruch in Wohnung, Verdächtige geflüchtet Richtung Donau." = Emergency call police 110: "Burglary in apartment, suspects fled towards Danube." = Экстренный вызов полиции 110: «Взлом квартиры, подозреваемые скрылись в направлении Дуная.»
+Rettungsdienst 112: „Kind gestürzt, Bein verletzt, Spielplatz Audi-Werke." = Emergency medical service 112: "Child fell, leg injured, playground at Audi-Werke." = Скорая помощь 112: «Ребенок упал, нога травмирована, детская площадка у завода Audi.»
+Adresse genau: „Ingolstadt, Buchnerstraße 12, dritter Stock, Tür 3B links." = Address exactly: "Ingolstadt, Buchnerstraße 12, third floor, door 3B left." = Точный адрес: «Ингольштадт, Бухнерштрассе 12, третий этаж, дверь 3Б слева.»
+Diebstahl melden = Report theft = Сообщить о краже
+Polizei Ingolstadt Anzeige: „Fahrrad gestohlen vor MediaMarkt, blaues Mountainbike." = Police Ingolstadt report: "Bicycle stolen in front of MediaMarkt, blue mountain bike." = Заявление в полицию Ингольштадта: «Велосипед украден перед MediaMarkt, синий горный велосипед.»
+Online-Anzeige Bayern: Seriennummer BHG 123456, Kaufbeleg dabei. = Online report Bavaria: serial number BHG 123456, purchase receipt included. = Онлайн-заявление Бавария: серийный номер BHG 123456, чек о покупке прилагается.
+Ladendiebstahl Fotogeschäft: „Kamera Canon EOS, Unbekannter männlich 30-40." = Shoplifting at photo shop: "Camera Canon EOS, unknown male 30-40." = Кража в фотомагазине: «Камера Canon EOS, неизвестный мужчина 30-40 лет.»
+Unfall / Verletzung = Accident / Injury = Авария / Травма
+Verkehrsunfall A9: „Frontal, drei Fahrzeuge, Verletzte eingeklemmt." = Traffic accident A9: "Head-on collision, three vehicles, injured persons trapped." = ДТП на A9: «Лобовое столкновение, три автомобиля, пострадавшие зажаты.»
+Arbeitsunfall Fotogeschäft: „Papierschneider verletzt Hand, Blutung stillen." = Work accident at photo shop: "Paper cutter injured hand, stop bleeding." = Производственная травма в фотомагазине: «Бумагорезка травмировала руку, остановить кровотечение.»
+Sportverletzung: „Fußball, Kreuzbandriss, Krankenwagen zum Klinikum." = Sports injury: "Soccer, torn ACL, ambulance to hospital." = Спортивная травма: «Футбол, разрыв крестообразной связки, скорая помощь в клинику.»
+Streit mit Behörde = Dispute with authority = Спор с ведомством
+Jobcenter-Bescheid falsch: „Widerspruch innerhalb eines Monats einlegen." = Jobcenter notice incorrect: "File objection within one month." = Уведомление Центра занятости неверно: «Подать возражение в течение одного месяца.»
+Ausländerbehörde-Termin versäumt: „Nachruf-Termin beantragen, Strafe vermeiden." = Immigration office appointment missed: "Apply for follow-up appointment, avoid fine." = Пропущена запись в ведомство по делам иностранцев: «Подать заявку на повторную запись, избежать штрафа.»
+Parkstrafe 60 Euro: „Einspruch online, Blaue-Zone-Schild verdeckt." = Parking ticket 60 euros: "File objection online, Blue Zone sign obscured." = Штраф за парковку 60 евро: «Подать возражение онлайн, знак синей зоны был закрыт.»
+Diskriminierung melden = Report discrimination = Сообщить о дискриминации
+Diskriminierung melden: „Antidiskriminierungsstelle Ingolstadt, Tel. 0841 320-4440." = Report discrimination: "Anti-discrimination office Ingolstadt, tel. 0841 320-4440." = Сообщить о дискриминации: «Антидискриминационный офис Ингольштадт, тел. 0841 320-4440.»
+Arbeit Diskriminierung: „Chef beleidigt wegen Ukraine, Personalrat einschalten." = Work discrimination: "Boss insults because of Ukraine, involve works council." = Дискриминация на работе: «Начальник оскорбляет из-за Украины, подключить совет персонала.»
+Mietdiskriminierung: „Vermieter keine Ausländer, Mietrechtsberatung kontaktieren." = Rental discrimination: "Landlord no foreigners, contact rental law counseling." = Дискриминация при аренде: «Арендодатель не принимает иностранцев, обратиться за консультацией по арендному праву.»
+Wohnung mieten / Kaufen = Renting / Buying apartment = Аренда / Покупка квартиры
+Zweizimmerwohnung 850 Euro Kaltmiete, 120 qm, Balkon, Audi-Nähe. = Two-room apartment 850 euros cold rent, 120 sqm, balcony, near Audi. = Двухкомнатная квартира 850 евро без коммунальных услуг, 120 кв.м, балкон, рядом с Audi.
+Maklerprovision 1 Monatsmiete, Schufa-Auskunft und Einkommensnachweis vorlegen. = Broker commission 1 month's rent, submit Schufa credit report and proof of income. = Комиссия маклера 1 месячная арендная плата, предоставьте кредитный отчет Schufa и подтверждение дохода.
+Mietvertrag: Kaution 3 Monatsmieten, Kündigungsfrist 3 Monate zum Monatsende. = Rental contract: deposit 3 months' rent, notice period 3 months to end of month. = Договор аренды: залог 3 месячные арендные платы, срок уведомления 3 месяца до конца месяца.
+Wohnung kaufen: 220.000 Euro, 10% Eigenkapital, Bausparkasse Tilgung. = Buy apartment: 220,000 euros, 10% down payment, building society repayment. = Купить квартиру: 220.000 евро, 10% собственных средств, погашение через строительную кассу.
+Nebenkosten / Miete zahlen = Utilities / Paying rent = Коммунальные услуги / Оплата аренды
+Nebenkostenabrechnung 2025: 180 Euro Warmwasser + Heizung zurückerstattet. = Utilities statement 2025: 180 euros for hot water + heating refunded. = Расчет коммунальных услуг 2025: 180 евро за горячую воду + отопление возвращены.
+Miete per Dauerauftrag: IBAN Vermieter, 1. jedes Monats. = Rent via standing order: landlord's IBAN, 1st of each month. = Аренда через постоянный платеж: IBAN арендодателя, 1-го числа каждого месяца.
+Mieterhöhung 15% nach Modernisierung, Widerspruch innerhalb 2 Monate. = Rent increase 15% after modernization, objection within 2 months. = Повышение арендной платы на 15% после модернизации, возражение в течение 2 месяцев.
+Mit Mieter / Vermieter sprechen = Talk to tenant / landlord = Поговорить с арендатором / арендодателем
+Vermieter anrufen: „Heizung defekt, bitte Handwerker schicken innerhalb 24h." = Call landlord: "Heating broken, please send craftsman within 24h." = Позвоните арендодателю: «Отопление не работает, пожалуйста, пришлите мастера в течение 24 часов.»
+Mieterversammlung: „Mülltrennung verbessern, Container überfüllt." = Tenant meeting: "Improve waste separation, containers overflowing." = Собрание жильцов: «Улучшить сортировку мусора, контейнеры переполнены.»
+Kündigung Mieter: „Auszug 30.6., Übergabeprotokoll vereinbaren." = Tenant termination: "Move out June 30, arrange handover protocol." = Расторжение договора арендатором: «Выезд 30 июня, согласовать протокол передачи.»
+Reparaturen / Störungen melden = Report repairs / malfunctions = Сообщить о ремонте / неисправностях
+Wasserrohr geplatzt, Sofortmaßnahme, Versicherung melden. = Water pipe burst, immediate action, report to insurance. = Лопнула водопроводная труба, немедленные меры, сообщить в страховую.
+Heizung aus, Wohnung 12 Grad, Vermieter haftet für Reparaturkosten. = Heating off, apartment 12 degrees, landlord liable for repair costs. = Отопление отключено, в квартире 12 градусов, арендодатель несет ответственность за расходы на ремонт.
+Bad verstopft, Rohrreinigung 120 Euro, Mieterkostenübernahme klären. = Bathroom clogged, drain cleaning 120 euros, clarify tenant cost coverage. = Ванная засорилась, прочистка труб 120 евро, уточнить покрытие расходов арендатором.
+Nachbarnprobleme (Lärm, Müll) = Neighbor problems (noise, garbage) = Проблемы с соседями (шум, мусор)
+Nachbarn Musik bis 2 Uhr, Abmahnung vom Vermieter verlangen. = Neighbors playing music until 2 a.m., demand warning from landlord. = Соседи включают музыку до 2 часов ночи, требовать предупреждения от арендодателя.
+Mülltonnen falsch sortiert, Ordnungsamt Bußgeld 35 Euro pro Verstoß. = Garbage bins sorted incorrectly, regulatory office fine 35 euros per violation. = Мусорные баки отсортированы неправильно, штраф от ведомства общественного порядка 35 евро за нарушение.
+Nachbar parkt in meinem Stellplatz, Polizeiprotokoll für Mieterstreit. = Neighbor parks in my spot, police report for tenant dispute. = Сосед паркуется на моем месте, протокол полиции для спора арендаторов.
+Umzug organisieren = Organize move = Организовать переезд
+Umzug Ingolstadt: Container mieten 12 cbm, 350 Euro inkl. Verladung. = Move Ingolstadt: rent 12 cbm container, 350 euros including loading. = Переезд в Ингольштадте: арендовать контейнер 12 куб.м, 350 евро включая погрузку.
+Adressänderung: Post, Bank, Jobcenter, Kita/Schule innerhalb 14 Tagen melden. = Address change: report to post office, bank, job center, daycare/school within 14 days. = Смена адреса: сообщить в почту, банк, центр занятости, детский сад/школу в течение 14 дней.
+Elektro-Altgeräte beseitigen: Recyclinghof Ingolstadt, gratis mit Pass. = Dispose of old electrical appliances: Ingolstadt recycling center, free with ID. = Утилизация старых электроприборов: пункт переработки Ингольштадт, бесплатно с паспортом.
+Strom/Gas/Internet abschließen = Sign up for electricity/gas/internet = Подключить электричество/газ/интернет
+Strom E.ON abschließen: Wohnungsnummer, Zählerstand 12345 notieren. = Sign up for E.ON electricity: note apartment number, meter reading 12345. = Подключить электричество E.ON: указать номер квартиры, записать показания счетчика 12345.
+Gas ummelden: Übertragung Anbieterwechsel, 30 Tage Frist. = Transfer gas: provider change, 30-day notice period. = Переоформить газ: смена поставщика, срок уведомления 30 дней.
+Internet Vodafone: Router anschließen, WLAN-Passwort ändern. = Vodafone internet: connect router, change Wi-Fi password. = Интернет Vodafone: подключить роутер, изменить пароль Wi-Fi.
