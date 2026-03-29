@@ -61,5 +61,6 @@
     "delay-between-records": "Zpoždění mezi záznamy (sekundy)",
     "delay": "Zpoždění...",
     "tip-language": "Nápověda",
-    "default-voice": "Výchozí hlas"
+    "default-voice": "Výchozí hlas",
+    "mute": "Neozvučovat"
 }

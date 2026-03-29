@@ -224,7 +224,9 @@ export const PlayerProvider = ({
 
             if (tipPart) {
                 // Если есть tip, читаем: tip > foreign > translation
-                await playAudio(tipPart, tipLanguage, true, selectedVoiceTip, sessionToken); // ДОБАВЛЕН sessionToken
+                if (tipLanguage !== 'none') {
+                    await playAudio(tipPart, tipLanguage, true, selectedVoiceTip, sessionToken);
+                }
 
                 if (!shouldContinue()) {
                     dispatch({ type: 'SET_READING_SINGLE', payload: false });
@@ -238,7 +240,9 @@ export const PlayerProvider = ({
                     return;
                 }
 
-                await playAudio(foreignPart, foreignLanguage, true, selectedVoiceForeign, sessionToken); // ДОБАВЛЕН sessionToken
+                if (foreignLanguage !== 'none') {
+                    await playAudio(foreignPart, foreignLanguage, true, selectedVoiceForeign, sessionToken);
+                }
 
                 if (!shouldContinue()) {
                     dispatch({ type: 'SET_READING_SINGLE', payload: false });
@@ -252,10 +256,14 @@ export const PlayerProvider = ({
                     return;
                 }
 
-                await playAudio(translation, translationLanguage, true, selectedVoiceTranslation, sessionToken); // ДОБАВЛЕН sessionToken
+                if (translationLanguage !== 'none') {
+                    await playAudio(translation, translationLanguage, true, selectedVoiceTranslation, sessionToken);
+                }
             } else {
                 // Если tip пуст, читаем: translation > foreign
-                await playAudio(translation, translationLanguage, true, selectedVoiceTranslation, sessionToken); // ДОБАВЛЕН sessionToken
+                if (translationLanguage !== 'none') {
+                    await playAudio(translation, translationLanguage, true, selectedVoiceTranslation, sessionToken);
+                }
 
                 if (!shouldContinue()) {
                     dispatch({ type: 'SET_READING_SINGLE', payload: false });
@@ -269,7 +277,9 @@ export const PlayerProvider = ({
                     return;
                 }
 
-                await playAudio(foreignPart, foreignLanguage, true, selectedVoiceForeign, sessionToken); // ДОБАВЛЕН sessionToken
+                if (foreignLanguage !== 'none') {
+                    await playAudio(foreignPart, foreignLanguage, true, selectedVoiceForeign, sessionToken);
+                }
             }
 
             dispatch({ type: 'SET_READING_SINGLE', payload: false });
@@ -311,7 +321,7 @@ export const PlayerProvider = ({
         resetCancelToken();
 
         const nextRecord = playerState.currentRecord + 1;
-        const maxIndex = Math.max(0, Math.min(filteredData.length - 1, (recordsToPlay === Infinity ? filteredData.length : recordsToPlay) - 1));
+        const maxIndex = Math.max(0, Math.min(filteredData.length - 1, (recordsToPlay === Infinity || recordsToPlay === 'all' ? filteredData.length : Number(recordsToPlay)) - 1));
 
         if (nextRecord > maxIndex) {
             dispatch({ type: 'SET_CURRENT_RECORD', payload: 0 });
@@ -381,7 +391,9 @@ export const PlayerProvider = ({
 
             if (tipPart) {
                 // Если есть tip, читаем: tip > foreign > translation
-                await playAudio(tipPart, tipLanguage, true, selectedVoiceTip);
+                if (tipLanguage !== 'none') {
+                    await playAudio(tipPart, tipLanguage, true, selectedVoiceTip);
+                }
 
                 if (!shouldContinue()) {
                     dispatch({ type: 'SET_SPEAKING', payload: false });
@@ -397,7 +409,9 @@ export const PlayerProvider = ({
                     return;
                 }
 
-                await playAudio(foreignPart, foreignLanguage, true, selectedVoiceForeign);
+                if (foreignLanguage !== 'none') {
+                    await playAudio(foreignPart, foreignLanguage, true, selectedVoiceForeign);
+                }
 
                 if (!shouldContinue()) {
                     dispatch({ type: 'SET_SPEAKING', payload: false });
@@ -413,7 +427,9 @@ export const PlayerProvider = ({
                     return;
                 }
 
-                await playAudio(translation, translationLanguage, true, selectedVoiceTranslation);
+                if (translationLanguage !== 'none') {
+                    await playAudio(translation, translationLanguage, true, selectedVoiceTranslation);
+                }
 
                 if (!shouldContinue()) {
                     dispatch({ type: 'SET_SPEAKING', payload: false });
@@ -422,7 +438,9 @@ export const PlayerProvider = ({
                 }
             } else {
                 // Если tip пуст, читаем: translation > foreign
-                await playAudio(translation, translationLanguage, true, selectedVoiceTranslation);
+                if (translationLanguage !== 'none') {
+                    await playAudio(translation, translationLanguage, true, selectedVoiceTranslation);
+                }
 
                 if (!shouldContinue()) {
                     dispatch({ type: 'SET_SPEAKING', payload: false });
@@ -438,7 +456,9 @@ export const PlayerProvider = ({
                     return;
                 }
 
-                await playAudio(foreignPart, foreignLanguage, true, selectedVoiceForeign);
+                if (foreignLanguage !== 'none') {
+                    await playAudio(foreignPart, foreignLanguage, true, selectedVoiceForeign);
+                }
 
                 if (!shouldContinue()) {
                     dispatch({ type: 'SET_SPEAKING', payload: false });
@@ -529,7 +549,7 @@ export const PlayerProvider = ({
         dispatch({ type: 'SET_DELAY', payload: false });
         resetCancelToken();
 
-        const maxAllowedIndex = Math.max(0, Math.min(filteredData.length - 1, (recordsToPlay === Infinity ? filteredData.length : recordsToPlay) - 1));
+        const maxAllowedIndex = Math.max(0, Math.min(filteredData.length - 1, (recordsToPlay === Infinity || recordsToPlay === 'all' ? filteredData.length : Number(recordsToPlay)) - 1));
 
         const prevRecord = playerState.currentRecord - 1;
         if (prevRecord < 0) {

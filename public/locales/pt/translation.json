@@ -61,5 +61,6 @@
     "delay-between-records": "Atraso entre registros (segundos)",
     "delay": "Atraso...",
     "tip-language": "Dica",
-    "default-voice": "Voz padrão"
+    "default-voice": "Voz padrão",
+    "mute": "Não vocalizar"
 }

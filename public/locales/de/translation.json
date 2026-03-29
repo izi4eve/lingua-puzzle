@@ -65,5 +65,6 @@
     "delay-between-records": "Verzögerung zwischen Einträgen (Sekunden)",
     "delay": "Verzögerung...",
     "tip-language": "Hinweis",
-    "default-voice": "Standardstimme"
+    "default-voice": "Standardstimme",
+    "mute": "Nicht vorlesen"
 }

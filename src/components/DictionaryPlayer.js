@@ -299,29 +299,32 @@ const DictionaryPlayer = ({
             onChange={(e) => handleTranslationLanguageChangeWrapper(e.target.value)}
             className="ms-2 w-auto"
           >
+            <option value="none">— {t('mute')} —</option>
             {supportedContentLanguages.map((lang) => (
               <option key={lang.code} value={lang.code}>{lang.name}</option>
             ))}
           </Form.Select>
         </div>
 
-        <div className="d-flex align-items-center">
-          <label>{t('voice')}</label>
-          <Form.Select
-            value={selectedVoiceTranslation || ''}
-            onChange={handleVoiceTranslationChange}
-            className="ms-2 w-auto"
-          >
-            <option value="">{t('default-voice')}</option>
-            {availableVoices
-              .filter((voice) => voice.lang.startsWith(translationLanguage))
-              .map((voice) => (
-                <option key={voice.name} value={voice.name}>
-                  {voice.name} {voice.default ? `(${t('default')})` : ''}
-                </option>
-              ))}
-          </Form.Select>
-        </div>
+        {translationLanguage !== 'none' && (
+          <div className="d-flex align-items-center">
+            <label>{t('voice')}</label>
+            <Form.Select
+              value={selectedVoiceTranslation || ''}
+              onChange={handleVoiceTranslationChange}
+              className="ms-2 w-auto"
+            >
+              <option value="">{t('default-voice')}</option>
+              {availableVoices
+                .filter((voice) => voice.lang.startsWith(translationLanguage))
+                .map((voice) => (
+                  <option key={voice.name} value={voice.name}>
+                    {voice.name} {voice.default ? `(${t('default')})` : ''}
+                  </option>
+                ))}
+            </Form.Select>
+          </div>
+        )}
 
         <div className="w-100"></div>
 
@@ -333,29 +336,32 @@ const DictionaryPlayer = ({
             onChange={(e) => handleForeignLanguageChangeWrapper(e.target.value)}
             className="ms-2 w-auto"
           >
+            <option value="none">— {t('mute')} —</option>
             {supportedContentLanguages.map((lang) => (
               <option key={lang.code} value={lang.code}>{lang.name}</option>
             ))}
           </Form.Select>
         </div>
 
-        <div className="d-flex align-items-center">
-          <label>{t('voice')}</label>
-          <Form.Select
-            value={selectedVoiceForeign || ''}
-            onChange={handleVoiceForeignChange}
-            className="ms-2 w-auto"
-          >
-            <option value="">{t('default-voice')}</option>
-            {availableVoices
-              .filter((voice) => voice.lang.startsWith(foreignLanguage))
-              .map((voice) => (
-                <option key={voice.name} value={voice.name}>
-                  {voice.name} {voice.default ? `(${t('default')})` : ''}
-                </option>
-              ))}
-          </Form.Select>
-        </div>
+        {translationLanguage !== 'none' && (
+          <div className="d-flex align-items-center">
+            <label>{t('voice')}</label>
+            <Form.Select
+              value={selectedVoiceForeign || ''}
+              onChange={handleVoiceForeignChange}
+              className="ms-2 w-auto"
+            >
+              <option value="">{t('default-voice')}</option>
+              {availableVoices
+                .filter((voice) => voice.lang.startsWith(foreignLanguage))
+                .map((voice) => (
+                  <option key={voice.name} value={voice.name}>
+                    {voice.name} {voice.default ? `(${t('default')})` : ''}
+                  </option>
+                ))}
+            </Form.Select>
+          </div>
+        )}
 
         <div className="w-100"></div>
 
@@ -367,29 +373,32 @@ const DictionaryPlayer = ({
             onChange={(e) => handleTipLanguageChangeWrapper(e.target.value)}
             className="ms-2 w-auto"
           >
+            <option value="none">— {t('mute')} —</option>
             {supportedContentLanguages.map((lang) => (
               <option key={lang.code} value={lang.code}>{lang.name}</option>
             ))}
           </Form.Select>
         </div>
 
-        <div className="d-flex align-items-center">
-          <label>{t('voice')}</label>
-          <Form.Select
-            value={selectedVoiceTip || ''}
-            onChange={handleVoiceTipChange}
-            className="ms-2 w-auto"
-          >
-            <option value="">{t('default-voice')}</option>
-            {availableVoices
-              .filter((voice) => voice.lang.startsWith(tipLanguage))
-              .map((voice) => (
-                <option key={voice.name} value={voice.name}>
-                  {voice.name} {voice.default ? `(${t('default')})` : ''}
-                </option>
-              ))}
-          </Form.Select>
-        </div>
+        {translationLanguage !== 'none' && (
+          <div className="d-flex align-items-center">
+            <label>{t('voice')}</label>
+            <Form.Select
+              value={selectedVoiceTip || ''}
+              onChange={handleVoiceTipChange}
+              className="ms-2 w-auto"
+            >
+              <option value="">{t('default-voice')}</option>
+              {availableVoices
+                .filter((voice) => voice.lang.startsWith(tipLanguage))
+                .map((voice) => (
+                  <option key={voice.name} value={voice.name}>
+                    {voice.name} {voice.default ? `(${t('default')})` : ''}
+                  </option>
+                ))}
+            </Form.Select>
+          </div>
+        )}
 
         <div className="w-100"></div>
 

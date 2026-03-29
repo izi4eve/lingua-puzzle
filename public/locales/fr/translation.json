@@ -65,5 +65,6 @@
     "delay-between-records": "Délai entre les enregistrements (secondes)",
     "delay": "Délai...",
     "tip-language": "Astuce",
-    "default-voice": "Voix par défaut"
+    "default-voice": "Voix par défaut",
+    "mute": "Ne pas vocaliser"
 }

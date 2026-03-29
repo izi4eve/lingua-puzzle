@@ -61,5 +61,6 @@
     "delay-between-records": "التأخير بين التسجيلات (ثوانٍ)",
     "delay": "تأخير...",
     "tip-language": "تلميح",
-    "default-voice": "الصوت الافتراضي"
+    "default-voice": "الصوت الافتراضي",
+    "mute": "عدم النطق"
 }
