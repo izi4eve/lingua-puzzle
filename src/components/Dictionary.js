@@ -3,6 +3,7 @@ import { Modal, Form, Button, InputGroup } from 'react-bootstrap';
 import { FixedSizeList } from 'react-window';
 import { useTranslation } from 'react-i18next';
 import { FaTimes } from 'react-icons/fa';
+import { IoVolumeHigh } from "react-icons/io5";
 
 const Dictionary = ({ show, onHide, data, onDataUpdate, setFirstElement, firstElement }) => {
   const { t } = useTranslation();
@@ -88,6 +89,24 @@ const Dictionary = ({ show, onHide, data, onDataUpdate, setFirstElement, firstEl
     setFilter('');
   };
 
+  const speakForeignPart = (text) => {
+    const settings = JSON.parse(localStorage.getItem('playerSettings') || '{}');
+    const { foreignLanguage, selectedVoiceForeign, readingSpeed = 0.5 } = settings;
+    
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = foreignLanguage || 'en';
+    utterance.rate = readingSpeed;
+    
+    const voices = window.speechSynthesis.getVoices();
+    if (selectedVoiceForeign) {
+      const voice = voices.find(v => v.name === selectedVoiceForeign);
+      if (voice) utterance.voice = voice;
+    }
+    
+    window.speechSynthesis.speak(utterance);
+  };
+
   const Row = ({ index, style }) => {
     const entry = filteredData[index];
     const originalIndex = data.indexOf(entry);
@@ -100,6 +119,12 @@ const Dictionary = ({ show, onHide, data, onDataUpdate, setFirstElement, firstEl
       >
         <div className="text-bg-secondary rounded-pill px-2 d-flex justify-content-between align-items-center mb-1">
           <span className="flex-shrink-0" style={{ width: '60px' }}>#{originalIndex}</span>
+          <button
+            className="btn btn-sm p-0 text-white border-0 bg-transparent d-flex align-items-center justify-content-center"
+            onClick={(e) => { e.stopPropagation(); speakForeignPart(entry.foreignPart); }}
+          >
+            <IoVolumeHigh />
+          </button>
           <div className="d-flex align-items-center flex-shrink-0 ms-auto">
             <span className="me-2">{t('known')}</span>
             <Form.Check
