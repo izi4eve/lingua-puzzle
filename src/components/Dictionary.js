@@ -114,11 +114,24 @@ const Dictionary = ({ show, onHide, data, onDataUpdate, setFirstElement, firstEl
             />
           </div>
         </div>
-        <div
+        {/* <div
           className="w-100 text-break"
           onClick={() => handleWordClick(originalIndex)}
         >
           {`${entry.foreignPart} = ${entry.translation} = ${entry.tipPart}`}
+        </div> */}
+        {/* <div className="w-100 text-break lh-1" onClick={() => handleWordClick(originalIndex)}>
+          <div className="dic-foreign">{entry.foreignPart}</div>
+          <div className="dic-translation">{entry.translation}</div>
+          <div className="dic-tip">{entry.tipPart}</div>
+        </div> */}
+        <div
+          className="w-100 lh-1"
+          onClick={() => handleWordClick(originalIndex)}
+        >
+          <span className='dic-foreign'>{entry.foreignPart}</span> 
+          <span className='dic-tip'> {entry.tipPart}</span> 
+          <span className='dic-translaiton'> {entry.translation}</span>          
         </div>
       </div>
     );

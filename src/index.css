@@ -159,6 +159,10 @@ code { font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', mon
   padding-bottom: .1rem;
 }
 
+.dic-foreign { font-weight: 900; }
+.dic-tip, .dic-translaiton {color: #aaa; font-style: italic;}
+.dic-tip {color: #d3d4d5;}
+
 /* Поддержка viewport-fit для iOS */
 @supports (padding: max(0px)) {
   .modal-fullscreen {
