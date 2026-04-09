@@ -178,6 +178,10 @@ const PlayerControls = () => {
                 <div className="d-flex">
                     <Form.Control
                         ref={typingInputRef}
+                        autoComplete="off"
+                        autoCorrect="off"
+                        autoCapitalize="none"
+                        spellCheck={false}
                         type="text"
                         value={typingValue}
                         onChange={handleTypingChange}
