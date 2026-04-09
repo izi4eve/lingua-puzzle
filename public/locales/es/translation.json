@@ -66,5 +66,6 @@
     "delay": "Retraso...",
     "tip-language": "Consejo",
     "default-voice": "Voz predeterminada",
-    "mute": "No reproducir audio"
+    "mute": "No reproducir audio",
+    "typing-drill-placeholder": "Reescribe el registro para recordarlo…"
 }

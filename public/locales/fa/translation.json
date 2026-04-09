@@ -62,5 +62,6 @@
     "delay": "تأخیر...",
     "tip-language": "نکته",
     "default-voice": "صدای پیش‌فرض",
-    "mute": "بدون صدا"
+    "mute": "بدون صدا",
+    "typing-drill-placeholder": "رکورد را بازنویسی کنید تا به خاطر بسپارید…"
 }

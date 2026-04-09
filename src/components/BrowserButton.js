@@ -49,6 +49,10 @@ const getEmbedUrl = (url) => {
   }
 };
 
+// ─── Высота нижней панели PlayerControls ───────────────────────────────────
+const PLAYER_PANEL_HEIGHT = 200; // px
+// ───────────────────────────────────────────────────────────────────────────
+
 const BrowserButton = ({
   link,
   buttonText,
@@ -185,7 +189,7 @@ const BrowserButton = ({
           <div 
             className="position-relative flex-grow-1" 
             style={{ 
-              height: 'calc(100% - 120px)',
+              height: `calc(100% - ${PLAYER_PANEL_HEIGHT}px)`,
               minHeight: 0 // Важно для правильной работы flex
             }}
           >
@@ -216,8 +220,8 @@ const BrowserButton = ({
           <div
             className="bg-white border-top p-2 align-items-center"
             style={{ 
-              height: '120px', 
-              minHeight: '120px',
+              height: `${PLAYER_PANEL_HEIGHT}px`, 
+              minHeight: `${PLAYER_PANEL_HEIGHT}px`,
               flexShrink: 0 // Предотвращает сжатие контейнера
             }}
           >
