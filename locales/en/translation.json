@@ -66,5 +66,6 @@
     "delay": "Delay...",
     "tip-language": "Tip",
     "default-voice": "Default voice",
-    "mute": "Do not voice"
+    "mute": "Do not voice",
+    "typing-drill-placeholder": "Rewrite the record to remember it…"
 }

@@ -66,5 +66,6 @@
     "delay": "Délai...",
     "tip-language": "Astuce",
     "default-voice": "Voix par défaut",
-    "mute": "Ne pas vocaliser"
+    "mute": "Ne pas vocaliser",
+    "typing-drill-placeholder": "Réécrivez l'enregistrement pour le mémoriser…"
 }

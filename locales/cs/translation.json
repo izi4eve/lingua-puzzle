@@ -62,5 +62,6 @@
     "delay": "Zpoždění...",
     "tip-language": "Nápověda",
     "default-voice": "Výchozí hlas",
-    "mute": "Neozvučovat"
+    "mute": "Neozvučovat",
+    "typing-drill-placeholder": "Přepište záznam, abyste si ho zapamatovali…"
 }

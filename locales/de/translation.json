@@ -66,5 +66,6 @@
     "delay": "Verzögerung...",
     "tip-language": "Hinweis",
     "default-voice": "Standardstimme",
-    "mute": "Nicht vorlesen"
+    "mute": "Nicht vorlesen",
+    "typing-drill-placeholder": "Schreiben Sie die Aufnahme ab, um sie sich zu merken…"
 }

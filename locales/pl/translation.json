@@ -62,5 +62,6 @@
     "delay": "Opóźnienie...",
     "tip-language": "Podpowiedź",
     "default-voice": "Domyślny głos",
-    "mute": "Nie odtwarzaj dźwięku"
+    "mute": "Nie odtwarzaj dźwięku",
+    "typing-drill-placeholder": "Przepisz nagranie, aby je zapamiętać…"
 }

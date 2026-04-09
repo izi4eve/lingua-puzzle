@@ -62,5 +62,6 @@
     "delay": "Kašnjenje...",
     "tip-language": "Savjet",
     "default-voice": "Podrazumevani glas",
-    "mute": "Ne ozvučavaj"
+    "mute": "Ne ozvučavaj",
+    "typing-drill-placeholder": "Prepiši zapis da ga zapamtiš…"
 }

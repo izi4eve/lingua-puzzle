@@ -66,5 +66,6 @@
     "delay": "Ritardo...",
     "tip-language": "Suggerimento",
     "default-voice": "Voce predefinita",
-    "mute": "Non vocalizzare"
+    "mute": "Non vocalizzare",
+    "typing-drill-placeholder": "Riscrivi il record per memorizzarlo…"
 }

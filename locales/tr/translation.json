@@ -62,5 +62,6 @@
     "delay": "Gecikme...",
     "tip-language": "İpucu",
     "default-voice": "Varsayılan ses",
-    "mute": "Seslendirme"
+    "mute": "Seslendirme",
+    "typing-drill-placeholder": "Kaydı yeniden yaz ki aklında kalsın…"
 }

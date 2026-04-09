@@ -62,5 +62,6 @@
     "delay": "تأخير...",
     "tip-language": "تلميح",
     "default-voice": "الصوت الافتراضي",
-    "mute": "عدم النطق"
+    "mute": "عدم النطق",
+    "typing-drill-placeholder": "أعد كتابة التسجيل لتتذكره…"
 }
