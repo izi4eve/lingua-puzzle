@@ -164,20 +164,14 @@ const BrowserButton = ({
         dialogClassName="m-0"
         contentClassName="p-0"
         style={{
-          // Заливка для области за пределами безопасной зоны
           background: '#000',
-          // Используем dvh (dynamic viewport height) для корректной работы с iOS
-          height: '100dvh',
-          maxHeight: '100dvh'
         }}
       >
         <Modal.Body 
           className="p-0 position-relative d-flex flex-column"
           style={{
-            // Основной контейнер занимает всю безопасную зону
             height: '100dvh',
             maxHeight: '100dvh',
-            // Отступы для безопасных зон (notch, home indicator)
             paddingTop: 'env(safe-area-inset-top)',
             paddingBottom: 'env(safe-area-inset-bottom)',
             paddingLeft: 'env(safe-area-inset-left)',
@@ -185,12 +179,12 @@ const BrowserButton = ({
             background: '#ffffff'
           }}
         >
-          {/* Контейнер для iframe - занимает всё доступное место минус высота PlayerControls */}
+          {/* Контейнер для iframe - занимает всё доступное место через flex */}
           <div 
-            className="position-relative flex-grow-1" 
+            className="position-relative" 
             style={{ 
-              height: `calc(100% - ${PLAYER_PANEL_HEIGHT}px)`,
-              minHeight: 0 // Важно для правильной работы flex
+              flex: 1,
+              minHeight: 0,
             }}
           >
             {iframeError ? (
@@ -256,7 +250,7 @@ const BrowserButton = ({
             aria-label="Close modal"
             style={{
               position: 'absolute',
-              top: 'calc(env(safe-area-inset-top) + 10px)', // Отступ от безопасной зоны
+              top: 'calc(env(safe-area-inset-top) - 10px)', // Отступ от безопасной зоны
               right: 'calc(env(safe-area-inset-right) + 10px)', // Отступ от безопасной зоны
               background: '#ffc800',
               color: 'white',

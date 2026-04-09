@@ -178,11 +178,14 @@ const PlayerControls = () => {
                 <div className="d-flex">
                     <Form.Control
                         ref={typingInputRef}
+                        type="text"
+                        inputMode="text"
                         autoComplete="off"
                         autoCorrect="off"
                         autoCapitalize="none"
                         spellCheck={false}
-                        type="text"
+                        data-form-type="other"
+                        data-lpignore="true"
                         value={typingValue}
                         onChange={handleTypingChange}
                         onKeyDown={handleTypingKeyDown}
