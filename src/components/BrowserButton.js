@@ -85,6 +85,16 @@ const BrowserButton = ({
   const [iframeError, setIframeError] = useState(false);
   const [inputUrl, setInputUrl] = useState('');
   const [embedUrl, setEmbedUrl] = useState(null);
+  const [visibleHeight, setVisibleHeight] = useState(window.visualViewport?.height ?? window.innerHeight);
+
+  // Отслеживаем реальную видимую высоту — уменьшается когда появляется клавиатура
+  useEffect(() => {
+    const viewport = window.visualViewport;
+    if (!viewport) return;
+    const handleResize = () => setVisibleHeight(viewport.height);
+    viewport.addEventListener('resize', handleResize);
+    return () => viewport.removeEventListener('resize', handleResize);
+  }, []);
 
   // Проверка поддержки Web Speech API
   useEffect(() => {
@@ -170,8 +180,8 @@ const BrowserButton = ({
         <Modal.Body 
           className="p-0 position-relative d-flex flex-column"
           style={{
-            height: '100dvh',
-            maxHeight: '100dvh',
+            height: `${visibleHeight}px`,
+            maxHeight: `${visibleHeight}px`,
             paddingTop: 'env(safe-area-inset-top)',
             paddingBottom: 'env(safe-area-inset-bottom)',
             paddingLeft: 'env(safe-area-inset-left)',
