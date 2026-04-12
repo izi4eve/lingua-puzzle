@@ -571,7 +571,7 @@ tatsächlich = действительно
 toll = классный; большой = 
 verwenden — verwendet — verwendet = использовать
 wann = когда = 
-weder … noch … = ни то …, ни это …
+weder ... noch ... = ни то ..., ни это ...
 wohin = куда = 
 zwar = хотя; правда
 ärgern sich — ärgert — geärgert — ärgerte = сердиться
@@ -878,8 +878,8 @@ schreien — schreit — geschrien — schrie = кричать
 schriftlich = письменный
 seitdem = с тех пор
 selten — seltener — am seltensten = редкий
-sowohl … als auch … = и …, и …
-nicht nur …, sondern auch … = не только …, но и …
+sowohl ... als auch ... = и ..., и ...
+nicht nur ..., sondern auch ... = не только ..., но и ...
 sperren — sperrt — gesperrt = запирать; блокировать
 stattfinden — findet statt — stattgefunden — fand statt = происходить
 treten — tritt — getreten — trat = наступать; пинать
@@ -1116,8 +1116,8 @@ empfehlen — empfiehlt — empfohlen — empfahl = рекомендовать
 entgegen (Dativ) = навстречу; против; вопреки
 entschließen sich — entschließt — entschlossen — entschloss = решиться
 entschließen sich zu (Dativ) = решиться на
-entweder … oder … = или …, или … (строго одно)
-ob … oder … = или …, или … (безразличие)
+entweder ... oder ... = или ..., или ... (строго одно)
+ob ... oder ... = или ..., или ... (безразличие)
 erblich = наследственный
 erholen — erholt — erholt = отдыхать
 erstellen — erstellt — erstellt = создавать (отчёт, план)

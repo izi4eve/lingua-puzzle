@@ -1206,7 +1206,7 @@ er verwendet = he uses = он использует
 ich habe das verwendet = I have used that = я использовал это
 ich verwendete das = I used that = я использовал это
 wann = when = когда
-weder … noch … = neither … nor … = ни … ни …
+weder ... noch ... = neither ... nor ... = ни ... ни ...
 wohin = where to = куда
 zwar = indeed; certainly; though = действительно; однако
 sich ärgern über = to be annoyed about = сердиться на
@@ -1850,8 +1850,8 @@ ich schrie laut = I shouted loudly = я кричал громко
 schriftlich = written = письменный
 seitdem = since then = с тех пор
 selten = rare; seldom = редко
-sowohl … als auch … = both … and … = как … так и …
-nicht nur …, sondern auch … = not only … but also … = не только …, но и …
+sowohl ... als auch ... = both ... and ... = как ... так и ...
+nicht nur ..., sondern auch ... = not only ... but also ... = не только ..., но и ...
 zu sperren = to block = блокировать
 er sperrt = he blocks = он блокирует
 ich habe die Straße gesperrt = I have blocked the street = я заблокировал улицу
@@ -2337,8 +2337,8 @@ zu entschließen = to decide = решаться
 er entschließt sich = he decides = он решается
 ich habe mich entschlossen = I have decided = я решился
 ich entschloss mich = I decided = я решался
-entweder … oder … = either … or … = либо … либо …
-ob … oder … = whether … or … = ли … или …
+entweder ... oder ... = either ... or ... = либо ... либо ...
+ob ... oder ... = whether ... or ... = ли ... или ...
 erblich = hereditary = наследственный
 zu erholen = to recover; relax = отдыхать
 er erholt sich = he recovers = он отдыхает
@@ -4252,7 +4252,7 @@ sich erkundigen bei (Dativ) = to inquire at; with = осведомляться �
 er erkundigt sich bei der Lehrerin = he inquires at the teacher = он спрашивает у учителя
 ich habe mich bei der Lehrerin erkundigt = I have inquired at the teacher = я спросил у учителя
 ich erkundigte mich bei der Lehrerin = I inquired at the teacher = я спрашивал у учителя
-sich unterscheiden in (Dativ) von (Dativ) = to differ in … from … = различаться в … от …
+sich unterscheiden in (Dativ) von (Dativ) = to differ in ... from ... = различаться в ... от ...
 er unterscheidet sich in Farbe von ihrem Kleid = he differs in color from her dress = он отличается цветом от её платья
 ich habe mich in den Eigenschaften von dir unterschieden = I have differed in qualities from you = я отличался по качествам от тебя
 ich unterschied mich in der Meinung von ihm = I differed in opinion from him = я отличался во мнении от него
@@ -4272,7 +4272,7 @@ sich wundern über (Akkusativ) = to wonder about = удивляться
 er wundert sich über das Ergebnis = he wonders about the result = он удивляется результату
 ich habe mich darüber gewundert = I have wondered about that = я удивился этому
 ich wunderte mich darüber = I wondered about that = я удивлялся этому
-das Heimweh nach (Dativ) = homesickness for = тоска по дому; по …
+das Heimweh nach (Dativ) = homesickness for = тоска по дому; по ...
 Heimweh = homesickness = тоска по дому
 die Bereitschaft zu (Dativ) = willingness to = готовность к
 Bereitschaften = willingness (plural) = готовности
