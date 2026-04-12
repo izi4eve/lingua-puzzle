@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.639ca793.css",
-    "main.js": "./static/js/main.08ceb378.js",
+    "main.js": "./static/js/main.3bec7caf.js",
     "static/js/453.30a07008.chunk.js": "./static/js/453.30a07008.chunk.js",
     "static/media/DE-EN-RU_B1-Book.txt": "./static/media/DE-EN-RU_B1-Book.20dba47ea0a6b030b6d4.txt",
     "static/media/DE-EN-RU_B2-Beruf-Test-My.txt": "./static/media/DE-EN-RU_B2-Beruf-Test-My.e9dfdab109b3fce734b1.txt",
@@ -25,17 +25,17 @@
     "static/media/DE-AR_80pct.txt": "./static/media/DE-AR_80pct.e2c35aeb8644d38a6f50.txt",
     "static/media/DE-EN_80pct.txt": "./static/media/DE-EN_80pct.678b2c6a6d5a77223172.txt",
     "static/media/DE-TR_80pct.txt": "./static/media/DE-TR_80pct.abd4da3d7109935d19d0.txt",
-    "static/media/DE-EN-RU_3reps-1subs.txt": "./static/media/DE-EN-RU_3reps-1subs.95c41184d718b38567f3.txt",
+    "static/media/DE-EN-RU_3reps-1subs.txt": "./static/media/DE-EN-RU_3reps-1subs.099560f4bb8221136d46.txt",
     "static/media/EN-RU_idioms.txt": "./static/media/EN-RU_idioms.0780efb44112a3e3f43b.txt",
     "index.html": "./index.html",
     "static/media/getFetch.cjs": "./static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
     "static/media/Empty.txt": "./static/media/Empty.e949653f00becc0dfbbd.txt",
     "main.639ca793.css.map": "./static/css/main.639ca793.css.map",
-    "main.08ceb378.js.map": "./static/js/main.08ceb378.js.map",
+    "main.3bec7caf.js.map": "./static/js/main.3bec7caf.js.map",
     "453.30a07008.chunk.js.map": "./static/js/453.30a07008.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.639ca793.css",
-    "static/js/main.08ceb378.js"
+    "static/js/main.3bec7caf.js"
   ]
 }
