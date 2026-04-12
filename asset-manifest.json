@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "./static/css/main.639ca793.css",
-    "main.js": "./static/js/main.7a344f70.js",
+    "main.js": "./static/js/main.ac988ab7.js",
     "static/js/453.30a07008.chunk.js": "./static/js/453.30a07008.chunk.js",
     "static/media/DE-EN-RU_B1-Book.txt": "./static/media/DE-EN-RU_B1-Book.01e4cce01947beb41dd4.txt",
-    "static/media/DE-EN-RU_B2-Beruf-Prüfung-Sentences.txt": "./static/media/DE-EN-RU_B2-Beruf-Prüfung-Sentences.94c45dafaa6304f56118.txt",
-    "static/media/DE-EN-RU_B2-Beruf-Prüfung.txt": "./static/media/DE-EN-RU_B2-Beruf-Prüfung.4e05a691c4adc8572bf8.txt",
+    "static/media/DE-EN-RU_B2-Beruf-Test-My.txt": "./static/media/DE-EN-RU_B2-Beruf-Test-My.94c45dafaa6304f56118.txt",
+    "static/media/DE-EN-RU_B2-Beruf-Test.txt": "./static/media/DE-EN-RU_B2-Beruf-Test.ef68d96752c4b086a4b5.txt",
+    "static/media/DE-EN-RU_B2-Beruf-Test-Sentences.txt": "./static/media/DE-EN-RU_B2-Beruf-Test-Sentences.e0d281df29a77ac38e16.txt",
     "static/media/DE-RU_B1-B2-my-C1.txt": "./static/media/DE-RU_B1-B2-my-C1.70abd20f2725bd46dbe5.txt",
     "static/media/DE-EN-RU-B2.txt": "./static/media/DE-EN-RU-B2.432918e2eb186824a7c5.txt",
     "static/media/DE-EN-RU_Alltag.txt": "./static/media/DE-EN-RU_Alltag.b5c1eb831dd959e402f8.txt",
@@ -24,17 +25,17 @@
     "static/media/DE-AR_80pct.txt": "./static/media/DE-AR_80pct.e2c35aeb8644d38a6f50.txt",
     "static/media/DE-EN_80pct.txt": "./static/media/DE-EN_80pct.678b2c6a6d5a77223172.txt",
     "static/media/DE-TR_80pct.txt": "./static/media/DE-TR_80pct.abd4da3d7109935d19d0.txt",
+    "static/media/DE-EN-RU_3reps-1subs.txt": "./static/media/DE-EN-RU_3reps-1subs.95c41184d718b38567f3.txt",
     "static/media/EN-RU_idioms.txt": "./static/media/EN-RU_idioms.87803978ad40b57fd864.txt",
-    "static/media/EN-RU_my.txt": "./static/media/EN-RU_my.9a1aefbe762d0e095dea.txt",
     "index.html": "./index.html",
     "static/media/getFetch.cjs": "./static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
     "static/media/Empty.txt": "./static/media/Empty.e949653f00becc0dfbbd.txt",
     "main.639ca793.css.map": "./static/css/main.639ca793.css.map",
-    "main.7a344f70.js.map": "./static/js/main.7a344f70.js.map",
+    "main.ac988ab7.js.map": "./static/js/main.ac988ab7.js.map",
     "453.30a07008.chunk.js.map": "./static/js/453.30a07008.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.639ca793.css",
-    "static/js/main.7a344f70.js"
+    "static/js/main.ac988ab7.js"
   ]
 }
