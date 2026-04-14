@@ -223,7 +223,34 @@ export const PlayerProvider = ({
             };
 
             if (tipPart) {
-                // Если есть tip, читаем: tip > foreign > translation
+                // Если есть tip, читаем: foreign > translation > tip
+                if (!shouldContinue()) {
+                    dispatch({ type: 'SET_READING_SINGLE', payload: false });
+                    return;
+                }
+
+                if (foreignLanguage !== 'none') {
+                    await playAudio(foreignPart, foreignLanguage, true, selectedVoiceForeign, sessionToken);
+                }
+
+                if (!shouldContinue()) {
+                    dispatch({ type: 'SET_READING_SINGLE', payload: false });
+                    return;
+                }
+
+                await new Promise(resolve => setTimeout(resolve, 200));
+
+                if (!shouldContinue()) {
+                    dispatch({ type: 'SET_READING_SINGLE', payload: false });
+                    return;
+                }
+
+                if (translationLanguage !== 'none') {
+                    await playAudio(translation, translationLanguage, true, selectedVoiceTranslation, sessionToken);
+                }
+
+                await new Promise(resolve => setTimeout(resolve, 200));
+
                 if (tipLanguage !== 'none') {
                     await playAudio(tipPart, tipLanguage, true, selectedVoiceTip, sessionToken);
                 }
@@ -232,46 +259,8 @@ export const PlayerProvider = ({
                     dispatch({ type: 'SET_READING_SINGLE', payload: false });
                     return;
                 }
-
-                await new Promise(resolve => setTimeout(resolve, 100));
-
-                if (!shouldContinue()) {
-                    dispatch({ type: 'SET_READING_SINGLE', payload: false });
-                    return;
-                }
-
-                if (foreignLanguage !== 'none') {
-                    await playAudio(foreignPart, foreignLanguage, true, selectedVoiceForeign, sessionToken);
-                }
-
-                if (!shouldContinue()) {
-                    dispatch({ type: 'SET_READING_SINGLE', payload: false });
-                    return;
-                }
-
-                await new Promise(resolve => setTimeout(resolve, 100));
-
-                if (!shouldContinue()) {
-                    dispatch({ type: 'SET_READING_SINGLE', payload: false });
-                    return;
-                }
-
-                if (translationLanguage !== 'none') {
-                    await playAudio(translation, translationLanguage, true, selectedVoiceTranslation, sessionToken);
-                }
             } else {
-                // Если tip пуст, читаем: translation > foreign
-                if (translationLanguage !== 'none') {
-                    await playAudio(translation, translationLanguage, true, selectedVoiceTranslation, sessionToken);
-                }
-
-                if (!shouldContinue()) {
-                    dispatch({ type: 'SET_READING_SINGLE', payload: false });
-                    return;
-                }
-
-                await new Promise(resolve => setTimeout(resolve, 100));
-
+                // Если tip пуст, читаем: foreign > translation
                 if (!shouldContinue()) {
                     dispatch({ type: 'SET_READING_SINGLE', payload: false });
                     return;
@@ -279,6 +268,17 @@ export const PlayerProvider = ({
 
                 if (foreignLanguage !== 'none') {
                     await playAudio(foreignPart, foreignLanguage, true, selectedVoiceForeign, sessionToken);
+                }
+
+                await new Promise(resolve => setTimeout(resolve, 200));
+
+                if (translationLanguage !== 'none') {
+                    await playAudio(translation, translationLanguage, true, selectedVoiceTranslation, sessionToken);
+                }
+
+                if (!shouldContinue()) {
+                    dispatch({ type: 'SET_READING_SINGLE', payload: false });
+                    return;
                 }
             }
 
@@ -390,7 +390,43 @@ export const PlayerProvider = ({
             }
 
             if (tipPart) {
-                // Если есть tip, читаем: tip > foreign > translation
+                // Если есть tip, читаем: foreign > translation > tip
+                if (!shouldContinue()) {
+                    dispatch({ type: 'SET_SPEAKING', payload: false });
+                    isPlayingRef.current = false;
+                    return;
+                }
+
+                if (foreignLanguage !== 'none') {
+                    await playAudio(foreignPart, foreignLanguage, true, selectedVoiceForeign);
+                }
+
+                if (!shouldContinue()) {
+                    dispatch({ type: 'SET_SPEAKING', payload: false });
+                    isPlayingRef.current = false;
+                    return;
+                }
+
+                await new Promise(resolve => setTimeout(resolve, 200));
+
+                if (!shouldContinue()) {
+                    dispatch({ type: 'SET_SPEAKING', payload: false });
+                    isPlayingRef.current = false;
+                    return;
+                }
+
+                if (translationLanguage !== 'none') {
+                    await playAudio(translation, translationLanguage, true, selectedVoiceTranslation);
+                }
+
+                if (!shouldContinue()) {
+                    dispatch({ type: 'SET_SPEAKING', payload: false });
+                    isPlayingRef.current = false;
+                    return;
+                }
+
+                await new Promise(resolve => setTimeout(resolve, 200));
+
                 if (tipLanguage !== 'none') {
                     await playAudio(tipPart, tipLanguage, true, selectedVoiceTip);
                 }
@@ -400,56 +436,8 @@ export const PlayerProvider = ({
                     isPlayingRef.current = false;
                     return;
                 }
-
-                await new Promise(resolve => setTimeout(resolve, 100));
-
-                if (!shouldContinue()) {
-                    dispatch({ type: 'SET_SPEAKING', payload: false });
-                    isPlayingRef.current = false;
-                    return;
-                }
-
-                if (foreignLanguage !== 'none') {
-                    await playAudio(foreignPart, foreignLanguage, true, selectedVoiceForeign);
-                }
-
-                if (!shouldContinue()) {
-                    dispatch({ type: 'SET_SPEAKING', payload: false });
-                    isPlayingRef.current = false;
-                    return;
-                }
-
-                await new Promise(resolve => setTimeout(resolve, 100));
-
-                if (!shouldContinue()) {
-                    dispatch({ type: 'SET_SPEAKING', payload: false });
-                    isPlayingRef.current = false;
-                    return;
-                }
-
-                if (translationLanguage !== 'none') {
-                    await playAudio(translation, translationLanguage, true, selectedVoiceTranslation);
-                }
-
-                if (!shouldContinue()) {
-                    dispatch({ type: 'SET_SPEAKING', payload: false });
-                    isPlayingRef.current = false;
-                    return;
-                }
             } else {
-                // Если tip пуст, читаем: translation > foreign
-                if (translationLanguage !== 'none') {
-                    await playAudio(translation, translationLanguage, true, selectedVoiceTranslation);
-                }
-
-                if (!shouldContinue()) {
-                    dispatch({ type: 'SET_SPEAKING', payload: false });
-                    isPlayingRef.current = false;
-                    return;
-                }
-
-                await new Promise(resolve => setTimeout(resolve, 100));
-
+                // Если tip пуст, читаем: foreign > translation
                 if (!shouldContinue()) {
                     dispatch({ type: 'SET_SPEAKING', payload: false });
                     isPlayingRef.current = false;
@@ -458,6 +446,18 @@ export const PlayerProvider = ({
 
                 if (foreignLanguage !== 'none') {
                     await playAudio(foreignPart, foreignLanguage, true, selectedVoiceForeign);
+                }
+
+                if (!shouldContinue()) {
+                    dispatch({ type: 'SET_SPEAKING', payload: false });
+                    isPlayingRef.current = false;
+                    return;
+                }
+
+                await new Promise(resolve => setTimeout(resolve, 200));
+
+                if (translationLanguage !== 'none') {
+                    await playAudio(translation, translationLanguage, true, selectedVoiceTranslation);
                 }
 
                 if (!shouldContinue()) {
