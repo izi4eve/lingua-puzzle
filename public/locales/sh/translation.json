@@ -63,5 +63,6 @@
     "tip-language": "Savjet",
     "default-voice": "Podrazumevani glas",
     "mute": "Ne ozvučavaj",
-    "typing-drill-placeholder": "Prepiši zapis da ga zapamtiš…"
+    "typing-drill-placeholder": "Prepiši zapis da ga zapamtiš…",
+    "typing-drill-show-hint": "Kliknite ovde ili pritisnite → da otkrijete"
 }

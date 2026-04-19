@@ -38,6 +38,10 @@ const PlayerControls = () => {
     const [typingValue, setTypingValue] = useState('');
     const [typingHasError, setTypingHasError] = useState(false);
 
+    // ── Overlay (скрытие эталона во время набора) ────────────────────────────
+    // true = оверлей видим (пользователь ещё не раскрыл его)
+    const [overlayVisible, setOverlayVisible] = useState(false);
+
     // Строка-эталон для текущей записи
     const getTargetString = useCallback(() => {
         if (!currentEntry) return '';
@@ -46,42 +50,65 @@ const PlayerControls = () => {
         return parts.join(' = ');
     }, [currentEntry]);
 
-    // Сброс поля при смене записи
+    // Сброс поля при смене записи — фокус НЕ ставим автоматически
     useEffect(() => {
         setTypingValue('');
         setTypingHasError(false);
-        // Небольшая задержка, чтобы DOM успел обновиться
-        setTimeout(() => typingInputRef.current?.focus(), 50);
+        setOverlayVisible(false); // при смене записи оверлей скрыт до начала набора
     }, [currentEntry]);
 
     const handleTypingChange = (e) => {
         const value = e.target.value;
         const target = getTargetString();
-        // Проверяем только введённую часть — ошибка если хоть один символ не совпадает
         const hasError = value.split('').some((char, i) => char !== target[i]);
         setTypingValue(value);
         setTypingHasError(hasError);
+
+        // Как только пользователь начал вводить — показываем оверлей
+        if (value.length > 0) {
+            setOverlayVisible(true);
+        } else {
+            setOverlayVisible(false);
+        }
     };
 
-    const handleTypingSubmit = () => {
-        handleToggleReadSingle(); // Читаем текущую запись
-        handleNext();             // Переход к следующей (currentEntry сменится → useEffect сбросит поле)
+    // Скрыть оверлей (по клику или по стрелке вправо)
+    const handleRevealOverlay = () => {
+        setOverlayVisible(false);
     };
 
+    // Обработчик клавиш в поле ввода
     const handleTypingKeyDown = (e) => {
         if (e.key === 'Enter') {
             e.preventDefault();
-            handleTypingSubmit();
+            handleTypingSubmitWithFocus();
         }
+        // Стрелка вправо скрывает оверлей, только если он видим
+        // (не мешаем стандартному поведению курсора внутри текста)
+        if (e.key === 'ArrowRight' && overlayVisible) {
+            e.preventDefault();
+            handleRevealOverlay();
+        }
+    };
+
+    // Submit с явным фокусом — вызывается только из поля/кнопки рядом
+    const handleTypingSubmitWithFocus = () => {
+        handleToggleReadSingle();
+        handleNext();
+        // Ставим фокус явно — пользователь инициировал действие из поля ввода
+        setTimeout(() => typingInputRef.current?.focus(), 50);
+    };
+
+    // Клик по кнопке → справа от поля
+    const handleSubmitButtonClick = () => {
+        handleTypingSubmitWithFocus();
     };
     // ────────────────────────────────────────────────────────────────────────
 
     // Автоматическая постановка на паузу при монтировании компонента
     useEffect(() => {
         if (isFirstRender.current && playerState.isPlaying) {
-            // Останавливаем воспроизведение при создании нового экземпляра
             dispatch({ type: 'SET_PLAYING', payload: false });
-            // Также можно вызвать полную остановку
             window.speechSynthesis.cancel();
         }
         isFirstRender.current = false;
@@ -89,37 +116,27 @@ const PlayerControls = () => {
 
     // Обёртки для кнопок с автоматической паузой
     const handleEditClickWithPause = () => {
-        if (playerState.isPlaying) {
-            handlePlayPause(); // Ставим на паузу
-        }
+        if (playerState.isPlaying) handlePlayPause();
         handleEditClick();
     };
 
     const handleMarkAsLearnedWithPause = () => {
-        if (playerState.isPlaying) {
-            handlePlayPause(); // Ставим на паузу
-        }
+        if (playerState.isPlaying) handlePlayPause();
         handleMarkAsLearned();
     };
 
     const handleGoToFirstWithPause = () => {
-        if (playerState.isPlaying) {
-            handlePlayPause(); // Ставим на паузу
-        }
+        if (playerState.isPlaying) handlePlayPause();
         handleGoToFirst();
     };
 
     const handlePrevWithPause = () => {
-        if (playerState.isPlaying) {
-            handlePlayPause(); // Ставим на паузу
-        }
+        if (playerState.isPlaying) handlePlayPause();
         handlePrev();
     };
 
     const handleNextWithPause = () => {
-        if (playerState.isPlaying) {
-            handlePlayPause(); // Ставим на паузу
-        }
+        if (playerState.isPlaying) handlePlayPause();
         handleNext();
     };
 
@@ -159,7 +176,8 @@ const PlayerControls = () => {
                 </button>
             </div>
 
-            <div className="mt-2 lh-sm text-center w-100">
+            {/* Контейнер с эталоном + оверлей */}
+            <div className="mt-2 lh-sm text-center w-100" style={{ position: 'relative' }}>
                 {filteredData.length > 0 && currentEntry && (
                     <div>
                         <p className="fs-6 fw-bold pt-1">
@@ -170,6 +188,29 @@ const PlayerControls = () => {
                                 <span className="tip-part"> = {currentEntry.tipPart}</span>
                             )}
                         </p>
+                    </div>
+                )}
+
+                {/* Оверлей — появляется поверх эталона во время набора */}
+                {overlayVisible && (
+                    <div
+                        onClick={handleRevealOverlay}
+                        style={{
+                            position: 'absolute',
+                            inset: 0,
+                            backgroundColor: 'rgba(255, 255, 255, 0.88)',
+                            backdropFilter: 'blur(2px)',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            cursor: 'pointer',
+                            borderRadius: '0.375rem',
+                            userSelect: 'none',
+                        }}
+                    >
+                        <span style={{ fontSize: '0.8rem', color: '#555', fontWeight: 500 }}>
+                            {t('typing-drill-show-hint')}
+                        </span>
                     </div>
                 )}
             </div>
@@ -201,7 +242,7 @@ const PlayerControls = () => {
                     <Button
                         variant="outline-dark"
                         className="rounded-end-pill px-3"
-                        onClick={handleTypingSubmit}
+                        onClick={handleSubmitButtonClick}
                         style={{ borderLeft: 'none' }}
                     >
                         <FaArrowRight />

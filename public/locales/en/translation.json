@@ -67,5 +67,6 @@
     "tip-language": "Tip",
     "default-voice": "Default voice",
     "mute": "Do not voice",
-    "typing-drill-placeholder": "Rewrite the record to remember it…"
+    "typing-drill-placeholder": "Rewrite the record to remember it…",
+    "typing-drill-show-hint": "Click here or press → to reveal"
 }

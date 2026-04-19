@@ -63,5 +63,6 @@
     "tip-language": "Podpowiedź",
     "default-voice": "Domyślny głos",
     "mute": "Nie odtwarzaj dźwięku",
-    "typing-drill-placeholder": "Przepisz nagranie, aby je zapamiętać…"
+    "typing-drill-placeholder": "Przepisz nagranie, aby je zapamiętać…",
+    "typing-drill-show-hint": "Kliknij tutaj lub naciśnij → aby odsłonić"
 }

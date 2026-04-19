@@ -63,5 +63,6 @@
     "tip-language": "Nápověda",
     "default-voice": "Výchozí hlas",
     "mute": "Neozvučovat",
-    "typing-drill-placeholder": "Přepište záznam, abyste si ho zapamatovali…"
+    "typing-drill-placeholder": "Přepište záznam, abyste si ho zapamatovali…",
+    "typing-drill-show-hint": "Klikněte zde nebo stiskněte → pro odhalení"
 }

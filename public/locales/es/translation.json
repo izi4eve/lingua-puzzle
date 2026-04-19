@@ -67,5 +67,6 @@
     "tip-language": "Consejo",
     "default-voice": "Voz predeterminada",
     "mute": "No reproducir audio",
-    "typing-drill-placeholder": "Reescribe el registro para recordarlo…"
+    "typing-drill-placeholder": "Reescribe el registro para recordarlo…",
+    "typing-drill-show-hint": "Haz clic aquí o presiona → para revelar"
 }

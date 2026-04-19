@@ -67,5 +67,6 @@
     "tip-language": "Подсказка",
     "default-voice": "Голос по умолчанию",
     "mute": "Не озвучивать",
-    "typing-drill-placeholder": "Перепиши запись, чтобы запомнить…"
+    "typing-drill-placeholder": "Перепиши запись, чтобы запомнить…",
+    "typing-drill-show-hint": "Нажмите здесь или нажмите → для показа"
 }

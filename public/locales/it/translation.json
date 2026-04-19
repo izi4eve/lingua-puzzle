@@ -67,5 +67,6 @@
     "tip-language": "Suggerimento",
     "default-voice": "Voce predefinita",
     "mute": "Non vocalizzare",
-    "typing-drill-placeholder": "Riscrivi il record per memorizzarlo…"
+    "typing-drill-placeholder": "Riscrivi il record per memorizzarlo…",
+    "typing-drill-show-hint": "Clicca qui o premi → per rivelare"
 }
