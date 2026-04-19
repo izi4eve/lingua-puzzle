@@ -63,5 +63,6 @@
     "tip-language": "تلميح",
     "default-voice": "الصوت الافتراضي",
     "mute": "عدم النطق",
-    "typing-drill-placeholder": "أعد كتابة التسجيل لتتذكره…"
+    "typing-drill-placeholder": "أعد كتابة التسجيل لتتذكره…",
+    "typing-drill-show-hint": "انقر هنا أو اضغط على → للكشف"
 }

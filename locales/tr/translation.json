@@ -63,5 +63,6 @@
     "tip-language": "İpucu",
     "default-voice": "Varsayılan ses",
     "mute": "Seslendirme",
-    "typing-drill-placeholder": "Kaydı yeniden yaz ki aklında kalsın…"
+    "typing-drill-placeholder": "Kaydı yeniden yaz ki aklında kalsın…",
+    "typing-drill-show-hint": "Buraya tıklayın veya → tuşuna basın để ortaya çıkarmak"
 }

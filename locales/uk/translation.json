@@ -67,5 +67,6 @@
     "tip-language": "Підказка",
     "default-voice": "Голос за замовчуванням",
     "mute": "Не озвучувати",
-    "typing-drill-placeholder": "Перепиши запис, щоб запам’ятати…"
+    "typing-drill-placeholder": "Перепиши запис, щоб запам’ятати…",
+    "typing-drill-show-hint": "Натисніть тут або натисніть → щоб показати"
 }

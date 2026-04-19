@@ -67,5 +67,6 @@
     "tip-language": "Hinweis",
     "default-voice": "Standardstimme",
     "mute": "Nicht vorlesen",
-    "typing-drill-placeholder": "Schreiben Sie die Aufnahme ab, um sie sich zu merken…"
+    "typing-drill-placeholder": "Schreiben Sie die Aufnahme ab, um sie sich zu merken…",
+    "typing-drill-show-hint": "Klicken Sie hier oder drücken Sie → zum Aufdecken"
 }

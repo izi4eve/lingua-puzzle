@@ -67,5 +67,6 @@
     "tip-language": "Astuce",
     "default-voice": "Voix par défaut",
     "mute": "Ne pas vocaliser",
-    "typing-drill-placeholder": "Réécrivez l'enregistrement pour le mémoriser…"
+    "typing-drill-placeholder": "Réécrivez l'enregistrement pour le mémoriser…",
+    "typing-drill-show-hint": "Cliquez ici ou appuyez sur → pour révéler"
 }

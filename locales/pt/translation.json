@@ -63,5 +63,6 @@
     "tip-language": "Dica",
     "default-voice": "Voz padrão",
     "mute": "Não vocalizar",
-    "typing-drill-placeholder": "Reescreva o registro para memorizá-lo…"
+    "typing-drill-placeholder": "Reescreva o registro para memorizá-lo…",
+    "typing-drill-show-hint": "Clique aqui ou pressione → para revelar"
 }
