@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.639ca793.css",
-    "main.js": "./static/js/main.a292072f.js",
+    "main.js": "./static/js/main.ae0f832e.js",
     "static/js/453.30a07008.chunk.js": "./static/js/453.30a07008.chunk.js",
     "static/media/DE-EN-RU_B1-Book.txt": "./static/media/DE-EN-RU_B1-Book.20dba47ea0a6b030b6d4.txt",
     "static/media/DE-EN-RU_B2-Beruf-Test.txt": "./static/media/DE-EN-RU_B2-Beruf-Test.ef68d96752c4b086a4b5.txt",
@@ -27,15 +27,16 @@
     "static/media/DE-TR_80pct.txt": "./static/media/DE-TR_80pct.abd4da3d7109935d19d0.txt",
     "static/media/DE-EN-RU_3reps-1subs.txt": "./static/media/DE-EN-RU_3reps-1subs.099560f4bb8221136d46.txt",
     "static/media/EN-RU_idioms.txt": "./static/media/EN-RU_idioms.0780efb44112a3e3f43b.txt",
+    "static/media/DE-EN-RU_example.txt": "./static/media/DE-EN-RU_example.9828878e1f44840ef879.txt",
     "index.html": "./index.html",
     "static/media/getFetch.cjs": "./static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
     "static/media/Empty.txt": "./static/media/Empty.e949653f00becc0dfbbd.txt",
     "main.639ca793.css.map": "./static/css/main.639ca793.css.map",
-    "main.a292072f.js.map": "./static/js/main.a292072f.js.map",
+    "main.ae0f832e.js.map": "./static/js/main.ae0f832e.js.map",
     "453.30a07008.chunk.js.map": "./static/js/453.30a07008.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.639ca793.css",
-    "static/js/main.a292072f.js"
+    "static/js/main.ae0f832e.js"
   ]
 }
