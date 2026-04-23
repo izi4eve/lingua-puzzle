@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "./static/css/main.639ca793.css",
-    "main.js": "./static/js/main.ae0f832e.js",
+    "main.js": "./static/js/main.d5e011e5.js",
     "static/js/453.30a07008.chunk.js": "./static/js/453.30a07008.chunk.js",
     "static/media/DE-EN-RU_B1-Book.txt": "./static/media/DE-EN-RU_B1-Book.20dba47ea0a6b030b6d4.txt",
-    "static/media/DE-EN-RU_B2-Beruf-Test.txt": "./static/media/DE-EN-RU_B2-Beruf-Test.ef68d96752c4b086a4b5.txt",
+    "static/media/DE-EN-RU_B2-Beruf-Test.txt": "./static/media/DE-EN-RU_B2-Beruf-Test.93bc983a051c59e3ccae.txt",
     "static/media/DE-EN-RU_B2-Beruf-Test-Sentences.txt": "./static/media/DE-EN-RU_B2-Beruf-Test-Sentences.e0d281df29a77ac38e16.txt",
     "static/media/DE-RU_B1-B2-my-C1.txt": "./static/media/DE-RU_B1-B2-my-C1.ab5ab587b407fe79c195.txt",
     "static/media/DE-EN-RU-B2.txt": "./static/media/DE-EN-RU-B2.f8ab7c5dfbca2826447a.txt",
@@ -32,11 +32,11 @@
     "static/media/getFetch.cjs": "./static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
     "static/media/Empty.txt": "./static/media/Empty.e949653f00becc0dfbbd.txt",
     "main.639ca793.css.map": "./static/css/main.639ca793.css.map",
-    "main.ae0f832e.js.map": "./static/js/main.ae0f832e.js.map",
+    "main.d5e011e5.js.map": "./static/js/main.d5e011e5.js.map",
     "453.30a07008.chunk.js.map": "./static/js/453.30a07008.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.639ca793.css",
-    "static/js/main.ae0f832e.js"
+    "static/js/main.d5e011e5.js"
   ]
 }
