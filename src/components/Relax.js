@@ -56,6 +56,8 @@ const Relax = ({
         { link: "https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG", buttonText: "Music", variant: "danger", mode: "button" },
         { link: "https://www.youtube.com/embed/videoseries?list=PLJ8cMiYb3G5cX8x8hoIcd8NhMin3hqxzf", buttonText: "VOX", variant: "warning", mode: "button" },
         { link: "https://www.youtube.com/embed/videoseries?list=PL5113EDF7E1116D32", buttonText: "DW", variant: "info", mode: "button" },
+        { link: "https://www.npr.org", buttonText: "NPR", variant: "primary", mode: "button" },
+        { link: "https://www.br.de/radio/live/br24/", buttonText: "BR24", variant: "info", mode: "button" },
         { link: "https://www.radioeins.de/livestream/", buttonText: "radioeins", variant: "warning", mode: "button" },
         { link: "https://www.radioeins.de/", buttonText: "radioeins Podcasts", variant: "warning", mode: "button" },
         { link: "https://www.ardmediathek.de/", buttonText: "ARD Mediathek", variant: "primary", mode: "button" },
