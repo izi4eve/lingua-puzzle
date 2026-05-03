@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.639ca793.css",
-    "main.js": "./static/js/main.d5e011e5.js",
+    "main.js": "./static/js/main.f84deb5b.js",
     "static/js/453.30a07008.chunk.js": "./static/js/453.30a07008.chunk.js",
     "static/media/DE-EN-RU_B1-Book.txt": "./static/media/DE-EN-RU_B1-Book.20dba47ea0a6b030b6d4.txt",
     "static/media/DE-EN-RU_B2-Beruf-Test.txt": "./static/media/DE-EN-RU_B2-Beruf-Test.93bc983a051c59e3ccae.txt",
@@ -21,6 +21,7 @@
     "static/media/EN-UK_90pct.txt": "./static/media/EN-UK_90pct.f45bb412e3722d4fcc8f.txt",
     "static/media/DE-FA_80pct.txt": "./static/media/DE-FA_80pct.942e859dd3856947588f.txt",
     "static/media/DE-UK_80pct.txt": "./static/media/DE-UK_80pct.d6f8ee7c7391a8606699.txt",
+    "static/media/DE-EN-RU_B2-Beruf-Learnen.txt": "./static/media/DE-EN-RU_B2-Beruf-Learnen.f5af2954b6e67ca24a26.txt",
     "static/media/DE-RU_80pct.txt": "./static/media/DE-RU_80pct.2f73007a4c259b50f61c.txt",
     "static/media/DE-AR_80pct.txt": "./static/media/DE-AR_80pct.e2c35aeb8644d38a6f50.txt",
     "static/media/DE-EN_80pct.txt": "./static/media/DE-EN_80pct.678b2c6a6d5a77223172.txt",
@@ -32,11 +33,11 @@
     "static/media/getFetch.cjs": "./static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
     "static/media/Empty.txt": "./static/media/Empty.e949653f00becc0dfbbd.txt",
     "main.639ca793.css.map": "./static/css/main.639ca793.css.map",
-    "main.d5e011e5.js.map": "./static/js/main.d5e011e5.js.map",
+    "main.f84deb5b.js.map": "./static/js/main.f84deb5b.js.map",
     "453.30a07008.chunk.js.map": "./static/js/453.30a07008.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.639ca793.css",
-    "static/js/main.d5e011e5.js"
+    "static/js/main.f84deb5b.js"
   ]
 }
