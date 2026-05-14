@@ -1,0 +1,331 @@
+E-Mail Struktur: Betreff, Anrede, Einleitung, Punkt einleiten, Begründen, Vertiefen, Forderung, Frist, Schluss, Kontakt, Grußformel
+E-Mail Register formell: Sie-Form, keine Abkürzungen, klare Absätze
+E-Mail Register informell: du-Form, freundlicher Ton, kurze Sätze
+
+Betreff: Betreff: [Thema slash Nummer slash Datum]
+Anrede formell: Sehr geehrter Herr [Nachname],
+Anrede formell: Sehr geehrte Frau [Nachname],
+Anrede formell: Sehr geehrte Damen und Herren,
+Einleitung: Vielen Dank für Ihre Nachricht vom [Datum].
+Einleitung: Ich beziehe mich auf unser Gespräch am [Datum].
+Einleitung: Anlässlich [Anlass] möchte ich mich an Sie wenden.
+Einleitung: Bezugnehmend auf Ihre E-Mail vom [Datum] möchte ich Folgendes mitteilen.
+Punkt einleiten: Zunächst möchte ich auf [Thema] eingehen.
+Punkt einleiten: Was [Thema] betrifft, so möchte ich Folgendes anmerken.
+Punkt einleiten: Hinsichtlich [Thema] ist zu beachten, dass ...
+Punkt einleiten: Bezüglich [Thema] möchte ich kurz anmerken, dass ...
+Begründen: Dies hat zur Folge, dass ...
+Begründen: Aus diesem Grund empfehlen wir ...
+Begründen: Der Hauptgrund dafür ist, dass ...
+Vertiefen: Praktisch bedeutet dies, dass ...
+Vertiefen: Ein konkretes Beispiel dafür ist ...
+Vertiefen: Erfahrungen aus unserem Bereich zeigen, dass ...
+Forderung: Ich bitte Sie höflich darum, [Maßnahme] zu prüfen.
+Forderung: Ich bitte Sie höflich darum, [Maßnahme] bis zum [Datum] zu bestätigen.
+Forderung: Wir wären Ihnen dankbar, wenn Sie ...
+Frist: Über eine zeitnahe Rückmeldung bis zum [Datum] würde ich mich freuen.
+Frist: Bitte geben Sie mir bis [Datum] Bescheid.
+Schluss: Für weitere Fragen stehe ich gerne zur Verfügung.
+Schluss: Gerne bespreche ich die Details in einem kurzen Telefonat.
+Kontakt: Sie erreichen mich unter [Telefonnummer] oder [E-Mail].
+Grußformel: Mit freundlichen Grüßen
+Grußformel: Mit freundlichen Grüßen [Vorname Nachname]
+
+Begrüßung informell: Hallo [Name],
+Begrüßung informell: Hi zusammen,
+Anliegen nennen: Ich brauche kurz deine Hilfe bei [Thema].
+Anliegen nennen: Könntest du mir bitte sagen, ob ...?
+Bitte formulieren: Wärst du so nett und [Aufgabe]?
+Bitte formulieren: Falls du Zeit hast, könntest du ...?
+Dank: Danke dir im Voraus!
+Abschluss: Lass mich wissen, ob das klappt.
+Abschluss: Viele Grüße, [Dein Name]
+Nachhaken: Falls du noch Fragen hast, melde dich gerne.
+Nachhaken: Ich bin bis [Uhrzeit] erreichbar.
+
+Präsentation Struktur: Begrüßung, Thema nennen, Gliederung, Punkt eins, Punkt zwei, Fazit, Fragen
+Präsentation Dauer: drei bis vier Minuten Monolog
+Präsentation Bewertung: Struktur, Wortschatz, Interaktion, Aussprache
+
+Begrüßung: Guten Tag zusammen.
+Begrüßung: Vielen Dank, dass Sie sich Zeit nehmen.
+Thema nennen: Ich möchte heute das Thema [Thema] vorstellen.
+Gliederung: Mein Vortrag gliedert sich in [Anzahl] Schwerpunkte.
+Gliederung: Zunächst [Punkt eins], danach [Punkt zwei], abschließend [Punkt drei].
+Übergang: Kommen wir nun zum ersten Punkt.
+Übergang: Ein entscheidender Aspekt dabei ist ...
+Beispiel: Dies lässt sich an folgendem Beispiel verdeutlichen.
+Vertiefung: Daraus ergibt sich, dass ...
+Vertiefung: Praktisch bedeutet das ...
+Fazit: Zusammenfassend lässt sich sagen, dass ...
+Fazit: Ich empfehle daher, ...
+Fazit: Langfristig sollte ...
+Fragen: Damit komme ich zum Ende meines Vortrags.
+Fragen: Vielen Dank für Ihre Aufmerksamkeit.
+Fragen: Gerne beantworte ich nun Ihre Fragen.
+Auf Fragen: Das ist eine wichtige Frage.
+Auf Fragen: Dazu möchte ich ergänzen, dass ...
+Auf Fragen: Wenn ich Sie richtig verstehe, geht es um ...
+
+Schritt eins: Lesen Sie die Aufgabe und notieren Sie drei bis vier Inhaltspunkte.
+Schritt zwei: Ordnen Sie jedem Punkt einen eigenen Absatz zu.
+Schritt drei: Integrieren Sie die Punkte in die Vorlage unter Verwendung der Formulierungen aus der Tabelle.
+Schritt vier: Ergänzen Sie jeden Punkt um eine logische Erweiterung wie Begründung, Beispiel, Konsequenz oder Vorschlag.
+Schritt fünf: Kontrollieren Sie, ob alle Punkte behandelt sind, der Text etwa zweihundertfünfzig Wörter umfasst, durchgehend die Sie-Form verwendet wird und umgangssprachliche Abkürzungen fehlen.
+
+Anforderung Dauer: drei bis vier Minuten Monolog
+Anforderung Inhalt: Thema plus zwei bis drei Leitfragen, danach Diskussion
+Anforderung Bewertung Struktur: logischer Aufbau, klare Gliederung, Übergänge
+Anforderung Bewertung Wortschatz: berufsspezifische Lexik, Register, Varianz
+Anforderung Bewertung Interaktion: Reaktion auf Fragen, Nachfragen, Klärung
+Anforderung Bewertung Aussprache: deutliche Artikulation, Intonation, Sprechtempo
+
+Kriterium Aufgabenerfüllung: alle Inhaltspunkte vollständig und treffend bearbeitet
+Kriterium Kohärenz: logischer Aufbau, sinnvolle Absätze, klare Verbindungen
+Kriterium Wortschatz und Register: passende Lexik, korrekte Sie- oder du-Form, keine Umgangssprache im formellen Text
+Kriterium Sprachliche Korrektheit: Grammatik, Rechtschreibung, Zeichensetzung, Satzbau
+
+Anrede Variante: Sehr geehrte Damen und Herren
+Anrede Variante: Sehr geehrter Herr Müller
+Anrede Variante: Sehr geehrte Frau Schmidt
+Datum Variante: vom fünfzehnten März zweitausendsechsundzwanzig
+Datum Variante: bis zum dreißigsten April
+Uhrzeit Variante: bis siebzehn Uhr
+Telefon Variante: unter null acht neun ein, zwei drei vier, fünf sechs sieben acht
+E-Mail Variante: unter vorname punkt nachname at firma punkt de
+
+Unterschied Brief und E-Mail: Bei einem Brief gehören Ort und Datum in die Kopfzeile.
+Unterschied Brief und E-Mail: Bei einer E-Mail sind Ort und Datum automatisch im Header.
+Brief Kopfzeile: Ingolstadt, den fünfzehnten März zweitausendsechsundzwanzig
+Brief Absender: Max Mustermann, Musterstraße eins, null eins zwei drei vier Ingolstadt
+Brief Empfänger: Firma Beispiel GmbH, Personalabteilung, Beispielweg zwei, null eins zwei drei vier Berlin
+Brief Betreffzeile: Betreff: Bewerbung als Projektmanager, Referenznummer eins zwei drei vier
+Brief Anrede: Sehr geehrte Frau Schmidt,
+E-Mail Anrede: Sehr geehrte Frau Schmidt,
+Brief Hauptteil: Der Hauptteil von Brief und E-Mail ist inhaltlich und stilistisch identisch.
+Brief Schlussformel: Mit freundlichen Grüßen
+E-Mail Schlussformel: Mit freundlichen Grüßen
+Brief Unterschrift: Handschriftliche Unterschrift über dem getippten Namen
+E-Mail Unterschrift: Nur getippter Name, keine handschriftliche Unterschrift nötig
+Brief Anlagenhinweis: Anlage: Lebenslauf, Zeugnisse, Referenzen
+E-Mail Anlagenhinweis: Im Anhang finden Sie meinen Lebenslauf und meine Zeugnisse.
+Brief DIN Norm: Die Formatierung eines Briefes folgt der DIN Norm fünf null null acht.
+E-Mail Format: Das Format einer E-Mail ist flexibler, aber dennoch professionell.
+
+Schritt eins: Prüfen Sie die Aufgabenstellung: Ist ein Brief oder eine E-Mail gefordert?
+Schritt zwei: Bei einem Brief ergänzen Sie oben rechts Ort und Datum im Format: Ort, den Tag. Monat Jahr.
+Schritt drei: Fügen Sie bei einem Brief Absender und Empfänger gemäß DIN Norm hinzu, falls gefordert.
+Schritt vier: Die Betreffzeile formulieren Sie bei Brief und E-Mail gleich: präzise und inhaltsbezogen.
+Schritt fünf: Anrede, Hauptteil und Grußformel sind für Brief und E-Mail identisch.
+Schritt sechs: Bei einem Brief planen Sie Platz für eine handschriftliche Unterschrift ein.
+Schritt sieben: Bei einem Brief notieren Sie Anlagen explizit am Ende mit dem Hinweis: Anlage:
+Schritt acht: Kontrollieren Sie am Ende: Alle formalen Elemente des geforderten Formats sind vorhanden?
+
+Brief Ort Datum: München, den ersten April zweitausendsechsundzwanzig
+Brief Ort Datum: Berlin, den dreißigsten Juni zweitausendsechsundzwanzig
+Brief Absenderzeile: Absender: Anna Müller, Hauptstraße fünf, acht null drei drei fünf Leipzig
+Brief Empfängerzeile: Empfänger: Schmidt GmbH, Kundenservice, Industriestraße zehn, vier null zwei zwei sieben Düsseldorf
+Brief Betreff: Betreff: Anfrage zur Zusammenarbeit, Projekt Nummer sieben acht neun
+Brief Anlagen: Anlage: Angebot, Referenzliste, Vertragsentwurf
+Brief Unterschriftshinweis: Bitte unterschreiben Sie den Brief handschriftlich über Ihrem Namen.
+Brief Versandhinweis: Der Brief wird per Post oder Kurier versendet.
+E-Mail Versandhinweis: Die E-Mail wird elektronisch versendet, der Versand ist sofort.
+
+05.08.2026 oder 5. August 2026
+99,95 € oder 99,95 Euro
+null, eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn
+Zahlen elf bis neunzehn: elf, zwölf, dreizehn, vierzehn, fünfzehn, sechzehn, siebzehn, achtzehn, neunzehn
+Zehner zwanzig bis neunzig: zwanzig, dreißig, vierzig, fünfzig, sechzig, siebzig, achtzig, neunzig
+100 hundert
+1000 tausend
+Komma (для десятичных дробей)
+Euro
+Cent
+Prozent
+Nummer
+
+Ich weiß, dass die Frist nächste Woche abläuft.
+Wir verschieben den Termin, weil der Kollege krank ist.
+Wenn Sie Fragen haben, melden Sie sich gerne.
+Obwohl das Angebot günstig ist, warten wir noch.
+Ich schicke die Unterlagen heute, damit Sie sie morgen haben.
+Sie optimieren den Prozess, indem Sie Automatisierung einsetzen.
+Als ich die Firma betrat, war alles vorbereitet.
+Seitdem wir die Software nutzen, sparen wir Zeit.
+Während der Besprechung notierte ich die wichtigsten Punkte.
+Nachdem der Antrag genehmigt wurde, begann die Umsetzung.
+Bevor Sie unterschreiben, prüfen Sie bitte alle Angaben.
+Ich bin unsicher, ob der Termin noch stattfindet.
+
+
+wird bearbeitet — Vorgang, Handlung läuft gerade
+ist bearbeitet — Zustand, Ergebnis liegt vor
+Vorgangspassiv Praesens: Der Antrag wird heute bearbeitet.
+Vorgangspassiv Praeteritum: Der Antrag wurde gestern bearbeitet.
+Vorgangspassiv Perfekt: Der Antrag ist letzte Woche bearbeitet worden.
+Zustandspassiv Praesens: Der Antrag ist bereits bearbeitet.
+Zustandspassiv Praeteritum: Der Antrag war gestern schon bearbeitet.
+Zustandspassiv Perfekt: Der Antrag ist seit Montag bearbeitet gewesen.
+Passiv mit Modalverb: Der Antrag muss bis Freitag bearbeitet werden.
+Passiv im Nebensatz: Ich warte darauf, dass der Antrag bearbeitet wird.
+
+Falls Sie Zeit hätten, würde ich mich über ein kurzes Gespräch freuen.
+Ich würde mich freuen, wenn Sie mir bis Freitag Rückmeldung geben könnten.
+Es wäre hilfreich, wenn wir die Details vorher abstimmen würden.
+Wären Sie so freundlich, mir die Unterlagen zuzusenden?
+Hätten Sie die Möglichkeit, den Termin zu verschieben?
+Sollte es Probleme geben, kontaktieren Sie mich bitte umgehend.
+Ich wäre Ihnen dankbar, wenn Sie den Vorschlag prüfen könnten.
+Man könnte auch eine alternative Lösung in Betracht ziehen.
+Das würde uns helfen, die Frist einzuhalten.
+Wenn ich Sie wäre, würde ich das Angebot schriftlich bestätigen lassen.
+
+Temporal an mit Dativ: Der Termin ist am Montag.
+Temporal in mit Dativ: Die Lieferung kommt im Januar.
+Temporal um mit Akkusativ: Das Meeting beginnt um vierzehn Uhr.
+Temporal von bis mit Dativ: Wir arbeiten von Montag bis Freitag.
+Temporal seit mit Dativ: Ich arbeite seit letztem Jahr in dieser Abteilung.
+Temporal waehrend mit Genitiv: Waehrend der Arbeitszeit ist das Handy aus.
+Kausal wegen mit Genitiv: Wegen des Termins muss ich früher gehen.
+Kausal aufgrund mit Genitiv: Aufgrund der hohen Nachfrage verlängern wir die Frist.
+Kausal dank mit Genitiv: Dank Ihrer Unterstützung konnten wir das Ziel erreichen.
+Kausal aus mit Dativ: Aus diesem Grund bitten wir um Geduld.
+Lokal in mit Dativ: Die Unterlagen liegen im Büro.
+Lokal in mit Akkusativ: Ich lege die Unterlagen ins Büro.
+Lokal an mit Dativ: Das Bild hängt an der Wand.
+Lokal an mit Akkusativ: Ich hänge das Bild an die Wand.
+Lokal bei mit Dativ: Bei der Firma gibt es eine Kantine.
+Lokal zu mit Dativ: Ich gehe zum Meeting.
+Lokal von mit Dativ: Ich komme gerade vom Termin.
+
+sich bewerben um (Akkusativ) — hat sich beworben
+warten auf (Akkusativ) — hat gewartet
+bestehen aus (Dativ) — hat bestanden
+sich interessieren fuer (Akkusativ) — hat sich interessiert
+teilnehmen an (Dativ) — hat teilgenommen
+sich konzentrieren auf (Akkusativ) — hat sich konzentriert
+verfuegen ueber (Akkusativ) — hat verfuegt
+sich entscheiden fuer (Akkusativ) — hat sich entschieden
+abhaengen von (Dativ) — hat abgehangen
+sich freuen auf (Akkusativ) — hat sich gefreut
+sich freuen ueber (Akkusativ) — hat sich gefreut
+bitten um (Akkusativ) — hat gebeten
+sprechen mit (Dativ) — hat gesprochen
+sprechen ueber (Akkusativ) — hat gesprochen
+sich kuemmern um (Akkusativ) — hat sich gekuemmert
+fuehren zu (Dativ) — hat gefuehrt
+resultieren aus (Dativ) — hat resultiert
+denken an (Akkusativ) — hat gedacht
+erinnern an (Akkusativ) — hat erinnert
+halten von (Dativ) — hat gehalten
+
+gestern eingereichte Formular ist vollstaendig.
+Die von der Abteilung genehmigte Massnahme wird umgesetzt.
+Der mit dem Kunden besprochene Termin wurde verschoben.
+Die noch zu bearbeitenden Unterlagen liegen auf dem Tisch.
+Der gerade angekommene Kollege stellt sich vor.
+Der aufgrund der Nachfrage erweiterte Service ist jetzt verfuegbar.
+Die im letzten Quartal gestiegenen Zahlen wurden analysiert.
+Der von allen Beteiligten unterstuetzte Vorschlag wird realisiert.
+
+eine Entscheidung treffen
+eine Frage stellen
+einen Termin vereinbaren
+Ruecksprache halten
+in Betracht ziehen
+zur Verfuegung stellen
+zum Ausdruck bringen
+in Anspruch nehmen
+unter Beweis stellen
+in Ordnung bringen
+zum Abschluss bringen
+eine Rolle spielen
+Kontakt aufnehmen
+Verantwortung uebernehmen
+einen Beitrag leisten
+in Erwaegung ziehen
+zur Diskussion stellen
+auf dem Laufenden halten
+
+Der Kollege, mit dem ich arbeite, ist sehr zuverlaessig.
+Das Projekt, an dem wir arbeiten, ist wichtig.
+Die Firma, fuer die ich taetig bin, hat expandiert.
+Der Termin, auf den wir warten, ist naechste Woche.
+Der Kunde, von dem ich spreche, hat angerufen.
+Das Dokument, auf das ich mich beziehe, liegt vor.
+Der Partner, bei dem wir bestellen, liefert schnell.
+Der Weg, zu dem ich rate, ist der sicherste.
+Das Tool, durch das wir Zeit sparen, ist neu.
+Der Vorschlag, ohne den wir nicht weiterkommen, wurde abgelehnt.
+
+Das ist ja interessant.
+Sie kennen das ja.
+Wir haben uns ja schon darueber unterhalten.
+Das wissen Sie doch.
+Kommen Sie doch vorbei.
+Das ist doch eine gute Idee.
+Schauen Sie mal nach.
+Koennten Sie das mal pruefen?
+Fragen Sie mal bei der Abteilung nach.
+Das ist eben so.
+So laeuft das eben.
+Manchmal klappt es eben nicht.
+Das ist halt nicht aenderbar.
+So ist das halt.
+
+Lassen Bedeutung haben etwas gemacht: Ich lasse den Bericht prüfen.
+Lassen Bedeutung haben etwas gemacht: Wir lassen die Unterlagen kopieren.
+Lassen mit Frage höflich: Können Sie das bitte prüfen lassen?
+Lassen reflexiv mit sich: Das lässt sich machen.
+Lassen reflexiv mit sich: Der Termin lässt sich noch verschieben.
+Lassen mit Dativ Person: Ich lasse mir den Eingang bestätigen.
+Lassen im Nebensatz: Ich warte darauf, dass der Kollege die Daten prüfen lässt.
+Lassen mit Modalverb: Der Vertrag sollte heute noch unterschrieben werden lassen.
+Lassen Imperativ: Lassen Sie mich bitte wissen, ob alles passt.
+Lassen in Vergangenheit: Ich habe das Dokument gestern drucken lassen.
+
+Nominativ bestimmt maskulin: Der wichtige Termin beginnt um neun Uhr.
+Nominativ unbestimmt maskulin: Ein wichtiger Termin beginnt um neun Uhr.
+Nominativ bestimmt feminin: Die wichtige E-Mail ist angekommen.
+Nominativ unbestimmt feminin: Eine wichtige E-Mail ist angekommen.
+Nominativ bestimmt neutrum: Das wichtige Dokument liegt bereit.
+Nominativ unbestimmt neutrum: Ein wichtiges Dokument liegt bereit.
+Nominativ bestimmt plural: Die wichtigen Unterlagen sind vollständig.
+Nominativ unbestimmt plural: Wichtige Unterlagen sind vollständig.
+
+Akkusativ bestimmt maskulin: Ich bestätige den wichtigen Termin.
+Akkusativ unbestimmt maskulin: Ich bestätige einen wichtigen Termin.
+Akkusativ bestimmt feminin: Ich lese die wichtige E-Mail.
+Akkusativ unbestimmt feminin: Ich lese eine wichtige E-Mail.
+Akkusativ bestimmt neutrum: Ich prüfe das wichtige Dokument.
+Akkusativ unbestimmt neutrum: Ich prüfe ein wichtiges Dokument.
+Akkusativ bestimmt plural: Ich ordne die wichtigen Unterlagen.
+Akkusativ unbestimmt plural: Ich ordne wichtige Unterlagen.
+
+Dativ bestimmt maskulin: Ich danke dem wichtigen Kollegen.
+Dativ unbestimmt maskulin: Ich danke einem wichtigen Kollegen.
+Dativ bestimmt feminin: Ich antworte der wichtigen Kundin.
+Dativ unbestimmt feminin: Ich antworte einer wichtigen Kundin.
+Dativ bestimmt neutrum: Ich vertraue dem wichtigen Dokument.
+Dativ unbestimmt neutrum: Ich vertraue einem wichtigen Dokument.
+Dativ bestimmt plural: Ich helfe den wichtigen Kollegen.
+Dativ unbestimmt plural: Ich helfe wichtigen Kollegen.
+
+Genitiv bestimmt maskulin: Die Dauer des wichtigen Termins ist kurz.
+Genitiv unbestimmt maskulin: Die Dauer eines wichtigen Termins ist kurz.
+Genitiv bestimmt feminin: Der Inhalt der wichtigen E-Mail ist klar.
+Genitiv unbestimmt feminin: Der Inhalt einer wichtigen E-Mail ist klar.
+Genitiv bestimmt neutrum: Die Seite des wichtigen Dokuments fehlt.
+Genitiv unbestimmt neutrum: Die Seite eines wichtigen Dokuments fehlt.
+Genitiv bestimmt plural: Die Qualität der wichtigen Unterlagen ist gut.
+Genitiv unbestimmt plural: Die Qualität wichtiger Unterlagen ist gut.
+
+Adjektivendung nach bestimmtem Artikel Nominativ: der wichtige, die wichtige, das wichtige, die wichtigen
+Adjektivendung nach bestimmtem Artikel Akkusativ: den wichtigen, die wichtige, das wichtige, die wichtigen
+Adjektivendung nach bestimmtem Artikel Dativ: dem wichtigen, der wichtigen, dem wichtigen, den wichtigen
+Adjektivendung nach bestimmtem Artikel Genitiv: des wichtigen, der wichtigen, des wichtigen, der wichtigen
+
+Adjektivendung nach unbestimmtem Artikel Nominativ: ein wichtiger, eine wichtige, ein wichtiges, wichtige
+Adjektivendung nach unbestimmtem Artikel Akkusativ: einen wichtigen, eine wichtige, ein wichtiges, wichtige
+Adjektivendung nach unbestimmtem Artikel Dativ: einem wichtigen, einer wichtigen, einem wichtigen, wichtigen
+Adjektivendung nach unbestimmtem Artikel Genitiv: eines wichtigen, einer wichtigen, eines wichtigen, wichtiger

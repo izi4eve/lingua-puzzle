@@ -1964,3 +1964,5 @@ loben = praise = хвалить
 mühen sich = strive — strove — striven = стараться; утруждать себя
 bewilligen — bewilligt = approve = одобрять; утверждать; выделять (средства)
 anfassen — fasst an — angefasst = touch = трогать
+schlau = clever / smart / cunning = сообразительный / хитрый / умный (в практическом смысле)
+klug = wise / intelligent / prudent = мудрый / разумный / интеллектуально развитый
