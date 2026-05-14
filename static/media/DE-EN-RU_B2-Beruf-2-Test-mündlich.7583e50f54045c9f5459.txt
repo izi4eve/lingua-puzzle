@@ -1,0 +1,304 @@
+E-Mail Struktur: Betreff, Anrede, Einleitung, Punkt einleiten, Begründen, Vertiefen, Forderung, Frist, Schluss, Kontakt, Grußformel = E-mail structure: subject, salutation, introduction, introducing a point, justifying, elaborating, request, deadline, closing, contact, closing formula = Структура электронного письма: тема, обращение, введение, введение пункта, обоснование, углубление, требование, срок, заключение, контакт, формула приветствия
+E-Mail Register formell: Sie-Form, keine Abkürzungen, klare Absätze = E-mail register formal: Sie-form, no abbreviations, clear paragraphs = Регистр электронного письма формальный: форма Sie, без сокращений, четкие абзацы
+E-Mail Register informell: du-Form, freundlicher Ton, kurze Sätze = E-mail register informal: du-form, friendly tone, short sentences = Регистр электронного письма неформальный: форма du, дружеский тон, короткие предложения
+Betreff: Betreff: [Thema slash Nummer slash Datum] = Subject: Subject: [topic slash number slash date] = Тема: Тема: [тема слэш номер слэш дата]
+Anrede formell: Sehr geehrter Herr [Nachname], = Salutation formal: Dear Mr. [Last name], = Обращение формальное: Уважаемый господин [Фамилия],
+Anrede formell: Sehr geehrte Frau [Nachname], = Salutation formal: Dear Ms. [Last name], = Обращение формальное: Уважаемая госпожа [Фамилия],
+Anrede formell: Sehr geehrte Damen und Herren, = Salutation formal: Dear Sir or Madam, = Обращение формальное: Уважаемые дамы и господа,
+Einleitung: Vielen Dank für Ihre Nachricht vom [Datum]. = Introduction: Thank you very much for your message of [date]. = Введение: Большое спасибо за Ваше сообщение от [дата].
+Einleitung: Ich beziehe mich auf unser Gespräch am [Datum]. = Introduction: I refer to our conversation on [date]. = Введение: Я ссылаюсь на наш разговор от [дата].
+Einleitung: Anlässlich [Anlass] möchte ich mich an Sie wenden. = Introduction: On the occasion of [occasion] I would like to contact you. = Введение: По поводу [повод] я хотел бы обратиться к Вам.
+Einleitung: Bezugnehmend auf Ihre E-Mail vom [Datum] möchte ich Folgendes mitteilen. = Introduction: Referring to your e-mail of [date] I would like to communicate the following. = Введение: Ссылаясь на Ваше электронное письмо от [дата] я хотел бы сообщить следующее.
+Punkt einleiten: Zunächst möchte ich auf [Thema] eingehen. = Introducing a point: First I would like to address [topic]. = Введение пункта: Сначала я хотел бы обратиться к [тема].
+Punkt einleiten: Was [Thema] betrifft, so möchte ich Folgendes anmerken. = Introducing a point: As far as [topic] is concerned, I would like to note the following. = Введение пункта: Что касается [тема], то я хотел бы отметить следующее.
+Punkt einleiten: Hinsichtlich [Thema] ist zu beachten, dass ... = Introducing a point: Regarding [topic] it is to be noted that ... = Введение пункта: Относительно [тема] следует заметить, что ...
+Punkt einleiten: Bezüglich [Thema] möchte ich kurz anmerken, dass ... = Introducing a point: Concerning [topic] I would like to briefly note that ... = Введение пункта: Касательно [тема] я хотел бы кратко отметить, что ...
+Begründen: Dies hat zur Folge, dass ... = Justifying: This has the consequence that ... = Обоснование: Это имеет следствием, что ...
+Begründen: Aus diesem Grund empfehlen wir ... = Justifying: For this reason we recommend ... = Обоснование: По этой причине мы рекомендуем ...
+Begründen: Der Hauptgrund dafür ist, dass ... = Justifying: The main reason for this is that ... = Обоснование: Главная причина для этого состоит в том, что ...
+Vertiefen: Praktisch bedeutet dies, dass ... = Elaborating: Practically this means that ... = Углубление: Практически это означает, что ...
+Vertiefen: Ein konkretes Beispiel dafür ist ... = Elaborating: A concrete example for this is ... = Углубление: Конкретный пример для этого — ...
+Vertiefen: Erfahrungen aus unserem Bereich zeigen, dass ... = Elaborating: Experiences from our field show that ... = Углубление: Опыт из нашей области показывает, что ...
+Forderung: Ich bitte Sie höflich darum, [Maßnahme] zu prüfen. = Request: I politely ask you to examine [measure]. = Требование: Я вежливо прошу Вас проверить [мера].
+Forderung: Ich bitte Sie höflich darum, [Maßnahme] bis zum [Datum] zu bestätigen. = Request: I politely ask you to confirm [measure] by [date]. = Требование: Я вежливо прошу Вас подтвердить [мера] до [дата].
+Forderung: Wir wären Ihnen dankbar, wenn Sie ... = Request: We would be grateful if you ... = Требование: Мы были бы Вам благодарны, если бы Вы ...
+Frist: Über eine zeitnahe Rückmeldung bis zum [Datum] würde ich mich freuen. = Deadline: I would appreciate a timely response by [date]. = Срок: Я бы обрадовался своевременному ответу до [дата].
+Frist: Bitte geben Sie mir bis [Datum] Bescheid. = Deadline: Please let me know by [date]. = Срок: Пожалуйста, дайте мне знать до [дата].
+Schluss: Für weitere Fragen stehe ich gerne zur Verfügung. = Closing: For further questions I am gladly available. = Заключение: Для дальнейших вопросов я охотно в распоряжении.
+Schluss: Gerne bespreche ich die Details in einem kurzen Telefonat. = Closing: Gladly I discuss the details in a short phone call. = Заключение: Охотно я обсужу детали в коротком телефонном разговоре.
+Kontakt: Sie erreichen mich unter [Telefonnummer] oder [E-Mail]. = Contact: You reach me at [phone number] or [e-mail]. = Контакт: Вы достигаете меня по [номер телефона] или [электронная почта].
+Grußformel: Mit freundlichen Grüßen = Closing formula: With friendly greetings = Формула приветствия: С дружескими приветствиями
+Grußformel: Mit freundlichen Grüßen [Vorname Nachname] = Closing formula: With friendly greetings [First name Last name] = Формула приветствия: С дружескими приветствиями [Имя Фамилия]
+Begrüßung informell: Hallo [Name], = Greeting informal: Hello [Name], = Приветствие неформальное: Привет [Имя],
+Begrüßung informell: Hi zusammen, = Greeting informal: Hi everyone, = Приветствие неформальное: Привет всем,
+Anliegen nennen: Ich brauche kurz deine Hilfe bei [Thema]. = Stating a request: I briefly need your help with [topic]. = Называние просьбы: Мне кратко нужна твоя помощь с [тема].
+Anliegen nennen: Könntest du mir bitte sagen, ob ...? = Stating a request: Could you please tell me whether ...? = Называние просьбы: Мог бы ты мне пожалуйста сказать, ли ...?
+Bitte formulieren: Wärst du so nett und [Aufgabe]? = Formulating a request: Would you be so kind and [task]? = Формулирование просьбы: Был бы ты так любезен и [задача]?
+Bitte formulieren: Falls du Zeit hast, könntest du ...? = Formulating a request: If you have time, could you ...? = Формулирование просьбы: Если у тебя есть время, мог бы ты ...?
+Dank: Danke dir im Voraus! = Thanks: Thanks to you in advance! = Благодарность: Спасибо тебе заранее!
+Abschluss: Lass mich wissen, ob das klappt. = Closing: Let me know whether that works. = Завершение: Дай мне знать, ли это срабатывает.
+Abschluss: Viele Grüße, [Dein Name] = Closing: Many greetings, [Your name] = Завершение: Много приветов, [Твое имя]
+Nachhaken: Falls du noch Fragen hast, melde dich gerne. = Following up: If you still have questions, feel free to contact me. = Напоминание: Если у тебя еще есть вопросы, сообщи себя охотно.
+Nachhaken: Ich bin bis [Uhrzeit] erreichbar. = Following up: I am reachable until [time]. = Напоминание: Я есть до [время] достижим.
+Präsentation Struktur: Begrüßung, Thema nennen, Gliederung, Punkt eins, Punkt zwei, Fazit, Fragen = Presentation structure: greeting, naming topic, outline, point one, point two, conclusion, questions = Структура презентации: приветствие, называние темы, структура, пункт один, пункт два, вывод, вопросы
+Präsentation Dauer: drei bis vier Minuten Monolog = Presentation duration: three to four minutes monologue = Длительность презентации: три до четыре минуты монолог
+Präsentation Bewertung: Struktur, Wortschatz, Interaktion, Aussprache = Presentation evaluation: structure, vocabulary, interaction, pronunciation = Оценка презентации: структура, словарный запас, взаимодействие, произношение
+Begrüßung: Guten Tag zusammen. = Greeting: Good day everyone. = Приветствие: Добрый день всем.
+Begrüßung: Vielen Dank, dass Sie sich Zeit nehmen. = Greeting: Thank you very much that you take time. = Приветствие: Большое спасибо, что Вы себе время берете.
+Thema nennen: Ich möchte heute das Thema [Thema] vorstellen. = Naming topic: I would like today the topic [topic] present. = Называние темы: Я хотел бы сегодня тему [тема] представить.
+Gliederung: Mein Vortrag gliedert sich in [Anzahl] Schwerpunkte. = Outline: My presentation divides itself into [number] focal points. = Структура: Мой доклад делится на [количество] основных пунктов.
+Gliederung: Zunächst [Punkt eins], danach [Punkt zwei], abschließend [Punkt drei]. = Outline: First [point one], afterwards [point two], finally [point three]. = Структура: Сначала [пункт один], после этого [пункт два], в заключение [пункт три].
+Übergang: Kommen wir nun zum ersten Punkt. = Transition: Let us come now to the first point. = Переход: Придем мы теперь к первому пункту.
+Übergang: Ein entscheidender Aspekt dabei ist ... = Transition: A decisive aspect thereby is ... = Переход: Один решающий аспект при этом — ...
+Beispiel: Dies lässt sich an folgendem Beispiel verdeutlichen. = Example: This lets itself at following example clarify. = Пример: Это дает себя на следующем примере прояснить.
+Vertiefung: Daraus ergibt sich, dass ... = Elaboration: From this results that ... = Углубление: Из этого вытекает, что ...
+Vertiefung: Praktisch bedeutet das ... = Elaboration: Practically means that ... = Углубление: Практически означает это ...
+Fazit: Zusammenfassend lässt sich sagen, dass ... = Conclusion: Summarizing lets itself say that ... = Вывод: Обобщая дает себя сказать, что ...
+Fazit: Ich empfehle daher, ... = Conclusion: I recommend therefore, ... = Вывод: Я рекомендую поэтому, ...
+Fazit: Langfristig sollte ... = Conclusion: Long-term should ... = Вывод: Долгосрочно следует ...
+Fragen: Damit komme ich zum Ende meines Vortrags. = Questions: With that come I to the end of my presentation. = Вопросы: С этим прихожу я к концу моего доклада.
+Fragen: Vielen Dank für Ihre Aufmerksamkeit. = Questions: Thank you very much for your attention. = Вопросы: Большое спасибо за Ваше внимание.
+Fragen: Gerne beantworte ich nun Ihre Fragen. = Questions: Gladly answer I now your questions. = Вопросы: Охотно отвечу я теперь Ваши вопросы.
+Auf Fragen: Das ist eine wichtige Frage. = On questions: That is an important question. = На вопросы: Это один важный вопрос.
+Auf Fragen: Dazu möchte ich ergänzen, dass ... = On questions: To that would I like to add that ... = На вопросы: К этому хотел бы я добавить, что ...
+Auf Fragen: Wenn ich Sie richtig verstehe, geht es um ... = On questions: If I you correctly understand, it is about ... = На вопросы: Если я Вас правильно понимаю, идет речь о ...
+Schritt eins: Lesen Sie die Aufgabe und notieren Sie drei bis vier Inhaltspunkte. = Step one: Read you the task and note you three to four content points. = Шаг один: Прочитайте Вы задание и запишите Вы три до четыре пункта содержания.
+Schritt zwei: Ordnen Sie jedem Punkt einen eigenen Absatz zu. = Step two: Assign you to each point its own paragraph. = Шаг два: Назначьте Вы каждому пункту свой собственный абзац.
+Schritt drei: Integrieren Sie die Punkte in die Vorlage unter Verwendung der Formulierungen aus der Tabelle. = Step three: Integrate you the points in the template under use of the formulations from the table. = Шаг три: Интегрируйте Вы пункты в шаблон при использовании формулировок из таблицы.
+Schritt vier: Ergänzen Sie jeden Punkt um eine logische Erweiterung wie Begründung, Beispiel, Konsequenz oder Vorschlag. = Step four: Supplement you each point around a logical extension like justification, example, consequence or suggestion. = Шаг четыре: Дополните Вы каждый пункт вокруг логического расширения как обоснование, пример, последствие или предложение.
+Schritt fünf: Kontrollieren Sie, ob alle Punkte behandelt sind, der Text etwa zweihundertfünfzig Wörter umfasst, durchgehend die Sie-Form verwendet wird und umgangssprachliche Abkürzungen fehlen. = Step five: Check you, whether all points treated are, the text about two hundred fifty words includes, throughout the Sie-form used is and colloquial abbreviations missing. = Шаг пять: Проверьте Вы, ли все пункты обработаны есть, текст около двести пятьдесят слов охватывает, повсеместно форма Sie использована есть и разговорные сокращения отсутствуют.
+Anforderung Dauer: drei bis vier Minuten Monolog = Requirement duration: three to four minutes monologue = Требование длительность: три до четыре минуты монолог
+Anforderung Inhalt: Thema plus zwei bis drei Leitfragen, danach Diskussion = Requirement content: topic plus two to three guiding questions, afterwards discussion = Требование содержание: тема плюс два до три ведущих вопроса, после этого дискуссия
+Anforderung Bewertung Struktur: logischer Aufbau, klare Gliederung, Übergänge = Requirement evaluation structure: logical structure, clear outline, transitions = Требование оценка структура: логическая структура, четкая структура, переходы
+Anforderung Bewertung Wortschatz: berufsspezifische Lexik, Register, Varianz = Requirement evaluation vocabulary: profession-specific lexicon, register, variance = Требование оценка словарный запас: профессионально-специфическая лексика, регистр, вариативность
+Anforderung Bewertung Interaktion: Reaktion auf Fragen, Nachfragen, Klärung = Requirement evaluation interaction: reaction to questions, follow-up questions, clarification = Требование оценка взаимодействие: реакция на вопросы, уточняющие вопросы, прояснение
+Anforderung Bewertung Aussprache: deutliche Artikulation, Intonation, Sprechtempo = Requirement evaluation pronunciation: clear articulation, intonation, speaking pace = Требование оценка произношение: четкая артикуляция, интонация, темп речи
+Kriterium Aufgabenerfüllung: alle Inhaltspunkte vollständig und treffend bearbeitet = Criterion task fulfillment: all content points completely and aptly processed = Критерий выполнение задания: все пункты содержания полностью и метко обработаны
+Kriterium Kohärenz: logischer Aufbau, sinnvolle Absätze, klare Verbindungen = Criterion coherence: logical structure, meaningful paragraphs, clear connections = Критерий когерентность: логическая структура, осмысленные абзацы, четкие связи
+Kriterium Wortschatz und Register: passende Lexik, korrekte Sie- oder du-Form, keine Umgangssprache im formellen Text = Criterion vocabulary and register: appropriate lexicon, correct Sie- or du-form, no colloquial language in formal text = Критерий словарный запас и регистр: подходящая лексика, правильная форма Sie или du, без разговорной речи в формальном тексте
+Kriterium Sprachliche Korrektheit: Grammatik, Rechtschreibung, Zeichensetzung, Satzbau = Criterion linguistic correctness: grammar, spelling, punctuation, sentence structure = Критерий языковая правильность: грамматика, правописание, пунктуация, построение предложений
+Anrede Variante: Sehr geehrte Damen und Herren = Salutation variant: Dear Sir or Madam = Вариант обращения: Уважаемые дамы и господа
+Anrede Variante: Sehr geehrter Herr Müller = Salutation variant: Dear Mr. Müller = Вариант обращения: Уважаемый господин Мюллер
+Anrede Variante: Sehr geehrte Frau Schmidt = Salutation variant: Dear Ms. Schmidt = Вариант обращения: Уважаемая госпожа Шмидт
+Datum Variante: vom fünfzehnten März zweitausendsechsundzwanzig = Date variant: of fifteenth March two thousand twenty-six = Вариант даты: от пятнадцатого марта две тысячи двадцать шесть
+Datum Variante: bis zum dreißigsten April = Date variant: until thirtieth April = Вариант даты: до тридцатого апреля
+Uhrzeit Variante: bis siebzehn Uhr = Time variant: until seventeen o'clock = Вариант времени: до семнадцать часов
+Telefon Variante: unter null acht neun ein, zwei drei vier, fünf sechs sieben acht = Phone variant: at zero eight nine one, two three four, five six seven eight = Вариант телефона: по ноль восемь девять один, два три четыре, пять шесть семь восемь
+E-Mail Variante: unter vorname punkt nachname at firma punkt de = E-mail variant: at firstname dot lastname at company dot de = Вариант электронной почты: по имя точка фамилия собака фирма точка де
+
+Unterschied Brief und E-Mail: Bei einem Brief gehören Ort und Datum in die Kopfzeile. = Difference between letter and e-mail: In a letter, place and date belong in the header line. = Различие письмо и электронная почта: При одном письме принадлежат место и дата в заголовочную строку.
+Unterschied Brief und E-Mail: Bei einer E-Mail sind Ort und Datum automatisch im Header. = Difference between letter and e-mail: In an e-mail, place and date are automatically in the header. = Различие письмо и электронная почта: При одной электронной почте являются место и дата автоматически в хедере.
+Brief Kopfzeile: Ingolstadt, den fünfzehnten März zweitausendsechsundzwanzig = Letter header line: Ingolstadt, the fifteenth March two thousand twenty-six. = Письмо заголовочная строка: Ингольштадт, пятнадцатого марта две тысячи двадцать шесть.
+Brief Absender: Max Mustermann, Musterstraße eins, null eins zwei drei vier Ingolstadt = Letter sender: Max Mustermann, Musterstraße one, zero one two three four Ingolstadt. = Письмо отправитель: Макс Мустерманн, Мустерштрассе один, ноль один два три четыре Ингольштадт.
+Brief Empfänger: Firma Beispiel GmbH, Personalabteilung, Beispielweg zwei, null eins zwei drei vier Berlin = Letter recipient: Company Beispiel GmbH, Human Resources Department, Beispielweg two, zero one two three four Berlin. = Письмо получатель: Фирма Байшпиль ГмбХ, отдел персонала, Байшпильвег два, ноль один два три четыре Берлин.
+Brief Betreffzeile: Betreff: Bewerbung als Projektmanager, Referenznummer eins zwei drei vier = Letter subject line: Subject: Application as project manager, reference number one two three four. = Письмо строка темы: Тема: заявление как проектный менеджер, номер ссылки один два три четыре.
+Brief Anrede: Sehr geehrte Frau Schmidt, = Letter salutation: Dear Ms. Schmidt, = Письмо обращение: Уважаемая госпожа Шмидт,
+E-Mail Anrede: Sehr geehrte Frau Schmidt, = E-mail salutation: Dear Ms. Schmidt, = Электронная почта обращение: Уважаемая госпожа Шмидт,
+Brief Hauptteil: Der Hauptteil von Brief und E-Mail ist inhaltlich und stilistisch identisch. = Letter main part: The main part of letter and e-mail is content-wise and stylistically identical. = Письмо основная часть: Основная часть письма и электронной почты есть содержательно и стилистически идентична.
+Brief Schlussformel: Mit freundlichen Grüßen = Letter closing formula: With friendly greetings. = Письмо формула завершения: С дружескими приветствиями.
+E-Mail Schlussformel: Mit freundlichen Grüßen = E-mail closing formula: With friendly greetings. = Электронная почта формула завершения: С дружескими приветствиями.
+Brief Unterschrift: Handschriftliche Unterschrift über dem getippten Namen = Letter signature: Handwritten signature above the typed name. = Письмо подпись: Рукописная подпись над напечатанным именем.
+E-Mail Unterschrift: Nur getippter Name, keine handschriftliche Unterschrift nötig = E-mail signature: Only typed name, no handwritten signature necessary. = Электронная почта подпись: Только напечатанное имя, никакая рукописная подпись не нужна.
+Brief Anlagenhinweis: Anlage: Lebenslauf, Zeugnisse, Referenzen = Letter attachment note: Attachment: Resume, certificates, references. = Письмо указание приложений: Приложение: резюме, свидетельства, рекомендации.
+E-Mail Anlagenhinweis: Im Anhang finden Sie meinen Lebenslauf und meine Zeugnisse. = E-mail attachment note: In the attachment find you my resume and my certificates. = Электронная почта указание приложений: В приложении находите Вы мое резюме и мои свидетельства.
+Brief DIN Norm: Die Formatierung eines Briefes folgt der DIN Norm fünf null null acht. = Letter DIN standard: The formatting of a letter follows the DIN standard five zero zero eight. = Письмо норма DIN: Форматирование одного письма следует норме DIN пять ноль ноль восемь.
+E-Mail Format: Das Format einer E-Mail ist flexibler, aber dennoch professionell. = E-mail format: The format of an e-mail is more flexible, but nevertheless professional. = Электронная почта формат: Формат одной электронной почты есть гибче, но тем не менее профессионален.
+Schritt eins: Prüfen Sie die Aufgabenstellung: Ist ein Brief oder eine E-Mail gefordert? = Step one: Check you the task description: Is a letter or an e-mail required? = Шаг один: Проверьте Вы постановку задачи: Является ли письмо или электронная почта требуемым?
+Schritt zwei: Bei einem Brief ergänzen Sie oben rechts Ort und Datum im Format: Ort, den Tag. Monat Jahr. = Step two: At a letter supplement you top right place and date in the format: Place, the day. Month year. = Шаг два: При одном письме дополните Вы сверху справа место и дату в формате: Место, день. Месяц год.
+Schritt drei: Fügen Sie bei einem Brief Absender und Empfänger gemäß DIN Norm hinzu, falls gefordert. = Step three: Add you at a letter sender and recipient according to DIN standard, if required. = Шаг три: Добавьте Вы при одном письме отправителя и получателя согласно норме DIN, если требуется.
+Schritt vier: Die Betreffzeile formulieren Sie bei Brief und E-Mail gleich: präzise und inhaltsbezogen. = Step four: The subject line formulate you at letter and e-mail same: precise and content-related. = Шаг четыре: Строку темы формулируете Вы при письме и электронной почте одинаково: точно и содержательно-ориентированно.
+Schritt fünf: Anrede, Hauptteil und Grußformel sind für Brief und E-Mail identisch. = Step five: Salutation, main part and closing formula are for letter and e-mail identical. = Шаг пять: Обращение, основная часть и формула завершения являются для письма и электронной почты идентичными.
+Schritt sechs: Bei einem Brief planen Sie Platz für eine handschriftliche Unterschrift ein. = Step six: At a letter plan you space for a handwritten signature in. = Шаг шесть: При одном письме планируйте Вы место для одной рукописной подписи.
+Schritt sieben: Bei einem Brief notieren Sie Anlagen explizit am Ende mit dem Hinweis: Anlage: = Step seven: At a letter note you attachments explicitly at the end with the note: Attachment: = Шаг семь: При одном письме записывайте Вы приложения эксплицитно в конце с указанием: Приложение:
+Schritt acht: Kontrollieren Sie am Ende: Alle formalen Elemente des geforderten Formats sind vorhanden? = Step eight: Check you at the end: All formal elements of the required format are present? = Шаг восемь: Проверьте Вы в конце: Все формальные элементы требуемого формата являются наличествующими?
+Brief Ort Datum: München, den ersten April zweitausendsechsundzwanzig = Letter place date: Munich, the first April two thousand twenty-six. = Письмо место дата: Мюнхен, первого апреля две тысячи двадцать шесть.
+Brief Ort Datum: Berlin, den dreißigsten Juni zweitausendsechsundzwanzig = Letter place date: Berlin, the thirtieth June two thousand twenty-six. = Письмо место дата: Берлин, тридцатого июня две тысячи двадцать шесть.
+Brief Absenderzeile: Absender: Anna Müller, Hauptstraße fünf, acht null drei drei fünf Leipzig = Letter sender line: Sender: Anna Müller, Hauptstraße five, eight zero three three five Leipzig. = Письмо строка отправителя: Отправитель: Анна Мюллер, Хауптштрассе пять, восемь ноль три три пять Лейпциг.
+Brief Empfängerzeile: Empfänger: Schmidt GmbH, Kundenservice, Industriestraße zehn, vier null zwei zwei sieben Düsseldorf = Letter recipient line: Recipient: Schmidt GmbH, Customer Service, Industriestraße ten, four zero two two seven Düsseldorf. = Письмо строка получателя: Получатель: Шмидт ГмбХ, сервис клиентов, Индустриштрассе десять, четыре ноль два два семь Дюссельдорф.
+Brief Betreff: Betreff: Anfrage zur Zusammenarbeit, Projekt Nummer sieben acht neun = Letter subject: Subject: Inquiry regarding cooperation, project number seven eight nine. = Письмо тема: Тема: запрос относительно сотрудничества, проект номер семь восемь девять.
+Brief Anlagen: Anlage: Angebot, Referenzliste, Vertragsentwurf = Letter attachments: Attachment: Offer, reference list, contract draft. = Письмо приложения: Приложение: предложение, список рекомендаций, проект договора.
+Brief Unterschriftshinweis: Bitte unterschreiben Sie den Brief handschriftlich über Ihrem Namen. = Letter signature note: Please sign you the letter handwritten above your name. = Письмо указание подписи: Пожалуйста подпишите Вы письмо рукописно над Вашим именем.
+Brief Versandhinweis: Der Brief wird per Post oder Kurier versendet. = Letter shipping note: The letter is sent by post or courier. = Письмо указание отправки: Письмо отправляется посредством почты или курьера.
+E-Mail Versandhinweis: Die E-Mail wird elektronisch versendet, der Versand ist sofort. = E-mail shipping note: The e-mail is sent electronically, the shipping is immediate. = Электронная почта указание отправки: Электронная почта отправляется электронно, отправка есть немедленно.
+05.08.2026 oder 5. August 2026 = 05.08.2026 or 5. August 2026 = 05.08.2026 или 5. августа 2026
+99,95 € oder 99,95 Euro = 99.95 € or 99.95 Euro = 99,95 € или 99,95 евро
+null, eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn = zero, one, two, three, four, five, six, seven, eight, nine, ten = ноль, один, два, три, четыре, пять, шесть, семь, восемь, девять, десять
+Zahlen elf bis neunzehn: elf, zwölf, dreizehn, vierzehn, fünfzehn, sechzehn, siebzehn, achtzehn, neunzehn = Numbers eleven to nineteen: eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen = Числа одиннадцать до девятнадцать: одиннадцать, двенадцать, тринадцать, четырнадцать, пятнадцать, шестнадцать, семнадцать, восемнадцать, девятнадцать.
+Zehner zwanzig bis neunzig: zwanzig, dreißig, vierzig, fünfzig, sechzig, siebzig, achtzig, neunzig = Tens twenty to ninety: twenty, thirty, forty, fifty, sixty, seventy, eighty, ninety = Десятки двадцать до девяносто: двадцать, тридцать, сорок, пятьдесят, шестьдесят, семьдесят, восемьдесят, девяносто.
+100 hundert = 100 hundred = 100 сто
+1000 tausend = 1000 thousand = 1000 тысяча
+Komma (для десятичных дробей) = Comma (for decimal fractions) = Запятая (для десятичных дробей)
+Euro = Euro = евро
+Cent = Cent = цент
+Prozent = Percent = процент
+Nummer = Number = номер
+Ich weiß, dass die Frist nächste Woche abläuft. = I know that the deadline next week expires. = Я знаю, что срок следующая неделя истекает.
+Wir verschieben den Termin, weil der Kollege krank ist. = We postpone the appointment because the colleague is sick. = Мы откладываем срок, потому что коллега болен есть.
+Wenn Sie Fragen haben, melden Sie sich gerne. = If you questions have, report you yourself gladly. = Если Вы вопросы имеете, сообщите себя охотно.
+Obwohl das Angebot günstig ist, warten wir noch. = Although the offer favorable is, wait we still. = Хотя предложение выгодно есть, ждем мы еще.
+Ich schicke die Unterlagen heute, damit Sie sie morgen haben. = I send the documents today, so that you them tomorrow have. = Я отправляю документы сегодня, чтобы Вы их завтра имели.
+Sie optimieren den Prozess, indem Sie Automatisierung einsetzen. = You optimize the process, by that you automation use. = Вы оптимизируете процесс, тем что Вы автоматизацию применяете.
+Als ich die Firma betrat, war alles vorbereitet. = When I the company entered, was everything prepared. = Когда я фирму вошел, было все подготовлено.
+Seitdem wir die Software nutzen, sparen wir Zeit. = Since we the software use, save we time. = С тех пор как мы программное обеспечение используем, экономим мы время.
+Während der Besprechung notierte ich die wichtigsten Punkte. = During the meeting noted I the most important points. = Во время совещания записал я самые важные пункты.
+Nachdem der Antrag genehmigt wurde, begann die Umsetzung. = After the application approved was, began the implementation. = После того как заявление одобрено было, началось внедрение.
+Bevor Sie unterschreiben, prüfen Sie bitte alle Angaben. = Before you sign, check you please all information. = Прежде чем Вы подпишете, проверьте Вы пожалуйста все указания.
+Ich bin unsicher, ob der Termin noch stattfindet. = I am uncertain whether the appointment still takes place. = Я есть неуверен, ли срок еще состоится.
+wird bearbeitet — Vorgang, Handlung läuft gerade = is being processed — process, action is running currently = обрабатывается — процесс, действие протекает сейчас.
+ist bearbeitet — Zustand, Ergebnis liegt vor = is processed — state, result is present = обработан — состояние, результат имеется в наличии.
+Vorgangspassiv Praesens: Der Antrag wird heute bearbeitet. = Process passive present: The application is being processed today. = Пассив процесса презенс: Заявление обрабатывается сегодня.
+Vorgangspassiv Praeteritum: Der Antrag wurde gestern bearbeitet. = Process passive preterite: The application was processed yesterday. = Пассив процесса претеритум: Заявление было обработано вчера.
+Vorgangspassiv Perfekt: Der Antrag ist letzte Woche bearbeitet worden. = Process passive perfect: The application has been processed last week. = Пассив процесса перфект: Заявление есть последняя неделя обработано было.
+Zustandspassiv Praesens: Der Antrag ist bereits bearbeitet. = State passive present: The application is already processed. = Пассив состояния презенс: Заявление есть уже обработан.
+Zustandspassiv Praeteritum: Der Antrag war gestern schon bearbeitet. = State passive preterite: The application was yesterday already processed. = Пассив состояния претеритум: Заявление был вчера уже обработан.
+Zustandspassiv Perfekt: Der Antrag ist seit Montag bearbeitet gewesen. = State passive perfect: The application has been since Monday processed been. = Пассив состояния перфект: Заявление есть с понедельника обработан был.
+Passiv mit Modalverb: Der Antrag muss bis Freitag bearbeitet werden. = Passive with modal verb: The application must by Friday processed be. = Пассив с модальным глаголом: Заявление должен до пятницы обработан быть.
+Passiv im Nebensatz: Ich warte darauf, dass der Antrag bearbeitet wird. = Passive in subordinate clause: I wait on that that the application processed is. = Пассив в придаточном предложении: Я жду на то, что заявление обрабатывается.
+Falls Sie Zeit hätten, würde ich mich über ein kurzes Gespräch freuen. = If you time had, would I myself about a short conversation be glad. = Если бы Вы время имели, хотел бы я себя о коротком разговоре порадовать.
+Ich würde mich freuen, wenn Sie mir bis Freitag Rückmeldung geben könnten. = I would myself be glad, if you me by Friday feedback give could. = Я хотел бы себя порадовать, если бы Вы мне до пятницы обратную связь дать могли.
+Es wäre hilfreich, wenn wir die Details vorher abstimmen würden. = It would be helpful, if we the details beforehand coordinate would. = Это было бы полезно, если бы мы детали заранее согласовать хотели.
+Wären Sie so freundlich, mir die Unterlagen zuzusenden? = Would you be so friendly, me the documents to send? = Были бы Вы так любезны, мне документы выслать?
+Hätten Sie die Möglichkeit, den Termin zu verschieben? = Had you the possibility, the appointment to postpone? = Имели бы Вы возможность, срок отложить?
+Sollte es Probleme geben, kontaktieren Sie mich bitte umgehend. = Should it problems give, contact you me please immediately. = Должно это проблемы дать, свяжитесь Вы со мной пожалуйста незамедлительно.
+Ich wäre Ihnen dankbar, wenn Sie den Vorschlag prüfen könnten. = I would be to you grateful, if you the suggestion check could. = Я был бы Вам благодарен, если бы Вы предложение проверить могли.
+Man könnte auch eine alternative Lösung in Betracht ziehen. = One could also an alternative solution into consideration draw. = Можно было бы также одно альтернативное решение во внимание принять.
+Das würde uns helfen, die Frist einzuhalten. = That would us help, the deadline to keep. = Это помогло бы нам, срок соблюсти.
+Wenn ich Sie wäre, würde ich das Angebot schriftlich bestätigen lassen. = If I you were, would I the offer in writing confirm let. = Если бы я Вами был, хотел бы я предложение письменно подтвердить дать.
+
+Temporal an mit Dativ: Der Termin ist am Montag. = Temporal an with dative: The appointment is on Monday. = Временное an с дативом: Срок есть в понедельник.
+Temporal in mit Dativ: Die Lieferung kommt im Januar. = Temporal in with dative: The delivery comes in January. = Временное in с дативом: Доставка приходит в январе.
+Temporal um mit Akkusativ: Das Meeting beginnt um vierzehn Uhr. = Temporal um with accusative: The meeting begins at fourteen o'clock. = Временное um с аккузативом: Встреча начинается в четырнадцать часов.
+Temporal von bis mit Dativ: Wir arbeiten von Montag bis Freitag. = Temporal von bis with dative: We work from Monday until Friday. = Временное von bis с дативом: Мы работаем от понедельника до пятницы.
+Temporal seit mit Dativ: Ich arbeite seit letztem Jahr in dieser Abteilung. = Temporal seit with dative: I work since last year in this department. = Временное seit с дативом: Я работаю с прошлого года в этом отделе.
+Temporal waehrend mit Genitiv: Waehrend der Arbeitszeit ist das Handy aus. = Temporal während with genitive: During the working time is the mobile phone off. = Временное während с генитивом: Во время рабочего времени есть мобильный телефон выключен.
+Kausal wegen mit Genitiv: Wegen des Termins muss ich früher gehen. = Causal wegen with genitive: Because of the appointment must I earlier go. = Каузальное wegen с генитивом: Из-за срока должен я раньше уйти.
+Kausal aufgrund mit Genitiv: Aufgrund der hohen Nachfrage verlängern wir die Frist. = Causal aufgrund with genitive: Due to the high demand extend we the deadline. = Каузальное aufgrund с генитивом: Вследствие высокого спроса продлеваем мы срок.
+Kausal dank mit Genitiv: Dank Ihrer Unterstützung konnten wir das Ziel erreichen. = Causal dank with genitive: Thanks to your support could we the goal achieve. = Каузальное dank с генитивом: Благодаря Вашей поддержке могли мы цель достичь.
+Kausal aus mit Dativ: Aus diesem Grund bitten wir um Geduld. = Causal aus with dative: Out of this reason ask we for patience. = Каузальное aus с дативом: По этой причине просим мы о терпении.
+Lokal in mit Dativ: Die Unterlagen liegen im Büro. = Local in with dative: The documents lie in the office. = Локальное in с дативом: Документы лежат в офисе.
+Lokal in mit Akkusativ: Ich lege die Unterlagen ins Büro. = Local in with accusative: I lay the documents into the office. = Локальное in с аккузативом: Я кладу документы в офис.
+Lokal an mit Dativ: Das Bild hängt an der Wand. = Local an with dative: The picture hangs on the wall. = Локальное an с дативом: Картина висит на стене.
+Lokal an mit Akkusativ: Ich hänge das Bild an die Wand. = Local an with accusative: I hang the picture on the wall. = Локальное an с аккузативом: Я вешаю картину на стену.
+Lokal bei mit Dativ: Bei der Firma gibt es eine Kantine. = Local bei with dative: At the company gives it a cafeteria. = Локальное bei с дативом: При фирме дает это одну столовую.
+Lokal zu mit Dativ: Ich gehe zum Meeting. = Local zu with dative: I go to the meeting. = Локальное zu с дативом: Я иду к встрече.
+Lokal von mit Dativ: Ich komme gerade vom Termin. = Local von with dative: I come just from the appointment. = Локальное von с дативом: Я прихожу прямо от срока.
+sich bewerben um (Akkusativ) — hat sich beworben = to apply for (accusative) — has applied = подавать заявление на (аккузатив) — подал заявление
+warten auf (Akkusativ) — hat gewartet = to wait for (accusative) — has waited = ждать на (аккузатив) — ждал
+bestehen aus (Dativ) — hat bestanden = to consist of (dative) — has consisted = состоять из (датив) — состоял
+sich interessieren fuer (Akkusativ) — hat sich interessiert = to be interested in (accusative) — has been interested = интересоваться (аккузатив) — интересовался
+teilnehmen an (Dativ) — hat teilgenommen = to participate in (dative) — has participated = участвовать в (датив) — участвовал
+sich konzentrieren auf (Akkusativ) — hat sich konzentriert = to concentrate on (accusative) — has concentrated = концентрироваться на (аккузатив) — концентрировался
+verfuegen ueber (Akkusativ) — hat verfuegt = to have at one's disposal (accusative) — has had at disposal = располагать (аккузатив) — располагал
+sich entscheiden fuer (Akkusativ) — hat sich entschieden = to decide for (accusative) — has decided = решаться за (аккузатив) — решился
+abhaengen von (Dativ) — hat abgehangen = to depend on (dative) — has depended = зависеть от (датив) — зависел
+sich freuen auf (Akkusativ) — hat sich gefreut = to look forward to (accusative) — has looked forward = радоваться на (аккузатив) — радовался
+sich freuen ueber (Akkusativ) — hat sich gefreut = to be glad about (accusative) — has been glad = радоваться о (аккузатив) — радовался
+bitten um (Akkusativ) — hat gebeten = to ask for (accusative) — has asked = просить о (аккузатив) — просил
+sprechen mit (Dativ) — hat gesprochen = to speak with (dative) — has spoken = говорить с (датив) — говорил
+sprechen ueber (Akkusativ) — hat gesprochen = to speak about (accusative) — has spoken = говорить о (аккузатив) — говорил
+sich kuemmern um (Akkusativ) — hat sich gekuemmert = to take care of (accusative) — has taken care = заботиться о (аккузатив) — заботился
+fuehren zu (Dativ) — hat gefuehrt = to lead to (dative) — has led = вести к (датив) — вел
+resultieren aus (Dativ) — hat resultiert = to result from (dative) — has resulted = вытекать из (датив) — вытекал
+denken an (Akkusativ) — hat gedacht = to think of (accusative) — has thought = думать о (аккузатив) — думал
+erinnern an (Akkusativ) — hat erinnert = to remind of (accusative) — has reminded = напоминать о (аккузатив) — напоминал
+halten von (Dativ) — hat gehalten = to think of (dative) — has thought = держаться от (датив) — держал
+gestern eingereichte Formular ist vollstaendig. = Yesterday submitted form is complete. = Вчера поданная форма есть полная.
+Die von der Abteilung genehmigte Massnahme wird umgesetzt. = The by the department approved measure is being implemented. = Отделом одобренная мера становится реализуемой.
+Der mit dem Kunden besprochene Termin wurde verschoben. = The with the customer discussed appointment was postponed. = С клиентом обсужденный срок был отложен.
+Die noch zu bearbeitenden Unterlagen liegen auf dem Tisch. = The still to be processed documents lie on the table. = Еще подлежащие обработке документы лежат на столе.
+Der gerade angekommene Kollege stellt sich vor. = The just arrived colleague introduces himself. = Только что прибывший коллега представляет себя.
+Der aufgrund der Nachfrage erweiterte Service ist jetzt verfuegbar. = The due to the demand expanded service is now available. = Вследствие спроса расширенный сервис есть теперь доступный.
+Die im letzten Quartal gestiegenen Zahlen wurden analysiert. = The in the last quarter risen numbers were analyzed. = В последнем квартале возросшие цифры были проанализированы.
+Der von allen Beteiligten unterstuetzte Vorschlag wird realisiert. = The by all involved supported suggestion is being realized. = Всеми участниками поддержанное предложение становится реализованным.
+eine Entscheidung treffen = a decision to make = одно решение принять
+eine Frage stellen = a question to pose = один вопрос задать
+einen Termin vereinbaren = an appointment to arrange = один срок согласовать
+Ruecksprache halten = consultation to hold = обратную связь держать
+in Betracht ziehen = into consideration to draw = во внимание принять
+zur Verfuegung stellen = to disposal to put = в распоряжение предоставить
+zum Ausdruck bringen = to expression to bring = к выражению привести
+in Anspruch nehmen = in claim to take = в претензию взять
+unter Beweis stellen = under proof to put = под доказательство поставить
+in Ordnung bringen = in order to bring = в порядок привести
+zum Abschluss bringen = to conclusion to bring = к заключению привести
+eine Rolle spielen = a role to play = одну роль играть
+Kontakt aufnehmen = contact to take up = контакт установить
+Verantwortung uebernehmen = responsibility to take over = ответственность принять
+einen Beitrag leisten = a contribution to make = один вклад внести
+in Erwaegung ziehen = in consideration to draw = в соображение принять
+zur Diskussion stellen = to discussion to put = к дискуссии представить
+auf dem Laufenden halten = on the running to keep = в курсе держать
+Der Kollege, mit dem ich arbeite, ist sehr zuverlaessig. = The colleague, with whom I work, is very reliable. = Коллега, с которым я работаю, есть очень надежный.
+Das Projekt, an dem wir arbeiten, ist wichtig. = The project, on which we work, is important. = Проект, над которым мы работаем, есть важный.
+Die Firma, fuer die ich taetig bin, hat expandiert. = The company, for which I active am, has expanded. = Фирма, для которой я активен есть, имеет расширилась.
+Der Termin, auf den wir warten, ist naechste Woche. = The appointment, for which we wait, is next week. = Срок, на который мы ждем, есть следующая неделя.
+Der Kunde, von dem ich spreche, hat angerufen. = The customer, of whom I speak, has called. = Клиент, о котором я говорю, имеет позвонил.
+Das Dokument, auf das ich mich beziehe, liegt vor. = The document, on which I myself refer, lies present. = Документ, на который я себя ссылаюсь, лежит в наличии.
+Der Partner, bei dem wir bestellen, liefert schnell. = The partner, at whom we order, delivers fast. = Партнер, у которого мы заказываем, доставляет быстро.
+Der Weg, zu dem ich rate, ist der sicherste. = The way, to which I advise, is the safest. = Путь, к которому я советую, есть самый безопасный.
+Das Tool, durch das wir Zeit sparen, ist neu. = The tool, through which we time save, is new. = Инструмент, посредством которого мы время экономим, есть новый.
+Der Vorschlag, ohne den wir nicht weiterkommen, wurde abgelehnt. = The suggestion, without which we not further come, was rejected. = Предложение, без которого мы не дальше приходим, было отклонено.
+Das ist ja interessant. = That is indeed interesting. = Это есть ведь интересно.
+Sie kennen das ja. = You know that indeed. = Вы знаете это ведь.
+Wir haben uns ja schon darueber unterhalten. = We have ourselves indeed already about it talked. = Мы имели себя ведь уже об этом разговаривали.
+Das wissen Sie doch. = That know you after all. = Это знаете Вы ведь.
+Kommen Sie doch vorbei. = Come you after all by. = Приходите Вы ведь мимо.
+Das ist doch eine gute Idee. = That is after all a good idea. = Это есть ведь одна хорошая идея.
+Schauen Sie mal nach. = Look you once after. = Посмотрите Вы раз после.
+Koennten Sie das mal pruefen? = Could you that once check? = Могли бы Вы это раз проверить?
+Fragen Sie mal bei der Abteilung nach. = Ask you once at the department after. = Спросите Вы раз в отделе после.
+Das ist eben so. = That is just so. = Это есть просто так.
+So laeuft das eben. = So runs that just. = Так идет это просто.
+Manchmal klappt es eben nicht. = Sometimes works it just not. = Иногда срабатывает это просто не.
+Das ist halt nicht aenderbar. = That is simply not changeable. = Это есть просто не изменяемо.
+So ist das halt. = So is that simply. = Так есть это просто.
+Lassen Bedeutung haben etwas gemacht: Ich lasse den Bericht prüfen. = Lassen meaning to have something done: I let the report check. = Lassen значение иметь что-то сделанным: Я даю отчет проверить.
+Lassen Bedeutung haben etwas gemacht: Wir lassen die Unterlagen kopieren. = Lassen meaning to have something done: We let the documents copy. = Lassen значение иметь что-то сделанным: Мы даем документы скопировать.
+Lassen mit Frage höflich: Können Sie das bitte prüfen lassen? = Lassen with question politely: Can you that please check let? = Lassen с вопросом вежливо: Можете Вы это пожалуйста проверить дать?
+Lassen reflexiv mit sich: Das lässt sich machen. = Lassen reflexive with sich: That lets itself make. = Lassen рефлексив с sich: Это дает себя сделать.
+Lassen reflexiv mit sich: Der Termin lässt sich noch verschieben. = Lassen reflexive with sich: The appointment lets itself still postpone. = Lassen рефлексив с sich: Срок дает себя еще отложить.
+Lassen mit Dativ Person: Ich lasse mir den Eingang bestätigen. = Lassen with dative person: I let to me the entrance confirm. = Lassen с дативом лица: Я даю себе вход подтвердить.
+Lassen im Nebensatz: Ich warte darauf, dass der Kollege die Daten prüfen lässt. = Lassen in subordinate clause: I wait on that that the colleague the data check lets. = Lassen в придаточном предложении: Я жду на то, что коллега данные проверить дает.
+Lassen mit Modalverb: Der Vertrag sollte heute noch unterschrieben werden lassen. = Lassen with modal verb: The contract should today still signed be let. = Lassen с модальным глаголом: Договор должен сегодня еще подписан быть дан.
+Lassen Imperativ: Lassen Sie mich bitte wissen, ob alles passt. = Lassen imperative: Let you me please know whether everything fits. = Lassen императив: Дайте Вы меня пожалуйста знать, ли все подходит.
+Lassen in Vergangenheit: Ich habe das Dokument gestern drucken lassen. = Lassen in past: I have the document yesterday print let. = Lassen в прошлом: Я имею документ вчера напечатать дал.
+Nominativ bestimmt maskulin: Der wichtige Termin beginnt um neun Uhr. = Nominative definite masculine: The important appointment begins at nine o'clock. = Номинатив определенный мужской: Важный срок начинается в девять часов.
+Nominativ unbestimmt maskulin: Ein wichtiger Termin beginnt um neun Uhr. = Nominative indefinite masculine: An important appointment begins at nine o'clock. = Номинатив неопределенный мужской: Один важный срок начинается в девять часов.
+Nominativ bestimmt feminin: Die wichtige E-Mail ist angekommen. = Nominative definite feminine: The important e-mail has arrived. = Номинатив определенный женский: Важная электронная почта есть прибыла.
+Nominativ unbestimmt feminin: Eine wichtige E-Mail ist angekommen. = Nominative indefinite feminine: An important e-mail has arrived. = Номинатив неопределенный женский: Одна важная электронная почта есть прибыла.
+Nominativ bestimmt neutrum: Das wichtige Dokument liegt bereit. = Nominative definite neuter: The important document lies ready. = Номинатив определенный средний: Важный документ лежит готовый.
+Nominativ unbestimmt neutrum: Ein wichtiges Dokument liegt bereit. = Nominative indefinite neuter: An important document lies ready. = Номинатив неопределенный средний: Один важный документ лежит готовый.
+Nominativ bestimmt plural: Die wichtigen Unterlagen sind vollständig. = Nominative definite plural: The important documents are complete. = Номинатив определенный множественное число: Важные документы есть полные.
+Nominativ unbestimmt plural: Wichtige Unterlagen sind vollständig. = Nominative indefinite plural: Important documents are complete. = Номинатив неопределенный множественное число: Важные документы есть полные.
+Akkusativ bestimmt maskulin: Ich bestätige den wichtigen Termin. = Accusative definite masculine: I confirm the important appointment. = Аккузатив определенный мужской: Я подтверждаю важный срок.
+Akkusativ unbestimmt maskulin: Ich bestätige einen wichtigen Termin. = Accusative indefinite masculine: I confirm an important appointment. = Аккузатив неопределенный мужской: Я подтверждаю один важный срок.
+Akkusativ bestimmt feminin: Ich lese die wichtige E-Mail. = Accusative definite feminine: I read the important e-mail. = Аккузатив определенный женский: Я читаю важную электронную почту.
+Akkusativ unbestimmt feminin: Ich lese eine wichtige E-Mail. = Accusative indefinite feminine: I read an important e-mail. = Аккузатив неопределенный женский: Я читаю одну важную электронную почту.
+Akkusativ bestimmt neutrum: Ich prüfe das wichtige Dokument. = Accusative definite neuter: I check the important document. = Аккузатив определенный средний: Я проверяю важный документ.
+Akkusativ unbestimmt neutrum: Ich prüfe ein wichtiges Dokument. = Accusative indefinite neuter: I check an important document. = Аккузатив неопределенный средний: Я проверяю один важный документ.
+Akkusativ bestimmt plural: Ich ordne die wichtigen Unterlagen. = Accusative definite plural: I arrange the important documents. = Аккузатив определенный множественное число: Я упорядочиваю важные документы.
+Akkusativ unbestimmt plural: Ich ordne wichtige Unterlagen. = Accusative indefinite plural: I arrange important documents. = Аккузатив неопределенный множественное число: Я упорядочиваю важные документы.
+Dativ bestimmt maskulin: Ich danke dem wichtigen Kollegen. = Dative definite masculine: I thank the important colleague. = Датив определенный мужской: Я благодарю важному коллеге.
+Dativ unbestimmt maskulin: Ich danke einem wichtigen Kollegen. = Dative indefinite masculine: I thank an important colleague. = Датив неопределенный мужской: Я благодарю одному важному коллеге.
+Dativ bestimmt feminin: Ich antworte der wichtigen Kundin. = Dative definite feminine: I answer the important customer. = Датив определенный женский: Я отвечаю важной клиентке.
+Dativ unbestimmt feminin: Ich antworte einer wichtigen Kundin. = Dative indefinite feminine: I answer an important customer. = Датив неопределенный женский: Я отвечаю одной важной клиентке.
+Dativ bestimmt neutrum: Ich vertraue dem wichtigen Dokument. = Dative definite neuter: I trust the important document. = Датив определенный средний: Я доверяю важному документу.
+Dativ unbestimmt neutrum: Ich vertraue einem wichtigen Dokument. = Dative indefinite neuter: I trust an important document. = Датив неопределенный средний: Я доверяю одному важному документу.
+Dativ bestimmt plural: Ich helfe den wichtigen Kollegen. = Dative definite plural: I help the important colleagues. = Датив определенный множественное число: Я помогаю важным коллегам.
+Dativ unbestimmt plural: Ich helfe wichtigen Kollegen. = Dative indefinite plural: I help important colleagues. = Датив неопределенный множественное число: Я помогаю важным коллегам.
+Genitiv bestimmt maskulin: Die Dauer des wichtigen Termins ist kurz. = Genitive definite masculine: The duration of the important appointment is short. = Генитив определенный мужской: Длительность важного срока есть короткая.
+Genitiv unbestimmt maskulin: Die Dauer eines wichtigen Termins ist kurz. = Genitive indefinite masculine: The duration of an important appointment is short. = Генитив неопределенный мужской: Длительность одного важного срока есть короткая.
+Genitiv bestimmt feminin: Der Inhalt der wichtigen E-Mail ist klar. = Genitive definite feminine: The content of the important e-mail is clear. = Генитив определенный женский: Содержание важной электронной почты есть ясное.
+Genitiv unbestimmt feminin: Der Inhalt einer wichtigen E-Mail ist klar. = Genitive indefinite feminine: The content of an important e-mail is clear. = Генитив неопределенный женский: Содержание одной важной электронной почты есть ясное.
+Genitiv bestimmt neutrum: Die Seite des wichtigen Dokuments fehlt. = Genitive definite neuter: The page of the important document is missing. = Генитив определенный средний: Страница важного документа отсутствует.
+Genitiv unbestimmt neutrum: Die Seite eines wichtigen Dokuments fehlt. = Genitive indefinite neuter: The page of an important document is missing. = Генитив неопределенный средний: Страница одного важного документа отсутствует.
+Genitiv bestimmt plural: Die Qualität der wichtigen Unterlagen ist gut. = Genitive definite plural: The quality of the important documents is good. = Генитив определенный множественное число: Качество важных документов есть хорошее.
+Genitiv unbestimmt plural: Die Qualität wichtiger Unterlagen ist gut. = Genitive indefinite plural: The quality of important documents is good. = Генитив неопределенный множественное число: Качество важных документов есть хорошее.
+Adjektivendung nach bestimmtem Artikel Nominativ: der wichtige, die wichtige, das wichtige, die wichtigen = Adjective ending after definite article nominative: the important, the important, the important, the important = Окончание прилагательного после определенного артикля номинатив: важный, важная, важное, важные
+Adjektivendung nach bestimmtem Artikel Akkusativ: den wichtigen, die wichtige, das wichtige, die wichtigen = Adjective ending after definite article accusative: the important, the important, the important, the important = Окончание прилагательного после определенного артикля аккузатив: важного, важную, важное, важные
+Adjektivendung nach bestimmtem Artikel Dativ: dem wichtigen, der wichtigen, dem wichtigen, den wichtigen = Adjective ending after definite article dative: to the important, to the important, to the important, to the important = Окончание прилагательного после определенного артикля датив: важному, важной, важному, важным
+Adjektivendung nach bestimmtem Artikel Genitiv: des wichtigen, der wichtigen, des wichtigen, der wichtigen = Adjective ending after definite article genitive: of the important, of the important, of the important, of the important = Окончание прилагательного после определенного артикля генитив: важного, важной, важного, важных
+Adjektivendung nach unbestimmtem Artikel Nominativ: ein wichtiger, eine wichtige, ein wichtiges, wichtige = Adjective ending after indefinite article nominative: an important, an important, an important, important = Окончание прилагательного после неопределенного артикля номинатив: один важный, одна важная, одно важное, важные
+Adjektivendung nach unbestimmtem Artikel Akkusativ: einen wichtigen, eine wichtige, ein wichtiges, wichtige = Adjective ending after indefinite article accusative: an important, an important, an important, important = Окончание прилагательного после неопределенного артикля аккузатив: одного важного, одну важную, одно важное, важные
+Adjektivendung после неопределенного артикля Dativ: einem wichtigen, einer wichtigen, einem wichtigen, wichtigen = Adjective ending after indefinite article dative: to an important, to an important, to an important, to important = Окончание прилагательного после неопределенного артикля датив: одному важному, одной важной, одному важному, важным
+Adjektivendung nach unbestimmtem Artikel Genitiv: eines wichtigen, einer wichtigen, eines wichtigen, wichtiger = Adjective ending after indefinite article genitive: of an important, of an important, of an important, of important = Окончание прилагательного после неопределенного артикля генитив: одного важного, одной важной, одного важного, важных
