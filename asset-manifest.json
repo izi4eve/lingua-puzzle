@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.639ca793.css",
-    "main.js": "./static/js/main.ebc183fb.js",
+    "main.js": "./static/js/main.65801aa3.js",
     "static/js/453.72425263.chunk.js": "./static/js/453.72425263.chunk.js",
     "static/media/DE-EN-RU_B1-Book.txt": "./static/media/DE-EN-RU_B1-Book.20dba47ea0a6b030b6d4.txt",
     "static/media/DE-EN-RU_B2-Beruf-Test-All.txt": "./static/media/DE-EN-RU_B2-Beruf-Test-All.93bc983a051c59e3ccae.txt",
@@ -12,7 +12,7 @@
     "static/media/DE-EN-RU_Alltag.txt": "./static/media/DE-EN-RU_Alltag.b5c1eb831dd959e402f8.txt",
     "static/media/DE-UK_B1.txt": "./static/media/DE-UK_B1.25a9ba0d1d1ddf2e20e7.txt",
     "static/media/DE-RU_B1.txt": "./static/media/DE-RU_B1.a190e2f902b4b6f4de96.txt",
-    "static/media/DE-EN-RU_B2-Beruf-1-Telc.txt": "./static/media/DE-EN-RU_B2-Beruf-1-Telc.a41389c38af1d0be0c63.txt",
+    "static/media/DE-EN-RU_B2-Beruf-1-Telc.txt": "./static/media/DE-EN-RU_B2-Beruf-1-Telc.185a1e06426bfd4de46d.txt",
     "static/media/DE-RU-EN_B2-allgemein_my.txt": "./static/media/DE-RU-EN_B2-allgemein_my.406926f824eac7b56ab5.txt",
     "static/media/DE-EN-RU_B2-Beruf-Test-My-Pesentation.txt": "./static/media/DE-EN-RU_B2-Beruf-Test-My-Pesentation.b10218395a842e4b1de7.txt",
     "static/media/DE-RU_B2-allgemein_my.txt": "./static/media/DE-RU_B2-allgemein_my.2248d96e1cd64f071c96.txt",
@@ -39,11 +39,11 @@
     "static/media/getFetch.cjs": "./static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
     "static/media/Empty.txt": "./static/media/Empty.e949653f00becc0dfbbd.txt",
     "main.639ca793.css.map": "./static/css/main.639ca793.css.map",
-    "main.ebc183fb.js.map": "./static/js/main.ebc183fb.js.map",
+    "main.65801aa3.js.map": "./static/js/main.65801aa3.js.map",
     "453.72425263.chunk.js.map": "./static/js/453.72425263.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.639ca793.css",
-    "static/js/main.ebc183fb.js"
+    "static/js/main.65801aa3.js"
   ]
 }
