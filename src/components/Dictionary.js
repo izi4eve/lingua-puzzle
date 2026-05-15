@@ -154,9 +154,9 @@ const Dictionary = ({ show, onHide, data, onDataUpdate, setFirstElement, firstEl
           className="w-100 lh-1"
           onClick={() => handleWordClick(originalIndex)}
         >
-          <span className='dic-foreign'>{entry.foreignPart}</span> 
-          <span className='dic-tip'> {entry.tipPart}</span> 
-          <span className='dic-translaiton'> {entry.translation}</span>          
+          <span className='dic-foreign'>{entry.foreignPart} </span> 
+          <span className='dic-translaiton'>= {entry.translation} </span>          
+          <span className='dic-tip'>= {entry.tipPart}</span> 
         </div>
       </div>
     );
